@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="untitled12">
+    <title>Logging Out</title>
+    <shortdesc>This section describes about how to log out from the Nuance CDE.</shortdesc>
+    <prolog>
+        <copyright>
+            <copyryear year="2017"/>
+            <copyrholder>© 2026. Nuance Communications. Inc.® . Proprietary and Confidential. All
+                rights reserved.</copyrholder>
+        </copyright>
+    </prolog>
+    <taskbody>
+        <context/>
+        <steps>
+            <step>
+                <cmd>From the top right, navigate to the icon with your name, and then click the
+                        <uicontrol>Logout</uicontrol> link.</cmd>
+                <info><fig id="fig_nj5_zh4_mbb">
+                        <title>Logout Link</title>
+                        <image placement="break" href="../Image/Logout%20Link.gif" align="center"
+                            id="image_oj5_zh4_mbb" width="800"/>
+                    </fig><msgph>You have successfully logged out</msgph> message is displayed and
+                    you are logged out from the application.<fig id="fig_dxf_hfd_dbb">
+                        <title>Logout Screen</title>
+                        <image href="../../Images/Logout%20Screen.gif" id="image_zdb_wcz_t4b"
+                            width="500"/>
+                    </fig><note>To return to the login screen, click the <uicontrol>Return to the
+                            login page</uicontrol> link. If your facility is using single sign-on
+                        then after clicking the <uicontrol>Return to the login page</uicontrol>
+                        link, the <i>Triage Worklist</i> screen is displayed.</note></info>
+            </step>
+        </steps>
+    </taskbody>
+</task>

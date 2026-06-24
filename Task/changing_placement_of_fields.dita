@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="changing_placement_of_fields">
+    <title>Changing Placement of Fields on the Custom Reports</title>
+    <shortdesc/>
+    <taskbody>
+        <context>
+            <p/>
+        </context>
+        <steps>
+            <step>
+                <cmd>Open the custom report from the User Defined reports.</cmd>
+            </step>
+            <step>
+                <cmd>Select the field on the report and then select it on the right pane.</cmd>
+            </step>
+            <step>
+                <cmd>Click on the drop-down arrow to expand the options.</cmd>
+                <info>
+                    <fig id="fig_lys_gqm_sgb">
+                        <title>Changing Placement of Fields</title>
+                        <image href="../Graphics/changing_placement_of_fields.gif"
+                            id="image_gsj_hqm_sgb"/>
+                    </fig>
+                </info>
+            </step>
+            <step>
+                <cmd>Select the appropriate option from the Move menu.</cmd>
+                <info>The field will be placed accordingly.</info>
+            </step>
+        </steps>
+    </taskbody>
+</task>

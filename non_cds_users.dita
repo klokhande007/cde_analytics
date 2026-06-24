@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="power_bi_controls">
+    <title>Non-CDS Users</title>
+    <shortdesc>Users without a CDS or CDS Manager role are categorized under a ‘Non-CDS user’
+        category that displays the count of reviews performed by this user in the CDE One reports.
+        For example, CDS column in the CDS Review Activity report displays the ‘Non-CDS user’ and
+        the count of reviews performed by the Non-CDS user.</shortdesc>
+    <conbody>
+        <p><b>Non- CDS Users</b><fig id="fig_ywz_pjb_lqb">
+                <title>Non CDS Users - CDS Review Activity </title>
+                <image href="Images/non_cds_users.gif" id="image_crq_jkb_lqb"/>
+            </fig></p>
+    </conbody>
+</concept>

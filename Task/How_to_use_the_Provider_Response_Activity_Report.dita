@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="how_to_use_the_review_activity_overview_report">
+    <title>How to use the Provider Response Activity Report to find specific information?</title>
+    <shortdesc></shortdesc>
+    <task id="task_tcs_z5h_vgb">
+        <title>Does CDSs require significant follow-up to bring closure to a query?</title>
+        <taskbody>
+            <steps id="steps_j4p_jl3_vgb">
+                <step>
+                    <cmd>Select <uicontrol>Program Management</uicontrol> from the <i>Analytics</i>
+                        screen.</cmd>
+                </step>
+                <step>
+                    <cmd>Select the <uicontrol>Provider Response Activity</uicontrol> tab.</cmd>
+                    <stepresult>The report displays data for last one calendar month based on the
+                        discharge date.</stepresult>
+                </step>
+                <step>
+                    <cmd>Select the time range from the <uicontrol>Discharge Date</uicontrol> range
+                        filter.</cmd>
+                </step>
+                <step>
+                    <cmd>Analyze <uicontrol>Total</uicontrol> row: <uicontrol>Total Sent
+                            Clarifications</uicontrol> in the selected date range, <uicontrol>Total
+                            No. of times sent </uicontrol>in the selected date range,
+                            <uicontrol>Avg. No. of times sent</uicontrol>. </cmd>
+                </step>
+                <step>
+                    <cmd>Analyze <uicontrol>Total Sent Clarifications</uicontrol>, <uicontrol>Total
+                            No. of times sent</uicontrol>, <uicontrol>Avg. No. of times sent
+                        </uicontrol>for each provider. </cmd>
+                </step>
+                <step>
+                    <cmd>Identify the provider with max <uicontrol>Avg. No. of Times
+                            Sent</uicontrol>. </cmd>
+                    <info>
+                        <note>CDSs had to do a lot of follow-ups with this provider. Similarly,
+                            identify top worst performing providers based on <uicontrol>Avg. No. of
+                                Times Sent</uicontrol>. </note>
+                    </info>
+                </step>
+                <step>
+                    <cmd>Click on the value of <uicontrol>Avg. No. of times Sent</uicontrol>’, and
+                        analyze encounter and clarification details for the clarifications sent to
+                        the provider. </cmd>
+                </step>
+            </steps>
+        </taskbody>
+    </task>
+    <task id="task_ag1_3m3_vgb">
+        <title>Which providers are not responding to the clarifications sent by the CDS
+            team?</title>
+        <taskbody>
+            <steps id="steps_bg1_3m3_vgb">
+                <step>
+                    <cmd>Select <uicontrol>Program Management</uicontrol> from the <i>Analytics</i>
+                        screen.</cmd>
+                </step>
+                <step>
+                    <cmd>Select the <uicontrol>Provider Response Activity</uicontrol> tab.</cmd>
+                    <stepresult>The report displays data for last one calendar month based on the
+                        discharge date.</stepresult>
+                </step>
+                <step>
+                    <cmd>Select the time range from the <uicontrol>Discharge Date</uicontrol> range
+                        filter.</cmd>
+                    <stepresult>This chart displays clarification distribution by Response type.
+                    </stepresult>
+                </step>
+                <step>
+                    <cmd>Identify the provider with highest count of <uicontrol>No
+                            Response</uicontrol> clarification. Use tool-tip to view the percentage
+                        of <uicontrol>Not responded clarification</uicontrol>. </cmd>
+                </step>
+                <step>
+                    <cmd>Click on <uicontrol>No Response</uicontrol> section/area for that provider
+                        to view the<uicontrol> Encounter Details</uicontrol> and
+                            <uicontrol>Clarification Details </uicontrol>tabular report.</cmd>
+                </step>
+                <step>
+                    <cmd>Alternatively, analyze <uicontrol>No Response Clari</uicontrol> column and
+                            <uicontrol>No Response Rate</uicontrol> columns in
+                            <uicontrol>Clarification and Response Summary</uicontrol> by provider to
+                        identify total <uicontrol>No Responses</uicontrol> clarifications and
+                        provider with highest <uicontrol>No Response Clarifications</uicontrol>.
+                    </cmd>
+                </step>
+            </steps>
+        </taskbody>
+    </task>
+    <task id="task_vzf_kn3_vgb">
+        <title>Is the CDS team sending inaccurate clarifications to the providers, resulting in lot
+            of <i>Not Agreed</i> clarifications?</title>
+        <taskbody>
+            <steps>
+                <step>
+                    <cmd>Select <uicontrol>Program Management</uicontrol> from the <i>Analytics</i>
+                        screen.</cmd>
+                </step>
+                <step>
+                    <cmd>Select the <uicontrol>Provider Response Activity</uicontrol> tab.</cmd>
+                    <stepresult>The report displays data for last one calendar month based on the
+                        discharge date.</stepresult>
+                </step>
+                <step>
+                    <cmd>Select the time range from the <uicontrol>Discharge Date</uicontrol> range
+                        filter.</cmd>
+                </step>
+                <step>
+                    <cmd>Analyze <uicontrol>Not Agreed Clari</uicontrol> column in the
+                            <uicontrol>Clarification and Response Summary by Provider</uicontrol>
+                        tabular report.</cmd>
+                    <stepresult>This column displays total <uicontrol>Not Agreed Clari.</uicontrol>
+                        and the count of <uicontrol>Not Agreed Claris</uicontrol> for each Provider.
+                    </stepresult>
+                </step>
+                <step>
+                    <cmd>Click on the total for <uicontrol>Not Agreed</uicontrol> Clari, Encounter
+                        and Clarification Details tabular report now shows details of <uicontrol>Not
+                            Agreed</uicontrol> Claris. Sort this table by CDS. Identify the CDS who
+                        has max number of not agreed Claris. Also, view the clarification details-
+                        Clari Subject, Clari Type, Sent Date, Response Date, Provider, etc.</cmd>
+                </step>
+                <step>
+                    <cmd>Analyze the clarifications at CDE application side and identify if the
+                        clarifications were inaccurate, o, identify the reason behind non-agreement
+                        by the physician. </cmd>
+                </step>
+            </steps>
+        </taskbody>
+    </task>
+    <task id="task_t1c_x43_vgb">
+        <title>Who are my bottom and top responders to clarification?</title>
+        <taskbody>
+            <steps id="steps_yzd_1p3_vgb">
+                <step>
+                    <cmd>Select <uicontrol>Program Management</uicontrol> from the <i>Analytics</i>
+                        screen.</cmd>
+                </step>
+                <step>
+                    <cmd>Select the <uicontrol>Provider Response Activity</uicontrol> tab.</cmd>
+                    <stepresult>The report displays data for last one calendar month based on the
+                        discharge date.</stepresult>
+                </step>
+                <step>
+                    <cmd>Select the time range from the <uicontrol>Discharge Date</uicontrol> range
+                        filter.</cmd>
+                    <stepresult>This chart displays count of <uicontrol>Sent
+                            Clarifications</uicontrol>, count of <uicontrol>Responses</uicontrol>,
+                        and <uicontrol>Response Rate</uicontrol> for each provider.</stepresult>
+                </step>
+                <step>
+                    <cmd>Identify the provider with highest Response Rate and the provider with
+                        lowest Response Rate. Work with physician champions and CDSs to increase the
+                        response rate. </cmd>
+                </step>
+            </steps>
+        </taskbody>
+    </task>
+    <task id="task_i2n_yq3_vgb">
+        <title>Which diagnosis codes are most frequently resulting in clarifications?</title>
+        <taskbody>
+            <steps id="steps_rmy_dr3_vgb">
+                <step>
+                    <cmd>Select <uicontrol>Program Management</uicontrol> from the <i>Analytics</i>
+                        screen.</cmd>
+                </step>
+                <step>
+                    <cmd>Select the <uicontrol>Provider Response Activity</uicontrol> tab.</cmd>
+                    <stepresult>The report displays data for last one calendar month based on the
+                        discharge date.</stepresult>
+                </step>
+                <step>
+                    <cmd>Select the time range from the <uicontrol>Discharge Date</uicontrol> range
+                        filter.</cmd>
+                </step>
+                <step>
+                    <cmd>Analyze the <uicontrol>Clarifications by Clari Subject</uicontrol>
+                        chart.</cmd>
+                    <stepresult>This chart displays count of clarifications sent for each
+                        clarification code and helps you to identify top clarified codes.<p>Use the
+                                <uicontrol>Clarifications by Clari Subject</uicontrol> chart to
+                            analyze the following:<ul id="ul_ydn_cmn_wgb">
+                                <li>To which providers the maximum number of clarifications were
+                                    sent for code <i>Congestive Heart Failure</i>. Click on the bar
+                                    for <i>Congestive Heart Failure</i> and the
+                                        <uicontrol>Clarification and Response Summary by
+                                        Provider</uicontrol> tabular report now displays the data
+                                    for clarifications sent for <i>Congestive Heart Failure</i>. Use
+                                    this tabular report to analyze:<ul id="ul_kkz_4mn_wgb">
+                                        <li>How many congestive heart failure clarifications were
+                                            sent to each provider?</li>
+                                        <li>Response rate and agreement rate for these
+                                            clarifications.</li>
+                                        <li>
+                                            <p>How many <i>Congestive Heart failure</i>
+                                                clarifications were not agreed? </p>
+                                            <p>How many <i>Congestive Heart failure</i>
+                                                clarifications were not responded?</p>
+                                        </li>
+                                    </ul></li>
+                                <li>Which CDSs had sent the maximum number of clarifications for
+                                    code <i>Congestive Heart Failure</i>? Click on the bar for
+                                        <i>Congestive Heart Failure</i> and the <uicontrol>Encounter
+                                        and Clarification Details</uicontrol> tabular report now
+                                    displays the encounter and clarification details for<i>
+                                        Congestive Heart Failure</i>. Sort the table by CDS by
+                                    clicking on the <uicontrol>CDS</uicontrol> column headings and
+                                    identify the CDSs who had sent the clarification for
+                                        <i>Congestive Heart failure</i>.</li>
+                            </ul></p></stepresult>
+                </step>
+                <?oxy_custom_start type="oxy_content_highlight" color="255,255,0"?>
+            </steps>
+        </taskbody><?oxy_custom_end?>
+    </task>
+    <task id="task_oy5_ndj_vgb">
+        <title>Which providers should I target to improve response TAT?</title>
+        <taskbody>
+            <steps id="steps_tqw_n2j_vgb">
+                <step>
+                    <cmd>Select <uicontrol>Program Management</uicontrol> from the <i>Analytics</i>
+                        screen.</cmd>
+                </step>
+                <step>
+                    <cmd>Select the <uicontrol>Provider Response Activity</uicontrol> tab.</cmd>
+                    <stepresult>The report displays data for last one calendar month based on the
+                        discharge date.</stepresult>
+                </step>
+                <step>
+                    <cmd>Select the time range from the <uicontrol>Discharge Date</uicontrol> range
+                        filter.</cmd>
+                </step>
+                <step>
+                    <cmd>Analyze the <uicontrol>Average Response TAT (Hrs)</uicontrol> KPI card. </cmd>
+                    <stepresult>The KPI card displays the overall average response TAT at Org level.
+                            <note>This KPI card displays overall average response TAT (Hrs) for all
+                            the facilities report you have access.</note><p>Use the
+                                <uicontrol>Average Response TAT (Hrs)</uicontrol> KPI card to
+                            analyze the following:<ul id="ul_yvg_lkn_wgb">
+                                <li>What is the average response TAT for the clarifications sent by
+                                    a CDS? To view average response turnaround time for
+                                    clarifications sent by a CDS, select the CDS name in the CDS
+                                    filter.</li>
+                            </ul></p></stepresult>
+                </step>
+                <step>
+                    <cmd>Analyze the <uicontrol>Average Response TAT (Hrs)</uicontrol> chart. </cmd>
+                    <stepresult>This chart displays average response turnaround time for each
+                        provider and helps you to identify the providers with least response
+                        turnaround time.<p>Use the <uicontrol>Average Response TAT (Hrs)</uicontrol>
+                            chart to analyze the following:<ul id="ul_mdj_5jn_wgb">
+                                <li>What is the average response TAT for the clarifications sent by
+                                    a CDS? To view average response turnaround time for
+                                    clarifications sent by a CDS, select the CDS name in the CDS
+                                    filter.</li>
+                                <li>What is the average response TAT for clarifications sent to Dr.
+                                    James by a CDS ? Select the CDS name from the
+                                        <uicontrol>CDS</uicontrol> filter and the <uicontrol>Avg.
+                                        Response TAT (Hrs.)</uicontrol> chart now displays the
+                                    average response turnaround time for clarifications sent by the
+                                    CDS. </li>
+                            </ul></p>
+                    </stepresult>
+                </step>
+                <?oxy_custom_start type="oxy_content_highlight" color="255,255,0"?>
+            </steps>
+        </taskbody><?oxy_custom_end?>
+    </task>
+</task>

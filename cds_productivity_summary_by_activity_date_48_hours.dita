@@ -1,0 +1,1339 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="cds_productivity_summary">
+    <title>Productivity Summary by Activity Date - 48 Hours</title>
+    <shortdesc/>
+    <conbody>
+        <p><b>Overview</b>: The report displays the data for the activities performed in the last 48
+            hours including today's date. For Example, when you open the report on 5/10/2021 at 4 PM
+            EST, the report displays the activities performed in the last 48 hours – 5/8/2021 4PM
+            EST – 5/10/2021 4 PM EST. This report displays activity data only for the CDS or CDS
+                Manager.<note>A CDS can view only their data and not the data of their peers from
+                same or different facility.</note></p>
+        <p>You need a real-time ‘Productivity Summary by Activity Date’ for the following:<ul
+                id="ul_ult_l32_4rb">
+                <li>A CDS Manager can get up-to-date information on CDS productivity to take
+                    necessary actions and follow-ups with CDS to improve overall CDI Program
+                    performance.</li>
+                <li>A CDS can view and analyze my productivity concurrently.</li>
+            </ul></p>
+        <p>The report provides answers to the following business questions:<ul id="ul_jh5_2rr_t4b">
+                <li>How is the review activity of a CDS in the last 48 hours?</li>
+                <li> How is the clarification activity of a CDS in the last 48 hours?</li>
+                <li>Which day/date in last 48 hours had more reviews/clarification work?</li>
+            </ul></p>
+        <p><b>Navigation</b>: On the Analytics home page left side panel, navigate to <menucascade>
+                <uicontrol>CDS General</uicontrol>
+                <uicontrol>CDS Productivity</uicontrol>
+                <uicontrol>Productivity Summary by Activity Date - 48 Hours</uicontrol>
+            </menucascade>.</p>
+        <p>The report displays the following:<ul id="ul_tww_zxp_t4b">
+                <li>Review Summary tabular chart</li>
+                <li>Clarification Summary tabular chart</li>
+            </ul></p>
+        <p>On the top panel, you can select desired values for the slicers (refer <xref
+                href="#cds_productivity_summary/table_iwp_2qf_sgb" format="dita"/> ) and the
+            corresponding data gets filtered in charts.</p>
+        <p>For Global filters, refer <xref href="#cds_productivity_summary/table_cfp_ghn_lgb"
+                format="dita"/>.</p>
+        <p>For Footnotes, refer <xref href="#cds_productivity_summary/table_mwj_vrq_t4b"
+                format="dita"/>.</p>
+        <p><b>Default Display</b>: By default, the chart displays the data for the activity
+            performed by the CDS in the last 48 hours (including today).</p>
+        <p><b>Productivity Summary by Activity Date - 48 Hours</b><fig id="fig_m3c_vhq_t4b">
+                <title>Sample Report</title>
+                <image href="Images/productivity_summary_by_activity_date_48_hours.gif" width="700"
+                    id="image_qr2_455_prb"/>
+            </fig></p>
+        <p>
+            <table frame="all" rowsep="1" colsep="1" id="table_zgt_1kq_t4b">
+                <title>Review Summary Table Column and Description</title>
+                <tgroup cols="2">
+                    <colspec colname="c1" colnum="1" colwidth="1*"/>
+                    <colspec colname="c2" colnum="2" colwidth="1.74*"/>
+                    <thead>
+                        <row>
+                            <entry>Metric</entry>
+                            <entry>Description</entry>
+                        </row>
+                    </thead>
+                    <tbody>
+                        <row>
+                            <entry>Initial Reviews</entry>
+                            <entry>
+                                <p>Displays the count of encounters with an initial review date/time
+                                    in the selected activity date range.</p>
+                                <p><b>NOTE:</b></p>
+                                <p>Initial Review Date/Time falls in the selected activity date
+                                    range.</p>
+                                <p>Encounters with "Review Not Needed" encounter status are excluded
+                                    from this metric calculations.</p>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>Additional Reviews</entry>
+                            <entry>
+                                <p>Displays the count of additional reviews performed in the
+                                    selected activity date range.</p>
+                                <p><b>NOTE:</b></p>
+                                <p>Additional Review Date/Time falls in the selected activity date
+                                    range. </p>
+                                <p>Encounters with "Review Not Needed" encounter status are excluded
+                                    from this metric calculations.</p>
+                                <p>Additional Review Types:<ul id="ul_ngx_qv5_prb">
+                                        <li>Clarification creation</li>
+                                        <li>Clarification modification</li>
+                                        <li>Working review modification</li>
+                                        <li>Worksheet creation or modification</li>
+                                        <li>Possible review creation</li>
+                                        <li>Possible review modification</li>
+                                        <li>Reconciliation assessment creation</li>
+                                        <li>Reconciliation assessment modification</li>
+                                        <li>Encounter Saved</li>
+                                        <li>Note creation or modification</li>
+                                        <li>Tracking Codes Addition or Modification</li>
+                                        <li>Encounter status modification</li>
+                                    </ul></p>
+                                <p>Activity Type 'Post-Discharge Review' is not considered in the
+                                    Additional Reviews calculation.</p>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>Total Reviews</entry>
+                            <entry>This column displays the count of total reviews performed in the
+                                selected activity date range.<p>Total Reviews = (Initial Reviews +
+                                    Additional Reviews)</p><p><b>NOTE:</b></p><p>Review Date/Time
+                                    (Initial Review and Additional Review dates) falls in the
+                                    selected activity date range. </p><p>Encounters with "Review Not
+                                    Needed" encounter status are excluded from this metric
+                                    calculations.</p></entry>
+                        </row>
+                    </tbody>
+                </tgroup>
+            </table>
+            <table id="table_a5w_zby_ykb" colsep="1" rowsep="1" frame="all">
+                <title>Clarification Summary Table Column and Description</title>
+                <tgroup cols="2">
+                    <colspec colnum="1" colname="col1" colwidth="1*" colsep="1" rowsep="1"/>
+                    <colspec colnum="2" colname="col2" colwidth="1.78*" colsep="1" rowsep="1"/>
+                    <thead>
+                        <row>
+                            <entry>Column</entry>
+                            <entry>Description</entry>
+                        </row>
+                    </thead>
+                    <tbody>
+                        <row>
+                            <entry>Encounters with Clarifications</entry>
+                            <entry>
+                                <p>Displays the count of encounters with at least one clarification
+                                    sent in the selected activity date range.</p>
+                                <p><b>NOTE:</b></p>
+                                <p>Clarification Instance Sent Date falls in the selected activity
+                                    date range.</p>
+                                <p>Encounters with "Review Not Needed" encounter status are excluded
+                                    from this metric calculations.</p>
+                                <p>Clarifications with Status 'DELETED' or 'RETRACTED' are excluded
+                                    from the count.</p>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>Encounter Clarification Rate</entry>
+                            <entry>Displays the percentage of reviewed encounters with at least one
+                                clarification with the status other than DELETED or RETRACTED in the
+                                selected activity date range.<p>Encounter Clarification Rate= (The
+                                    count of reviewed encounters with at least one clarification
+                                    with the status other than DELETED or RETRACTED sent in the
+                                    selected activity date range./ Count of Initial Reviews
+                                    performed in the selected activity date range.) *100. Rounded
+                                    off to 0 decimal places. E.g.
+                                    30%.</p><p><b>NOTE:</b></p><p>Initial Review Date/Time falls in
+                                    the selected activity date range.</p><p>Clarification Instance
+                                    Sent Date falls in the selected activity date
+                                    range.</p><p>Encounters with "Review Not Needed" encounter
+                                    status are excluded from this metric calculations.</p></entry>
+                        </row>
+                        <row>
+                            <entry>Clarifications Sent</entry>
+                            <entry>
+                                <p>Displays the count of clarifications with at-least one instance
+                                    sent in the selected activity date range.</p>
+                                <p><b>NOTE:</b></p>
+                                <p>Clarification Instance Sent Date falls in the selected activity
+                                    date range. (Start and End Date).</p>
+                                <p>Clarifications for "Review Not Needed" encounter status should
+                                    not be considered for this metric calculation.</p>
+                                <p>Clarifications may or may not have a FINAL response.</p>
+                                <p>Clarifications with Status 'DELETED' or 'RETRACTED' are excluded
+                                    from the count.</p>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>Clarifications Responded </entry>
+                            <entry>
+                                <p>Displays the count of clarifications with at least one instance
+                                    responded in the selected activity date range.</p>
+                                <p><b>NOTE:</b></p>
+                                <p>Instance Response Date falls in the selected activity date range. </p>
+                                <p>Clarification Instance may or may not have a FINAL response.</p>
+                                <p>Clarifications with response other than Pending, Retracted, or No
+                                    Response are considered.</p>
+                                <p>Clarifications for "Review Not Needed" encounter status should
+                                    not be considered for this metric calculation.</p>
+                                <p>Clarifications with Status 'DELETED' or 'RETRACTED' are excluded
+                                    from the count.</p>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>Clarification Response Rate</entry>
+                            <entry>
+                                <p>This column displays the percentage of sent clarifications
+                                    responded in the selected activity date range.</p>
+                                <p>Clarification Response Rate= (The count of clarifications with at
+                                    least one instance responded in the selected activity date
+                                    range/ The count of clarification with at-least one instance
+                                    sent in the selected activity date range) x 100. Rounded off to
+                                    0 decimal places. E.g. 80%</p>
+                                <p><b>NOTE:</b></p>
+                                <p>Clarification Instance Sent Date falls in the selected activity
+                                    date range. (Start and End Date).</p>
+                                <p>Instance Response Date falls in the selected activity date
+                                    range.</p>
+                                <p>Clarifications with response other than Pending, Retracted, or No
+                                    Response are considered.</p>
+                                <p>Clarification Instance may or may not have a FINAL response.</p>
+                                <p>Clarifications with Status 'DELETED' or 'RETRACTED' are excluded
+                                    from the count.</p>
+                                <p>Clarifications for "Review Not Needed" encounter status should
+                                    not be considered for this metric calculation.</p>
+                                <p>Clarifications may or may not have a FINAL response.</p>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>Clarifications Agreed</entry>
+                            <entry>Displays the count of clarifications <b>Agreed</b> in the
+                                selected activity date range. <p><b>NOTE:</b></p><p>Response
+                                    Date/time of the <b>'Agreed'</b> instance falls in the selected
+                                    activity date range.</p><p>Clarification Instance may or may not
+                                    have a FINAL response.</p><p>Clarifications with Status
+                                    'DELETED' or 'RETRACTED' are excluded from the
+                                    count.</p><p>Clarifications for "Review Not Needed" encounter
+                                    status should not be considered for this metric
+                                calculation.</p></entry>
+                        </row>
+                        <row>
+                            <entry>Clarification Agreed Rate</entry>
+                            <entry>
+                                <p>Displays the percentage of responded clarifications agreed in the
+                                    selected activity date range.</p>
+                                <p>Clarification Agreed Rate = (The count of Clarifications
+                                        <b>Agreed</b> in the selected activity date range (Response
+                                    Date/time of the <b>Agreed</b> instance falls in the selected
+                                    activity date range)/ The count of clarifications with at-least
+                                    one instance responded in the selected activity date range) x
+                                    100. Rounded to 0 decimal places. E.g. 89%</p>
+                                <p><b>NOTE:</b></p>
+                                <p>Instance Response Date falls in the selected activity date
+                                    range.</p>
+                                <p>Response Date/time of the <b>Agreed</b> instance falls in the
+                                    selected activity date range.</p>
+                                <p>Clarification Instance may or may not have a FINAL response.</p>
+                                <p>Clarifications with response other than Pending, Retracted, or No
+                                    Response are considered as responded.</p>
+                                <p>Clarifications with Status 'DELETED' or 'RETRACTED' are excluded
+                                    from the count.</p>
+                                <p>Clarifications for "Review Not Needed" encounter status should
+                                    not be considered for this metric calculation.</p>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>Clarification Alternative Specificity Diagnosis Rate</entry>
+                            <entry>
+                                <p>Clarification Alternative Specificity Diagnosis Rate = (The count
+                                    of Clarifications with response as <b>Alternative Specificity
+                                        Diagnosis </b>in the last 48 hrs (Response Date/time of the
+                                        <b>Alternative Specificity Diagnosis</b> instance falls in
+                                    the last 48 hrs)/ The count of clarifications with at least one
+                                    instance responded in the last 48 hrs) x 100. Rounded to 0
+                                    decimal places. E.g. 89%.</p>
+                                <p><b>NOTE:</b></p>
+                                <p>Instance Response Date falls in the last 48 hrs.</p>
+                                <p>Response Date/time of the <b>Alternative Specificity
+                                        Diagnosis</b> instance falls in the last 48 hrs.</p>
+                                <p>Clarification Instance may or may not have a FINAL response.</p>
+                                <p>Clarifications with response other than Pending, Retracted, or No
+                                    Response are considered as responded.</p>
+                                <p>Clarifications with Status 'DELETED' or 'RETRACTED' are excluded
+                                    from the count.</p>
+                                <p>Clarifications for "Review Not Needed" encounter status should
+                                    not be considered for this metric calculation.</p>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>Clarification Other Explanation Rate</entry>
+                            <entry>
+                                <p>Displays the percentage of responded clarifications with response
+                                    as Other Explanation Rate in the last 48 hrs.</p>
+                                <p>Clarification Alternative Specificity Diagnosis Rate = (The count
+                                    of Clarifications with response as <b>Other Explanation </b> in
+                                    the last 48 hrs (Response Date/time of the <b>Other
+                                        Explanation</b> instance falls in the last 48 hrs)/ The
+                                    count of clarifications with at least one instance responded in
+                                    the last 48 hrs) x 100. Rounded to 0 decimal places. E.g.
+                                    89%.</p>
+                                <p><b>NOTE:</b></p>
+                                <p>Instance Response Date falls in the last 48 Hrs</p>
+                                <p>Response Date/time of the <b>'Other Explanation'</b> instance
+                                    falls in the last 48 hrs.</p>
+                                <p>Clarification Instance may or may not have a FINAL response.</p>
+                                <p>Clarifications with response other than Pending, Retracted, or No
+                                    Response are considered as responded.</p>
+                                <p>Clarifications with Status 'DELETED' or 'RETRACTED' are excluded
+                                    from the count.</p>
+                                <p>Clarifications for "Review Not Needed" encounter status should
+                                    not be considered for this metric calculation.</p>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>Clarification Agreed Rate (Agreed &amp; Alt DX)</entry>
+                            <entry>
+                                <p>Displays the percentage of responded clarifications with response
+                                    as Agreed or Alternative Specificity Diagnosis in the last 48
+                                    hrs.</p>
+                                <p>Clarification Agreed Rate (Agreed &amp; Alt DX) = (The count of
+                                    Clarifications with response as <b>Agreed or Alternative
+                                        Specificity Diagnosis </b> in the last 48 hrs (Response
+                                    Date/time of the <b>Agreed or Alternative Specificity
+                                        Diagnosis</b> instance falls in the last 48 hrs)/ The count
+                                    of clarifications with at-least one instance responded in the
+                                    last 48 hrs) x 100. Rounded to 0 decimal places. E.g. 89%.</p>
+                                <p><b>NOTE:</b></p>
+                                <p>Instance Response Date falls in the last 48 hrs.</p>
+                                <p>Response Date/time of the <b>Agreed or Alternative Specificity
+                                        Diagnosis</b> instance falls in the last 48 hrs.</p>
+                                <p>Clarification Instance may or may not have a FINAL response.</p>
+                                <p>Clarifications with response other than Pending, Retracted, or No
+                                    Response are considered as responded.</p>
+                                <p>Clarifications with Status 'DELETED' or 'RETRACTED' are excluded
+                                    from the count.</p>
+                                <p>Clarifications for "Review Not Needed" encounter status should
+                                    not be considered for this metric calculation.</p>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>Clarification Agreed Rate (Agreed, Other Exp, Alt DX)</entry>
+                            <entry>
+                                <p>This column displays the percentage of responded clarifications
+                                    with response as Agreed or Other Explanation or Alternative
+                                    Specificity Diagnosis in the last 48 hrs.</p>
+                                <p>Clarification Agreed Rate (Agreed, Other Exp, Alt DX) = (The
+                                    count of Clarifications with response as <b>Agreed or Other
+                                        Explanation or Alternative Specificity Diagnosis </b>in the
+                                    last 48 hrs (Response Date/time of the <b>Agreed or Other
+                                        Explanation or Alternative Specificity Diagnosis</b>
+                                    instance falls in the last 48 hrs)/ The count of clarifications
+                                    with at least one instance responded in the last 48 hrs) x 100.
+                                    Rounded to 0 decimal places. E.g. 89%</p>
+                                <p><b>NOTE:</b></p>
+                                <p>Instance Response Date falls in the last 48 hrs.</p>
+                                <p>Response Date/time of the <b>Agreed or Other Explanation or
+                                        Alternative Specificity Diagnosis</b> instance falls in the
+                                    last 48 hrs.</p>
+                                <p>Clarification Instance may or may not have a FINAL response.</p>
+                                <p>Clarifications with response other than Pending, Retracted, or No
+                                    Response are considered as responded.</p>
+                                <p>Clarifications with Status 'DELETED' or 'RETRACTED' are excluded
+                                    from the count.</p>
+                                <p>Clarifications for "Review Not Needed" encounter status should
+                                    not be considered for this metric calculation.</p>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>Encounters with Financial Impact Clarifications</entry>
+                            <entry>
+                                <p>Displays the count of reviewed encounters with at least one
+                                    Financial Impact clarification sent in the selected activity
+                                    date range.</p>
+                                <p><b>NOTE:</b></p>
+                                <p>Clarification Instance Sent Date falls in the selected activity
+                                    date range. </p>
+                                <p>Clarification with a standard or custom ‘Primary Type at
+                                    Reconciliation’ defined as ‘Financial or BOTH’ in the admin
+                                    configuration is a Financial Impact Clarification.</p>
+                                <p>Clarifications with Status 'DELETED' or 'RETRACTED' are excluded
+                                    from the count.</p>
+                                <p>Encounters with "Review Not Needed" encounter status are excluded
+                                    from this metric calculations.</p>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>Financial Impact Clarification Rate</entry>
+                            <entry>
+                                <p>Displays the percentage of reviewed Encounters with at least one
+                                    Financial Impact Clarifications sent in the selected activity
+                                    date range.</p>
+                                <p>Financial Impact Clarification Rate = (Count of reviewed
+                                    encounters with at least one Financial Impact clarification with
+                                    the status other than DELETED or RETRACTED in the selected
+                                    activity date range. / Count of encounters with an initial
+                                    review date in the selected activity date range.) X 100</p>
+                                <p>Rounded off to 0 decimal places. E.g. 30%</p>
+                                <p><b>NOTE:</b></p>
+                                <p>Clarification Instance Sent Date falls in the selected activity
+                                    date range<b>.</b></p>
+                                <p>Clarification with a standard or custom ‘Primary Type at
+                                    Reconciliation’ defined as ‘Financial ’ in the admin
+                                    configuration is a Financial Impact Clarification.</p>
+                                <p>Clarifications for "Review Not Needed" encounter status should
+                                    not be considered for this metric calculation.</p>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>Financial Impact Clarifications</entry>
+                            <entry>
+                                <p>Displays the count of Financial Impact clarification with at
+                                    least one instance sent in the selected activity date range.</p>
+                                <p><b>NOTE:</b></p>
+                                <p>Clarification Instance Sent Date falls in the selected activity
+                                    date range.</p>
+                                <p>Clarification with a standard or custom ‘Primary Type at
+                                    Reconciliation’ defined as ‘Financial’ in the admin
+                                    configuration is a Financial Impact Clarification.</p>
+                                <p>Clarifications with Status 'DELETED' or 'RETRACTED' are excluded
+                                    from the count.</p>
+                                <p>Clarifications for "Review Not Needed" encounter status should
+                                    not be considered for this metric calculation.</p>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>% Financial Impact Clarification</entry>
+                            <entry>
+                                <p>Displays the percentage of Financial Impact Clarifications sent
+                                    in the selected activity date range.</p>
+                                <p>%Financial Impact Clarification = (The count of Financial Impact
+                                    clarification with at least one instance in the selected
+                                    activity date range. / The count of clarifications with at least
+                                    one instance in the selected activity date range.) X100</p>
+                                <p>Rounded off to 0 decimal places. E.g. 30%</p>
+                                <p><b>NOTE:</b></p>
+                                <p>Clarification Instance Sent Date falls in the selected activity
+                                    date range.</p>
+                                <p>Clarification with a standard or custom ‘Primary Type at
+                                    Reconciliation’ defined as ‘Financial ’ in the admin
+                                    configuration is a Financial Impact Clarification.</p>
+                                <p>Clarifications with Status 'DELETED' or 'RETRACTED' are excluded
+                                    from the count.</p>
+                                <p>Clarifications for "Review Not Needed" encounter status should
+                                    not be considered for this metric calculation.</p>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>Financial Impact Clarifications Responded</entry>
+                            <entry>
+                                <p>Displays the count of Financial Impact clarifications with at
+                                    least one instance responded in the selected activity date
+                                    range.</p>
+                                <p><b>NOTE:</b></p>
+                                <p>Instance Response Date falls in the selected activity date
+                                    range.</p>
+                                <p>Clarification Instance may or may not have a FINAL response.</p>
+                                <p>Clarifications with response other than Pending, Retracted, or No
+                                    Response are considered.</p>
+                                <p>Clarification with a standard or custom ‘Primary Type at
+                                    Reconciliation’ defined as ‘Financial’ in the admin
+                                    configuration is a Financial Impact Clarification.</p>
+                                <p>Clarifications with Status 'DELETED' or 'RETRACTED' are excluded
+                                    from the count.</p>
+                                <p>Clarifications for "Review Not Needed" encounter status should
+                                    not be considered for this metric calculation.</p>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>Financial Impact Clarification Response Rate</entry>
+                            <entry>
+                                <p>Displays the percentage of sent Financial Impact clarifications
+                                    responded in the selected activity date range.</p>
+                                <p>Financial Impact Clarification Response Rate= (The count of
+                                    Financial Impact clarifications with at least one instance
+                                    responded in the selected activity date range/ The count of
+                                    Financial Impact clarifications with at least one instance sent
+                                    in the selected activity date range) x 100. Rounded to 0 decimal
+                                    places. E.g. 89% </p>
+                                <p><b>NOTE:</b></p>
+                                <p>Instance Response Date falls in the selected activity date
+                                    range.</p>
+                                <p>Clarification Instance Sent Date falls in the selected activity
+                                    date range.</p>
+                                <p>Clarification Instance may or may not have a FINAL response.</p>
+                                <p>Clarifications with response other than Pending, Retracted, or No
+                                    Response are considered.</p>
+                                <p>Clarification with a standard or custom ‘Primary Type at
+                                    Reconciliation’ defined as ‘Financial’ in the admin
+                                    configuration is a Financial Impact Clarification.</p>
+                                <p>Clarifications with Status 'DELETED' or 'RETRACTED' are excluded
+                                    from the count.</p>
+                                <p>Clarifications for "Review Not Needed" encounter status should
+                                    not be considered for this metric calculation.</p>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>Financial Impact Clarifications Agreed</entry>
+                            <entry>
+                                <p>Displays the count of Financial Impact Clarifications
+                                        <b>agreed</b> in the selected activity date range. </p>
+                                <p><b>NOTE:</b></p>
+                                <p>Response Date/time of the <b>'Agreed'</b> instance falls in the
+                                    selected activity date range.</p>
+                                <p>Clarification Instance may or may not have a FINAL response.</p>
+                                <p>Clarification with a standard or custom ‘Primary Type at
+                                    Reconciliation’ defined as ‘Financial’ in the admin
+                                    configuration is a Financial Impact Clarification.</p>
+                                <p>Clarifications with Status 'DELETED' or 'RETRACTED' are excluded
+                                    from the count.</p>
+                                <p>Clarifications for "Review Not Needed" encounter status should
+                                    not be considered for this metric calculation.</p>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>Financial Impact Clarification Agreed Rate</entry>
+                            <entry>
+                                <p>This column displays the percentage of responded Financial Impact
+                                    clarifications agreed in the selected activity date range.</p>
+                                <p>Financial Impact Clarification Agreed Rate = (The count of
+                                    Financial Impact Clarifications <b>agreed</b> in the selected
+                                    activity date range (Response Date/time of the <b>'Agreed'</b>
+                                    instance falls in the selected activity date range)/ the count
+                                    of Financial Impact clarifications with at least one instance
+                                    responded in the selected activity date range) x 100. Rounded to
+                                    0 decimal places. E.g. 89%</p>
+                                <p><b>NOTE:</b></p>
+                                <p>Instance Response Date falls in the selected activity date
+                                    range.</p>
+                                <p>Response Date/time of the <b>'Agreed'</b> instance falls in the
+                                    selected activity date range.</p>
+                                <p>Clarification Instance may or may not have a FINAL response.</p>
+                                <p>Clarifications with response other than Pending, Retracted, or No
+                                    Response are considered as responded.</p>
+                                <p>Clarification with a standard or custom ‘Primary Type at
+                                    Reconciliation’ defined as ‘Financial’ in the admin
+                                    configuration is a Financial Impact Clarification.</p>
+                                <p>Clarifications with Status 'DELETED' or 'RETRACTED' are excluded
+                                    from the count.</p>
+                                <p>Clarifications for "Review Not Needed" encounter status should
+                                    not be considered for this metric calculation.</p>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>Encounters with Quality Clarifications</entry>
+                            <entry>
+                                <p>Displays the count of reviewed encounters with at least one
+                                    quality Impact clarification sent in the selected activity date
+                                    range.</p>
+                                <p><b>NOTE:</b></p>
+                                <p>Clarification Instance Sent Date falls in the selected activity
+                                    date range. </p>
+                                <p>Clarification with a standard or custom ‘Primary Type at
+                                    Reconciliation’ defined as ‘Quality or BOTH’ in the admin
+                                    configuration are considered.</p>
+                                <p>Clarifications with Status 'DELETED' or 'RETRACTED' are excluded
+                                    from the count.</p>
+                                <p>Encounters with "Review Not Needed" encounter status are excluded
+                                    from this metric calculations.</p>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>Quality Clarification Rate</entry>
+                            <entry>
+                                <p>Displays the percentage of reviewed Encounters with Quality
+                                    Impact Clarifications sent in the selected activity date
+                                    range.</p>
+                                <p>Quality Clarification Rate = (Count of reviewed encounters with
+                                    at least one Quality Impact clarification with the status other
+                                    than DELETED or RETRACTED sent in the selected activity date
+                                    range. / Count of encounters with an initial review date in the
+                                    selected activity date range.) X 100. Rounded off to 0 decimal
+                                    places. E.g. 30%</p>
+                                <p><b>NOTE:</b></p>
+                                <p>Clarification Instance Sent Date falls in the selected activity
+                                    date range. </p>
+                                <p>Initial Review Date falls in the selected activity date
+                                    range.</p>
+                                <p>Clarification with a standard or custom ‘Primary Type at
+                                    Reconciliation’ defined as ‘Quality or BOTH’ in the admin
+                                    configuration are considered.</p>
+                                <p>Clarifications with Status 'DELETED' or 'RETRACTED' are excluded
+                                    from the count.</p>
+                                <p>Encounters with "Review Not Needed" encounter status are excluded
+                                    from this metric calculations.</p>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>Quality Clarifications </entry>
+                            <entry>
+                                <p>Displays the count of Quality Impact clarification with at least
+                                    one instance sent in the selected activity date range.</p>
+                                <p><b>NOTE:</b></p>
+                                <p>Clarification Instance Sent Date falls in the selected activity
+                                    date range.</p>
+                                <p>Clarification with a standard or custom ‘Primary Type at
+                                    Reconciliation’ defined as ‘Quality’ in the admin configuration
+                                    is a Quality Impact Clarification.</p>
+                                <p>Clarifications with Status 'DELETED' or 'RETRACTED' are excluded
+                                    from the count.</p>
+                                <p>Clarifications for "Review Not Needed" encounter status should
+                                    not be considered for this metric calculation.</p>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>% Quality Clarification</entry>
+                            <entry>
+                                <p>Displays the percentage of Quality Impact Clarifications sent in
+                                    the selected activity date range.</p>
+                                <p>% Quality Clarification = (The count of Quality Impact
+                                    clarification with at least one instance in the selected
+                                    activity date range. / The count of clarifications with at least
+                                    one instance in the selected activity date range.) X100</p>
+                                <p>Rounded off to 0 decimal places. E.g. 30%</p>
+                                <p><b>NOTE:</b></p>
+                                <p>Clarification Instance Sent Date falls in the selected activity
+                                    date range.</p>
+                                <p>Clarification with a standard or custom ‘Primary Type at
+                                    Reconciliation’ defined as ‘Quality’ in the admin configuration
+                                    is a Quality Impact Clarification.</p>
+                                <p>Clarifications with Status 'DELETED' or 'RETRACTED' are excluded
+                                    from the count.</p>
+                                <p>Clarifications for "Review Not Needed" encounter status should
+                                    not be considered for this metric calculation.</p>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>Quality Clarifications Responded</entry>
+                            <entry>
+                                <p>Displays the count of Quality Impact clarifications with at least
+                                    one instance responded in the selected activity date range.</p>
+                                <p><b>NOTE:</b></p>
+                                <p>Instance Response Date falls in the selected activity date
+                                    range.</p>
+                                <p>Clarification Instance may or may not have a FINAL response.</p>
+                                <p>Clarifications with response other than Pending, Retracted, or No
+                                    Response are considered.</p>
+                                <p>Clarification with a standard or custom ‘Primary Type at
+                                    Reconciliation’ defined as ‘Quality’ in the admin configuration
+                                    is a Quality Impact Clarification.</p>
+                                <p>Clarifications with Status 'DELETED' or 'RETRACTED' are excluded
+                                    from the count.</p>
+                                <p>Clarifications for "Review Not Needed" encounter status should
+                                    not be considered for this metric calculation.</p>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>Quality Clarification Response Rate</entry>
+                            <entry>
+                                <p>Displays the percentage of sent Quality Impact clarifications
+                                    responded in the selected activity date range.</p>
+                                <p>Quality Clarification Response Rate= (The count of Quality Impact
+                                    clarifications with at least one instance responded in the
+                                    selected activity date range/ The count of Quality Impact
+                                    clarifications with at least one instance sent in the selected
+                                    activity date range) x 100. Rounded to 0 decimal places. E.g.
+                                    89% </p>
+                                <p><b>NOTE:</b></p>
+                                <p>Instance Response Date falls in the selected activity date
+                                    range.</p>
+                                <p>Clarification Instance Sent Date falls in the selected activity
+                                    date range.</p>
+                                <p>Clarification Instance may or may not have a FINAL response.</p>
+                                <p>Clarifications with response other than Pending, Retracted, or No
+                                    Response are considered.</p>
+                                <p>Clarification with a standard or custom ‘Primary Type at
+                                    Reconciliation’ defined as ‘Quality ’ in the admin configuration
+                                    is a Quality Impact Clarification.</p>
+                                <p>Clarifications with Status 'DELETED' or 'RETRACTED' are excluded
+                                    from the count.</p>
+                                <p>Clarifications for "Review Not Needed" encounter status should
+                                    not be considered for this metric calculation.</p>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>Quality Clarifications Agreed</entry>
+                            <entry>
+                                <p>Displays the count of Quality Impact Clarifications <b>Agreed</b>
+                                    in the selected activity date range. </p>
+                                <p><b>NOTE:</b></p>
+                                <p>Response Date/time of the <b>Agreed</b> instance falls in the
+                                    selected activity date range.</p>
+                                <p>Clarification Instance may or may not have a FINAL response.</p>
+                                <p>Clarification with a standard or custom ‘Primary Type at
+                                    Reconciliation’ defined as ‘Quality ’ in the admin configuration
+                                    is a Quality Impact Clarification.</p>
+                                <p>Clarifications with Status 'DELETED' or 'RETRACTED' are excluded
+                                    from the count.</p>
+                                <p>Clarifications for "Review Not Needed" encounter status should
+                                    not be considered for this metric calculation.</p>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>Quality Clarification Agreed Rate</entry>
+                            <entry>
+                                <p>Displays the percentage of responded Quality Impact
+                                    clarifications agreed in the selected activity date range.</p>
+                                <p>Quality Clarification Agreed Rate = (The count of Quality Impact
+                                    Clarifications <b>Agreed</b> in the selected activity date range
+                                    (Response Date/time of the <b>Agreed</b> instance falls in the
+                                    selected activity date range)/ the count of Quality Impact
+                                    clarifications with at least one instance responded in the
+                                    selected activity date range) x 100. Rounded to 0 decimal
+                                    places. E.g. 89%.</p>
+                                <p><b>NOTE:</b></p>
+                                <p>Instance Response Date falls in the selected activity date
+                                    range.</p>
+                                <p>Response Date/time of the <b>'Agreed'</b> instance falls in the
+                                    selected activity date range.</p>
+                                <p>Clarification Instance may or may not have a FINAL response.</p>
+                                <p>Clarifications with response other than Pending, Retracted, or No
+                                    Response are considered as responded.</p>
+                                <p>Clarification with a standard or custom ‘Primary Type at
+                                    Reconciliation’ defined as ‘Quality ’ in the admin configuration
+                                    is a Quality Impact Clarification.</p>
+                                <p>Clarifications with Status 'DELETED' or 'RETRACTED' are excluded
+                                    from the count.</p>
+                                <p>Clarifications for "Review Not Needed" encounter status should
+                                    not be considered for this metric calculation.</p>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>Both Impact Clarifications</entry>
+                            <entry>
+                                <p>Displays the count of Both Impact clarification with at least one
+                                    instance sent in the selected activity date range.</p>
+                                <p><b>NOTE:</b></p>
+                                <p>Clarification Instance Sent Date falls in the selected activity
+                                    date range.</p>
+                                <p>Clarification with a standard or custom ‘Primary Type at
+                                    Reconciliation’ defined as ‘Financial and Quality’ in the admin
+                                    configuration is considered as BOTH.</p>
+                                <p>Clarifications with Status 'DELETED' or 'RETRACTED' are excluded
+                                    from the count.</p>
+                                <p>Clarifications for "Review Not Needed" encounter status should
+                                    not be considered for this metric calculation.</p>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>% Both Impact Clarification</entry>
+                            <entry>
+                                <p>Displays the percentage of Both Impact Clarifications sent in the
+                                    selected activity date range.</p>
+                                <p>% Both Impact Clarification = (The count of Both Impact
+                                    clarification with at least one instance in the selected
+                                    activity date range. / The count of clarifications with at least
+                                    one instance in the selected activity date range.) X100. Rounded
+                                    off to 0 decimal places. E.g. 30%.</p>
+                                <p><b>NOTE:</b></p>
+                                <p>Clarification Instance Sent Date falls in the selected activity
+                                    date range.</p>
+                                <p>Clarification with a standard or custom ‘Primary Type at
+                                    Reconciliation’ defined as ‘Financial and Quality’ in the admin
+                                    configuration is considered as BOTH.</p>
+                                <p>Clarifications with Status 'DELETED' or 'RETRACTED' are excluded
+                                    from the count.</p>
+                                <p>Clarifications for "Review Not Needed" encounter status should
+                                    not be considered for this metric calculation.</p>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>Both Impact Clarifications Responded</entry>
+                            <entry>
+                                <p>Displays the count of Both Impact clarifications with at least
+                                    one instance responded in the selected activity date range.</p>
+                                <p><b>NOTE:</b></p>
+                                <p>Instance Response Date falls in the selected activity date
+                                    range.</p>
+                                <p>Clarification Instance may or may not have a FINAL response.</p>
+                                <p>Clarifications with response other than Pending, Retracted, or No
+                                    Response are considered.</p>
+                                <p>Clarification with a standard or custom ‘Primary Type at
+                                    Reconciliation’ defined as ‘Financial and Quality’ in the admin
+                                    configuration is considered as BOTH.</p>
+                                <p>Clarifications with Status 'DELETED' or 'RETRACTED' are excluded
+                                    from the count.</p>
+                                <p>Clarifications for "Review Not Needed" encounter status should
+                                    not be considered for this metric calculation.</p>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>Both Impact Clarification Response Rate</entry>
+                            <entry>
+                                <p>Displays the percentage of sent Both Impact clarifications
+                                    responded in the selected activity date range.</p>
+                                <p>Both Impact Clarification Response Rate= (The count of Both
+                                    Impact clarifications with at least one instance responded in
+                                    the selected activity date range/ The count of Both Impact
+                                    clarifications with at least one instance sent in the selected
+                                    activity date range) x 100. Rounded to 0 decimal places. E.g.
+                                    89%.</p>
+                                <p><b>NOTE:</b></p>
+                                <p>Instance Response Date falls in the selected activity date
+                                    range.</p>
+                                <p>Clarification Instance Sent Date falls in the selected activity
+                                    date range.</p>
+                                <p>Clarification Instance may or may not have a FINAL response.</p>
+                                <p>Clarifications with response other than Pending, Retracted, or No
+                                    Response are considered.</p>
+                                <p>Clarification with a standard or custom ‘Primary Type at
+                                    Reconciliation’ defined as ‘Financial and Quality’ in the admin
+                                    configuration is considered as BOTH.</p>
+                                <p>Clarifications with Status 'DELETED' or 'RETRACTED' are excluded
+                                    from the count.</p>
+                                <p>Clarifications for "Review Not Needed" encounter status should
+                                    not be considered for this metric calculation.</p>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>Both Impact Clarifications Agreed</entry>
+                            <entry>
+                                <p> Displays the count of Both Impact Clarifications <b>Agreed</b>
+                                    in the selected activity date range. </p>
+                                <p><b>NOTE:</b></p>
+                                <p>Response Date/time of the <b>Agreed</b> instance falls in the
+                                    selected activity date range.</p>
+                                <p>Clarification Instance may or may not have a FINAL response.</p>
+                                <p>Clarification with a standard or custom ‘Primary Type at
+                                    Reconciliation’ defined as ‘Financial and Quality’ in the admin
+                                    configuration is considered as BOTH.</p>
+                                <p>Clarifications with Status 'DELETED' or 'RETRACTED' are excluded
+                                    from the count.</p>
+                                <p>Clarifications for "Review Not Needed" encounter status should
+                                    not be considered for this metric calculation.</p>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>Both Impact Clarification Agreed Rate</entry>
+                            <entry>
+                                <p>Displays the percentage of responded Both Impact clarifications
+                                    agreed in the selected activity date range.</p>
+                                <p>Both Impact Clarification Agreed Rate = (The count of Both Impact
+                                    Clarifications <b>Agreed</b> in the selected activity date range
+                                    (Response Date/time of the <b>Agreed</b> instance falls in the
+                                    selected activity date range)/ The count of Both Impact
+                                    clarifications with at least one instance responded in the
+                                    selected activity date range) x 100</p>
+                                <p>Rounded to 0 decimal places. E.g. 89%</p>
+                                <p><b>NOTE:</b></p>
+                                <p>Instance Response Date falls in the selected activity date
+                                    range.</p>
+                                <p>Response Date/time of the <b>'Agreed'</b> instance falls in the
+                                    selected activity date range.</p>
+                                <p>Clarification Instance may or may not have a FINAL response.</p>
+                                <p>Clarifications with response other than Pending, Retracted, or No
+                                    Response are considered as responded.</p>
+                                <p>Clarification with a standard or custom ‘Primary Type at
+                                    Reconciliation’ defined as ‘Financial and Quality’ in the admin
+                                    configuration is considered as BOTH.</p>
+                                <p>Clarifications with Status 'DELETED' or 'RETRACTED' are excluded
+                                    from the count.</p>
+                                <p>Clarifications for "Review Not Needed" encounter status should
+                                    not be considered for this metric calculation.</p>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>Encounters with SEV Clarifications</entry>
+                            <entry>
+                                <p> Displays the count of reviewed encounters with at least one SEV
+                                    Impact clarification sent in the selected activity date
+                                    range.</p>
+                                <p><b>NOTE:</b></p>
+                                <p>Clarification Instance Sent Date falls in the selected activity
+                                    date range. </p>
+                                <p>Clarification with a standard or custom ‘Primary Type at
+                                    Reconciliation’ as SEV are considered.</p>
+                                <p>Clarifications with Status 'DELETED' or 'RETRACTED' are excluded
+                                    from the count.</p>
+                                <p>Encounters with "Review Not Needed" encounter status are excluded
+                                    from this metric calculations.</p>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>SEV Clarification Rate</entry>
+                            <entry>
+                                <p>Displays the percentage of reviewed Encounters with SEV Impact
+                                    Clarifications sent in the selected activity date range.</p>
+                                <p>SEV Clarification Rate = (Count of reviewed encounters with at
+                                    least one SEV Impact clarification with the status other than
+                                    DELETED or RETRACTED sent in the selected activity date range. /
+                                    Count of encounters with an initial review date in the selected
+                                    activity date range.) X 100</p>
+                                <p>Rounded off to 0 decimal places. E.g. 30%</p>
+                                <p><b>NOTE:</b></p>
+                                <p>Clarification Instance Sent Date falls in the selected activity
+                                    date range. </p>
+                                <p>Initial Review Date falls in the selected activity date
+                                    range.</p>
+                                <p>Clarification with a standard or custom ‘Primary Type at
+                                    Reconciliation’ as SEV are considered.</p>
+                                <p>Clarifications with Status 'DELETED' or 'RETRACTED' are excluded
+                                    from the count.</p>
+                                <p>Encounters with "Review Not Needed" encounter status are excluded
+                                    from this metric calculations.</p>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>SEV Clarifications</entry>
+                            <entry>
+                                <p>Displays the count of SEV Impact clarification with at least one
+                                    instance sent in the selected activity date range.</p>
+                                <p><b>NOTE:</b></p>
+                                <p>Clarification Instance Sent Date falls in the selected activity
+                                    date range.</p>
+                                <p>Clarification with a standard or custom ‘Primary Type at
+                                    Reconciliation’ as SEV are considered.</p>
+                                <p>Clarifications with Status 'DELETED' or 'RETRACTED' are excluded
+                                    from the count.</p>
+                                <p>Clarifications for "Review Not Needed" encounter status should
+                                    not be considered for this metric calculation.</p>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>% SEV Clarification</entry>
+                            <entry>
+                                <p>Displays the percentage of SEV Impact Clarifications sent in the
+                                    selected activity date range.</p>
+                                <p>% SEV Clarification = (The count of SEV Impact clarification with
+                                    at least one instance in the selected activity date range. / The
+                                    count of clarifications with at least one instance in the
+                                    selected activity date range.) X100. Rounded off to 0 decimal
+                                    places. E.g. 30%.</p>
+                                <p><b>NOTE:</b></p>
+                                <p>Clarification Instance Sent Date falls in the selected activity
+                                    date range.</p>
+                                <p>Clarification with a standard or custom ‘Primary Type at
+                                    Reconciliation’ as SEV are considered.</p>
+                                <p>Clarifications with Status 'DELETED' or 'RETRACTED' are excluded
+                                    from the count.</p>
+                                <p>Clarifications for "Review Not Needed" encounter status should
+                                    not be considered for this metric calculation.</p>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>SEV Clarifications Responded</entry>
+                            <entry>
+                                <p>Displays the count of SEV Impact clarifications with at least one
+                                    instance responded in the selected activity date range.</p>
+                                <p><b>NOTE:</b></p>
+                                <p>Instance Response Date falls in the selected activity date
+                                    range.</p>
+                                <p>Clarification Instance may or may not have a FINAL response.</p>
+                                <p>Clarifications with response other than Pending, Retracted, or No
+                                    Response are considered.</p>
+                                <p>Clarification with a standard or custom ‘Primary Type at
+                                    Reconciliation’ as SEV are considered.</p>
+                                <p>Clarifications with Status 'DELETED' or 'RETRACTED' are excluded
+                                    from the count.</p>
+                                <p>Clarifications for "Review Not Needed" encounter status should
+                                    not be considered for this metric calculation.</p>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>SEV Clarification Response Rate</entry>
+                            <entry>
+                                <p>Displays the percentage of sent SEV Impact clarifications
+                                    responded in the selected activity date range.</p>
+                                <p>SEV Clarification Response Rate= (The count of SEV Impact
+                                    clarifications with at least one instance responded in the
+                                    selected activity date range/ The count of SEV Impact
+                                    clarifications with at least one instance sent in the selected
+                                    activity date range) x 100. Rounded to 0 decimal places. E.g.
+                                    89% </p>
+                                <p><b>NOTE:</b></p>
+                                <p>Instance Response Date falls in the selected activity date
+                                    range.</p>
+                                <p>Clarification Instance Sent Date falls in the selected activity
+                                    date range.</p>
+                                <p>Clarification Instance may or may not have a FINAL response.</p>
+                                <p>Clarifications with response other than Pending, Retracted, or No
+                                    Response are considered.</p>
+                                <p>Clarification with a standard or custom ‘Primary Type at
+                                    Reconciliation’ as SEV are considered.</p>
+                                <p>Clarifications with Status 'DELETED' or 'RETRACTED' are excluded
+                                    from the count.</p>
+                                <p>Clarifications for "Review Not Needed" encounter status should
+                                    not be considered for this metric calculation.</p>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>SEV Clarifications Agreed</entry>
+                            <entry>
+                                <p>This column displays the count of SEV Impact Clarifications
+                                        <b>Agreed</b> in the selected activity date range. </p>
+                                <p><b>NOTE:</b></p>
+                                <p>Response Date/time of the <b>Agreed</b> instance falls in the
+                                    selected activity date range.</p>
+                                <p>Clarification Instance may or may not have a FINAL response.</p>
+                                <p>Clarification with a standard or custom ‘Primary Type at
+                                    Reconciliation’ as SEV are considered.</p>
+                                <p>Clarifications with Status 'DELETED' or 'RETRACTED' are excluded
+                                    from the count.</p>
+                                <p>Clarifications for "Review Not Needed" encounter status should
+                                    not be considered for this metric calculation.</p>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>SEV Clarification Agreed Rate</entry>
+                            <entry>
+                                <p>Displays the percentage of responded SEV Impact clarifications
+                                    agreed in the selected activity date range.</p>
+                                <p>SEV Clarification Agreed Rate = (The count of SEV Impact
+                                    Clarifications <b>Agreed</b> in the selected activity date range
+                                    (Response Date/time of the <b>Agreed</b> instance falls in the
+                                    selected activity date range)/ the count of SEV Impact
+                                    clarifications with at least one instance responded in the
+                                    selected activity date range) x 100. Rounded to 0 decimal
+                                    places. E.g. 89%.</p>
+                                <p><b>NOTE:</b></p>
+                                <p>Instance Response Date falls in the selected activity date
+                                    range.</p>
+                                <p>Response Date/time of the <b>'Agreed'</b> instance falls in the
+                                    selected activity date range.</p>
+                                <p>Clarification Instance may or may not have a FINAL response.</p>
+                                <p>Clarifications with response other than Pending, Retracted, or No
+                                    Response are considered as responded.</p>
+                                <p>Clarification with a standard or custom ‘Primary Type at
+                                    Reconciliation’ as SEV are considered.</p>
+                                <p>Clarifications with Status 'DELETED' or 'RETRACTED' are excluded
+                                    from the count.</p>
+                                <p>Clarifications for "Review Not Needed" encounter status should
+                                    not be considered for this metric calculation.</p>
+                            </entry>
+                        </row>
+                    </tbody>
+                </tgroup>
+            </table>
+        </p>
+        <table id="table_iwp_2qf_sgb" frame="all">
+            <title>Report slicers</title>
+            <tgroup cols="2">
+                <colspec colname="c1" colnum="1" colwidth="1*" rowsep="1" colsep="1"/>
+                <colspec colname="c2" colnum="2" colwidth="3.6*" colsep="1" rowsep="1"/>
+                <thead>
+                    <row>
+                        <entry>Filter</entry>
+                        <entry>Description</entry>
+                    </row>
+                </thead>
+                <tbody>
+                    <row>
+                        <entry>Activity Date</entry>
+                        <entry>Default: Last 48 hours including today's date.</entry>
+                    </row>
+                    <row>
+                        <entry>Facility</entry>
+                        <entry>
+                            <ul id="ul_kxv_bjv_prb">
+                                <li>This filter displays both active and inactive facilities in
+                                    alphabetical order that the report user has access to.</li>
+                                <li>You can select multiple facilities</li>
+                                <li>You can search the facility by Facility ID or Description.</li>
+                                <li>Format: Facility Description (Facility ID)</li>
+                                <li>Default: <b>ALL</b></li>
+                            </ul>
+                        </entry>
+                    </row>
+                    <row>
+                        <entry>Payer</entry>
+                        <entry>
+                            <ul id="ul_px1_djv_prb">
+                                <li>This filter displays both active and inactive payers in
+                                    alphabetical order associated with the facilities user has
+                                    access to.</li>
+                                <li>You can select multiple payers</li>
+                                <li>"Unassigned Payer" displays data for the encounters that do not
+                                    have a payer assigned.</li>
+                                <li>You can search the Payer by Payer ID or Description.</li>
+                                <li>Format: Payer Description (Payer ID)</li>
+                                <li>Default: <b>ALL</b></li>
+                            </ul>
+                        </entry>
+                    </row>
+                    <row>
+                        <entry>Unit</entry>
+                        <entry>
+                            <ul id="ul_ak2_2jv_prb">
+                                <li>This filter displays the list of available units.</li>
+                                <li>You can select multiple Units.</li>
+                                <li>You can search the Unit.</li>
+                                <li>Default: <b>ALL</b></li>
+                            </ul>
+                        </entry>
+                    </row>
+                    <row>
+                        <entry>CDS</entry>
+                        <entry>
+                            <ul id="ul_z3q_hjv_prb">
+                                <li>This filter displays both active and inactive CDSs in
+                                    alphabetical order associated with the facilities user has
+                                    access to.</li>
+                                <li>The CDS Filter in all the reports displays the users with at
+                                    least CDS or CDS Manager role assigned.</li>
+                                <li>"Unassigned CDS" displays data for the encounters that do not
+                                    have a CDS assigned.</li>
+                                <li>Format: Last Name, First Name MI (CDS ID)</li>
+                                <li>'Nuance User' option should be available in the CDS slicer- All
+                                    the Nuance Users (CDS Manager, Nuance Admin) will be grouped
+                                    under one CDS category in the format: Nuance User.</li>
+                                <li>Format: Nuance User</li>
+                                <li>Default: <b>ALL</b></li>
+                            </ul>
+                        </entry>
+                    </row>
+                </tbody>
+            </tgroup>
+        </table>
+        <table frame="all" rowsep="1" colsep="1" id="table_cfp_ghn_lgb">
+            <title> Filters on all Pages</title>
+            <tgroup cols="2">
+                <colspec colname="c1" colnum="1" colwidth="1*"/>
+                <colspec colname="c2" colnum="2" colwidth="3.65*"/>
+                <thead>
+                    <row>
+                        <entry>Filter</entry>
+                        <entry>Description</entry>
+                    </row>
+                </thead>
+                <tbody>
+                    <row>
+                        <entry>Patient Type</entry>
+                        <entry>Displays the patient type, Inpatient or Outpatient.<p>By default,
+                                Inpatient is selected.</p></entry>
+                    </row>
+                    <row>
+                        <entry>Visit Type</entry>
+                        <entry>
+                            <ul id="ul_dyd_pnh_prb">
+                                <li>This filter displays the list of available Visit Types.</li>
+                                <li>User can select multiple Visit Types.</li>
+                                <li>Users can search the Visit Type.</li>
+                                <li>Default: <b>ALL</b></li>
+                            </ul>
+                        </entry>
+                    </row>
+                    <row>
+                        <entry>Encounter Status</entry>
+                        <entry>
+                            <ul id="ul_c3b_snh_prb">
+                                <li>This filter displays the list of available Encounter
+                                    Statuses.</li>
+                                <li>User can select multiple Encounter Statuses.</li>
+                                <li>Users can search the Encounter Status.</li>
+                                <li><b>Default: ALL</b></li>
+                            </ul>
+                        </entry>
+                    </row>
+                    <row>
+                        <entry>Admit Service</entry>
+                        <entry>
+                            <ul id="ul_g3q_tnh_prb">
+                                <li>This filter displays the list of available Admit Service.</li>
+                                <li>User can select multiple admit service.</li>
+                                <li>Users can search the Admit Service.</li>
+                                <li>Default: <b>ALL </b></li>
+                            </ul>
+                        </entry>
+                    </row>
+                </tbody>
+            </tgroup>
+        </table>
+        <table frame="all" rowsep="1" colsep="1" id="table_mwj_vrq_t4b">
+            <title>Footnotes</title>
+            <tgroup cols="2">
+                <colspec colname="c1" colnum="1" colwidth="1*"/>
+                <colspec colname="c2" colnum="2" colwidth="1*"/>
+                <thead>
+                    <row>
+                        <entry>Label</entry>
+                        <entry>Text on hover</entry>
+                    </row>
+                </thead>
+                <tbody>
+                    <row>
+                        <entry>Encounter Clarification Rate </entry>
+                        <entry>
+                            <p>(Count of reviewed encounters with at least one clarification with
+                                the status other than REMOVED or RETRACTED sent in the selected
+                                activity date range/ Count of Initial Reviews performed in the
+                                selected activity date range) X 100. E.g. 33%.</p>
+                        </entry>
+                    </row>
+                    <row>
+                        <entry>Clarification Response Rate</entry>
+                        <entry>(Count of clarifications with at least one instance responded in the
+                            selected activity date range/Count of clarification with at least one
+                            instance sent in the selected activity date range) x 100. E.g.
+                            80%</entry>
+                    </row>
+                    <row>
+                        <entry>Clarification Agreed Rate</entry>
+                        <entry>(Count of Clarifications with at least one agreed response in the
+                            selected activity date range /Count of clarifications with at least one
+                            instance responded in the selected activity date range) x 100. E.g.
+                            90%</entry>
+                    </row>
+                    <row>
+                        <entry>Clarification Alternative Specificity Diagnosis Rate</entry>
+                        <entry>(Count of clarifications with at least one response as Alternative
+                            Specificity Diagnosis in the last 48 hrs / Count of clarifications with
+                            at least one instance responded in the last 48 Hrs)x100. E.g.
+                            40%.</entry>
+                    </row>
+                    <row>
+                        <entry>Clarification Other Explanation Rate</entry>
+                        <entry>(Count of clarifications with at least one response as Other
+                            Explanation in the last 48 hrs / count of clarifications with at least
+                            one instance responded in the last 48 Hrs)x100. E.g. 37%.</entry>
+                    </row>
+                    <row>
+                        <entry>Clarification Agreed Rate (Agreed &amp; Alt DX)</entry>
+                        <entry>(Count of clarifications with at least one response as Agreed or
+                            Alternative Diagnosis in the last 48 hrs / count of clarifications with
+                            at least one instance responded in the last 48 Hrs)x100. E.g.
+                            90%.</entry>
+                    </row>
+                    <row>
+                        <entry>Clarification Agreed Rate (Agreed, Other Exp, Alt DX)</entry>
+                        <entry>(Count of clarifications with at least one response as Agreed or
+                            Alternative Diagnosis or Other Explanation in the last 48 hrs / count of
+                            clarifications with at least one instance responded in the last 48
+                            hrs)x100. E.g. 81%.</entry>
+                    </row>
+                    <row>
+                        <entry>Financial Impact Clarifications</entry>
+                        <entry>Financial Impact Clarifications: Clarifications with standard or
+                            custom ‘Primary Type at Reconciliation’ defined as ‘Financial’ in the
+                            admin configuration.</entry>
+                    </row>
+                    <row>
+                        <entry>Financial Impact Clarification Rate</entry>
+                        <entry>
+                            <p>(Count of reviewed encounters with at least one Financial Impact
+                                clarification (excludes REMOVED or RETRACTED) sent in the selected
+                                activity date range/Count of encounters with an initial review date
+                                in the selected activity date range) x 100. E.g. 56%.</p>
+                        </entry>
+                    </row>
+                    <row>
+                        <entry>% Financial Impact Clarification</entry>
+                        <entry>(Count of Financial Impact clarification with at least one instance
+                            in the selected activity date range/Count of clarifications with at
+                            least one instance in the selected activity date range) x 100. E.g.
+                            75%.</entry>
+                    </row>
+                    <row>
+                        <entry>Financial Impact Clarification Response Rate</entry>
+                        <entry>Count of Financial Impact clarifications with at least one instance
+                            responded in the selected activity date range/Count of Financial Impact
+                            clarifications with at least one instance sent in the selected activity
+                            date range) x 100. E.g. 75%.</entry>
+                    </row>
+                    <row>
+                        <entry>Financial Impact Clarification Agreed Rate</entry>
+                        <entry>(Count of Financial Impact Clarifications agreed in the selected
+                            activity date range/ Count of Financial Impact clarifications with at
+                            least one instance responded in the selected activity date range) x 100.
+                            E.g. 90%.</entry>
+                    </row>
+                    <row>
+                        <entry>Quality Clarifications</entry>
+                        <entry>Quality Clarifications: Clarifications with standard or custom
+                            ‘Primary Type at Reconciliation’ defined as ‘Quality’ in the admin
+                            configuration.</entry>
+                    </row>
+                    <row>
+                        <entry>Quality Clarification Rate</entry>
+                        <entry>(Count of reviewed encounters with at least one Quality Impact
+                            clarification (excludes REMOVED or RETRACTED) sent in the selected
+                            activity date range/Count of encounters with an initial review date in
+                            the selected activity date range) x 100. E.g. 56%.</entry>
+                    </row>
+                    <row>
+                        <entry>% Quality Clarification</entry>
+                        <entry>(Count of Quality Impact clarification with at least one instance in
+                            the selected activity date range/Count of clarifications with at least
+                            one instance in the selected activity date range) x 100. E.g.
+                            44%.</entry>
+                    </row>
+                    <row>
+                        <entry>Quality Clarification Response Rate</entry>
+                        <entry>(Count of Quality Impact clarifications with at least one instance
+                            responded in the selected activity date range/Count of Quality Impact
+                            clarifications with at least one instance sent in the selected activity
+                            date range) x 100. E.g. 88%.</entry>
+                    </row>
+                    <row>
+                        <entry>Quality Clarification Agreed Rate</entry>
+                        <entry>(Count of Quality Impact Clarifications agreed in the selected
+                            activity date range/Count of Quality Impact clarifications with at least
+                            one instance responded in the selected activity date range) x 100. E.g.
+                            100%.</entry>
+                    </row>
+                    <row>
+                        <entry>Both Impact Clarifications</entry>
+                        <entry>Both Impact Clarifications: Clarifications with standard or custom
+                            ‘Primary Type at Reconciliation’ defined as 'Financial' and ‘Quality’ in
+                            the admin configuration.</entry>
+                    </row>
+                    <row>
+                        <entry>% Both Impact Clarification</entry>
+                        <entry>(Count of Both Impact clarification with at least one instance in the
+                            selected activity date range/Count of clarifications with at least one
+                            instance in the selected activity date range) x 100. E.g. 31%.</entry>
+                    </row>
+                    <row>
+                        <entry>Both Impact Clarification Response Rate</entry>
+                        <entry>(Count of Both Impact clarifications with at least one instance
+                            responded in the selected activity date range/Count of Both Impact
+                            clarifications with at least one instance sent in the selected activity
+                            date range) x 100. E.g. 91%.</entry>
+                    </row>
+                    <row>
+                        <entry>Both Impact Clarification Agreed Rate</entry>
+                        <entry>(Count of Both Impact Clarifications agreed in the selected activity
+                            date range/Count of Both Impact clarifications with at least one
+                            instance responded in the selected activity date range) x 100. E.g.
+                            95%.</entry>
+                    </row>
+                    <row>
+                        <entry>SEV Clarifications</entry>
+                        <entry>SEV Clarifications: Clarifications with ‘Primary Type at
+                            Reconciliation’ as SEV.</entry>
+                    </row>
+                    <row>
+                        <entry>SEV Clarification Rate</entry>
+                        <entry>(Count of reviewed encounters with at least one SEV Impact
+                            clarification (excludes REMOVED or RETRACTED) sent in the selected
+                            activity date range/Count of encounters with an initial review date in
+                            the selected activity date range) x 100. E.g. 31%.</entry>
+                    </row>
+                    <row>
+                        <entry>% SEV Clarification</entry>
+                        <entry>(Count of SEV Impact clarification with at least one instance in the
+                            selected activity date range/Count of clarifications with at least one
+                            instance in the selected activity date range) x 100. E.g. 21%.</entry>
+                    </row>
+                    <row>
+                        <entry>SEV Clarification Response Rate</entry>
+                        <entry>(Count of SEV Impact clarifications with at least one instance
+                            responded in the selected activity date range/Count of SEV Impact
+                            clarifications with at least one instance sent in the selected activity
+                            date range) x 100. E.g. 70%.</entry>
+                    </row>
+                    <row>
+                        <entry>SEV Clarification Agreed Rate</entry>
+                        <entry>(Count of SEV Impact Clarifications agreed in the selected activity
+                            date range /Count of SEV Impact clarifications with at least one
+                            instance responded in the selected activity date range) x 100. E.g.
+                            98%.</entry>
+                    </row>
+                </tbody>
+            </tgroup>
+        </table>
+    </conbody>
+</concept>
+<?oxy_options track_changes="on"?>

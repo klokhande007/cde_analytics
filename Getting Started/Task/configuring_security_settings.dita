@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="task_szl_tn3_3bb">
+    <title>Configuring Security Settings</title>
+    <shortdesc></shortdesc>
+    <taskbody>
+        <context>
+            <p>These settings apply only to Nuance CDE, and do not affect other Internet or Intranet
+                applications you use from your browser. </p>
+        </context>
+        <steps>
+            <step>
+                <cmd>Take note of the location of the Nuance CDE production server (and test server,
+                    if applicable).</cmd>
+                <stepresult>You can find the name of the location by opening the application and
+                    viewing the URL. The name appears after https:// and is followed by a
+                    colon.</stepresult>
+            </step>
+            <step>
+                <cmd>In the Internet Explorer browser window, select
+                        <uicontrol>Tools</uicontrol>\<uicontrol>Internet Options</uicontrol>.</cmd>
+            </step>
+            <step>
+                <cmd>In the Internet Options window, Click the <uicontrol>Security</uicontrol>
+                    tab.</cmd>
+                <stepresult>
+                    <fig id="fig_ztg_wmx_kbb">
+                        <title>Security Tab- Trusted Sites Settings</title>
+                        <image href="../Image/Security%20tab%20trusted%20sites%20settings.jpg"
+                            id="image_kgv_cnx_kbb" placement="break" align="center"/>
+                    </fig>
+                </stepresult>
+            </step>
+            <step>
+                <cmd>Click the <uicontrol>Trusted Sites</uicontrol> symbol and then click the
+                        <uicontrol>Sites</uicontrol> button</cmd>
+            </step>
+            <step>
+                <cmd>In the <uicontrol>Trusted Sites</uicontrol> window, do the following:</cmd>
+                <substeps id="substeps_rxs_zrl_5cb">
+                    <substep>
+                        <cmd>In the edit box located at top of the window, type
+                                <userinput>https://&lt;application URL></userinput> and then click
+                            the <uicontrol>Add</uicontrol> button. The name appears in the Websites
+                            list.</cmd>
+                        <info>
+                            <fig id="fig_yn4_1pf_nbb">
+                                <title>Trusted Sites Window</title>
+                                <image placement="break"
+                                    href="../Image/Trusted%20Sites%20window.jpg" align="center"
+                                    id="image_zn4_1pf_nbb"/>
+                            </fig>
+                        </info>
+                    </substep>
+                    <substep>
+                        <cmd>Uncheck the <uicontrol>Require server verification (https:) for all
+                                sites in this zone</uicontrol> check box.</cmd>
+                    </substep>
+                </substeps>
+                <info>
+                    <note>Add the following URLs to the trusted site list:<ul id="ul_xn1_13f_5cb">
+                            <li><xref href="https://app.powerbi.com/" format="html" scope="external"
+                                />: used for accessing the CDE Analytics</li>
+                            <li><xref href="https://dc.services.visualstudio.com/" format="html"
+                                    scope="external"/>: used for accessing the application
+                                insight</li>
+                            <li><xref href="https://az416426.vo.msecnd.net" format="html"
+                                    scope="external"/>: used for accessing the CDE Analytics</li>
+                            <li><xref href="https://*.analysis.windows.net/" format="html"
+                                    scope="external"/>: used for accessing the CDE Analytics</li>
+                            <li><xref href="https://nuancehdp.auth0.com" format="html"
+                                    scope="external"/>: used for the central authentication</li>
+                        </ul></note>
+                </info>
+            </step>
+            <step>
+                <cmd>Click <uicontrol>OK</uicontrol> or Cancel.</cmd>
+            </step>
+            <step>
+                <cmd>From the <uicontrol>Security</uicontrol> tab with the <uicontrol>Trusted
+                        Sites</uicontrol> symbol selected, click the <uicontrol>Custom
+                        Level</uicontrol> button.</cmd>
+                <stepresult>The Security Settings - Trusted Sites Zone window is displayed.<fig
+                        id="fig_tgj_34x_kbb">
+                        <title>Security Settings - Trusted Sites Zone</title>
+                        <image id="image_dkq_j4x_kbb" align="center" placement="break"
+                            href="../Image/Security%20Settings%20Trusted%20sites%20zone.jpg"
+                            height="450"/>
+                    </fig></stepresult>
+            </step>
+            <step>
+                <cmd>From the <uicontrol>Settings</uicontrol> section, select
+                        <uicontrol>Enable</uicontrol> for <uicontrol>Font
+                    download</uicontrol>.</cmd>
+                <info>
+                    <fig id="fig_e2s_nm1_xdb">
+                        <title>Security Settings Font Download</title>
+                        <image placement="break"
+                            href="../Image/Security%20Settings%20Font%20Download.gif" align="center"
+                            id="image_f2s_nm1_xdb"/>
+                    </fig>
+                </info>
+            </step>
+            <step>
+                <cmd>Click <uicontrol>OK</uicontrol> to return to the Internet Options window.</cmd>
+            </step>
+        </steps>
+    </taskbody>
+</task>

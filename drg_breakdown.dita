@@ -1,0 +1,522 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="drg_breakdown">
+    <title>DRG Breakdown</title>
+    <shortdesc></shortdesc>
+    <conbody>
+        <p><b>Overview</b>: A DRG Breakdown report helps a CDI Director to analyze top volume DRGs
+            (MS-DRGs and APR DRGs) and target areas for focused attention and financial
+            improvement.</p>
+        <p>The report provides answers to the following questions:<ul id="ul_tl2_l4l_f4b">
+                <li>What are the top MS-DRGs and top APR DRGs by encounter volume for a particular
+                    month?</li>
+                <li>How many top DRGs (MS-DRG /APR) are medical?</li>
+                <li>How many top DRGs (MS-DRG/APR) are surgical?</li>
+                <li>What is the MDC category associated with the top DRGs?</li>
+                <li>Which DRG categories should be targeted to help improve the financial
+                    health?</li>
+            </ul></p>
+        <p><b>Navigation</b>: On the Analytics home page left side panel, navigate to <menucascade>
+                <uicontrol>CDE One</uicontrol>
+                <uicontrol>Executive Summary</uicontrol>
+                <uicontrol>DRG Breakdown</uicontrol>
+            </menucascade>. </p>
+        <p>DRG Breakdown displays the following:</p>
+        <p>
+            <ul id="ul_skz_lhq_f4b">
+                <li>KPI Card: Total Reconciled</li>
+                <li>DRGs by Volume Tabular Chart</li>
+            </ul>
+        </p>
+        <p>On the top panel, you can select desired values for the slicers (refer <xref
+                href="#drg_breakdown/table_qnn_w2n_g4b" format="dita"/>) and the corresponding data
+            gets filtered in the charts and table.</p>
+        <p>For filters all pages, refer <xref href="#drg_breakdown/table_dq1_ffn_g4b" format="dita"
+                >Filters on all Pages</xref>.</p>
+        <p>For Footnotes, refer <xref href="#drg_breakdown/table_smy_2nz_t4b" format="dita"
+                base="#drg_breakdown/table_smy_2nz_t4b"/>.</p>
+        <p><b>Default Display</b>: By default, the DRG breakdown report displays data for Reconciled
+            Inpatient encounters for the CMS (Grouper Type) for last one calendar month based on
+            Discharge Date. </p>
+        <p><b>DRG Breakdown</b></p>
+        <p>
+            <fig id="fig_am2_rm2_f4b">
+                <title>Sample Report</title>
+                <image href="Images/DRG%20Breakdown.gif" width="600" id="image_bm2_rm2_f4b"/>
+            </fig>
+        </p>
+        <p><b>DRG Breakdown - KPI Card</b>
+        </p>
+        <p>
+            <fig id="fig_lvm_rxs_f4b">
+                <title>KPI Card</title>
+                <image href="Images/DRG%20Breakdown%20KPI%20card.gif" id="image_fft_sxs_f4b"/>
+            </fig>
+        </p>
+        <table frame="all" rowsep="1" colsep="1" id="table_dm2_rm2_f4b">
+            <title>KPI Card</title>
+            <tgroup cols="2">
+                <colspec colname="c1" colnum="1" colwidth="1*"/>
+                <colspec colname="c2" colnum="2" colwidth="1*"/>
+                <thead>
+                    <row>
+                        <entry><b>KPI Card</b></entry>
+                        <entry>Description</entry>
+                    </row>
+                </thead>
+                <tbody>
+                    <row>
+                        <entry>Total Reconciled</entry>
+                        <entry>
+                            <p>The total count of reconciled encounters for the selected period.</p>
+                            <p>Total Count of Reconciled Encounters: The count of encounters with
+                                Reconciled Impact, Reconciled No Impact, or Auto Reconcile
+                                status.</p>
+                        </entry>
+                    </row>
+                </tbody>
+            </tgroup>
+        </table>
+        <p><b>DRG Breakdown - DRGs by Volume Tabular Chart</b>
+        </p>
+        <p><fig id="fig_oy5_yxs_f4b">
+                <title>DRGs by Volume Tabular Chart</title>
+                <image href="Images/DRGs%20by%20Volume.gif" id="image_qyg_cys_f4b" width="800"/>
+            </fig><b> Info Icon</b>(text on hover): Displays the data for Reconciled-Impact,
+            Reconciled-No Impact, and Auto-Reconciled encounters. <table frame="all" rowsep="1"
+                colsep="1" id="table_cm2_rm2_f4b">
+                <title>Chart columns and description</title>
+                <tgroup cols="5">
+                    <colspec colname="c1" colnum="1" colwidth="1.14*"/>
+                    <colspec colname="c2" colnum="2" colwidth="1.84*"/>
+                    <colspec colname="newCol4" colnum="3" colwidth="1.47*"/>
+                    <colspec colname="newCol5" colnum="4" colwidth="1*"/>
+                    <colspec colname="newCol6" colnum="5" colwidth="1.26*"/>
+                    <thead>
+                        <row>
+                            <entry>Column Name</entry>
+                            <entry>Description</entry>
+                            <entry>Formula/Calculation</entry>
+                            <entry>Exclusion Criteria (if any)</entry>
+                            <entry>Tooltip</entry>
+                        </row>
+                    </thead>
+                    <tbody>
+                        <row>
+                            <entry><b>Grouper Type</b></entry>
+                            <entry>
+                                <p>The available<b> Grouper Type</b> in the format CMS, APR, IPF,
+                                    LTCH, and so on. </p>
+                                <p><b>CMS selected by default</b><b>Example</b>: CMS.</p>
+                            </entry>
+                            <entry/>
+                            <entry/>
+                            <entry/>
+                        </row>
+                        <row>
+                            <entry><b>DRG</b></entry>
+                            <entry><p>The code and description of the Final DRG
+                                    code.</p><b>Example</b>: 977 - HIV W OR W/O OTHER RELATED
+                                CONDITION</entry>
+                            <entry/>
+                            <entry/>
+                            <entry/>
+                        </row>
+                        <row>
+                            <entry><b>DRG Type</b></entry>
+                            <entry><p>The type (Medical, Surgical, Unknown) associated with the
+                                    Final DRG Code.</p><p><b>Values</b>:</p><p>S- Surgical</p><p>M-
+                                    Medical</p><p>U- Unknown</p><b>Example</b>:M</entry>
+                            <entry/>
+                            <entry/>
+                            <entry/>
+                        </row>
+                        <row>
+                            <entry><b>MDC</b></entry>
+                            <entry><p>The code and description of the MDC category associated with
+                                    the Final DRG code.</p><b>Example</b>: 25 - HUMAN
+                                IMMUNODEFICIENCY VIRUS INFECTIONS</entry>
+                            <entry/>
+                            <entry/>
+                            <entry/>
+                        </row>
+                        <row>
+                            <entry><b>#Encounters</b></entry>
+                            <entry>The count of reconciled encounters with that Final DRG
+                                    code.<b>Example</b>:3</entry>
+                            <entry/>
+                            <entry/>
+                            <entry/>
+                        </row>
+                        <row>
+                            <entry><b>% Encounters</b></entry>
+                            <entry>The percentage of reconciled encounters for the specific Final
+                                DRG code.<p><b>Formula</b>: % Encounters= (The count of reconciled
+                                    encounters with that Final DRG code/ The total count of
+                                    encounters with all the Final DRGs) x 100.</p><b>Example</b>:
+                                33.33%</entry>
+                            <entry/>
+                            <entry/>
+                            <entry/>
+                        </row>
+                        <row>
+                            <entry><b>Relative WT</b></entry>
+                            <entry><p>The average relative weight for each final
+                                        DRG.</p><p><b>Formula</b>: Relative Weight for a DRG =
+                                    Average CMI (Total Relative Weight for the DRG / Number of
+                                    Reconciled cases for that DRG)</p><b>Example</b>: 0.7527</entry>
+                            <entry>DRG 869 has 2 different weights for time frame selected. 3
+                                encounters with wt of 0.7425 and 2 encounters with wt of 0.7679.
+                                    <p>Total Relative WT is 3.7633 and Total Volume is 5.</p><p>
+                                    Relative WT for DRG 869 = 3.7633 /5 = 0.7527.</p></entry>
+                            <entry/>
+                            <entry/>
+                        </row>
+                        <row>
+                            <entry><b>#Financial Impact Clarifications</b>
+                            </entry>
+                            <entry>This column displays the count of Financial Impact Clarifications
+                                sent for the reviewed encounters.<note>
+                                    <ul id="ul_qzy_yzr_kpb">
+                                        <li>Clarification with a standard or custom ‘Primary Type at
+                                            Reconciliation’ defined as ‘Financial’ in the admin
+                                            configuration is a Financial Impact Clarification.</li>
+                                        <li>Clarifications with Status 'DELETED' or 'RETRACTED' are
+                                            excluded from the count.</li>
+                                        <li>Clarifications for "Review Not Needed" encounter status
+                                            should not be considered for this metric calculation.
+                                        </li>
+                                    </ul>
+                                </note></entry>
+                            <entry>Count of sent Financial Impact Clarifications. </entry>
+                            <entry/>
+                            <entry/>
+                        </row>
+                        <row>
+                            <entry><b>Clarification Rate</b></entry>
+                            <entry>Displays the Clarification Rate for each DRG category.<note>
+                                    <ul id="ul_azy_jql_kqb">
+                                        <li>Clarification for "Review Not Needed" encounter status
+                                            is not applicable for this metric calculation.</li>
+                                        <li>#Encounters: The count of Encounters Reviewed (Initial
+                                            Reviews).</li>
+                                    </ul>
+                                </note></entry>
+                            <entry>
+                                <p>Clarification Rate = The count of reviewed encounters with
+                                    atleast one clarification with the status other than DELETED or
+                                    RETRACTED / #Encounters x 100</p>
+                            </entry>
+                            <entry/>
+                            <entry/>
+                        </row>
+                        <row>
+                            <entry><b>Encounters with Financial Impact Clarifications</b></entry>
+                            <entry>Displays the count of encounters with financial impact
+                                clarifications for each DRG Category.<note>
+                                    <ul id="ul_b2c_zl4_zqb">
+                                        <li>Clarification with a standard or custom ‘Primary Type at
+                                            Reconciliation’ defined as ‘Financial or BOTH’ in the
+                                            admin configuration is a Financial Impact
+                                            Clarification.</li>
+                                        <li> Clarifications with Status 'DELETED' or 'RETRACTED' are
+                                            excluded from the count. </li>
+                                        <li>Encounters with "Review Not Needed" encounter status are
+                                            excluded from this metric calculations.</li>
+                                    </ul>
+                                </note></entry>
+                            <entry>The count of reviewed encounters with at least one Financial
+                                Impact clarification with the status other than DELETED or
+                                RETRACTED.</entry>
+                            <entry/>
+                            <entry/>
+                        </row>
+                        <row>
+                            <entry><b>Financial Impact Clarification Rate</b></entry>
+                            <entry>Displays the Financial Impact Clarification Rate for each DRG category.<p>
+                                    <note>
+                                        <ul id="ul_tgk_nql_kqb">
+                                            <li>Data for Review Not Needed encounter is excluded
+                                                from the metrics.</li>
+                                            <li>#Encounters: The count of Encounters Reviewed
+                                                (Initial Reviews).</li>
+                                        </ul>
+                                    </note>
+                                </p></entry>
+                            <entry>Financial Impact Clarification Rate = The count of reviewed
+                                encounters with at least one Financial Impact Clarification with the
+                                status other than DELETED or RETRACTED/ #Encounters X100.</entry>
+                            <entry/>
+                            <entry/>
+                        </row>
+                        <row>
+                            <entry><b>Total</b></entry>
+                            <entry><b>Total #Encounters</b>: Total count of reconciled encounters
+                                for the selected period. <p><b>Total % of Encounters</b>: The
+                                    Overall percentage of the reconciled encounters for the selected
+                                    period. <note>This always displays 100%.</note></p><p><b>Total
+                                        Relative WT</b>: The Overall Relative WT for the selected
+                                    time period.</p><p> Overall Relative Weight = (Total Relative
+                                    Weight / Total count of Reconciled
+                                Encounters)</p><b>Example</b>: <b>Total #Encounters</b>=9<p><b>Total
+                                        % of Encounters</b>=100.00%</p><p><b>Total Relative
+                                    WT</b>=1.8935</p></entry>
+                            <entry/>
+                            <entry/>
+                            <entry/>
+                        </row>
+                    </tbody>
+                </tgroup>
+            </table></p>
+        <p>
+            <table frame="all" rowsep="1" colsep="1" id="table_qnn_w2n_g4b">
+                <title>Report Slicers </title>
+                <tgroup cols="2">
+                    <colspec colname="c1" colnum="1" colwidth="1*"/>
+                    <colspec colname="c2" colnum="2" colwidth="1*"/>
+                    <thead>
+                        <row>
+                            <entry>Slicer</entry>
+                            <entry>Description</entry>
+                        </row>
+                    </thead>
+                    <tbody>
+                        <row>
+                            <entry>Discharge Date</entry>
+                            <entry>
+                                <ul id="ul_uzh_y2n_g4b">
+                                    <li>Display the discharge date range. </li>
+                                    <li>You can select date from the lookup provided.</li>
+                                    <li> Example: 7/1/2020 - 7/31/2020</li>
+                                    <li><b>Default</b>: Last 3 calendar months date range selected
+                                        by default.</li>
+                                </ul>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>Reset</entry>
+                            <entry>
+                                <ul id="ul_ugp_wf1_54b">
+                                    <li>With the Reset button, you can reset the discharge date
+                                        range.</li>
+                                    <li><b>Tooltip</b>: Use "Ctrl + Click" to reset the Discharge
+                                        Date.</li>
+                                </ul>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>Facility</entry>
+                            <entry>
+                                <ul id="ul_vzp_z2n_g4b">
+                                    <li>Displays both active and inactive facilities in alphabetical
+                                        order that you have access to.</li>
+                                    <li>You can select multiple facilities.</li>
+                                    <li>You can search the facility by Facility ID or
+                                        Description.</li>
+                                    <li><b>Format</b>: Facility Description (Facility ID)</li>
+                                    <li><b>Default</b>: ALL</li>
+                                </ul>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>Payer</entry>
+                            <entry>
+                                <ul id="ul_ntb_cfn_g4b">
+                                    <li>Displays both active and inactive payers in alphabetical
+                                        order associated with the facilities you have access
+                                        to.</li>
+                                    <li>You can select multiple payers.</li>
+                                    <li>"Unassigned Payer" displays data for the encounters that do
+                                        not have a payer assigned.</li>
+                                    <li>You can search the Payer by Payer ID or Description.</li>
+                                    <li><b>Format</b>: Payer Description (Payer ID)</li>
+                                    <li><b>Default</b>: ALL</li>
+                                </ul>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>Grouper Type</entry>
+                            <entry><p>Displays a list of available <b>Grouper Type</b> - - CMS, APR,
+                                    LTCH, IPF, TRICARE, etc.</p><p><b>Default</b>: CMS is selected
+                                </p>You can select single or multiple Grouper Type.<p>You can search
+                                    the required Grouper Type.</p></entry>
+                        </row>
+                        <row>
+                            <entry>DRG Type</entry>
+                            <entry><p>Displays the list of DRG type (Medical, Surgical, Unknown)
+                                    associated with the Final DRG Code.</p><p>Values:</p><ul
+                                    id="ul_izk_wmz_t4b">
+                                    <li>S</li>
+                                    <li>M</li>
+                                    <li>U</li>
+                                </ul><p><b>Default</b>: ALL</p>You can select single or all DRG
+                                Type.</entry>
+                        </row>
+                    </tbody>
+                </tgroup>
+            </table>
+        </p>
+        <p>
+            <table frame="all" rowsep="1" colsep="1" id="table_dq1_ffn_g4b">
+                <title>Filters on all Pages</title>
+                <tgroup cols="2">
+                    <colspec colname="c1" colnum="1" colwidth="1*"/>
+                    <colspec colname="c2" colnum="2" colwidth="1*"/>
+                    <thead>
+                        <row>
+                            <entry>Filter</entry>
+                            <entry>Description</entry>
+                        </row>
+                    </thead>
+                    <tbody>
+                        <row>
+                            <entry>Patient Type</entry>
+                            <entry>
+                                <ul id="ul_ns1_3fn_g4b">
+                                    <li>Displays the available patient types. <b>Example</b>:
+                                        Inpatient, Outpatient.</li>
+                                    <li><b>Default</b>: Inpatient</li>
+                                </ul>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>Unit</entry>
+                            <entry>
+                                <ul id="ul_kdd_jfn_g4b">
+                                    <li>Displays the list of available units.</li>
+                                    <li>You can select multiple Units.</li>
+                                    <li>You can search the Unit.</li>
+                                    <li><b>Default</b>: ALL</li>
+                                </ul>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>Admit Service</entry>
+                            <entry>
+                                <ul id="ul_x2g_kfn_g4b">
+                                    <li>Displays the list of available admit service.</li>
+                                    <li>You can select multiple Units.</li>
+                                    <li>You can search the Admit Service.</li>
+                                    <li><b>Default</b>: ALL</li>
+                                </ul>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>Visit Type</entry>
+                            <entry>
+                                <ul id="ul_obm_lgm_r4b">
+                                    <li>Displays the available patient types.<b>Example</b>: ED, IP,
+                                        etc.</li>
+                                    <li>You can select multiple Visit Type.</li>
+                                    <li>You can search the Visit Type.</li>
+                                    <li><b>Default</b>: ALL</li>
+                                </ul>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>DRG Speciality</entry>
+                            <entry>
+                                <ul id="ul_wxw_tql_kqb">
+                                    <li>Displays the available DRG Specialties. <b>Example</b>:
+                                        Transplant, Surgery, Neurosurgery.</li>
+                                    <li>You can select multiple  specialties..</li>
+                                    <li>You can search the the DRG Specialty.</li>
+                                    <li><b>Default</b>: ALL</li>
+                                </ul>
+                            </entry>
+                        </row>
+                    </tbody>
+                </tgroup>
+            </table>
+        </p>
+        <p>
+            <table frame="all" rowsep="1" colsep="1" id="table_smy_2nz_t4b">
+                <title>Footnotes</title>
+                <tgroup cols="2">
+                    <colspec colname="c1" colnum="1" colwidth="1*"/>
+                    <colspec colname="c2" colnum="2" colwidth="1*"/>
+                    <thead>
+                        <row>
+                            <entry>Formulas</entry>
+                            <entry>Text on hover</entry>
+                        </row>
+                    </thead>
+                    <tbody>
+                        <row>
+                            <entry>Total Reconciled</entry>
+                            <entry>The count of encounters with Reconciled Impact, Reconciled No
+                                Impact, or Auto Reconciled status. E.g. 1170</entry>
+                        </row>
+                        <row>
+                            <entry>#Encounters</entry>
+                            <entry>
+                                <p>For each Final DRG, the count of encounters reconciled with that
+                                    DRG.</p>
+                                <p>Total ‘# Encounters’ displays the count of total reconciled cases
+                                    for the reporting period. E.g. 1170</p>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>%Encounter</entry>
+                            <entry>For each Final DRG, the percentage of encounters reconciled with
+                                that DRG ; % Encounters= The count of encounters reconciled with
+                                that Final DRG code/ The total count of reconciled encounters with
+                                all the Final DRGs x 100.</entry>
+                        </row>
+                        <row>
+                            <entry>#Clarification Rate: Clarification Rate</entry>
+                            <entry>
+                                <p>Relative WT: The average relative weight for each Final Coded
+                                    DRG. </p>
+                                <p>Relative Weight for a Final Coded DRG = Average CMI (Total
+                                    Relative Weight for the DRG / The count of encounters reconciled
+                                    with that DRG) E.g. 1.3112</p>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>Relative WT</entry>
+                            <entry>
+                                <p>Relative WT: The average relative weight for each Final Coded
+                                    DRG. </p>
+                                <p>Relative Weight for a Final Coded DRG = Average CMI (Total
+                                    Relative Weight for the DRG / The count of encounters reconciled
+                                    with that DRG) E.g. 1.3112</p>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>#Financial Impact Clarifications</entry>
+                            <entry>#Financial Impact Clarifications= The count of Financial Impact
+                                clarifications with the status other than REMOVED or RETRACTED sent
+                                for the reviewed encounters, Primary Type at Reconciliation
+                                (standard or custom) is considered.</entry>
+                        </row>
+                        <row>
+                            <entry>Clarification Rate</entry>
+                            <entry>
+                                <p>Clarification Rate= (The count of reviewed encounters with at
+                                    least one clarification with the status other than REMOVED or
+                                    RETRACTED/ #Encounters) x100. E.g. 33%</p>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>Encounters with Financial Impact Clarifications</entry>
+                            <entry>The count of reviewed encounters with at least one Financial
+                                Impact clarification with the status other than REMOVED or
+                                RETRACTED. Primary Type at Reconciliation (standard or custom) is
+                                considered.</entry>
+                        </row>
+                        <row>
+                            <entry>Financial Impact Clarification Rate</entry>
+                            <entry>
+                                <p>Financial Impact Clarification Rate= (The count of reviewed
+                                    encounters with at least one Financial Impact Clarification with
+                                    the status other than REMOVED or RETRACTED/#Encounters ) x 100).
+                                    E.g. 30% </p>
+                            </entry>
+                        </row>
+                    </tbody>
+                </tgroup>
+            </table>
+        </p>
+    </conbody>
+</concept>

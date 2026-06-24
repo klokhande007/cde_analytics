@@ -1,0 +1,547 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="cds_activity_details">
+    <title>Activity Details - Last 48 Hours</title>
+    <shortdesc></shortdesc>
+    <conbody>
+        <p><b>Overview</b>: This report displays the activity performed by the CDS in the last 48
+            hours including today's date. This report displays activity data only for CDS, CDS
+            Manager or Nuance admin.<ul id="ul_i2s_pqd_4rb">
+                <li>For example, when you open the report on 9/12/2021 at 4 PM EST, the report
+                    displays the activities performed in the last 48 hours - 9/10/2021 4PM -
+                    9/12/2021 4PM.</li>
+                <li>No date slicer is displayed and you cannot modify the date range</li>
+            </ul></p>
+        <p>A real-time ‘Activity Details’ report is needed for the following:<ul id="ul_gsj_cqd_4rb">
+                <li>A CDS Manager can concurrently view and analyze the details around the
+                    activities performed by the CDSs.</li>
+                <li>A CDS can view and analyze their productivity concurrently.</li>
+            </ul></p>
+        <p>This reports answers the following business questions:<ul id="ul_qqb_byq_t4b">
+                <li>How soon after admission the initial review was performed?</li>
+                <li>What is the average TAT of initial reviews?</li>
+                <li>What is the detail around the reviews?</li>
+                <li>How many total reviews were performed?</li>
+            </ul></p>
+        <p><b>Navigation</b>: On the Analytics home page left side panel, navigate to <menucascade>
+                <uicontrol>CDS General</uicontrol>
+                <uicontrol>CDS Productivity</uicontrol>
+                <uicontrol>Activity Details - Last 48 Hours</uicontrol>
+            </menucascade>.</p>
+        <p>The report displays the following:<ul id="ul_vnq_z3c_mgb">
+                <li> KPI cards: Initial Reviews, Additional Reviews, Total Reviews, Avg. Initial
+                    Review TAT (Hours)</li>
+                <li>Activity Details Tabular Chart</li>
+            </ul></p>
+        <p>On the top panel, you can select desired values for the slicers (refer <xref
+                href="#cds_activity_details/table_iwp_2qf_sgb" format="dita"/>) and the
+            corresponding data gets filtered in charts.</p>
+        <p>For filters on all pages, refer <xref href="#cds_activity_details/table_dq1_ffn_g4b"
+                format="dita"/>.</p>
+        <p>For Footnotes, refer <xref href="#cds_activity_details/table_zjn_dtr_t4b" format="dita"
+            />.</p>
+        <p>Info Icon(Text on hover): Displays the activity performed by the CDS in the last 48
+            hours.</p>
+        <p><b>Activity Details</b></p>
+        <fig id="fig_syf_m1r_t4b">
+            <title>Sample Report</title>
+            <image href="Images/cds_producitivity_activity_48_hours.gif" width="800"
+                id="image_llp_tkv_prb"/>
+            <note id="note_owv_vgs_nzb">This screenshot serves as a representation to understand how
+                values will be presented in the column.</note>
+        </fig>
+        <p><b>Activity Details - KPI Cards</b></p>
+        <fig id="fig_s1n_k4q_t4b">
+            <title>KPI Cards</title>
+            <image href="Images/CDS%20Productivity%20Summary%20Report%20KPI%20cards.gif"
+                id="image_lvv_fqq_t4b" width="500"/>
+        </fig>
+        <p>
+            <table frame="all" rowsep="1" colsep="1" id="table_zgt_1kq_t4b">
+                <title>KPI Cards</title>
+                <tgroup cols="2">
+                    <colspec colname="c1" colnum="1" colwidth="1*"/>
+                    <colspec colname="c2" colnum="2" colwidth="1*"/>
+                    <thead>
+                        <row>
+                            <entry>KPI Card</entry>
+                            <entry>Description</entry>
+                        </row>
+                    </thead>
+                    <tbody>
+                        <row>
+                            <entry>Initial Reviews</entry>
+                            <entry>
+                                <p>This metric displays the count of encounters with an initial
+                                    review date/time in the last 48 hours.</p>
+                                <p><b>Example</b>: For last 48 hours Activity date, this metric
+                                    displays the total count of initial reviews done by the CDS.<note>
+                                        <ul id="ul_rgd_4sd_4rb">
+                                            <li>Initial Review Date/Time falls in the selected
+                                                activity date range, i.e. 48 hours.</li>
+                                            <li>Encounters with "Review Not Needed" encounter status
+                                                are excluded from this metric calculations.</li>
+                                            <li>
+                                                <p><b>Format</b>: 9</p>
+                                            </li>
+                                        </ul>
+                                    </note></p>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>Additional Reviews</entry>
+                            <entry>
+                                <p>This KPI metric displays the count of encounters with an initial
+                                    review date/time in the last 48 hours. <b>Example</b>: For last
+                                    48 hours Activity date, this metric displays the total count of
+                                    additional reviews done by the CDS.<note>
+                                        <ul id="ul_p1f_wsd_4rb">
+                                            <li>Additional Review Date/Time falls in the selected
+                                                activity date range.</li>
+                                            <li>Activity Type 'Post-Discharge Reviews' is not
+                                                considered as an Additional Review by the CDS.</li>
+                                            <li>Additional Reviews for Encounters with "Review Not
+                                                Needed" encounter status are excluded from this
+                                                metric calculations.</li>
+                                            <li>
+                                                <p><b>Format</b>: 15</p>
+                                            </li>
+                                        </ul>
+                                    </note></p>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>Average Initial Review TAT (Hours)</entry>
+                            <entry>This metric displays 'Avg. Initial Review TAT (Hours)' for the
+                                last 48 hours. <p>The number of hours between encounter Admit
+                                    Date/time and the date/time the Working Review was first
+                                    created.</p><p>(Initial Review TAT (hours) for an encounter =
+                                    Initial Review Date/Time- Admit Date/Time)
+                                        hours.</p><p><b>Formula</b>: Avg. Initial Review TAT(Hours)
+                                    = Sum of Initial Review TAT(Hours) of all the reviewed
+                                    encounters / Encounters Reviewed (Initial
+                                    Reviews).</p><note>Encounters with "Review Not Needed" encounter
+                                    status are excluded from this metric
+                                        calculations.</note><p><b>Format</b>: 150</p></entry>
+                        </row>
+                    </tbody>
+                </tgroup>
+            </table>
+        </p>
+        <p><b>Activity Detail - CDS Activity Detail Tabular Chart</b></p>
+        <table frame="all" rowsep="1" colsep="1" id="table_obv_wsg_sgb">
+            <title>CDS Activity Detail Table Column and Description</title>
+            <tgroup cols="3">
+                <colspec colname="c1" colnum="1" colwidth="1*"/>
+                <colspec colname="c2" colnum="2" colwidth="3.08*"/>
+                <colspec colname="newCol3" colnum="3" colwidth="1*"/>
+                <thead>
+                    <row>
+                        <entry>Column</entry>
+                        <entry>Description </entry>
+                        <entry>Formula/Calculation</entry>
+                    </row>
+                </thead>
+                <tbody>
+                    <row>
+                        <entry>Activity CDS</entry>
+                        <entry>Displays the name of the CDS who performed the activity in the
+                            selected Activity Date Range. <b>Format</b>: CDS Name (CDS ID).</entry>
+                        <entry/>
+                    </row>
+                    <row>
+                        <entry>Facility</entry>
+                        <entry>Displays facility assigned to the encounter. <b>Format</b>: Facility
+                            Description.</entry>
+                        <entry/>
+                    </row>
+                    <row>
+                        <entry>Account No</entry>
+                        <entry>Displays the Account Number assigned to the encounter.</entry>
+                        <entry/>
+                    </row>
+                    <row>
+                        <entry>MRN</entry>
+                        <entry>Displays the MRN assigned to the encounter.</entry>
+                        <entry/>
+                    </row>
+                    <row>
+                        <entry>Patient Name</entry>
+                        <entry>Displays the name of the patient associated with the encounter.
+                            Patient name is displayed in the format: Last Name, First Name.</entry>
+                        <entry/>
+                    </row>
+                    <row>
+                        <entry>Admit Date</entry>
+                        <entry>Displays the Admission Date and Time assigned to the encounter in the
+                            facility's timezone. <b>Format</b>: 08/08/2019 12:00:00 AM MST.</entry>
+                        <entry/>
+                    </row>
+                    <row>
+                        <entry>Discharge Date</entry>
+                        <entry>
+                            <p>Displays the Discharge Date and Time assigned to the encounter in the
+                                facility's timezone.</p>
+                            <p><b>Format</b>: 08/08/2019 12:00:00 AM MST.</p>
+                            <p>This column is blank for the encounters that do not have a discharge
+                                date assigned.</p>
+                        </entry>
+                        <entry/>
+                    </row>
+                    <row>
+                        <entry>LOS</entry>
+                        <entry>Displays the Length of Stay of the patient.<note>Same logic as
+                                Encounter Details - YES.</note></entry>
+                        <entry/>
+                    </row>
+                    <row>
+                        <entry>Activity Date</entry>
+                        <entry>
+                            <p>Displays the Activity Date considering facility's timezone.
+                                    <b>Format</b> : 08/08/2019 (MM/DD/YYYY).</p>
+                            <p>Data in the report is sorted by the Activity Date in descending
+                                order.</p>
+                            <note>Time component is not displayed with the date as there can be
+                                multiple activities on the same encounter on the same day.</note>
+                        </entry>
+                        <entry/>
+                    </row>
+                    <row>
+                        <entry>Activity Type</entry>
+                        <entry>Displays the name of the activity(s) performed by the Activity CDS.
+                                    <p><b>Format</b>: Comma Separated</p><p>
+                                <ul id="ul_y2p_4ht_drb">
+                                    <li>Worksheet creation or modification</li>
+                                    <li>Working review creation</li>
+                                    <li>Working review modification</li>
+                                    <li>Clarification creation</li>
+                                    <li>Clarification modification</li>
+                                    <li>Encounter creation or modification</li>
+                                    <li>Encounter Saved</li>
+                                    <li>Encounter status modification</li>
+                                    <li>Note creation or modification</li>
+                                    <li>Possible review creation</li>
+                                    <li>Possible review modification</li>
+                                    <li>Reconciliation assessment creation</li>
+                                    <li>Reconciliation assessment modification</li>
+                                    <li>Tracking Codes Addition or Modification</li>
+                                </ul>
+                            </p><note>Activity Type- Post Discharge Review - is not applicable for
+                                this report.</note><p>Multiple activities performed on the same day
+                                are displayed in the comma-separated format.</p></entry>
+                        <entry/>
+                    </row>
+                    <row>
+                        <entry>Initial Review Date</entry>
+                        <entry>
+                            <p>Displays the date and time when the initial review was performed on
+                                the encounter.</p>
+                            <p><b>Example</b>: 05/24/2020 10:10:00 AM ET</p>
+                            <p>The date must be in the Facility's time-zone. This column is blank
+                                for the encounters that do not have an initial review date.</p>
+                            <p>If the Initial Review Date/time is after the Discharge Date/Time,
+                                Initial Review Date/Time is displayed in the red font.</p>
+                        </entry>
+                        <entry/>
+                    </row>
+                    <row>
+                        <entry>Initial Review CDS</entry>
+                        <entry>Displays the name of the CDS who performed the initial
+                                    review.<p><b>Format</b>: Last Name, First Name MI (CDS
+                                ID).</p><p>This column is blank for the encounters that do not have
+                                a ‘Initial Review Date/Time'.</p></entry>
+                        <entry/>
+                    </row>
+                    <row>
+                        <entry>Initial Review TAT (Hours)</entry>
+                        <entry>
+                            <p>Displays the Initial Review TAT (Hours) for the selected period.</p>
+                        </entry>
+                        <entry>Initial Review TAT (hours) for an encounter = Initial Review
+                            Date/Time - Admit Date/Time (hours).</entry>
+                    </row>
+                    <row>
+                        <entry>Encounter CDS</entry>
+                        <entry>Displays the name of the CDS assigned to the encounter.
+                            <b>Format</b>: CDS Name (CDS ID).</entry>
+                        <entry/>
+                    </row>
+                    <row>
+                        <entry>Encounter Status</entry>
+                        <entry>Displays the Encounter Status assigned to the encounter.<p>Encounters
+                                with the Status 'Review Not Needed' are not displayed by default.
+                                You can select 'Review Not Needed' options from the 'Encounter
+                                Status' filter to analyze the Review Not Needed
+                            encounters.</p></entry>
+                        <entry/>
+                    </row>
+                    <row>
+                        <entry>Rank at Initial Review</entry>
+                        <entry>Displays the rank assigned to the encounter prior to the Initial
+                            Review. <b>Example</b> 1, 2, etc. This column is blank for the
+                            encounters that do not have a ‘Rank at Initial Review' assigned.</entry>
+                        <entry/>
+                    </row>
+                    <row>
+                        <entry>Current Rank</entry>
+                        <entry>Displays the current rank assigned to the encounter. <b>Example</b>
+                            1, 2, etc. This column is blank for the encounters that do not have a
+                            Current Rank assigned.</entry>
+                        <entry/>
+                    </row>
+                    <row>
+                        <entry>W-DRG</entry>
+                        <entry>Displays the 'primary' Working DRG along with the description
+                            displayed on the Review page. <note>This column is blank for the
+                                encounters that do not have a ‘Initial Review
+                            Date/Time'</note></entry>
+                        <entry/>
+                    </row>
+                    <row>
+                        <entry>W-DRG WT</entry>
+                        <entry>This column displays the WT associated with the 'primary' Working DRG
+                            displayed on the Review page. <b>Example</b>: 1.0393.</entry>
+                        <entry/>
+                    </row>
+                    <row>
+                        <entry>P-DRG</entry>
+                        <entry>Displays the 'primary' Possible DRG along with the description
+                            displayed on the Review page.<p>
+                                <note>This column is blank for the encounters that do not have a
+                                    ‘Initial Review Date/Time' and if there is no Possible DRG
+                                    assigned to the encounter.</note>
+                            </p></entry>
+                        <entry/>
+                    </row>
+                    <row>
+                        <entry>P-DRG WT</entry>
+                        <entry> Displays the WT associated with the 'primary' Possible DRG displayed
+                            on the Review page. <b>Example</b>: 1.0393. <note>This column is blank
+                                for the encounters that do not have a ‘Initial Review Date/Time' and
+                                if there is no Possible DRG assigned to the
+                            encounter.</note></entry>
+                        <entry/>
+                    </row>
+                    <row>
+                        <entry>R-DRG</entry>
+                        <entry>Displays both code and description of the Reconciliation Assessment
+                            DRG along with the description displayed on the Reconciliation
+                                    page.<note><b>Example:</b> 872 - SEPTICEMIA OR SEVERE SEPSIS
+                                WITHOUT MV >96 HOURS WITHOUT MAJOR COMPLICATION OR COMORBIDITY
+                                (MCC).</note></entry>
+                        <entry/>
+                    </row>
+                    <row>
+                        <entry>R-DRG WT</entry>
+                        <entry>
+                            <p>This column displays the WT associated with the Reconciliation
+                                Assessment DRG displayed on the Reconciliation page.</p>
+                            <p><b>Example</b>: 1.0393</p>
+                        </entry>
+                        <entry/>
+                    </row>
+                    <row>
+                        <entry>F-DRG</entry>
+                        <entry>Displays both code and description of the Final Coded DRG along with
+                            the description displayed on the Reconciliation page.<p><b>Example</b>:
+                                872 - SEPTICEMIA OR SEVERE SEPSIS WITHOUT MV >96 HOURS WITHOUT MAJOR
+                                COMPLICATION OR COMORBIDITY (MCC).<note>This column is blank for the
+                                    encounters that do not have a ‘Initial Review
+                                Date/Time'.</note></p></entry>
+                        <entry/>
+                    </row>
+                    <row>
+                        <entry>F-DRG WT</entry>
+                        <entry>
+                            <p>This column displays the WT associated with the Final Coded DRG
+                                displayed on the Reconciliation page.</p>
+                            <p><b>Example</b>: 1.0393</p>
+                            <p>This column is blank for the encounters that do not have a ‘Initial
+                                Review Date/Time'.</p>
+                        </entry>
+                        <entry/>
+                    </row>
+                    <row>
+                        <entry>Payer</entry>
+                        <entry>Displays the Payer assigned to the encounter in the format Payer
+                            Description (Payer ID).</entry>
+                        <entry/>
+                    </row>
+                    <row>
+                        <entry>Unit</entry>
+                        <entry>Displays the Unit assigned to the encounter.</entry>
+                        <entry/>
+                    </row>
+                    <row>
+                        <entry>Patient Type</entry>
+                        <entry>Displays the Patient Type assigned to the encounter.</entry>
+                        <entry/>
+                    </row>
+                    <row>
+                        <entry>Visit Type</entry>
+                        <entry>Displays the Visit Type assigned to the encounter.</entry>
+                        <entry/>
+                    </row>
+                </tbody>
+            </tgroup>
+        </table>
+        <table id="table_iwp_2qf_sgb" frame="all">
+            <title>Report slicers</title>
+            <tgroup cols="2">
+                <colspec colname="c1" colnum="1" colwidth="1*" rowsep="1" colsep="1"/>
+                <colspec colname="c2" colnum="2" colwidth="3.6*" colsep="1" rowsep="1"/>
+                <thead>
+                    <row>
+                        <entry>Filter</entry>
+                        <entry>Description</entry>
+                    </row>
+                </thead>
+                <tbody>
+                    <row>
+                        <entry>Facility</entry>
+                        <entry>Displays both active and inactive facilities in alphabetical order
+                            that the report user has access to.<ul id="ul_zmy_jnk_crb">
+                                <li>You can select multiple facilities.</li>
+                                <li>You can search the facility by Facility ID or Description.</li>
+                                <li><b>Format</b>: Facility Description (Facility ID)</li>
+                                <li><b>Default</b>: ALL</li>
+                            </ul></entry>
+                    </row>
+                    <row>
+                        <entry>Payer</entry>
+                        <entry>Displays both active and inactive payers in alphabetical order
+                            associated with the facilities user has access to.<ul
+                                id="ul_bt1_tnk_crb">
+                                <li>You can select multiple payers.</li>
+                                <li>"Unassigned Payer" displays data for the encounters that do not
+                                    have a payer assigned.</li>
+                                <li>You can search the Payer by Payer ID or Description.</li>
+                                <li><b>Format</b>: Payer Description (Payer ID)</li>
+                                <li><b>Default</b>: ALL</li>
+                            </ul></entry>
+                    </row>
+                    <row>
+                        <entry>Unit</entry>
+                        <entry>
+                            <ul id="ul_brk_14k_crb">
+                                <li>Displays the list of available units.</li>
+                                <li>You can select multiple Units.</li>
+                                <li>You can search the Unit.</li>
+                                <li><b>Default</b>: ALL</li>
+                            </ul>
+                        </entry>
+                    </row>
+                    <row>
+                        <entry>CDS</entry>
+                        <entry>
+                            <ul id="ul_hzh_gsd_4rb">
+                                <li>This filter displays both active and inactive CDSs in
+                                    alphabetical order associated with the facilities user has
+                                    access to.</li>
+                                <li>The CDS Filter in all the reports displays the users with
+                                    at-least CDS or CDS Manager role assigned.</li>
+                                <li>"Unassigned CDS" displays data for the encounters that do not
+                                    have a CDS assigned.</li>
+                                <li>Format: Last Name, First Name MI (CDS ID)</li>
+                                <li>Default: <b>ALL</b></li>
+                            </ul>
+                        </entry>
+                    </row>
+                </tbody>
+            </tgroup>
+        </table>
+        <p>
+            <table frame="all" rowsep="1" colsep="1" id="table_dq1_ffn_g4b">
+                <title>Filters on all Pages</title>
+                <tgroup cols="2">
+                    <colspec colname="c1" colnum="1" colwidth="1*"/>
+                    <colspec colname="c2" colnum="2" colwidth="1*"/>
+                    <thead>
+                        <row>
+                            <entry>Filter</entry>
+                            <entry>Description</entry>
+                        </row>
+                    </thead>
+                    <tbody>
+                        <row>
+                            <entry>Patient Type</entry>
+                            <entry>
+                                <ul id="ul_ns1_3fn_g4b">
+                                    <li>Displays the available patient types. <b>Example</b>:
+                                        Inpatient, Outpatient.</li>
+                                    <li><b>Default</b>: Inpatient</li>
+                                </ul>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>Visit Type</entry>
+                            <entry>
+                                <ul id="ul_ojb_pdj_crb">
+                                    <li>Displays the list of available Visit Types.</li>
+                                    <li>You can select multiple Visit Type.</li>
+                                    <li>You can search the Visit Type.</li>
+                                    <li><b>Default</b>: ALL.</li>
+                                </ul>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>Encounter Status</entry>
+                            <entry>
+                                <ul id="ul_fyg_b2j_crb">
+                                    <li>Displays the list of available Encounter Statuses.</li>
+                                    <li>You can select multiple Encounter Statuses.</li>
+                                    <li>You can search the Encounter Status.</li>
+                                    <li><b>Default</b>: Review Not Needed unchecked by default</li>
+                                </ul>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>Admit Service</entry>
+                            <entry>
+                                <ul id="ul_x2g_kfn_g4b">
+                                    <li>Displays the list of available admit service.</li>
+                                    <li>You can select multiple admit service.</li>
+                                    <li>You can search the admit service.</li>
+                                    <li><b>Default</b>: ALL.</li>
+                                </ul>
+                            </entry>
+                        </row>
+                    </tbody>
+                </tgroup>
+            </table>
+        </p>
+        <table frame="all" rowsep="1" colsep="1" id="table_zjn_dtr_t4b">
+            <title>Footnotes</title>
+            <tgroup cols="2">
+                <colspec colname="c1" colnum="1" colwidth="1*"/>
+                <colspec colname="c2" colnum="2" colwidth="1.5*"/>
+                <thead>
+                    <row>
+                        <entry>Label</entry>
+                        <entry>Text on hover</entry>
+                    </row>
+                </thead>
+                <tbody>
+                    <row>
+                        <entry>Avg. Initial Review TAT (Hours)</entry>
+                        <entry>Avg. Initial Review TAT(Hours) = Sum of Initial Review TAT(Hours) of
+                            all the reviewed encounters / Encounters Reviewed (Initial
+                                Reviews.<p>Initial Review TAT (hours) for an encounter = Initial
+                                Review Date/Time- Admit Date/Time) hours. For example,
+                            28</p></entry>
+                    </row>
+                    <row>
+                        <entry>Initial Review Date</entry>
+                        <entry>Displays Initial Review Date/time in red font when the Initial Review
+                            Date/Time > Discharge Date/Time.</entry>
+                    </row>
+                    <row>
+                        <entry>Rank at Initial Review</entry>
+                        <entry>Displays rank assigned to the encounter prior to Initial Review.
+                        </entry>
+                    </row>
+                </tbody>
+            </tgroup>
+        </table>
+    </conbody>
+</concept>

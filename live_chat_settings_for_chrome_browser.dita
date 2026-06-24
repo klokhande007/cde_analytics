@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="live_chat_settings_for_chrome_browser">
+    <title>Live Chat Settings for Chrome Browser</title>
+    <shortdesc></shortdesc>
+    <conbody>
+        <p>Salesforce supports browsers listed below for Live Agent.</p>
+        <p>
+            <table frame="all" rowsep="1" colsep="1" id="table_kfk_ncy_cnb">
+                <tgroup cols="2">
+                    <colspec colname="c1" colnum="1" colwidth="1*"/>
+                    <colspec colname="c2" colnum="2" colwidth="1*"/>
+                    <thead>
+                        <row>
+                            <entry>Browser</entry>
+                            <entry>Version</entry>
+                        </row>
+                    </thead>
+                    <tbody>
+                        <row>
+                            <entry>Google Chrome™</entry>
+                            <entry>Most Recent Stable version</entry>
+                        </row>
+                        <row>
+                            <entry>Mozilla® Firefox®</entry>
+                            <entry>Most Recent Stable version</entry>
+                        </row>
+                        <row>
+                            <entry>Apple® Safari®</entry>
+                            <entry>6.x on Mac OS X</entry>
+                        </row>
+                        <row>
+                            <entry>Windows® Internet Explorer®</entry>
+                            <entry>11</entry>
+                        </row>
+                    </tbody>
+                </tgroup>
+            </table>
+        </p>
+        <p>Salesforce supports IE-11 browser, but it needs some additional settings which are
+            mentioned below. </p>
+        <section id="section_zkl_tdy_cnb">
+            <title>How to enable chat window pop up </title>
+            <p>While using Live Agent in Internet Explorer or Google Chrome, you might notice that
+                the chat window does not pop up as a separate window. Rather, it replaces the
+                current window with a chat window. Additionally, a blank small window pops up. </p>
+            <p>This issue occurs when the domain that you are launching the chat button from and the
+                Live Agent domain, are in different security zones.</p>
+            <p>For Example:</p>
+            <p>Domain where chat button is hosted: nuancecdi.com </p>
+            <p>Live Agent domain: salesforceliveagent.com </p>
+            <p><b>Follow these steps for Chrome browser:</b></p>
+            <p>
+                <ol id="ol_nx2_wpy_cnb">
+                    <li>Click the <image href="../Image/chrome%20more%20icon.gif"
+                            id="image_txq_3qy_cnb"/> icon.</li>
+                    <li>Go to <menucascade>
+                            <uicontrol>Settings</uicontrol>
+                            <uicontrol>Privacy and Security</uicontrol>
+                            <uicontrol>Cookies and other site data</uicontrol>
+                            <uicontrol>Sites that can always use cookies</uicontrol>
+                        </menucascade>
+                    </li>
+                    <li>Click <uicontrol>Add</uicontrol>.</li>
+                    <li>Add the Live Agent domains as below:<ul id="ul_dcd_yqy_cnb">
+                            <li><xref href="*.force.com" format="html" scope="external"/>
+                            </li>
+                            <li>
+                                <xref href="*.salesforceliveagent.com" format="html"
+                                    scope="external"/></li>
+                            <li><xref href="nuance.salesforceliveagent.com" format="html"
+                                    scope="external"/></li>
+                        </ul></li>
+                    <li>Click <uicontrol>Close</uicontrol>. </li>
+                    <li>Restart Chrome.</li>
+                </ol>
+            </p>
+        </section>
+    </conbody>
+</concept>

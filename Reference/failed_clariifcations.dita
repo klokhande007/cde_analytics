@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_i4z_gyh_5wb">
+    <title>Failed Clarifications and Failed Instances</title>
+    <shortdesc></shortdesc>
+    <conbody>
+        <p>Clarifications fail when you send clarification with incorrect or incomplete information
+            using electronic methods or when the physician to which the clarifications is sent is no
+            longer employed by this organization. From 2.12 release onwards, the failed calculations
+            will not be included in any of the Analytics reports.</p>
+        <p>You can consider the below example of  <b>Clarification Details</b> dashboard in <b>CDI
+                Operations</b> category.<fig id="fig_mrb_42y_rgb">
+                <title>Failed Clariifcations</title>
+                <image href="../Images/failed_clarifications.png" width="600" id="image_bpp_p23_5wb"
+                />
+            </fig></p>
+    </conbody>
+</concept>

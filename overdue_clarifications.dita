@@ -1,0 +1,585 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="overdue_clarifications">
+    <title>Overdue Clarifications</title>
+    <shortdesc></shortdesc>
+    <conbody>
+        <p><b>Overview</b>: Overdue Clarifications report enables the CDS Managers to analyze the
+            summary and detailed information on the clarifications that are overdue and take
+            immediate action.</p>
+        <p>The report provides answers to the following questions.<ul id="ul_fg4_syv_l4b">
+                <li>How many clarifications are overdue and require follow-up? Can the physician
+                    liaison help?</li>
+                <li>Which providers have the most overdue clarification instances?</li>
+                <li>How do I get a list of clarifications that are overdue?</li>
+                <li>Which CDSs have the most overdue clarifications?</li>
+                <li>What is the detail around overdue clarifications?</li>
+            </ul></p>
+        <p><b>Navigation</b>: On the Analytics home page left side panel, navigate to <menucascade>
+                <uicontrol>CDE One</uicontrol>
+                <uicontrol>CDI Operations</uicontrol>
+                <uicontrol>Overdue Clarifications</uicontrol>
+            </menucascade>.</p>
+        <p>Overdue Clarifications displays the following:<ul id="ul_cwh_fmy_m4b">
+                <li>KPI Cards: Encounters with Overdue Clarifications, Overdue Clarifications,
+                    Escalated Clarifications, Overdue Instances</li>
+                <li>Overdue Clarification Instances by Provider Chart</li>
+                <li>Overdue Clarification Instances by CDS Chart</li>
+                <li>Overdue Clarification Instances Tabular Chart</li>
+            </ul></p>
+        <p>On the top panel, you can select desired values for the slicers (refer <xref
+                href="#overdue_clarifications/table_cs2_4cw_l4b" format="dita"/>) and the
+            corresponding data gets filtered in the charts and table.</p>
+        <p>For filters all pages, refer <xref href="#overdue_clarifications/table_xzd_hdw_l4b"
+                format="dita"/>.</p>
+        <p>For Footnotes, refer <xref href="#overdue_clarifications/table_fr1_ydw_l4b" format="dita"
+            />.</p>
+        <p><b>Default Display</b>: By default, the dashboard displays the data for the inpatient
+            encounters admitted in the last one calendar month. Click the ‘Reset’ button to reset
+            admit date and select the required date. </p>
+        <p><b>Overdue Clarifications</b></p>
+        <fig id="fig_uyq_bfc_44b">
+            <title>Sample Report</title>
+            <image href="Images/Overdue%20Clarification.gif" id="image_qft_cxm_k5b" width="800"/>
+        </fig>
+        <p><b>Overdue Clarifications - KPI Cards</b><fig id="fig_uby_jfc_44b">
+                <title>KPI Cards</title>
+                <image href="Images/Overdue%20Clarifications%20-%20KPI%20Cards.png"
+                    id="image_z1k_kfc_44b" width="400"/>
+            </fig><table frame="all" rowsep="1" colsep="1" id="table_o5t_zzv_l4b">
+                <title>KPI Cards</title>
+                <tgroup cols="2">
+                    <colspec colname="c1" colnum="1" colwidth="1*"/>
+                    <colspec colname="c2" colnum="2" colwidth="1*"/>
+                    <thead>
+                        <row>
+                            <entry>KPI Card</entry>
+                            <entry>Description</entry>
+                        </row>
+                    </thead>
+                    <tbody>
+                        <row>
+                            <entry>Encounters with Overdue Clarifications</entry>
+                            <entry>The count of encounters that have at least one Clarification with
+                                the status as Overdue.</entry>
+                        </row>
+                        <row>
+                            <entry>Overdue Clarifications</entry>
+                            <entry>
+                                <p>The count of clarifications with the status as Overdue.</p>
+                                <p>An encounter can have more than one overdue clarification.</p>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>Escalated Clarifications</entry>
+                            <entry>The count of overdue clarification instances with at least one
+                                clarification escalation checkbox selected.</entry>
+                        </row>
+                        <row>
+                            <entry>Overdue Instances</entry>
+                            <entry>
+                                <p>The count of ‘Pending’ instances of the Clarifications with the
+                                    status as Overdue.</p>
+                            </entry>
+                        </row>
+                    </tbody>
+                </tgroup>
+            </table></p>
+        <p><b>Overdue Clarifications - Overdue Clarification Instances by Provider Chart</b></p>
+        <fig id="fig_pxz_kfc_44b">
+            <title>Overdue Clarification Instances by Provider</title>
+            <image href="Images/Overdue%20Clarification%20Instances%20by%20Provider.png"
+                id="image_tfc_nfc_44b" width="600"/>
+        </fig>
+        <p>
+            <ul id="ul_rx1_j1w_l4b">
+                <li>This chart displays the count of overdue clarification instances for each
+                    Provider in the selected date range and filter criteria.</li>
+                <li>The provider is the Provider displayed in the ‘Responded By’ field in the
+                    Clarification UI.</li>
+                <li><b>X-axis</b>: Displays the name of the Responded By provider in the format Dr.
+                    Smith, Dennis B, Jr., MD</li>
+                <li><b>Y-axis</b>: Displays the count of the overdue clarification instances.</li>
+                <li>An overdue clarification can have more than one ‘pending’ instances.</li>
+                <li><b>Sort</b>: Data in the chart is sorted by the provider with the highest count
+                    of Overdue clarification instances to the provider with the lowest count of
+                    Overdue Clarification instances (descending order).</li>
+                <li><b>Info Icon</b>(Text on hover): Count of overdue clarification instances for
+                    each Provider.; Instance Response = Pending</li>
+            </ul>
+        </p>
+        <p><b>Overdue Clarifications - Overdue Clarification Instances by CDS Chart</b></p>
+        <fig id="fig_fq5_4fc_44b">
+            <title>Overdue Clarification Instances by CDS</title>
+            <image href="Images/Overdue%20Clarification%20Instances%20by%20CDS.png"
+                id="image_kl3_pfc_44b" width="600"/>
+        </fig>
+        <p>
+            <ul id="ul_e1f_l1w_l4b">
+                <li>This chart displays the count of overdue clarification instances for each
+                    Initiating CDS in the selected date range and filter criteria.</li>
+                <li>Initiating CDS is the CDS who sent the clarification.</li>
+                <li><b>X-axis</b>: Displays the name of the initiating CDS in the format CDS
+                    ID.</li>
+                <li><b>Y-axis</b>: Displays the count of the overdue clarification instances. </li>
+                <li><b>Sort</b>: Data in the chart is sorted by the CDS with the highest count of
+                    Overdue clarification instances to the CDS with the lowest count of Overdue
+                    Clarification instances (descending Order).</li>
+                <li><b>Info Icon</b>(Text on hover): Count of overdue clarification instances for
+                    every initiating CDS. ; Instance Response = Pending</li>
+            </ul>
+        </p>
+        <p><b>Overdue Clarifications - Overdue Clarification Instances</b></p>
+        <fig id="fig_cg2_qfc_44b">
+            <title>Overdue Clarification Instances</title>
+            <image href="Images/Overdue%20Clarification%20Instances.png" id="image_w5k_rfc_44b"
+                width="800"/>
+        </fig>
+        <p>
+            <ul id="ul_upw_m1w_l4b">
+                <li>This tabular displays the clarification instance details.</li>
+                <li>Each row in this report corresponds to one clarification instance.</li>
+                <li>Total No. of Rows must be equal to the count of overdue clarification
+                    instances.</li>
+                <li><b>Sort</b>: Data in the chart is sorted by Instance Sent Date (ascending
+                    order).</li>
+                <li><b>Info Icon</b>(Text on hover):  Data in this chart is for all overdue
+                    clarification instances. ; Encounter Status: Includes all encounter status
+                    except Review Not Needed.</li>
+            </ul>
+        </p>
+        <p>
+            <table frame="all" rowsep="1" colsep="1" id="table_wty_y1w_l4b">
+                <title>Overdue Clarification Instances Columns details</title>
+                <tgroup cols="4">
+                    <colspec colname="c1" colnum="1" colwidth="1*"/>
+                    <colspec colname="c2" colnum="2" colwidth="1*"/>
+                    <colspec colname="newCol3" colnum="3" colwidth="1*"/>
+                    <colspec colname="newCol4" colnum="4" colwidth="1*"/>
+                    <thead>
+                        <row>
+                            <entry>Column</entry>
+                            <entry>Description</entry>
+                            <entry>Formula/Calculation</entry>
+                            <entry>Exclusion Criteria(if any)</entry>
+                        </row>
+                    </thead>
+                    <tbody>
+                        <row>
+                            <entry>Facility</entry>
+                            <entry>The Facility description of the facility associated with the
+                                encounter.</entry>
+                            <entry/>
+                            <entry/>
+                        </row>
+                        <row>
+                            <entry>Account No.</entry>
+                            <entry>The account number of the encounter.</entry>
+                            <entry/>
+                            <entry/>
+                        </row>
+                        <row>
+                            <entry>MRN</entry>
+                            <entry>The Medical Record number of the encounter.</entry>
+                            <entry/>
+                            <entry/>
+                        </row>
+                        <row>
+                            <entry>Patient Name</entry>
+                            <entry>The name of the patient associated with the encounter. Patient
+                                name is displayed in the format: Last Name, First Name.</entry>
+                            <entry/>
+                            <entry/>
+                        </row>
+                        <row>
+                            <entry>Admit Date</entry>
+                            <entry>
+                                <p>The Admit Date and time of the encounter in the facility’s
+                                    timezone.</p>
+                                <p><b>Example</b>: 07/01/2020 03:58:53 PM ET</p>
+                            </entry>
+                            <entry/>
+                            <entry/>
+                        </row>
+                        <row>
+                            <entry>Discharge Date</entry>
+                            <entry>
+                                <p>The Discharge Date and time of the encounter in the facility’s
+                                    timezone.</p>
+                                <p><b>Example</b>: 07/01/2020 03:58:53 PM ET</p>
+                            </entry>
+                            <entry/>
+                            <entry/>
+                        </row>
+                        <row>
+                            <entry>Initiating CDS</entry>
+                            <entry>The name of the initiating CDS.<p><b>Format</b>: Last Name, First
+                                    Name (CDS ID)</p>
+                            </entry>
+                            <entry/>
+                            <entry/>
+                        </row>
+                        <row>
+                            <entry>Follow-Up CDS</entry>
+                            <entry>The name of the Follow-up CDS.<p><b>Format</b>: Last Name, First
+                                    Name (CDS ID)</p>
+                            </entry>
+                            <entry/>
+                            <entry/>
+                        </row>
+                        <row>
+                            <entry>Clarification Subject</entry>
+                            <entry>
+                                <p>The subject of the clarification.</p>
+                                <p><b>Format</b>: Clarification Code Description.</p>
+                                <p><b>Example</b>: E871 Hypo-osmolality and hyponatremia </p>
+                                <p>Generic Clarifications that do not have code are also
+                                    displayed.</p>
+                            </entry>
+                            <entry/>
+                            <entry/>
+                        </row>
+                        <row>
+                            <entry>Primary Type</entry>
+                            <entry>
+                                <p>The Primary Type assigned to the clarification.</p>
+                                <p>There can only be one primary type assigned to the clarification. </p>
+                                <p><b>Example</b>: PDX, CC, etc.</p>
+                                <p>A clarification can have a standard or custom type assigned.</p>
+                            </entry>
+                            <entry/>
+                            <entry/>
+                        </row>
+                        <row>
+                            <entry>Other Type</entry>
+                            <entry>
+                                <p>The other types assigned to the clarification. Comma-separated
+                                    values are displayed.</p>
+                                <p>There can be more than one other type selected for the
+                                    clarification.</p>
+                                <p>A clarification can have standard or custom other types
+                                    assigned.</p>
+                            </entry>
+                            <entry/>
+                            <entry/>
+                        </row>
+                        <row>
+                            <entry>Instance Sent Date</entry>
+                            <entry>
+                                <p>The sent date and time of the clarification instance.</p>
+                                <p><b>Example</b>: 07/01/2020 03:58:53 PM ET</p>
+                            </entry>
+                            <entry/>
+                            <entry/>
+                        </row>
+                        <row>
+                            <entry>Instance Sent To</entry>
+                            <entry>
+                                <p>The ‘Sent To’ provider associated with the clarification
+                                    instance.</p>
+                                <p>This is the provider to whom the clarification instance was
+                                    sent.</p>
+                                <p><b>Example</b>: Dr. Smith, Dennis B, Jr., MD</p>
+                            </entry>
+                            <entry/>
+                            <entry/>
+                        </row>
+                        <row>
+                            <entry>Instance Response Pending With</entry>
+                            <entry>
+                                <p>The ‘Responded By’ provider associated with the clarification
+                                    instance </p>
+                                <p>This is the provider with whom the clarification instance is
+                                    pending. </p>
+                                <p><b>Example</b>: Dr. Smith, Dennis B, Jr., MD</p>
+                            </entry>
+                            <entry/>
+                            <entry/>
+                        </row>
+                        <row>
+                            <entry>Instance Response </entry>
+                            <entry>
+                                <p>The response of the instance, i.e. Pending.</p>
+                            </entry>
+                            <entry/>
+                            <entry>
+                                <p>Other responses do not apply to this report.</p>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>Escalated?</entry>
+                            <entry>Displays whether the overdue clarification instance is
+                                        escalated.<p><b>Format</b>: Y/N.</p></entry>
+                            <entry/>
+                            <entry/>
+                        </row>
+                        <row>
+                            <entry>Escalation Type</entry>
+                            <entry>Displays the name of the selected escalation checkbox.
+                                        <p><b>Examples</b>: 1st Escalation, 2nd Escalation, Liaison
+                                    Escalation, CDI Manager Escalation.<note id="note_lwk_g1l_k3c"
+                                        >When multiple escalation checkboxes are selected, the
+                                        values are displayed as comma-separated
+                                entries.</note></p></entry>
+                            <entry/>
+                            <entry/>
+                        </row>
+                        <row>
+                            <entry>Instance Overdue Since (Hours)</entry>
+                            <entry>
+                                <p>The time since the instance is overdue.</p>
+                                <p>Timeframe for overdue clarification varies from facility to
+                                    facility. Instance Overdue Since is displayed in hours.</p>
+                                <p>Rounded to 0 Decimal places.</p>
+                                <p>Facility Time Zone is considered.</p>
+                            </entry>
+                            <entry>
+                                <p>Instance Overdue Since = [(Current Date/Time - Instance Sent
+                                    Date/Time) - Timeframe for overdue clarification] Hours</p>
+                                <p>(OR)</p>
+                                <p>Instance Overdue Since = [(Current Date/Time) - (Instance Sent
+                                    Date/Time + Timeframe for overdue clarification] Hours</p>
+                                <p>NOTE: Current Date/Time is Last ADF Run date/time.</p>
+                            </entry>
+                            <entry/>
+                        </row>
+                    </tbody>
+                </tgroup>
+            </table>
+        </p>
+        <p>
+            <table frame="all" rowsep="1" colsep="1" id="table_cs2_4cw_l4b">
+                <title>Report Slicers</title>
+                <tgroup cols="2">
+                    <colspec colname="c1" colnum="1" colwidth="1*"/>
+                    <colspec colname="c2" colnum="2" colwidth="1*"/>
+                    <thead>
+                        <row>
+                            <entry>Slicer</entry>
+                            <entry>Description</entry>
+                        </row>
+                    </thead>
+                    <tbody>
+                        <row>
+                            <entry>Admit Date</entry>
+                            <entry>
+                                <ul id="ul_hmn_qcw_l4b">
+                                    <li>Displays the admit date range here. You can select required
+                                        dates from the date lookup</li>
+                                    <li>
+                                        <b>Example</b>: 7/1/2020 - 7/31/2020</li>
+                                    <li><b>Default</b>: Last 1 calendar months date range selected
+                                        by default.</li>
+                                </ul>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>Reset</entry>
+                            <entry>
+                                <ul id="ul_jw1_22z_m4b">
+                                    <li>With the Reset button, you can reset the admit date
+                                        range.</li>
+                                    <li><b>Tooltip</b>: Use "Ctrl + Click" to reset the Admit
+                                        Date.</li>
+                                </ul>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>Facility</entry>
+                            <entry>
+                                <ul id="ul_qg1_scw_l4b">
+                                    <li>Displays a list of active and inactive facilities that you
+                                        have access to. The list is sorted alphabetically. </li>
+                                    <li>You can select multiple facilities</li>
+                                    <li>You can search the facility by Facility ID or
+                                        Description.</li>
+                                    <li><b>Format</b>: Facility Description (Facility ID)</li>
+                                    <li><b>Default</b>: ALL</li>
+                                </ul>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>Payer</entry>
+                            <entry>
+                                <ul id="ul_yxq_5cw_l4b">
+                                    <li>Displays a list of active and inactive payers associated
+                                        with the facilities that you have access to. The list is
+                                        sorted alphabetically. </li>
+                                    <li>You can select multiple payers</li>
+                                    <li>"Unassigned Payer" displays data for the encounters that do
+                                        not have a payer assigned.</li>
+                                    <li>You can search the Payer by Payer ID or Description.</li>
+                                    <li><b>Format</b>: Payer Description (Payer ID)</li>
+                                    <li><b>Default</b>: ALL</li>
+                                </ul>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>CDS</entry>
+                            <entry>
+                                <ul id="ul_hzq_xcw_l4b">
+                                    <li>Displays a list of active and inactive CDSs associated with
+                                        the facilities that you have access to. The list is
+                                        alphabetically sorted.</li>
+                                    <li>The CDS Filter in all the reports displays the users with
+                                        at-least CDS or CDS Manager role assigned.</li>
+                                    <li>"Unassigned CDS" displays data for the encounters that do
+                                        not have a CDS assigned.</li>
+                                    <li>You can search the CDS by CDS ID or Name.</li>
+                                    <li><b>Format</b>: Last Name, First Name MI (CDS ID)</li>
+                                    <li><b>Default</b>: ALL</li>
+                                </ul>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>Provider</entry>
+                            <entry>
+                                <ul id="ul_yzb_bdw_l4b">
+                                    <li>Displays a list of active and inactive providers associated
+                                        with the facilities that you have access to . The list is
+                                        alphabetically sorted.</li>
+                                    <li>
+                                        <p>"Unassigned Provider" displays data for the encounters
+                                            that do not have a provider assigned.</p>
+                                    </li>
+                                    <li>You can search the Provider by name, suffix, title.</li>
+                                    <li><b>Format</b>: Prefix Lastname, Firstname Middle Initial,
+                                        Suffix, Title</li>
+                                    <li><b>Default</b>: ALL</li>
+                                </ul>
+                            </entry>
+                        </row>
+                    </tbody>
+                </tgroup>
+            </table>
+        </p>
+        <p>
+            <table frame="all" rowsep="1" colsep="1" id="table_xzd_hdw_l4b">
+                <title>Filters on all Pages</title>
+                <tgroup cols="2">
+                    <colspec colname="c1" colnum="1" colwidth="1*"/>
+                    <colspec colname="c2" colnum="2" colwidth="1*"/>
+                    <thead>
+                        <row>
+                            <entry>Filter</entry>
+                            <entry>Description</entry>
+                        </row>
+                    </thead>
+                    <tbody>
+                        <row>
+                            <entry>Patient Type</entry>
+                            <entry>
+                                <ul id="ul_f4n_gny_m4b">
+                                    <li>Displays the available patient types. <p><b>Example</b>:
+                                            Inpatient, Outpatient.</p></li>
+                                    <li><b>Default</b>: Inpatient</li>
+                                </ul>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>Visit Type</entry>
+                            <entry>
+                                <ul id="ul_vk3_3ny_m4b">
+                                    <li>Displays the list of available Visit Types.</li>
+                                    <li>You can select multiple Visit Types.</li>
+                                    <li>You can search the Visit Type.</li>
+                                    <li><b>Default</b>: ALL</li>
+                                </ul>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>Unit</entry>
+                            <entry>
+                                <ul id="ul_n4k_jny_m4b">
+                                    <li>Displays the list of available units.</li>
+                                    <li>You can select multiple Units.</li>
+                                    <li>You can search the Unit.</li>
+                                    <li><b>Default</b>: ALL</li>
+                                </ul>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>Weekend Only Stay</entry>
+                            <entry>
+                                <ul id="ul_cyy_pdw_l4b">
+                                    <li>Displays Weekend Only Stay values (Y/N).</li>
+                                    <li>You can search the Weekend Only Stay.</li>
+                                    <li><b>Default</b>: ALL</li>
+                                </ul>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>Encounter Status</entry>
+                            <entry>
+                                <ul id="ul_fc2_5dw_l4b">
+                                    <li>Displays the list of available Encounter Statuses.</li>
+                                    <li>You can select multiple Encounter Statuses.</li>
+                                    <li>You can search the Encounter Status.</li>
+                                    <li><b>Default</b>: Review Not Needed unchecked by default. </li>
+                                </ul>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>Admit Service</entry>
+                            <entry>
+                                <ul id="ul_zm1_lny_m4b">
+                                    <li>Displays the list of available Admit Services.</li>
+                                    <li>You can select multiple Admit Services.</li>
+                                    <li>You can search the Admit Service.</li>
+                                    <li><b>Default</b>: ALL</li>
+                                </ul>
+                            </entry>
+                        </row>
+                    </tbody>
+                </tgroup>
+            </table>
+        </p>
+        <p>
+            <table frame="all" rowsep="1" colsep="1" id="table_fr1_ydw_l4b">
+                <title><b>Footnotes</b></title>
+                <tgroup cols="2">
+                    <colspec colname="c1" colnum="1" colwidth="1*"/>
+                    <colspec colname="c2" colnum="2" colwidth="1*"/>
+                    <thead>
+                        <row>
+                            <entry>Formula</entry>
+                            <entry>Text on hover</entry>
+                        </row>
+                    </thead>
+                    <tbody>
+                        <row>
+                            <entry>Encounters with Overdue Clarifications</entry>
+                            <entry>Count of encounters that have at least one Clarification with the
+                                status as Overdue. ;Encounter Status: Includes all encounter status
+                                except Review Not Needed.</entry>
+                        </row>
+                        <row>
+                            <entry>Overdue Clarifications</entry>
+                            <entry>Count of clarifications with status as Overdue. ;Clarification
+                                Status: Includes clarification status as Overdue except 'Removed' or
+                                'Retracted'. </entry>
+                        </row>
+                        <row>
+                            <entry>Escalated Clarifications</entry>
+                            <entry>Count of clarifications with status as Overdue and at least one
+                                clarification escalation checkbox selected.</entry>
+                        </row>
+                        <row>
+                            <entry>Overdue Instances</entry>
+                            <entry>Count of Overdue Clarifications with response as Pending.
+                                ;Clarification Status: Includes clarification status as Overdue
+                                except 'Removed' or 'Retracted'.</entry>
+                        </row>
+                        <row>
+                            <entry>Instance Overdue Since (Hours)</entry>
+                            <entry>Time since the clarification instance is overdue. Instance
+                                Overdue Since = [(Current Date/Time - Instance Sent Date/Time) -
+                                Timeframe for overdue clarification] Hours. Current Date/Time is the
+                                Last ADF Run Date/Time or data refresh Date/Time.</entry>
+                        </row>
+                    </tbody>
+                </tgroup>
+            </table>
+        </p>
+    </conbody>
+</concept>

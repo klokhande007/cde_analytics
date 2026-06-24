@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="overview_getting_started">
+    <title>About Getting Started</title>
+    <shortdesc>This chapter covers the following initial procedure that you need to perform before
+        using Nuance CDE.</shortdesc>
+    <conbody>
+        <ul id="ul_ok3_d1z_2bb">
+            <li><xref href="browser_configuration.dita#concept_nv4_2nk_gbb"/></li>
+            <li><xref href="../Task/first_time_sign_in.dita#first_time_sign_in"/></li>
+            <li><xref href="../Task/logging_in.dita#logging_in"/></li>
+            <li><xref href="rules_for_creating_passwords.dita#rules_for_creating_passwords"/></li>
+            <li><xref href="../Task/updating_password.dita#updating_password"/></li>
+            <li><xref href="../Task/logging_out.dita#untitled12"/></li>
+        </ul>
+        <p>Before you start, your system administrator must set up an account for you.</p>
+    </conbody>
+</concept>

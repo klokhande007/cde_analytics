@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="first_time_sign_in">
+    <title>First Time Sign In</title>
+    <shortdesc>This section describes how you can sign-in to Nuance CDE for the first
+        time.</shortdesc>
+    <taskbody>
+        <prereq id="prereq_sss_zbz_2bb">Before you start, your system administrator must set up an
+            account for you.</prereq>
+        <context>For first time sign in follow the below steps:</context>
+        <steps id="steps_pn1_hcz_2bb">
+            <step>
+                <cmd>Start your web browser.</cmd>
+            </step>
+            <step>
+                <cmd>Type the URL in the <uicontrol>Address</uicontrol> field and press
+                        <uicontrol>Enter</uicontrol> or click Search icon.</cmd>
+                <info>
+                    <p>The Nuance CDE login screen is displayed.</p>
+                    <p>
+                        <fig id="fig_srq_15h_f1b">
+                            <title>Login Screen</title>
+                            <image href="../../Images/Login%20Screen.gif" id="image_hj5_rcz_t4b"
+                                width="500"/>
+                        </fig>
+                    </p>
+                </info>
+            </step>
+            <step>
+                <cmd>Type your ID in the <uicontrol>User ID</uicontrol> field. </cmd>
+                <info>
+                    <note>If you do not know your User ID, ask your system administrator.</note>
+                </info>
+            </step>
+            <step>
+                <cmd>Type the password provided by your system administrator in the
+                        <uicontrol>Password</uicontrol> field.</cmd>
+            </step>
+            <step>
+                <cmd>Press<uicontrol> Enter</uicontrol> or click <uicontrol>Sign
+                    In</uicontrol>.</cmd>
+                <info>The update password screen is displayed.<fig id="fig_rcw_jvy_gbb">
+                        <title>Update Password Screen</title>
+                        <image placement="break" href="../Image/Update%20Password%20Screen.gif"
+                            align="center" id="image_scw_jvy_gbb" height="480"/>
+                    </fig></info>
+            </step>
+            <step>
+                <cmd>Type the password provided by the system administrator in the <uicontrol>Old
+                        Password</uicontrol> field.</cmd>
+            </step>
+            <step>
+                <cmd>Type a new password in the <uicontrol>New Password</uicontrol> field.</cmd>
+            </step>
+            <step>
+                <cmd>Again, type the new password in the <uicontrol>Confirm Password</uicontrol>
+                    field.</cmd>
+            </step>
+            <step>
+                <cmd>Click <uicontrol>Update</uicontrol> to change the password or click
+                        <uicontrol>Cancel</uicontrol> to abort.</cmd>
+            </step>
+            <step>
+                <cmd>You are prompted by the CDE Authenticator application to enter a one-time
+                    password (OTP). The one-time password (OTP) is sent to your configured contact
+                    email address.</cmd>
+                <info>
+                    <ul id="ul_cqf_yll_c5b">
+                        <li>The one-time password (OTP) is a six-digit number.</li>
+                        <li>You may need to wait a few seconds till you receive the email.</li>
+                    </ul>
+                </info>
+            </step>
+            <step>
+                <cmd>Enter the OTP in the text box. The OTP code is valid for only a few
+                    minutes.</cmd>
+                <info>
+                    <p>
+                        <fig id="fig_nt4_zyl_c5b">
+                            <title>OTP Screen</title>
+                            <image href="../../Images/mfa_code.gif" id="image_gkm_1zl_c5b"
+                                width="400"/>
+                        </fig>
+                    </p>
+                </info>
+                <info><ul id="ul_zxd_2zl_c5b">
+                        <li>If you select the <b>Remember this device</b> check box, click <b>Submit
+                                Code</b>, and use the same browser on the same device to login for
+                            the second time, the email verification is skipped (OTP is not sent to
+                            the email address). After you enter your user name and password, the
+                            system navigates you to the Triage Worklist screen.</li>
+                        <li>If you do not select the <b>Remember this device</b> check box, the next
+                            time you login, you have to enter the received OTP.</li>
+                    </ul>If you do not receive the code, click <b>Resend Code</b>.</info>
+            </step>
+            <step>
+                <cmd>The system navigates you to the Triage Worklist screen. </cmd>
+            </step>
+        </steps>
+    </taskbody>
+    <related-links>
+        <link href="../Concept/rules_for_creating_passwords.dita#rules_for_creating_passwords"/>
+        <link href="../Concept/password_settings.dita"/>
+    </related-links>
+</task>

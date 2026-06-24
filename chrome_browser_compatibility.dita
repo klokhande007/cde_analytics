@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="chrome_browser_compatibility">
+    <title>Chrome Browser Settings</title>
+    <shortdesc></shortdesc>
+    <conbody>
+        <p>Nuance CDE One is also compatible with the Google Chrome browser. To Download Chrome
+            refer <xref href="installing_google_chrom.dita"/> and follow the steps as per section
+                <xref href="../Task/first_time_sign_in.dita"/> for logging in.</p>
+        <section id="section_osw_wsb_1nb">
+            <title>CDE One minimum supported Version for Google Chrome</title>
+            <p>Version 83.0.4103.97 (Official Build) (64-bit)</p>
+        </section>
+        <section id="section_gxz_5mc_1nb">
+            <title>How to know your current version for Google Chrome </title>
+            <p>Click the three-dot icon on the top-right corner <image
+                    href="../Image/chrome%20more%20icon.gif" id="image_b1m_g4c_1nb"/> and click <menucascade>
+                    <uicontrol>Help</uicontrol>
+                    <uicontrol>About Google Chrome</uicontrol>
+                </menucascade>. </p>
+            <fig id="fig_n2f_4rg_54b">
+                <image href="../Image/Chrome/about%20chrome.gif" id="image_tpf_prg_54b" width="600"
+                />
+            </fig>
+        </section>
+        <section id="section_mp3_jsb_1nb">
+            <title>How to update Google Chrome to latest version</title>
+            <p>
+                <ol id="ol_ckg_msb_1nb">
+                    <li>On your computer, open Google Chrome.</li>
+                    <li>At the top-right corner, click <image
+                            href="../Image/chrome%20more%20icon.gif" id="image_t3f_14c_1nb"/> .</li>
+                    <li>Click <b>Update Google Chrome</b>. <note>If you can't find this option,
+                            you're on the latest version.</note></li>
+                    <li>Click <b>Relaunch</b>.<note>The browser saves your opened tabs and windows
+                            and reopens them automatically when it restarts. Your incognito windows
+                            won't reopen when Chrome restarts. If you'd prefer not to restart
+                            straight away, click <b>Not now</b>. The next time you restart your
+                            browser, the update gets applied.</note></li>
+                </ol>
+            </p>
+        </section>
+        <section id="section_nbm_nxt_n4b">
+            <title>How to allow Pop-ups</title>
+            <p>
+                <ol id="ol_orr_4xt_n4b">
+                    <li>On your computer, open Chrome.</li>
+                    <li>At the top right, click <image href="../Image/chrome%20more%20icon.gif"
+                            id="image_gxk_pzt_n4b"/> and then click
+                            <uicontrol>Settings</uicontrol>.<fig id="fig_wqg_pch_54b">
+                            <image href="../Image/Chrome/settings%20option.gif"
+                                id="image_txt_pch_54b" width="500"/>
+                        </fig></li>
+                    <li>Under <uicontrol>Privacy and security</uicontrol>, click <uicontrol>Site
+                            Settings</uicontrol>.<fig id="fig_m5c_1sg_54b">
+                            <image href="../Image/Chrome/settings%20privacy%20and%20security.gif"
+                                id="image_zmn_1sg_54b" width="600"/>
+                        </fig></li>
+                    <li>Scroll to the bottom of the page and click <uicontrol>Pop-ups and
+                            redirects</uicontrol>.<fig id="fig_dwt_hsg_54b">
+                            <image href="../Image/Chrome/pop%20up%20settings.gif"
+                                id="image_xqh_3sg_54b" width="600"/>
+                        </fig></li>
+                    <li>At the top, turn the setting to <uicontrol>Allowed</uicontrol>.</li>
+                    <li>Click Add to Allow some websites as trusted sites.<fig id="fig_dhv_hwg_54b">
+                            <image href="../Image/Chrome/Add%20sites%20as%20trusted.gif"
+                                id="image_gnq_jwg_54b" width="600"/>
+                        </fig></li>
+                    <li>You can add the following list of URLs as trusted sites.<ul
+                            id="ul_imb_jrc_1nb">
+                            <li><xref href="https://%3ccustomer%3e.nuancecdi.com" format="html"
+                                    scope="external"
+                                    >https://<i>&lt;customer></i>.nuancecdi.com</xref> - Used by
+                                your CDE One production environment</li>
+                            <li><xref href="https://staging-%3ccustomer%3e.nuancecdi.com"
+                                    format="html" scope="external"
+                                        >https://staging-<i>&lt;customer></i>.nuancecdi.com</xref> -
+                                Used by your CDE One staging environment</li>
+                            <li><xref href="https://nuancehdp.auth0.com" format="html"
+                                    scope="external">https://nuancehdp.auth0.com</xref> - Auth0
+                                endpoint used for Single Sign-On</li>
+                            <li><xref href="https://dc.services.visualstudio.com" format="html"
+                                    scope="external">https://dc.services.visualstudio.com</xref> -
+                                Used by Microsoft Application Insights analytics</li>
+                            <li><xref href="https://app.powerbi.com" format="html" scope="external"
+                                    >https://app.powerbi.com</xref> - Used by Microsoft Power BI
+                                Analytics</li>
+                            <li><xref href="https://az416426.vo.msecnd.net" format="html"
+                                    scope="external">https://az416426.vo.msecnd.net</xref> - Used by
+                                Microsoft Power BI Analytics</li>
+                            <li><xref href="https://*.analysis.windows.net" format="html"
+                                    scope="external">https://*.analysis.windows.net</xref> - Used by
+                                Microsoft Power BI Analytics</li>
+                            <li><xref href="https://content.powerapps.com" format="html"
+                                    scope="external">https://content.powerapps.com</xref> - Used for
+                                Microsoft Power BI Analytics</li>
+                            <li><xref href="https://visuals.azureedge.net" format="html"
+                                    scope="external">https://visuals.azureedge.net</xref> - Used for
+                                Microsoft Power BI Analytics</li>
+                            <li><xref href="https://d1vy0qa05cdjr5.cloudfront.net" format="html"
+                                    scope="external"/> - CDE online training </li>
+                            <li><xref href="*.salesforceliveagent.com" format="html"
+                                    scope="external"/>- Salesforce support</li>
+                            <li><xref href="*.force.com" format="html" scope="external"/>-
+                                Salesforce support</li>
+                            <li><xref href="nuance.salesforceliveagent.com" format="html"
+                                    scope="external"/> - Salesforce Live Chat </li>
+                        </ul></li>
+                </ol>
+            </p>
+        </section>
+        <section id="section_pmd_rzg_54b">
+            <title>How to Print Page with Chrome</title>
+            <p>
+                <ol id="ol_mgf_5zg_54b">
+                    <li>On your computer, open Chrome.</li>
+                    <li>At the top right, click <image href="../Image/chrome%20more%20icon.gif"
+                            id="image_hld_wzg_54b"/> and then click
+                            <uicontrol>Print</uicontrol>.<fig id="fig_mk1_31h_54b">
+                            <image href="../Image/Chrome/Print%20Page.gif" id="image_zzz_j1h_54b"
+                                width="600"/>
+                        </fig></li>
+                    <li>Make changes to the settings on the right side panel and click
+                            <uicontrol>Print</uicontrol>.</li>
+                </ol>
+            </p>
+        </section>
+    </conbody>
+</concept>

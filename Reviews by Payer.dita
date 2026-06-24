@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="Reviews_by_Payer">
+    <title>Reviews by Payer</title>
+    <shortdesc></shortdesc>
+    <conbody>
+        <p><b>Overview</b>: The Reviews by Payer report helps to identify payers and financial class
+            with highest number of priority reviews. This report displays the count of encounters
+            reviewed by the CDSs for each payer and rank.</p>
+        <p><b>Navigation</b>: On the Analytics home page left side panel, navigate to <menucascade>
+                <uicontrol>CDE Triage</uicontrol>
+                <uicontrol>CDE Triage Dashboard</uicontrol>
+                <uicontrol>Reviews by Payer</uicontrol>
+            </menucascade>.</p>
+        <p>The Reviews by Payer displays the following:<ul id="ul_lr1_125_j2b">
+                <li>Reviews by Payer Chart</li>
+                <li>Reviews by Payer by Highest Rank Chart</li>
+                <li>% Reviews by Financial Class Chart</li>
+                <li>Encounter details Tabular Chart </li>
+            </ul></p>
+        <p>For filters on all pages, refer <xref
+                href="CDE%20Triage%20Dashboard%20Overview.dita#CDE_Triage_Dashboard_Overview/table_r3d_xsz_t4b"
+            />.</p>
+        <p><b>Default Display</b>: </p>
+        <p><b>Reviews by Payer </b></p>
+        <fig id="fig_px4_1ss_t4b">
+            <title>Sample Report</title>
+            <image href="Images/Reviews%20By%20Payer.gif" id="image_aqd_css_t4b" width="800"/>
+        </fig>
+        <p><b>Reviews by Payer - Reviews by Payer Chart</b></p>
+        <fig id="fig_oky_fss_t4b">
+            <title>Reviews by Payer Chart</title>
+            <image href="Images/Reviews%20by%20Payer%20Section.gif" id="image_xd5_gss_t4b"
+                width="300"/>
+        </fig>
+        <p>
+            <ul id="ul_eqz_z1t_t4b">
+                <li>In the Reviews by Payer section, the donut chart displays the percentage of
+                    reviewed encounters for each payer. </li>
+                <li>Tooltip displays count of reviews for each payer.</li>
+            </ul>
+        </p>
+        <p><b>Reviews by Payer - Reviews by Payer by Highest Rank Chart</b></p>
+        <fig id="fig_aq5_c42_lbb">
+            <title>Reviews by Payer by Highest Rank Chart</title>
+            <image href="Images/Reviews%20by%20Payer%20by%20Highest%20Rank.gif"
+                id="image_e1s_lss_t4b" width="400"/>
+        </fig>
+        <p>
+            <ul id="ul_c1c_bbt_t4b">
+                <li>In the <i>Reviews by Payer by Highest Rank</i> section, X-axis indicates the
+                    name of the Payer assigned to the encounter in CDS Triage and Y-axis indicates
+                    the percent of encounters reviewed by the CDS for each payer and rank.</li>
+                <li>If the description of the payer is not available, system displays the payer
+                    ID.</li>
+                <li>Encounters that do not have any payer assigned are displayed under the
+                        <uicontrol>Unassigned Payer</uicontrol> category on the Y-axis.</li>
+            </ul>
+        </p>
+        <p><b>Reviews by Payer -  % Reviews by Financial Class</b></p>
+        <fig id="fig_bdk_4ss_t4b">
+            <title>% Reviews by Financial Class</title>
+            <image href="Images/%25%20Reviews%20by%20Financial%20Class.gif" id="image_wff_sss_t4b"
+                width="300"/>
+        </fig>
+        <p>
+            <ul id="ul_s41_2bt_t4b">
+                <li>In the <i>% Reviews by Financial Class</i> section, X-axis indicates the
+                    percentage of reviewed encounters and Y-axis indicates the name of the financial
+                    class assigned to the encounter.</li>
+                <li>Encounters that do not have any financial class assigned are displayed under the
+                        <uicontrol>Unassigned Financial Class</uicontrol> category on the
+                    Y-axis.</li>
+            </ul>
+        </p>
+    </conbody>
+</concept>

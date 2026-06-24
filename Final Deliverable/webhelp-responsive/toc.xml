@@ -1,0 +1,833 @@
+<?xml version="1.0" encoding="UTF-8"?><toc xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" xmlns="http://www.oxygenxml.com/ns/webhelp/toc">
+   <title><span xmlns="http://www.w3.org/1999/xhtml" class="booktitle">  <span class="ph mainbooktitle">CDE Analytics New Guide</span>  </span></title>
+   <topic href="Reference/what_s_new.html" data-id="what_s_new" wh-toc-id="what_s_new-d66e19">
+      <title>What's New</title>
+      <topicmeta>
+         <resourceid class="- topic/resourceid " oxy-source="topic" appid="what_s_new"></resourceid>
+         <navtitle class="- topic/navtitle ">What's New</navtitle><?ditaot gentext?>
+         <linktext class="- map/linktext ">What's New</linktext>
+      </topicmeta>
+   </topic>
+   <topic href="online_analytics_training.html" data-id="online_analytics_training" wh-toc-id="online_analytics_training-d66e27">
+      <title>Online Analytics Training</title>
+      <shortdesc>
+         <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">This content has links to training and resources that will help you get up to speed         on CDE Analytics. Use these to
+            help you understand how to navigate and use CDE Analytics,         how to read and interpret reports and metrics, and how
+            to apply the knowledge.
+         </p>
+      </shortdesc>
+      <topicmeta>
+         <resourceid class="- topic/resourceid " oxy-source="topic" appid="online_analytics_training"></resourceid>
+         <navtitle class="- topic/navtitle ">Online Analytics Training</navtitle><?ditaot gentext?>
+         <linktext class="- map/linktext ">Online Analytics Training</linktext><?ditaot genshortdesc?>
+         <shortdesc class="- map/shortdesc ">This content has links to training and resources that will help you get up to speed         on CDE Analytics. Use these to
+            help you understand how to navigate and use CDE Analytics,         how to read and interpret reports and metrics, and how
+            to apply the knowledge.
+         </shortdesc>
+      </topicmeta>
+   </topic>
+   <topic href="javascript:void(0)" wh-toc-id="tocId-d66e39">
+      <title>Getting Started</title>
+      <topic href="Getting%20Started/Concept/overview_getting_started.html" data-id="overview_getting_started" wh-toc-id="overview_getting_started-d66e40">
+         <title>About Getting Started</title>
+         <shortdesc>
+            <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">This chapter covers the following initial procedure that you need to perform before         using Nuance CDE.</p>
+         </shortdesc>
+         <topicmeta>
+            <resourceid class="- topic/resourceid " oxy-source="topic" appid="overview_getting_started"></resourceid>
+            <navtitle class="- topic/navtitle ">About Getting Started</navtitle><?ditaot gentext?>
+            <linktext class="- map/linktext ">About Getting Started</linktext><?ditaot genshortdesc?>
+            <shortdesc class="- map/shortdesc ">This chapter covers the following initial procedure that you need to perform before         using Nuance CDE.</shortdesc>
+         </topicmeta>
+      </topic>
+      <topic href="javascript:void(0)" wh-toc-id="tocId-d66e51">
+         <title>Browser Configuration</title>
+         <topic href="Getting%20Started/Concept/browser_configuration.html" data-id="concept_nv4_2nk_gbb" wh-toc-id="concept_nv4_2nk_gbb-d66e52">
+            <title>Overview of Browser </title>
+            <shortdesc>
+               <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc"></p>
+            </shortdesc>
+            <topicmeta>
+               <resourceid class="- topic/resourceid " oxy-source="topic" appid="concept_nv4_2nk_gbb"></resourceid>
+               <navtitle class="- topic/navtitle ">Overview of Browser </navtitle><?ditaot gentext?>
+               <linktext class="- map/linktext ">Overview of Browser</linktext><?ditaot genshortdesc?>
+               <shortdesc class="- map/shortdesc "></shortdesc>
+            </topicmeta>
+         </topic>
+         <topic href="Getting%20Started/Task/Setting_Standard_Browser_Settings.html" data-id="task_hfr_jnk_gbb" wh-toc-id="task_hfr_jnk_gbb-d66e62">
+            <title>Configuring Standard Browser Settings</title>
+            <shortdesc>
+               <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc"></p>
+            </shortdesc>
+            <topicmeta>
+               <resourceid class="- topic/resourceid " oxy-source="topic" appid="task_hfr_jnk_gbb"></resourceid>
+               <navtitle class="- topic/navtitle ">Configuring Standard Browser Settings</navtitle><?ditaot gentext?>
+               <linktext class="- map/linktext ">Configuring Standard Browser Settings</linktext><?ditaot genshortdesc?>
+               <shortdesc class="- map/shortdesc "></shortdesc>
+            </topicmeta>
+         </topic>
+      </topic>
+      <topic href="javascript:void(0)" wh-toc-id="tocId-d66e72">
+         <title>Chrome Browser</title>
+         <topic href="oxy_ex-1/Nuance%20CDI%20-%20CDS%20Triage%20User%20Guide/Concept/installing_google_chrom.html" data-id="installing_google_chrom" wh-toc-id="installing_google_chrom-d66e73">
+            <title>Installing Google Chrome</title>
+            <shortdesc>
+               <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc"></p>
+            </shortdesc>
+            <topicmeta>
+               <resourceid class="- topic/resourceid " oxy-source="topic" appid="installing_google_chrom"></resourceid>
+               <navtitle class="- topic/navtitle ">Installing Google Chrome</navtitle><?ditaot gentext?>
+               <linktext class="- map/linktext ">Installing Google Chrome</linktext><?ditaot genshortdesc?>
+               <shortdesc class="- map/shortdesc "></shortdesc>
+            </topicmeta>
+         </topic>
+         <topic href="oxy_ex-1/Nuance%20CDI%20-%20CDS%20Triage%20User%20Guide/Concept/chrome_browser_compatibility.html" data-id="chrome_browser_compatibility" wh-toc-id="chrome_browser_compatibility-d66e83">
+            <title>Chrome Browser Settings</title>
+            <shortdesc>
+               <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc"></p>
+            </shortdesc>
+            <topicmeta>
+               <resourceid class="- topic/resourceid " oxy-source="topic" appid="chrome_browser_compatibility"></resourceid>
+               <navtitle class="- topic/navtitle ">Chrome Browser Settings</navtitle><?ditaot gentext?>
+               <linktext class="- map/linktext ">Chrome Browser Settings</linktext><?ditaot genshortdesc?>
+               <shortdesc class="- map/shortdesc "></shortdesc>
+            </topicmeta>
+         </topic>
+         <topic href="oxy_ex-1/Nuance%20CDI%20-%20CDS%20Triage%20User%20Guide/Concept/dmo_chrome_plugin_settings.html" data-id="dmo_chrome_plugin_settings" wh-toc-id="dmo_chrome_plugin_settings-d66e93">
+            <title>DMO Chrome Plugin Settings</title>
+            <shortdesc>
+               <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">Follow the steps given below to enable the Dragon Medical One Web Extension on Google         Chrome browser.</p>
+            </shortdesc>
+            <topicmeta>
+               <resourceid class="- topic/resourceid " oxy-source="topic" appid="dmo_chrome_plugin_settings"></resourceid>
+               <navtitle class="- topic/navtitle ">DMO Chrome Plugin Settings</navtitle><?ditaot gentext?>
+               <linktext class="- map/linktext ">DMO Chrome Plugin Settings</linktext><?ditaot genshortdesc?>
+               <shortdesc class="- map/shortdesc ">Follow the steps given below to enable the Dragon Medical One Web Extension on Google         Chrome browser.</shortdesc>
+            </topicmeta>
+         </topic>
+         <topic href="oxy_ex-1/Nuance%20CDI%20-%20CDS%20Triage%20User%20Guide/Concept/live_chat_settings_for_chrome_browser.html" data-id="live_chat_settings_for_chrome_browser" wh-toc-id="live_chat_settings_for_chrome_browser-d66e104">
+            <title>Live Chat Settings for Chrome Browser</title>
+            <shortdesc>
+               <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc"></p>
+            </shortdesc>
+            <topicmeta>
+               <resourceid class="- topic/resourceid " oxy-source="topic" appid="live_chat_settings_for_chrome_browser"></resourceid>
+               <navtitle class="- topic/navtitle ">Live Chat Settings for Chrome Browser</navtitle><?ditaot gentext?>
+               <linktext class="- map/linktext ">Live Chat Settings for Chrome Browser</linktext><?ditaot genshortdesc?>
+               <shortdesc class="- map/shortdesc "></shortdesc>
+            </topicmeta>
+         </topic>
+      </topic>
+      <topic href="javascript:void(0)" wh-toc-id="tocId-d66e114">
+         <title>Security Settings</title>
+         <topic href="Getting%20Started/Concept/requisites_for_configuring_security_settings.html" data-id="concept_xlw_wm3_3bb" wh-toc-id="concept_xlw_wm3_3bb-d66e115">
+            <title><strong xmlns="http://www.w3.org/1999/xhtml" class="ph b">Requisites for Configuring Security Settings</strong></title>
+            <shortdesc>
+               <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc"></p>
+            </shortdesc>
+            <topicmeta>
+               <resourceid class="- topic/resourceid " oxy-source="topic" appid="concept_xlw_wm3_3bb"></resourceid>
+               <navtitle class="- topic/navtitle ">
+                  <b class="+ topic/ph hi-d/b ">Requisites for Configuring Security Settings</b>
+               </navtitle><?ditaot gentext?>
+               <linktext class="- map/linktext ">Requisites for Configuring Security Settings</linktext><?ditaot genshortdesc?>
+               <shortdesc class="- map/shortdesc "></shortdesc>
+            </topicmeta>
+         </topic>
+         <topic href="Getting%20Started/Task/configuring_security_settings.html" data-id="task_szl_tn3_3bb" wh-toc-id="task_szl_tn3_3bb-d66e126">
+            <title>Configuring Security Settings</title>
+            <shortdesc>
+               <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc"></p>
+            </shortdesc>
+            <topicmeta>
+               <resourceid class="- topic/resourceid " oxy-source="topic" appid="task_szl_tn3_3bb"></resourceid>
+               <navtitle class="- topic/navtitle ">Configuring Security Settings</navtitle><?ditaot gentext?>
+               <linktext class="- map/linktext ">Configuring Security Settings</linktext><?ditaot genshortdesc?>
+               <shortdesc class="- map/shortdesc "></shortdesc>
+            </topicmeta>
+         </topic>
+      </topic>
+      <topic href="javascript:void(0)" wh-toc-id="tocId-d66e136">
+         <title>Recommended Options</title>
+         <topic href="Getting%20Started/Task/blocking_debugger.html" data-id="blocking_debugger" wh-toc-id="blocking_debugger-d66e137">
+            <title>Recommended Options</title>
+            <shortdesc>
+               <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc"></p>
+            </shortdesc>
+            <topicmeta>
+               <resourceid class="- topic/resourceid " oxy-source="topic" appid="blocking_debugger"></resourceid>
+               <navtitle class="- topic/navtitle ">Recommended Options</navtitle><?ditaot gentext?>
+               <linktext class="- map/linktext ">Recommended Options</linktext><?ditaot genshortdesc?>
+               <shortdesc class="- map/shortdesc "></shortdesc>
+            </topicmeta>
+         </topic>
+         <topic href="Getting%20Started/Task/untitled4.html" data-id="untitled4" wh-toc-id="untitled4-d66e147">
+            <title>Setting Print Page Options</title>
+            <shortdesc>
+               <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc"></p>
+            </shortdesc>
+            <topicmeta>
+               <resourceid class="- topic/resourceid " oxy-source="topic" appid="untitled4"></resourceid>
+               <navtitle class="- topic/navtitle ">Setting Print Page Options</navtitle><?ditaot gentext?>
+               <linktext class="- map/linktext ">Setting Print Page Options</linktext><?ditaot genshortdesc?>
+               <shortdesc class="- map/shortdesc "></shortdesc>
+            </topicmeta>
+         </topic>
+      </topic>
+      <topic href="javascript:void(0)" wh-toc-id="tocId-d66e157">
+         <title>Sign In</title>
+         <topic href="Getting%20Started/Task/first_time_sign_in.html" data-id="first_time_sign_in" wh-toc-id="first_time_sign_in-d66e158">
+            <title>First Time Sign In</title>
+            <shortdesc>
+               <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">This section describes how you can sign-in to Nuance CDE for the first         time.</p>
+            </shortdesc>
+            <topicmeta>
+               <resourceid class="- topic/resourceid " oxy-source="topic" appid="first_time_sign_in"></resourceid>
+               <navtitle class="- topic/navtitle ">First Time Sign In</navtitle><?ditaot gentext?>
+               <linktext class="- map/linktext ">First Time Sign In</linktext><?ditaot genshortdesc?>
+               <shortdesc class="- map/shortdesc ">This section describes how you can sign-in to Nuance CDE for the first         time.</shortdesc>
+            </topicmeta>
+         </topic>
+         <topic href="Getting%20Started/Task/logging_in.html" data-id="logging_in" wh-toc-id="logging_in-d66e169">
+            <title>Standard Sign In</title>
+            <shortdesc>
+               <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">This section describes how you can sign-in to Nuance CDE.</p>
+            </shortdesc>
+            <topicmeta>
+               <resourceid class="- topic/resourceid " oxy-source="topic" appid="logging_in"></resourceid>
+               <navtitle class="- topic/navtitle ">Standard Sign In</navtitle><?ditaot gentext?>
+               <linktext class="- map/linktext ">Standard Sign In</linktext><?ditaot genshortdesc?>
+               <shortdesc class="- map/shortdesc ">This section describes how you can sign-in to Nuance CDE.</shortdesc>
+            </topicmeta>
+         </topic>
+         <topic href="Getting%20Started/Task/updating_password.html" data-id="updating_password" wh-toc-id="updating_password-d66e180">
+            <title>Updating Password</title>
+            <shortdesc>
+               <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc"></p>
+            </shortdesc>
+            <topicmeta>
+               <resourceid class="- topic/resourceid " oxy-source="topic" appid="updating_password"></resourceid>
+               <navtitle class="- topic/navtitle ">Updating Password</navtitle><?ditaot gentext?>
+               <linktext class="- map/linktext ">Updating Password</linktext><?ditaot genshortdesc?>
+               <shortdesc class="- map/shortdesc "></shortdesc>
+            </topicmeta>
+         </topic>
+         <topic href="Getting%20Started/Concept/password_settings.html" data-id="password_settings" wh-toc-id="password_settings-d66e190">
+            <title>Password Settings</title>
+            <shortdesc>
+               <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc"></p>
+            </shortdesc>
+            <topicmeta>
+               <resourceid class="- topic/resourceid " oxy-source="topic" appid="password_settings"></resourceid>
+               <navtitle class="- topic/navtitle ">Password Settings</navtitle><?ditaot gentext?>
+               <linktext class="- map/linktext ">Password Settings</linktext><?ditaot genshortdesc?>
+               <shortdesc class="- map/shortdesc "></shortdesc>
+            </topicmeta>
+         </topic>
+         <topic href="Getting%20Started/Concept/rules_for_creating_passwords.html" data-id="rules_for_creating_passwords" wh-toc-id="rules_for_creating_passwords-d66e200">
+            <title>Rules for Creating Passwords</title>
+            <shortdesc>
+               <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc"></p>
+            </shortdesc>
+            <topicmeta>
+               <resourceid class="- topic/resourceid " oxy-source="topic" appid="rules_for_creating_passwords"></resourceid>
+               <navtitle class="- topic/navtitle ">Rules for Creating Passwords</navtitle><?ditaot gentext?>
+               <linktext class="- map/linktext ">Rules for Creating Passwords</linktext><?ditaot genshortdesc?>
+               <shortdesc class="- map/shortdesc "></shortdesc>
+            </topicmeta>
+         </topic>
+      </topic>
+      <topic href="javascript:void(0)" wh-toc-id="tocId-d66e210">
+         <title>Single Sign On</title>
+         <topic href="Getting%20Started/Concept/about_single_sign_on.html" data-id="about_single_sign_on" wh-toc-id="about_single_sign_on-d66e211">
+            <title>About Single Sign-On</title>
+            <shortdesc>
+               <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc"></p>
+            </shortdesc>
+            <topicmeta>
+               <resourceid class="- topic/resourceid " oxy-source="topic" appid="about_single_sign_on"></resourceid>
+               <navtitle class="- topic/navtitle ">About Single Sign-On</navtitle><?ditaot gentext?>
+               <linktext class="- map/linktext ">About Single Sign-On</linktext><?ditaot genshortdesc?>
+               <shortdesc class="- map/shortdesc "></shortdesc>
+            </topicmeta>
+         </topic>
+      </topic>
+      <topic href="Getting%20Started/Task/logging_out.html" data-id="untitled12" wh-toc-id="untitled12-d66e221">
+         <title>Logging Out</title>
+         <shortdesc>
+            <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">This section describes about how to log out from the Nuance CDE.</p>
+         </shortdesc>
+         <topicmeta>
+            <resourceid class="- topic/resourceid " oxy-source="topic" appid="untitled12"></resourceid>
+            <navtitle class="- topic/navtitle ">Logging Out</navtitle><?ditaot gentext?>
+            <linktext class="- map/linktext ">Logging Out</linktext><?ditaot genshortdesc?>
+            <shortdesc class="- map/shortdesc ">This section describes about how to log out from the Nuance CDE.</shortdesc>
+         </topicmeta>
+      </topic>
+   </topic>
+   <topic href="javascript:void(0)" wh-toc-id="tocId-d66e233">
+      <title>Working With Reports</title>
+      <topic href="about_nuance_cde_analytics.html" data-id="about_nuance_cde_analytics" wh-toc-id="about_nuance_cde_analytics-d66e234">
+         <title>About Nuance CDE Analytics </title>
+         <shortdesc>
+            <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc"></p>
+         </shortdesc>
+         <topicmeta>
+            <resourceid class="- topic/resourceid " oxy-source="topic" appid="about_nuance_cde_analytics"></resourceid>
+            <navtitle class="- topic/navtitle ">About Nuance CDE Analytics </navtitle><?ditaot gentext?>
+            <linktext class="- map/linktext ">About Nuance CDE Analytics</linktext><?ditaot genshortdesc?>
+            <shortdesc class="- map/shortdesc "></shortdesc>
+         </topicmeta>
+      </topic>
+      <topic href="Task/creating_custom_reports.html" data-id="creating_custom_reports" wh-toc-id="creating_custom_reports-d66e244">
+         <title>Creating Custom Reports</title>
+         <shortdesc>
+            <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc"></p>
+         </shortdesc>
+         <topicmeta>
+            <resourceid class="- topic/resourceid " oxy-source="topic" appid="creating_custom_reports"></resourceid>
+            <navtitle class="- topic/navtitle ">Creating Custom Reports</navtitle><?ditaot gentext?>
+            <linktext class="- map/linktext ">Creating Custom Reports</linktext><?ditaot genshortdesc?>
+            <shortdesc class="- map/shortdesc "></shortdesc>
+         </topicmeta>
+      </topic>
+      <topic href="Task/adding_fields_on_custom_report.html" data-id="adding_fields_on_custom_report" wh-toc-id="adding_fields_on_custom_report-d66e254">
+         <title>Adding Fields on the Custom Report</title>
+         <shortdesc>
+            <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc"></p>
+         </shortdesc>
+         <topicmeta>
+            <resourceid class="- topic/resourceid " oxy-source="topic" appid="adding_fields_on_custom_report"></resourceid>
+            <navtitle class="- topic/navtitle ">Adding Fields on the Custom Report</navtitle><?ditaot gentext?>
+            <linktext class="- map/linktext ">Adding Fields on the Custom Report</linktext><?ditaot genshortdesc?>
+            <shortdesc class="- map/shortdesc "></shortdesc>
+         </topicmeta>
+      </topic>
+      <topic href="Reference/create_custom_reports_on_notes_created_for_the_encounters.html" data-id="create_custom_reports_on_notes_created_for_the_encounters" wh-toc-id="create_custom_reports_on_notes_created_for_the_encounters-d66e264">
+         <title>Create custom reports on Notes</title>
+         <shortdesc>
+            <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">User has the ability to create custom reports on <strong class="ph b">Notes</strong> created for the         encounter.
+            </p>
+         </shortdesc>
+         <topicmeta>
+            <resourceid class="- topic/resourceid " oxy-source="topic" appid="create_custom_reports_on_notes_created_for_the_encounters"></resourceid>
+            <navtitle class="- topic/navtitle ">Create custom reports on Notes</navtitle><?ditaot gentext?>
+            <linktext class="- map/linktext ">Create custom reports on Notes</linktext><?ditaot genshortdesc?>
+            <shortdesc class="- map/shortdesc ">User has the ability to create custom reports on 
+               <b class="+ topic/ph hi-d/b ">Notes</b> created for the         encounter.
+            </shortdesc>
+         </topicmeta>
+      </topic>
+      <topic href="Task/deleting_fields_from_the_custom_report.html" data-id="deleting_fields_from_the_custom_report" wh-toc-id="deleting_fields_from_the_custom_report-d66e278">
+         <title>Deleting Fields from Custom Report</title>
+         <shortdesc>
+            <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc"></p>
+         </shortdesc>
+         <topicmeta>
+            <resourceid class="- topic/resourceid " oxy-source="topic" appid="deleting_fields_from_the_custom_report"></resourceid>
+            <navtitle class="- topic/navtitle ">Deleting Fields from Custom Report</navtitle><?ditaot gentext?>
+            <linktext class="- map/linktext ">Deleting Fields from Custom Report</linktext><?ditaot genshortdesc?>
+            <shortdesc class="- map/shortdesc "></shortdesc>
+         </topicmeta>
+      </topic>
+      <topic href="Task/printing_a_report.html" data-id="printing_a_report" wh-toc-id="printing_a_report-d66e288">
+         <title>Printing a Report</title>
+         <shortdesc>
+            <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc"></p>
+         </shortdesc>
+         <topicmeta>
+            <resourceid class="- topic/resourceid " oxy-source="topic" appid="printing_a_report"></resourceid>
+            <navtitle class="- topic/navtitle ">Printing a Report</navtitle><?ditaot gentext?>
+            <linktext class="- map/linktext ">Printing a Report</linktext><?ditaot genshortdesc?>
+            <shortdesc class="- map/shortdesc "></shortdesc>
+         </topicmeta>
+      </topic>
+      <topic href="search_criteria_for_custom_reports.html" data-id="search_criteria_for_custom_reports" wh-toc-id="search_criteria_for_custom_reports-d66e298">
+         <title>Search Criteria for Custom Reports</title>
+         <shortdesc>
+            <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc"></p>
+         </shortdesc>
+         <topicmeta>
+            <resourceid class="- topic/resourceid " oxy-source="topic" appid="search_criteria_for_custom_reports"></resourceid>
+            <navtitle class="- topic/navtitle ">Search Criteria for Custom Reports</navtitle><?ditaot gentext?>
+            <linktext class="- map/linktext ">Search Criteria for Custom Reports</linktext><?ditaot genshortdesc?>
+            <shortdesc class="- map/shortdesc "></shortdesc>
+         </topicmeta>
+      </topic>
+      <topic href="adjust_report_view.html" data-id="adjust_report_view" wh-toc-id="adjust_report_view-d66e308">
+         <title>Adjust Report View</title>
+         <shortdesc>
+            <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc"></p>
+         </shortdesc>
+         <topicmeta>
+            <resourceid class="- topic/resourceid " oxy-source="topic" appid="adjust_report_view"></resourceid>
+            <navtitle class="- topic/navtitle ">Adjust Report View</navtitle><?ditaot gentext?>
+            <linktext class="- map/linktext ">Adjust Report View</linktext><?ditaot genshortdesc?>
+            <shortdesc class="- map/shortdesc "></shortdesc>
+         </topicmeta>
+      </topic>
+      <topic href="power_bi_controls.html" data-id="power_bi_controls" wh-toc-id="power_bi_controls-d66e318">
+         <title>Power BI Controls</title>
+         <shortdesc>
+            <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc"></p>
+         </shortdesc>
+         <topicmeta>
+            <resourceid class="- topic/resourceid " oxy-source="topic" appid="power_bi_controls"></resourceid>
+            <navtitle class="- topic/navtitle ">Power BI Controls</navtitle><?ditaot gentext?>
+            <linktext class="- map/linktext ">Power BI Controls</linktext><?ditaot genshortdesc?>
+            <shortdesc class="- map/shortdesc "></shortdesc>
+         </topicmeta>
+      </topic>
+   </topic>
+   <topic href="javascript:void(0)" wh-toc-id="tocId-d66e329">
+      <title>CDE One - CDI Operations</title>
+      <topic href="encounter_monitoring.html" data-id="encounter_monitoring" wh-toc-id="encounter_monitoring-d66e330">
+         <title>Encounter Monitoring</title>
+         <shortdesc>
+            <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc"></p>
+         </shortdesc>
+         <topicmeta>
+            <resourceid class="- topic/resourceid " oxy-source="topic" appid="encounter_monitoring"></resourceid>
+            <navtitle class="- topic/navtitle ">Encounter Monitoring</navtitle><?ditaot gentext?>
+            <linktext class="- map/linktext ">Encounter Monitoring</linktext><?ditaot genshortdesc?>
+            <shortdesc class="- map/shortdesc "></shortdesc>
+         </topicmeta>
+      </topic>
+      <topic href="overdue_clarifications.html" data-id="overdue_clarifications" wh-toc-id="overdue_clarifications-d66e340">
+         <title>Overdue Clarifications</title>
+         <shortdesc>
+            <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc"></p>
+         </shortdesc>
+         <topicmeta>
+            <resourceid class="- topic/resourceid " oxy-source="topic" appid="overdue_clarifications"></resourceid>
+            <navtitle class="- topic/navtitle ">Overdue Clarifications</navtitle><?ditaot gentext?>
+            <linktext class="- map/linktext ">Overdue Clarifications</linktext><?ditaot genshortdesc?>
+            <shortdesc class="- map/shortdesc "></shortdesc>
+         </topicmeta>
+      </topic>
+      <topic href="provider_response_activity.html" data-id="provider_response_activity" wh-toc-id="provider_response_activity-d66e350">
+         <title>Provider Response Activity</title>
+         <shortdesc>
+            <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc"></p>
+         </shortdesc>
+         <topicmeta>
+            <resourceid class="- topic/resourceid " oxy-source="topic" appid="provider_response_activity"></resourceid>
+            <navtitle class="- topic/navtitle ">Provider Response Activity</navtitle><?ditaot gentext?>
+            <linktext class="- map/linktext ">Provider Response Activity</linktext><?ditaot genshortdesc?>
+            <shortdesc class="- map/shortdesc "></shortdesc>
+         </topicmeta>
+      </topic>
+      <topic href="clarification_details.html" data-id="clarification_details" wh-toc-id="clarification_details-d66e360">
+         <title>Clarification Details</title>
+         <shortdesc>
+            <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc"> </p>
+         </shortdesc>
+         <topicmeta>
+            <resourceid class="- topic/resourceid " oxy-source="topic" appid="clarification_details"></resourceid>
+            <navtitle class="- topic/navtitle ">Clarification Details</navtitle><?ditaot gentext?>
+            <linktext class="- map/linktext ">Clarification Details</linktext><?ditaot genshortdesc?>
+            <shortdesc class="- map/shortdesc "> </shortdesc>
+         </topicmeta>
+      </topic>
+      <topic href="encounter_details.html" data-id="encounter_details" wh-toc-id="encounter_details-d66e371">
+         <title>Encounter Details</title>
+         <shortdesc>
+            <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc"></p>
+         </shortdesc>
+         <topicmeta>
+            <resourceid class="- topic/resourceid " oxy-source="topic" appid="encounter_details"></resourceid>
+            <navtitle class="- topic/navtitle ">Encounter Details</navtitle><?ditaot gentext?>
+            <linktext class="- map/linktext ">Encounter Details</linktext><?ditaot genshortdesc?>
+            <shortdesc class="- map/shortdesc "></shortdesc>
+         </topicmeta>
+      </topic>
+      <topic href="tracking_codes.html" data-id="tracking_codes" wh-toc-id="tracking_codes-d66e381">
+         <title>Tracking Codes</title>
+         <shortdesc>
+            <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc"></p>
+         </shortdesc>
+         <topicmeta>
+            <resourceid class="- topic/resourceid " oxy-source="topic" appid="tracking_codes"></resourceid>
+            <navtitle class="- topic/navtitle ">Tracking Codes</navtitle><?ditaot gentext?>
+            <linktext class="- map/linktext ">Tracking Codes</linktext><?ditaot genshortdesc?>
+            <shortdesc class="- map/shortdesc "></shortdesc>
+         </topicmeta>
+      </topic>
+      <topic href="quality_alerts.html" data-id="quality_alerts" wh-toc-id="quality_alerts-d66e391">
+         <title>Quality Alerts</title>
+         <shortdesc>
+            <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc"></p>
+         </shortdesc>
+         <topicmeta>
+            <resourceid class="- topic/resourceid " oxy-source="topic" appid="quality_alerts"></resourceid>
+            <navtitle class="- topic/navtitle ">Quality Alerts</navtitle><?ditaot gentext?>
+            <linktext class="- map/linktext ">Quality Alerts</linktext><?ditaot genshortdesc?>
+            <shortdesc class="- map/shortdesc "></shortdesc>
+         </topicmeta>
+      </topic>
+      <topic href="concurrent_impact_summary.html" data-id="concurrent_impact_summary" wh-toc-id="concurrent_impact_summary-d66e401">
+         <title>Concurrent Impact</title>
+         <shortdesc>
+            <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc"></p>
+         </shortdesc>
+         <topicmeta>
+            <resourceid class="- topic/resourceid " oxy-source="topic" appid="concurrent_impact_summary"></resourceid>
+            <navtitle class="- topic/navtitle ">Concurrent Impact</navtitle><?ditaot gentext?>
+            <linktext class="- map/linktext ">Concurrent Impact</linktext><?ditaot genshortdesc?>
+            <shortdesc class="- map/shortdesc "></shortdesc>
+         </topicmeta>
+      </topic>
+   </topic>
+   <topic href="javascript:void(0)" wh-toc-id="tocId-d66e413">
+      <title>CDE One - Staff Management</title>
+      <topic href="team_performance.html" data-id="team_performance" wh-toc-id="team_performance-d66e414">
+         <title>Team Performance</title>
+         <shortdesc>
+            <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc"></p>
+         </shortdesc>
+         <topicmeta>
+            <resourceid class="- topic/resourceid " oxy-source="topic" appid="team_performance"></resourceid>
+            <navtitle class="- topic/navtitle ">Team Performance</navtitle><?ditaot gentext?>
+            <linktext class="- map/linktext ">Team Performance</linktext><?ditaot genshortdesc?>
+            <shortdesc class="- map/shortdesc "></shortdesc>
+         </topicmeta>
+      </topic>
+      <topic href="cds_monthly_productivity.html" data-id="cds_monthly_productivity" wh-toc-id="cds_monthly_productivity-d66e424">
+         <title>CDS Monthly Productivity</title>
+         <shortdesc>
+            <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc"></p>
+         </shortdesc>
+         <topicmeta>
+            <resourceid class="- topic/resourceid " oxy-source="topic" appid="cds_monthly_productivity"></resourceid>
+            <navtitle class="- topic/navtitle ">CDS Monthly Productivity</navtitle><?ditaot gentext?>
+            <linktext class="- map/linktext ">CDS Monthly Productivity</linktext><?ditaot genshortdesc?>
+            <shortdesc class="- map/shortdesc "></shortdesc>
+         </topicmeta>
+      </topic>
+      <topic href="cds_impact.html" data-id="cds_impact" wh-toc-id="cds_impact-d66e434">
+         <title>CDS Impact</title>
+         <shortdesc>
+            <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc"></p>
+         </shortdesc>
+         <topicmeta>
+            <resourceid class="- topic/resourceid " oxy-source="topic" appid="cds_impact"></resourceid>
+            <navtitle class="- topic/navtitle ">CDS Impact</navtitle><?ditaot gentext?>
+            <linktext class="- map/linktext ">CDS Impact</linktext><?ditaot genshortdesc?>
+            <shortdesc class="- map/shortdesc "></shortdesc>
+         </topicmeta>
+      </topic>
+      <topic href="cds_review_activity.html" data-id="cds_review_activity" wh-toc-id="cds_review_activity-d66e444">
+         <title>CDS Review Activity</title>
+         <shortdesc>
+            <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc"></p>
+         </shortdesc>
+         <topicmeta>
+            <resourceid class="- topic/resourceid " oxy-source="topic" appid="cds_review_activity"></resourceid>
+            <navtitle class="- topic/navtitle ">CDS Review Activity</navtitle><?ditaot gentext?>
+            <linktext class="- map/linktext ">CDS Review Activity</linktext><?ditaot genshortdesc?>
+            <shortdesc class="- map/shortdesc "></shortdesc>
+         </topicmeta>
+      </topic>
+      <topic href="cds_coder_match.html" data-id="cds_coder_match" wh-toc-id="cds_coder_match-d66e454">
+         <title>CDS/Coder Match</title>
+         <shortdesc>
+            <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc"></p>
+         </shortdesc>
+         <topicmeta>
+            <resourceid class="- topic/resourceid " oxy-source="topic" appid="cds_coder_match"></resourceid>
+            <navtitle class="- topic/navtitle ">CDS/Coder Match</navtitle><?ditaot gentext?>
+            <linktext class="- map/linktext ">CDS/Coder Match</linktext><?ditaot genshortdesc?>
+            <shortdesc class="- map/shortdesc "></shortdesc>
+         </topicmeta>
+      </topic>
+   </topic>
+   <topic href="javascript:void(0)" wh-toc-id="tocId-d66e465">
+      <title>CDE One - Executive Summary</title>
+      <topic href="executive_overview.html" data-id="executive_overview" wh-toc-id="executive_overview-d66e466">
+         <title>Executive Overview </title>
+         <shortdesc>
+            <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc"></p>
+         </shortdesc>
+         <topicmeta>
+            <resourceid class="- topic/resourceid " oxy-source="topic" appid="executive_overview"></resourceid>
+            <navtitle class="- topic/navtitle ">Executive Overview </navtitle><?ditaot gentext?>
+            <linktext class="- map/linktext ">Executive Overview</linktext><?ditaot genshortdesc?>
+            <shortdesc class="- map/shortdesc "></shortdesc>
+         </topicmeta>
+      </topic>
+      <topic href="cdi_dashboard.html" data-id="cdi_dashboard" wh-toc-id="cdi_dashboard-d66e476">
+         <title>CDI Dashboard</title>
+         <shortdesc>
+            <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc"></p>
+         </shortdesc>
+         <topicmeta>
+            <resourceid class="- topic/resourceid " oxy-source="topic" appid="cdi_dashboard"></resourceid>
+            <navtitle class="- topic/navtitle ">CDI Dashboard</navtitle><?ditaot gentext?>
+            <linktext class="- map/linktext ">CDI Dashboard</linktext><?ditaot genshortdesc?>
+            <shortdesc class="- map/shortdesc "></shortdesc>
+         </topicmeta>
+      </topic>
+      <topic href="cmi_breakdown.html" data-id="cmi_breakdown" wh-toc-id="cmi_breakdown-d66e486">
+         <title>CMI Breakdown</title>
+         <shortdesc>
+            <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc"></p>
+         </shortdesc>
+         <topicmeta>
+            <resourceid class="- topic/resourceid " oxy-source="topic" appid="cmi_breakdown"></resourceid>
+            <navtitle class="- topic/navtitle ">CMI Breakdown</navtitle><?ditaot gentext?>
+            <linktext class="- map/linktext ">CMI Breakdown</linktext><?ditaot genshortdesc?>
+            <shortdesc class="- map/shortdesc "></shortdesc>
+         </topicmeta>
+      </topic>
+      <topic href="soi_rom_impact.html" data-id="soi_rom_impact" wh-toc-id="soi_rom_impact-d66e496">
+         <title>SOI/ROM Impact</title>
+         <shortdesc>
+            <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc"></p>
+         </shortdesc>
+         <topicmeta>
+            <resourceid class="- topic/resourceid " oxy-source="topic" appid="soi_rom_impact"></resourceid>
+            <navtitle class="- topic/navtitle ">SOI/ROM Impact</navtitle><?ditaot gentext?>
+            <linktext class="- map/linktext ">SOI/ROM Impact</linktext><?ditaot genshortdesc?>
+            <shortdesc class="- map/shortdesc "></shortdesc>
+         </topicmeta>
+      </topic>
+      <topic href="drg_breakdown.html" data-id="drg_breakdown" wh-toc-id="drg_breakdown-d66e506">
+         <title>DRG Breakdown</title>
+         <shortdesc>
+            <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc"></p>
+         </shortdesc>
+         <topicmeta>
+            <resourceid class="- topic/resourceid " oxy-source="topic" appid="drg_breakdown"></resourceid>
+            <navtitle class="- topic/navtitle ">DRG Breakdown</navtitle><?ditaot gentext?>
+            <linktext class="- map/linktext ">DRG Breakdown</linktext><?ditaot genshortdesc?>
+            <shortdesc class="- map/shortdesc "></shortdesc>
+         </topicmeta>
+      </topic>
+      <topic href="reconciliation_details.html" data-id="reconciliation_details" wh-toc-id="reconciliation_details-d66e516">
+         <title>Reconciliation Details</title>
+         <shortdesc>
+            <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc"></p>
+         </shortdesc>
+         <topicmeta>
+            <resourceid class="- topic/resourceid " oxy-source="topic" appid="reconciliation_details"></resourceid>
+            <navtitle class="- topic/navtitle ">Reconciliation Details</navtitle><?ditaot gentext?>
+            <linktext class="- map/linktext ">Reconciliation Details</linktext><?ditaot genshortdesc?>
+            <shortdesc class="- map/shortdesc "></shortdesc>
+         </topicmeta>
+      </topic>
+      <topic href="clarification_type_trend.html" data-id="clarification_type_trend" wh-toc-id="clarification_type_trend-d66e526">
+         <title>Clarification Type Trend</title>
+         <shortdesc>
+            <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc"></p>
+         </shortdesc>
+         <topicmeta>
+            <resourceid class="- topic/resourceid " oxy-source="topic" appid="clarification_type_trend"></resourceid>
+            <navtitle class="- topic/navtitle ">Clarification Type Trend</navtitle><?ditaot gentext?>
+            <linktext class="- map/linktext ">Clarification Type Trend</linktext><?ditaot genshortdesc?>
+            <shortdesc class="- map/shortdesc "></shortdesc>
+         </topicmeta>
+      </topic>
+   </topic>
+   <topic href="javascript:void(0)" wh-toc-id="tocId-d66e537">
+      <title>CDE Triage - CDE Triage Dashboard</title>
+      <topic href="CDE%20Triage%20Dashboard%20Overview.html" data-id="CDE_Triage_Dashboard_Overview" wh-toc-id="CDE_Triage_Dashboard_Overview-d66e538">
+         <title>CDE Triage Reports Overview</title>
+         <shortdesc>
+            <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc"></p>
+         </shortdesc>
+         <topicmeta>
+            <resourceid class="- topic/resourceid " oxy-source="topic" appid="CDE_Triage_Dashboard_Overview"></resourceid>
+            <navtitle class="- topic/navtitle ">CDE Triage Reports Overview</navtitle><?ditaot gentext?>
+            <linktext class="- map/linktext ">CDE Triage Reports Overview</linktext><?ditaot genshortdesc?>
+            <shortdesc class="- map/shortdesc "></shortdesc>
+         </topicmeta>
+      </topic>
+      <topic href="Missed%20Concurrent%20Reviews.html" data-id="Missed_Concurrent_Reviews" wh-toc-id="Missed_Concurrent_Reviews-d66e548">
+         <title>Missed Concurrent Reviews</title>
+         <shortdesc>
+            <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc"></p>
+         </shortdesc>
+         <topicmeta>
+            <resourceid class="- topic/resourceid " oxy-source="topic" appid="Missed_Concurrent_Reviews"></resourceid>
+            <navtitle class="- topic/navtitle ">Missed Concurrent Reviews</navtitle><?ditaot gentext?>
+            <linktext class="- map/linktext ">Missed Concurrent Reviews</linktext><?ditaot genshortdesc?>
+            <shortdesc class="- map/shortdesc "></shortdesc>
+         </topicmeta>
+      </topic>
+      <topic href="Reviews%20By%20Highest%20Rank.html" data-id="Reviews_By_Highest_Rank" wh-toc-id="Reviews_By_Highest_Rank-d66e558">
+         <title>Reviews By Highest Rank</title>
+         <shortdesc>
+            <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc"></p>
+         </shortdesc>
+         <topicmeta>
+            <resourceid class="- topic/resourceid " oxy-source="topic" appid="Reviews_By_Highest_Rank"></resourceid>
+            <navtitle class="- topic/navtitle ">Reviews By Highest Rank</navtitle><?ditaot gentext?>
+            <linktext class="- map/linktext ">Reviews By Highest Rank</linktext><?ditaot genshortdesc?>
+            <shortdesc class="- map/shortdesc "></shortdesc>
+         </topicmeta>
+      </topic>
+      <topic href="Assistant%20Usage.html" data-id="Assistant_Usage" wh-toc-id="Assistant_Usage-d66e568">
+         <title>Assistant Usage</title>
+         <shortdesc>
+            <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc"></p>
+         </shortdesc>
+         <topicmeta>
+            <resourceid class="- topic/resourceid " oxy-source="topic" appid="Assistant_Usage"></resourceid>
+            <navtitle class="- topic/navtitle ">Assistant Usage</navtitle><?ditaot gentext?>
+            <linktext class="- map/linktext ">Assistant Usage</linktext><?ditaot genshortdesc?>
+            <shortdesc class="- map/shortdesc "></shortdesc>
+         </topicmeta>
+      </topic>
+      <topic href="Discharges%20By%20Rank%20at%20Discharge.html" data-id="Discharges_By_Rank_at_Discharge" wh-toc-id="Discharges_By_Rank_at_Discharge-d66e578">
+         <title>Discharges By Rank at Discharge</title>
+         <shortdesc>
+            <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc"></p>
+         </shortdesc>
+         <topicmeta>
+            <resourceid class="- topic/resourceid " oxy-source="topic" appid="Discharges_By_Rank_at_Discharge"></resourceid>
+            <navtitle class="- topic/navtitle ">Discharges By Rank at Discharge</navtitle><?ditaot gentext?>
+            <linktext class="- map/linktext ">Discharges By Rank at Discharge</linktext><?ditaot genshortdesc?>
+            <shortdesc class="- map/shortdesc "></shortdesc>
+         </topicmeta>
+      </topic>
+      <topic href="Review%20Rates.html" data-id="Review_Rates" wh-toc-id="Review_Rates-d66e588">
+         <title>Review Rates</title>
+         <shortdesc>
+            <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc"></p>
+         </shortdesc>
+         <topicmeta>
+            <resourceid class="- topic/resourceid " oxy-source="topic" appid="Review_Rates"></resourceid>
+            <navtitle class="- topic/navtitle ">Review Rates</navtitle><?ditaot gentext?>
+            <linktext class="- map/linktext ">Review Rates</linktext><?ditaot genshortdesc?>
+            <shortdesc class="- map/shortdesc "></shortdesc>
+         </topicmeta>
+      </topic>
+      <topic href="Reviews%20by%20Payer.html" data-id="Reviews_by_Payer" wh-toc-id="Reviews_by_Payer-d66e598">
+         <title>Reviews by Payer</title>
+         <shortdesc>
+            <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc"></p>
+         </shortdesc>
+         <topicmeta>
+            <resourceid class="- topic/resourceid " oxy-source="topic" appid="Reviews_by_Payer"></resourceid>
+            <navtitle class="- topic/navtitle ">Reviews by Payer</navtitle><?ditaot gentext?>
+            <linktext class="- map/linktext ">Reviews by Payer</linktext><?ditaot genshortdesc?>
+            <shortdesc class="- map/shortdesc "></shortdesc>
+         </topicmeta>
+      </topic>
+   </topic>
+   <topic href="javascript:void(0)" wh-toc-id="tocId-d66e609">
+      <title>CDE Triage - Post Discharge Reviews</title>
+      <topic href="post_discharge_reviews_overview.html" data-id="post_discharge_reviews_overview" wh-toc-id="post_discharge_reviews_overview-d66e610">
+         <title>Post-Discharge Reviews Overview</title>
+         <shortdesc>
+            <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc"></p>
+         </shortdesc>
+         <topicmeta>
+            <resourceid class="- topic/resourceid " oxy-source="topic" appid="post_discharge_reviews_overview"></resourceid>
+            <navtitle class="- topic/navtitle ">Post-Discharge Reviews Overview</navtitle><?ditaot gentext?>
+            <linktext class="- map/linktext ">Post-Discharge Reviews Overview</linktext><?ditaot genshortdesc?>
+            <shortdesc class="- map/shortdesc "></shortdesc>
+         </topicmeta>
+      </topic>
+      <topic href="post_discharge_reviews_trend.html" data-id="post_discharge_reviews_trend" wh-toc-id="post_discharge_reviews_trend-d66e620">
+         <title>Post-Discharge Reviews Trend</title>
+         <shortdesc>
+            <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc"></p>
+         </shortdesc>
+         <topicmeta>
+            <resourceid class="- topic/resourceid " oxy-source="topic" appid="post_discharge_reviews_trend"></resourceid>
+            <navtitle class="- topic/navtitle ">Post-Discharge Reviews Trend</navtitle><?ditaot gentext?>
+            <linktext class="- map/linktext ">Post-Discharge Reviews Trend</linktext><?ditaot genshortdesc?>
+            <shortdesc class="- map/shortdesc "></shortdesc>
+         </topicmeta>
+      </topic>
+   </topic>
+   <topic href="javascript:void(0)" wh-toc-id="tocId-d66e631">
+      <title>CDS General - CDS Productivity</title>
+      <topic href="cds_productivity_summary.html" data-id="cds_productivity_summary" wh-toc-id="cds_productivity_summary-d66e632">
+         <title>CDS Productivity Summary</title>
+         <shortdesc>
+            <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc"></p>
+         </shortdesc>
+         <topicmeta>
+            <resourceid class="- topic/resourceid " oxy-source="topic" appid="cds_productivity_summary"></resourceid>
+            <navtitle class="- topic/navtitle ">CDS Productivity Summary</navtitle><?ditaot gentext?>
+            <linktext class="- map/linktext ">CDS Productivity Summary</linktext><?ditaot genshortdesc?>
+            <shortdesc class="- map/shortdesc "></shortdesc>
+         </topicmeta>
+      </topic>
+      <topic href="cds_activity_details.html" data-id="cds_activity_details" wh-toc-id="cds_activity_details-d66e642">
+         <title>CDS Activity Details</title>
+         <shortdesc>
+            <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc"></p>
+         </shortdesc>
+         <topicmeta>
+            <resourceid class="- topic/resourceid " oxy-source="topic" appid="cds_activity_details"></resourceid>
+            <navtitle class="- topic/navtitle ">CDS Activity Details</navtitle><?ditaot gentext?>
+            <linktext class="- map/linktext ">CDS Activity Details</linktext><?ditaot genshortdesc?>
+            <shortdesc class="- map/shortdesc "></shortdesc>
+         </topicmeta>
+      </topic>
+      <topic href="Overdue%20Clarification.html" data-id="Overdue_Clarification" wh-toc-id="Overdue_Clarification-d66e652">
+         <title>Overdue Clarification</title>
+         <shortdesc>
+            <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc"></p>
+         </shortdesc>
+         <topicmeta>
+            <resourceid class="- topic/resourceid " oxy-source="topic" appid="Overdue_Clarification"></resourceid>
+            <navtitle class="- topic/navtitle ">Overdue Clarification</navtitle><?ditaot gentext?>
+            <linktext class="- map/linktext ">Overdue Clarification</linktext><?ditaot genshortdesc?>
+            <shortdesc class="- map/shortdesc "></shortdesc>
+         </topicmeta>
+      </topic>
+   </topic>
+   <topic href="javascript:void(0)" wh-toc-id="tocId-d66e663">
+      <title>Analytics Concepts</title>
+      <topic href="visualization_types.html" data-id="visualization_types" wh-toc-id="visualization_types-d66e664">
+         <title>Visualization Types</title>
+         <shortdesc>
+            <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc"></p>
+         </shortdesc>
+         <topicmeta>
+            <resourceid class="- topic/resourceid " oxy-source="topic" appid="visualization_types"></resourceid>
+            <navtitle class="- topic/navtitle ">Visualization Types</navtitle><?ditaot gentext?>
+            <linktext class="- map/linktext ">Visualization Types</linktext><?ditaot genshortdesc?>
+            <shortdesc class="- map/shortdesc "></shortdesc>
+         </topicmeta>
+      </topic>
+   </topic>
+   <topic href="javascript:void(0)" wh-toc-id="tocId-d66e676">
+      <title>Related Documents</title>
+      <topic href="related_documents.html" data-id="related_documents" wh-toc-id="related_documents-d66e677">
+         <title>Related Documents</title>
+         <shortdesc>
+            <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc"></p>
+         </shortdesc>
+         <topicmeta>
+            <resourceid class="- topic/resourceid " oxy-source="topic" appid="related_documents"></resourceid>
+            <navtitle class="- topic/navtitle ">Related Documents</navtitle><?ditaot gentext?>
+            <linktext class="- map/linktext ">Related Documents</linktext><?ditaot genshortdesc?>
+            <shortdesc class="- map/shortdesc "></shortdesc>
+         </topicmeta>
+      </topic>
+   </topic>
+   <topic href="javascript:void(0)" wh-toc-id="tocId-d66e688">
+      <title>Glossary</title>
+      <topic href="glossary.html" data-id="glossary" wh-toc-id="glossary-d66e689">
+         <title>Analytics Glossary</title>
+         <shortdesc>
+            <p xmlns="http://www.w3.org/1999/xhtml" class="shortdesc">The fields listed below are available in the CDE One and CDE Triage reports for         custom reporting. Please note that
+               this list does not include the fields available in the         near-real time CDS General/ CDS Productivity report.
+            </p>
+         </shortdesc>
+         <topicmeta>
+            <resourceid class="- topic/resourceid " oxy-source="topic" appid="glossary"></resourceid>
+            <navtitle class="- topic/navtitle ">Analytics Glossary</navtitle><?ditaot gentext?>
+            <linktext class="- map/linktext ">Analytics Glossary</linktext><?ditaot genshortdesc?>
+            <shortdesc class="- map/shortdesc ">The fields listed below are available in the CDE One and CDE Triage reports for         custom reporting. Please note that
+               this list does not include the fields available in the         near-real time CDS General/ CDS Productivity report.
+            </shortdesc>
+         </topicmeta>
+      </topic>
+   </topic>
+</toc>

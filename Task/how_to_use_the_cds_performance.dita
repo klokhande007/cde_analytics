@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="how_to_use_the_cds_performance">
+    <title>How to use the CDS Performance Report to find specific information?</title>
+    <shortdesc></shortdesc>
+    <task id="task_uqr_jmd_wgb">
+        <title>How does the detailed performance in terms of clarifications look like for a specific
+            CDS?</title>
+        <taskbody>
+            <steps id="steps_vkj_mmd_wgb">
+                <step>
+                    <cmd>Select <uicontrol>Staff Management</uicontrol> from the <i>Analytics</i>
+                        screen.</cmd>
+                </step>
+                <step>
+                    <cmd>Select the <uicontrol>CDS Performance Report</uicontrol> tab.</cmd>
+                    <stepresult>The report displays data for last one calendar month based on the
+                        discharge date.</stepresult>
+                </step>
+                <step>
+                    <cmd>Select the time range from the <uicontrol>Discharge Date</uicontrol>
+                        filter.</cmd>
+                </step>
+                <step>
+                    <cmd>Analyze the <uicontrol>Encounter Clarification Rate</uicontrol>,
+                            <uicontrol>Clarifications Sent</uicontrol>, <uicontrol>Financial Impact
+                            Clarifications</uicontrol>, <uicontrol>Other Impact
+                            Clarifications</uicontrol>, <uicontrol>SEV Clarifications</uicontrol>,
+                            <uicontrol>Response Rate</uicontrol>, <uicontrol>Agreement
+                            Rate</uicontrol> KPI cards.</cmd>
+                    <stepresult>These KPI cards display at-a-glance view into the performance of the
+                        selected CDS in terms of clarification activity in the selected time
+                        period.</stepresult>
+                </step>
+            </steps>
+        </taskbody>
+        <task id="task_xtp_ymd_wgb">
+            <title>What percentage of clarifications sent by a CDS are agreed? How many
+                clarifications sent by a CDS are not responded? </title>
+            <taskbody>
+                <steps id="steps_yyy_fnd_wgb">
+                    <step>
+                        <cmd>Select <uicontrol>Staff Management</uicontrol> from the
+                                <i>Analytics</i> screen.</cmd>
+                    </step>
+                    <step>
+                        <cmd>Select the <uicontrol>CDS Performance Report</uicontrol> tab.</cmd>
+                        <stepresult>The report displays data for last one calendar month based on
+                            the discharge date.</stepresult>
+                    </step>
+                    <step>
+                        <cmd>Select the time range from the <uicontrol>Discharge Date</uicontrol>
+                            filter.</cmd>
+                    </step>
+                    <step>
+                        <cmd>Analyze the <uicontrol>Clarifications by Response</uicontrol>
+                            chart.</cmd>
+                        <stepresult>This chart displays count of clarifications for each response
+                            type. Use this chart to identify number of clarifications with
+                                <i>Agreed</i> response. Use the tool-tip to get percentage of agreed
+                                clarifications.<p>Click on <uicontrol>No Response</uicontrol> legend
+                                to analyze the count of clarifications that are not responded.
+                                    <uicontrol>Clarification Details</uicontrol> tabular report now
+                                displays clarification details for the clarifications that are not
+                                responded. Sort the tabular report by the
+                                    <uicontrol>Provider</uicontrol> column and identify the
+                                providers who did not respond to the clarifications sent by the
+                                CDS.</p><p>Click on <uicontrol>Retracted</uicontrol> legend to
+                                analyze the count of clarifications that are retracted.
+                                    <uicontrol>Clarification Details</uicontrol> tabular report now
+                                displays clarification details for the clarifications that are
+                                retracted. Sort the tabular report by the
+                                    <uicontrol>Provider</uicontrol> column and identify the
+                                providers who have retracted the clarification.</p></stepresult>
+                    </step>
+                </steps>
+            </taskbody>
+        </task>
+        <task id="task_zpf_z4d_wgb">
+            <title>What percentage of clarifications sent by a CDS were MCC clarifications? How many
+                MCC clarifications sent by CDS were not agreed? What is the clarification level
+                details around MCC clarifications sent by CDS?</title>
+            <taskbody>
+                <steps id="steps_phh_fpd_wgb">
+                    <step>
+                        <cmd>Select <uicontrol>Staff Management</uicontrol> from the
+                                <i>Analytics</i> screen.</cmd>
+                    </step>
+                    <step>
+                        <cmd>Select the <uicontrol>CDS Performance Report</uicontrol> tab.</cmd>
+                        <stepresult>The report displays data for last one calendar month based on
+                            the discharge date.</stepresult>
+                    </step>
+                    <step>
+                        <cmd>Select the time range from the <uicontrol>Discharge Date</uicontrol>
+                            filter.</cmd>
+                    </step>
+                    <step>
+                        <cmd>Analyze the <uicontrol>Clarifications by Type</uicontrol> chart.</cmd>
+                        <stepresult>This chart displays count of clarifications that were sent for
+                            each type. Use this chart to analyze count and percentage of MCC
+                            clarifications sent by a CDS.<p>Click on the <uicontrol>MCC</uicontrol>
+                                section and analyze the <uicontrol>Clarification Details</uicontrol>
+                                tabular report. The report now displays list of MCC clarifications
+                                sent by a CDS.</p></stepresult>
+                    </step>
+                </steps>
+            </taskbody>
+        </task>
+    </task>
+    <task id="task_qql_rpd_wgb">
+        <title>How many clarifications sent by a CDS had potential for financial impact? </title>
+        <taskbody>
+            <steps id="steps_np4_vpd_wgb">
+                <step>
+                    <cmd>Select <uicontrol>Staff Management</uicontrol> from the <i>Analytics</i>
+                        screen.</cmd>
+                </step>
+                <step>
+                    <cmd>Select the <uicontrol>CDS Performance Report</uicontrol> tab.</cmd>
+                    <stepresult>The report displays data for last one calendar month based on the
+                        discharge date.</stepresult>
+                </step>
+                <step>
+                    <cmd>Select the time range from the <uicontrol>Discharge Date</uicontrol>
+                        filter.</cmd>
+                </step>
+                <step>
+                    <cmd>Analyze the <uicontrol>Financial Impact Clarification</uicontrol>
+                        chart.</cmd>
+                    <stepresult>This chart displays count of clarifications sent by a CDS that had
+                        potential for financial impact.</stepresult>
+                </step>
+            </steps>
+        </taskbody>
+    </task>
+    <task id="task_pts_cqd_wgb">
+        <title>How many clarifications were sent for the <i>Medicare</i> cases?</title>
+        <taskbody>
+            <steps id="steps_n43_j1n_wgb">
+                <step>
+                    <cmd>Select <uicontrol>Staff Management</uicontrol> from the <i>Analytics</i>
+                        screen.</cmd>
+                </step>
+                <step>
+                    <cmd>Select the <uicontrol>CDS Performance Report</uicontrol> tab.</cmd>
+                    <stepresult>The report displays data for last one calendar month based on the
+                        discharge date.</stepresult>
+                </step>
+                <step>
+                    <cmd>Select the time range from the <uicontrol>Discharge Date</uicontrol>
+                        filter.</cmd>
+                </step>
+                <step>
+                    <cmd>Analyze the <uicontrol>Clarifications Sent</uicontrol> KPI card.</cmd>
+                    <stepresult>This KPI card displays count of clarifications sent in the selected
+                        time period.</stepresult>
+                </step>
+                <step>
+                    <cmd>Select <uicontrol>Medicare</uicontrol> from the
+                            <uicontrol>Payer</uicontrol> filter to analyze count of clarifications
+                        sent for the <i>Medicare</i> cases.</cmd>
+                </step>
+            </steps>
+        </taskbody>
+    </task>
+    <task id="task_mwf_dbn_wgb">
+        <title>How does the detailed performance in terms of reviews look like for a specific
+            CDS?</title>
+        <taskbody>
+            <steps id="steps_tmh_3bn_wgb">
+                <step>
+                    <cmd>Select <uicontrol>Staff Management</uicontrol> from the <i>Analytics</i>
+                        screen.</cmd>
+                </step>
+                <step>
+                    <cmd>Select the <uicontrol>CDS Performance Report</uicontrol> tab.</cmd>
+                    <stepresult>The report displays data for last one calendar month based on the
+                        discharge date.</stepresult>
+                </step>
+                <step>
+                    <cmd>Select the time range from the <uicontrol>Discharge Date</uicontrol>
+                        filter.</cmd>
+                </step>
+                <step>
+                    <cmd>Analyze the <uicontrol>Encounters</uicontrol>, <uicontrol>Review
+                            Rate</uicontrol>,<uicontrol> Encounters Reviewed</uicontrol>,
+                            <uicontrol>Initial Review Goal</uicontrol>, and <uicontrol>Average
+                            Initial review TAT (Hrs.) </uicontrol> KPI cards.</cmd>
+                    <stepresult>These KPI cards display at-a-glance view into the performance of the
+                        selected CDS in terms of review activity in the selected time
+                        period.</stepresult>
+                </step>
+            </steps>
+        </taskbody>
+    </task>
+    <task id="task_my2_gcn_wgb">
+        <title>How many encounters reviewed by a CDS were <i>Reconciled with Impact</i>? What
+            percentage of encounters reviewed by a CDS are <i>Ready to Reconcile</i>?</title>
+        <taskbody>
+            <steps id="steps_zg1_mcn_wgb">
+                <step>
+                    <cmd>Select <uicontrol>Staff Management</uicontrol> from the <i>Analytics</i>
+                        screen.</cmd>
+                </step>
+                <step>
+                    <cmd>Select the <uicontrol>CDS Performance Report</uicontrol> tab.</cmd>
+                    <stepresult>The report displays data for last one calendar month based on the
+                        discharge date.</stepresult>
+                </step>
+                <step>
+                    <cmd>Select the time range from the <uicontrol>Discharge Date</uicontrol>
+                        filter.</cmd>
+                </step>
+                <step>
+                    <cmd>Analyze the <uicontrol>Reviews by Encounter Status</uicontrol> chart.</cmd>
+                    <stepresult>This chart displays total count of encounters for each encounter
+                        status.<p/></stepresult>
+                </step>
+                <step>
+                    <cmd>click on the <uicontrol>Ready to Reconcile</uicontrol> legend to analyze
+                        the count of encounters with <uicontrol>Ready to Reconcile</uicontrol>
+                        status in the tabular report.</cmd>
+                </step>
+            </steps>
+        </taskbody>
+    </task>
+    <task id="task_skr_cdn_wgb">
+        <title>What are the details around <uicontrol>Review Not Needed</uicontrol>
+            encounters?</title>
+        <taskbody>
+            <steps id="steps_nkp_fdn_wgb">
+                <step>
+                    <cmd>Select <uicontrol>Staff Management</uicontrol> from the <i>Analytics</i>
+                        screen.</cmd>
+                </step>
+                <step>
+                    <cmd>Select the <uicontrol>CDS Performance Report</uicontrol> tab.</cmd>
+                    <stepresult>The report displays data for last one calendar month based on the
+                        discharge date.</stepresult>
+                </step>
+                <step>
+                    <cmd>Select the time range from the <uicontrol>Discharge Date</uicontrol>
+                        filter.</cmd>
+                </step>
+                <step>
+                    <cmd>Select <uicontrol>Review Not Needed</uicontrol> from the
+                            <uicontrol>Encounter Status</uicontrol> filter.</cmd>
+                    <stepresult>The <i>CDS Performance Report</i> now displays data for
+                            <uicontrol>Review Not Needed</uicontrol> encounters. Refer the
+                            <i>Encounter Details</i> tabular report to view encounter level details.
+                    </stepresult>
+                </step>
+            </steps>
+        </taskbody>
+    </task>
+</task>

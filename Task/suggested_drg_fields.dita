@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="creating_custom_reports">
+    <title>Suggested DRG Fields</title>
+    <shortdesc></shortdesc>
+    <taskbody>
+        <context>
+            <p>The following are the suggested DRG fields for custom reporting. These fields help
+                the users to understand and analyse the suggested DRG for an encounter. <ul
+                    id="ul_nql_ykm_4xb">
+                    <li>S-DRG Code: The suggested DRG value assigned to an encounter.
+                        <b>Example</b>: 562.</li>
+                    <li>S-DRG Description: The description of suggested DRG value. <b>Example</b>:
+                        MEDICAL BACK PROBLEMS WITHOUT MCC.</li>
+                    <li>S-DRG Grouper Type: The grouper type of suggested DRG value. <b>Example</b>:
+                        APR_DRG.</li>
+                </ul></p>
+            <p>You can add these fields as columns to a dashboard. Let us take an example from
+                Encounter Details report. <fig id="fig_sjf_w22_p4b">
+                    <title>Suggested DRG Fields in Encounter Details Dashboard</title>
+                    <image href="../Images/suggested_drg_fields.png" width="800"
+                        id="image_hlj_v5x_pxb"/>
+                </fig></p>
+        </context>
+    </taskbody>
+</task>

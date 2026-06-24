@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="creating_custom_reports">
+    <title>Deleting Custom Reports</title>
+    <shortdesc/>
+    <taskbody>
+        <context>
+            <p>To delete a custom report, follow the below steps:</p>
+        </context>
+        <steps>
+            <step>
+                <cmd>Click the <uicontrol>Delete Report</uicontrol> icon next to the custom report.
+                    This option is not available if you login as a CDS Manager.</cmd>
+                <info>
+                    <fig id="fig_mrb_42y_rgb">
+                        <title>Delete Custom Report</title>
+                        <image href="../Images/delete_custom_report.gif" id="image_oft_mws_3qb"
+                            width="800"/>
+                    </fig>
+                </info>
+                <info>The following warning message is displayed. Click <uicontrol>OK</uicontrol>,
+                    if you want to delete the report or click <uicontrol>Cancel</uicontrol> to stay
+                    on the current page without removing the report. <note>
+                        <ul id="ul_uhx_kys_3qb">
+                            <li>When you delete a report, it cannot be restored.</li>
+                            <li>If you have edit permission, you can also delete the user-defined
+                                report that is not created by you. </li>
+                        </ul>
+                    </note><fig id="fig_wv3_52y_rgb">
+                        <title>Custom Report Warning</title>
+                        <image href="../Images/custom_report_warning.gif" id="image_vht_gxs_3qb"/>
+                    </fig></info>
+                <info>The following users can edit and delete the reports:<ul id="ul_s5z_xt2_fqb">
+                        <li>
+                            <p>CDS Manager</p>
+                        </li>
+                        <li>
+                            <p>CDE Analytics User</p>
+                        </li>
+                        <li>
+                            <p>Nuance Administrator</p>
+                        </li>
+                        <li>
+                            <p>Nuance Performance Analytics administrator</p>
+                        </li>
+                    </ul></info>
+                <info>
+                    <note>These users can also delete the user-defined reports that are not created
+                        by them.</note>
+                </info>
+                <info>
+                    <note>
+                        <ul id="ul_dm3_d52_fqb">
+                            <li>
+                                <p>You can delete only one report at a time.</p>
+                            </li>
+                            <li>
+                                <p>When you try to delete a scheduled report, a message is displayed
+                                    to update the report schedule before deleting the report.</p>
+                            </li>
+                        </ul>
+                    </note>
+                </info>
+            </step>
+        </steps>
+    </taskbody>
+</task>

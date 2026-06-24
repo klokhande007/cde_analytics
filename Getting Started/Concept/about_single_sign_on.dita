@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="about_single_sign_on">
+    <title>About Single Sign-On</title>
+    <shortdesc></shortdesc>
+    <conbody>
+        <p>Single Sign-On (SSO) helps you to use your own identity provider (IdP) to access
+            supported Nuance applications. Single sign-on eliminates the need of maintaining
+            multiple credentials and also improves overall system security.</p>
+        <p>When you login to the application using the single sign-on, the system directly displays
+            the <i>Triage Worklist</i> screen, no login credentials are required. If you have any
+            issue with the login, please contact your system administrator.</p>
+    </conbody>
+</concept>

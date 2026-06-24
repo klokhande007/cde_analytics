@@ -1,0 +1,940 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="encounter_details">
+    <title>Encounter Details</title>
+    <shortdesc></shortdesc>
+    <conbody>
+        <p><b>Overview</b>: Encounter Details report helps CDI Manager to analyze the details around
+            the encounters and work with the CDSs to take appropriate action. </p>
+        <p>The report provides answers to the following questions:<ul id="ul_ccl_b5b_m4b">
+                <li>Which CDSs are not following the reconciliation best practices?</li>
+                <li>Which CDS could benefit from additional education on the Reconciliation
+                    process?</li>
+                <li>How do we find the gaps in the reconciliation process?</li>
+                <li>Which cases were incorrectly reconciled?</li>
+                <li>What is the reimbursement impact the CDS had on a case?</li>
+            </ul></p>
+        <p><b>Navigation</b>: On the Analytics home page left side panel, navigate to <menucascade>
+                <uicontrol>CDE One</uicontrol>
+                <uicontrol>CDI Operations</uicontrol>
+                <uicontrol>Encounter Details</uicontrol>
+            </menucascade>.</p>
+        <p>Encounter Details displays the following:<ul id="ul_wmj_kkf_n4b">
+                <li>KPI Card: Total Encounters</li>
+                <li>Encounter and Review Details </li>
+            </ul></p>
+        <p>On the top panel, you can select desired values for the slicers (refer <xref
+                href="#encounter_details/table_bgs_mw5_l4b" format="dita"/>) and the corresponding
+            data gets generated in the table.</p>
+        <p>For filters all pages, refer <xref href="#encounter_details/table_xzd_hdw_l4b"
+                format="dita"/>.</p>
+        <p>For Footnotes, refer <xref href="#encounter_details/table_cjn_fjw_s4b" format="dita"
+            />.</p>
+        <p><b>Encounter Details</b></p>
+        <fig id="fig_l2y_t1b_44b">
+            <title>Sample Report</title>
+        </fig>
+        <p><b>Encounter Details - KPI Card</b></p>
+        <fig id="fig_g3k_y1b_44b">
+            <title>KPI Card</title>
+            <image href="Images/Encounter%20details%20KPI%20card.png" id="image_w2x_y1b_44b"
+                width="200"/>
+        </fig>
+        <p>
+            <table frame="all" rowsep="1" colsep="1" id="table_lyw_vmb_m4b">
+                <title>KPI Card details</title>
+                <tgroup cols="2">
+                    <colspec colname="c1" colnum="1" colwidth="1*"/>
+                    <colspec colname="c2" colnum="2" colwidth="1*"/>
+                    <thead>
+                        <row>
+                            <entry>KPI Card</entry>
+                            <entry>Description</entry>
+                        </row>
+                    </thead>
+                    <tbody>
+                        <row>
+                            <entry>Total Encounters</entry>
+                            <entry>The total count of encounters with all statuses including Review
+                                Not Needed for the reporting period. <note>When the Admit Date is
+                                    applied, then this card displays the count of admitted
+                                    encounters with all statuses including Review Not Needed. When
+                                    the Discharge Date is applied, then this card displays the count
+                                    of discharged encounters with all statuses including Review Not
+                                    Needed.</note></entry>
+                        </row>
+                    </tbody>
+                </tgroup>
+            </table>
+        </p>
+        <p><b>Encounter Details - Encounter and Review Details </b></p>
+        <fig id="fig_xpf_hbb_44b">
+            <title>Encounter and Review Details </title>
+            <image href="Images/Encounter%20details%20chart.png" id="image_fzp_hbb_44b" width="800"
+            />
+        </fig>
+        <p><b>Info icon</b>(text on hover): By default, all encounter statuses are considered except
+            Review Not Needed. Select 'Review Not Needed' options from the 'Encounter Status' filter
+            to analyze the Review Not Needed encounters.</p>
+        <p>
+            <table frame="all" rowsep="1" colsep="1" id="table_pt2_2nb_m4b">
+                <title>Encounter and Review Details</title>
+                <tgroup cols="4">
+                    <colspec colname="c1" colnum="1" colwidth="1.46*"/>
+                    <colspec colname="c2" colnum="2" colwidth="2.52*"/>
+                    <colspec colname="newCol4" colnum="3" colwidth="1.82*"/>
+                    <colspec colname="newCol3" colnum="4" colwidth="1.29*"/>
+                    <thead>
+                        <row>
+                            <entry>Column</entry>
+                            <entry>Description</entry>
+                            <entry>Formula/Calculation</entry>
+                            <entry>Condition when the Value is blank</entry>
+                        </row>
+                    </thead>
+                    <tbody>
+                        <row>
+                            <entry>Facility</entry>
+                            <entry>The facility assigned to the encounter in the format Facility
+                                Description (Facility ID).</entry>
+                            <entry/>
+                            <entry/>
+                        </row>
+                        <row>
+                            <entry>Account No.</entry>
+                            <entry>The Account Number assigned to the encounter.</entry>
+                            <entry/>
+                            <entry/>
+                        </row>
+                        <row>
+                            <entry>MRN</entry>
+                            <entry>The MRN assigned to the encounter.</entry>
+                            <entry/>
+                            <entry/>
+                        </row>
+                        <row>
+                            <entry>Patient Name</entry>
+                            <entry>The name of the patient associated with the encounter. Patient
+                                name is displayed in the format : Last Name, First Name</entry>
+                            <entry/>
+                            <entry/>
+                        </row>
+                        <row>
+                            <entry>Admit Date</entry>
+                            <entry>
+                                <p>The Admission Date and Time assigned to the encounter in the
+                                    facility's timezone.</p>
+                                <p><b>Format</b>: 08/08/2019 12:00:00 AM MST</p>
+                                <p><b>Data in the report is sorted by the Admission Date in
+                                        Descending order.</b></p>
+                            </entry>
+                            <entry/>
+                            <entry/>
+                        </row>
+                        <row>
+                            <entry>Discharge Date</entry>
+                            <entry>
+                                <p>The Discharge Date and Time assigned to the encounter in the
+                                    facility's timezone.</p>
+                                <p><b>Format</b>: 08/08/2019 12:00:00 AM MST</p>
+                            </entry>
+                            <entry/>
+                            <entry>
+                                <p>This column is blank for the encounters that do not have a
+                                    discharge date assigned.</p>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>LOS</entry>
+                            <entry>The length of stay in days for each encounter. <note> LOS value
+                                    is displayed in blue font, when LOS is greater than GMLOS for
+                                    the encounter. </note></entry>
+                            <entry>
+                                <p>LOS = Discharge Date/Time – Admit Date/Time</p>
+                                <p>OR </p>
+                                <p>LOS = Last Data Refresh Date/Time – Admit Date/Time </p>
+                            </entry>
+                            <entry/>
+                        </row>
+                        <row>
+                            <entry>Initial Review Date</entry>
+                            <entry>
+                                <p>The date and time when the initial review was performed on the
+                                    encounter. </p>
+                                <p><b>Example</b>: 05/24/2020 10:10:00 AM ET </p>
+                                <p> The date must be in the Facility's time-zone.</p>
+                                <p>
+                                    <note>If the Initial Review Date/time is after the Discharge
+                                        Date/Time, Initial Review Date/Time is displayed in the red
+                                        font. </note>
+                                </p>
+                            </entry>
+                            <entry/>
+                            <entry>
+                                <p>This column is blank for the encounters that do not have an
+                                    initial review date.</p>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>Initial Review CDS</entry>
+                            <entry>
+                                <p>The name of the CDS who performed the initial review.</p>
+                                <p><b>Format</b>: Last Name, First Name MI (CDS ID).</p>
+                            </entry>
+                            <entry/>
+                            <entry>
+                                <p>This column is blank for the encounters that do not have a
+                                    ‘Initial Review Date/Time'</p>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>Tracking Codes</entry>
+                            <entry>
+                                <p>The Tracking Codes assigned to the encounter in comma separated
+                                    format. You can view a maximum of 10 tracking codes for an
+                                    encounter.</p>
+                                <p><b>Example</b>: Quality Review, Prov Education</p>
+                            </entry>
+                            <entry/>
+                            <entry/>
+                        </row>
+                        <row>
+                            <entry>Rank at Initial Review</entry>
+                            <entry>
+                                <p>The rank assigned to the encounter prior to the Initial Review. </p>
+                                <p><b>Example</b>: 1, 2, etc.</p>
+                            </entry>
+                            <entry/>
+                            <entry>
+                                <p>This column is blank for the encounters that do not have a ‘Rank
+                                    at Initial Review' assigned.</p>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>Review Complete TAT (Hours)</entry>
+                            <entry>Displays the number of hours when the encounter status is set as
+                                Review Complete Date/Time and when the working review was first
+                                created for the selected time period. The date must be in the
+                                Facility's time-zone.<p><b>Example</b>: 05/24/2020 10:10:00 AM
+                                    ET.</p></entry>
+                            <entry>Review TAT (Hours) for each encounter = Review Complete
+                                (Date/Time stamp) – Initial Review (Date/Time stamp).</entry>
+                            <entry/>
+                        </row>
+                        <row>
+                            <entry>W-DRG</entry>
+                            <entry>
+                                <p>The 'primary' Working DRG along with the description displayed on
+                                    the Review page.</p>
+                            </entry>
+                            <entry/>
+                            <entry>This column is blank for the encounters that do not have a
+                                ‘Initial Review Date/Time'</entry>
+                        </row>
+                        <row>
+                            <entry>W-DRG WT</entry>
+                            <entry>
+                                <p>The WT associated with the 'primary' Working DRG displayed on the
+                                    Review page.</p>
+                                <p><b>Example</b>: 1.0393</p>
+                            </entry>
+                            <entry/>
+                            <entry>
+                                <p>This column is blank for the encounters that do not have a
+                                    ‘Initial Review Date/Time'</p>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>W-SOI</entry>
+                            <entry>
+                                <p>The 'SOI' from the working review. </p>
+                                <p>
+                                    <note>If the SOI associated with the primary working DRG is not
+                                        available, then the SOI associated with the advanced working
+                                        DRG is displayed.</note>
+                                </p>
+                            </entry>
+                            <entry/>
+                            <entry>
+                                <p>This column is blank for the encounters that do not have a
+                                    ‘Initial Review Date/Time'</p>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>W-ROM</entry>
+                            <entry>
+                                <p>The 'ROM' from the working review. </p>
+                                <p>
+                                    <note>If the ROM associated with the primary working DRG is not
+                                        available, then the ROM associated with the advanced working
+                                        DRG is displayed.</note>
+                                </p>
+                            </entry>
+                            <entry/>
+                            <entry>
+                                <p>This column is blank for the encounters that do not have a
+                                    ‘Initial Review Date/Time'</p>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>W-AMLOS</entry>
+                            <entry>
+                                <p>The 'AMLOS' from the working review. </p>
+                                <p>
+                                    <note>If the AMLOS associated with the primary working DRG is
+                                        not available, then the AMLOS associated with the advanced
+                                        working DRG is displayed.</note>
+                                </p>
+                            </entry>
+                            <entry/>
+                            <entry>
+                                <p>This column is blank for the encounters that do not have a
+                                    ‘Initial Review Date/Time'</p>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>W-GMLOS</entry>
+                            <entry>
+                                <p>The 'GMLOS ' from the working review. </p>
+                                <p>
+                                    <note>If the GMLOS associated with the primary working DRG is
+                                        not available, then the GMLOS associated with the advanced
+                                        working DRG is displayed.</note>
+                                </p>
+                            </entry>
+                            <entry/>
+                            <entry>
+                                <p>This column is blank for the encounters that do not have a
+                                    ‘Initial Review Date/Time'</p>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>P-DRG</entry>
+                            <entry>
+                                <p>The 'primary' Possible DRG along with the description displayed
+                                    on the Review page.</p>
+                                <p>
+                                    <note>This column displays the ‘Working DRG’ value in the orange
+                                        font for the encounters that have a ‘Working DRG’ assigned
+                                        the ‘Possible DRG’ is blank or null.</note>
+                                </p>
+                            </entry>
+                            <entry/>
+                            <entry>
+                                <p>This column is blank for the encounters that do not have a
+                                    ‘Initial Review Date/Time'</p>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>P-DRG WT</entry>
+                            <entry>
+                                <p>The WT associated with the 'primary' Possible DRG displayed on
+                                    the Review page.</p>
+                                <p><b>Example</b>: 1.0393</p>
+                                <p>
+                                    <note>This column displays the ‘Working DRG WT’ value in the
+                                        orange font for the encounters that have a ‘Working DRG’
+                                        assigned the ‘Possible DRG’ is blank or null. Example:
+                                        1.0393</note>
+                                </p>
+                            </entry>
+                            <entry/>
+                            <entry>
+                                <p>This column is blank for the encounters that do not have a
+                                    ‘Initial Review Date/Time'</p>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>R-DRG</entry>
+                            <entry>
+                                <p>Code and description of the Reconciliation Assessment DRG
+                                    displayed on the Reconciliation page.</p>
+                                <p><b>Example</b>: 872 - SEPTICEMIA OR SEVERE SEPSIS WITHOUT MV >96
+                                    HOURS WITHOUT MAJOR COMPLICATION OR COMORBIDITY (MCC)</p>
+                            </entry>
+                            <entry/>
+                            <entry/>
+                        </row>
+                        <row>
+                            <entry>R-DRG WT</entry>
+                            <entry>
+                                <p>The WT associated with the Reconciliation Assessment DRG
+                                    displayed on the Reconciliation page.</p>
+                                <p><b>Example</b>: 1.0393</p>
+                            </entry>
+                            <entry/>
+                            <entry/>
+                        </row>
+                        <row>
+                            <entry>R-SOI</entry>
+                            <entry>
+                                <p>The 'SOI' from the Reconciliation Assessment.</p>
+                                <p>
+                                    <note>If the SOI associated with the primary Reconciliation
+                                        Assessment DRG is not available, then the SOI associated
+                                        with the advanced Reconciliation Assessment DRG is
+                                        displayed.</note>
+                                </p>
+                            </entry>
+                            <entry/>
+                            <entry>
+                                <p>This column is blank for the encounters that do not have a
+                                    ‘Initial Review Date/Time'</p>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>R-ROM</entry>
+                            <entry>
+                                <p>The 'ROM' from the Reconciliation Assessment.</p>
+                                <p>
+                                    <note>If the ROM associated with the primary Reconciliation
+                                        Assessment DRG is not available, then the ROM associated
+                                        with the advanced Reconciliation Assessment DRG is
+                                        displayed.</note>
+                                </p>
+                            </entry>
+                            <entry/>
+                            <entry>
+                                <p>This column is blank for the encounters that do not have a
+                                    ‘Initial Review Date/Time'</p>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>R-AMLOS</entry>
+                            <entry>
+                                <p>The 'AMLOS' from the Reconciliation Assessment.</p>
+                                <p>
+                                    <note>If the AMLOS associated with the primary Reconciliation
+                                        Assessment DRG is not available, then the AMLOS associated
+                                        with the advanced Reconciliation Assessment DRG is
+                                        displayed.</note>
+                                </p>
+                            </entry>
+                            <entry/>
+                            <entry>
+                                <p>This column is blank for the encounters that do not have a
+                                    ‘Initial Review Date/Time'</p>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>R-GMLOS</entry>
+                            <entry>
+                                <p>The 'GMLOS' from the Reconciliation Assessment.</p>
+                                <p><b>Note:</b></p>
+                                <p>
+                                    <note>If the GMLOS associated with the primary Reconciliation
+                                        Assessment DRG is not available, then the GMLOS associated
+                                        with the advanced Reconciliation Assessment DRG is
+                                        displayed.</note>
+                                </p>
+                            </entry>
+                            <entry/>
+                            <entry>
+                                <p>This column is blank for the encounters that do not have a
+                                    ‘Initial Review Date/Time'</p>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>F-DRG</entry>
+                            <entry>
+                                <p>The Code and description of the Final Coded DRG displayed on the
+                                    Reconciliation page.</p>
+                                <p><b>Example</b>: 872 - SEPTICEMIA OR SEVERE SEPSIS WITHOUT MV >96
+                                    HOURS WITHOUT MAJOR COMPLICATION OR COMORBIDITY (MCC)</p>
+                                <p>Note:</p>
+                            </entry>
+                            <entry/>
+                            <entry>
+                                <p>This column is blank for the encounters that do not have a
+                                    ‘Initial Review Date/Time'</p>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>F-DRG WT</entry>
+                            <entry>
+                                <p>The WT associated with the Final Coded DRG displayed on the
+                                    Reconciliation page.</p>
+                                <p><b>Example</b>: 1.0393</p>
+                            </entry>
+                            <entry/>
+                            <entry>
+                                <p>This column is blank for the encounters that do not have a
+                                    ‘Initial Review Date/Time'</p>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>F-SOI</entry>
+                            <entry>
+                                <p>The Final Coded. 'SOI'.</p>
+                                <p>
+                                    <note>Advanced SOI Values are used if Primary SOI values are
+                                        blank.</note>
+                                </p>
+                            </entry>
+                            <entry/>
+                            <entry>
+                                <p>This column is blank for the encounters that do not have a
+                                    ‘Initial Review Date/Time'</p>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>F-ROM</entry>
+                            <entry>
+                                <p>The Final Coded. 'ROM'.</p>
+                                <p>
+                                    <note>Advanced ROM Values are used if Primary ROM values are
+                                        blank.</note>
+                                </p>
+                            </entry>
+                            <entry/>
+                            <entry>
+                                <p>This column is blank for the encounters that do not have a
+                                    ‘Initial Review Date/Time'</p>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>F-AMLOS</entry>
+                            <entry>
+                                <p>The Final Coded 'AMLOS'.</p>
+                                <p>
+                                    <note>Advanced AMLOS Values are used if Primary AMLOS values are
+                                        blank.</note>
+                                </p>
+                            </entry>
+                            <entry/>
+                            <entry>
+                                <p>This column is blank for the encounters that do not have a
+                                    ‘Initial Review Date/Time'.</p>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>F-GMLOS</entry>
+                            <entry>
+                                <p>The Final Coded 'GMLOS'.</p>
+                                <p>
+                                    <note>Advanced GMLOS Values are used if Primary GMLOS values are
+                                        blank.</note>
+                                </p>
+                            </entry>
+                            <entry/>
+                            <entry>
+                                <p>This column is blank for the encounters that do not have a
+                                    ‘Initial Review Date/Time'.</p>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>Variance</entry>
+                            <entry>
+                                <p>The shift in the WT at the encounter level.</p>
+                                <p>
+                                    <note> Variance can be negative, positive, or zero. Negative
+                                        ‘Variance’ is displayed in red font E.g. - 1.0178.</note>
+                                </p>
+                                <p>Rounded to 4 decimal places. <b>Example</b>: 1.0178</p>
+                            </entry>
+                            <entry>
+                                <p>Variance = Final Coded DRG WT - Reconciliation Assessment DRG WT
+                                    (or Variance = Final Coded DRG WT - Working DRG WT when
+                                    Discharge Date &lt; 11/14/19 or Reconciliation Assessment DRG is
+                                    blank)</p>
+                                <p>For encounters with blank Final DRG WT, Variance = Possible DRG
+                                    WT - Working DRG WT ( If Possible DRG/WT is blank, Working DRG
+                                    WT is considered. In this case Variance will always br
+                                    zero).</p>
+                                <note id="note_zsf_xqb_pxb">
+                                    <ul id="ul_jm5_xqb_pxb">
+                                        <li>Variance is not calculated for the encounters that do
+                                            not have an initial review date.</li>
+                                        <li>Review Not Needed Encounters are not considered.</li>
+                                    </ul>
+                                </note>
+                            </entry>
+                            <entry/>
+                        </row>
+                        <row>
+                            <entry>Blended Rate</entry>
+                            <entry>
+                                <p>The Blended Rate associated with the payer/Grouper assigned to
+                                    the encounter.</p>
+                                <p>When the Blended Rate is not available, the Operating Federal
+                                    rate is displayed.</p>
+                                <p><b>Example</b>: $ 5,234</p>
+                            </entry>
+                            <entry/>
+                            <entry/>
+                        </row>
+                        <row>
+                            <entry>Reimbursement Impact</entry>
+                            <entry>
+                                <p>The ‘Reimbursement Impact’ value for the encounter. </p>
+                                <ul id="ul_yts_vpb_m4b">
+                                    <li>Rounded to 0 decimal places. <b>Example</b>: $ 5,234</li>
+                                    <li>Negative ‘Reimbursement Impact ($)’ is displayed in the red
+                                        font.</li>
+                                </ul>
+                            </entry>
+                            <entry> Reimbursement Impact = Variance x Blended Rate</entry>
+                            <entry/>
+                        </row>
+                        <row>
+                            <entry>Impact Type</entry>
+                            <entry>
+                                <p>The Impact Type assigned to the encounter</p>
+                                <ul id="ul_js5_wpb_m4b">
+                                    <li>Financial Impact</li>
+                                    <li>No Impact</li>
+                                    <li>Both Impact</li>
+                                    <li>Unassigned Impact</li>
+                                </ul>
+                            </entry>
+                            <entry/>
+                            <entry/>
+                        </row>
+                        <row>
+                            <entry>Encounter Status</entry>
+                            <entry>
+                                <p>The Encounter Status assigned to the encounter.</p>
+                                <note id="note_lwf_1rb_pxb">Encounters with the Status 'Review Not
+                                    Needed' are not displayed by default. You can select 'Review Not
+                                    Needed' options from the 'Encounter Status' filter to analyze
+                                    the Review Not Needed encounters .</note>
+                            </entry>
+                            <entry/>
+                            <entry/>
+                        </row>
+                        <row>
+                            <entry>Assigned CDS</entry>
+                            <entry>The CDS assigned to the encounter.<p><b>Format</b>: Last Name,
+                                    First Name MI (CDS ID)</p>
+                            </entry>
+                            <entry/>
+                            <entry/>
+                        </row>
+                        <row>
+                            <entry>Payer</entry>
+                            <entry>The Payer assigned to the encounter.<p><b>Format</b>: Payer
+                                    Description (Payer ID)</p></entry>
+                            <entry/>
+                            <entry/>
+                        </row>
+                        <row>
+                            <entry>Grouper</entry>
+                            <entry>The Grouper version associated with the payer assigned to the
+                                encounter.</entry>
+                            <entry/>
+                            <entry/>
+                        </row>
+                        <row>
+                            <entry>Unit</entry>
+                            <entry>The Unit assigned to the encounter.</entry>
+                            <entry/>
+                            <entry/>
+                        </row>
+                        <row>
+                            <entry>Patient Type</entry>
+                            <entry>The Patient Type assigned to the encounter.</entry>
+                            <entry/>
+                            <entry/>
+                        </row>
+                        <row>
+                            <entry>Visit Type</entry>
+                            <entry>The Visit Type assigned to the encounter.</entry>
+                            <entry/>
+                            <entry/>
+                        </row>
+                        <row>
+                            <entry>Pediatric</entry>
+                            <entry>
+                                <p>If the encounter is a pediatric encounter, it is displayed
+                                    here.</p>
+                                <p>Pediatric Age is configurable in CDE One application. </p>
+                            </entry>
+                            <entry/>
+                            <entry/>
+                        </row>
+                        <row>
+                            <entry>Weekend Only Stay</entry>
+                            <entry>The value of the "Weekend Only Stay" applicable to the encounter.
+                                Weekend Only Stay = Y ( Unassigned encounters admitted after Friday,
+                                6PM and Discharged before Sunday, 11.59 PM)<p>Weekend Only Stay = N
+                                    (If the above criteria does not apply)</p></entry>
+                            <entry/>
+                            <entry/>
+                        </row>
+                        <row>
+                            <entry>Discharge Status</entry>
+                            <entry>The Discharge Status assigned to the encounter.<p><b>Example</b>:
+                                        <i>01- 01 Self Care</i></p></entry>
+                            <entry/>
+                            <entry/>
+                        </row>
+                    </tbody>
+                </tgroup>
+            </table>
+        </p>
+        <table frame="all" rowsep="1" colsep="1" id="table_bgs_mw5_l4b">
+            <title>Report Slicers </title>
+            <tgroup cols="2">
+                <colspec colname="c1" colnum="1" colwidth="1*"/>
+                <colspec colname="c2" colnum="2" colwidth="1*"/>
+                <thead>
+                    <row>
+                        <entry>Slicer</entry>
+                        <entry>Description</entry>
+                    </row>
+                </thead>
+                <tbody>
+                    <row>
+                        <entry>Admit Date</entry>
+                        <entry>
+                            <ul id="ul_hmn_qcw_l4b">
+                                <li>Displays the admit date range here. You can select required
+                                    dates from the date lookup.</li>
+                                <li><b>Example</b>: 7/1/2020 - 7/31/2020</li>
+                                <li><b>Default</b>: Last 1 calendar months date range selected by
+                                    default.</li>
+                            </ul>
+                        </entry>
+                    </row>
+                    <row>
+                        <entry>Discharge Date</entry>
+                        <entry>
+                            <ul id="ul_xkg_vkz_m4b">
+                                <li>Displays the discharge date range here. You can select required
+                                    dates from the date lookup.</li>
+                                <li>
+                                    <p><b>Example</b>: 7/1/2020 - 7/31/2020</p>
+                                </li>
+                            </ul>
+                        </entry>
+                    </row>
+                    <row>
+                        <entry>Reset</entry>
+                        <entry>
+                            <ul id="ul_jw1_22z_m4b">
+                                <li>With the Reset button, you can reset the admit date range.</li>
+                                <li><b>Tooltip</b>: Use "Ctrl + Click" to reset the both Admit Date
+                                    and Discharge Date.</li>
+                            </ul>
+                        </entry>
+                    </row>
+                    <row>
+                        <entry>Facility</entry>
+                        <entry>
+                            <ul id="ul_qg1_scw_l4b">
+                                <li>Displays a list of active and inactive facilities that you have
+                                    access to. The list is sorted alphabetically. </li>
+                                <li>You can select multiple facilities</li>
+                                <li>You can search the facility by Facility ID or Description.</li>
+                                <li><b>Format</b>: Facility Description (Facility ID)</li>
+                                <li><b>Default</b>: ALL</li>
+                            </ul>
+                        </entry>
+                    </row>
+                    <row>
+                        <entry>Payer</entry>
+                        <entry>
+                            <ul id="ul_tnz_lgw_s4b">
+                                <li>Displays a list of active and inactive payers associated with
+                                    the facilities that you have access to. The list is sorted
+                                    alphabetically. </li>
+                                <li>You can select multiple payers</li>
+                                <li>"Unassigned Payer" displays data for the encounters that do not
+                                    have a payer assigned.</li>
+                                <li>You can search the Payer by Payer ID or Description.</li>
+                                <li><b>Format</b>: Payer Description (Payer ID)</li>
+                                <li><b>Default</b>: ALL</li>
+                            </ul>
+                        </entry>
+                    </row>
+                    <row>
+                        <entry>CDS</entry>
+                        <entry>
+                            <ul id="ul_gqf_j5f_p4b">
+                                <li>Displays a list of active and inactive CDSs associated with the
+                                    facilities you have access to.</li>
+                                <li>The CDS Filter in all the reports displays the users with
+                                    at-least CDS or CDS Manager role assigned.</li>
+                                <li>"Unassigned CDS" displays data for the encounters that do not
+                                    have a CDS assigned.</li>
+                                <li><b>Format</b>: Last Name, First Name MI (CDS ID)</li>
+                                <li><b>Default</b>: ALL</li>
+                            </ul>
+                        </entry>
+                    </row>
+                </tbody>
+            </tgroup>
+        </table>
+        <p>
+            <table frame="all" rowsep="1" colsep="1" id="table_xzd_hdw_l4b">
+                <title>Filters on all Pages</title>
+                <tgroup cols="2">
+                    <colspec colname="c1" colnum="1" colwidth="1*"/>
+                    <colspec colname="c2" colnum="2" colwidth="1*"/>
+                    <thead>
+                        <row>
+                            <entry>Filter</entry>
+                            <entry>Description</entry>
+                        </row>
+                    </thead>
+                    <tbody>
+                        <row>
+                            <entry>Patient Type</entry>
+                            <entry>
+                                <ul id="ul_f4n_gny_m4b">
+                                    <li>Displays the available patient types. <p><b>Example</b>:
+                                            Inpatient, Outpatient.</p></li>
+                                    <li><b>Default</b>: Inpatient</li>
+                                </ul>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>Visit Type</entry>
+                            <entry>
+                                <ul id="ul_vk3_3ny_m4b">
+                                    <li>Displays the list of available Visit Types.</li>
+                                    <li>You can select multiple Visit Types.</li>
+                                    <li>You can search the Visit Type.</li>
+                                    <li><b>Default</b>: ALL</li>
+                                </ul>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>Unit</entry>
+                            <entry>
+                                <ul id="ul_n4k_jny_m4b">
+                                    <li>Displays the list of available units.</li>
+                                    <li>You can select multiple Units.</li>
+                                    <li>You can search the Unit.</li>
+                                    <li><b>Default</b>: ALL</li>
+                                </ul>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>Weekend Only Stay</entry>
+                            <entry>
+                                <ul id="ul_cyy_pdw_l4b">
+                                    <li>Displays Weekend Only Stay values (Y/N).</li>
+                                    <li>You can search the Weekend Only Stay.</li>
+                                    <li><b>Default</b>: ALL</li>
+                                </ul>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>Encounter Status</entry>
+                            <entry>
+                                <ul id="ul_fc2_5dw_l4b">
+                                    <li>Displays the list of available Encounter Statuses.</li>
+                                    <li>You can select multiple Encounter Statuses.</li>
+                                    <li>You can search the Encounter Status.</li>
+                                    <li><b>Default</b>: Review Not Needed unchecked by default.  </li>
+                                </ul>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>Admit Service</entry>
+                            <entry>
+                                <ul id="ul_zm1_lny_m4b">
+                                    <li>Displays the list of available Admit Services.</li>
+                                    <li>You can select multiple Admit Services.</li>
+                                    <li>You can search the Admit Service.</li>
+                                    <li><b>Default</b>: ALL</li>
+                                </ul>
+                            </entry>
+                        </row>
+                    </tbody>
+                </tgroup>
+            </table>
+        </p>
+        <p>
+            <table frame="all" rowsep="1" colsep="1" id="table_cjn_fjw_s4b">
+                <title>Footnotes</title>
+                <tgroup cols="2">
+                    <colspec colname="c1" colnum="1" colwidth="1*"/>
+                    <colspec colname="c2" colnum="2" colwidth="1*"/>
+                    <thead>
+                        <row>
+                            <entry>Formula</entry>
+                            <entry>Text on hover</entry>
+                        </row>
+                    </thead>
+                    <tbody>
+                        <row>
+                            <entry>Initial Review Date</entry>
+                            <entry>Displays Initial Review Date/time in red font when the Initial
+                                Review Date/Time > Discharge Date/Time.</entry>
+                        </row>
+                        <row>
+                            <entry>P-DRG</entry>
+                            <entry>
+                                <p>P-DRG: Displays the ‘Working DRG’ value in orange font for the
+                                    reconciled encounters with blank ‘Possible DRG’.</p>
+                                <p>P-DRG WT: Displays the ‘Working DRG WT’ value in orange font for
+                                    the reconciled encounters with blank ‘Possible DRG’.</p>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>Variance</entry>
+                            <entry>Variance = Final Coded DRG WT - Reconciliation Assessment DRG WT
+                                (Working DRG WT when Discharge Date &lt; 11/14/19 or Reconciliation
+                                Assessment DRG is blank); Displays negative variance value in red
+                                font.</entry>
+                        </row>
+                        <row>
+                            <entry>Blended Rate</entry>
+                            <entry>Configured at payer level; When Blended Rate is not available,
+                                Operating Federal rate is displayed.</entry>
+                        </row>
+                        <row>
+                            <entry>Reimbursement Impact</entry>
+                            <entry>Reimbursement Impact = (Final Coded DRG WT - Reconciliation
+                                Assessment DRG WT (Working DRG WT when Discharge Date &lt; 11/14/19
+                                or Reconciliation Assessment DRG is blank)) x Blended Rate. E.g.
+                                $5321; Displays negative Reimbursement Impact in red font.</entry>
+                        </row>
+                        <row>
+                            <entry>SOI/ROM</entry>
+                            <entry>Advanced DRG SOI/ROM value is displayed when Primary DRG SOI/ROM
+                                is blank.</entry>
+                        </row>
+                        <row>
+                            <entry>AMLOS/GMLOS</entry>
+                            <entry>Advanced DRG AMLOS/GMLOS value is displayed when Primary DRG
+                                AMLOS/GMLOS is blank.</entry>
+                        </row>
+                        <row>
+                            <entry>Financial Impact Clarifications</entry>
+                            <entry>Financial Impact Clarifications: Clarifications with standard or
+                                custom ‘Primary Type at Reconciliation’ defined as ‘Financial’ in
+                                the admin configuration.</entry>
+                        </row>
+                        <row>
+                            <entry>Financial Impact Clarification Agreed</entry>
+                            <entry>Financial Impact Clarifications Agreed: Financial Impact
+                                Clarifications with standard or custom ‘Primary Type at
+                                Reconciliation’ with Final response as Agreed..</entry>
+                        </row>
+                        <row>
+                            <entry>LOS</entry>
+                            <entry>LOS: Displays Length of Stay in blue font if LOS value greater
+                                than F-GMLOS; W-GMLOS value is considered in case of blank
+                                F-GMLOS.</entry>
+                        </row>
+                        <row>
+                            <entry>Review Complete TAT (Hours)</entry>
+                            <entry>Displays the number of hours when the encounter status is set as
+                                Review Complete Date/Time and when the working review was first
+                                created for the selected time period. The date must be in the
+                                Facility's time-zone. <b>Example</b>: 05/24/2020 10:10:00 AM
+                                    ET.<p>Number of hours between Review Complete Date/Time and when
+                                    the Working Review was first created for the selected time
+                                    period. Review TAT (Hours) for each encounter = ‘Review
+                                    Complete’ (Date/Time stamp) – Initial Review (Date/Time
+                                    stamp).</p></entry>
+                        </row>
+                    </tbody>
+                </tgroup>
+            </table>
+        </p>
+    </conbody>
+</concept>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="about_overdue_clarification">
+    <title>About Overdue Clarification</title>
+    <shortdesc/>
+    <conbody>
+        <p>The <i>Overdue Clarification Report </i>displays the clarification status overdue and
+            response status pending of a CDS.</p>
+        <p>
+            <fig id="fig_y4j_lbb_mgb">
+                <title>Overdue Clarification </title>
+                <image href="../Image/CDS%20Productivity/about_overdue_clarification.gif"
+                    id="image_i22_52y_ykb" align="center" placement="break" width="600"/>
+            </fig>
+        </p>
+        <p><uicontrol>Activity Date</uicontrol> and <uicontrol>Admit Date</uicontrol> can be used to
+            filter the data. Default value for <uicontrol>Activity Date</uicontrol> filter is set to
+            last one week from the current date.</p>
+        <p>The <i>Overdue Clarification Report</i> displays the following KPI cards and charts:<ul
+                id="ul_vnq_z3c_mgb">
+                <li>Encounters with Overdue Clarification</li>
+                <li>Overdue Clarification with Provider</li>
+                <li>Overdue Clarification by Encounter Status</li>
+            </ul></p>
+    </conbody>
+</concept>

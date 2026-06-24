@@ -1,0 +1,1378 @@
+<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" data-whc_version="28.0">
+    <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><meta name="DC.rights.owner" content="(C) Copyright 2026"/><meta name="copyright" content="(C) Copyright 2026"/><meta name="generator" content="DITA-OT"/><meta name="DC.type" content="concept"/><meta name="description" content="Overview : The Encounter and Suggestion Details dashboard provides encounters details to the CDI Manager, displaying information on their assigned rank, AI suggestions, CDS activity, and suggested ..."/><meta name="DC.format" content="HTML5"/><meta name="DC.identifier" content="reconciliation_details"/>        
+      <title>Encounter and Suggestion Details</title><!--  Generated with Oxygen version 28.0, build number 2025121612.  --><meta name="wh-path2root" content=""/><meta name="wh-toc-id" content="reconciliation_details-d1086e756"/><meta name="wh-source-relpath" content="triage_encounter_details.dita"/><meta name="wh-out-relpath" content="triage_encounter_details.html"/>
+    <link rel="stylesheet" type="text/css" href="./oxygen-webhelp/app/bootstrap.css?buildId=2025121612"/>
+    <link rel="stylesheet" type="text/css" href="./oxygen-webhelp/app/jquery-ui.css?buildId=2025121612"/>
+        
+    <link rel="stylesheet" type="text/css" href="./oxygen-webhelp/app/topic.css?buildId=2025121612"/>
+<link rel="stylesheet" type="text/css" href="oxygen-webhelp/template/oxygen-theme.css?buildId=20260617213443"/><link rel="stylesheet" type="text/css" href="oxygen-webhelp/template/oxygen.css?buildId=20260617213443"/><link rel="stylesheet" type="text/css" href="oxygen-webhelp/template/notes.css?buildId=20260617213443"/>
+    <script src="./oxygen-webhelp/app/options/properties.js?buildId=20260617213443"></script>
+    <script src="./oxygen-webhelp/app/themes.js?buildId=20260617213443"></script>
+    <script src="./oxygen-webhelp/app/localization/strings.js?buildId=2025121612"></script>
+    <script src="./oxygen-webhelp/app/search/index/keywords.js?buildId=20260617213443"></script>
+    
+    <script defer="defer" src="./oxygen-webhelp/app/jquery.js?buildId=2025121612"></script>
+    <script defer="defer" src="./oxygen-webhelp/app/jquery-ui.js?buildId=2025121612"></script>
+    <script defer="defer" src="./oxygen-webhelp/app/jquery-bootpag.js?buildId=2025121612"></script>
+    <script defer="defer" src="./oxygen-webhelp/app/jquery-highlight.js?buildId=2025121612"></script>
+    <script defer="defer" src="./oxygen-webhelp/app/popperjs-core.js?buildId=2025121612"></script>
+    <script defer="defer" src="./oxygen-webhelp/app/bootstrap.js?buildId=2025121612"></script>
+    <script defer="defer" src="./oxygen-webhelp/app/dompurify.js?buildId=2025121612"></script>
+    <script defer="defer" src="./oxygen-webhelp/app/image-map.js?buildId=2025121612"></script>
+    <script defer="defer" src="./oxygen-webhelp/app/maphilight.js?buildId=2025121612"></script>
+
+    <script defer="defer" src="./oxygen-webhelp/app/topic.js?buildId=2025121612"></script>
+<link rel="stylesheet" type="text/css" href="Custom.css"/></head>
+
+    <body id="reconciliation_details" class="wh_topic_page frmBody">
+        <a class="visually-hidden-focusable" id="wh_jump_to_content" href="#wh_topic_body">
+            Jump to main content
+        </a>
+        
+        
+        
+        
+        <header class="navbar navbar-default wh_header">
+    <div class="container-fluid navbar-expand-md">
+        <div class="wh_header_flex_container navbar-nav navbar-dark">
+            <div class="wh_logo_and_publication_title_container">
+                <div class="wh_logo_and_publication_title">
+                    
+                    <a href="index.html" class=" wh_logo d-none d-sm-block "><img src="CDE_logo_Help.png?buildId=20260617213443" alt="  CDE Analytics New Guide  "/></a>
+                    <div class=" wh_publication_title "><a href="index.html"><span class="booktitle">  <span class="ph mainbooktitle">CDE Analytics New Guide</span>  </span></a></div>
+                    
+                </div>
+                
+                <button type="button" data-bs-target="#wh_top_menu_and_indexterms_link" id="wh_menu_mobile_button" data-bs-toggle="collapse" class="navbar-toggler collapsed wh_toggle_button" aria-expanded="false" aria-label="Toggle menu" aria-controls="wh_top_menu_and_indexterms_link">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+
+            <div class="wh_top_menu_and_indexterms_link collapse navbar-collapse" id="wh_top_menu_and_indexterms_link">
+                
+                <nav class=" wh_top_menu " aria-label="Menu Container"><ul role="menubar" aria-label="Menu"><li role="menuitem"><span id="what_s_new-d1086e19-mi" data-tocid="what_s_new-d1086e19" data-state="leaf" class=" topicref " data-id="what_s_new"><span class="title"><a href="Reference/what_s_new.html">What's New (2.24.0 Release)</a></span></span></li><li role="menuitem"><span id="online_analytics_training-d1086e27-mi" data-tocid="online_analytics_training-d1086e27" data-state="leaf" class=" topicref " data-id="online_analytics_training"><span class="title"><a href="online_analytics_training.html">Online Analytics Training</a></span></span></li><li role="menuitem"><span id="live_chat-d1086e35-mi" data-tocid="live_chat-d1086e35" data-state="leaf" class=" topicref " data-id="live_chat"><span class="title"><a href="Reference/live_chat.html">Live Chat</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="tocId-d1086e46-mi" data-tocid="tocId-d1086e46" data-state="not-ready" class=" topicref "><span class="title"><a href="Getting%20Started/Concept/overview_getting_started.html">Getting Started</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="tocId-d1086e229-mi" data-tocid="tocId-d1086e229" data-state="not-ready" class=" topicref "><span class="title"><a href="about_nuance_cde_analytics.html">Working With Reports</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="tocId-d1086e383-mi" data-tocid="tocId-d1086e383" data-state="not-ready" class=" topicref "><span class="title"><a href="encounter_monitoring.html">CDE One - CDI Operations</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="tocId-d1086e467-mi" data-tocid="tocId-d1086e467" data-state="not-ready" class=" topicref "><span class="title"><a href="team_performance.html">CDE One - Staff Management</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="tocId-d1086e529-mi" data-tocid="tocId-d1086e529" data-state="not-ready" class=" topicref "><span class="title"><a href="executive_overview.html">CDE One - Executive Summary</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="tocId-d1086e621-mi" data-tocid="tocId-d1086e621" data-state="not-ready" class=" topicref "><span class="title"><a href="peer_group_comparision/ms_drg_specialty_summary.html">CDE One - Peer Group Comparison</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="tocId-d1086e673-mi" data-tocid="tocId-d1086e673" data-state="not-ready" class=" topicref "><span class="title"><a href="quality_impact_overview.html">CDE One - Quality Impact</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="tocId-d1086e705-mi" data-tocid="tocId-d1086e705" data-state="not-ready" class=" topicref "><span class="title"><a href="triage_overview.html">Triage and CDS Assistant Usage</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="tocId-d1086e767-mi" data-tocid="tocId-d1086e767" data-state="not-ready" class=" topicref "><span class="title"><a href="post_discharge_reviews_overview.html">CDE Triage - Post Discharge Reviews</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="tocId-d1086e790-mi" data-tocid="tocId-d1086e790" data-state="not-ready" class=" topicref "><span class="title"><a href="cds_activity_details_48_hours.html">CDS General - CDS Productivity</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="tocId-d1086e832-mi" data-tocid="tocId-d1086e832" data-state="not-ready" class=" topicref "><span class="title"><a href="cds_activity_report.html">CDS Monthly Productivity</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="tocId-d1086e854-mi" data-tocid="tocId-d1086e854" data-state="not-ready" class=" topicref "><span class="title"><a href="visualization_types.html">Analytics Concepts</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="tocId-d1086e866-mi" data-tocid="tocId-d1086e866" data-state="not-ready" class=" topicref "><span class="title"><a href="related_documents.html">Related Documents</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="tocId-d1086e878-mi" data-tocid="tocId-d1086e878" data-state="not-ready" class=" topicref "><span class="title"><a href="glossary.html">Glossary</a></span></span></li></ul></nav>
+                
+                
+                
+            </div>
+        </div>
+    </div>
+</header>
+        
+        
+         
+        
+        <div class=" wh_search_input navbar-form wh_topic_page_search search " role="form">
+            
+            
+            
+            <form id="searchForm" method="get" role="search" action="search.html"><div><input type="search" placeholder="Search " class="wh_search_textfield" id="textToSearch" name="searchQuery" aria-label="Search query" required="required"/><button type="submit" class="wh_search_button" aria-label="Search"><span class="search_input_text">Search</span></button></div></form>
+            
+            
+            
+        </div>
+        
+        <div class="container-fluid navbar-expand-md" id="wh_topic_container">
+            <div class="row">
+
+                <nav class="wh_tools d-print-none" aria-label="Tools">
+                    
+                    <div data-tooltip-position="bottom" class=" wh_breadcrumb "><ol class="d-print-none"><li><span class="home"><a href="index.html"><span>Home</span></a></span></li><li><div class="topicref"><div class="title"><a href="triage_overview.html">Triage and CDS Assistant Usage</a></div></div></li><li class="active"><div class="topicref" data-id="reconciliation_details"><div class="title"><a href="triage_encounter_details.html"> Encounter and Suggestion Details</a><div class="wh-tooltip"><p class="shortdesc"></p></div></div></div></li></ol></div>
+                    
+                    
+                    
+                    <div class="wh_right_tools">
+                        <button class="wh_hide_highlight" aria-label="Toggle search highlights" title="Toggle search highlights"></button>
+                        <button class="webhelp_full_width_link" data-next-state="expanded" aria-label="Maximize to full width" title="Maximize to full width"></button>
+                        <button class="webhelp_expand_collapse_sections" data-next-state="collapsed" aria-label="Collapse sections" title="Collapse sections"></button>
+                        
+                        
+                        
+                        
+                        <div class=" wh_print_link print d-none d-md-inline-block "><button onClick="window.print()" title="Print this page" aria-label="Print this page"></button></div>
+                        
+                        
+                        <button type="button" id="wh_toc_button" class="custom-toggler navbar-toggler collapsed wh_toggle_button navbar-light" aria-expanded="false" aria-label="Toggle publishing table of content" aria-controls="wh_publication_toc">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                    </div>
+                    
+                </nav>
+            </div>
+            
+            
+            
+            
+            <div class="wh_content_area">
+                <div class="row">
+                    
+                        <nav class="col-xxl-3 col-lg-3 col-md-3 col-sm-12 d-md-block d-none d-print-none" id="wh_publication_toc" aria-label="Table of Contents Container">
+                            <div id="wh_publication_toc_content">
+	                            <button id="wh_close_publication_toc_button" class="close-toc-button d-none" aria-label="Toggle publishing table of content" aria-controls="wh_publication_toc" aria-expanded="true">
+		                            <span class="close-toc-icon-container">
+		                                <span class="close-toc-icon"></span>     
+		                            </span>
+		                        </button>
+		                        
+                            	<div class=" wh_publication_toc " data-tooltip-position="hidden"><span class="expand-button-action-labels"><span id="button-expand-action" role="button" aria-label="Expand"></span><span id="button-collapse-action" role="button" aria-label="Collapse"></span><span id="button-pending-action" role="button" aria-label="Pending"></span></span><ul role="tree" aria-label="Table of Contents"><li role="treeitem"><div data-tocid="what_s_new-d1086e19" class="topicref" data-id="what_s_new" data-state="leaf"><span class="wh-expand-btn"></span><div class="title"><a href="Reference/what_s_new.html" id="what_s_new-d1086e19-link">What's New (2.24.0 Release)</a></div></div></li><li role="treeitem"><div data-tocid="online_analytics_training-d1086e27" class="topicref" data-id="online_analytics_training" data-state="leaf"><span class="wh-expand-btn"></span><div class="title"><a href="online_analytics_training.html" id="online_analytics_training-d1086e27-link">Online Analytics Training</a></div></div></li><li role="treeitem"><div data-tocid="live_chat-d1086e35" class="topicref" data-id="live_chat" data-state="leaf"><span class="wh-expand-btn"></span><div class="title"><a href="Reference/live_chat.html" id="live_chat-d1086e35-link">Live Chat</a><div class="wh-tooltip"><p class="shortdesc"></p></div></div></div></li><li role="treeitem" aria-expanded="false"><div data-tocid="tocId-d1086e46" class="topicref" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action tocId-d1086e46-link" class="wh-expand-btn"></span><div class="title"><a href="Getting%20Started/Concept/overview_getting_started.html" id="tocId-d1086e46-link">Getting Started</a></div></div></li><li role="treeitem" aria-expanded="false"><div data-tocid="tocId-d1086e229" class="topicref" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action tocId-d1086e229-link" class="wh-expand-btn"></span><div class="title"><a href="about_nuance_cde_analytics.html" id="tocId-d1086e229-link">Working With Reports</a></div></div></li><li role="treeitem" aria-expanded="false"><div data-tocid="tocId-d1086e383" class="topicref" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action tocId-d1086e383-link" class="wh-expand-btn"></span><div class="title"><a href="encounter_monitoring.html" id="tocId-d1086e383-link">CDE One - CDI Operations</a></div></div></li><li role="treeitem" aria-expanded="false"><div data-tocid="tocId-d1086e467" class="topicref" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action tocId-d1086e467-link" class="wh-expand-btn"></span><div class="title"><a href="team_performance.html" id="tocId-d1086e467-link">CDE One - Staff Management</a></div></div></li><li role="treeitem" aria-expanded="false"><div data-tocid="tocId-d1086e529" class="topicref" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action tocId-d1086e529-link" class="wh-expand-btn"></span><div class="title"><a href="executive_overview.html" id="tocId-d1086e529-link">CDE One - Executive Summary</a></div></div></li><li role="treeitem" aria-expanded="false"><div data-tocid="tocId-d1086e621" class="topicref" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action tocId-d1086e621-link" class="wh-expand-btn"></span><div class="title"><a href="peer_group_comparision/ms_drg_specialty_summary.html" id="tocId-d1086e621-link">CDE One - Peer Group Comparison</a></div></div></li><li role="treeitem" aria-expanded="false"><div data-tocid="tocId-d1086e673" class="topicref" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action tocId-d1086e673-link" class="wh-expand-btn"></span><div class="title"><a href="quality_impact_overview.html" id="tocId-d1086e673-link">CDE One - Quality Impact</a></div></div></li><li role="treeitem" aria-expanded="true"><div data-tocid="tocId-d1086e705" class="topicref" data-state="expanded"><span role="button" tabindex="0" aria-labelledby="button-collapse-action tocId-d1086e705-link" class="wh-expand-btn"></span><div class="title"><a href="triage_overview.html" id="tocId-d1086e705-link">Triage and CDS Assistant Usage</a></div></div><ul role="group" class="navbar-nav nav-list"><li role="treeitem"><div data-tocid="post_discharge_reviews_overview-d1086e706" class="topicref" data-id="post_discharge_reviews_overview" data-state="leaf"><span class="wh-expand-btn"></span><div class="title"><a href="triage_overview.html" id="post_discharge_reviews_overview-d1086e706-link">Triage Overview</a><div class="wh-tooltip"><p class="shortdesc"></p></div></div></div></li><li role="treeitem"><div data-tocid="post_discharge_reviews_overview-d1086e716" class="topicref" data-id="post_discharge_reviews_overview" data-state="leaf"><span class="wh-expand-btn"></span><div class="title"><a href="triage_summary.html" id="post_discharge_reviews_overview-d1086e716-link">Triage Summary</a><div class="wh-tooltip"><p class="shortdesc"></p></div></div></div></li><li role="treeitem"><div data-tocid="post_discharge_reviews_overview-d1086e726" class="topicref" data-id="post_discharge_reviews_overview" data-state="leaf"><span class="wh-expand-btn"></span><div class="title"><a href="assistant_usage_overview.html" id="post_discharge_reviews_overview-d1086e726-link">Assistant Usage Overview</a><div class="wh-tooltip"><p class="shortdesc"></p></div></div></div></li><li role="treeitem"><div data-tocid="post_discharge_reviews_overview-d1086e736" class="topicref" data-id="post_discharge_reviews_overview" data-state="leaf"><span class="wh-expand-btn"></span><div class="title"><a href="assistant_usage_summary.html" id="post_discharge_reviews_overview-d1086e736-link">Assistant Usage Summary</a><div class="wh-tooltip"><p class="shortdesc"></p></div></div></div></li><li role="treeitem"><div data-tocid="post_discharge_reviews_overview-d1086e746" class="topicref" data-id="post_discharge_reviews_overview" data-state="leaf"><span class="wh-expand-btn"></span><div class="title"><a href="ranked_encounters.html" id="post_discharge_reviews_overview-d1086e746-link">Ranked Encounters</a><div class="wh-tooltip"><p class="shortdesc"></p></div></div></div></li><li role="treeitem" class="active"><div data-tocid="reconciliation_details-d1086e756" class="topicref" data-id="reconciliation_details" data-state="leaf"><span class="wh-expand-btn"></span><div class="title"><a href="triage_encounter_details.html" id="reconciliation_details-d1086e756-link"> Encounter and Suggestion Details</a><div class="wh-tooltip"><p class="shortdesc"></p></div></div></div></li></ul></li><li role="treeitem" aria-expanded="false"><div data-tocid="tocId-d1086e767" class="topicref" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action tocId-d1086e767-link" class="wh-expand-btn"></span><div class="title"><a href="post_discharge_reviews_overview.html" id="tocId-d1086e767-link">CDE Triage - Post Discharge Reviews</a></div></div></li><li role="treeitem" aria-expanded="false"><div data-tocid="tocId-d1086e790" class="topicref" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action tocId-d1086e790-link" class="wh-expand-btn"></span><div class="title"><a href="cds_activity_details_48_hours.html" id="tocId-d1086e790-link">CDS General - CDS Productivity</a></div></div></li><li role="treeitem" aria-expanded="false"><div data-tocid="tocId-d1086e832" class="topicref" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action tocId-d1086e832-link" class="wh-expand-btn"></span><div class="title"><a href="cds_activity_report.html" id="tocId-d1086e832-link">CDS Monthly Productivity</a></div></div></li><li role="treeitem" aria-expanded="false"><div data-tocid="tocId-d1086e854" class="topicref" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action tocId-d1086e854-link" class="wh-expand-btn"></span><div class="title"><a href="visualization_types.html" id="tocId-d1086e854-link">Analytics Concepts</a></div></div></li><li role="treeitem" aria-expanded="false"><div data-tocid="tocId-d1086e866" class="topicref" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action tocId-d1086e866-link" class="wh-expand-btn"></span><div class="title"><a href="related_documents.html" id="tocId-d1086e866-link">Related Documents</a></div></div></li><li role="treeitem" aria-expanded="false"><div data-tocid="tocId-d1086e878" class="topicref" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action tocId-d1086e878-link" class="wh-expand-btn"></span><div class="title"><a href="glossary.html" id="tocId-d1086e878-link">Glossary</a></div></div></li></ul></div>
+		                        
+                            </div>
+                        </nav>
+                    
+                    
+                    <div class="col-xxl-9 col-lg-9 col-md-9 col-sm-12" id="wh_topic_body">
+                        
+                        <div class=" wh_topic_content body "><main role="main"><article class="- topic/topic concept/concept topic concept" role="article" aria-labelledby="ariaid-title1">
+    <h1 class="- topic/title title topictitle1" id="ariaid-title1"> Encounter and Suggestion Details</h1>
+    
+    <div class="- topic/body concept/conbody body conbody"><p class="- topic/shortdesc shortdesc"></p>
+        <p class="- topic/p p"><strong class="+ topic/ph hi-d/b ph b">Overview</strong>: The Encounter and Suggestion Details dashboard provides encounters
+            details to the CDI Manager, displaying information on their assigned rank, AI
+            suggestions, CDS activity, and suggested DRG. This report helps to analyze the data and
+            identify opportunities for improvement.</p>
+        <p class="- topic/p p">By default, the report displays data for last 1 calendar month based on the admission
+            date.</p>
+        <p class="- topic/p p"><strong class="+ topic/ph hi-d/b ph b">Navigation</strong>: On the Analytics home page left side panel, navigate to <span class="+ topic/ph ui-d/menucascade ph menucascade"><span class="+ topic/ph ui-d/uicontrol ph uicontrol">CDE One</span><abbr title="and then"> &gt; </abbr><span class="+ topic/ph ui-d/uicontrol ph uicontrol">Triage and CDS Assistant Usage</span><abbr title="and then"> &gt; </abbr><span class="+ topic/ph ui-d/uicontrol ph uicontrol">Encounter and Suggestion Details</span></span>. </p>
+        <div class="- topic/p p">The Encounter and Suggestion Details report displays the following:<ul class="- topic/ul ul" id="reconciliation_details__ul_nlv_1ym_l4b" data-ofbid="reconciliation_details__ul_nlv_1ym_l4b">
+                <li class="- topic/li li">KPI Card: Total Suggestions, Total Encounters</li>
+                <li class="- topic/li li">Encounter Details chart</li>
+                <li class="- topic/li li">Suggestion Details chart</li>
+            </ul></div>
+        <div class="- topic/note note note note_note" id="reconciliation_details__note_mzv_dxq_pyb" data-ofbid="reconciliation_details__note_mzv_dxq_pyb"><span class="note__title">Note:</span> <div class="note__body">
+            <ul class="- topic/ul ul" id="reconciliation_details__ul_knw_tvp_pyb" data-ofbid="reconciliation_details__ul_knw_tvp_pyb">
+                <li class="- topic/li li">
+                    <p class="- topic/p p">Encounters that have been given a rank in CDE Triage are called ranked
+                        encounters. The current rank of an encounter may be blank.</p>
+                </li>
+                <li class="- topic/li li">
+                    <p class="- topic/p p">Encounters are ranked based on the rules that are defined for the
+                        prioritization within CDE Triage.</p>
+                </li>
+                <li class="- topic/li li">The following encounter types are considered:<ul class="- topic/ul ul" id="reconciliation_details__ul_acm_dzj_qyb" data-ofbid="reconciliation_details__ul_acm_dzj_qyb">
+                        <li class="- topic/li li">Both ranked (standard and custom) and unranked encounters.</li>
+                        <li class="- topic/li li">Highest rank of the encounter.</li>
+                        <li class="- topic/li li">Count of all encounters that have been assigned a rank and have an
+                            initial review date/time.</li>
+                        <li class="- topic/li li">All encounter statuses except 'Review Not Needed' are considered.</li>
+                    </ul></li>
+            </ul>
+        </div></div>
+        <p class="- topic/p p">On the top panel, you can select desired values for the slicers (refer <a class="- topic/xref xref" href="#reconciliation_details__table_qnn_w2n_g4b">Report Slicers </a>) and the
+            corresponding data gets generated in the tabular chart.</p>
+        <p class="- topic/p p">For filters on all pages, refer <a class="- topic/xref xref" href="#reconciliation_details__table_dq1_ffn_g4b">Filters on all Pages</a>.</p>
+        <p class="- topic/p p">For information about footnotes, refer <a class="- topic/xref xref" href="#reconciliation_details__table_pmd_wtg_l4b">Footnotes</a>.</p>
+        <div class="- topic/p p"><strong class="+ topic/ph hi-d/b ph b">Encounter Details</strong><figure class="- topic/fig fig fignone" id="reconciliation_details__fig_atn_dvm_r4b" data-ofbid="reconciliation_details__fig_atn_dvm_r4b"><figcaption data-caption-side="top" class="- topic/title title figcap"><span class="figtitleprefix fig--title-label">Figure<span class="fig--title-label-number"> 1</span><span class="fig--title-label-punctuation">. </span></span><span class="fig--title">Sample Report</span></figcaption>
+                
+                <img class="- topic/image image" id="reconciliation_details__image_vsw_2gz_zyb" src="Images/Triage%20and%20CDS%20Assistant%20Usage/encounter_details/encounter_details_chart.gif" width="600"/>
+            </figure></div>
+        <p class="- topic/p p"><strong class="+ topic/ph hi-d/b ph b">Encounter and Suggestion Details - KPI Cards</strong></p>
+        <figure class="- topic/fig fig fignone" id="reconciliation_details__fig_umn_gvm_r4b" data-ofbid="reconciliation_details__fig_umn_gvm_r4b"><figcaption data-caption-side="top" class="- topic/title title figcap"><span class="figtitleprefix fig--title-label">Figure<span class="fig--title-label-number"> 2</span><span class="fig--title-label-punctuation">. </span></span><span class="fig--title">KPI Cards</span></figcaption>
+            
+            <img class="- topic/image image" id="reconciliation_details__image_aws_xsc_lzb" src="Images/Triage%20and%20CDS%20Assistant%20Usage/encounter_details/encounter_and_suggestion_details_KPIs.gif"/>
+        </figure>
+        <div class="- topic/p p">
+            <div class="table-container"><table class="- topic/table table frame-all" id="reconciliation_details__table_ggx_nlg_l4b" data-ofbid="reconciliation_details__table_ggx_nlg_l4b" data-cols="2"><caption class="- topic/title title tablecap" data-caption-side="top" data-is-repeated="true"><span class="table--title-label">Table<span class="table--title-label-number"> 1</span><span class="table--title-label-punctuation">. </span></span><span class="table--title">KPI Cards details</span></caption><colgroup><col style="width:40%"/><col style="width:60%"/></colgroup><thead class="- topic/thead thead">
+                        <tr class="- topic/row">
+                            <th class="- topic/entry entry colsep-1 rowsep-1" id="reconciliation_details__table_ggx_nlg_l4b__entry__1">KPI Card</th>
+                            <th class="- topic/entry entry colsep-0 rowsep-1" id="reconciliation_details__table_ggx_nlg_l4b__entry__2">Definition</th>
+                        </tr>
+                    </thead><tbody class="- topic/tbody tbody">
+                        <tr class="- topic/row">
+                            <td class="- topic/entry entry colsep-1 rowsep-1">Total Suggestions</td>
+                            <td class="- topic/entry entry colsep-0 rowsep-1">The total count of suggestions with all statuses including Review
+                                Not Needed for the reporting period.<div class="- topic/p p">
+                                    <div class="- topic/note note note note_note" id="reconciliation_details__note_tkp_lmp_nzb" data-ofbid="reconciliation_details__note_tkp_lmp_nzb"><span class="note__title">Note:</span> <div class="note__body">Suggestion could be Documentation
+                                        Opportunities Diagnoses, Documented Diagnoses, Documented
+                                        Procedures, Clinical Evidence.</div></div>
+                                </div></td>
+                        </tr>
+                        <tr class="- topic/row">
+                            <td class="- topic/entry entry colsep-1 rowsep-0">Total Encounters</td>
+                            <td class="- topic/entry entry colsep-0 rowsep-0">
+                                <div class="- topic/p p">The total count of encounters with all statuses including Review
+                                    Not Needed for the reporting period.<div class="- topic/note note note note_note" id="reconciliation_details__note_gbr_1hz_zyb" data-ofbid="reconciliation_details__note_gbr_1hz_zyb"><span class="note__title">Note:</span> <div class="note__body">When the Admit Date is applied, then this card displays the
+                                        count of admitted encounters with all statuses including
+                                        Review Not Needed. When the Discharge Date is applied, then
+                                        this card displays the count of discharged encounters with
+                                        all statuses including Review Not Needed.</div></div></div>
+                            </td>
+                        </tr>
+                    </tbody></table></div>
+        </div>
+        <p class="- topic/p p"><strong class="+ topic/ph hi-d/b ph b">Encounters Details</strong></p>
+        <figure class="- topic/fig fig fignone" id="reconciliation_details__fig_x3n_kvm_r4b" data-ofbid="reconciliation_details__fig_x3n_kvm_r4b"><figcaption data-caption-side="top" class="- topic/title title figcap"><span class="figtitleprefix fig--title-label">Figure<span class="fig--title-label-number"> 3</span><span class="fig--title-label-punctuation">. </span></span><span class="fig--title">Encounter Details Chart</span></figcaption>
+            
+            <img class="- topic/image image" id="reconciliation_details__image_qgp_ytc_lzb" src="Images/Triage%20and%20CDS%20Assistant%20Usage/encounter_details/encounter_details_tabular_chart.gif" width="700"/>
+        </figure>
+        <p class="- topic/p p">This chart displays the encounter level details for each encounter.</p>
+        <p class="- topic/p p"><strong class="+ topic/ph hi-d/b ph b">Info Icon</strong>(Text on hover): Encounter Status: Includes all encounter statuses except
+            'Review Not Needed.' For data on those encounters, use the 'Encounter Status' filter
+            from the Filters pane. The visual shows the data for all ranked (standard/custom) and
+            unranked encounters by default. For data on encounters with specific ranks, use the
+            'Highest Rank' or 'Current Rank' slicer.</p>
+        <div class="- topic/p p">
+            <div class="table-container"><table class="- topic/table table frame-all" id="reconciliation_details__table_sfd_ylg_l4b" data-ofbid="reconciliation_details__table_sfd_ylg_l4b" data-cols="2"><caption class="- topic/title title tablecap" data-caption-side="top" data-is-repeated="true"><span class="table--title-label">Table<span class="table--title-label-number"> 2</span><span class="table--title-label-punctuation">. </span></span><span class="table--title"><strong class="+ topic/ph hi-d/b ph b">Encounter Details Metrics</strong></span></caption><colgroup><col style="width:38.85135135135135%"/><col style="width:61.14864864864865%"/></colgroup><thead class="- topic/thead thead">
+                        <tr class="- topic/row">
+                            <th class="- topic/entry entry colsep-1 rowsep-1" id="reconciliation_details__table_sfd_ylg_l4b__entry__1">Column</th>
+                            <th class="- topic/entry entry colsep-0 rowsep-1" id="reconciliation_details__table_sfd_ylg_l4b__entry__2">Description</th>
+                        </tr>
+                    </thead><tbody class="- topic/tbody tbody">
+                        <tr class="- topic/row">
+                            <td class="- topic/entry entry colsep-1 rowsep-1">Facility</td>
+                            <td class="- topic/entry entry colsep-0 rowsep-1">Displays the facility assigned to the encounter in the format
+                                Facility Description (Facility ID).<p class="- topic/p p"><strong class="+ topic/ph hi-d/b ph b">Example</strong>: Good Health
+                                    Hospital (GHH).</p></td>
+                        </tr>
+                        <tr class="- topic/row">
+                            <td class="- topic/entry entry colsep-1 rowsep-1">Account No.</td>
+                            <td class="- topic/entry entry colsep-0 rowsep-1">Displays the Account Number assigned to the
+                                        encounter.<p class="- topic/p p"><strong class="+ topic/ph hi-d/b ph b">Example</strong>: ACC2021001.</p></td>
+                        </tr>
+                        <tr class="- topic/row">
+                            <td class="- topic/entry entry colsep-1 rowsep-1">MRN</td>
+                            <td class="- topic/entry entry colsep-0 rowsep-1">Displays the MRN assigned to the encounter.<p class="- topic/p p"><strong class="+ topic/ph hi-d/b ph b">Example</strong>:
+                                    MRN2021001.</p></td>
+                        </tr>
+                        <tr class="- topic/row">
+                            <td class="- topic/entry entry colsep-1 rowsep-1">Patient Name</td>
+                            <td class="- topic/entry entry colsep-0 rowsep-1">Displays the name of the patient associated with the encounter.
+                                        <p class="- topic/p p"><strong class="+ topic/ph hi-d/b ph b">Example</strong>: Last Name, First Name.</p></td>
+                        </tr>
+                        <tr class="- topic/row">
+                            <td class="- topic/entry entry colsep-1 rowsep-1">Admit Date</td>
+                            <td class="- topic/entry entry colsep-0 rowsep-1">
+                                <p class="- topic/p p">Displays the Admission Date and Time assigned to the encounter in
+                                    the facility's timezone.</p>
+                                <p class="- topic/p p"><strong class="+ topic/ph hi-d/b ph b">Example</strong>: 08/08/2019 12:00:00 AM MST.</p>
+                            </td>
+                        </tr>
+                        <tr class="- topic/row">
+                            <td class="- topic/entry entry colsep-1 rowsep-1">Discharge Date</td>
+                            <td class="- topic/entry entry colsep-0 rowsep-1">
+                                <p class="- topic/p p">Displays the discharge date and time assigned to the encounter in
+                                    the facility's timezone.</p>
+                                <p class="- topic/p p">This column is blank for the encounters that do not have a
+                                    discharge date assigned.</p>
+                                <p class="- topic/p p"><strong class="+ topic/ph hi-d/b ph b">Example</strong>: 08/08/2019 12:00:00 AM MST.</p>
+                            </td>
+                        </tr>
+                        <tr class="- topic/row">
+                            <td class="- topic/entry entry colsep-1 rowsep-1">Assigned CDS</td>
+                            <td class="- topic/entry entry colsep-0 rowsep-1">
+                                <p class="- topic/p p"> Displays the CDS assigned to the encounter in the format Last
+                                    Name, First Name MI (CDS ID).</p>
+                                <p class="- topic/p p"><strong class="+ topic/ph hi-d/b ph b">Example</strong>: Ryan, Melissa (rmelissa).</p>
+                            </td>
+                        </tr>
+                        <tr class="- topic/row">
+                            <td class="- topic/entry entry colsep-1 rowsep-1">Initial Review Date</td>
+                            <td class="- topic/entry entry colsep-0 rowsep-1">
+                                <p class="- topic/p p">Displays the date and time when the initial review was performed
+                                    on the encounter. The date is displayed in the Facility's
+                                    time-zone. <strong class="+ topic/ph hi-d/b ph b">Example</strong>: 05/24/2020 10:10:00 AM ET.</p>
+                                <div class="- topic/p p">
+                                    <div class="- topic/note note note note_note" id="reconciliation_details__note_yyf_whz_zyb" data-ofbid="reconciliation_details__note_yyf_whz_zyb"><span class="note__title">Note:</span> <div class="note__body">If the Initial Review Date/time is
+                                        after the Discharge Date/Time, Initial Review Date/Time is
+                                        displayed in the red font.</div></div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="- topic/row">
+                            <td class="- topic/entry entry colsep-1 rowsep-1">Initial Review CDS</td>
+                            <td class="- topic/entry entry colsep-0 rowsep-1">
+                                <p class="- topic/p p"> Displays the name of the CDS who performed the initial
+                                    review.</p>
+                                <p class="- topic/p p"><strong class="+ topic/ph hi-d/b ph b">Example</strong>: Ryan, Melissa (rmelissa).</p>
+                                <p class="- topic/p p">This column is blank for the encounters that do not have a
+                                    ‘Initial Review Date/Time'.</p>
+                            </td>
+                        </tr>
+                        <tr class="- topic/row">
+                            <td class="- topic/entry entry colsep-1 rowsep-1">LOS</td>
+                            <td class="- topic/entry entry colsep-0 rowsep-1">Displays the length of stay in days for each encounter. <div class="- topic/note note note note_note"><span class="note__title">Note:</span> <div class="note__body">
+                                    <ul class="- topic/ul ul" id="reconciliation_details__ul_um1_g3z_zyb" data-ofbid="reconciliation_details__ul_um1_g3z_zyb">
+                                        <li class="- topic/li li">LOS value is displayed in blue font, when LOS is greater
+                                            than GMLOS for the encounter.</li>
+                                        <li class="- topic/li li">W-GMLOS value is considered, if F-GMLOS value is
+                                            blank.</li>
+                                    </ul>
+                                </div></div></td>
+                        </tr>
+                        <tr class="- topic/row">
+                            <td class="- topic/entry entry colsep-1 rowsep-1">Rank at Initial Review</td>
+                            <td class="- topic/entry entry colsep-0 rowsep-1">
+                                <p class="- topic/p p">Displays  the standard or custom rank assigned to the encounter
+                                    prior to the Initial Review. E.g. 1, 2, etc.</p>
+                                <p class="- topic/p p">This column is blank for the encounters that do not have a ‘Rank
+                                    at Initial Review' assigned.</p>
+                            </td>
+                        </tr>
+                        <tr class="- topic/row">
+                            <td class="- topic/entry entry colsep-1 rowsep-1">Highest Rank</td>
+                            <td class="- topic/entry entry colsep-0 rowsep-1">
+                                <p class="- topic/p p">Displays the highest rank (standard or custom) assigned to the
+                                    encounter (1 being the highest, and 11 being the lowest).</p>
+                                <p class="- topic/p p">This column is blank for the unranked encounters, i.e. encounters
+                                    that never had a rank assigned in CDE Triage.</p>
+                            </td>
+                        </tr>
+                        <tr class="- topic/row">
+                            <td class="- topic/entry entry colsep-1 rowsep-1">Current Rank</td>
+                            <td class="- topic/entry entry colsep-0 rowsep-1">Displays the current standard or custom rank assigned to the
+                                encounter. E.g. 1, 2, etc.<p class="- topic/p p">This column is blank for the unranked
+                                    encounters, i.e. encounters that never had a rank assigned in
+                                    CDE Triage.</p></td>
+                        </tr>
+                        <tr class="- topic/row">
+                            <td class="- topic/entry entry colsep-1 rowsep-1">Tracking Codes</td>
+                            <td class="- topic/entry entry colsep-0 rowsep-1">
+                                <p class="- topic/p p">Displays the tracking codes assigned to the encounter in comma
+                                    separated format.</p>
+                                <p class="- topic/p p"><strong class="+ topic/ph hi-d/b ph b">Example</strong>: Quality Review, Prov Education.</p>
+                            </td>
+                        </tr>
+                        <tr class="- topic/row">
+                            <td class="- topic/entry entry colsep-1 rowsep-1">Suggested DRG </td>
+                            <td class="- topic/entry entry colsep-0 rowsep-1">
+                                <p class="- topic/p p">Displays the Suggested DRG Code and its description.</p>
+                                <p class="- topic/p p">Example: 872 - SEPTICEMIA OR SEVERE SEPSIS WITHOUT MV &gt;96 HOURS
+                                    WITHOUT MAJOR COMPLICATION OR COMORBIDITY (MCC).</p>
+                            </td>
+                        </tr>
+                        <tr class="- topic/row">
+                            <td class="- topic/entry entry colsep-1 rowsep-1">W-DRG</td>
+                            <td class="- topic/entry entry colsep-0 rowsep-1">
+                                <p class="- topic/p p">Displays the 'primary' Working DRG along with the description
+                                    displayed on the Review page.</p>
+                                <p class="- topic/p p"><strong class="+ topic/ph hi-d/b ph b">Example</strong>: 872 - SEPTICEMIA OR SEVERE SEPSIS WITHOUT MV &gt;96
+                                    HOURS WITHOUT MAJOR COMPLICATION OR COMORBIDITY (MCC).</p>
+                            </td>
+                        </tr>
+                        <tr class="- topic/row">
+                            <td class="- topic/entry entry colsep-1 rowsep-1">W-DRG WT</td>
+                            <td class="- topic/entry entry colsep-0 rowsep-1">
+                                <p class="- topic/p p">Displays the WT associated with the 'primary' Working DRG
+                                    displayed on the Review page.</p>
+                                <p class="- topic/p p"><strong class="+ topic/ph hi-d/b ph b">Example</strong>: 1.0393.</p>
+                            </td>
+                        </tr>
+                        <tr class="- topic/row">
+                            <td class="- topic/entry entry colsep-1 rowsep-1">W-SOI</td>
+                            <td class="- topic/entry entry colsep-0 rowsep-1">
+                                <p class="- topic/p p">Displays the 'SOI' from the working review. </p>
+                                <p class="- topic/p p"><strong class="+ topic/ph hi-d/b ph b">Example</strong>: 2.</p>
+                                <div class="- topic/p p">
+                                    <div class="- topic/note note note note_note"><span class="note__title">Note:</span> <div class="note__body">If the SOI associated with the primary working DRG is not
+                                        available, then the SOI associated with the advanced working
+                                        DRG is displayed.</div></div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="- topic/row">
+                            <td class="- topic/entry entry colsep-1 rowsep-1">W-ROM</td>
+                            <td class="- topic/entry entry colsep-0 rowsep-1">
+                                <p class="- topic/p p">Displays the 'ROM' from the working review. </p>
+                                <p class="- topic/p p"><strong class="+ topic/ph hi-d/b ph b">Example</strong>: 3.</p>
+                                <div class="- topic/p p">
+                                    <div class="- topic/note note note note_note"><span class="note__title">Note:</span> <div class="note__body">If the ROM associated with the primary working DRG is not
+                                        available, then the ROM associated with the advanced working
+                                        DRG is displayed.</div></div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="- topic/row">
+                            <td class="- topic/entry entry colsep-1 rowsep-1">W-AMLOS</td>
+                            <td class="- topic/entry entry colsep-0 rowsep-1">
+                                <p class="- topic/p p">Displays the 'AMLOS' from the working review. </p>
+                                <p class="- topic/p p"><strong class="+ topic/ph hi-d/b ph b">Example</strong>: 3.1.</p>
+                                <div class="- topic/p p">
+                                    <div class="- topic/note note note note_note"><span class="note__title">Note:</span> <div class="note__body">If the AMLOS associated with the primary working DRG is
+                                        not available, then the AMLOS associated with the advanced
+                                        working DRG is displayed.</div></div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="- topic/row">
+                            <td class="- topic/entry entry colsep-1 rowsep-1">W-GMLOS</td>
+                            <td class="- topic/entry entry colsep-0 rowsep-1">
+                                <p class="- topic/p p">Displays the 'GMLOS ' from the working review.</p>
+                                <p class="- topic/p p"><strong class="+ topic/ph hi-d/b ph b">Example</strong>: 3.2.</p>
+                                <div class="- topic/p p">
+                                    <div class="- topic/note note note note_note"><span class="note__title">Note:</span> <div class="note__body">If the GMLOS associated with the primary working DRG is
+                                        not available, then the GMLOS associated with the advanced
+                                        working DRG is displayed.</div></div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="- topic/row">
+                            <td class="- topic/entry entry colsep-1 rowsep-1">P-DRG</td>
+                            <td class="- topic/entry entry colsep-0 rowsep-1">
+                                <p class="- topic/p p">Displays the 'primary' Possible DRG along with the description
+                                    displayed on the Review page.</p>
+                                <p class="- topic/p p"><strong class="+ topic/ph hi-d/b ph b">Example</strong>: 872 - SEPTICEMIA OR SEVERE SEPSIS WITHOUT MV &gt;96
+                                    HOURS WITHOUT MAJOR COMPLICATION OR COMORBIDITY (MCC).</p>
+                                <div class="- topic/p p">
+                                    <div class="- topic/note note note note_note"><span class="note__title">Note:</span> <div class="note__body">Displays the ‘Working DRG’ value in the orange font for
+                                        the encounters that have a ‘Working DRG’ assigned if the
+                                        ‘Possible DRG’ is blank or null.</div></div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="- topic/row">
+                            <td class="- topic/entry entry colsep-1 rowsep-1">P-DRG WT</td>
+                            <td class="- topic/entry entry colsep-0 rowsep-1">
+                                <p class="- topic/p p">Displays the WT associated with the 'primary' Possible DRG
+                                    displayed on the Review page.</p>
+                                <p class="- topic/p p"><strong class="+ topic/ph hi-d/b ph b">Example</strong>: 1.0393.</p>
+                                <div class="- topic/p p">
+                                    <div class="- topic/note note note note_note"><span class="note__title">Note:</span> <div class="note__body">Displays the ‘Working DRG WT’ value in the orange font for
+                                        the encounters that have a ‘Working DRG’ assigned if the
+                                        ‘Possible DRG’ is blank or null.</div></div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="- topic/row">
+                            <td class="- topic/entry entry colsep-1 rowsep-1">R-DRG</td>
+                            <td class="- topic/entry entry colsep-0 rowsep-1">
+                                <p class="- topic/p p">Displays the code and description of the Reconciliation
+                                    Assessment DRG along with the description displayed on the
+                                    Reconciliation page.</p>
+                                <p class="- topic/p p"><strong class="+ topic/ph hi-d/b ph b">Example</strong>: 872 - SEPTICEMIA OR SEVERE SEPSIS WITHOUT MV &gt;96
+                                    HOURS WITHOUT MAJOR COMPLICATION OR COMORBIDITY (MCC).</p>
+                            </td>
+                        </tr>
+                        <tr class="- topic/row">
+                            <td class="- topic/entry entry colsep-1 rowsep-1">R-DRG WT</td>
+                            <td class="- topic/entry entry colsep-0 rowsep-1">
+                                <p class="- topic/p p">Displays the WT associated with the Reconciliation Assessment DRG
+                                    displayed on the Reconciliation page.</p>
+                                <p class="- topic/p p"><strong class="+ topic/ph hi-d/b ph b">Example</strong>: 1.0393.</p>
+                            </td>
+                        </tr>
+                        <tr class="- topic/row">
+                            <td class="- topic/entry entry colsep-1 rowsep-1">R-SOI</td>
+                            <td class="- topic/entry entry colsep-0 rowsep-1">
+                                <p class="- topic/p p">Displays the 'SOI' from the Reconciliation Assessment.</p>
+                                <p class="- topic/p p"><strong class="+ topic/ph hi-d/b ph b">Example</strong>: 1</p>
+                                <div class="- topic/p p">
+                                    <div class="- topic/note note note note_note"><span class="note__title">Note:</span> <div class="note__body">If the SOI associated with the primary Reconciliation
+                                        Assessment DRG is not available, then the SOI associated
+                                        with the advanced Reconciliation Assessment DRG is
+                                        displayed.</div></div>
+                                </div>
+                                <p class="- topic/p p">This column is blank for the encounters that do not have a
+                                    ‘Initial Review Date/Time'.</p>
+                            </td>
+                        </tr>
+                        <tr class="- topic/row">
+                            <td class="- topic/entry entry colsep-1 rowsep-1">R-ROM</td>
+                            <td class="- topic/entry entry colsep-0 rowsep-1">
+                                <p class="- topic/p p">Displays the 'ROM' from the Reconciliation Assessment.</p>
+                                <p class="- topic/p p"><strong class="+ topic/ph hi-d/b ph b">Example</strong>: 1</p>
+                                <div class="- topic/p p">
+                                    <div class="- topic/note note note note_note"><span class="note__title">Note:</span> <div class="note__body">If the ROM associated with the primary Reconciliation
+                                        Assessment DRG is not available, then the ROM associated
+                                        with the advanced Reconciliation Assessment DRG is
+                                        displayed.</div></div>
+                                </div>
+                                <p class="- topic/p p">This column is blank for the encounters that do not have a
+                                    ‘Initial Review Date/Time'</p>
+                            </td>
+                        </tr>
+                        <tr class="- topic/row">
+                            <td class="- topic/entry entry colsep-1 rowsep-1">R-AMLOS</td>
+                            <td class="- topic/entry entry colsep-0 rowsep-1">
+                                <p class="- topic/p p">Displays the 'AMLOS' from the Reconciliation Assessment.</p>
+                                <p class="- topic/p p"><strong class="+ topic/ph hi-d/b ph b">Example</strong>: 3.1</p>
+                                <div class="- topic/p p">
+                                    <div class="- topic/note note note note_note"><span class="note__title">Note:</span> <div class="note__body">If the AMLOS associated with the primary Reconciliation
+                                        Assessment DRG is not available, then the AMLOS associated
+                                        with the advanced Reconciliation Assessment DRG is
+                                        displayed.</div></div>
+                                </div>
+                                <p class="- topic/p p">This column is blank for the encounters that do not have a
+                                    ‘Initial Review Date/Time'.</p>
+                            </td>
+                        </tr>
+                        <tr class="- topic/row">
+                            <td class="- topic/entry entry colsep-1 rowsep-1">R-GMLOS</td>
+                            <td class="- topic/entry entry colsep-0 rowsep-1">
+                                <p class="- topic/p p">Displays the 'GMLOS' from the Reconciliation Assessment.</p>
+                                <p class="- topic/p p"><strong class="+ topic/ph hi-d/b ph b">Example</strong>: 2.4</p>
+                                <div class="- topic/p p">
+                                    <div class="- topic/note note note note_note"><span class="note__title">Note:</span> <div class="note__body">If the GMLOS associated with the primary Reconciliation
+                                        Assessment DRG is not available, then the GMLOS associated
+                                        with the advanced Reconciliation Assessment DRG is
+                                        displayed.</div></div>
+                                </div>
+                                <p class="- topic/p p">This column is blank for the encounters that do not have a
+                                    ‘Initial Review Date/Time'</p>
+                            </td>
+                        </tr>
+                        <tr class="- topic/row">
+                            <td class="- topic/entry entry colsep-1 rowsep-1">F-DRG</td>
+                            <td class="- topic/entry entry colsep-0 rowsep-1">
+                                <p class="- topic/p p">Displays the code and description of the Final Coded DRG along
+                                    with the description displayed on the Reconciliation page.</p>
+                                <p class="- topic/p p"><strong class="+ topic/ph hi-d/b ph b">Example</strong>: 872 - SEPTICEMIA OR SEVERE SEPSIS WITHOUT MV &gt;96
+                                    HOURS WITHOUT MAJOR COMPLICATION OR COMORBIDITY (MCC).</p>
+                                <div class="- topic/note note note note_note" id="reconciliation_details__note_gx2_tpz_zyb" data-ofbid="reconciliation_details__note_gx2_tpz_zyb"><span class="note__title">Note:</span> <div class="note__body">This column is blank for the encounters
+                                    that do not have a ‘Initial Review Date/Time'.</div></div>
+                            </td>
+                        </tr>
+                        <tr class="- topic/row">
+                            <td class="- topic/entry entry colsep-1 rowsep-1">F-DRG WT</td>
+                            <td class="- topic/entry entry colsep-0 rowsep-1">
+                                <p class="- topic/p p">Displays the WT associated with the Final Coded DRG displayed on
+                                    the Reconciliation page.</p>
+                                <p class="- topic/p p"><strong class="+ topic/ph hi-d/b ph b">Example</strong>: 1.0393.</p>
+                                <div class="- topic/p p">
+                                    <div class="- topic/note note note note_note"><span class="note__title">Note:</span> <div class="note__body">This column is blank for the encounters that do not have a
+                                        ‘Initial Review Date/Time</div></div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="- topic/row">
+                            <td class="- topic/entry entry colsep-1 rowsep-1">F-SOI</td>
+                            <td class="- topic/entry entry colsep-0 rowsep-1">
+                                <p class="- topic/p p">Displays the Final Coded 'SOI'.</p>
+                                <p class="- topic/p p"><strong class="+ topic/ph hi-d/b ph b">Example</strong>: 2</p>
+                                <p class="- topic/p p">This column is blank for the encounters that do not have a
+                                    ‘Initial Review Date/Time'</p>
+                                <p class="- topic/p p">Advanced SOI values are used if Primary SOI values are blank.</p>
+                            </td>
+                        </tr>
+                        <tr class="- topic/row">
+                            <td class="- topic/entry entry colsep-1 rowsep-1">F-ROM</td>
+                            <td class="- topic/entry entry colsep-0 rowsep-1">
+                                <p class="- topic/p p">Displays the Final Coded 'ROM'.</p>
+                                <p class="- topic/p p"><strong class="+ topic/ph hi-d/b ph b">Example</strong>: 3.</p>
+                                <p class="- topic/p p">This column is blank for the encounters that do not have a
+                                    ‘Initial Review Date/Time'</p>
+                                <p class="- topic/p p">Advanced ROM values are used if Primary ROM values are blank.</p>
+                            </td>
+                        </tr>
+                        <tr class="- topic/row">
+                            <td class="- topic/entry entry colsep-1 rowsep-1">F-AMLOS</td>
+                            <td class="- topic/entry entry colsep-0 rowsep-1">
+                                <p class="- topic/p p">Displays the Final Coded 'AMLOS'.</p>
+                                <p class="- topic/p p"><strong class="+ topic/ph hi-d/b ph b">Example</strong>: 3.1.</p>
+                                <p class="- topic/p p">This column is blank for the encounters that do not have a
+                                    ‘Initial Review Date/Time'</p>
+                                <p class="- topic/p p">Advanced AMLOS values are used if Primary AMLOS values are
+                                    blank.</p>
+                            </td>
+                        </tr>
+                        <tr class="- topic/row">
+                            <td class="- topic/entry entry colsep-1 rowsep-1">F-GMLOS</td>
+                            <td class="- topic/entry entry colsep-0 rowsep-1">
+                                <p class="- topic/p p">Displays the Final Coded 'GMLOS'.</p>
+                                <p class="- topic/p p"><strong class="+ topic/ph hi-d/b ph b">Example</strong>: 3.2</p>
+                                <p class="- topic/p p">This column is blank for the encounters that do not have a
+                                    ‘Initial Review Date/Time'</p>
+                                <p class="- topic/p p">Advanced GMLOS values are used if Primary GMLOS values are
+                                    blank</p>
+                            </td>
+                        </tr>
+                        <tr class="- topic/row">
+                            <td class="- topic/entry entry colsep-1 rowsep-1">Variance</td>
+                            <td class="- topic/entry entry colsep-0 rowsep-1">
+                                <p class="- topic/p p">Displays the shift in the WT at the encounter level.</p>
+                                <p class="- topic/p p"><strong class="+ topic/ph hi-d/b ph b">Example</strong>: 1.0178.</p>
+                                <p class="- topic/p p">Encounter Variance = Final Coded DRG WT - Reconciliation
+                                    Assessment DRG WT (or Variance = Final Coded DRG WT - Working
+                                    DRG WT when Discharge Date &lt; 11/14/19 or Reconciliation
+                                    Assessment DRG is blank). For encounters with blank Final DRG
+                                    WT, Encounter Variance = Possible DRG WT - Working DRG WT ( If
+                                    Possible DRG/WT is blank, Working DRG WT is considered. In this
+                                    case Encounter Variance will always be zero).</p>
+                                <div class="- topic/note note note note_note" id="reconciliation_details__note_wwm_qqz_zyb" data-ofbid="reconciliation_details__note_wwm_qqz_zyb"><span class="note__title">Note:</span> <div class="note__body">
+                                    <ul class="- topic/ul ul" id="reconciliation_details__ul_oft_qqz_zyb" data-ofbid="reconciliation_details__ul_oft_qqz_zyb">
+                                        <li class="- topic/li li">Encounter Variance can be negative, positive, or
+                                            zero.</li>
+                                        <li class="- topic/li li">Negative ‘Variance’ is displayed in the red font, E.g.
+                                            1.0178.</li>
+                                        <li class="- topic/li li">Encounter Variance is not calculated for the encounters
+                                            that do not have an initial review date. </li>
+                                        <li class="- topic/li li">This value is rounded to 4 decimal places.</li>
+                                    </ul>
+                                </div></div>
+                            </td>
+                        </tr>
+                        <tr class="- topic/row">
+                            <td class="- topic/entry entry colsep-1 rowsep-1">Blended Rate</td>
+                            <td class="- topic/entry entry colsep-0 rowsep-1">
+                                <p class="- topic/p p">Displays the Blended Rate associated with the payer/Grouper
+                                    assigned to the encounter.</p>
+                                <p class="- topic/p p"><strong class="+ topic/ph hi-d/b ph b">Example</strong>: $7512.</p>
+                                <p class="- topic/p p">When the Blended Rate is not available, the Operating Federal
+                                    rate is displayed.</p>
+                            </td>
+                        </tr>
+                        <tr class="- topic/row">
+                            <td class="- topic/entry entry colsep-1 rowsep-1">Reimbursement Impact</td>
+                            <td class="- topic/entry entry colsep-0 rowsep-1">
+                                <p class="- topic/p p">Displays the ‘Reimbursement Impact’ value for the encounter. </p>
+                                <p class="- topic/p p"><strong class="+ topic/ph hi-d/b ph b">Example</strong>: $ 5,234.</p>
+                                <p class="- topic/p p">Reimbursement Impact: Encounter Reimbursement Impact = Encounter
+                                    Variance x Blended Rate.</p>
+                                <div class="- topic/note note note note_note" id="reconciliation_details__note_nf5_fwc_lzb" data-ofbid="reconciliation_details__note_nf5_fwc_lzb"><span class="note__title">Note:</span> <div class="note__body">
+                                    <ul class="- topic/ul ul" id="reconciliation_details__ul_bvl_mqg_l4b" data-ofbid="reconciliation_details__ul_bvl_mqg_l4b">
+                                        <li class="- topic/li li">This value is rounded to 0 decimal places.</li>
+                                        <li class="- topic/li li">Negative ‘Reimbursement Impact ($)’ is displayed in the
+                                            red font.</li>
+                                    </ul>
+                                </div></div>
+                            </td>
+                        </tr>
+                        <tr class="- topic/row">
+                            <td class="- topic/entry entry colsep-1 rowsep-1">Impact Type</td>
+                            <td class="- topic/entry entry colsep-0 rowsep-1">
+                                <p class="- topic/p p">Displays the Impact Type assigned to the encounter:</p>
+                                <ul class="- topic/ul ul" id="reconciliation_details__ul_ygm_qqg_l4b" data-ofbid="reconciliation_details__ul_ygm_qqg_l4b">
+                                    <li class="- topic/li li">Financial Impact</li>
+                                    <li class="- topic/li li">SOI/ROM Impact</li>
+                                    <li class="- topic/li li">No Impact</li>
+                                    <li class="- topic/li li">Both Impact</li>
+                                    <li class="- topic/li li">Unassigned Impact</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr class="- topic/row">
+                            <td class="- topic/entry entry colsep-1 rowsep-1">Encounter Status</td>
+                            <td class="- topic/entry entry colsep-0 rowsep-1"><p class="- topic/p p">Displays the encounter status assigned to the
+                                        encounter.</p><p class="- topic/p p"><strong class="+ topic/ph hi-d/b ph b">Example</strong>: Reconciled Impact,
+                                    Auto-Reconciled.</p>.</td>
+                        </tr>
+                        <tr class="- topic/row">
+                            <td class="- topic/entry entry colsep-1 rowsep-1">Payer</td>
+                            <td class="- topic/entry entry colsep-0 rowsep-1">Displays the payer assigned to the encounter.<p class="- topic/p p"><strong class="+ topic/ph hi-d/b ph b">Example</strong>:
+                                    Medicare (MEDC).</p></td>
+                        </tr>
+                        <tr class="- topic/row">
+                            <td class="- topic/entry entry colsep-1 rowsep-1">Grouper</td>
+                            <td class="- topic/entry entry colsep-0 rowsep-1">Displays the Grouper version associated with the payer assigned
+                                to the encounter.<p class="- topic/p p"><strong class="+ topic/ph hi-d/b ph b">Example</strong>: CMS 38.0.</p></td>
+                        </tr>
+                        <tr class="- topic/row">
+                            <td class="- topic/entry entry colsep-1 rowsep-1">Unit</td>
+                            <td class="- topic/entry entry colsep-0 rowsep-1">Displays the Unit assigned to the encounter.<p class="- topic/p p"><strong class="+ topic/ph hi-d/b ph b">Example</strong>:
+                                    ICU.</p></td>
+                        </tr>
+                        <tr class="- topic/row">
+                            <td class="- topic/entry entry colsep-1 rowsep-1">Patient Type</td>
+                            <td class="- topic/entry entry colsep-0 rowsep-1">Displays the Patient Type assigned to the
+                                        encounter.<p class="- topic/p p"><strong class="+ topic/ph hi-d/b ph b">Example</strong>: Inpatient </p></td>
+                        </tr>
+                        <tr class="- topic/row">
+                            <td class="- topic/entry entry colsep-1 rowsep-1">Visit Type</td>
+                            <td class="- topic/entry entry colsep-0 rowsep-1">
+                                <p class="- topic/p p">Displays the Visit Type assigned to the encounter.</p>
+                            </td>
+                        </tr>
+                        <tr class="- topic/row">
+                            <td class="- topic/entry entry colsep-1 rowsep-0">Discharge Status</td>
+                            <td class="- topic/entry entry colsep-0 rowsep-0">Displays the Discharge Status assigned to the
+                                        encounter.<p class="- topic/p p"><strong class="+ topic/ph hi-d/b ph b">Format</strong>: <em class="+ topic/ph hi-d/i ph i">Discharge Status ID-
+                                        Description Status Description</em>.</p><p class="- topic/p p"><strong class="+ topic/ph hi-d/b ph b">Example</strong>: 01
+                                    - 01 Self Care.</p></td>
+                        </tr>
+                    </tbody></table></div>
+        </div>
+        <p class="- topic/p p"><strong class="+ topic/ph hi-d/b ph b">Suggestion Details</strong></p>
+        <figure class="- topic/fig fig fignone" id="reconciliation_details__fig_zvb_3xc_lzb" data-ofbid="reconciliation_details__fig_zvb_3xc_lzb"><figcaption data-caption-side="top" class="- topic/title title figcap"><span class="figtitleprefix fig--title-label">Figure<span class="fig--title-label-number"> 4</span><span class="fig--title-label-punctuation">. </span></span><span class="fig--title">Suggestion Details Chart</span></figcaption>
+            
+            <img class="- topic/image image" id="reconciliation_details__image_gxw_fyc_lzb" src="Images/Triage%20and%20CDS%20Assistant%20Usage/encounter_details/suggestion_detais.gif" width="800"/>
+        </figure>
+        <p class="- topic/p p">This chart displays the suggestion level details for each encounter.</p>
+        <p class="- topic/p p"><strong class="+ topic/ph hi-d/b ph b">Info Icon</strong>(Text on hover): Encounter Status: Includes data for all encounter
+            statuses except ‘Review Not Needed.' For data on those encounters, use the 'Encounter
+            Status' filter from the Filters pane. The visual shows suggestions for all ranked
+            (standard/custom) and unranked encounters by default. For suggestion data on encounters
+            with specific ranks, use the 'Highest Rank' or 'Current Rank' slicer and then select the
+            encounter from the above 'Encounter Details’ chart.</p>
+        <div class="- topic/p p">
+            <div class="table-container"><table class="- topic/table table frame-all" id="reconciliation_details__table_bwb_3xc_lzb" data-ofbid="reconciliation_details__table_bwb_3xc_lzb" data-cols="2"><caption class="- topic/title title tablecap" data-caption-side="top" data-is-repeated="true"><span class="table--title-label">Table<span class="table--title-label-number"> 3</span><span class="table--title-label-punctuation">. </span></span><span class="table--title"><strong class="+ topic/ph hi-d/b ph b">Suggestion Details Metrics</strong></span></caption><colgroup><col style="width:38.85135135135135%"/><col style="width:61.14864864864865%"/></colgroup><thead class="- topic/thead thead">
+                        <tr class="- topic/row">
+                            <th class="- topic/entry entry colsep-1 rowsep-1" id="reconciliation_details__table_bwb_3xc_lzb__entry__1">Column</th>
+                            <th class="- topic/entry entry colsep-0 rowsep-1" id="reconciliation_details__table_bwb_3xc_lzb__entry__2">Description</th>
+                        </tr>
+                    </thead><tbody class="- topic/tbody tbody">
+                        <tr class="- topic/row">
+                            <td class="- topic/entry entry colsep-1 rowsep-1">Facility</td>
+                            <td class="- topic/entry entry colsep-0 rowsep-1">Displays the facility assigned to the encounter in the format
+                                Facility Description (Facility ID).<p class="- topic/p p"><strong class="+ topic/ph hi-d/b ph b">Example</strong>: Good Health
+                                    Hospital (GHH).</p></td>
+                        </tr>
+                        <tr class="- topic/row">
+                            <td class="- topic/entry entry colsep-1 rowsep-1">Account No.</td>
+                            <td class="- topic/entry entry colsep-0 rowsep-1">Displays The Account Number assigned to the
+                                        encounter.<p class="- topic/p p"><strong class="+ topic/ph hi-d/b ph b">Example</strong>: ACC2021001.</p></td>
+                        </tr>
+                        <tr class="- topic/row">
+                            <td class="- topic/entry entry colsep-1 rowsep-1">Admit Date</td>
+                            <td class="- topic/entry entry colsep-0 rowsep-1">
+                                <p class="- topic/p p">Displays the Admission Date and Time assigned to the encounter in
+                                    the facility's timezone.</p>
+                                <p class="- topic/p p"><strong class="+ topic/ph hi-d/b ph b">Example</strong>: 08/08/2019 12:00:00 AM MST.</p>
+                            </td>
+                        </tr>
+                        <tr class="- topic/row">
+                            <td class="- topic/entry entry colsep-1 rowsep-1">Discharge Date</td>
+                            <td class="- topic/entry entry colsep-0 rowsep-1">
+                                <p class="- topic/p p">Displays the discharge date and time assigned to the encounter in
+                                    the facility's timezone.</p>
+                                <p class="- topic/p p">This column is blank for the encounters that do not have a
+                                    discharge date assigned.</p>
+                                <p class="- topic/p p"><strong class="+ topic/ph hi-d/b ph b">Example</strong>: 08/08/2019 12:00:00 AM MST.</p>
+                            </td>
+                        </tr>
+                        <tr class="- topic/row">
+                            <td class="- topic/entry entry colsep-1 rowsep-1">Assistant Category</td>
+                            <td class="- topic/entry entry colsep-0 rowsep-1">
+                                <p class="- topic/p p">Displays displays one of the below values:</p>
+                                <ul class="- topic/ul ul" id="reconciliation_details__ul_fwb_3xc_lzb" data-ofbid="reconciliation_details__ul_fwb_3xc_lzb">
+                                    <li class="- topic/li li">
+                                        <p class="- topic/p p">Documented Diagnoses</p>
+                                    </li>
+                                    <li class="- topic/li li">
+                                        <p class="- topic/p p">Documented Procedures</p>
+                                    </li>
+                                    <li class="- topic/li li">
+                                        <p class="- topic/p p">DO: Diagnoses</p>
+                                    </li>
+                                    <li class="- topic/li li">
+                                        <p class="- topic/p p">DO: Clinical Evidence</p>
+                                    </li>
+                                </ul>
+                                <p class="- topic/p p">This column is blank for an encounter for which no AI suggestions
+                                    were presented in CDS Assistant.</p>
+                            </td>
+                        </tr>
+                        <tr class="- topic/row">
+                            <td class="- topic/entry entry colsep-1 rowsep-1">Suggestion Type</td>
+                            <td class="- topic/entry entry colsep-0 rowsep-1">
+                                <p class="- topic/p p">Displays one of the below values:</p>
+                                <ul class="- topic/ul ul" id="reconciliation_details__ul_gwb_3xc_lzb" data-ofbid="reconciliation_details__ul_gwb_3xc_lzb">
+                                    <li class="- topic/li li">
+                                        <p class="- topic/p p">Suggested</p>
+                                    </li>
+                                    <li class="- topic/li li">
+                                        <p class="- topic/p p">Quality</p>
+                                    </li>
+                                    <li class="- topic/li li">
+                                        <p class="- topic/p p">Other</p>
+                                    </li>
+                                </ul>
+                                <p class="- topic/p p">The column is blank for an encounter for which no AI suggestions
+                                    were presented in CDS Assistant.</p>
+                            </td>
+                        </tr>
+                        <tr class="- topic/row">
+                            <td class="- topic/entry entry colsep-1 rowsep-1">Suggestion</td>
+                            <td class="- topic/entry entry colsep-0 rowsep-1"><p class="- topic/p p">Displays the AI suggestion that was presented in CDS
+                                    Assistant.</p><p class="- topic/p p">When Assistant Category is Documented
+                                    Diagnoses, this column displays the diagnosis in the format ICD
+                                    10 Code: Diagnoses Description (E.g. L97.909: Non pressure
+                                    chronic ulcer of unspecified part of unspecified leg with
+                                    unspecified severity). </p><p class="- topic/p p">When Assistant Category is
+                                    Documented Procedures, this column displays the procedures in
+                                    the format ICD10 PCS code: Procedure Description or SNOMED
+                                    Procedure Description (E.g. 0RG2: Fusion cervical vertebral
+                                    joints, Debridement of wound of skin).</p><p class="- topic/p p">When Assistant
+                                    Category is Documentation Opportunities Diagnoses, this column
+                                    displays the diagnosis in the format ICD 10 Code: Diagnoses
+                                    Description (E.g., N17.9: Acute kidney failure,
+                                    unspecified).</p><p class="- topic/p p">When Assistant Category is Documentation
+                                    Opportunities Clinical Evidences, this column displays the
+                                    evidence in the format Clinical Evidence Description (E.g.,
+                                    Gram-Negative Blood Culture).</p>The column is blank for an
+                                encounter for which no AI suggestions were presented in CDS
+                                Assistant. </td>
+                        </tr>
+                        <tr class="- topic/row">
+                            <td class="- topic/entry entry colsep-1 rowsep-1">Code Flag</td>
+                            <td class="- topic/entry entry colsep-0 rowsep-1">
+                                <p class="- topic/p p">Displays the flag assigned to the AI suggestion. (E.g. PSI, CC,
+                                    MCC, ELX, HAC, HCC, OR, NOR, etc.)</p>
+                                <p class="- topic/p p">Flags are displayed for Documented Diagnoses, Documented
+                                    Procedures, and Documentation Opportunities Diagnoses.</p>
+                                <div class="- topic/p p">
+                                    <div class="- topic/note note note note_note" id="reconciliation_details__note_rdk_v5p_nzb" data-ofbid="reconciliation_details__note_rdk_v5p_nzb"><span class="note__title">Note:</span> <div class="note__body">This column will be blank for
+                                        Documentation Opportunities : Clinical Evidences.</div></div>
+                                </div>
+                                <p class="- topic/p p">An AI suggestion may have more than one flag assigned. For
+                                    example, Documented Diagnoses N93.0: Urinary tract infection,
+                                    site not specified, may have two flags - CC and HAC assigned as
+                                    applicable to the encounter. In case of multiple flags, the
+                                    values are displayed in comma separated format.</p>
+                                <p class="- topic/p p">The column will be blank for an encounter for which no AI
+                                    suggestions were presented in CDS Assistant.</p>
+                            </td>
+                        </tr>
+                        <tr class="- topic/row">
+                            <td class="- topic/entry entry colsep-1 rowsep-1">CDS Activity</td>
+                            <td class="- topic/entry entry colsep-0 rowsep-1">
+                                <p class="- topic/p p">Displays one of the below values:</p>
+                                <ul class="- topic/ul ul" id="reconciliation_details__ul_iwb_3xc_lzb" data-ofbid="reconciliation_details__ul_iwb_3xc_lzb">
+                                    <li class="- topic/li li">
+                                        <p class="- topic/p p">Accepted</p>
+                                    </li>
+                                    <li class="- topic/li li">
+                                        <p class="- topic/p p">Removed</p>
+                                    </li>
+                                    <li class="- topic/li li">
+                                        <p class="- topic/p p">Unaddressed</p>
+                                    </li>
+                                    <li class="- topic/li li">
+                                        <p class="- topic/p p">CDS Attributed</p>
+                                    </li>
+                                    <li class="- topic/li li">
+                                        <p class="- topic/p p">System Attributed</p>
+                                    </li>
+                                </ul>
+                                <p class="- topic/p p">The column is blank for an encounter for which no AI suggestions
+                                    were presented in CDS Assistant. </p>
+                            </td>
+                        </tr>
+                        <tr class="- topic/row">
+                            <td class="- topic/entry entry colsep-1 rowsep-1">Encounter Status</td>
+                            <td class="- topic/entry entry colsep-0 rowsep-1"><p class="- topic/p p">Displays the encounter status assigned to the
+                                        encounter.</p><p class="- topic/p p"><strong class="+ topic/ph hi-d/b ph b">Example</strong>: Reconciled Impact,
+                                    Auto-Reconciled.</p>.</td>
+                        </tr>
+                        <tr class="- topic/row">
+                            <td class="- topic/entry entry colsep-1 rowsep-1">Payer</td>
+                            <td class="- topic/entry entry colsep-0 rowsep-1">Displays The Payer assigned to the encounter in the format Payer
+                                Description (Payer ID).<p class="- topic/p p"><strong class="+ topic/ph hi-d/b ph b">Example</strong>: Medicare
+                                (MEDC).</p></td>
+                        </tr>
+                        <tr class="- topic/row">
+                            <td class="- topic/entry entry colsep-1 rowsep-1">Unit</td>
+                            <td class="- topic/entry entry colsep-0 rowsep-1">Displays the Unit assigned to the encounter.<p class="- topic/p p"><strong class="+ topic/ph hi-d/b ph b">Example</strong>:
+                                    ICU.</p></td>
+                        </tr>
+                        <tr class="- topic/row">
+                            <td class="- topic/entry entry colsep-1 rowsep-1">Patient Type</td>
+                            <td class="- topic/entry entry colsep-0 rowsep-1">Displays the Patient Type assigned to the
+                                        encounter.<p class="- topic/p p"><strong class="+ topic/ph hi-d/b ph b">Example</strong>: Inpatient </p></td>
+                        </tr>
+                        <tr class="- topic/row">
+                            <td class="- topic/entry entry colsep-1 rowsep-1">Visit Type</td>
+                            <td class="- topic/entry entry colsep-0 rowsep-1">
+                                <p class="- topic/p p">Displays the Visit Type assigned to the encounter.</p>
+                            </td>
+                        </tr>
+                        <tr class="- topic/row">
+                            <td class="- topic/entry entry colsep-1 rowsep-0">Discharge Status</td>
+                            <td class="- topic/entry entry colsep-0 rowsep-0">Displays the Discharge Status assigned to the
+                                        encounter.<p class="- topic/p p"><strong class="+ topic/ph hi-d/b ph b">Format</strong>: <em class="+ topic/ph hi-d/i ph i">Discharge Status ID-
+                                        Description Status Description</em>.</p><p class="- topic/p p"><strong class="+ topic/ph hi-d/b ph b">Example</strong>: 01
+                                    - 01 Self Care.</p></td>
+                        </tr>
+                    </tbody></table></div>
+        </div>
+        <div class="- topic/p p">
+            <div class="table-container"><table class="- topic/table table frame-all" id="reconciliation_details__table_qnn_w2n_g4b" data-ofbid="reconciliation_details__table_qnn_w2n_g4b" data-cols="2"><caption class="- topic/title title tablecap" data-caption-side="top" data-is-repeated="true"><span class="table--title-label">Table<span class="table--title-label-number"> 4</span><span class="table--title-label-punctuation">. </span></span><span class="table--title">Report Slicers </span></caption><colgroup><col style="width:50%"/><col style="width:50%"/></colgroup><thead class="- topic/thead thead">
+                        <tr class="- topic/row">
+                            <th class="- topic/entry entry colsep-1 rowsep-1" id="reconciliation_details__table_qnn_w2n_g4b__entry__1">Slicer</th>
+                            <th class="- topic/entry entry colsep-0 rowsep-1" id="reconciliation_details__table_qnn_w2n_g4b__entry__2">Description</th>
+                        </tr>
+                    </thead><tbody class="- topic/tbody tbody">
+                        <tr class="- topic/row">
+                            <td class="- topic/entry entry colsep-1 rowsep-1">Admit Date</td>
+                            <td class="- topic/entry entry colsep-0 rowsep-1">
+                                <ul class="- topic/ul ul" id="reconciliation_details__ul_nbn_sj2_1zb" data-ofbid="reconciliation_details__ul_nbn_sj2_1zb">
+                                    <li class="- topic/li li">
+                                        <p class="- topic/p p">Allows the user to select the admit date range. </p>
+                                    </li>
+                                    <li class="- topic/li li">
+                                        <p class="- topic/p p">Format: <strong class="+ topic/ph hi-d/b ph b">Between Date range</strong>, Example: 4/1/2023 -
+                                            5/30/2023.</p>
+                                    </li>
+                                    <li class="- topic/li li">
+                                        <p class="- topic/p p"><strong class="+ topic/ph hi-d/b ph b">Default</strong>: Last 1 calendar month date range is
+                                            selected by default.</p>
+                                    </li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr class="- topic/row">
+                            <td class="- topic/entry entry colsep-1 rowsep-1">Discharge Date</td>
+                            <td class="- topic/entry entry colsep-0 rowsep-1">
+                                <ul class="- topic/ul ul" id="reconciliation_details__ul_uzh_y2n_g4b" data-ofbid="reconciliation_details__ul_uzh_y2n_g4b">
+                                    <li class="- topic/li li">Display the discharge date range. </li>
+                                    <li class="- topic/li li">
+                                        <p class="- topic/p p"><strong class="+ topic/ph hi-d/b ph b">Format</strong>: Between date range, example: 4/1/2023 -
+                                            6/30/2023.</p>
+                                    </li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr class="- topic/row">
+                            <td class="- topic/entry entry colsep-1 rowsep-1">Reset</td>
+                            <td class="- topic/entry entry colsep-0 rowsep-1">
+                                <ul class="- topic/ul ul" id="reconciliation_details__ul_g5p_ctl_kqb" data-ofbid="reconciliation_details__ul_g5p_ctl_kqb">
+                                    <li class="- topic/li li">With the Reset button, you can reset both the admit and
+                                        discharge date range.</li>
+                                    <li class="- topic/li li"><strong class="+ topic/ph hi-d/b ph b">Tooltip</strong>: Ctrl + Click to reset both Admit Date and
+                                        Discharge Date.</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr class="- topic/row">
+                            <td class="- topic/entry entry colsep-1 rowsep-1">Facility</td>
+                            <td class="- topic/entry entry colsep-0 rowsep-1">
+                                <ul class="- topic/ul ul" id="reconciliation_details__ul_vzp_z2n_g4b" data-ofbid="reconciliation_details__ul_vzp_z2n_g4b">
+                                    <li class="- topic/li li">Displays both active and inactive facilities in alphabetical
+                                        order that you have access to.</li>
+                                    <li class="- topic/li li">You can select multiple facilities.</li>
+                                    <li class="- topic/li li">You can search the facility by Facility ID or
+                                        Description.</li>
+                                    <li class="- topic/li li"><strong class="+ topic/ph hi-d/b ph b">Format</strong>: Facility Description (Facility ID).</li>
+                                    <li class="- topic/li li"><strong class="+ topic/ph hi-d/b ph b">Default</strong>: ALL.</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr class="- topic/row">
+                            <td class="- topic/entry entry colsep-1 rowsep-1">Payer</td>
+                            <td class="- topic/entry entry colsep-0 rowsep-1">
+                                <ul class="- topic/ul ul" id="reconciliation_details__ul_ntb_cfn_g4b" data-ofbid="reconciliation_details__ul_ntb_cfn_g4b">
+                                    <li class="- topic/li li">Displays both active and inactive payers in alphabetical
+                                        order associated with the facilities you have access
+                                        to.</li>
+                                    <li class="- topic/li li">You can select multiple payers.</li>
+                                    <li class="- topic/li li">"Unassigned Payer" displays data for the encounters that do
+                                        not have a payer assigned.</li>
+                                    <li class="- topic/li li">You can search the Payer by Payer ID or Description.</li>
+                                    <li class="- topic/li li"><strong class="+ topic/ph hi-d/b ph b">Format</strong>: Payer Description (Payer ID).</li>
+                                    <li class="- topic/li li"><strong class="+ topic/ph hi-d/b ph b">Default</strong>: ALL.</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr class="- topic/row">
+                            <td class="- topic/entry entry colsep-1 rowsep-1">CDS</td>
+                            <td class="- topic/entry entry colsep-0 rowsep-1">
+                                <ul class="- topic/ul ul" id="reconciliation_details__ul_w24_ydc_3yb" data-ofbid="reconciliation_details__ul_w24_ydc_3yb">
+                                    <li class="- topic/li li">
+                                        <p class="- topic/p p">Displays both active and inactive CDSs in alphabetical
+                                            order associated with the facilities user has access
+                                            to.</p>
+                                    </li>
+                                    <li class="- topic/li li">
+                                        <p class="- topic/p p">User can select multiple CDSs</p>
+                                    </li>
+                                    <li class="- topic/li li">
+                                        <p class="- topic/p p">"Unassigned CDS" displays data for the encounters that do
+                                            not have a CDS assigned.</p>
+                                    </li>
+                                    <li class="- topic/li li">
+                                        <p class="- topic/p p">Users can search the CDS by CDS ID or Name.</p>
+                                    </li>
+                                    <li class="- topic/li li">
+                                        <p class="- topic/p p"><strong class="+ topic/ph hi-d/b ph b">Format</strong>: CDS Name (CDS ID).</p>
+                                    </li>
+                                    <li class="- topic/li li">
+                                        <p class="- topic/p p"><strong class="+ topic/ph hi-d/b ph b">Default</strong>: ALL.</p>
+                                    </li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr class="- topic/row">
+                            <td class="- topic/entry entry colsep-1 rowsep-1">Unit</td>
+                            <td class="- topic/entry entry colsep-0 rowsep-1">
+                                <ul class="- topic/ul ul" id="reconciliation_details__ul_ak2_2jv_prb" data-ofbid="reconciliation_details__ul_ak2_2jv_prb">
+                                    <li class="- topic/li li">This filter displays the list of available units.</li>
+                                    <li class="- topic/li li">You can select multiple Units.</li>
+                                    <li class="- topic/li li">You can search the Unit.</li>
+                                    <li class="- topic/li li"><strong class="+ topic/ph hi-d/b ph b">Default</strong>: ALL.</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr class="- topic/row">
+                            <td class="- topic/entry entry colsep-1 rowsep-1">Assistant Category</td>
+                            <td class="- topic/entry entry colsep-0 rowsep-1">Displays the below options:<ul class="- topic/ul ul" id="reconciliation_details__ul_m3d_1l2_1zb" data-ofbid="reconciliation_details__ul_m3d_1l2_1zb">
+                                    <li class="- topic/li li">
+                                        <ul class="- topic/ul ul" id="reconciliation_details__ul_n3d_1l2_1zb" data-ofbid="reconciliation_details__ul_n3d_1l2_1zb">
+                                            <li class="- topic/li li">
+                                                <p class="- topic/p p">Documented Diagnoses</p>
+                                            </li>
+                                            <li class="- topic/li li">
+                                                <p class="- topic/p p">Documented Procedures</p>
+                                            </li>
+                                            <li class="- topic/li li">
+                                                <p class="- topic/p p">DO: Diagnoses</p>
+                                            </li>
+                                            <li class="- topic/li li">
+                                                <p class="- topic/p p">DO: Clinical Evidence</p>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="- topic/li li">
+                                        <p class="- topic/p p">User can select multiple Assistant categories.</p>
+                                    </li>
+                                    <li class="- topic/li li">
+                                        <p class="- topic/p p"><strong class="+ topic/ph hi-d/b ph b">Default</strong>: Documented Diagnoses and DO:
+                                            Diagnoses.</p>
+                                    </li>
+                                </ul></td>
+                        </tr>
+                        <tr class="- topic/row">
+                            <td class="- topic/entry entry colsep-1 rowsep-1">CDS Activity</td>
+                            <td class="- topic/entry entry colsep-0 rowsep-1">Displays the below options:<ul class="- topic/ul ul" id="reconciliation_details__ul_awz_2l2_1zb" data-ofbid="reconciliation_details__ul_awz_2l2_1zb">
+                                    <li class="- topic/li li">
+                                        <ul class="- topic/ul ul" id="reconciliation_details__ul_bwz_2l2_1zb" data-ofbid="reconciliation_details__ul_bwz_2l2_1zb">
+                                            <li class="- topic/li li">
+                                                <p class="- topic/p p">Accepted</p>
+                                            </li>
+                                            <li class="- topic/li li">
+                                                <p class="- topic/p p">Removed</p>
+                                            </li>
+                                            <li class="- topic/li li">
+                                                <p class="- topic/p p">Unaddressed</p>
+                                            </li>
+                                            <li class="- topic/li li">
+                                                <p class="- topic/p p">CDS Attributed</p>
+                                            </li>
+                                            <li class="- topic/li li">
+                                                <p class="- topic/p p">System Attributed</p>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="- topic/li li">
+                                        <p class="- topic/p p">User can select multiple activities.</p>
+                                    </li>
+                                    <li class="- topic/li li">
+                                        <p class="- topic/p p"><strong class="+ topic/ph hi-d/b ph b">Default</strong>: ALL.</p>
+                                    </li>
+                                </ul></td>
+                        </tr>
+                        <tr class="- topic/row">
+                            <td class="- topic/entry entry colsep-1 rowsep-1">Suggestion Type</td>
+                            <td class="- topic/entry entry colsep-0 rowsep-1">Displays the below options:<ul class="- topic/ul ul" id="reconciliation_details__ul_ggn_3l2_1zb" data-ofbid="reconciliation_details__ul_ggn_3l2_1zb">
+                                    <li class="- topic/li li">
+                                        <ul class="- topic/ul ul" id="reconciliation_details__ul_hgn_3l2_1zb" data-ofbid="reconciliation_details__ul_hgn_3l2_1zb">
+                                            <li class="- topic/li li">
+                                                <p class="- topic/p p">Suggested</p>
+                                            </li>
+                                            <li class="- topic/li li">
+                                                <p class="- topic/p p">Quality</p>
+                                            </li>
+                                            <li class="- topic/li li">
+                                                <p class="- topic/p p">Other</p>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="- topic/li li">
+                                        <p class="- topic/p p">User can select multiple suggestion types.</p>
+                                    </li>
+                                    <li class="- topic/li li">
+                                        <p class="- topic/p p"><strong class="+ topic/ph hi-d/b ph b">Default</strong>: Suggested.</p>
+                                    </li>
+                                </ul></td>
+                        </tr>
+                        <tr class="- topic/row">
+                            <td class="- topic/entry entry colsep-1 rowsep-1">Suggestions</td>
+                            <td class="- topic/entry entry colsep-0 rowsep-1">
+                                <ul class="- topic/ul ul" id="reconciliation_details__ul_rft_brd_lzb" data-ofbid="reconciliation_details__ul_rft_brd_lzb">
+                                    <li class="- topic/li li">
+                                        <p class="- topic/p p">Displays the list of Documented Diagnoses, Documented
+                                            Procedures, Documentation Opportunities Diagnoses,
+                                            Documentation Opportunities Clinical Evidences.</p>
+                                    </li>
+                                    <li class="- topic/li li">
+                                        <p class="- topic/p p">User can select multiple diagnoses, procedures or
+                                            evidences.</p>
+                                    </li>
+                                    <li class="- topic/li li">
+                                        <p class="- topic/p p">Users can search a diagnosis/procedure/evidence by ICD 10
+                                            Code or Diagnoses/Procedure/Evidences Description.</p>
+                                    </li>
+                                    <li class="- topic/li li">
+                                        <p class="- topic/p p"><strong class="+ topic/ph hi-d/b ph b">Format</strong>: ICD 10 Code: Diagnoses Description (E.g.
+                                            L97.909: Non pressure chronic ulcer of unspecified part
+                                            of unspecified leg with unspecified severity), Procedure
+                                            Description (E.g., Debridement of wound of skin),
+                                            Clinical Evidence Description (E.g., Gram-Negative Blood
+                                            Culture). Only display the first 20-25 characters,
+                                            including the ICD-10 Code and show the rest of the
+                                            description in a tooltip upon hover.</p>
+                                    </li>
+                                    <li class="- topic/li li">
+                                        <p class="- topic/p p"><strong class="+ topic/ph hi-d/b ph b">Default</strong>: ALL.</p>
+                                    </li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr class="- topic/row">
+                            <td class="- topic/entry entry colsep-1 rowsep-1">Highest Rank</td>
+                            <td class="- topic/entry entry colsep-0 rowsep-1">
+                                <ul class="- topic/ul ul" id="reconciliation_details__ul_zds_r52_1zb" data-ofbid="reconciliation_details__ul_zds_r52_1zb">
+                                    <li class="- topic/li li">
+                                        <p class="- topic/p p">Displays all standard and custom ranks that can be
+                                            assigned to the encounters. This slicer filters the data
+                                            as per the highest standard/custom rank that has ever
+                                            been assigned to an encounter (1 being the highest
+                                            standard rank and 11 being the lowest standard
+                                            rank).</p>
+                                    </li>
+                                    <li class="- topic/li li">
+                                        <p class="- topic/p p">User can select multiple Ranks.</p>
+                                    </li>
+                                    <li class="- topic/li li">
+                                        <p class="- topic/p p">Users can search the Rank number.</p>
+                                    </li>
+                                    <li class="- topic/li li">
+                                        <p class="- topic/p p">“Unranked” displays data for all encounters that are not
+                                            ranked.</p>
+                                    </li>
+                                    <li class="- topic/li li">
+                                        <p class="- topic/p p"><strong class="+ topic/ph hi-d/b ph b">Format</strong>: Rank # (Rank 1, Rank 2 etc).</p>
+                                    </li>
+                                    <li class="- topic/li li">
+                                        <p class="- topic/p p"><strong class="+ topic/ph hi-d/b ph b">Default</strong>: ALL.</p>
+                                    </li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr class="- topic/row">
+                            <td class="- topic/entry entry colsep-1 rowsep-0">Current Rank</td>
+                            <td class="- topic/entry entry colsep-0 rowsep-0">
+                                <ul class="- topic/ul ul" id="reconciliation_details__ul_vb4_552_1zb" data-ofbid="reconciliation_details__ul_vb4_552_1zb">
+                                    <li class="- topic/li li">
+                                        <p class="- topic/p p">Displays all standard and custom ranks that can be
+                                            assigned to the encounters. This slicer filters the data
+                                            as per the current standard or custom rank assigned to
+                                            an encounter.</p>
+                                    </li>
+                                    <li class="- topic/li li">
+                                        <p class="- topic/p p">User can select multiple Ranks.</p>
+                                    </li>
+                                    <li class="- topic/li li">
+                                        <p class="- topic/p p">Users can search the Rank number.</p>
+                                    </li>
+                                    <li class="- topic/li li">
+                                        <p class="- topic/p p">“Unranked” displays data for all encounters that are not
+                                            ranked.</p>
+                                    </li>
+                                    <li class="- topic/li li">
+                                        <p class="- topic/p p"><strong class="+ topic/ph hi-d/b ph b">Format</strong>: Rank # (Rank 1, Rank 2 etc).</p>
+                                    </li>
+                                    <li class="- topic/li li">
+                                        <p class="- topic/p p"><strong class="+ topic/ph hi-d/b ph b">Default</strong>: ALL.</p>
+                                    </li>
+                                </ul>
+                            </td>
+                        </tr>
+                    </tbody></table></div>
+        </div>
+        <div class="- topic/p p">
+            <div class="table-container"><table class="- topic/table table frame-all" id="reconciliation_details__table_dq1_ffn_g4b" data-ofbid="reconciliation_details__table_dq1_ffn_g4b" data-cols="2"><caption class="- topic/title title tablecap" data-caption-side="top" data-is-repeated="true"><span class="table--title-label">Table<span class="table--title-label-number"> 5</span><span class="table--title-label-punctuation">. </span></span><span class="table--title">Filters on all Pages</span></caption><colgroup><col style="width:50%"/><col style="width:50%"/></colgroup><thead class="- topic/thead thead">
+                        <tr class="- topic/row">
+                            <th class="- topic/entry entry colsep-1 rowsep-1" id="reconciliation_details__table_dq1_ffn_g4b__entry__1">Filter</th>
+                            <th class="- topic/entry entry colsep-0 rowsep-1" id="reconciliation_details__table_dq1_ffn_g4b__entry__2">Description</th>
+                        </tr>
+                    </thead><tbody class="- topic/tbody tbody">
+                        <tr class="- topic/row">
+                            <td class="- topic/entry entry colsep-1 rowsep-1">Patient Type</td>
+                            <td class="- topic/entry entry colsep-0 rowsep-1">
+                                <ul class="- topic/ul ul" id="reconciliation_details__ul_ns1_3fn_g4b" data-ofbid="reconciliation_details__ul_ns1_3fn_g4b">
+                                    <li class="- topic/li li">Displays the available patient types. <strong class="+ topic/ph hi-d/b ph b">Example</strong>:
+                                        Inpatient, Outpatient.</li>
+                                    <li class="- topic/li li"><strong class="+ topic/ph hi-d/b ph b">Default</strong>: Inpatient.</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr class="- topic/row">
+                            <td class="- topic/entry entry colsep-1 rowsep-1">Admit Service</td>
+                            <td class="- topic/entry entry colsep-0 rowsep-1">
+                                <ul class="- topic/ul ul" id="reconciliation_details__ul_x2g_kfn_g4b" data-ofbid="reconciliation_details__ul_x2g_kfn_g4b">
+                                    <li class="- topic/li li">Displays the list of available admit service.</li>
+                                    <li class="- topic/li li">You can select multiple Units.</li>
+                                    <li class="- topic/li li">You can search the Admit Service.</li>
+                                    <li class="- topic/li li"><strong class="+ topic/ph hi-d/b ph b">Default</strong>: ALL</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr class="- topic/row">
+                            <td class="- topic/entry entry colsep-1 rowsep-1">Visit Type</td>
+                            <td class="- topic/entry entry colsep-0 rowsep-1">
+                                <ul class="- topic/ul ul" id="reconciliation_details__ul_obm_lgm_r4b" data-ofbid="reconciliation_details__ul_obm_lgm_r4b">
+                                    <li class="- topic/li li">Displays the available patient types.<strong class="+ topic/ph hi-d/b ph b">Example</strong>: ED, IP,
+                                        etc.</li>
+                                    <li class="- topic/li li">You can select multiple Visit Type.</li>
+                                    <li class="- topic/li li">You can search the Visit Type.</li>
+                                    <li class="- topic/li li"><strong class="+ topic/ph hi-d/b ph b">Default</strong>: ALL.</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr class="- topic/row">
+                            <td class="- topic/entry entry colsep-1 rowsep-0">Weekend Only Stay</td>
+                            <td class="- topic/entry entry colsep-0 rowsep-0">
+                                <ul class="- topic/ul ul" id="reconciliation_details__ul_mcz_r32_1zb" data-ofbid="reconciliation_details__ul_mcz_r32_1zb">
+                                    <li class="- topic/li li">
+                                        <p class="- topic/p p">Displays the available options for Weekend Only Stay- Y
+                                            and N.</p>
+                                    </li>
+                                    <li class="- topic/li li">
+                                        <p class="- topic/p p">Weekend Only Stay = Y (Unassigned encounters admitted
+                                            after Friday, 6PM and discharged before Sunday, 11.59
+                                            PM).</p>
+                                    </li>
+                                    <li class="- topic/li li"><p class="- topic/p p"><strong class="+ topic/ph hi-d/b ph b">Default</strong>: ALL.</p>.</li>
+                                </ul>
+                            </td>
+                        </tr>
+                    </tbody></table></div>
+        </div>
+        <div class="- topic/p p">
+            <div class="table-container"><table class="- topic/table table frame-all" id="reconciliation_details__table_jqz_yzc_lzb" data-ofbid="reconciliation_details__table_jqz_yzc_lzb" data-cols="2"><caption class="- topic/title title tablecap" data-caption-side="top" data-is-repeated="true"><span class="table--title-label">Table<span class="table--title-label-number"> 6</span><span class="table--title-label-punctuation">. </span></span><span class="table--title">Filters on this Page</span></caption><colgroup><col style="width:50%"/><col style="width:50%"/></colgroup><thead class="- topic/thead thead">
+                        <tr class="- topic/row">
+                            <th class="- topic/entry entry colsep-1 rowsep-1" id="reconciliation_details__table_jqz_yzc_lzb__entry__1">Filter</th>
+                            <th class="- topic/entry entry colsep-0 rowsep-1" id="reconciliation_details__table_jqz_yzc_lzb__entry__2">Description</th>
+                        </tr>
+                    </thead><tbody class="- topic/tbody tbody">
+                        <tr class="- topic/row">
+                            <td class="- topic/entry entry colsep-1 rowsep-0">Encounter Status</td>
+                            <td class="- topic/entry entry colsep-0 rowsep-0">
+                                <ul class="- topic/ul ul" id="reconciliation_details__ul_oqz_yzc_lzb" data-ofbid="reconciliation_details__ul_oqz_yzc_lzb">
+                                    <li class="- topic/li li">
+                                        <p class="- topic/p p">Displays the list of available encounter statuses.</p>
+                                    </li>
+                                    <li class="- topic/li li">
+                                        <p class="- topic/p p">User can select multiple statuses.</p>
+                                    </li>
+                                    <li class="- topic/li li">
+                                        <p class="- topic/p p">Users can search the Encounter Status.</p>
+                                    </li>
+                                    <li class="- topic/li li">
+                                        <p class="- topic/p p"><strong class="+ topic/ph hi-d/b ph b">Default</strong>: 'Review Not Needed' unchecked by
+                                            default.</p>
+                                    </li>
+                                </ul>
+                            </td>
+                        </tr>
+                    </tbody></table></div>
+        </div>
+        <div class="- topic/p p">
+            <div class="table-container"><table class="- topic/table table frame-all" id="reconciliation_details__table_pmd_wtg_l4b" data-ofbid="reconciliation_details__table_pmd_wtg_l4b" data-cols="2"><caption class="- topic/title title tablecap" data-caption-side="top" data-is-repeated="true"><span class="table--title-label">Table<span class="table--title-label-number"> 7</span><span class="table--title-label-punctuation">. </span></span><span class="table--title"><strong class="+ topic/ph hi-d/b ph b">Footnotes</strong></span></caption><colgroup><col style="width:50%"/><col style="width:50%"/></colgroup><thead class="- topic/thead thead">
+                        <tr class="- topic/row">
+                            <th class="- topic/entry entry colsep-1 rowsep-1" id="reconciliation_details__table_pmd_wtg_l4b__entry__1">Formulas</th>
+                            <th class="- topic/entry entry colsep-0 rowsep-1" id="reconciliation_details__table_pmd_wtg_l4b__entry__2">Text on hover</th>
+                        </tr>
+                    </thead><tbody class="- topic/tbody tbody">
+                        <tr class="- topic/row">
+                            <td class="- topic/entry entry colsep-1 rowsep-1">Documented Diagnoses</td>
+                            <td class="- topic/entry entry colsep-0 rowsep-1">Displays all the AI suggested primary and secondary, manually
+                                added, and ‘Removed' diagnosis codes presented in the 'Documented:
+                                Diagnoses’ section within CDS Assistant.</td>
+                        </tr>
+                        <tr class="- topic/row">
+                            <td class="- topic/entry entry colsep-1 rowsep-1">Documented Procedures</td>
+                            <td class="- topic/entry entry colsep-0 rowsep-1">Displays all the AI suggested, manually added, and 'Removed'
+                                procedure codes (ICD 10 PCS and SNOMED) presented in the
+                                'Documented: Procedures’ section within CDS Assistant.</td>
+                        </tr>
+                        <tr class="- topic/row">
+                            <td class="- topic/entry entry colsep-1 rowsep-1">DO: Diagnoses</td>
+                            <td class="- topic/entry entry colsep-0 rowsep-1">Displays all the AI suggested diagnoses presented in the
+                                Documentation Opportunities: Diagnoses section within CDS
+                                Assistant.</td>
+                        </tr>
+                        <tr class="- topic/row">
+                            <td class="- topic/entry entry colsep-1 rowsep-1">DO: Clinical Evidences</td>
+                            <td class="- topic/entry entry colsep-0 rowsep-1">Displays all the signs, symptoms, medications, lab results or
+                                procedures found within a provider document. Clinical Evidences are
+                                presented in the 'Documentation Opportunities: Clinical Evidences’
+                                section within CDS Assistant.</td>
+                        </tr>
+                        <tr class="- topic/row">
+                            <td class="- topic/entry entry colsep-1 rowsep-1">Initial Review Date/Time</td>
+                            <td class="- topic/entry entry colsep-0 rowsep-1">Displays Initial Review Date/time in red font when the Initial
+                                Review Date/Time &gt; Discharge Date/Time.</td>
+                        </tr>
+                        <tr class="- topic/row">
+                            <td class="- topic/entry entry colsep-1 rowsep-1">LOS</td>
+                            <td class="- topic/entry entry colsep-0 rowsep-1">Displays Length of Stay in blue font if LOS value greater than
+                                F-GMLOS; W-GMLOS value is considered in case of blank
+                                F-GMLOS.</td>
+                        </tr>
+                        <tr class="- topic/row">
+                            <td class="- topic/entry entry colsep-1 rowsep-1">P-DRG</td>
+                            <td class="- topic/entry entry colsep-0 rowsep-1">
+                                <p class="- topic/p p">P-DRG: Displays the ‘Working DRG’ value in orange font for the
+                                    reconciled encounters with blank ‘Possible DRG’.</p>
+                                <p class="- topic/p p">P-DRG WT: Displays the ‘Working DRG WT’ value in orange font for
+                                    the reconciled encounters with blank ‘Possible DRG’.</p>
+                            </td>
+                        </tr>
+                        <tr class="- topic/row">
+                            <td class="- topic/entry entry colsep-1 rowsep-1">Variance</td>
+                            <td class="- topic/entry entry colsep-0 rowsep-1">Variance = Final Coded DRG WT - Reconciliation Assessment DRG WT
+                                (Working DRG WT when Discharge Date &lt; 11/14/19 or Reconciliation
+                                Assessment DRG is blank); Displays negative variance value in red
+                                font.</td>
+                        </tr>
+                        <tr class="- topic/row">
+                            <td class="- topic/entry entry colsep-1 rowsep-1">Blended Rate</td>
+                            <td class="- topic/entry entry colsep-0 rowsep-1">Configured at payer level; When Blended Rate is not available,
+                                Operating Federal rate is displayed.</td>
+                        </tr>
+                        <tr class="- topic/row">
+                            <td class="- topic/entry entry colsep-1 rowsep-1">Reimbursement Impact </td>
+                            <td class="- topic/entry entry colsep-0 rowsep-1">
+                                <p class="- topic/p p">Reimbursement Impact = (Final Coded DRG WT - Reconciliation
+                                    Assessment DRG WT (Working DRG WT when Discharge Date &lt;
+                                    11/14/19 or Reconciliation Assessment DRG is blank)) x Blended
+                                    Rate. E.g. $5321</p>
+                                <p class="- topic/p p">Displays negative Reimbursement Impact in red font.</p>
+                            </td>
+                        </tr>
+                        <tr class="- topic/row">
+                            <td class="- topic/entry entry colsep-1 rowsep-1">SOI/ROM</td>
+                            <td class="- topic/entry entry colsep-0 rowsep-1">Advanced DRG SOI/ROM value is displayed when Primary DRG SOI/ROM
+                                is blank.</td>
+                        </tr>
+                        <tr class="- topic/row">
+                            <td class="- topic/entry entry colsep-1 rowsep-0">AMLOS/GMLOS</td>
+                            <td class="- topic/entry entry colsep-0 rowsep-0">Advanced DRG AMLOS/GMLOS value is displayed when Primary DRG
+                                AMLOS/GMLOS is blank.</td>
+                        </tr>
+                    </tbody></table></div>
+        </div>
+    </div>
+</article></main></div>
+                        
+                        
+                        
+                        
+                        
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            
+            
+            
+        </div> 
+        <footer class="navbar navbar-default wh_footer">
+  <div class=" footer-container mx-auto ">
+    © 2026 Nuance Communications, Inc. All rights reserved.
+  </div>
+</footer>
+        
+        <button id="go2top" class="d-print-none" title="Go to top">
+            <span class="oxy-icon oxy-icon-up"></span>
+        </button>
+        
+        <div id="modal_img_large" class="modal">
+            <span class="close oxy-icon oxy-icon-remove"></span>
+            <div id="modal_img_container"></div>
+            <div id="caption"></div>
+        </div>
+        
+        
+        
+    </body>
+</html>

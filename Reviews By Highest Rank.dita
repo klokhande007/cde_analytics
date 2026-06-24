@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="Reviews_By_Highest_Rank">
+    <title>Reviews By Highest Rank</title>
+    <shortdesc></shortdesc>
+    <conbody>
+        <p><b>Overview</b>: The <i>Reviews by Highest Rank</i> report helps to analyze productivity
+            of CDSs. The report displays the count of encounters that have initial review date and a
+            highest rank assigned.</p>
+        <p><b>Navigation</b>: On the Analytics home page left side panel, navigate to <menucascade>
+                <uicontrol>CDE Triage</uicontrol>
+                <uicontrol>CDE Triage Dashboard</uicontrol>
+                <uicontrol>Reviews by Highest Rank</uicontrol>
+            </menucascade></p>
+        <p> The Reviews By Highest Rank report displays the following:<ul id="ul_fvc_q25_j2b">
+                <li>Summary Card: Total Reviews</li>
+                <li>Reviews by Highest Rank Chart</li>
+                <li>% Reviewed by CDS Chart</li>
+                <li>Encounter details tabular Chart </li>
+            </ul></p>
+        <p>For filters all pages, refer <xref
+                href="CDE%20Triage%20Dashboard%20Overview.dita#CDE_Triage_Dashboard_Overview/table_r3d_xsz_t4b"
+            />.</p>
+        <p><b>Default Display</b>: </p>
+        <p><b>Reviews by Highest Rank</b></p>
+        <fig id="fig_np1_5gs_t4b">
+            <title>Sample Report</title>
+            <image href="Images/Reviews%20By%20Highest%20Rank.gif" id="image_xcn_zgs_t4b"
+                width="800"/>
+        </fig>
+        <p><b>Reviews by Highest Rank - Summary Card</b></p>
+        <fig id="fig_hgf_b5s_t4b">
+            <title>Summary Card</title>
+            <image href="Images/Reviews%20by%20Highest%20Rank%20-%20Summary%20Card.gif"
+                id="image_chd_c5s_t4b" width="200"/>
+        </fig>
+        <p>
+            <ul id="ul_f4r_fdt_t4b">
+                <li>The <i>Summary Card</i> at the top right corner of the <i>Reviews by Highest
+                        Rank</i> report displays total review count done by CDSs between the
+                    selected date range. </li>
+            </ul>
+        </p>
+        <p><b>Reviews by Highest Rank - Reviews by Highest Rank Chart</b></p>
+        <fig id="fig_ytk_ghs_t4b">
+            <title>Reviews by Highest Rank Chart</title>
+            <image href="Images/Reviews%20By%20Highest%20Rank%20Section.gif" id="image_dny_ghs_t4b"
+                width="600"/>
+        </fig>
+        <p>
+            <ul id="ul_lwb_dvs_t4b">
+                <li>In the <i>Reviews by Highest Rank</i> section, X-axis indicates the Highest Rank
+                    of encounter in CDS Triage, and Y-axis indicates the count of the
+                    encounter.</li>
+                <li>Encounters that do not have any Highest Rank assigned are displayed under <i>No
+                        Rank</i> category.</li>
+            </ul>
+        </p>
+        <p><b>Reviews by Highest Rank - % Reviewed by CDS Chart</b></p>
+        <fig id="fig_zxt_khs_t4b">
+            <title>% Reviewed by CDS Chart</title>
+            <image href="Images/%25%20Reviews%20by%20CDS.gif" id="image_wkc_nhs_t4b" width="500"/>
+        </fig>
+        <p>
+            <ul id="ul_rtw_fvs_t4b">
+                <li>In the <i> % Reviews by CDS</i> section, X-axis indicates the % of reviews done
+                    by each CDS, and Y-axis indicates the name of the CDS assigned to the encounter
+                    in CDS Triage.</li>
+                <li>Encounters that do not have any CDS assigned are displayed under the
+                        <uicontrol>Unassigned CDS</uicontrol> category on the Y-axis.</li>
+            </ul>
+        </p>
+    </conbody>
+</concept>

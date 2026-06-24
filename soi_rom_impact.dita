@@ -1,0 +1,916 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="soi_rom_impact">
+    <title>SOI/ROM Impact</title>
+    <shortdesc></shortdesc>
+    <conbody>
+        <p><b>Overview</b>: SOI/ROM Impact dashboard enables CDI leaders to assess the program
+            impact on severity and risk of mortality. A SOI/ROM Impact dashboard helps the CDI
+            Director to view the SOI/ROM trends that resulted from the CDS review activity and
+            analyze the overall performance of the CDI program.</p>
+        <p>The report provides answers to the following questions.</p>
+        <p>
+            <ul id="ul_tkj_g5y_k4b">
+                <li>Is the CDI program resulting in an appropriate shift to higher SOI/ROM
+                    categories?</li>
+                <li>How is my SOI/ROM before and after CDI trending?</li>
+            </ul>
+        </p>
+        <p><b>Navigation</b>: On the Analytics home page left side panel, navigate to <menucascade>
+                <uicontrol>CDE One</uicontrol>
+                <uicontrol>Executive Summary</uicontrol>
+                <uicontrol>SOI/ROM Impact</uicontrol>
+            </menucascade>. </p>
+        <p>SOI/ROM Impact displays the following:<ul id="ul_lqk_kfz_k4b">
+                <li>KPI Cards: % Cases with SOI Impact, % Cases with ROM Impact</li>
+                <li>SOI Impact Chart </li>
+                <li>ROM Impact Chart</li>
+                <li>SOI Before CDI Trend Chart </li>
+                <li>ROM Before CDI Trend Chart</li>
+                <li>SOI After CDI Trend Chart </li>
+                <li>ROM After CDI Trend Chart</li>
+            </ul></p>
+        <p>On the top panel, you can select desired values for the slicers (refer <xref
+                href="#soi_rom_impact/table_qnn_w2n_g4b" format="dita"/>) and the corresponding data
+            gets filtered in the tabular chart.</p>
+        <p>For filters on all pages, refer <xref href="#soi_rom_impact/table_dq1_ffn_g4b"
+                format="dita"/>.</p>
+        <p>For information about footnotes, refer <xref href="#soi_rom_impact/table_olx_rqx_j4b"
+                format="dita"/>.</p>
+        <p><b>SOI/ROM Impact</b></p>
+        <fig id="fig_btp_xsk_t4b">
+            <title>Sample Report</title>
+            <image href="Images/SOI%20ROM%20Impact.gif" id="image_vhr_ysk_t4b" width="800"/>
+        </fig>
+        <p><b>SOI/ROM Impact - KPI Cards</b></p>
+        <fig id="fig_jtn_ctk_t4b">
+            <image href="Images/SOI%20ROM%20Impact%20KPI%20cards.gif" id="image_cmh_dtk_t4b"
+                width="400"/>
+        </fig>
+        <p>
+            <table frame="all" rowsep="1" colsep="1" id="table_y2p_xhx_j4b">
+                <title><b>KPI Cards</b></title>
+                <tgroup cols="5">
+                    <colspec colname="c1" colnum="1" colwidth="1*"/>
+                    <colspec colname="c2" colnum="2" colwidth="1*"/>
+                    <colspec colname="newCol4" colnum="3" colwidth="1*"/>
+                    <colspec colname="newCol3" colnum="4" colwidth="1*"/>
+                    <colspec colname="newCol5" colnum="5" colwidth="1*"/>
+                    <thead>
+                        <row>
+                            <entry>KPI Card</entry>
+                            <entry>Description</entry>
+                            <entry>Formula/Calculation</entry>
+                            <entry>Exclusion Criteria(if any)</entry>
+                            <entry>Tooltip</entry>
+                        </row>
+                    </thead>
+                    <tbody>
+                        <row>
+                            <entry>% Cases with SOI Impact</entry>
+                            <entry>
+                                <p>This KPI displays the percentage of reconciled cases that had an
+                                    upward shift in the SOI (SOI After > SOI Before) due to CDS'
+                                    work on the encounters.</p>
+                                <p>Note: </p>
+                                <p>Advanced SOI/ROM Values are used if Primary SOI/ROM values are
+                                    blank.</p>
+                            </entry>
+                            <entry>% cases with SOI Impact= The total count of Reconciled
+                                encounters(Auto Reconciled, Reconciled-Impact and Reconciled-No
+                                Impact) for which the SOI After is greater than SOI Before./ Total
+                                count of Reconciled encounters(Auto Reconciled, Reconciled-Impact
+                                and Reconciled-No Impact)</entry>
+                            <entry>Encounters with status Reconciled Impact, Reconciled No Impact,
+                                and Auto Reconciled are considered in this metric
+                                calculation.</entry>
+                            <entry morerows="1">N/A</entry>
+                        </row>
+                        <row>
+                            <entry> % Cases with ROM Impact</entry>
+                            <entry>This metric displays the percentage of reconciled cases that had
+                                an upward shift in the ROM(ROM After > ROM Before) due to CDS' work
+                                on the encounters <p>
+                                    <note>Advanced SOI/ROM Values are used if Primary SOI/ROM values
+                                        are blank.</note>
+                                </p></entry>
+                            <entry>%  cases with ROM Impact= The total count of Reconciled
+                                encounters(Auto Reconciled, Reconciled-Impact and Reconciled-No
+                                Impact)  for which the ROM After is greater than ROM Before./ Total
+                                count of Reconciled encounters(Auto Reconciled, Reconciled-Impact
+                                and Reconciled-No Impact)</entry>
+                            <entry>Encounters with status Reconciled Impact, Reconciled No Impact,
+                                and Auto Reconciled are considered in this metric
+                                calculation.</entry>
+                        </row>
+                    </tbody>
+                </tgroup>
+            </table>
+        </p>
+        <p><b>SOI/ROM Impact - SOI Impact Chart</b></p>
+        <fig id="fig_urs_2tk_t4b">
+            <title>SOI Impact </title>
+            <image href="Images/SOI%20Impact.gif" id="image_rwk_ltk_t4b" width="600"/>
+        </fig>
+        <p>The SOI Impact charts displays the percentage of reconciled encounters (Auto Reconciled,
+            Reconciled Impact, Reconciled- No Impact) with SOI Before CDI and percentage of
+            reconciled encounters with SOI after CDI for each SOI Category for the selected date
+                range.<ul id="ul_knj_43x_j4b">
+                <li><b>X-axis</b>: Displays the values in the format: SOI 3, SOI 4 etc.</li>
+                <li><b>Y-axis</b>: Displays the percentage of reconciled encounters.</li>
+                <li><b>Sort Order</b>: Data in the chart is sorted by SOI value in ascending
+                    order.</li>
+                <li><b>Info icon</b>(text on hover): Percentage of reconciled cases that had an
+                    upward shift in the SOI (SOI After > SOI Before) due to CDS' work on the
+                    encounters. Encounter Status: Reconciled-Impact, Reconciled-No Impact,
+                    Auto-Reconciled.</li>
+            </ul></p>
+        <p>
+            <table frame="all" rowsep="1" colsep="1" id="table_yw2_r3x_j4b">
+                <title>SOI Impact Metrics</title>
+                <tgroup cols="5">
+                    <colspec colname="c1" colnum="1" colwidth="1*"/>
+                    <colspec colname="c2" colnum="2" colwidth="1*"/>
+                    <colspec colname="newCol3" colnum="3" colwidth="1*"/>
+                    <colspec colname="newCol4" colnum="4" colwidth="1*"/>
+                    <colspec colname="c3" colnum="5" colwidth="1*"/>
+                    <thead>
+                        <row>
+                            <entry>Metric</entry>
+                            <entry>Description</entry>
+                            <entry>Formula/Calculation</entry>
+                            <entry>Exclusion Criteria (if any)</entry>
+                            <entry>Tooltip</entry>
+                        </row>
+                    </thead>
+                    <tbody>
+                        <row>
+                            <entry>% Reconciled Cases with SOI Before</entry>
+                            <entry>This metric displays the percentage of cases reconciled with the
+                                SOI before CDI for each SOI category.<p>
+                                    <note>Advanced SOI/ROM Values are used if Primary SOI/ROM values
+                                        are blank.</note>
+                                </p></entry>
+                            <entry>
+                                <p>% Reconciled Cases with SOI Before = Count of cases reconciled
+                                    with the SOI before CDI for each SOI category/ Total Reconciled
+                                    encounters (Auto-Reconciled, Reconciled- Impact, Reconciled-No
+                                    Impact).</p>
+                            </entry>
+                            <entry/>
+                            <entry>
+                                <p>Reconciled Cases with SOI Before: Count of cases reconciled with
+                                    the SOI before CDI for each SOI category.</p>
+                                <p>Reconciled Cases with SOI After: Count of cases reconciled with
+                                    the SOI after CDI for each SOI category.</p>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>% Reconciled Cases with SOI After</entry>
+                            <entry>This metric displays the percentage of cases reconciled with the
+                                SOI after CDI for each SOI category.<p>
+                                    <note>Advanced SOI/ROM Values are used if Primary SOI/ROM values
+                                        are blank.</note>
+                                </p><p><b>Format</b>: Bar</p></entry>
+                            <entry>
+                                <p>% Reconciled Cases with SOI After = Count of cases reconciled
+                                    with the SOI After CDI for each SOI category/ Total Reconciled
+                                    encounters (Auto-Reconciled, Reconciled- Impact, Reconciled-No
+                                    Impact).</p>
+                            </entry>
+                            <entry/>
+                            <entry/>
+                        </row>
+                    </tbody>
+                </tgroup>
+            </table>
+        </p>
+        <p><b>SOI/ROM Impact - ROM Impact</b></p>
+        <fig id="fig_alb_15k_t4b">
+            <title>ROM Impact</title>
+            <image href="Images/ROM%20impact.gif" id="image_xwp_15k_t4b" width="600"/>
+        </fig>
+        <p>The ROM Impact charts displays the percentage of reconciled encounters (Auto Reconciled,
+            Reconciled Impact, Reconciled- No Impact) with ROM Before CDI and percentage of
+            reconciled encounters with ROM after CDI for each ROM Category.<ul id="ul_fl3_fjx_j4b">
+                <li><b>X-axis</b>: Displays the values in the format: ROM 3, ROM 4 etc.</li>
+                <li><b>Y-axis</b>: Displays the percentage of reconciled encounters.</li>
+                <li><b>Sort Order</b>: Data in the chart is sorted by ROM value in ascending
+                    order.</li>
+                <li><b>Info icon</b>(text on hover): Percentage of reconciled cases that had an
+                    upward shift in the ROM (ROM After > ROM Before) due to CDS' work on the
+                    encounters. Encounter Status: Reconciled-Impact, Reconciled-No Impact,
+                    Auto-Reconciled.</li>
+            </ul></p>
+        <p>
+            <table frame="all" rowsep="1" colsep="1" id="table_nk5_gjx_j4b">
+                <title>ROM Impact Metrics</title>
+                <tgroup cols="5">
+                    <colspec colname="c1" colnum="1" colwidth="1*"/>
+                    <colspec colname="c2" colnum="2" colwidth="1*"/>
+                    <colspec colname="newCol3" colnum="3" colwidth="1*"/>
+                    <colspec colname="newCol4" colnum="4" colwidth="1*"/>
+                    <colspec colname="c3" colnum="5" colwidth="1*"/>
+                    <thead>
+                        <row>
+                            <entry>Metric</entry>
+                            <entry>Description</entry>
+                            <entry>Formula/Calculation</entry>
+                            <entry>Exclusion Criteria (if any)</entry>
+                            <entry>Tooltip</entry>
+                        </row>
+                    </thead>
+                    <tbody>
+                        <row>
+                            <entry>% Reconciled Cases with ROM Before</entry>
+                            <entry>This metric displays the percentage of cases reconciled with the
+                                ROM before CDI for each ROM category.<p>
+                                    <note>Advanced SOI/ROM Values are used if Primary SOI/ROM values
+                                        are blank.</note>
+                                </p></entry>
+                            <entry>
+                                <p>% Reconciled Cases with ROM Before = Count of cases reconciled
+                                    with the ROM before CDI for each ROM category/ Total Reconciled
+                                    encounters (Auto-Reconciled, Reconciled- Impact, Reconciled-No
+                                    Impact).</p>
+                            </entry>
+                            <entry/>
+                            <entry>
+                                <p>Reconciled Cases with ROM Before: Count of cases reconciled with
+                                    the ROM before CDI for each ROM category.</p>
+                                <p>Reconciled Cases with ROM After: Count of cases reconciled with
+                                    the ROM after CDI for each ROM category.</p>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>% Reconciled Cases with ROM After</entry>
+                            <entry>This metric displays the percentage of cases reconciled with the
+                                ROM after CDI for each ROM category.<p>
+                                    <note>Advanced SOI/ROM Values are used if Primary SOI/ROM values
+                                        are blank.</note>
+                                </p><p><b>Format</b>: Bar</p></entry>
+                            <entry>
+                                <p>% Reconciled Cases with ROM After = Count of cases reconciled
+                                    with the ROM After CDI for each ROM category/ Total Reconciled
+                                    encounters (Auto-Reconciled, Reconciled- Impact, Reconciled-No
+                                    Impact).</p>
+                            </entry>
+                            <entry/>
+                            <entry/>
+                        </row>
+                    </tbody>
+                </tgroup>
+            </table>
+        </p>
+        <p><b>SOI/ROM Impact - SOI Before CDI Trend Chart</b></p>
+        <fig id="fig_pbk_c5k_t4b">
+            <title>SOI Before CDI Trend</title>
+            <image href="Images/SOI%20before%20trend.gif" id="image_tlw_c5k_t4b" width="600"/>
+        </fig>
+        <p><b>SOI Before CDI Trend</b> - This chart displays the percentage of reconciled cases with
+            SOI 1, SOI 2, SOI 3, and SOI 4 before CDI for each month. <ul id="ul_dnz_5kx_j4b">
+                <li>
+                    <p><b>X-axis</b>: Displays the name of the discharge month and year in the
+                        format: MMM YYYY (ex: Feb 2020, Aug 2020)</p>
+                </li>
+                <li><b>Y-axis</b>: Displays the percentage of encounters.</li>
+                <li><b>Info icon</b>(text on hover): SOI Before: Reconciliation Assessment DRG
+                    (Primary/Advanced) SOI (Working DRG SOI when Discharge Date &lt; 11/14/19 or
+                    Reconciliation Assessment DRG is blank) Encounter Status: Reconciled-Impact,
+                    Reconciled-No Impact, Auto-Reconciled.</li>
+            </ul><table frame="all" rowsep="1" colsep="1" id="table_dfy_wkx_j4b">
+                <title>SOI Before CDI Trend Metrics</title>
+                <tgroup cols="5">
+                    <colspec colname="c1" colnum="1" colwidth="1*"/>
+                    <colspec colname="c2" colnum="2" colwidth="1*"/>
+                    <colspec colname="newCol3" colnum="3" colwidth="1*"/>
+                    <colspec colname="newCol4" colnum="4" colwidth="1*"/>
+                    <colspec colname="c3" colnum="5" colwidth="1*"/>
+                    <thead>
+                        <row>
+                            <entry>Metric</entry>
+                            <entry>Description</entry>
+                            <entry>Formula/Calculation</entry>
+                            <entry>Exclusion Criteria (if any)</entry>
+                            <entry>Tooltip</entry>
+                        </row>
+                    </thead>
+                    <tbody>
+                        <row>
+                            <entry>% SOI 1 Encounters</entry>
+                            <entry>
+                                <p>The percentage of reconciled cases with SOI Before CDI as 1.</p>
+                                <p>Note:</p>
+                                <p>If the SOI associated with the primary DRG is not available, then
+                                    the SOI associated with the advanced DRG is used.</p>
+                            </entry>
+                            <entry>% SOI 1 Encounters = The total count of Reconciled encounters
+                                (Auto Reconciled, Reconciled-Impact and Reconciled-No Impact) with
+                                Reconciliation Assessment SOI as 1.(or Working SOI as 1 when
+                                Discharge Date &lt; 11/14/19 or Reconciliation Assessment DRG is
+                                blank)/ The total count of Reconciled encounters (Auto Reconciled,
+                                Reconciled-Impact and Reconciled-No Impact).</entry>
+                            <entry/>
+                            <entry>
+                                <p>Reconciled Cases with SOI 1 Before: Count of reconciled
+                                    encounters with Reconciliation Assessment SOI as 1.(or Working
+                                    SOI as 1 when Discharge Date &lt; 11/14/19 or Reconciliation
+                                    Assessment DRG is blank).</p>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>% SOI 2 Encounters</entry>
+                            <entry>
+                                <p>The percentage of reconciled cases with SOI Before CDI as 2.</p>
+                                <p>Note:</p>
+                                <p>If the SOI associated with the primary DRG is not available, then
+                                    the SOI associated with the advanced DRG is used.</p>
+                            </entry>
+                            <entry>
+                                <p>% SOI 2 Encounters = The total count of Reconciled encounters
+                                    (Auto Reconciled, Reconciled-Impact and Reconciled-No Impact)
+                                    with Reconciliation Assessment SOI as 2.(or Working SOI as 2
+                                    when Discharge Date &lt; 11/14/19 or Reconciliation Assessment
+                                    DRG is blank)/ The total count of Reconciled encounters (Auto
+                                    Reconciled, Reconciled-Impact and Reconciled-No Impact)</p>
+                            </entry>
+                            <entry/>
+                            <entry>
+                                <p>Reconciled Cases with SOI 2 Before: Count of reconciled
+                                    encounters with Reconciliation Assessment SOI as 2.(or Working
+                                    SOI as 2 when Discharge Date &lt; 11/14/19 or Reconciliation
+                                    Assessment DRG is blank).</p>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>% SOI 3 Encounters</entry>
+                            <entry>
+                                <p>The percentage of reconciled cases with SOI Before CDI as 3.</p>
+                                <p>Note:</p>
+                                <p>If the SOI associated with the primary DRG is not available, then
+                                    the SOI associated with the advanced DRG is used.</p>
+                            </entry>
+                            <entry>
+                                <p>% SOI 3 Encounters = The total count of Reconciled encounters
+                                    (Auto Reconciled, Reconciled-Impact and Reconciled-No Impact)
+                                    with Reconciliation Assessment SOI as 3.(or Working SOI as 3
+                                    when Discharge Date &lt; 11/14/19 or Reconciliation Assessment
+                                    DRG is blank)/ The total count of Reconciled encounters (Auto
+                                    Reconciled, Reconciled-Impact and Reconciled-No Impact)</p>
+                            </entry>
+                            <entry/>
+                            <entry>
+                                <p>Reconciled Cases with SOI 3 Before: Count of reconciled
+                                    encounters with Reconciliation Assessment SOI as 3.(or Working
+                                    SOI as 3 when Discharge Date &lt; 11/14/19 or Reconciliation
+                                    Assessment DRG is blank).</p>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>% SOI 4 Encounters</entry>
+                            <entry>
+                                <p>The percentage of reconciled cases with SOI Before CDI as 4.</p>
+                                <p>Note:</p>
+                                <p>If the SOI associated with the primary DRG is not available, then
+                                    the SOI associated with the advanced DRG is used.</p>
+                            </entry>
+                            <entry>
+                                <p>% SOI 4 Encounters = The total count of Reconciled encounters
+                                    (Auto Reconciled, Reconciled-Impact and Reconciled-No Impact)
+                                    with Reconciliation Assessment SOI as 4.(or Working SOI as 4
+                                    when Discharge Date &lt; 11/14/19 or Reconciliation Assessment
+                                    DRG is blank)/ The total count of Reconciled encounters (Auto
+                                    Reconciled, Reconciled-Impact and Reconciled-No Impact)</p>
+                            </entry>
+                            <entry/>
+                            <entry>
+                                <p>Reconciled Cases with SOI 4 Before: Count of reconciled
+                                    encounters with Reconciliation Assessment SOI as 4.(or Working
+                                    SOI as 4 when Discharge Date &lt; 11/14/19 or Reconciliation
+                                    Assessment DRG is blank).</p>
+                            </entry>
+                        </row>
+                    </tbody>
+                </tgroup>
+            </table></p>
+        <p><b>SOI/ROM Impact - ROM Before CDI Trend Chart</b></p>
+        <fig id="fig_vlk_f5k_t4b">
+            <title>ROM Before CDI Trend</title>
+            <image href="Images/ROM%20Before%20CDI%20trend.gif" id="image_pwx_f5k_t4b" width="600"/>
+        </fig>
+        <p> - This chart displays the percentage of reconciled cases with ROM 1, ROM 2, ROM 3, and
+            ROM 4 before CDI for each month<ul id="ul_elr_bmx_j4b">
+                <li>
+                    <p><b>X-axis</b>: Displays the name of the discharge month and year in the
+                        format: MMM YYYY (ex: Feb 2020, Aug 2020)</p>
+                </li>
+                <li><b>Y-axis</b>: Displays the percentage of encounters.</li>
+                <li><b>Info icon</b>(text on hover): ROM Before: Reconciliation Assessment DRG
+                    (Primary/Advanced) ROM (Working DRG ROM when Discharge Date &lt; 11/14/19 or
+                    Reconciliation Assessment DRG is blank Encounter Status: Reconciled-Impact,
+                    Reconciled-No Impact, Auto-Reconciled.</li>
+            </ul><table frame="all" rowsep="1" colsep="1" id="table_w2t_dmx_j4b">
+                <title>ROM Before CDI Trend Metrics</title>
+                <tgroup cols="5">
+                    <colspec colname="c1" colnum="1" colwidth="1*"/>
+                    <colspec colname="c2" colnum="2" colwidth="1*"/>
+                    <colspec colname="newCol3" colnum="3" colwidth="1*"/>
+                    <colspec colname="newCol4" colnum="4" colwidth="1*"/>
+                    <colspec colname="c3" colnum="5" colwidth="1*"/>
+                    <thead>
+                        <row>
+                            <entry>Metric</entry>
+                            <entry>Description</entry>
+                            <entry>Formula/Calculation</entry>
+                            <entry>Exclusion Criteria (if any)</entry>
+                            <entry>Tooltip</entry>
+                        </row>
+                    </thead>
+                    <tbody>
+                        <row>
+                            <entry>% ROM 1 Encounters</entry>
+                            <entry>
+                                <p>The percentage of reconciled cases with ROM Before CDI as 1.</p>
+                                <p>Note:</p>
+                                <p>If the ROM associated with the primary DRG is not available, then
+                                    the ROM associated with the advanced DRG is used.</p>
+                            </entry>
+                            <entry>
+                                <p>% ROM 1 Encounters = The total count of Reconciled encounters
+                                    (Auto Reconciled, Reconciled-Impact and Reconciled-No Impact)
+                                    with Reconciliation Assessment ROM as 1.(or Working ROM as 1
+                                    when Discharge Date &lt; 11/14/19 or Reconciliation Assessment
+                                    DRG is blank)/ The total count of Reconciled encounters (Auto
+                                    Reconciled, Reconciled-Impact and Reconciled-No Impact)</p>
+                            </entry>
+                            <entry/>
+                            <entry>
+                                <p>Reconciled Cases with ROM 1 Before: Count of reconciled
+                                    encounters with Reconciliation Assessment ROM as 1.(or Working
+                                    ROM as 1 when Discharge Date &lt; 11/14/19 or Reconciliation
+                                    Assessment DRG is blank).</p>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>% ROM 2 Encounters</entry>
+                            <entry>
+                                <p>The percentage of reconciled cases with ROM Before CDI as 2.</p>
+                                <p>Note:</p>
+                                <p>If the ROM associated with the primary DRG is not available, then
+                                    the ROM associated with the advanced DRG is used.</p>
+                            </entry>
+                            <entry>
+                                <p>% ROM 2 Encounters = The total count of Reconciled encounters
+                                    (Auto Reconciled, Reconciled-Impact and Reconciled-No Impact)
+                                    with Reconciliation Assessment ROM as 2.(or Working ROM as 2
+                                    when Discharge Date &lt; 11/14/19 or Reconciliation Assessment
+                                    DRG is blank)/ The total count of Reconciled encounters (Auto
+                                    Reconciled, Reconciled-Impact and Reconciled-No Impact)</p>
+                            </entry>
+                            <entry/>
+                            <entry>
+                                <p>Reconciled Cases with ROM 2 Before: Count of reconciled
+                                    encounters with Reconciliation Assessment ROM as 2.(or Working
+                                    ROM as 2 when Discharge Date &lt; 11/14/19 or Reconciliation
+                                    Assessment DRG is blank).</p>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>% ROM 3 Encounters</entry>
+                            <entry>
+                                <p>The percentage of reconciled cases with ROM Before CDI as 3.</p>
+                                <p>Note:</p>
+                                <p>If the ROM associated with the primary DRG is not available, then
+                                    the ROM associated with the advanced DRG is used.</p>
+                            </entry>
+                            <entry>
+                                <p>% ROM 3 Encounters = The total count of Reconciled encounters
+                                    (Auto Reconciled, Reconciled-Impact and Reconciled-No Impact)
+                                    with Reconciliation Assessment ROM as 3.(or Working ROM as 3
+                                    when Discharge Date &lt; 11/14/19 or Reconciliation Assessment
+                                    DRG is blank)/ The total count of Reconciled encounters (Auto
+                                    Reconciled, Reconciled-Impact and Reconciled-No Impact)</p>
+                            </entry>
+                            <entry/>
+                            <entry>
+                                <p>Reconciled Cases with ROM 3 Before: Count of reconciled
+                                    encounters with Reconciliation Assessment ROM as 3.(or Working
+                                    ROM as 3 when Discharge Date &lt; 11/14/19 or Reconciliation
+                                    Assessment DRG is blank).</p>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>% ROM 4 Encounters</entry>
+                            <entry>
+                                <p>The percentage of reconciled cases with ROM Before CDI as 4.</p>
+                                <p>Note:</p>
+                                <p>If the ROM associated with the primary DRG is not available, then
+                                    the ROM associated with the advanced DRG is used.</p>
+                            </entry>
+                            <entry>
+                                <p>% ROM 4 Encounters = The total count of Reconciled encounters
+                                    (Auto Reconciled, Reconciled-Impact and Reconciled-No Impact)
+                                    with Reconciliation Assessment ROM as 4.(or Working ROM as 4
+                                    when Discharge Date &lt; 11/14/19 or Reconciliation Assessment
+                                    DRG is blank)/ The total count of Reconciled encounters (Auto
+                                    Reconciled, Reconciled-Impact and Reconciled-No Impact)</p>
+                            </entry>
+                            <entry/>
+                            <entry>
+                                <p>Reconciled Cases with ROM 4 Before: Count of reconciled
+                                    encounters with Reconciliation Assessment ROM as 4.(or Working
+                                    ROM as 4 when Discharge Date &lt; 11/14/19 or Reconciliation
+                                    Assessment DRG is blank).</p>
+                            </entry>
+                        </row>
+                    </tbody>
+                </tgroup>
+            </table></p>
+        <p><b>SOI/ROM Impact - SOI After CDI Trend Chart</b></p>
+        <fig id="fig_ifh_35k_t4b">
+            <title>SOI After CDI Trend </title>
+            <image href="Images/SOI%20after%20CDI%20Trend.gif" id="image_ztv_35k_t4b" width="600"/>
+        </fig>
+        <p>This chart displays the percentage of reconciled cases with SOI 1, SOI 2, SOI3, and SOI 4
+            after CDI for each month.<ul id="ul_lhm_qnx_j4b">
+                <li>
+                    <p><b>X-axis</b>: Displays the name of the discharge month and year in the
+                        format: MMM YYYY (ex: Feb 2020, Aug 2020)</p>
+                </li>
+                <li><b>Y-axis</b>: Displays the percentage of encounters.</li>
+                <li><b>Info icon</b>(text on hover): SOI After: Final Coding SOI. Advanced DRG SOI
+                    value is used when Primary DRG SOI is blank. Encounter Status:
+                    Reconciled-Impact, Reconciled-No Impact, Auto-Reconciled.</li>
+            </ul><table frame="all" rowsep="1" colsep="1" id="table_jjp_snx_j4b">
+                <title>SOI After CDI Trend Metrics</title>
+                <tgroup cols="5">
+                    <colspec colname="c1" colnum="1" colwidth="1*"/>
+                    <colspec colname="c2" colnum="2" colwidth="1*"/>
+                    <colspec colname="newCol3" colnum="3" colwidth="1*"/>
+                    <colspec colname="newCol4" colnum="4" colwidth="1*"/>
+                    <colspec colname="c3" colnum="5" colwidth="1*"/>
+                    <thead>
+                        <row>
+                            <entry>Metric</entry>
+                            <entry>Description</entry>
+                            <entry>Formula/Calculation</entry>
+                            <entry>Exclusion Criteria (if any)</entry>
+                            <entry>Tooltip</entry>
+                        </row>
+                    </thead>
+                    <tbody>
+                        <row>
+                            <entry>% SOI 1 Encounters</entry>
+                            <entry>
+                                <p>The percentage of reconciled cases with SOI After CDI as 1.</p>
+                                <p>Note:</p>
+                                <p>If the SOI associated with the primary DRG is not available, then
+                                    the SOI associated with the advanced DRG is used.</p>
+                            </entry>
+                            <entry>
+                                <p>% SOI 1 Encounters= The total count of Reconciled encounters
+                                    (Auto Reconciled, Reconciled-Impact and Reconciled-No Impact)
+                                    with Final Coded SOI as 1./Total count of Reconciled encounters
+                                    (Auto Reconciled, Reconciled-Impact and Reconciled-No
+                                    Impact)</p>
+                            </entry>
+                            <entry/>
+                            <entry/>
+                        </row>
+                        <row>
+                            <entry>% SOI 2 Encounters</entry>
+                            <entry>
+                                <p>The percentage of reconciled cases with SOI After CDI as 2.</p>
+                                <p>Note:</p>
+                                <p>If the SOI associated with the primary DRG is not available, then
+                                    the SOI associated with the advanced DRG is used.</p>
+                            </entry>
+                            <entry>
+                                <p>% SOI 2 Encounters = The total count of Reconciled encounters
+                                    (Auto Reconciled, Reconciled-Impact and Reconciled-No Impact)
+                                    with Final Coded SOI as 2./Total count of Reconciled encounters
+                                    (Auto Reconciled, Reconciled-Impact and Reconciled-No
+                                    Impact)</p>
+                            </entry>
+                            <entry/>
+                            <entry/>
+                        </row>
+                        <row>
+                            <entry>% SOI 3 Encounters</entry>
+                            <entry>
+                                <p>The percentage of reconciled cases with SOI After CDI as 3.</p>
+                                <p>Note:</p>
+                                <p>If the SOI associated with the primary DRG is not available, then
+                                    the SOI associated with the advanced DRG is used.</p>
+                            </entry>
+                            <entry>
+                                <p>% SOI 3 Encounters = The total count of Reconciled encounters
+                                    (Auto Reconciled, Reconciled-Impact and Reconciled-No Impact)
+                                    with Final Coded SOI as 3./Total count of Reconciled encounters
+                                    (Auto Reconciled, Reconciled-Impact and Reconciled-No
+                                    Impact)</p>
+                            </entry>
+                            <entry/>
+                            <entry/>
+                        </row>
+                        <row>
+                            <entry>% SOI 4 Encounters</entry>
+                            <entry>
+                                <p>The percentage of reconciled cases with SOI After CDI as 4.</p>
+                                <p>Note:</p>
+                                <p>If the SOI associated with the primary DRG is not available, then
+                                    the SOI associated with the advanced DRG is used.</p>
+                            </entry>
+                            <entry>
+                                <p>% SOI 4 Encounters = The total count of Reconciled encounters
+                                    (Auto Reconciled, Reconciled-Impact and Reconciled-No Impact)
+                                    with Final Coded SOI as 4./Total count of Reconciled encounters
+                                    (Auto Reconciled, Reconciled-Impact and Reconciled-No
+                                    Impact)</p>
+                            </entry>
+                            <entry/>
+                            <entry/>
+                        </row>
+                    </tbody>
+                </tgroup>
+            </table></p>
+        <p><b>SOI/ROM Impact - ROM After CDI Trend Chart</b></p>
+        <fig id="fig_ivz_l5k_t4b">
+            <title>ROM After CDI Trend</title>
+            <image href="Images/ROM%20after%20CDI%20Trend.gif" id="image_mjp_m5k_t4b" width="600"/>
+        </fig>
+        <p>This chart displays the percentage of reconciled cases with ROM 1, ROM 2, ROM 3, and ROM
+            4 after CDI for each month.<ul id="ul_kcp_54x_j4b">
+                <li>
+                    <p><b>X-axis</b>: Displays the name of the discharge month and year in the
+                        format: MMM YYYY (Example: Feb 2020, Aug 2020)</p>
+                </li>
+                <li><b>Y-axis</b>: Displays the percentage of encounters.</li>
+                <li><b>Legend Titles</b>: % ROM 1 Encounters, % ROM 2 Encounters, % ROM 3
+                    Encounters, % ROM 4 Encounters</li>
+                <li><b>Info icon</b>(text on hover): ROM After: Final Coding ROM. Advanced DRG ROM
+                    value is used when Primary DRG ROM is blank. Encounter Status:
+                    Reconciled-Impact, Reconciled-No Impact, Auto-Reconciled.</li>
+            </ul><table frame="all" rowsep="1" colsep="1" id="table_jnd_w4x_j4b">
+                <title>ROM After CDI Trend Metrics</title>
+                <tgroup cols="5">
+                    <colspec colname="c1" colnum="1" colwidth="1*"/>
+                    <colspec colname="c2" colnum="2" colwidth="1*"/>
+                    <colspec colname="newCol3" colnum="3" colwidth="1*"/>
+                    <colspec colname="newCol4" colnum="4" colwidth="1*"/>
+                    <colspec colname="c3" colnum="5" colwidth="1*"/>
+                    <thead>
+                        <row>
+                            <entry>Metric</entry>
+                            <entry>Description</entry>
+                            <entry>Formula/Tooltip</entry>
+                            <entry>Exclusion Criteria (if any)</entry>
+                            <entry>Tooltip</entry>
+                        </row>
+                    </thead>
+                    <tbody>
+                        <row>
+                            <entry>% ROM 1 Encounters</entry>
+                            <entry>
+                                <p>The percentage of reconciled cases with ROM After CDI as 1.</p>
+                                <p>Note:</p>
+                                <p>If the ROM associated with the primary DRG is not available, then
+                                    the ROM associated with the advanced DRG is used.</p>
+                            </entry>
+                            <entry>
+                                <p>% ROM 1 Encounters = The total count of Reconciled encounters
+                                    (Auto Reconciled, Reconciled-Impact and Reconciled-No Impact)
+                                    with Final Coded ROM as 1./Total count of Reconciled encounters
+                                    (Auto Reconciled, Reconciled-Impact and Reconciled-No
+                                    Impact)</p>
+                            </entry>
+                            <entry/>
+                            <entry/>
+                        </row>
+                        <row>
+                            <entry>% ROM 2 Encounters</entry>
+                            <entry>
+                                <p>The percentage of reconciled cases with ROM After CDI as 2.</p>
+                                <p>Note:</p>
+                                <p>If the ROM associated with the primary DRG is not available, then
+                                    the ROM associated with the advanced DRG is used.</p>
+                            </entry>
+                            <entry>
+                                <p>% ROM 2 Encounters = The total count of Reconciled encounters
+                                    (Auto Reconciled, Reconciled-Impact and Reconciled-No Impact)
+                                    with Final Coded ROM as 2./Total count of Reconciled encounters
+                                    (Auto Reconciled, Reconciled-Impact and Reconciled-No
+                                    Impact)</p>
+                            </entry>
+                            <entry/>
+                            <entry/>
+                        </row>
+                        <row>
+                            <entry>% ROM 3 Encounters</entry>
+                            <entry>
+                                <p>The percentage of reconciled cases with ROM After CDI as 3</p>
+                                <p>Note:</p>
+                                <p>If the ROM associated with the primary DRG is not available, then
+                                    the ROM associated with the advanced DRG is used.</p>
+                            </entry>
+                            <entry>% ROM 3 Encounters = The total count of Reconciled encounters
+                                (Auto Reconciled, Reconciled-Impact and Reconciled-No Impact) with
+                                Final Coded ROM as 3./Total count of Reconciled encounters (Auto
+                                Reconciled, Reconciled-Impact and Reconciled-No Impact)</entry>
+                            <entry/>
+                            <entry/>
+                        </row>
+                        <row>
+                            <entry>% ROM 4 Encounters</entry>
+                            <entry>
+                                <p>The percentage of reconciled cases with ROM After CDI as 4.</p>
+                                <p>Note:</p>
+                                <p>If the ROM associated with the primary DRG is not available, then
+                                    the ROM associated with the advanced DRG is used.</p>
+                            </entry>
+                            <entry>
+                                <p>% ROM 4 Encounters = The total count of Reconciled encounters
+                                    (Auto Reconciled, Reconciled-Impact and Reconciled-No Impact)
+                                    with Final Coded ROM as 4./Total count of Reconciled encounters
+                                    (Auto Reconciled, Reconciled-Impact and Reconciled-No
+                                    Impact)</p>
+                            </entry>
+                            <entry/>
+                            <entry/>
+                        </row>
+                    </tbody>
+                </tgroup>
+            </table></p>
+        <p>
+            <table frame="all" rowsep="1" colsep="1" id="table_qnn_w2n_g4b">
+                <title>Report Slicers </title>
+                <tgroup cols="2">
+                    <colspec colname="c1" colnum="1" colwidth="1*"/>
+                    <colspec colname="c2" colnum="2" colwidth="1*"/>
+                    <thead>
+                        <row>
+                            <entry>Slicer</entry>
+                            <entry>Description</entry>
+                        </row>
+                    </thead>
+                    <tbody>
+                        <row>
+                            <entry>Discharge Date</entry>
+                            <entry>
+                                <ul id="ul_uzh_y2n_g4b">
+                                    <li>Displays the discharge date range. </li>
+                                    <li>You can select date from the lookup provided.</li>
+                                    <li>
+                                        <b>Example</b>: 7/1/2020 - 7/31/2020</li>
+                                    <li><b>Default</b>: Last 3 calendar months date range selected
+                                        by default.</li>
+                                </ul>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>Reset Button</entry>
+                            <entry>
+                                <ul id="ul_jw1_22z_m4b">
+                                    <li>With the Reset button, you can reset the Discharge date
+                                        range.</li>
+                                    <li><b>Tooltip</b>: Use "Ctrl + Click" to reset the Discharge
+                                        Date.</li>
+                                </ul>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>Facility</entry>
+                            <entry>
+                                <ul id="ul_vzp_z2n_g4b">
+                                    <li>Displays both active and inactive facilities in alphabetical
+                                        order that you have access to.</li>
+                                    <li>You can select multiple facilities.</li>
+                                    <li>You can search the facility by Facility ID or
+                                        Description.</li>
+                                    <li><b>Format</b>: Facility Description (Facility ID)</li>
+                                    <li><b>Default</b>: ALL</li>
+                                </ul>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>Payer</entry>
+                            <entry>
+                                <ul id="ul_ntb_cfn_g4b">
+                                    <li>Displays both active and inactive payers in alphabetical
+                                        order associated with the facilities you have access
+                                        to.</li>
+                                    <li>You can select multiple payers.</li>
+                                    <li>"Unassigned Payer" displays data for the encounters that do
+                                        not have a payer assigned.</li>
+                                    <li>You can search the Payer by Payer ID or Description.</li>
+                                    <li><b>Format</b>: Payer Description (Payer ID)</li>
+                                    <li><b>Default</b>: ALL</li>
+                                </ul>
+                            </entry>
+                        </row>
+                    </tbody>
+                </tgroup>
+            </table>
+        </p>
+        <p>
+            <table frame="all" rowsep="1" colsep="1" id="table_dq1_ffn_g4b">
+                <title>Filters on all Pages</title>
+                <tgroup cols="2">
+                    <colspec colname="c1" colnum="1" colwidth="1*"/>
+                    <colspec colname="c2" colnum="2" colwidth="1*"/>
+                    <thead>
+                        <row>
+                            <entry>Filter</entry>
+                            <entry>Description</entry>
+                        </row>
+                    </thead>
+                    <tbody>
+                        <row>
+                            <entry>Patient Type</entry>
+                            <entry>
+                                <ul id="ul_ns1_3fn_g4b">
+                                    <li>Displays the available patient types. <b>Example</b>:
+                                        Inpatient, Outpatient.</li>
+                                    <li><b>Default</b>: Inpatient</li>
+                                </ul>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>Unit</entry>
+                            <entry>
+                                <ul id="ul_kdd_jfn_g4b">
+                                    <li>Displays the list of available units.</li>
+                                    <li>You can select multiple Units.</li>
+                                    <li>You can search the Unit.</li>
+                                    <li><b>Default</b>: ALL</li>
+                                </ul>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>Admit Service</entry>
+                            <entry>
+                                <ul id="ul_x2g_kfn_g4b">
+                                    <li>Displays the list of available admit service.</li>
+                                    <li>You can select multiple Units.</li>
+                                    <li>You can search the Admit Service.</li>
+                                    <li><b>Default</b>: ALL</li>
+                                </ul>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>Visit Type</entry>
+                            <entry>
+                                <ul id="ul_obm_lgm_r4b">
+                                    <li>Displays the available patient types.<b>Example</b>: ED, IP,
+                                        etc.</li>
+                                    <li>You can select multiple Visit Type.</li>
+                                    <li>You can search the Visit Type.</li>
+                                    <li><b>Default</b>: ALL</li>
+                                </ul>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>DRG Speciality</entry>
+                            <entry>
+                                <ul id="ul_ksz_3nl_kqb">
+                                    <li>Displays the available DRG Specialties. <b>Example</b>:
+                                        Transplant, Surgery, Neurosurgery</li>
+                                    <li>You can select multiple specialties.</li>
+                                    <li>You can search the DRG Specialty.</li>
+                                    <li><b>Default</b>: ALL</li>
+                                </ul>
+                            </entry>
+                        </row>
+                    </tbody>
+                </tgroup>
+            </table>
+        </p>
+        <p>
+            <table frame="all" rowsep="1" colsep="1" id="table_olx_rqx_j4b">
+                <title>Footnotes details</title>
+                <tgroup cols="2">
+                    <colspec colname="c1" colnum="1" colwidth="1*"/>
+                    <colspec colname="c2" colnum="2" colwidth="1*"/>
+                    <thead>
+                        <row>
+                            <entry>Label</entry>
+                            <entry>Text on Hover</entry>
+                        </row>
+                    </thead>
+                    <tbody>
+                        <row>
+                            <entry>% Cases with SOI Impact</entry>
+                            <entry>% cases with SOI Impact= (Count of Reconciled encounters with SOI
+                                After > SOI Before/Count of Reconciled encounters.) X100</entry>
+                        </row>
+                        <row>
+                            <entry>% Cases with ROM Impact</entry>
+                            <entry>% cases with ROM Impact= (Count of Reconciled encounters with ROM
+                                After >ROM Before/Count of Reconciled encounters.) X100</entry>
+                        </row>
+                    </tbody>
+                </tgroup>
+            </table>
+        </p>
+    </conbody>
+</concept>

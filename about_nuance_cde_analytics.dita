@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="about_nuance_cde_analytics">
+    <title>About Nuance CDE Analytics </title>
+    <shortdesc></shortdesc>
+    <conbody>
+        <p>Analytics helps you to analyze data and share insights. It provides a 360-degree view of
+            most important metrics in one place updated in real time. Analytics has 4 building
+            blocks: <i><b>Visualization</b></i>, <i><b>Dashboards</b></i>, <i><b>Report</b></i>, and
+                    <i><b>Dataset</b></i>. </p>
+        <p>A typical workflow involves all of these building blocks: the application collects data
+            from datasets, creates reports full of visualizations that highlight interesting facts
+            and insights, pins visualizations from reports to a dashboard and then shares the
+            reports and dashboards.</p>
+        <section id="section_nwd_xlz_bgb"><title>Visualization</title><p>A visualization can be
+                referred to as a visual representation of data. This representation can be in the
+                form of a chart, graph, map, or any other interesting thing that you create to
+                represent your data. Visualizations make it easier to interpret the insight.
+            </p>Types of the visualizations that are available: waterfall, ribbon, treemap, pie,
+            funnel, card, scatter, and gauge etc. Same visualization can be used on many different
+            dashboards.</section>
+        <section id="section_m5b_mj1_cgb">
+            <title>Dataset</title>
+            <p>A dataset is a collection of data use to build reports and dashboards. Each dataset
+                represents a single source of data, for example, an Excel workbook on OneDrive. The
+                data in a dataset does not have to come from a single source. It can be a filtered
+                collection of data which you combined from multiple different sources to produce a
+                unique collection.</p>
+            <p>Same dataset can be used in many different reports. Visualizations created from a
+                dataset can be displayed on many different dashboards.</p>
+        </section>
+        <section id="section_tvv_vy1_cgb">
+            <title>Report</title>
+            <p>A report is a collection of visualizations that appear together on one or multiple
+                pages. Reports help you to arrange your visualizations in a way that it tells the
+                story of your data, just the way you want it. All of the visualizations in a report
+                come from a single dataset. A report can be associated with multiple dashboards. </p>
+            <p>There are two types of report available in the application:<ul id="ul_hvc_gcb_cgb">
+                    <li>Predefined report: The standard reports shipped with application.</li>
+                    <li>User-defined report: You can edit a predefined report based on your
+                        requirement and save it as a custom report.</li>
+                </ul></p>
+        </section>
+        <section id="section_s5x_nbb_cgb">
+            <title>Dashboard</title>
+            <p>A dashboard is a single screen with interactive visuals, text, and graphics. A
+                dashboard content comes from one or more reports and one or more datasets. A
+                dashboard represents a customized view of some subset of the underlying dataset(s).
+                A dashboard is a single canvas that contains tiles, graphics, and text.</p>
+        </section>
+    </conbody>
+</concept>

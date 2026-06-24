@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE bookmap PUBLIC "-//OASIS//DTD DITA BookMap//EN" "bookmap.dtd">
+<bookmap>
+    <booktitle>
+        <mainbooktitle>CDE Analytics New Guide</mainbooktitle>
+    </booktitle>
+    <frontmatter>
+        <booklists>
+            <toc/>
+            <figurelist/>
+            <tablelist/>
+        </booklists>
+        <topicref href="Reference/what_s_new.dita"/>
+        <topicref href="online_analytics_training.dita"/>
+        <topicref href="Reference/live_chat.dita"/>
+    </frontmatter>
+    <chapter navtitle="Getting Started">
+        <topicref href="Getting%20Started/Concept/overview_getting_started.dita"/>
+        <topicref href="Getting%20Started/Concept/browser_configuration.dita"/>
+        <topichead navtitle="Edge Configuration">
+            <topicref
+                href="../Nuance%20CDI%20-%20CDS%20Triage%20User%20Guide/Concept/edge_browser_settings.dita"/>
+            <topicref
+                href="../Nuance%20CDI%20-%20CDS%20Triage%20User%20Guide/Concept/dmo_edge_plugin_settings.dita"
+            />
+            <topicref href="to_disable_the_edge_copilot.dita"/>
+        </topichead>
+        <topichead navtitle="Chrome Configuration">
+            <topicref
+                href="../Nuance%20CDI%20-%20CDS%20Triage%20User%20Guide/Concept/installing_google_chrom.dita"/>
+            <topicref
+                href="../Nuance%20CDI%20-%20CDS%20Triage%20User%20Guide/Concept/chrome_browser_compatibility.dita"/>
+            <topicref
+                href="../Nuance%20CDI%20-%20CDS%20Triage%20User%20Guide/Concept/dmo_chrome_plugin_settings.dita"/>
+            <topicref
+                href="../Nuance%20CDI%20-%20CDS%20Triage%20User%20Guide/Concept/live_chat_settings_for_chrome_browser.dita"
+            />
+        </topichead>
+        <topicref
+            href="../Nuance%20CDI%20-%20CDS%20Triage%20User%20Guide/Concept/live_chat_settings.dita"/>
+        <topichead navtitle="Sign In">
+            <topicref href="Getting%20Started/Task/first_time_sign_in.dita"/>
+            <topicref href="Getting%20Started/Task/logging_in.dita"/>
+            <topicref href="Getting%20Started/Task/updating_password.dita"/>
+            <topicref href="Getting%20Started/Concept/password_settings.dita"/>
+            <topicref href="Getting%20Started/Concept/rules_for_creating_passwords.dita"/>
+        </topichead>
+        <topichead navtitle="Single Sign On">
+            <topicref href="Getting%20Started/Concept/about_single_sign_on.dita"/>
+        </topichead>
+        <topicref href="Getting%20Started/Task/logging_out.dita"/>
+    </chapter>
+    <chapter navtitle="Working With Reports">
+        <topicref href="about_nuance_cde_analytics.dita"/>
+        <topicref href="about_cde_analytics_report.dita"/>
+        <topicref href="group_by_option.dita"/>
+        <topicref href="Task/creating_custom_reports.dita"/>
+        <topicref href="Task/deleting_custom_reports.dita"/>
+        <topicref href="Task/adding_fields_on_custom_report.dita"/>
+        <topicref href="Task/suggested_drg_fields.dita"/>
+        <topicref href="Reference/create_custom_reports_on_notes_created_for_the_encounters.dita"/>
+        <topicref href="Task/deleting_fields_from_the_custom_report.dita"/>
+        <topicref href="Task/printing_a_report.dita"/>
+        <topicref href="search_criteria_for_custom_reports.dita"/>
+        <topicref href="adjust_report_view.dita"/>
+        <topicref href="non_cds_users.dita"/>
+        <topicref href="power_bi_controls.dita"/>
+        <topicref href="Reference/failed_clariifcations.dita"/>
+    </chapter>
+    <chapter navtitle="CDE One - CDI Operations">
+        <topicref href="encounter_monitoring.dita"/>
+        <topicref href="overdue_clarifications.dita"/>
+        <topicref href="provider_response_activity.dita"/>
+        <topicref href="clarification_details.dita"/>
+        <topicref href="encounter_details.dita"/>
+        <topicref href="tracking_codes.dita"/>
+        <topicref href="quality_alerts.dita"/>
+        <topicref href="concurrent_impact_summary.dita"/>
+    </chapter>
+    <chapter navtitle="CDE One - Staff Management">
+        <topicref href="team_performance.dita"/>
+        <topicref href="cds_monthly_productivity.dita"/>
+        <topicref href="cds_impact.dita"/>
+        <topicref href="cds_review_activity.dita"/>
+        <topicref href="cds_performance_dashboard.dita"/>
+        <topicref href="cds_coder_match.dita"/>
+    </chapter>
+    <chapter navtitle="CDE One - Executive Summary">
+        <topicref href="executive_overview.dita" navtitle="Excecutive Summary"/>
+        <topicref href="cdi_dashboard.dita"/>
+        <topicref href="cmi_breakdown.dita"/>
+        <topicref href="soi_rom_impact.dita"/>
+        <topicref href="drg_breakdown.dita"/>
+        <topicref href="reconciliation_details.dita"/>
+        <topicref href="no_response_impact.dita"/>
+        <topicref href="no_response_clarification_details.dita"/>
+        <topicref href="clarification_type_trend.dita"/>
+    </chapter>
+    <chapter navtitle="CDE One - Peer Group Comparison">
+        <topicref href="peer_group_comparision/ms_drg_specialty_summary.dita"/>
+        <topicref href="peer_group_comparision/diagnosis_scorecard.dita"/>
+        <topicref href="peer_group_comparision/ms_drg_group_summary.dita"/>
+        <topicref href="peer_group_comparision/ms_drg_scorecard.dita"/>
+        <topicref href="peer_group_comparision/cmi_and_capture_rate_summary.dita"/>
+    </chapter>
+    <chapter navtitle="CDE One - Quality Impact">
+        <topicref href="quality_impact_overview.dita"/>
+        <topicref href="quality_impact_summary.dita"/>
+        <topicref href="quality_impact_encounter_details.dita"/>
+    </chapter>
+    <chapter navtitle="Triage and CDS Assistant Usage">
+        <topicref href="triage_overview.dita"/>
+        <topicref href="triage_summary.dita"/>
+        <topicref href="assistant_usage_overview.dita"/>
+        <topicref href="assistant_usage_summary.dita"/>
+        <topicref href="ranked_encounters.dita"/>
+        <topicref href="triage_encounter_details.dita"/>
+    </chapter>
+    <chapter navtitle="CDE Triage - Post Discharge Reviews">
+        <topicref href="post_discharge_reviews_overview.dita"/>
+        <topicref href="post_discharge_reviews_trend.dita"/>
+    </chapter>
+    <chapter navtitle="CDS General - CDS Productivity">
+        <topicref href="cds_activity_details_48_hours.dita"/>
+        <topicref href="cds_productivity_summary_by_activity_date_48_hours.dita"/>
+        <topicref href="cds_productivity_summary_by_cds_48_hours.dita"/>
+        <topicref href="Overdue%20Clarification.dita"/>
+    </chapter>
+    <chapter navtitle="CDS Monthly Productivity">
+        <topicref href="cds_activity_report.dita"/>
+        <topicref href="cds_general_cds_monthly_productivity.dita"/>
+    </chapter>
+    <chapter navtitle="Analytics Concepts">
+        <topicref href="visualization_types.dita"/>
+    </chapter>
+    <chapter navtitle="Related Documents" product="product2">
+        <topicref href="related_documents.dita"/>
+    </chapter>
+    <appendix navtitle="Glossary">
+        <topicref href="glossary.dita"/>
+    </appendix>
+    <backmatter/>
+</bookmap>

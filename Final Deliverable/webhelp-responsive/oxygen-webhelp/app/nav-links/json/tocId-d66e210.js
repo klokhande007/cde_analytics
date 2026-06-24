@@ -1,0 +1,1 @@
+define({"topics" : [{"title":"About Single Sign-On","shortdesc":"\n               <p class=\"shortdesc\"></p>\n            ","href":"Getting%20Started\/Concept\/about_single_sign_on.html","attributes": {"data-id":"about_single_sign_on",},"menu": {"hasChildren":false,},"tocID":"about_single_sign_on-d66e211","topics":[]}]});

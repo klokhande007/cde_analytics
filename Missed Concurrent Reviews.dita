@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="Missed_Concurrent_Reviews">
+    <title>Missed Concurrent Reviews</title>
+    <shortdesc></shortdesc>
+    <conbody>
+        <p><b>Overview</b>: The <i>Missed Concurrent Reviews</i> report identifies encounters that
+            are discharged prior to review and therefore missed an opportunity for documentation
+            improvement.</p>
+        <p><b>Navigation</b>: On the Analytics home page left side panel, navigate to <menucascade>
+                <uicontrol>CDE Triage</uicontrol>
+                <uicontrol>CDE Triage Dashboard</uicontrol>
+                <uicontrol>Missed Concurrent Reviews</uicontrol>
+            </menucascade></p>
+        <p> This Missed Concurrent Reviews report displays the following:<ul id="ul_uvr_t25_j2b">
+                <li>Summary Cards: Discharges, Missed Reviews, %Missed Reviews</li>
+                <li>Missed Concurrent Reviews by CDS Chart</li>
+                <li>Missed Concurrent Reviews by Rank at Discharge Chart</li>
+                <li>Encounter details Tabular Chart </li>
+            </ul></p>
+        <p>For filters on all pages, refer <xref
+                href="CDE%20Triage%20Dashboard%20Overview.dita#CDE_Triage_Dashboard_Overview/table_r3d_xsz_t4b"
+            />.</p>
+        <p><b>Default Display</b>: </p>
+        <p><b>Missed Concurrent Reviews </b></p>
+        <fig id="fig_wlj_22s_t4b">
+            <title>Sample Report</title>
+            <image href="Images/Missed%20Concurrent%20Reviews.gif" id="image_vnc_f2s_t4b"
+                width="800"/>
+        </fig>
+        <p><b>Missed Concurrent Reviews -  Summary Card</b></p>
+        <fig id="fig_kpl_bfs_t4b">
+            <title>Summary Card</title>
+            <image href="Images/Summary%20Card%20for%20Missed%20Concurrent%20Review.gif"
+                id="image_wy3_cfs_t4b" width="300"/>
+        </fig>
+        <p><b>Missed Concurrent Reviews - Missed Concurrent Reviews by CDS</b></p>
+        <fig id="fig_yff_l2s_t4b">
+            <title>Missed Concurrent Reviews by CDS</title>
+            <image href="Images/Missed%20Concurrent%20Reviews%20by%20CDS.gif" id="image_byv_l2s_t4b"
+                width="600"/>
+        </fig>
+        <p>
+            <ul id="ul_szh_kts_t4b">
+                <li>In the <i>Missed Concurrent Reviews by CDS</i> section, X-axis indicates the
+                    count of the encounters, and Y-axis indicates the name of the CDS assigned to
+                    the encounter in CDS Triage.</li>
+                <li>Encounters that do not have any CDS assigned are displayed under the
+                        <uicontrol>Unassigned CDS</uicontrol> category on the Y-axis.</li>
+            </ul>
+        </p>
+        <p><b>Missed Concurrent Reviews - Missed Concurrent Reviews by Rank at Discharge</b></p>
+        <fig id="fig_shm_q2s_t4b">
+            <title>Missed Concurrent Reviews by Rank at Discharge</title>
+            <image href="Images/Missed%20Concurrent%20Reviews%20by%20Rank%20at%20Discharge.gif"
+                id="image_b4m_52s_t4b" width="600"/>
+        </fig>
+        <p>
+            <ul id="ul_qlb_mts_t4b">
+                <li>In the <i>Missed Concurrent Reviews by Rank at Discharge</i> section, the donut
+                    chart displays the count of missed reviews for each rank at discharge. Tooltip
+                    displays the count of missed reviews for that rank at discharge.</li>
+                <li>The <i>Summary Card</i> at the top of the <i>Missed Concurrent Reviews</i>
+                    report displays the total number of discharged encounters, total missed reviews,
+                    and the % of the missed reviews between the selected date range.</li>
+                <li><b>Formula:</b> Missed reviews (%) = (Total missed reviews/ Total discharges) ×
+                    100</li>
+            </ul>
+        </p>
+    </conbody>
+</concept>

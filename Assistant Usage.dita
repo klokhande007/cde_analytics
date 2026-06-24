@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="Assistant_Usage">
+    <title>Assistant Usage</title>
+    <shortdesc></shortdesc>
+    <conbody>
+        <p><b>Overview</b>: The <i>Assistant Usage</i> report helps to analyze the accuracy of CLU
+            suggested codes.</p>
+        <p>This report displays the following information:<ul id="ul_qz4_pc3_h2b">
+                <li>Count of accepted, rejected, hidden, and no action CLU codes by each CDS for a
+                    selected date range</li>
+                <li>Count of total accepted, rejected, hidden, and no action CLU codes for a
+                    selected date range</li>
+            </ul><note type="important">
+                <ul id="ul_s2z_pk5_kqb">
+                    <li>Code count for the encounters with Initial Review Date are only displayed in
+                        this report.</li>
+                    <li>ELX Codes and their counts of accepted, removed and no action are now
+                        displayed in this report.</li>
+                </ul>
+            </note></p>
+        <p><b>Navigation</b>: On the Analytics home page left side panel, navigate to <menucascade>
+                <uicontrol>CDE Triage</uicontrol>
+                <uicontrol>CDE Triage Dashboard</uicontrol>
+                <uicontrol>Assistant Usage</uicontrol>
+            </menucascade>.</p>
+        <p>This Assistant Usage displays the following: <ul id="ul_akw_k25_j2b">
+                <li>Assistant Usage by CDS Chart</li>
+                <li>Assistant Usage by Category Chart</li>
+                <li>Code Count Chart</li>
+                <li>Encounter details tabular Chart </li>
+            </ul></p>
+        <p>For filters on all pages, refer <xref
+                href="CDE%20Triage%20Dashboard%20Overview.dita#CDE_Triage_Dashboard_Overview/table_r3d_xsz_t4b"
+            /> .</p>
+        <p><b>Default Display</b>: </p>
+        <p><b>Assistant Usage</b></p>
+        <fig id="fig_ky3_lks_t4b">
+            <title>Sample Report</title>
+            <image href="Images/Assistant%20Usage.gif" id="image_gy1_mks_t4b" width="800"/>
+        </fig>
+        <p><b>Assistant Usage - Assistant Usage by CDS</b></p>
+        <fig id="fig_evz_nks_t4b">
+            <title>Assistant Usage by CDS</title>
+            <image href="Images/Assistant%20Usage%20By%20CDS.gif" id="image_bv4_4ks_t4b" width="500"
+            />
+        </fig>
+        <p>
+            <ul id="ul_vdb_dws_t4b">
+                <li>In the <i>Assistant Usage By CDS</i> section, X-axis indicates the count of
+                    accepted, rejected, hidden and no action CLU codes, and Y-axis indicates the
+                    name of the CDS assigned to the encounter in CDS Triage.</li>
+                <li>Encounters that do not have any CDS assigned are displayed under the
+                        <uicontrol>Unassigned CDS</uicontrol> category on the Y-axis.</li>
+            </ul>
+        </p>
+        <p><b>Assistant Usage - Assistant Usage by Category</b></p>
+        <fig id="fig_arz_rks_t4b">
+            <title>Assistant Usage by Category</title>
+            <image href="Images/Assistant%20Usage%20by%20Category.gif" id="image_glq_sks_t4b"
+                width="200"/>
+        </fig>
+        <p>
+            <ul id="ul_ufw_gws_t4b">
+                <li>In the <i>Assistant Usage by Category</i> section, the donut chart displays the
+                    total count of the accepted, rejected, hidden and no action CLU codes. </li>
+                <li>Tooltip displays count of code for each category (accepted and no action CLU
+                    codes) and the total suggested code.</li>
+            </ul>
+        </p>
+        <p><b>Assistant Usage - Code Count</b></p>
+        <fig id="fig_lxj_zks_t4b">
+            <title>Code Count</title>
+            <image href="Images/Codes%20as%20%25%20of%20Total.gif" id="image_j2n_1ls_t4b"
+                width="200"/>
+        </fig>
+        <p>
+            <ul id="ul_rkl_lws_t4b">
+                <li>In the <i>Code Count</i> section, the chart by default displays the count of
+                    each rejected codes by default.</li>
+                <li>This chart allows you to view the data for accepted, hidden, and ignored CLU
+                    codes. Tooltip displays the rejected codes as % of total rejected.</li>
+            </ul>
+        </p>
+    </conbody>
+</concept>

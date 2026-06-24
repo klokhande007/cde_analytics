@@ -1,0 +1,1 @@
+define({"topics" : [{"title":"Visualization Types","shortdesc":"\n            <p class=\"shortdesc\"></p>\n         ","href":"visualization_types.html","attributes": {"data-id":"visualization_types",},"menu": {"hasChildren":false,},"tocID":"visualization_types-d66e664","topics":[]}]});

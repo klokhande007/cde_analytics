@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="how_to_use_the_clarification_overview_report">
+    <title>How to use the Clarification Overview Report to find specific information?</title>
+    <shortdesc></shortdesc>
+    <task id="task_x3w_m34_vgb">
+        <title>For which Clarification type, highest number of clarifications were sent? How many
+            clarifications were sent for SEV clarification type?</title>
+        <taskbody>
+            <steps id="steps_dzh_q34_vgb">
+                <step>
+                    <cmd>Select <uicontrol>Program Management</uicontrol> from the <i>Analytics</i>
+                        screen.</cmd>
+                </step>
+                <step>
+                    <cmd>Select the <uicontrol>Clarification Overview</uicontrol> tab.</cmd>
+                    <stepresult>The report displays data for last one calendar month based on the
+                        discharge date.</stepresult>
+                </step>
+                <step>
+                    <cmd>Select the time range from the <uicontrol>Discharge Date</uicontrol>
+                        filter.</cmd>
+                </step>
+                <step>
+                    <cmd>Analyze the <uicontrol>Clarifications by Facility and Clarification
+                            Type</uicontrol> chart.</cmd>
+                    <stepresult>This chart displays clarifications sent for each clarification type
+                        and for each facility. Use this chart to analyze the following:<ul
+                            id="ul_chs_nj4_vgb">
+                            <li>What percentage of total sent clarifications by a facility are SEV
+                                clarifications?</li>
+                            <li>What is the count of PDX clarifications sent by a facility? </li>
+                            <li>For a specific which type of clarifications were sent for maximum
+                                time?</li>
+                            <li>Count of MCC clarifications sent by a CDS. To view the count select
+                                the CDS name from the <uicontrol>CDS</uicontrol> filter.</li>
+                        </ul></stepresult>
+                </step>
+            </steps>
+        </taskbody>
+    </task>
+    <task id="task_uph_xn4_vgb">
+        <title>What is the overall Clarification Rate, Response Rate, and Agreement Rate at the
+            organization level and for a specific facility? </title>
+        <taskbody>
+            <steps id="steps_psp_yn4_vgb">
+                <step>
+                    <cmd>Select <uicontrol>Program Management</uicontrol> from the <i>Analytics</i>
+                        screen.</cmd>
+                </step>
+                <step>
+                    <cmd>Select the <uicontrol>Clarification Overview</uicontrol> tab.</cmd>
+                    <stepresult>The report displays data for last one calendar month based on the
+                        discharge date.</stepresult>
+                </step>
+                <step>
+                    <cmd>Select the time range from the <uicontrol>Discharge Date</uicontrol>
+                        filter.</cmd>
+                </step>
+                <step>
+                    <cmd>Analyze the following KPI cards at the top of the <i>Clarification
+                            Overview</i> report:</cmd>
+                    <info>
+                        <ul id="ul_wnp_244_vgb">
+                            <li><i>Clarifications Sent </i></li>
+                            <li><i>Encounter Clarification Rate</i>: Count of reviewed encounters
+                                with at-least one Clarification / Total Encounters Reviewed (Initial
+                                Reviews) X 100</li>
+                            <li><i>Clarification Rate</i>: Total Clarifications Sent / Encounters
+                                Reviewed (Initial Reviews) x 100</li>
+                            <li><i>Response Rate</i>: Total Responded Clarifications / Total
+                                Clarifications Sent x 100</li>
+                            <li><i>Agreement Rate</i>: Total Agreed Clarifications / Total Responded
+                                Clarifications X 100</li>
+                        </ul>
+                    </info>
+                </step>
+                <step>
+                    <cmd>To analyze this data for a specific facility, select the facility from the
+                            <uicontrol>Facility</uicontrol> filter.</cmd>
+                </step>
+            </steps>
+        </taskbody>
+    </task>
+    <task id="task_ug1_fp4_vgb">
+        <title>How many clarifications were sent for <i>Medicare</i> cases?</title>
+        <taskbody>
+            <steps id="steps_ml4_qq4_vgb">
+                <step>
+                    <cmd>Select <uicontrol>Program Management</uicontrol> from the <i>Analytics</i>
+                        screen.</cmd>
+                </step>
+                <step>
+                    <cmd>Select the <uicontrol>Clarification Overview</uicontrol> tab.</cmd>
+                    <stepresult>The report displays data for last one calendar month based on the
+                        discharge date.</stepresult>
+                </step>
+                <step>
+                    <cmd>Select the time range from the <uicontrol>Discharge Date</uicontrol>
+                        filter.</cmd>
+                </step>
+                <step>
+                    <cmd>Analyse the <i>Clarifications by Facility and Payer</i> chart.</cmd>
+                    <stepresult>This chart displays count of clarifications sent for each payer and
+                        for each facility. Also use this chart to analyze the following:<ul
+                            id="ul_ort_gr4_vgb">
+                            <li>What percentage of total clarifications sent by a facility for the
+                                    <i>Medicare</i> cases.</li>
+                            <li>Which facility has the highest percentage of total clarifications
+                                for the <i>Medicare</i> cases.</li>
+                            <li>What type of clarifications are sent for the <i>Medicare</i> cases?
+                                To view this click the <uicontrol>Medicare</uicontrol> section in
+                                the <i>Clarifications by Facility and Payer</i> chart and the data
+                                is filtered in the <i>Clarifications by Facility and Clari Type</i>
+                                chart. The C<i>larifications by Facility and Clari Type</i> now
+                                displays data for the <i>Medicare</i> cases. This helps you to
+                                identify the clarification types associated with the sent
+                                clarifications for the <i>Medicare</i> cases.</li>
+                        </ul></stepresult>
+                </step>
+            </steps>
+        </taskbody>
+    </task>
+    <task id="task_gt2_q2r_vgb">
+        <title>How does the <i>Response Rate</i> and <i>Agreement Rate</i> look like for the
+                <i>Medicare</i> cases?</title>
+        <taskbody>
+            <steps id="steps_rzq_s2r_vgb">
+                <step>
+                    <cmd>Select <uicontrol>Program Management</uicontrol> from the <i>Analytics</i>
+                        screen.</cmd>
+                </step>
+                <step>
+                    <cmd>Select the <uicontrol>Clarification Overview</uicontrol> tab.</cmd>
+                    <stepresult>The report displays data for last one calendar month based on the
+                        discharge date.</stepresult>
+                </step>
+                <step>
+                    <cmd>Select the time range from the <uicontrol>Discharge Date</uicontrol>
+                        filter.</cmd>
+                </step>
+                <step>
+                    <cmd>Analyze the <i>Enc Clarification Rate</i>, <i>Response Rate</i>, and
+                            <i>Agreement Rate by Facility</i> charts.</cmd>
+                    <stepresult>These charts help you to identify the following:<ul
+                            id="ul_jpk_bfr_vgb">
+                            <li>Facility with highest response and agreement rate</li>
+                            <li>Response and agreement rate for the <i>Medicare</i> cases. To view
+                                this, select <uicontrol>Medicare</uicontrol> from the
+                                    <uicontrol>Payer</uicontrol> filter.</li>
+                        </ul></stepresult>
+                </step>
+            </steps>
+        </taskbody>
+    </task>
+    <task id="task_fdh_4fr_vgb">
+        <title>What is the overall <i>Review Rate</i>? How does <i>Review Rate</i> look like for a
+            specific facility?  </title>
+        <taskbody>
+            <steps id="steps_p5j_pfr_vgb">
+                <step>
+                    <cmd>Select <uicontrol>Program Management</uicontrol> from the <i>Analytics</i>
+                        screen.</cmd>
+                </step>
+                <step>
+                    <cmd>Select the <uicontrol>Clarification Overview</uicontrol> tab.</cmd>
+                    <stepresult>The report displays data for last one calendar month based on the
+                        discharge date.</stepresult>
+                </step>
+                <step>
+                    <cmd>Select the time range from the <uicontrol>Discharge Date</uicontrol>
+                        filter.</cmd>
+                </step>
+                <step>
+                    <cmd>Analyze the <i>Review Rate</i> KPI card.</cmd>
+                    <stepresult>This card displays an overall review rate for all the facilities
+                        report that you have access.</stepresult>
+                </step>
+                <step>
+                    <cmd>Analyze the <i>Encounter</i> KPI card. </cmd>
+                    <stepresult>This card displays total discharges in the selected date
+                        range.</stepresult>
+                </step>
+                <step>
+                    <cmd>To identify the review rate for a specific facility, CDS or payer, select
+                        the facility, CDS or payer from the filter. </cmd>
+                </step>
+            </steps>
+        </taskbody>
+    </task>
+    <task id="task_dtv_ngr_vgb">
+        <title>What percentage of sent clarifications has potential for financial impact?</title>
+        <taskbody>
+            <steps id="steps_d2c_pgr_vgb">
+                <step>
+                    <cmd>Select <uicontrol>Program Management</uicontrol> from the <i>Analytics</i>
+                        screen.</cmd>
+                </step>
+                <step>
+                    <cmd>Select the <uicontrol>Clarification Overview</uicontrol> tab.</cmd>
+                    <stepresult>The report displays data for last one calendar month based on the
+                        discharge date.</stepresult>
+                </step>
+                <step>
+                    <cmd>Select the time range from the <uicontrol>Discharge Date</uicontrol>
+                        filter.</cmd>
+                </step>
+                <step>
+                    <cmd>Analyze the<i> Financial Impact and Other Impact Clarifications by Facility
+                        </i>chart.</cmd>
+                    <stepresult>This chart displays count of financially impacted and other impacted
+                        sent clarifications for each facility. This chart helps you to identify the
+                            following:<ul id="ul_bwz_zgr_vgb">
+                            <li>Which facility has the highest number of financially impacted
+                                clarification?</li>
+                            <li>What percentage of total sent clarifications for a facility has
+                                potential for financial impact?</li>
+                            <li>How many financially impacted clarifications are sent for
+                                    <i>Medicare</i> cases by each facility? To view this select
+                                    <i>Medicare</i> from the <uicontrol>Payer</uicontrol>
+                                filter.</li>
+                            <li>How many financially impacted clarifications are sent by a CDS. To
+                                view this select the name of the CDS from the
+                                    <uicontrol>CDS</uicontrol> filter.</li>
+                        </ul></stepresult>
+                </step>
+            </steps>
+        </taskbody>
+    </task>
+    <task id="task_hps_b3r_vgb">
+        <title>Which facility has the highest response and agreement rate?</title>
+        <taskbody>
+            <steps id="steps_q4c_23r_vgb">
+                <step>
+                    <cmd>Select <uicontrol>Program Management</uicontrol> from the <i>Analytics</i>
+                        screen.</cmd>
+                </step>
+                <step>
+                    <cmd>Select the <uicontrol>Clarification Overview</uicontrol> tab.</cmd>
+                    <stepresult>The report displays data for last one calendar month based on the
+                        discharge date.</stepresult>
+                </step>
+                <step>
+                    <cmd>Select the time range from the <uicontrol>Discharge Date</uicontrol>
+                        filter.</cmd>
+                </step>
+                <step>
+                    <cmd>Analyze the <i>Enc Clarification Rate</i>, <i>Response Rate</i>, and the
+                            <i>Agreement Rate by Facility</i> charts.</cmd>
+                    <stepresult>These charts help you to identify the facility that has the highest
+                        response and agreement rate.</stepresult>
+                </step>
+            </steps>
+        </taskbody>
+    </task>
+    <task id="task_b1m_s3r_vgb">
+        <title>What is the <i>Average Response TAT</i> for each facility?</title>
+        <taskbody>
+            <steps id="steps_tks_t3r_vgb">
+                <step>
+                    <cmd>Select <uicontrol>Program Management</uicontrol> from the <i>Analytics</i>
+                        screen.</cmd>
+                </step>
+                <step>
+                    <cmd>Select the <uicontrol>Clarification Overview</uicontrol> tab.</cmd>
+                    <stepresult>The report displays data for last one calendar month based on the
+                        discharge date.</stepresult>
+                </step>
+                <step>
+                    <cmd>Select the time range from the <uicontrol>Discharge Date</uicontrol>
+                        filter.</cmd>
+                </step>
+                <step>
+                    <cmd>Analyze the <i>Avg. Response TAT(Hrs) by Facility </i>chart.</cmd>
+                    <stepresult>This chart displays average response turnaround time for each
+                        facility. This chart also helps to identify the following:<ul
+                            id="ul_sv4_bjr_vgb">
+                            <li>Which facility has highest average response TAT?</li>
+                            <li>What is the average response TAT for <i>Medicare</i> cases for a
+                                facility? To view this select <i>Medicare</i> from the
+                                    <uicontrol>Payer</uicontrol> filter.</li>
+                            <li>What is the average response TAT for clarifications sent by a CDS?
+                                To view this select the name of the CDS from the
+                                    <uicontrol>CDS</uicontrol> filter.</li>
+                        </ul></stepresult>
+                </step>
+            </steps>
+        </taskbody>
+    </task>
+</task>

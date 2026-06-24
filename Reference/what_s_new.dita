@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="what_s_new">
+    <title>What's New (2.24.0 Release)</title>
+    <conbody>
+        <p>
+            <table frame="all" rowsep="1" colsep="1" id="table_n44_gzh_kcb">
+                <title>General Enhancements</title>
+                <tgroup cols="2" align="left">
+                    <colspec colname="c1" colnum="1" colwidth="1.28*"/>
+                    <colspec colname="c2" colnum="2" colwidth="1*"/>
+                    <thead>
+                        <row>
+                            <entry>Enhancements</entry>
+                            <entry>Reference</entry>
+                        </row>
+                    </thead>
+                    <tbody>
+                        <row>
+                            <entry><p><b>MS DRG Group Summary Dashboard Update</b></p>A new
+                                    <b>Total</b> column group is added to the <b>MS DRG Group
+                                    Summary</b> dashboard in the Peer Group Comparison report. It
+                                provides an aggregated view of CMI, encounters, and peer group
+                                comparison across the selected discharge date range, enabling users
+                                to evaluate overall performance.<p>Also added a footnote, <b>% of
+                                        Total</b></p></entry>
+                            <entry><xref href="../peer_group_comparision/ms_drg_group_summary.dita"
+                                /></entry>
+                        </row>
+                        <row>
+                            <entry>
+                                <p><b>Clarifications Detail dashboard Update</b>
+                                </p>
+                                <p>The following columns, KPI, and footnote have been added to the
+                                    Clarifications Detail dashboard:</p>
+                                <p>Columns:<ul id="ul_d4n_4w1_mjc">
+                                        <li><b>Escalated?</b></li>
+                                        <li><b>Escalation Type</b></li>
+                                    </ul></p>
+                                <p>KPI: <b>Escalated Clarifications</b></p>
+                                <p>Footnote: <b>Escalated Clarifications</b></p>
+                                <p>
+                                    <note id="note_y1n_qtg_njc">When a clarification is escalated
+                                        (Y), the entire row is highlighted in red font.</note>
+                                </p>
+                            </entry>
+                            <entry><xref href="../clarification_details.dita"/></entry>
+                        </row>
+                        <row>
+                            <entry><b>Quality Impact Overview Dashboard Update</b><p>Added Expected
+                                    Mortality Variance and Expected Readmission Variance fields to
+                                    the Quality Impact Overview dashboard.</p></entry>
+                            <entry><xref href="../quality_impact_overview.dita"/></entry>
+                        </row>
+                        <row>
+                            <entry><p>New Glossary Field: <b>S-DRG GMLOS</b></p>Added a new glossary
+                                field, <b>S-DRG GMLOS</b> in the <b>Encounter Details</b> category.
+                                The field displays the geometric mean length of stay associated with
+                                the Suggested DRG.</entry>
+                            <entry><xref href="../glossary.dita"/></entry>
+                        </row>
+                    </tbody>
+                </tgroup>
+            </table>
+        </p>
+    </conbody>
+</concept>

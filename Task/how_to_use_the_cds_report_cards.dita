@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="how_to_use_the_cds_report_cards">
+    <title>How to use the CDS Report Cards to find specific information?</title>
+    <shortdesc></shortdesc>
+    <taskbody>
+        <context/>
+    </taskbody>
+    <task id="task_utm_j3d_wgb">
+        <title>How is the overall performance of the CDS team in terms of Review activity? How is
+            the performance of a specific CDS in terms of review activity?</title>
+        <taskbody>
+            <steps id="steps_rvk_n3d_wgb">
+                <step>
+                    <cmd>Select <uicontrol>Staff Management</uicontrol> from the <i>Analytics</i>
+                        screen.</cmd>
+                </step>
+                <step>
+                    <cmd>Select the <uicontrol>CDS Report Cards</uicontrol> tab.</cmd>
+                    <stepresult>The report displays data for last one calendar month based on the
+                        discharge date.</stepresult>
+                </step>
+                <step>
+                    <cmd>Select the time range from the <uicontrol>Discharge Date</uicontrol>
+                        filter.</cmd>
+                </step>
+                <step>
+                    <cmd>Select the facility from the <uicontrol>Facility</uicontrol> filter.</cmd>
+                </step>
+                <step>
+                    <cmd>Analyze the <uicontrol>Review Rate</uicontrol>, <uicontrol>Encounters
+                            Reviewed</uicontrol>, <uicontrol>Enc with Clarifications</uicontrol>,
+                            <uicontrol>Avg. Initial Review TAT</uicontrol> KPI cards.</cmd>
+                    <stepresult>These KPI cards helps you analyze the overall review performance of
+                        the CDS team in the selected time period. <note>To analyze the data for a
+                            specific CDS, refer the <i>CDS Report Card</i> of that
+                        CDS.</note></stepresult>
+                </step>
+            </steps>
+        </taskbody>
+    </task>
+    <task id="task_jgp_pjd_wgb">
+        <title>How is the overall performance of the CDS team in terms of Clarification activity?
+            How is the performance of a specific CDS in terms of Clarification activity?</title>
+        <taskbody>
+            <steps>
+                <step>
+                    <cmd>Select <uicontrol>Staff Management</uicontrol> from the <i>Analytics</i>
+                        screen.</cmd>
+                </step>
+                <step>
+                    <cmd>Select the <uicontrol>CDS Report Cards</uicontrol> tab.</cmd>
+                    <stepresult>The report displays data for last one calendar month based on the
+                        discharge date.</stepresult>
+                </step>
+                <step>
+                    <cmd>Select the time range from the <uicontrol>Discharge Date</uicontrol>
+                        filter.</cmd>
+                </step>
+                <step>
+                    <cmd>Analyze the <uicontrol>Enc with Clarification</uicontrol>,
+                            <uicontrol>Clarifications Sent</uicontrol>, <uicontrol>Enc Clarification
+                            Rate</uicontrol>, <uicontrol>Clarification Rate</uicontrol>,
+                            <uicontrol>Response Rate</uicontrol>, and<uicontrol> Agreement
+                            Rate</uicontrol> KPI cards.</cmd>
+                    <stepresult>These KPI cards helps you analyze the overall clarification
+                        performance of the CDS team in the selected time period. <note>To analyze
+                            the data for a specific CDS, refer the <i>CDS Report Card</i> of that
+                            CDS.</note></stepresult>
+                </step>
+            </steps>
+        </taskbody>
+        <task id="task_nzg_ckd_wgb">
+            <title>Who are my top three CDS performers in terms of Review Rate? Which CDS has the
+                highest Enc Clarification Rate?</title>
+            <taskbody>
+                <steps id="steps_x1x_hld_wgb">
+                    <step>
+                        <cmd>Select <uicontrol>Staff Management</uicontrol> from the
+                                <i>Analytics</i> screen.</cmd>
+                    </step>
+                    <step>
+                        <cmd>Select the <uicontrol>CDS Report Cards</uicontrol> tab.</cmd>
+                        <stepresult>The report displays data for last one calendar month based on
+                            the discharge date.</stepresult>
+                    </step>
+                    <step>
+                        <cmd>Select the time range from the <uicontrol>Discharge Date</uicontrol>
+                            filter.</cmd>
+                    </step>
+                    <step>
+                        <cmd>Analyze the Report cards of the CDSs to identify the CDS with highest
+                            review rate.</cmd>
+                    </step>
+                    <step>
+                        <cmd>Analyze the <uicontrol>Enc Clarification Rate</uicontrol> metric in the
+                            report card for each CDS to identify the CDS with highest encounter
+                            clarification rate.</cmd>
+                    </step>
+                </steps>
+            </taskbody>
+        </task>
+    </task>
+</task>

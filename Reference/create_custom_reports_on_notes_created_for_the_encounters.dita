@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="create_custom_reports_on_notes_created_for_the_encounters">
+    <title>Create custom reports on Notes</title>
+    <shortdesc>User has the ability to create custom reports on <b>Notes</b> created for the
+        encounter.</shortdesc>
+    <refbody>
+        <section id="section_yhh_yjx_xmb">
+            <title>Fields available for Custom reporting for Notes</title>
+            <p>The fields mentioned below are available for custom reporting and get displayed under
+                the <uicontrol>Encounter Note</uicontrol> category in the
+                    <uicontrol>Fields</uicontrol> panel.</p>
+            <p>
+                <ul id="ul_k5v_dkx_xmb">
+                    <li>Note Subject</li>
+                    <li>Note Status </li>
+                    <li>Note Date </li>
+                    <li>Note Owner</li>
+                    <li>Note Message </li>
+                    <li> Note Type </li>
+                </ul>
+            </p>
+        </section>
+        <section id="section_zkh_2mx_xmb">
+            <title>Features of custom reports on Notes</title>
+            <p>
+                <ul id="ul_ojm_wmx_xmb">
+                    <li>In order to create report, you can select the required fields from the
+                            <uicontrol>Encounter Note</uicontrol> category.</li>
+                    <li> An encounter can have multiple notes and each note can have multiple
+                        conversations. Each conversation will be displayed as a separate row in the
+                        custom report. </li>
+                </ul>
+            </p>
+        </section>
+    </refbody>
+</reference>

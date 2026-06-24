@@ -1,0 +1,1097 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="reconciliation_details">
+    <title>Reconciliation Details</title>
+    <shortdesc></shortdesc>
+    <conbody>
+        <p><b>Overview</b>: Reconciliation Details report enables the CDI Manager to analyze the
+            details around the reconciled encounters and identify gaps in the reconciliation
+            process.</p>
+        <p>The report provides answers to the following questions.<ul id="ul_jpk_2vg_l4b">
+                <li>Which CDSs are not following the reconciliation best practices?</li>
+                <li>Which CDS could benefit from additional education on the Reconciliation
+                    process?</li>
+                <li>How do we find the gaps in the reconciliation process?</li>
+                <li>Which cases were incorrectly reconciled? </li>
+                <li>What is the reimbursement impact the CDS had on a case?</li>
+            </ul></p>
+        <p><b>Navigation</b>: On the Analytics home page left side panel, navigate to <menucascade>
+                <uicontrol>CDE One</uicontrol>
+                <uicontrol>Executive Summary</uicontrol>
+                <uicontrol>Reconciliation Details</uicontrol>
+            </menucascade>. </p>
+        <p>Reconciliation Details displays the following:<ul id="ul_nlv_1ym_l4b">
+                <li>KPI Cards: Total Reconciled, #Cases with Financial Impact, Exceptions, and
+                    Overall Reimbursement Impact </li>
+                <li>Encounter Details Tabular Chart</li>
+            </ul></p>
+        <p>On the top panel, you can select desired values for the slicers (refer <xref
+                href="#reconciliation_details/table_qnn_w2n_g4b" format="dita"/>) and the
+            corresponding data gets generated in the tabular chart.</p>
+        <p>For filters on all pages, refer <xref href="#reconciliation_details/table_dq1_ffn_g4b"
+                format="dita"/>.</p>
+        <p>For information about footnotes, refer <xref
+                href="#reconciliation_details/table_pmd_wtg_l4b" format="dita"/>.</p>
+        <p><b>Reconciliation Details</b><fig id="fig_atn_dvm_r4b">
+                <title>Sample Report</title>
+                <image href="Images/Reconciliation%20Details.gif" id="image_xyt_2vm_r4b" width="800"
+                />
+            </fig></p>
+        <p><b>Reconciliation Details - KPI Cards</b></p>
+        <fig id="fig_umn_gvm_r4b">
+            <title>KPI Cards</title>
+            <image href="Images/Reconciliation%20Details%20KPI%20cards.gif" id="image_fsd_hvm_r4b"
+                width="400"/>
+        </fig>
+        <p>
+            <table frame="all" rowsep="1" colsep="1" id="table_ggx_nlg_l4b">
+                <title>KPI Cards details</title>
+                <tgroup cols="2">
+                    <colspec colname="c1" colnum="1" colwidth="1*"/>
+                    <colspec colname="c2" colnum="2" colwidth="1*"/>
+                    <thead>
+                        <row>
+                            <entry>KPI Card</entry>
+                            <entry>Definition</entry>
+                        </row>
+                    </thead>
+                    <tbody>
+                        <row>
+                            <entry>Total Reconciled</entry>
+                            <entry>
+                                <p>The count of encounters with Reconciled Impact, Reconciled No
+                                    Impact, or Auto Reconciled status.</p>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>#Cases with Financial Impact</entry>
+                            <entry><b>Number of Cases with Financial Impact =</b> The total count of
+                                Reconciled-Impact (Impact Type: Financial, Both, Unassigned Impact)
+                                encounters with F-DRG WT > R-DRG WT (Or F-DRG WT – R-DRG WT > 0) and
+                                F-DRG WT &lt; R-DRG WT (Or F-DRG WT – R-DRG WT &lt; 0).
+                                    <note>Reconciled-Impact (Impact Type: Financial, Both,
+                                    Unassigned Impact) encounters without a shift in the WT (F-DRG
+                                    WT – R-DRG WT = 0 or F-DRG = R-DRG WT) are not considered in the
+                                    numerator.</note></entry>
+                        </row>
+                        <row>
+                            <entry>Exceptions</entry>
+                            <entry>
+                                <p>The count of incorrectly Reconciled cases. </p>
+                                <p>Exceptions = Reconciled Impact (Impact Type: Financial, Both,
+                                    Unassigned Impact for Discharge Date &lt; 11/14/2019) cases with
+                                    no shift in the WT (F-DRG WT = R-DRG WT (Or F-DRG WT = W-DRG WT
+                                    when Reconciliation Assessment DRG info is not available)) are
+                                    highlighted.</p>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>Overall Reimbursement Impact</entry>
+                            <entry>
+                                <p>Reimbursement Impact = (CMI After CDI - CMI Before CDI) X Blended
+                                    Rate. E.g. $5,234,786</p>
+                            </entry>
+                        </row>
+                    </tbody>
+                </tgroup>
+            </table>
+        </p>
+        <p><b>Reconciliation Details - Encounter Details Tabular Chart</b></p>
+        <fig id="fig_x3n_kvm_r4b">
+            <title>Encounter Details Tabular Chart</title>
+            <image href="Images/Reconciliation%20Details%20Encounter%20details.gif"
+                id="image_z4b_lvm_r4b" width="600"/>
+        </fig>
+        <p><b>Info Icon</b>(Text on hover): Encounter Status: Reconciled-Impact, Reconciled-No
+            Impact, Auto-Reconciled</p>
+        <p>
+            <table frame="all" rowsep="1" colsep="1" id="table_sfd_ylg_l4b">
+                <title><b>Chart: Encounter Details</b></title>
+                <tgroup cols="5">
+                    <colspec colname="c1" colnum="1" colwidth="1.15*"/>
+                    <colspec colname="c2" colnum="2" colwidth="1.81*"/>
+                    <colspec colname="newCol3" colnum="3" colwidth="1.18*"/>
+                    <colspec colname="newCol4" colnum="4" colwidth="1.1*"/>
+                    <colspec colname="newCol5" colnum="5" colwidth="1*"/>
+                    <thead>
+                        <row>
+                            <entry>column</entry>
+                            <entry>Description</entry>
+                            <entry>Formula/Calculation</entry>
+                            <entry>Exclusion Criteria (if any)</entry>
+                            <entry>Tooltip</entry>
+                        </row>
+                    </thead>
+                    <tbody>
+                        <row>
+                            <entry>Facility</entry>
+                            <entry>The facility assigned to the encounter in the format Facility
+                                Description (Facility ID).<p><b>Example</b>: Good Health Hospital
+                                    (GHH)</p></entry>
+                            <entry/>
+                            <entry/>
+                            <entry/>
+                        </row>
+                        <row>
+                            <entry>Account No.</entry>
+                            <entry>The Account Number assigned to the encounter.<p><b>Example</b>:
+                                    ACC2021001</p></entry>
+                            <entry/>
+                            <entry/>
+                            <entry/>
+                        </row>
+                        <row>
+                            <entry>MRN</entry>
+                            <entry>The MRN assigned to the encounter.<p><b>Example</b>:
+                                    MRN2021001</p></entry>
+                            <entry/>
+                            <entry/>
+                            <entry/>
+                        </row>
+                        <row>
+                            <entry>Patient Name</entry>
+                            <entry>The name of the patient associated with the encounter.
+                                        <p><b>Example</b>: Last Name, First Name</p></entry>
+                            <entry/>
+                            <entry/>
+                            <entry/>
+                        </row>
+                        <row>
+                            <entry>Admit Date</entry>
+                            <entry>
+                                <p>The Admission Date and Time assigned to the encounter in the
+                                    facility's timezone.</p>
+                                <p><b>Example</b>: 08/08/2019 12:00:00 AM MST</p>
+                            </entry>
+                            <entry/>
+                            <entry/>
+                            <entry/>
+                        </row>
+                        <row>
+                            <entry>Discharge Date</entry>
+                            <entry>
+                                <p>The Discharge Date and Time assigned to the encounter in the
+                                    facility's timezone.</p>
+                                <p>This column is blank for the encounters that do not have a
+                                    discharge date assigned.</p>
+                                <p><b>Example</b>: 08/08/2019 12:00:00 AM MST</p>
+                            </entry>
+                            <entry/>
+                            <entry/>
+                            <entry/>
+                        </row>
+                        <row>
+                            <entry>LOS</entry>
+                            <entry>The length of stay in days for each encounter. <note>LOS value is
+                                    displayed in blue font, when LOS is greater than GMLOS for the
+                                    encounter. </note></entry>
+                            <entry>
+                                <p>LOS = Discharge Date/Time – Admit Date/Time</p>
+                                <p>OR </p>
+                                <p>LOS = Last Data Refresh Date/Time – Admit Date/Time </p>
+                            </entry>
+                            <entry/>
+                            <entry/>
+                        </row>
+                        <row>
+                            <entry>Assigned CDS</entry>
+                            <entry>
+                                <p>The CDS assigned to the encounter in the format Last Name, First
+                                    Name MI (CDS ID).</p>
+                                <p><b>Example</b>: Ryan, Melissa (rmelissa)</p>
+                            </entry>
+                            <entry/>
+                            <entry/>
+                            <entry/>
+                        </row>
+                        <row>
+                            <entry>Initial Review Date</entry>
+                            <entry>
+                                <p>The date and time when the initial review was performed on the
+                                    encounter.</p>
+                                <p> The date is displayed in the Facility's time-zone.</p>
+                                <p><b>Example</b>: 05/24/2020 10:10:00 AM ET</p>
+                                <p>
+                                    <note>If the Initial Review Date/time is after the Discharge
+                                        Date/Time, Initial Review Date/Time is displayed in the red
+                                        font.</note>
+                                </p>
+                            </entry>
+                            <entry/>
+                            <entry/>
+                            <entry/>
+                        </row>
+                        <row>
+                            <entry>Initial Review CDS</entry>
+                            <entry>
+                                <p>The name of the CDS who performed the initial review in the
+                                    format Last Name, First Name MI (CDS ID).</p>
+                                <p><b>Example</b>: Ryan, Melissa (rmelissa)</p>
+                            </entry>
+                            <entry/>
+                            <entry/>
+                            <entry/>
+                        </row>
+                        <row>
+                            <entry>Tracking Codes</entry>
+                            <entry>
+                                <p>The Tracking Codes assigned to the encounter in comma separated
+                                    format. You can view a maximum of 10 tracking codes for an
+                                    encounter.</p>
+                                <p><b>Example</b>: Quality Review, Prov Education</p>
+                            </entry>
+                            <entry/>
+                            <entry/>
+                            <entry/>
+                        </row>
+                        <row>
+                            <entry>Rank at Initial Review</entry>
+                            <entry>
+                                <p>The rank assigned to the encounter prior to the Initial Review. </p>
+                                <p>This column is blank for the encounters that do not have a ‘Rank
+                                    at Initial Review' assigned.</p>
+                                <p><b>Example</b>: 1, 2, etc. </p>
+                            </entry>
+                            <entry/>
+                            <entry/>
+                            <entry/>
+                        </row>
+                        <row>
+                            <entry>Review Complete TAT (Hours)</entry>
+                            <entry>Displays the number of hours when the encounter status is set as
+                                Review Complete Date/Time and when the working review was first
+                                created for the selected time period. The date must be in the
+                                Facility's time-zone.<p><b>Example</b>: 05/24/2020 10:10:00 AM
+                                    ET.</p></entry>
+                            <entry>Review TAT (Hours) for each encounter = Review Complete
+                                (Date/Time stamp) – Initial Review (Date/Time stamp)</entry>
+                            <entry/>
+                            <entry/>
+                        </row>
+                        <row>
+                            <entry>Financial Impact Clarifications</entry>
+                            <entry>
+                                <p>The count of Financial Impact clarifications with the status
+                                    other than DELETED or RETRACTED sent for the encounter.</p>
+                                <p><b>Example</b>: 2 </p>
+                                <p>Note:</p>
+                                <p>Clarification with a standard or custom ‘Primary Type at
+                                    Reconciliation’ defined as ‘Financial’ in the admin
+                                    configuration is a Financial Impact Clarification.</p>
+                                <p>Clarifications with Status 'DELETED' or 'RETRACTED' are excluded
+                                    from the count.</p>
+                                <p>Clarifications for "Review Not Needed" encounter status are not
+                                    considered for this metric calculation.</p>
+                            </entry>
+                            <entry/>
+                            <entry/>
+                            <entry/>
+                        </row>
+                        <row>
+                            <entry>Financial Impact Clarifications with response Agreed, Alternative
+                                Diagnosis, Other Explanation</entry>
+                            <entry>
+                                <p>The count of sent Financial Impact clarifications with Final
+                                    response as Agreed, Alternative Diagnosis, and Other
+                                    Explanation.</p>
+                                <p><b>Example</b>: 2 </p>
+                                <p>Note:</p>
+                                <p>Clarification with a standard or custom ‘Primary Type at
+                                    Reconciliation’ defined as ‘Financial’ in the admin
+                                    configuration is a Financial Impact Clarification.</p>
+                                <p>Clarifications with Status 'DELETED' or 'RETRACTED' are excluded
+                                    from the count.</p>
+                                <p>Clarifications for "Review Not Needed" encounter status are not
+                                    considered for this metric calculation.</p>
+                                <p>Clarifications that do not have a FINAL response are not
+                                    considered in this calculation.</p>
+                            </entry>
+                            <entry/>
+                            <entry/>
+                            <entry/>
+                        </row>
+                        <row>
+                            <entry>W-DRG</entry>
+                            <entry>
+                                <p>The 'primary' Working DRG along with the description displayed on
+                                    the Review page.</p>
+                                <p><b>Example</b>: 872 - SEPTICEMIA OR SEVERE SEPSIS WITHOUT MV >96
+                                    HOURS WITHOUT MAJOR COMPLICATION OR COMORBIDITY (MCC) </p>
+                            </entry>
+                            <entry/>
+                            <entry/>
+                            <entry/>
+                        </row>
+                        <row>
+                            <entry>W-DRG WT</entry>
+                            <entry>
+                                <p>The WT associated with the 'primary' Working DRG displayed on the
+                                    Review page.</p>
+                                <p><b>Example</b>: 1.0393</p>
+                            </entry>
+                            <entry/>
+                            <entry/>
+                            <entry/>
+                        </row>
+                        <row>
+                            <entry>W-SOI</entry>
+                            <entry>
+                                <p>The 'SOI' from the working review. </p>
+                                <p><b>Example</b>: 2</p>
+                                <p>
+                                    <note>If the SOI associated with the primary working DRG is not
+                                        available, then the SOI associated with the advanced working
+                                        DRG is displayed.</note>
+                                </p>
+                            </entry>
+                            <entry/>
+                            <entry/>
+                            <entry/>
+                        </row>
+                        <row>
+                            <entry>W-ROM</entry>
+                            <entry>
+                                <p>The 'ROM' from the working review. </p>
+                                <p><b>Example</b>: 3</p>
+                                <p>
+                                    <note>If the ROM associated with the primary working DRG is not
+                                        available, then the ROM associated with the advanced working
+                                        DRG is displayed.</note>
+                                </p>
+                            </entry>
+                            <entry/>
+                            <entry/>
+                            <entry/>
+                        </row>
+                        <row>
+                            <entry>W-AMLOS</entry>
+                            <entry>
+                                <p>The 'AMLOS' from the working review. </p>
+                                <p><b>Example</b>: 3.1</p>
+                                <p>
+                                    <note>If the AMLOS associated with the primary working DRG is
+                                        not available, then the AMLOS associated with the advanced
+                                        working DRG is displayed.</note>
+                                </p>
+                            </entry>
+                            <entry/>
+                            <entry/>
+                            <entry/>
+                        </row>
+                        <row>
+                            <entry>W-GMLOS</entry>
+                            <entry>
+                                <p>The 'GMLOS ' from the working review. </p>
+                                <p><b>Example</b>: 3.2</p>
+                                <p>
+                                    <note>If the GMLOS associated with the primary working DRG is
+                                        not available, then the GMLOS associated with the advanced
+                                        working DRG is displayed.</note>
+                                </p>
+                            </entry>
+                            <entry/>
+                            <entry/>
+                            <entry/>
+                        </row>
+                        <row>
+                            <entry>P-DRG</entry>
+                            <entry>
+                                <p>The 'primary' Possible DRG along with the description displayed
+                                    on the Review page.</p>
+                                <p><b>Example</b>: 872 - SEPTICEMIA OR SEVERE SEPSIS WITHOUT MV >96
+                                    HOURS WITHOUT MAJOR COMPLICATION OR COMORBIDITY (MCC)</p>
+                                <p>
+                                    <note>This column displays the ‘Working DRG’ value in the orange
+                                        font for the encounters that have a ‘Working DRG’ assigned
+                                        if the ‘Possible DRG’ is blank or null.</note>
+                                </p>
+                            </entry>
+                            <entry/>
+                            <entry/>
+                            <entry/>
+                        </row>
+                        <row>
+                            <entry>P-DRG WT</entry>
+                            <entry>
+                                <p>The WT associated with the 'primary' Possible DRG displayed on
+                                    the Review page.</p>
+                                <p><b>Example</b>: 1.0393</p>
+                                <p>
+                                    <note>This column displays the ‘Working DRG WT’ value in the
+                                        orange font for the encounters that have a ‘Working DRG’
+                                        assigned if the ‘Possible DRG’ is blank or null.</note>
+                                </p>
+                            </entry>
+                            <entry/>
+                            <entry/>
+                            <entry/>
+                        </row>
+                        <row>
+                            <entry>R-DRG</entry>
+                            <entry>
+                                <p>The code and description of the Reconciliation Assessment DRG
+                                    along with the description displayed on the Reconciliation
+                                    page.</p>
+                                <p><b>Example</b>: 872 - SEPTICEMIA OR SEVERE SEPSIS WITHOUT MV >96
+                                    HOURS WITHOUT MAJOR COMPLICATION OR COMORBIDITY (MCC)</p>
+                            </entry>
+                            <entry/>
+                            <entry/>
+                            <entry/>
+                        </row>
+                        <row>
+                            <entry>R-DRG WT</entry>
+                            <entry>
+                                <p>The WT associated with the Reconciliation Assessment DRG
+                                    displayed on the Reconciliation page.</p>
+                                <p><b>Example</b>: 1.0393</p>
+                            </entry>
+                            <entry/>
+                            <entry/>
+                            <entry/>
+                        </row>
+                        <row>
+                            <entry>R-SOI</entry>
+                            <entry>
+                                <p>The 'SOI' from the Reconciliation Assessment.</p>
+                                <p><b>Example</b>: 1</p>
+                                <p>
+                                    <note>If the SOI associated with the primary Reconciliation
+                                        Assessment DRG is not available, then the SOI associated
+                                        with the advanced Reconciliation Assessment DRG is
+                                        displayed.</note>
+                                </p>
+                                <p>This column is blank for the encounters that do not have a
+                                    ‘Initial Review Date/Time'</p>
+                            </entry>
+                            <entry/>
+                            <entry/>
+                            <entry/>
+                        </row>
+                        <row>
+                            <entry>R-ROM</entry>
+                            <entry>
+                                <p>The 'ROM' from the Reconciliation Assessment.</p>
+                                <p><b>Example</b>: 1</p>
+                                <p>
+                                    <note>If the ROM associated with the primary Reconciliation
+                                        Assessment DRG is not available, then the ROM associated
+                                        with the advanced Reconciliation Assessment DRG is
+                                        displayed.</note>
+                                </p>
+                                <p>This column is blank for the encounters that do not have a
+                                    ‘Initial Review Date/Time'</p>
+                            </entry>
+                            <entry/>
+                            <entry/>
+                            <entry/>
+                        </row>
+                        <row>
+                            <entry>R-AMLOS</entry>
+                            <entry>
+                                <p>The 'AMLOS' from the Reconciliation Assessment.</p>
+                                <p><b>Example</b>: 3.1</p>
+                                <p>
+                                    <note>If the AMLOS associated with the primary Reconciliation
+                                        Assessment DRG is not available, then the AMLOS associated
+                                        with the advanced Reconciliation Assessment DRG is
+                                        displayed.</note>
+                                </p>
+                                <p>This column is blank for the encounters that do not have a
+                                    ‘Initial Review Date/Time'</p>
+                            </entry>
+                            <entry/>
+                            <entry/>
+                            <entry/>
+                        </row>
+                        <row>
+                            <entry>R-GMLOS</entry>
+                            <entry>
+                                <p>The 'GMLOS' from the Reconciliation Assessment.</p>
+                                <p><b>Example</b>: 2.4</p>
+                                <p>
+                                    <note>If the GMLOS associated with the primary Reconciliation
+                                        Assessment DRG is not available, then the GMLOS associated
+                                        with the advanced Reconciliation Assessment DRG is
+                                        displayed.</note>
+                                </p>
+                                <p>This column is blank for the encounters that do not have a
+                                    ‘Initial Review Date/Time'</p>
+                            </entry>
+                            <entry/>
+                            <entry/>
+                            <entry/>
+                        </row>
+                        <row>
+                            <entry>F-DRG</entry>
+                            <entry>
+                                <p>The code and description of the Final Coded DRG along with the
+                                    description displayed on the Reconciliation page.</p>
+                                <p><b>Example</b>: 872 - SEPTICEMIA OR SEVERE SEPSIS WITHOUT MV >96
+                                    HOURS WITHOUT MAJOR COMPLICATION OR COMORBIDITY (MCC)</p>
+                                <p>Note:</p>
+                                <p>This column is blank for the encounters that do not have a
+                                    ‘Initial Review Date/Time'</p>
+                            </entry>
+                            <entry/>
+                            <entry/>
+                            <entry/>
+                        </row>
+                        <row>
+                            <entry>DRG Type</entry>
+                            <entry>Displays the type (Medical, Surgical, Unknown) associated with
+                                the Final MS-DRG Code.<p>Values<ul id="ul_vl3_2h5_kqb">
+                                        <li>S - Surgical</li>
+                                        <li>M - Medical</li>
+                                        <li> U - Unknown</li>
+                                    </ul></p></entry>
+                            <entry/>
+                            <entry/>
+                            <entry/>
+                        </row>
+                        <row>
+                            <entry>F-DRG WT</entry>
+                            <entry>
+                                <p>The WT associated with the Final Coded DRG displayed on the
+                                    Reconciliation page.</p>
+                                <p><b>Example</b>: 1.0393</p>
+                                <p>
+                                    <note>This column is blank for the encounters that do not have a
+                                        ‘Initial Review Date/Time</note>
+                                </p>
+                            </entry>
+                            <entry/>
+                            <entry/>
+                            <entry/>
+                        </row>
+                        <row>
+                            <entry>F-SOI</entry>
+                            <entry>
+                                <p>The Final Coded 'SOI'.</p>
+                                <p><b>Example</b>: 2</p>
+                                <p>This column is blank for the encounters that do not have a
+                                    ‘Initial Review Date/Time'</p>
+                                <p>Advanced SOI Values are used if Primary SOI values are blank</p>
+                            </entry>
+                            <entry/>
+                            <entry/>
+                            <entry/>
+                        </row>
+                        <row>
+                            <entry>F-ROM</entry>
+                            <entry>
+                                <p>The Final Coded 'ROM'.</p>
+                                <p><b>Example</b>: 3</p>
+                                <p><b>Note:</b></p>
+                                <p>This column is blank for the encounters that do not have a
+                                    ‘Initial Review Date/Time'</p>
+                                <p>Advanced ROM Values are used if Primary ROM values are blank</p>
+                            </entry>
+                            <entry/>
+                            <entry/>
+                            <entry/>
+                        </row>
+                        <row>
+                            <entry>F-AMLOS</entry>
+                            <entry>
+                                <p>The Final Coded 'AMLOS'.</p>
+                                <p><b>Example</b>: 3.1</p>
+                                <p><b>Note:</b></p>
+                                <p>This column is blank for the encounters that do not have a
+                                    ‘Initial Review Date/Time'</p>
+                                <p>Advanced AMLOS Values are used if Primary AMLOS values are
+                                    blank</p>
+                            </entry>
+                            <entry/>
+                            <entry/>
+                            <entry/>
+                        </row>
+                        <row>
+                            <entry>F-GMLOS</entry>
+                            <entry>
+                                <p>The Final Coded 'GMLOS'.</p>
+                                <p><b>Example</b>: 3.2</p>
+                                <p><b>Note:</b></p>
+                                <p>This column is blank for the encounters that do not have a
+                                    ‘Initial Review Date/Time'</p>
+                                <p>Advanced GMLOS Values are used if Primary GMLOS values are
+                                    blank</p>
+                            </entry>
+                            <entry/>
+                            <entry/>
+                            <entry/>
+                        </row>
+                        <row>
+                            <entry>Variance</entry>
+                            <entry>
+                                <p>The shift in the WT at the encounter level.</p>
+                                <p><b>Example</b>: 1.0178</p>
+                                <p>Encounter Variance = Final Coded DRG WT - Reconciliation
+                                    Assessment DRG WT (or Variance = Final Coded DRG WT - Working
+                                    DRG WT when Discharge Date &lt; 11/14/19 or Reconciliation
+                                    Assessment DRG is blank)</p>
+                                <p>Note:</p>
+                                <p>Encounter Variance can be negative, positive, or zero. </p>
+                                <p><b>Negative ‘Variance’ is displayed in the red font E.g. -
+                                        1.0178.</b></p>
+                                <p>Encounter Variance is not calculated for the encounters that do
+                                    not have an initial review date. </p>
+                                <p>Review Not Needed Encounters are not considered. </p>
+                                <p>Rounded to 4 decimal places. </p>
+                            </entry>
+                            <entry/>
+                            <entry/>
+                            <entry/>
+                        </row>
+                        <row>
+                            <entry>Blended Rate</entry>
+                            <entry>
+                                <p>The Blended Rate associated with the payer/Grouper assigned to
+                                    the encounter.</p>
+                                <p><b>Example</b>: 7512</p>
+                                <p>When the Blended Rate is not available, the Operating Federal
+                                    rate is displayed.</p>
+                            </entry>
+                            <entry/>
+                            <entry/>
+                            <entry/>
+                        </row>
+                        <row>
+                            <entry>Reimbursement Impact</entry>
+                            <entry>
+                                <p>The ‘Reimbursement Impact’ value for the encounter. </p>
+                                <p><b>Example</b>: $ 5,234</p>
+                                <p>'Reimbursement Impact' for an encounter is calculated using the
+                                    below formula:</p>
+                                <ul id="ul_bvl_mqg_l4b">
+                                    <li>Encounter Reimbursement Impact = Encounter Variance x
+                                        Blended Rate</li>
+                                    <li>Rounded to 0 decimal places. </li>
+                                    <li><b>Negative ‘Reimbursement Impact ($)’ is displayed in the
+                                            red font.</b></li>
+                                </ul>
+                            </entry>
+                            <entry/>
+                            <entry/>
+                            <entry/>
+                        </row>
+                        <row>
+                            <entry>Impact Type</entry>
+                            <entry>
+                                <p>The Impact Type assigned to the encounter</p>
+                                <ul id="ul_ygm_qqg_l4b">
+                                    <li>Financial Impact</li>
+                                    <li>SOI/ROM Impact</li>
+                                    <li>No Impact</li>
+                                    <li>Both Impact</li>
+                                    <li>Unassigned Impact</li>
+                                </ul>
+                            </entry>
+                            <entry/>
+                            <entry/>
+                            <entry/>
+                        </row>
+                        <row>
+                            <entry>Encounter Status</entry>
+                            <entry>
+                                <p>The Encounter Status assigned to the encounter.</p>
+                                <p><b>Example</b>: Reconciled Impact, Auto-Reconciled</p>
+                            </entry>
+                            <entry/>
+                            <entry/>
+                            <entry/>
+                        </row>
+                        <row>
+                            <entry>Payer</entry>
+                            <entry>The Payer assigned to the encounter in the format Payer
+                                Description (Payer ID).<p><b>Example</b>: Medicare (MEDC)
+                                </p></entry>
+                            <entry/>
+                            <entry/>
+                            <entry/>
+                        </row>
+                        <row>
+                            <entry>Grouper</entry>
+                            <entry>The Grouper version associated with the payer assigned to the
+                                        encounter.<p><b>Example</b>: CMS 38.0 </p></entry>
+                            <entry/>
+                            <entry/>
+                            <entry/>
+                        </row>
+                        <row>
+                            <entry>Unit</entry>
+                            <entry>The Unit assigned to the encounter.<p><b>Example</b>: ICU
+                                </p></entry>
+                            <entry/>
+                            <entry/>
+                            <entry/>
+                        </row>
+                        <row>
+                            <entry>Patient Type</entry>
+                            <entry>The Patient Type assigned to the encounter.<p><b>Example</b>:
+                                    Inpatient </p></entry>
+                            <entry/>
+                            <entry/>
+                            <entry/>
+                        </row>
+                        <row>
+                            <entry>Visit Type</entry>
+                            <entry>
+                                <p>The Visit Type assigned to the encounter.</p>
+                                <p><b>Format</b>: <i>Discharge Status ID- Description</i></p>
+                                <p><b>Example</b>: Inpatient (I)</p>
+                            </entry>
+                            <entry/>
+                            <entry/>
+                            <entry/>
+                        </row>
+                        <row>
+                            <entry>Discharge Status</entry>
+                            <entry>The Display Status assigned to the encounter.<p><b>Format</b>:
+                                        <i>Discharge Status ID-
+                                    Description</i></p><p><b>Example</b>: 01- 01 Self
+                                Care</p></entry>
+                            <entry/>
+                            <entry/>
+                            <entry/>
+                        </row>
+                    </tbody>
+                </tgroup>
+            </table>
+        </p>
+        <p>
+            <table frame="all" rowsep="1" colsep="1" id="table_qnn_w2n_g4b">
+                <title>Report Slicers </title>
+                <tgroup cols="2">
+                    <colspec colname="c1" colnum="1" colwidth="1*"/>
+                    <colspec colname="c2" colnum="2" colwidth="1*"/>
+                    <thead>
+                        <row>
+                            <entry>Slicer</entry>
+                            <entry>Description</entry>
+                        </row>
+                    </thead>
+                    <tbody>
+                        <row>
+                            <entry>Discharge Date</entry>
+                            <entry>
+                                <ul id="ul_uzh_y2n_g4b">
+                                    <li>Display the discharge date range. </li>
+                                    <li>You can select date from the lookup provided.</li>
+                                    <li> Example: 7/1/2020 - 7/31/2020</li>
+                                    <li><b>Default</b>: Last 3 calendar months date range selected
+                                        by default.</li>
+                                </ul>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>Reset</entry>
+                            <entry>
+                                <ul id="ul_g5p_ctl_kqb">
+                                    <li>With the Reset button, you can reset the discharge date
+                                        range.</li>
+                                    <li><b>Tooltip</b>: Use "Ctrl + Click" to reset the Discharge
+                                        Date.</li>
+                                </ul>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>Facility</entry>
+                            <entry>
+                                <ul id="ul_vzp_z2n_g4b">
+                                    <li>Displays both active and inactive facilities in alphabetical
+                                        order that you have access to.</li>
+                                    <li>You can select multiple facilities.</li>
+                                    <li>You can search the facility by Facility ID or
+                                        Description.</li>
+                                    <li><b>Format</b>: Facility Description (Facility ID)</li>
+                                    <li><b>Default</b>: ALL</li>
+                                </ul>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>Payer</entry>
+                            <entry>
+                                <ul id="ul_ntb_cfn_g4b">
+                                    <li>Displays both active and inactive payers in alphabetical
+                                        order associated with the facilities you have access
+                                        to.</li>
+                                    <li>You can select multiple payers.</li>
+                                    <li>"Unassigned Payer" displays data for the encounters that do
+                                        not have a payer assigned.</li>
+                                    <li>You can search the Payer by Payer ID or Description.</li>
+                                    <li><b>Format</b>: Payer Description (Payer ID)</li>
+                                    <li><b>Default</b>: ALL</li>
+                                </ul>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>Reimbursement Impact</entry>
+                            <entry>
+                                <ul id="ul_mch_t1b_jqb">
+                                    <li>Displays the following values:<ul id="ul_nch_t1b_jqb">
+                                            <li>Positive Impact</li>
+                                            <li>Negative Impact</li>
+                                            <li>No Impact </li>
+                                        </ul></li>
+                                </ul>
+                                <p>By default, all values should be selected.</p>
+                                <p>Positive Impact: Allows you to filter the list of encounters that
+                                    have a positive reimbursement impact. </p>
+                                <p>Negative Impact: Allows you to filter the list of encounters that
+                                    have a negative reimbursement impact. </p>
+                                <p>No Impact: Allows you to filter the list of encounters that have
+                                    $0 reimbursement impact.</p>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>Variance</entry>
+                            <entry>
+                                <p>Displays the below values for the overall shift in the weight:<ul
+                                        id="ul_h4v_dl1_lqb">
+                                        <li>Positive Shift</li>
+                                        <li>Negative Shift</li>
+                                        <li>No Shift</li>
+                                    </ul></p>
+                                <p>By default, all values should be selected.</p>
+                                <p>
+                                    <ul id="ul_or3_3l1_lqb">
+                                        <li>
+                                            <p>Negative ‘Variance’ is displayed in the red font.
+                                                E.g. - 1.0178</p>
+                                        </li>
+                                        <li>Variance can be negative,positive, or zero</li>
+                                        <li>Rounded to 4 decimal places. E.g.1.0178</li>
+                                    </ul>
+                                </p>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>Impact Type</entry>
+                            <entry>
+                                <ul id="ul_pvg_3rz_t4b">
+                                    <li>Displays the following values:<ul id="ul_qvg_3rz_t4b">
+                                            <li>Financial Impact</li>
+                                            <li>Both Impact</li>
+                                            <li>SOI/ROM Impact</li>
+                                            <li>No Impact</li>
+                                            <li>Unassigned Impact</li>
+                                        </ul></li>
+                                    <li>
+                                        <ul id="ul_ltf_mrz_t4b">
+                                            <li>Default: ALL</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>DRG Type</entry>
+                            <entry><p>Displays the list of DRG type (Medical, Surgical, Unknown)
+                                    associated with the Final DRG Code.</p><p>Values:</p><ul
+                                    id="ul_izk_wmz_t4b">
+                                    <li>S</li>
+                                    <li>M</li>
+                                    <li>U</li>
+                                </ul><p><b>Default</b>: ALL</p>You can select single or all DRG
+                                Type.</entry>
+                        </row>
+                        <row>
+                            <entry>Exceptions</entry>
+                            <entry>Identifies the incorrectly reconciled Reimbursement Impact
+                                    cases.<p>Reconciled Impact (Impact Type: Financial, Both) cases
+                                    with no shift in the WT (F-DRG WT = R-DRG WT (Or F-DRG WT =
+                                    W-DRG WT when Reconciliation Assessment DRG info is not
+                                    available))</p><p>Reconciled Impact (Impact Type: Unassigned)
+                                    cases with no shift in the WT (F-DRG WT = R-DRG WT (Or F-DRG WT
+                                    = W-DRG WT when Reconciliation Assessment DRG info is not
+                                    available)) and no shift in SOI/ROM values.</p></entry>
+                        </row>
+                    </tbody>
+                </tgroup>
+            </table>
+        </p>
+        <p>
+            <table frame="all" rowsep="1" colsep="1" id="table_dq1_ffn_g4b">
+                <title>Filters on all Pages</title>
+                <tgroup cols="2">
+                    <colspec colname="c1" colnum="1" colwidth="1*"/>
+                    <colspec colname="c2" colnum="2" colwidth="1*"/>
+                    <thead>
+                        <row>
+                            <entry>Filter</entry>
+                            <entry>Description</entry>
+                        </row>
+                    </thead>
+                    <tbody>
+                        <row>
+                            <entry>Patient Type</entry>
+                            <entry>
+                                <ul id="ul_ns1_3fn_g4b">
+                                    <li>Displays the available patient types. <b>Example</b>:
+                                        Inpatient, Outpatient.</li>
+                                    <li><b>Default</b>: Inpatient</li>
+                                </ul>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>Unit</entry>
+                            <entry>
+                                <ul id="ul_kdd_jfn_g4b">
+                                    <li>Displays the list of available units.</li>
+                                    <li>You can select multiple Units.</li>
+                                    <li>You can search the Unit.</li>
+                                    <li><b>Default</b>: ALL</li>
+                                </ul>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>Admit Service</entry>
+                            <entry>
+                                <ul id="ul_x2g_kfn_g4b">
+                                    <li>Displays the list of available admit service.</li>
+                                    <li>You can select multiple Units.</li>
+                                    <li>You can search the Admit Service.</li>
+                                    <li><b>Default</b>: ALL</li>
+                                </ul>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>Visit Type</entry>
+                            <entry>
+                                <ul id="ul_obm_lgm_r4b">
+                                    <li>Displays the available patient types.<b>Example</b>: ED, IP,
+                                        etc.</li>
+                                    <li>You can select multiple Visit Type.</li>
+                                    <li>You can search the Visit Type.</li>
+                                    <li><b>Default</b>: ALL</li>
+                                </ul>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>DRG Specialty</entry>
+                            <entry>
+                                <ul id="ul_xms_5pd_kqb">
+                                    <li>
+                                        <p>Displays the available DRG Specialties. <b>Example</b>:
+                                            Transplant, Surgery, Neurosurgery.</p>
+                                    </li>
+                                    <li>You can select multiple specialties.</li>
+                                    <li>You can search the DRG Specialty.</li>
+                                    <li><b>Default</b>: ALL</li>
+                                </ul>
+                            </entry>
+                        </row>
+                    </tbody>
+                </tgroup>
+            </table>
+        </p>
+        <p>
+            <table frame="all" rowsep="1" colsep="1" id="table_pmd_wtg_l4b">
+                <title><b>Footnotes</b></title>
+                <tgroup cols="2">
+                    <colspec colname="c1" colnum="1" colwidth="1*"/>
+                    <colspec colname="c2" colnum="2" colwidth="1*"/>
+                    <thead>
+                        <row>
+                            <entry>Formulas</entry>
+                            <entry>Text on hover</entry>
+                        </row>
+                    </thead>
+                    <tbody>
+                        <row>
+                            <entry>Total Reconciled</entry>
+                            <entry>The count of encounters with Reconciled Impact, Reconciled No
+                                Impact, or Auto Reconciled status.</entry>
+                        </row>
+                        <row>
+                            <entry>Overall Reimbursement Impact</entry>
+                            <entry>Reimbursement Impact = (CMI After CDI - CMI Before CDI) X Blended
+                                Rate. E.g. $5,234,786</entry>
+                        </row>
+                        <row>
+                            <entry>P-DRG</entry>
+                            <entry>
+                                <p>P-DRG: Displays the ‘Working DRG’ value in orange font for the
+                                    reconciled encounters with blank ‘Possible DRG’.</p>
+                                <p>P-DRG WT: Displays the ‘Working DRG WT’ value in orange font for
+                                    the reconciled encounters with blank ‘Possible DRG’.</p>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>Initial Review Date/Time</entry>
+                            <entry>Displays Initial Review Date/time in red font when the Initial
+                                Review Date/Time > Discharge Date/Time.</entry>
+                        </row>
+                        <row>
+                            <entry>Variance</entry>
+                            <entry>
+                                <p>Variance = Final Coded DRG WT - Reconciliation Assessment DRG WT
+                                    (Working DRG WT when Discharge Date &lt; 11/14/19 or
+                                    Reconciliation Assessment DRG is blank)</p>
+                                <p>Displays negative variance value in red font.</p>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>Blended Rate</entry>
+                            <entry>Configured at payer level; When Blended Rate is not available,
+                                Operating Federal rate is displayed.</entry>
+                        </row>
+                        <row>
+                            <entry>Reimbursement Impact </entry>
+                            <entry>
+                                <p>Reimbursement Impact = (Final Coded DRG WT - Reconciliation
+                                    Assessment DRG WT (Working DRG WT when Discharge Date &lt;
+                                    11/14/19 or Reconciliation Assessment DRG is blank)) x Blended
+                                    Rate. E.g. $5321</p>
+                                <p>Displays negative Reimbursement Impact in red font.</p>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>Financial Impact Clarifications</entry>
+                            <entry>
+                                <p>Clarification with a standard or custom ‘Primary Type at
+                                    Reconciliation’ defined as ‘Financial’ in the admin
+                                    configuration.</p>
+                                <p>Clarification Status: Includes all clarification statuses except
+                                    'Removed' or 'Retracted'</p>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>LOS</entry>
+                            <entry>LOS: Displays Length of Stay in blue font if LOS value greater
+                                than F-GMLOS; W-GMLOS value is considered in case of blank
+                                F-GMLOS.</entry>
+                        </row>
+                        <row>
+                            <entry>#Cases with Financial Impact</entry>
+                            <entry>The total count of Reconciled-Impact (Impact Type: Financial,
+                                Both, Unassigned Impact) encounters with positive and negative
+                                shifts, that is, ​F-DRG WT > R-DRG WT (Or F-DRG WT - R-DRG WT > 0)
+                                and F-DRG WT &lt; R-DRG WT (Or F-DRG WT - R-DRG WT &lt; 0)</entry>
+                        </row>
+                        <row>
+                            <entry>Exceptions</entry>
+                            <entry>The count of Reconciled Impact (Impact Type: Financial, Both,
+                                Unassigned Impact) cases with no shift in the WT, that is, (F-DRG WT
+                                = R-DRG WT (Or F-DRG WT = W-DRG WT when Reconciliation Assessment
+                                DRG info is not available)).</entry>
+                        </row>
+                        <row>
+                            <entry>Review Complete TAT (Hours)</entry>
+                            <entry>Displays the number of hours when the encounter status is set as
+                                Review Complete Date/Time and when the working review was first
+                                created for the selected time period. The date must be in the
+                                Facility's time-zone. <b>Example</b>: 05/24/2020 10:10:00 AM
+                                    ET.<p>Number of hours between Review Complete Date/Time and when
+                                    the Working Review was first created for the selected time
+                                    period. Review TAT (Hours) for each encounter = ‘Review
+                                    Complete’ (Date/Time stamp) – Initial Review (Date/Time
+                                    stamp).</p></entry>
+                        </row>
+                    </tbody>
+                </tgroup>
+            </table>
+        </p>
+    </conbody>
+</concept>

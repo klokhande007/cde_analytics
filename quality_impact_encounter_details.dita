@@ -1,0 +1,854 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="clarification_type_trend">
+    <title>Encounter Details</title>
+    <shortdesc/>
+    <conbody>
+        <p><b>Overview</b>: The Encounter Details dashboard enables CDI Directors to analyze the
+            quality impact of the CDI activity at the encounter level and take appropriate
+            action.</p>
+        <p>The Encounter Details table displays the following:<ul id="ul_sfr_2ds_4wb">
+                <li>By default, the chart displays the data for the last 1 calendar month.</li>
+                <li>Displays the encounter level details of each reconciled encounter.</li>
+                <li>Each row represents an encounter.</li>
+                <li>Data in the chart is sorted by the Discharge Date in descending order.</li>
+            </ul></p>
+        <p><b>Navigation</b>: On the Analytics home page left side panel, navigate to <menucascade>
+                <uicontrol>CDE One</uicontrol>
+                <uicontrol>Quality Impact</uicontrol>
+                <uicontrol>Encounter Details</uicontrol>
+            </menucascade>.</p>
+        <p>On the top panel, you can select desired values for the slicers (refer <xref
+                href="#clarification_type_trend/table_qnn_w2n_g4b" format="dita"/>) and the
+            corresponding data gets filtered in the charts.</p>
+        <p>For filters on all pages, refer <xref href="#clarification_type_trend/table_dq1_ffn_g4b"
+                format="dita"/>.</p>
+        <p>For Footnotes, refer <xref href="#clarification_type_trend/table_mjr_xry_44b"
+                format="dita"/>.</p>
+        <fig id="fig_o5h_4zk_p4b">
+            <title>Sample Report</title>
+            <image href="Images/quality_impact_encounter_details.png" width="650"
+                id="image_shg_4ps_qwb"/>
+        </fig>
+        <p><b>Encounter Details Tabular Chart</b></p>
+        <p>This table displays the encounter level details of each reconciled encounter. Each row
+            represents an encounter. Data in the chart is sorted by the Discharge Date in descending
+            order.</p>
+        <fig id="fig_x3n_kvm_r4b">
+            <title>Encounter Details Tabular Chart</title>
+            <image href="Images/quality_impact_enc_det_tab.png" width="600" id="image_vp2_dss_qwb"/>
+        </fig>
+        <p>
+            <table frame="all" rowsep="1" colsep="1" id="table_jpr_1dp_gqb">
+                <title>Encounter Details Metrics</title>
+                <tgroup cols="2">
+                    <colspec colname="c1" colnum="1" colwidth="1.15*"/>
+                    <colspec colname="c2" colnum="2" colwidth="1.81*"/>
+                    <thead>
+                        <row>
+                            <entry>column</entry>
+                            <entry>Description</entry>
+                        </row>
+                    </thead>
+                    <tbody>
+                        <row>
+                            <entry>Facility</entry>
+                            <entry>The facility assigned to the encounter in the format Facility
+                                Description (Facility ID).</entry>
+                        </row>
+                        <row>
+                            <entry>Account No.</entry>
+                            <entry>The Account Number assigned to the encounter.</entry>
+                        </row>
+                        <row>
+                            <entry>MRN</entry>
+                            <entry>The MRN assigned to the encounter.<p><b>Example</b>:
+                                    MRN2021001</p></entry>
+                        </row>
+                        <row>
+                            <entry>Patient Name</entry>
+                            <entry>The name of the patient associated with the encounter.
+                                        <p><b>Example</b>: Last Name, First Name.</p></entry>
+                        </row>
+                        <row>
+                            <entry>Admit Date</entry>
+                            <entry>
+                                <p>The admission date and time assigned to the encounter in the
+                                    facility's timezone.</p>
+                                <p><b>Example</b>: 08/08/2019 12:00:00 AM MST</p>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>Discharge Date</entry>
+                            <entry>
+                                <p>The Discharge Date and Time assigned to the encounter in the
+                                    facility's timezone.</p>
+                                <p>This column is blank for the encounters that do not have a
+                                    discharge date assigned.</p>
+                                <p><b>Example</b>: 08/08/2019 12:00:00 AM MST.</p>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>Assigned CDS</entry>
+                            <entry>
+                                <p>The CDS assigned to the encounter in the format Last Name, First
+                                    Name MI (CDS ID).</p>
+                                <p><b>Example</b>: Ryan, Melissa (rmelissa).</p>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>Initial Review Date</entry>
+                            <entry>
+                                <p>The date and time when the initial review was performed on the
+                                    encounter.</p>
+                                <p> The date is displayed in the Facility's time-zone.</p>
+                                <p><b>Example</b>: 05/24/2020 10:10:00 AM ET</p>
+                                <p>
+                                    <note id="note_dgp_w3t_4wb">If the Initial Review Date/time is
+                                        after the Discharge Date/Time, Initial Review Date/Time is
+                                        displayed in the red font.</note>
+                                </p>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>Initial Review CDS</entry>
+                            <entry>
+                                <p>The name of the CDS who performed the initial review in the
+                                    format Last Name, First Name MI (CDS ID).</p>
+                                <p><b>Example</b>: Ryan, Melissa (rmelissa).</p>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>Tracking Codes</entry>
+                            <entry>
+                                <p>Displays the tracking codes assigned to the encounter in comma
+                                    separated format.</p>
+                                <p><b>Example</b>: Quality Review, Prov Education.</p>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>Rank at Initial Review</entry>
+                            <entry>
+                                <p>The rank assigned to the encounter prior to the Initial Review. </p>
+                                <p>This column is blank for the encounters that do not have a ‘Rank
+                                    at Initial Review' assigned.</p>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>W MS-DRG</entry>
+                            <entry>
+                                <p>Displays the Working MS-DRG along with the description displayed
+                                    on the Review page.</p>
+                                <p>Example: 872 - SEPTICEMIA OR SEVERE SEPSIS WITHOUT MV >96 HOURS
+                                    WITHOUT MAJOR COMPLICATION OR COMORBIDITY (MCC).</p>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>W MS-DRG WT</entry>
+                            <entry>
+                                <p>Displays the WT associated with the Working MS DRG displayed on
+                                    the Review page.</p>
+                                <p><b>Example</b>: 1.0393.</p>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>W MS-DRG CC/MCC Designation</entry>
+                            <entry>
+                                <p>Displays the CC/MCC indicator associated with the Working MS
+                                    DRG.</p>
+                                <p><b>Example</b>: CC, MCC, No CC.</p>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>W-SOI</entry>
+                            <entry>
+                                <p>Displays the 'SOI' value from the working review. </p>
+                                <p><b>Example</b>: 2.</p>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>W-ROM</entry>
+                            <entry>
+                                <p>Displays the 'ROM' value from the working review.</p>
+                                <p><b>Example</b>: 3</p>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>W MS-DRG AMLOS</entry>
+                            <entry>
+                                <p>Displays the 'AMLOS' value from the working review.</p>
+                                <p><b>Example</b>: 3.1.</p>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>W-MS-DRG GMLOS</entry>
+                            <entry>
+                                <p>Displays the 'GMLOS ' value from the working review.</p>
+                                <p><b>Example</b>: 3.2.</p>
+                                <p>
+                                    <note id="note_hgp_w3t_4wb">If the GMLOS associated with the
+                                        primary working DRG is not available, then the GMLOS
+                                        associated with the advanced working DRG is
+                                        displayed.</note>
+                                </p>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>P MS-DRG</entry>
+                            <entry>
+                                <p>Displays the' Possible MS-DRG along with the description
+                                    displayed on the Review page. <b>Example</b>: 872 - SEPTICEMIA
+                                    OR SEVERE SEPSIS WITHOUT MV >96 HOURS WITHOUT MAJOR COMPLICATION
+                                    OR COMORBIDITY (MCC).</p>
+                                <note id="note_bdq_3kt_4wb">This column displays the ‘Working MS
+                                    DRG’ value in the orange font for the encounters for which
+                                    ‘Possible MS DRG’ is blank or null.</note>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>P MS-DRG WT</entry>
+                            <entry>
+                                <p>Displays the WT associated with the Possible MS-DRG displayed on
+                                    the Review page. <b>Example</b>: 1.0393.</p>
+                                <note id="note_r4r_rkt_4wb">This column displays the ‘Working MS DRG
+                                    WT’ value in the orange font for the encounters for which
+                                    ‘Possible MS DRG’ is blank or null.</note>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>P MS-DRG CC/MCC Designation</entry>
+                            <entry>
+                                <p>Displays the CC/MCC indicator associated with the Possible MS
+                                    DRG.</p>
+                                <p><b>Example</b>: CC, MCC, No CC.</p>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>R MS-DRG</entry>
+                            <entry>
+                                <p>Displays both code and description of the Reconciliation
+                                    Assessment MS-DRG along with the description displayed on the
+                                    Reconciliation page.</p>
+                                <p><b>Example</b>: 872 - SEPTICEMIA OR SEVERE SEPSIS WITHOUT MV >96
+                                    HOURS WITHOUT MAJOR COMPLICATION OR COMORBIDITY (MCC).</p>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>R MS-DRG WT</entry>
+                            <entry>
+                                <p>Displays the WT associated with the Reconciliation Assessment
+                                    MS-DRG displayed on the Reconciliation page.</p>
+                                <p><b>Example</b>: 1.0393.</p>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>R MS-DRG CC/MCC Designation</entry>
+                            <entry>
+                                <p>Displays the CC/MCC indicator associated with the Reconciliation
+                                    Assessment MS DRG.</p>
+                                <p><b>Example</b>: CC, MCC, No CC.</p>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>R-SOI</entry>
+                            <entry>
+                                <p>Displays the 'SOI' value from the Reconciliation Assessment.</p>
+                                <p><b>Example</b>: 1.</p>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>R-ROM</entry>
+                            <entry>
+                                <p>Displays the 'ROM'  value from the Reconciliation Assessment.</p>
+                                <p><b>Example</b>: 1.</p>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>R MS-DRG AMLOS</entry>
+                            <entry>
+                                <p>Displays the 'AMLOS' associated with the MS-DRG Reconciliation
+                                    Assessment.</p>
+                                <p><b>Example</b>: 3.1.</p>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>R MS-DRG GMLOS</entry>
+                            <entry>
+                                <p>Displays the 'GMLOS' associated with the MS-DRG Reconciliation
+                                    Assessment.</p>
+                                <p><b>Example</b>: 2.4.</p>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>F MS-DRG</entry>
+                            <entry>Displays both code and description of the Final Coded MS-DRG
+                                along with the description displayed on the Reconciliation page.
+                                    <b>Example</b>: 872 - SEPTICEMIA OR SEVERE SEPSIS WITHOUT MV >96
+                                HOURS WITHOUT MAJOR COMPLICATION OR COMORBIDITY (MCC).<note
+                                    id="note_jmf_slt_4wb"> This column is blank for the encounters
+                                    that do not have a ‘Initial Review Date/Time'.</note></entry>
+                        </row>
+                        <row>
+                            <entry>F MS-DRG WT</entry>
+                            <entry>
+                                <p>Displays the WT associated with the Final Coded MS-DRG displayed
+                                    on the Reconciliation page. </p>
+                                <p><b>Example</b>: 1.0393.</p>
+                                <note id="note_h5c_wlt_4wb">This column is blank for the encounters
+                                    that do not have a ‘Initial Review Date/Time'.</note>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>F MS-DRG CC/MCC Designation</entry>
+                            <entry>
+                                <p>Displays the Type associated with the Final MS DRG </p>
+                                <p>Example: CC, MCC, No CC.</p>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>F-SOI</entry>
+                            <entry>
+                                <p>Displays the "F-SOI" value from Final Coded Summary. </p>
+                                <p><b>Example</b>: 2.</p>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>F-ROM</entry>
+                            <entry>
+                                <p>Displays the 'F-ROM' value from Final Coded Summary.</p>
+                                <p><b>Example</b>: 3.</p>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>F MS-DRG AMLOS</entry>
+                            <entry>
+                                <p>Displays the AMLOS associated with the Final Coded MS DRG.</p>
+                                <p><b>Example</b>: 3.1.</p>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>F MS-DRG GMLOS</entry>
+                            <entry>
+                                <p>Displays the GMLOS associated with the Final Coded MS DRG.</p>
+                                <p><b>Example</b>: 3.2.</p>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>MS-DRG Variance</entry>
+                            <entry>
+                                <p>Displays the shift in the WT at the encounter level.</p>
+                                <p><b>Example</b>: 1.0178.</p>
+                                <p>Encounter Variance = Final Coded DRG WT - Reconciliation
+                                    Assessment DRG WT (or Variance = Final Coded DRG WT - Working
+                                    DRG WT when Discharge Date &lt; 11/14/19 or Reconciliation
+                                    Assessment DRG is blank).</p>
+                                <note id="note_uxz_lpt_4wb"/>
+                                <p>Encounter Variance can be negative, positive, or zero. </p>
+                                <p>Negative variance is displayed in the red font.</p>
+                                <p>Encounter Variance is not calculated for the encounters that do
+                                    not have an initial review date.</p>
+                                <p>Review Not Needed encounters are not considered for this metric
+                                    caalculation.</p>
+                                <p>Rounded to 4 decimal places. E.g. 2.1868.</p>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>Blended Rate</entry>
+                            <entry>
+                                <p>The Blended Rate associated with the payer/Grouper assigned to
+                                    the encounter.</p>
+                                <p><b>Example</b>: 7512.</p>
+                                <p>When the Blended Rate is not available, the Operating Federal
+                                    rate is displayed.</p>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>Reimbursement Impact</entry>
+                            <entry>
+                                <p>The ‘Reimbursement Impact’ value for the encounter. </p>
+                                <p><b>Example</b>: $ 5,234.</p>
+                                <ul id="ul_bvl_mqg_l4b">
+                                    <li>Encounter Reimbursement Impact = Encounter Variance x
+                                        Blended Rate.</li>
+                                    <li>Rounded to 0 decimal places.</li>
+                                    <li>Negative ‘Reimbursement Impact ($)’ is displayed in the red
+                                        font.</li>
+                                </ul>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>Estimated Exp. Mortality Rate Before CDI</entry>
+                            <entry>
+                                <p>Displays the CareChex Exp. Mortality Rate Before CDI value for
+                                    the encounter. The value is displayed in %. <b>Example</b>:
+                                    0.10%</p>
+                                <note id="note_gcv_1qt_4wb"/>
+                                <p>If the Pre CDI MS-DRG associated with the encounter is not
+                                    available in the CareChex Reference file and Post CDI MS-DRG
+                                    associated with the encounter is available, then CareChex Exp.
+                                    Mortality Rate Before CDI value for the encounter is equal to
+                                    the CareChex Exp. Mortality Rate After CDI value for the
+                                    encounter.</p>
+                                <p>If both Pre and Post CDI MS-DRGs associated with the encounter
+                                    are not available in the CareChex Reference file, then this
+                                    column is blank for the encounter.</p>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>Estimated Exp. Mortality Rate After CDI</entry>
+                            <entry>
+                                <p>Displays the CareChex Exp. Mortality Rate After CDI value for the
+                                    encounter.</p>
+                                <p>The value is displayed in %. <b>Example</b>: 0.10%</p>
+                                <note id="note_ffb_gqt_4wb"/>
+                                <p>If the Post CDI MS-DRG associated with the encounter is not
+                                    available in the CareChex Reference file and Pre CDI MS-DRG
+                                    associated with the encounter is available, then CareChex Exp.
+                                    Mortality Rate After CDI value for the encounter is equal to the
+                                    CareChex Exp. Mortality Rate Before CDI value for the
+                                    encounter.</p>
+                                <p>If both Pre and Post CDI MS-DRGs associated with the encounter
+                                    are not available in the CareChex Reference file, then this
+                                    column is blank for the encounter.</p>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>Estimated Exp. Readmission Rate Before CDI</entry>
+                            <entry>
+                                <p>Displays the CareChex Exp. Readmission Rate Before CDI value for
+                                    the encounter.</p>
+                                <p>The value is displayed in %. <b>Example</b>: 0.10%.</p>
+                                <note id="note_ehd_35t_4wb"/>
+                                <p>If the Pre CDI MS-DRG associated with the encounter is not
+                                    available in the CareChex Reference file and Post CDI MS-DRG
+                                    associated with the encounter is available, then CareChex Exp.
+                                    Readmission Rate Before CDI value for the encounter is equal to
+                                    the CareChex Exp. Readmission Rate After CDI value for the
+                                    encounter. </p>
+                                <p>If both Pre and Post CDI MS-DRGs associated with the encounter
+                                    are not available in the CareChex Reference file, then this
+                                    column is blank for the encounter.</p>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>Estimated Exp. Readmission Rate After CDI</entry>
+                            <entry>
+                                <p>Displays the CareChex Exp. Readmission Rate After CDI value for
+                                    the encounter.</p>
+                                <p>The value is displayed in %. <b>Example</b>: 0.10%.</p>
+                                <note id="note_ihf_l5t_4wb"/>
+                                <p>If the Post CDI MS-DRG associated with the encounter is not
+                                    available in the CareChex Reference file and Pre CDI MS-DRG
+                                    associated with the encounter is available, then CareChex Exp.
+                                    Readmission Rate After CDI value for the encounter is equal to
+                                    the CareChex Exp. Readmission Rate Before CDI value for the
+                                    encounter. </p>
+                                <p>If both Pre and Post CDI MS-DRGs associated with the encounter
+                                    are not available in the CareChex Reference file, then this
+                                    column is blank for the encounter.</p>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>Estimated Exp. Complication Rate Before CDI</entry>
+                            <entry>
+                                <p>displays the CareChex Exp. Complication Rate Before CDI value for
+                                    the encounter.</p>
+                                <p>The value is displayed in %. <b>Example</b>: 0.10%</p>
+                                <note id="note_ixw_415_4wb"/>
+                                <p>If the Pre CDI MS-DRG associated with the encounter is not
+                                    available in the CareChex Reference file and Post CDI MS-DRG
+                                    associated with the encounter is available, then CareChex Exp.
+                                    Complication Rate Before CDI value for the encounter is equal to
+                                    the CareChex Exp. Complication Rate After CDI value for the
+                                    encounter.</p>
+                                <p>If both Pre and Post CDI MS-DRGs associated with the encounter
+                                    are not available in the CareChex Reference file, then this
+                                    column is blank for the encounter.</p>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>Estimated Exp. Complication Rate After CDI</entry>
+                            <entry>
+                                <p>displays the CareChex Exp. Complication Rate After CDI value for
+                                    the encounter.</p>
+                                <p>The value is displayed in %. <b>Example</b>: 0.10%.</p>
+                                <note id="note_fq4_n15_4wb"/>
+                                <p>If the Post CDI MS-DRG associated with the encounter is not
+                                    available in the CareChex Reference file and Pre CDI MS-DRG
+                                    associated with the encounter is available, then CareChex Exp.
+                                    Complication Rate After CDI value for the encounter is equal to
+                                    the CareChex Exp. Complication Rate Before CDI value for the
+                                    encounter. </p>
+                                <p>If both Pre and Post CDI MS-DRGs associated with the encounter
+                                    are not available in the CareChex Reference file, then this
+                                    column is blank for the encounter.</p>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>Impact Type</entry>
+                            <entry>
+                                <p>The Impact Type assigned to the encounter</p>
+                                <ul id="ul_ygm_qqg_l4b">
+                                    <li>Financial Impact</li>
+                                    <li>SOI/ROM Impact</li>
+                                    <li>No Impact</li>
+                                    <li>Both Impact</li>
+                                    <li>Unassigned Impact</li>
+                                </ul>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>Encounter Status</entry>
+                            <entry>
+                                <p>The Encounter Status assigned to the encounter.</p>
+                                <p><b>Example</b>: Reconciled Impact, Auto-Reconciled.</p>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>Payer</entry>
+                            <entry>The Payer assigned to the encounter in the format Payer
+                                Description (Payer ID).<p><b>Example</b>: Medicare
+                                (MEDC).</p></entry>
+                        </row>
+                        <row>
+                            <entry>Grouper</entry>
+                            <entry>The Grouper version associated with the payer assigned to the
+                                        encounter.<p><b>Example</b>: CMS 38.0.</p></entry>
+                        </row>
+                        <row>
+                            <entry>Unit</entry>
+                            <entry>The Unit assigned to the encounter.<p><b>Example</b>:
+                                ICU.</p></entry>
+                        </row>
+                        <row>
+                            <entry>Patient Type</entry>
+                            <entry>The Patient Type assigned to the encounter.<p><b>Example</b>:
+                                    Inpatient </p></entry>
+                        </row>
+                        <row>
+                            <entry>Visit Type</entry>
+                            <entry>
+                                <p>The Visit Type assigned to the encounter.</p>
+                                <p><b>Example</b>: OBS.</p>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>Discharge Status</entry>
+                            <entry>The Display Status assigned to the encounter.<p><b>Format</b>:
+                                        <i>Discharge Status ID-
+                                    Description</i></p><p><b>Example</b>: 01- 01 Self
+                                Care</p></entry>
+                        </row>
+                    </tbody>
+                </tgroup>
+            </table>
+        </p>
+        <p>
+            <table frame="all" rowsep="1" colsep="1" id="table_qnn_w2n_g4b">
+                <title>Report Slicers </title>
+                <tgroup cols="2">
+                    <colspec colname="c1" colnum="1" colwidth="1*"/>
+                    <colspec colname="c2" colnum="2" colwidth="1*"/>
+                    <thead>
+                        <row>
+                            <entry>Slicer</entry>
+                            <entry>Description</entry>
+                        </row>
+                    </thead>
+                    <tbody>
+                        <row>
+                            <entry>Discharge Date</entry>
+                            <entry>
+                                <ul id="ul_uzh_y2n_g4b">
+                                    <li>Displays the discharge date range. </li>
+                                    <li>
+                                        <b>Example</b>: 7/1/2023 - 7/31/2023.</li>
+                                    <li><b>Default</b>: Last 1 calendar months date range selected
+                                        by default.</li>
+                                </ul>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>Reset Button</entry>
+                            <entry>
+                                <ul id="ul_jw1_22z_m4b">
+                                    <li>With the Reset button, you can reset the discharge date
+                                        range.</li>
+                                    <li><b>Tooltip</b>: Use "Ctrl + Click" to reset the Discharge
+                                        Date.</li>
+                                </ul>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>Facility</entry>
+                            <entry>
+                                <ul id="ul_vzp_z2n_g4b">
+                                    <li>Displays both active and inactive facilities in alphabetical
+                                        order that you have access to.</li>
+                                    <li>You can select multiple facilities.</li>
+                                    <li>You can search the facility by Facility ID or
+                                        Description.</li>
+                                    <li><b>Format</b>: Facility Description (Facility ID)</li>
+                                    <li><b>Default</b>: ALL</li>
+                                </ul>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>Payer</entry>
+                            <entry>
+                                <ul id="ul_ntb_cfn_g4b">
+                                    <li>Displays both active and inactive payers in alphabetical
+                                        order associated with the facilities you have access
+                                        to.</li>
+                                    <li>You can select multiple payers.</li>
+                                    <li>"Unassigned Payer" displays data for the encounters that do
+                                        not have a payer assigned.</li>
+                                    <li>You can search the Payer by Payer ID or Description.</li>
+                                    <li><b>Format</b>: Payer Description (Payer ID)</li>
+                                    <li><b>Default</b>: ALL</li>
+                                </ul>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>Unit</entry>
+                            <entry>
+                                <ul id="ul_c5j_2zr_4wb">
+                                    <li>
+                                        <p>This filter displays the list of available units.</p>
+                                    </li>
+                                    <li>
+                                        <p>User can select multiple Units.</p>
+                                    </li>
+                                    <li>
+                                        <p>Users can search the Unit.</p>
+                                    </li>
+                                    <li>
+                                        <p><b>Default</b>: ALL</p>
+                                    </li>
+                                </ul>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>Impact Type</entry>
+                            <entry>
+                                <p>Displays the following values:</p>
+                                <ul id="ul_ltk_x15_4wb">
+                                    <li>
+                                        <p>Financial Impact</p>
+                                    </li>
+                                    <li>
+                                        <p>Both Impact</p>
+                                    </li>
+                                    <li>
+                                        <p>SOI/ROM Impact</p>
+                                    </li>
+                                    <li>
+                                        <p>No Impact</p>
+                                    </li>
+                                    <li>
+                                        <p>Unassigned Impact</p>
+                                    </li>
+                                    <li>
+                                        <p><b>Default</b>: ALL</p>
+                                    </li>
+                                </ul>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>DRG Type</entry>
+                            <entry>
+                                <p>Displays the following values:</p>
+                                <ul id="ul_l4j_z15_4wb">
+                                    <li>
+                                        <p>M</p>
+                                    </li>
+                                    <li>
+                                        <p>S</p>
+                                    </li>
+                                    <li>
+                                        <p>U</p>
+                                    </li>
+                                </ul>
+                                <p><b>Default</b>: ALL.</p>
+                            </entry>
+                        </row>
+                    </tbody>
+                </tgroup>
+            </table>
+        </p>
+        <p>
+            <table frame="all" rowsep="1" colsep="1" id="table_dq1_ffn_g4b">
+                <title>Filters on all Pages</title>
+                <tgroup cols="2">
+                    <colspec colname="c1" colnum="1" colwidth="1*"/>
+                    <colspec colname="c2" colnum="2" colwidth="1*"/>
+                    <thead>
+                        <row>
+                            <entry>Filter</entry>
+                            <entry>Description</entry>
+                        </row>
+                    </thead>
+                    <tbody>
+                        <row>
+                            <entry>Patient Type</entry>
+                            <entry>
+                                <ul id="ul_ns1_3fn_g4b">
+                                    <li>Displays the available patient types. <b>Example</b>:
+                                        Inpatient, Outpatient.</li>
+                                    <li><b>Default</b>: Inpatient.</li>
+                                </ul>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>Admit Service</entry>
+                            <entry>
+                                <ul id="ul_x2g_kfn_g4b">
+                                    <li>Displays the list of available admit service.</li>
+                                    <li>You can select multiple Units.</li>
+                                    <li>You can search the Admit Service.</li>
+                                    <li><b>Default</b>: ALL</li>
+                                </ul>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>Visit Type</entry>
+                            <entry>
+                                <ul id="ul_obm_lgm_r4b">
+                                    <li>Displays the available patient types.<b>Example</b>: ED, IP,
+                                        etc.</li>
+                                    <li>You can select multiple Visit Type.</li>
+                                    <li>You can search the Visit Type.</li>
+                                    <li><b>Default</b>: ALL</li>
+                                </ul>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>DRG Specialty</entry>
+                            <entry>
+                                <ul id="ul_sqv_kzr_kpb">
+                                    <li>Displays the available DRG Specialties. Example, Transplant,
+                                        Surgery, Neurosurgery.</li>
+                                    <li>
+                                        <p>You can select multiple specialties.</p>
+                                    </li>
+                                    <li>
+                                        <p>You can search the DRG Specialty.</p>
+                                    </li>
+                                    <li>
+                                        <p><b>Default</b>: ALL.</p>
+                                    </li>
+                                </ul>
+                            </entry>
+                        </row>
+                    </tbody>
+                </tgroup>
+            </table>
+        </p>
+        <table frame="all" rowsep="1" colsep="1" id="table_mjr_xry_44b">
+            <title>Footnotes</title>
+            <tgroup cols="2">
+                <colspec colname="c1" colnum="1" colwidth="1*"/>
+                <colspec colname="c2" colnum="2" colwidth="1*"/>
+                <thead>
+                    <row>
+                        <entry>Formula</entry>
+                        <entry>Text on hover</entry>
+                    </row>
+                </thead>
+                <tbody>
+                    <row>
+                        <entry>Exp. Mortality Rate Before</entry>
+                        <entry>The avg. of CareChex Exp. Mortality Rate values associated with the
+                            Final Coded MS-DRGs of all Auto-Reconciled and Reconciled-No Impact and
+                            Reconciled Impact (Impact Type: SOI/ROM Impact, Unassigned Impact with
+                            no shift in the WT) encounters and the CareChex Exp. Mortality Rate
+                            values associated with the Reconciliation assessment MS-DRG of all
+                            Reconciled Impact (Impact Type: Financial, Both, Unassigned Impact with
+                            shift in the WT) encounters that meet the report criteria.</entry>
+                    </row>
+                    <row>
+                        <entry>Exp. Mortality Rate After</entry>
+                        <entry>The avg. of CareChex Exp. Mortality Rate values associated with the
+                            Final Coded MS-DRGs of all Auto-Reconciled, Reconciled- No Impact, and
+                            Reconciled Impact (Impact Type: SOI/ROM Impact, Both, Financial,
+                            Unassigned) encounters that meet the report criteria . (Rounded 2
+                            decimal places E.g., 0.84%).</entry>
+                    </row>
+                    <row>
+                        <entry>Exp. Readmission Rate Before</entry>
+                        <entry>The avg. of CareChex Exp. Mortality Rate values associated with the
+                            Final Coded MS-DRGs of all Auto-Reconciled and Reconciled-No Impact and
+                            Reconciled Impact (Impact Type: SOI/ROM Impact, Unassigned Impact with
+                            no shift in the WT) encounters and the CareChex Exp. Mortality Rate
+                            values associated with the Reconciliation assessment MS-DRG of all
+                            Reconciled Impact (Impact Type: Financial, Both, Unassigned Impact with
+                            shift in the WT) encounters that meet the report criteria. </entry>
+                    </row>
+                    <row>
+                        <entry>Exp. Readmission Rate After</entry>
+                        <entry>The avg. of CareChex Exp. Readmission Rate values associated with the
+                            Final Coded MS-DRGs of all Auto-Reconciled, Reconciled- No Impact, and
+                            Reconciled Impact (Impact Type: SOI/ROM Impact, Both, Financial,
+                            Unassigned) encounters that meet the report criteria . (Rounded 2
+                            decimal places E.g., 0.84%).</entry>
+                    </row>
+                    <row>
+                        <entry>Exp. Complication Rate Before</entry>
+                        <entry>The avg. of CareChex Exp. Mortality Rate values associated with the
+                            Final Coded MS-DRGs of all Auto-Reconciled and Reconciled-No Impact and
+                            Reconciled Impact (Impact Type: SOI/ROM Impact, Unassigned Impact with
+                            no shift in the WT) encounters and the CareChex Exp. Mortality Rate
+                            values associated with the Reconciliation assessment MS-DRG of all
+                            Reconciled Impact (Impact Type: Financial, Both, Unassigned Impact with
+                            shift in the WT) encounters that meet the report criteria.</entry>
+                    </row>
+                    <row>
+                        <entry>Exp. Complication Rate After </entry>
+                        <entry>The avg. of CareChex Exp. Complication Rate values associated with
+                            the Final Coded MS-DRGs of all Auto-Reconciled, Reconciled- No Impact,
+                            and Reconciled Impact (Impact Type: SOI/ROM Impact, Both, Financial,
+                            Unassigned) encounters that meet the report criteria . (Rounded 2
+                            decimal places E.g., 0.84%).</entry>
+                    </row>
+                    <row>
+                        <entry>CC/MCC Shift</entry>
+                        <entry>
+                            <p>% Encounters with CC to MCC Shift = Count of Reconciled Encounters
+                                with DRG Shift in which the pre CDI DRG is a CC and the final coded
+                                DRG is MCC / Count of Reconciled Encounters with DRG Shift x100.</p>
+                            <p>% Encounters with No CC to CC or MCC = Count of Reconciled Encounters
+                                with DRG Shift in which the pre CDI DRG is a No CC and the final
+                                coded DRG is either CC or MCC / Count of Reconciled Encounters with
+                                DRG Shift x100.</p>
+                        </entry>
+                    </row>
+                    <row>
+                        <entry>GMLOS Before</entry>
+                        <entry>The avg. of GMLOS values associated with the Final Coded MS-DRGs of
+                            all Auto-Reconciled and Reconciled- No Impact and Reconciled Impact
+                            (Impact Type: SOI/ROM Impact, Unassigned Impact with no shift in the WT)
+                            encounters and the GMLOS values associated with the Reconciliation
+                            assessment MS-DRG of all Reconciled Impact (Impact Type: Financial,
+                            Both, Unassigned Impact with shift in the WT) encounters that meet the
+                            report criteria.</entry>
+                    </row>
+                    <row>
+                        <entry>GMLOS After</entry>
+                        <entry>The avg. of GMLOS values associated with the Final Coded MS-DRGs of
+                            all Auto-Reconciled, Reconciled- No Impact, and Reconciled Impact
+                            (Impact Type: SOI/ROM Impact, Both, Financial, Unassigned) encounters
+                            that meet the report criteria. Rounded 2 decimal places E.g.,
+                            3.60.</entry>
+                    </row>
+                    <row>
+                        <entry>Reference Data</entry>
+                        <entry>MS-DRG level Risk Adjusted Expected
+                            Mortality/Readmission/Complication Rate values generated using the data
+                            for the top100 CareChex hospitals (Federal year 2019-2021) are used to
+                            identify the pre and post CDI expected rates for an encounter.</entry>
+                    </row>
+                </tbody>
+            </tgroup>
+        </table>
+    </conbody>
+</concept>

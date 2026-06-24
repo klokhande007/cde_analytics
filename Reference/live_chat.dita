@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="live_chat">
+    <title>Live Chat</title>
+    <shortdesc></shortdesc>
+    <refbody>
+        <section id="section_x23_trn_glb">
+            <title>Overview</title>
+            <p>Live Chat provides an easy way to connect with support experts while working in CDE
+                One, allowing you to get timely assistance for technical issues without leaving the
+                application.</p>
+        </section>
+        <section id="section_uns_2bt_bnb">
+            <title>How to Access CDE One Live Chat</title>
+            <p>
+                <ol id="ol_ofx_lbt_bnb">
+                    <li>Click the <b>Live Chat</b> icon in the upper-right corner of the Nuance CDE
+                        One screen.<fig id="fig_mq4_kbt_bnb">
+                            <image href="../Images/Live_Chat/live_chat_icon.gif" width="600"
+                                id="image_nq4_kbt_bnb"/>
+                            <note id="note_vcx_nk1_13c">
+                                <ul id="ul_d3j_4k1_13c">
+                                    <li>
+                                        <p>A <uicontrol>green indicator <image
+                                                  href="../Images/Live_Chat/indicators/live_chat_icon.gif"
+                                                  width="25" id="image_evq_zk1_13c"/></uicontrol>
+                                            next to the live chat icon means an agent is available
+                                            for chat.</p>
+                                    </li>
+                                    <li>
+                                        <p>A <b>cross indicator</b><image
+                                                href="../Images/Live_Chat/indicators/cross_sign.gif"
+                                                width="25" id="image_vyf_2l1_13c"/> next to the live
+                                            chat icon means an agent is currently unavailable.</p>
+                                    </li>
+                                </ul>
+                            </note>
+                        </fig></li>
+                    <li><p>The chat bubble icon (represented by a speech bubble) appears in the
+                            lower-right corner of the screen.</p><image
+                            href="../Images/Live_Chat/chat_bubble.gif" width="700"
+                            id="image_wk2_ssw_f3c"/></li>
+                    <li>Click the chat bubble icon to open the chat window. To hide the chat bubble
+                        icon, click the <b>Live Chat </b>icon again.</li>
+                    <li>
+                        <p>The chat window opens, and you can start chatting.</p>
+                        <fig id="fig_wqm_jl1_13c">
+                            <image href="../Images/Live_Chat/chat_window.gif" width="300"
+                                id="image_xqm_jl1_13c"/>
+                        </fig>
+                    </li>
+                </ol>
+            </p>
+            <p>While chatting, you can:<ul id="ul_vcn_pm1_13c">
+                    <li>
+                        <p>Attach documents.</p>
+                    </li>
+                    <li>
+                        <p>Click the arrow in the upper-right corner to minimize the chat
+                            window.</p>
+                    </li>
+                    <li>
+                        <p>Click the <image href="../Images/Live_Chat/ellipses.jpg" width="10"
+                                id="image_ilx_cn1_13c"/>
+                            <b>ellipsis</b> in the upper-left corner to:<ul id="ul_mbq_gn1_13c">
+                                <li>
+                                    <p><b>Request Chat Transcript</b>: Download the conversation in
+                                        PDF format.</p>
+                                </li>
+                                <li>
+                                    <p><b>End Chat</b>: Click to end the conversation.</p>
+                                </li>
+                            </ul></p>
+                    </li>
+                </ul></p>
+        </section>
+        <section id="section_flc_vgb_13c">
+            <title>Support Agent Availability</title>
+            <p>Support agent availability for live chat is based on business working hours. An agent
+                may not be available if you initiate a chat outside working hours or on holidays. </p>
+            <p>The standard support hours, based on the Eastern Standard Time (America/New York)
+                time zone, are:<ul id="ul_f3x_xgb_13c">
+                    <li><b>Monday to Friday:</b> 8:00 AM to 8:00 PM.</li>
+                    <li>
+                        <p><b>Saturday and Sunday:</b> Closed.</p>
+                    </li>
+                </ul></p>
+        </section>
+        <section id="section_x22_2zn_glb">
+            <title>Features</title>
+            <p>
+                <ul id="ul_cvp_3zn_glb">
+                    <li>
+                        <p>While using live chat, the following information is automatically passed
+                            to Salesforce Live Chat. The user does not need to share this
+                            information manually with the agent.<ul id="ul_dxx_3n1_13c">
+                                <li>
+                                    <p>First Name</p>
+                                </li>
+                                <li>
+                                    <p>Last Name</p>
+                                </li>
+                                <li>
+                                    <p>Email Address</p>
+                                </li>
+                                <li>
+                                    <p>Healthcare Organization</p>
+                                </li>
+                            </ul></p>
+                    </li>
+                    <li>
+                        <p>The chat window displays the name of the support agent you are chatting
+                            with.</p>
+                    </li>
+                </ul>
+            </p>
+            <p><b>Client Support:</b></p>
+            <p>Phone: 800.892.5049</p>
+            <p> Fax: 877.238.2776 </p>
+            <p>Web Portal: <xref href="http://www.nuance.com/support/index.html" format="html"
+                    scope="external"/></p>
+        </section>
+    </refbody>
+</reference>

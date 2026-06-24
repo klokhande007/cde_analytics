@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="deleting_fields_from_the_custom_report">
+    <title>Deleting Fields from Custom Report</title>
+    <shortdesc/>
+    <taskbody>
+        <context id="context_dcy_r4m_sgb"/>
+        <steps id="steps_ecy_r4m_sgb">
+            <step>
+                <cmd>Open the custom report from the <uicontrol>User Defined
+                    </uicontrol>reports.</cmd>
+            </step>
+            <step>
+                <cmd>Select the field you want to delete.</cmd>
+                <info>The field gets highlighted on the right pane.</info>
+            </step>
+            <step>
+                <cmd>Click the Cross icon to delete the field.</cmd>
+                <info>
+                    <fig id="fig_ysx_3lf_xgb">
+                        <title>Delete Fields</title>
+                        <image href="../Images/Delete%20Fields.gif" id="image_k5h_ndz_t4b"
+                            width="300"/>
+                    </fig>
+                </info>
+            </step>
+            <step>
+                <cmd>Go to <uicontrol>File</uicontrol> and select <uicontrol>Save
+                    As</uicontrol>.</cmd>
+                <info>The Save As dialog box is displayed.</info>
+            </step>
+            <step>
+                <cmd>Enter the name of the report and click <uicontrol>Save</uicontrol>.</cmd>
+                <info>The report gets saved in the <uicontrol>User Defined</uicontrol>
+                    section.</info>
+            </step>
+        </steps>
+    </taskbody>
+</task>

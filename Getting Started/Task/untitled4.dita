@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="untitled4">
+    <title>Setting Print Page Options</title>
+    <shortdesc></shortdesc>
+    <taskbody>
+        <context>
+            <p>When you print from Nuance CDE applications, you can change the appearance of the
+                page.</p>
+        </context>
+        <steps>
+            <step>
+                <cmd>From your browser, select <uicontrol>File</uicontrol>\<uicontrol>Page
+                        Setup</uicontrol>.</cmd>
+            </step>
+            <step>
+                <cmd>Select your preferred settings and click <uicontrol>OK</uicontrol>.</cmd>
+            </step>
+        </steps>
+    </taskbody>
+</task>

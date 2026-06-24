@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="installing_google_chrom">
+    <title>Installing Google Chrome</title>
+    <shortdesc></shortdesc>
+    <conbody>
+        <p>In order to start using Chrome as a browser, follow these instructions to install
+            Chrome.</p>
+        <p>
+            <ol id="ol_q24_d2g_54b">
+                <li>To download Chrome, go to <xref href="http://www.google.com/chrome"
+                        format="html" scope="external"/>.</li>
+                <li>Click Download Chrome.<fig id="fig_gnv_zpg_54b">
+                        <image href="../Image/Chrome/Download%20Chrome.gif" id="image_yst_dqg_54b"/>
+                    </fig></li>
+                <li>Click Accept and Install.</li>
+                <li>Click Save File.<fig id="fig_ckn_2qg_54b">
+                        <image href="../Image/Chrome/chrome%20setup.gif" id="image_vv1_fqg_54b"/>
+                    </fig></li>
+                <li>Double-click the set up lick to begin the downloading process. Click Run.<fig
+                        id="fig_hff_hqg_54b">
+                        <image href="../Image/Chrome/chrome%20download.gif" id="image_fxp_hqg_54b"/>
+                    </fig></li>
+                <li>Once the download is complete, you will be prompted to login and customize the
+                    browser. You can choose to skip the process.</li>
+                <li>On the top panel, click Import Bookmarks Now.</li>
+                <li>Select the browser from which you want the bookmarks to be imported. Click
+                        Import.<fig id="fig_qmw_lqg_54b">
+                        <image href="../Image/Chrome/Import%20bookmarks.gif" id="image_vyh_mqg_54b"
+                        />
+                    </fig></li>
+            </ol>
+        </p>
+    </conbody>
+</concept>

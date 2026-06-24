@@ -1,0 +1,871 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="cmi_breakdown">
+    <title>CMI Breakdown</title>
+    <shortdesc/>
+    <conbody>
+        <p><b>Overview</b>: CMI Breakdown dashboard allows CDI Directors and Managers to analyze the
+            trend of Medical CMI and Surgical CMI over time.</p>
+        <p>The report provides answers to the following questions.<ul id="ul_sjk_t5k_p4b">
+                <li>What is the breakdown of medical vs. surgical cases?</li>
+                <li>What % of reconciled cases were medical?</li>
+                <li>What is the breakdown of medical vs. surgical CMI?</li>
+                <li>How is my Medical CMI trending month-to-month?</li>
+                <li>How is my Surgical CMI trending month-to-month?</li>
+            </ul></p>
+        <p><b>Navigation</b>: On the Analytics home page left side panel, navigate to <menucascade>
+                <uicontrol>CDE One</uicontrol>
+                <uicontrol>Executive Summary</uicontrol>
+                <uicontrol>CMI Breakdown</uicontrol>
+            </menucascade>. </p>
+        <p>CMI Breakdown dashboard displays the following:</p>
+        <ul id="ul_an2_bty_44b">
+            <li>KPI Cards: Overall CMI Before CDI, Overall CMI After CDI, CMI Shift, CMI Shift
+                (%)</li>
+            <li>Medical and Surgical Cases Chart</li>
+            <li>CMI Shift Chart</li>
+            <li>CMI Trend Tabular Chart</li>
+        </ul>
+        <p>On the top panel, you can select desired values for the slicers (refer <xref
+                href="#cmi_breakdown/table_qnn_w2n_g4b" format="dita"/>) and the corresponding data
+            gets filtered in the charts and table.</p>
+        <p>For filters on all pages, refer <xref href="#cmi_breakdown/table_dq1_ffn_g4b"
+                format="dita"/>.</p>
+        <p>For Footnotes, refer <xref href="#cmi_breakdown/table_vqg_bnl_p4b" format="dita"/>.</p>
+        <p><b>CMI Breakdown</b></p>
+        <fig id="fig_b5r_nkl_p4b">
+            <title>CMI Breakdown</title>
+            <image href="Images/CMI%20Breakdown.gif" id="image_ync_tkl_p4b" width="800"/>
+        </fig>
+        <p><b>CMI Breakdown - KPI Cards</b></p>
+        <fig id="fig_ilw_tkl_p4b">
+            <title>KPI Cards</title>
+            <image href="Images/CMI%20Breakdown%20KPI%20Cards.gif" id="image_s4j_5kl_p4b"
+                width="400"/>
+        </fig>
+        <table frame="all" rowsep="1" colsep="1" id="table_rtb_mty_44b">
+            <title>KPI Cards</title>
+            <tgroup cols="3">
+                <colspec colname="c1" colnum="1" colwidth="1*"/>
+                <colspec colname="c2" colnum="2" colwidth="1*"/>
+                <colspec colname="newCol3" colnum="3" colwidth="1*"/>
+                <thead>
+                    <row>
+                        <entry>KPI card</entry>
+                        <entry>Description</entry>
+                        <entry>Formula/Calculation</entry>
+                    </row>
+                </thead>
+                <tbody>
+                    <row>
+                        <entry>Overall CMI Before CDI</entry>
+                        <entry>
+                            <p>This metric displays Overall CMI Before CDI report for a period of 3
+                                months by default.</p>
+                        </entry>
+                        <entry>
+                            <p>CMI Before CDI = The sum of Final Coded DRG WTs of all
+                                Auto-Reconciled, Reconciled- No Impact, and Reconciled Impact
+                                (Impact Type: SOI/ROM Impact) encounters and Reconciliation
+                                assessment DRG WT (or Working DRG WT when Reconciliation Assessment
+                                Info is not available) of all Reconciled Impact (Impact Type: Both,
+                                Financial, (Unassigned (DD&lt; 11/14/2019)) encounters that meet the
+                                report criteria / Total count of reconciled cases (Auto-Reconciled,
+                                Reconciled-Impact, Reconciled-No Impact) for the selected report
+                                criteria.</p>
+                        </entry>
+                    </row>
+                    <row>
+                        <entry>Overall CMI After CDI</entry>
+                        <entry>
+                            <p>This metric displays Overall CMI After CDI report for a period of 3
+                                months by default.</p>
+                        </entry>
+                        <entry>
+                            <p>CMI After CDI= The sum of Final Coded DRG WTs of all Auto-Reconciled,
+                                Reconciled- No Impact, and Reconciled Impact (Impact Type: SOI/ROM
+                                Impact, Both, Financial, (Unassigned (DD&lt; 11/14/2019)) encounters
+                                that meet the report criteria / Total count of reconciled cases
+                                (Auto-Reconciled, Reconciled-Impact, Reconciled-No Impact) for the
+                                selected report criteria.</p>
+                        </entry>
+                    </row>
+                    <row>
+                        <entry>CMI Shift</entry>
+                        <entry>
+                            <p>This metric displays the CMI Shift report for a period of 3 months by
+                                default.</p>
+                        </entry>
+                        <entry>
+                            <p>CMI Shift = The sum of CMI Shift (CMI After CDI - CMI Before CDI) for
+                                the Reconciled-Impact (Impact Type: Financial, Both, Unassigned
+                                Impact for Discharge Date &lt; 11/14/2019) encounters that meet the
+                                report criteria. (Rounded 4 decimal places E.g., 2.1868)/ Total
+                                count of reconciled cases (Auto-Reconciled, Reconciled-Impact,
+                                Reconciled-No Impact) for the selected report criteria.</p>
+                        </entry>
+                    </row>
+                    <row>
+                        <entry>CMI Shift (%)</entry>
+                        <entry>
+                            <p>This metric displays CMI Shift (%) for a period of 3 months by
+                                default. Rounded to 2 decimal places. E.g. 2.74%.</p>
+                        </entry>
+                        <entry>
+                            <p>CMI Shift % = (The sum of CMI Shift (CMI After CDI - CMI Before CDI)
+                                for the Reconciled-Impact (Impact Type: Financial, Both, Unassigned
+                                Impact for Discharge Date &lt; 11/14/2019) encounters that meet the
+                                report criteria) / (CMI Before CDI for Auto Reconciled,
+                                Reconciled-No Impact, , Reconciled-Impact (SOI/ROM Impact)
+                                Reconciled-Impact (Impact Type: Financial, Both, Unassigned Impact
+                                for Discharge Date &lt; 11/14/2019) encounters that meet the report
+                                criteria). X 100.</p>
+                        </entry>
+                    </row>
+                </tbody>
+            </tgroup>
+        </table>
+        <p><b>CMI Breakdown - Medical and Surgical Cases Chart</b></p>
+        <fig id="fig_ott_vkl_p4b">
+            <title>Medical and Surgical Cases Chart</title>
+            <image href="Images/CMI%20Breakdown%20Medical%20and%20Surgical%20Cases.png"
+                id="image_htt_wkl_p4b" width="600"/>
+        </fig>
+        <p>The ‘Medical and Surgical Cases’ chart displays the volume and percentage of Medical and
+            Surgical cases for each month.</p>
+        <ul id="ul_wj3_zty_44b">
+            <li><b>X-axis</b>: Displays the discharge month in ascending order. (<b>Format</b>: Jun
+                2020, Jul 2020, etc.)</li>
+            <li><b>Y-axis</b>: Displays the percentage of encounters.</li>
+            <li>
+                <p>By default, the chart displays the data for 3 calendar months.</p>
+            </li>
+            <li><b>Info Icon</b>(text on hover): Medical Cases: Encounters with Final Coded DRG as
+                Medical. Surgical Cases: Encounters with Final Coded DRG as Surgical. Encounter
+                Status: Reconciled-Impact, Reconciled-No Impact, Auto-Reconciled.</li>
+        </ul>
+        <p>
+            <note>Medical encounters are those for which Final Coded DRG is Medical (M) ( if M/S
+                indicator is not available for Final DRG and Final DRG Code = Assessment DRG Code,
+                then Assessment DRG is Medical. if M/S indicator is not available for Final DRG and
+                Assessment DRG, and Final DRG Code = Working DRG Code, then Working DRG is
+                Medical)</note>
+        </p>
+        <p>
+            <note>Surgical encounters are those for which Final Coded DRG is Surgical (S) ( if M/S
+                indicator is not available for Final DRG and Final DRG Code = Assessment DRG Code,
+                then Assessment DRG is Medical. ( if M/S indicator is not available for Final DRG
+                and Final DRG Code = Assessment DRG Code, then Assessment DRG is Surgical. OR if M/S
+                indicator is not available for Final DRG and Assessment DRG, and Final DRG Code =
+                Working DRG Code, then Working DRG is Surgical)</note>
+        </p>
+        <table frame="all" rowsep="1" colsep="1" id="table_bp5_b5y_44b">
+            <title>Medical and Surgical Cases Chart details</title>
+            <tgroup cols="5">
+                <colspec colname="c1" colnum="1" colwidth="1*"/>
+                <colspec colname="c2" colnum="2" colwidth="1*"/>
+                <colspec colname="newCol3" colnum="3" colwidth="1*"/>
+                <colspec colname="newCol4" colnum="4" colwidth="1*"/>
+                <colspec colname="c3" colnum="5" colwidth="1*"/>
+                <thead>
+                    <row>
+                        <entry>Metric</entry>
+                        <entry>Description</entry>
+                        <entry>Formula/Calculation</entry>
+                        <entry>Exclusion Criteria (if any)</entry>
+                        <entry>Tooltip</entry>
+                    </row>
+                </thead>
+                <tbody>
+                    <row>
+                        <entry>% Medical Cases</entry>
+                        <entry>
+                            <p>Percentage of medical cases for each month.</p>
+                        </entry>
+                        <entry>
+                            <p>%  Medical Cases = The total number of medical encounters with status
+                                as Auto- Reconciled, Reconciled-Impact or Reconciled-No Impact /
+                                Total Reconciled Cases x 100</p>
+                        </entry>
+                        <entry/>
+                        <entry>
+                            <p>Tooltip displays 'Reconciled Medical Cases' for each month. </p>
+                            <p>The total number of medical encounters with status as Auto-
+                                Reconciled, Reconciled-Impact or Reconciled-No Impact.</p>
+                        </entry>
+                    </row>
+                    <row>
+                        <entry>% Surgical Cases</entry>
+                        <entry>
+                            <p>Percentage of surgical cases for each month.</p>
+                        </entry>
+                        <entry>
+                            <p>% Surgical Cases = The total number of surgical encounters with
+                                status as Auto- Reconciled, Reconciled-Impact or Reconciled-No
+                                Impact / Total Reconciled Cases x 100</p>
+                        </entry>
+                        <entry/>
+                        <entry>
+                            <p>Tooltip displays 'Reconciled Surgical Cases' for each month. </p>
+                            <p>The total number of surgical encounters with status as Auto-
+                                Reconciled, Reconciled-Impact or Reconciled-No Impact.</p>
+                        </entry>
+                    </row>
+                </tbody>
+            </tgroup>
+        </table>
+        <p><b>CMI Breakdown - CMI Shift Chart</b></p>
+        <fig id="fig_wqk_xkl_p4b">
+            <title>CMI Shift Chart</title>
+            <image href="Images/CMI%20Breakdown%20CMI%20Shift.png" id="image_x4y_xkl_p4b"
+                width="600"/>
+        </fig>
+        <p>The CMI Shift chart displays the Overall CMI Shift, Medical CMI Shift, and Surgical CMI
+            Shift percentages for each month.</p>
+        <ul id="ul_q4q_n5y_44b">
+            <li><b>X-axis</b>: Displays the discharge month in ascending order. (Format: Jun 2020,
+                Jul 2020, etc.)</li>
+            <li><b>Y-axis</b>: Displays the shift percentage.</li>
+            <li>
+                <p>By default, the chart displays the data for 3 calendar months.</p>
+            </li>
+            <li><b>Tool-tip</b>: Displays Overall CMI Before, Overall CMI After, Medical CMI Before,
+                Medical CMI After, Surgical CMI Before, and Surgical CMI After for each month.</li>
+            <li><b>Info Icon</b>(text on hover): CMI metrics are for all the reconciled cases.
+                Encounter Status: Reconciled-Impact, Reconciled-No Impact, Auto-Reconciled.</li>
+        </ul>
+        <p>
+            <note>Medical encounters are those for which Final Coded DRG is Medical (M) if M/S
+                indicator is not available for Final DRG and Final DRG Code = Assessment DRG Code,
+                then Assessment DRG is Medical. if M/S indicator is not available for Final DRG and
+                Assessment DRG, and Final DRG Code = Working DRG Code, then Working DRG is
+                Medical)</note>
+        </p>
+        <p>
+            <note>Surgical encounters are those for which Final Coded DRG is Surgical (S) ( if M/S
+                indicator is not available for Final DRG and Final DRG Code = Assessment DRG Code,
+                then Assessment DRG is Surgical. OR if M/S indicator is not available for Final DRG
+                and Assessment DRG, and Final DRG Code = Working DRG Code, then Working DRG is
+                Surgical)</note>
+        </p>
+        <table frame="all" rowsep="1" colsep="1" id="table_o2t_45y_44b">
+            <title>CMI Shift chart details</title>
+            <tgroup cols="5">
+                <colspec colname="c1" colnum="1" colwidth="1*"/>
+                <colspec colname="c2" colnum="2" colwidth="1*"/>
+                <colspec colname="newCol3" colnum="3" colwidth="1*"/>
+                <colspec colname="newCol4" colnum="4" colwidth="1*"/>
+                <colspec colname="c3" colnum="5" colwidth="1*"/>
+                <thead>
+                    <row>
+                        <entry>Metric</entry>
+                        <entry>Description</entry>
+                        <entry>Formula/Calculation</entry>
+                        <entry>Exclusion Criteria (if any)</entry>
+                        <entry>Tooltip</entry>
+                    </row>
+                </thead>
+                <tbody>
+                    <row>
+                        <entry>Overall CMI Shift</entry>
+                        <entry>
+                            <p>Percentage shift in weight between Final Coded DRG and Reconciliation
+                                Assessment DRG weights for Reconciled Encounters (Auto- Reconciled,
+                                Reconciled-Impact or Reconciled-No Impact for which Reconciliation
+                                Assessment DRG WT (or W-DRG WT) is less than or equal to Final DRG
+                                WT (Final WT- R-DRG WT >= 0)).</p>
+                            <p>
+                                <note>Rounded to 2 decimal places.</note>
+                            </p>
+                        </entry>
+                        <entry>
+                            <p>Overall CMI Shift(%) = (Overall CMI After CDI- Overall CMI Before CDI
+                                /Overall Before CDI) *100</p>
+                        </entry>
+                        <entry/>
+                        <entry morerows="2">
+                            <p>Overall CMI Before</p>
+                            <p>Overall CMI After</p>
+                            <p>Medical CMI Before</p>
+                            <p>Medical CMI After</p>
+                            <p>Surgical CMI Before</p>
+                            <p>Surgical CMI After </p>
+                        </entry>
+                    </row>
+                    <row>
+                        <entry>Medical CMI Shift</entry>
+                        <entry>
+                            <p>Percentage shift in weight between Final Coded DRG and Reconciliation
+                                Assessment DRG weights for medical Reconciled Encounters (Auto-
+                                Reconciled, Reconciled-Impact or Reconciled-No Impact) for which
+                                Reconciliation Assessment DRG WT (or W-DRG WT) is less than or equal
+                                to Final DRG WT (Final WT- R-DRG WT >= 0).</p>
+                            <p>
+                                <note> Rounded to 2 decimal places.</note>
+                            </p>
+                            <p>This value is represented with 0 decimals.</p>
+                        </entry>
+                        <entry>
+                            <p>Medical CMI Shift(%) = (Medical CMI After CDI- Medical CMI Before CDI
+                                /Medical Before CDI) *100</p>
+                        </entry>
+                        <entry/>
+                    </row>
+                    <row>
+                        <entry>Surgical CMI Shift</entry>
+                        <entry>
+                            <p>Percentage shift in weight between Final Coded DRG and Reconciliation
+                                Assessment DRG weights for surgical Reconciled Encounters (Auto-
+                                Reconciled, Reconciled-Impact or Reconciled-No Impact) for which
+                                Reconciliation Assessment DRG WT (or W-DRG WT) is less than or equal
+                                to Final DRG WT (Final WT- R-DRG WT >= 0).</p>
+                            <p>
+                                <note>Rounded to 2 decimal places.</note>
+                            </p>
+                        </entry>
+                        <entry>
+                            <p>Surgical CMI Shift(%) = (Surgical CMI After CDI- Surgical CMI Before
+                                CDI /Surgical Before CDI) *100</p>
+                        </entry>
+                        <entry/>
+                    </row>
+                </tbody>
+            </tgroup>
+        </table>
+        <p><b>CMI Breakdown - CMI Trend Chart</b></p>
+        <fig id="fig_ywd_2ll_p4b">
+            <title>CMI Trend Chart</title>
+            <image href="Images/CMI%20Breakdown%20CMI%20Trend.png" id="image_lxs_2ll_p4b"
+                width="800"/>
+        </fig>
+        <p>The CMI Trend chart displays the monthly trend of various CMI metrics.</p>
+        <ul id="ul_g3b_gvy_44b">
+            <li>
+                <p>By default, the chart displays the data for 3 calendar months.</p>
+            </li>
+            <li><b>Info icon</b>(text on hover): Data in this chart is for all the reconciled cases.
+                Encounter Status: Reconciled-Impact, Reconciled-No Impact, Auto-Reconciled.</li>
+        </ul>
+        <p>
+            <note>Medical encounters are those for which Final Coded DRG is Medical (M) ( if M/S
+                indicator is not available for Final DRG and Final DRG Code = Assessment DRG Code,
+                then Assessment DRG is Medical. if M/S indicator is not available for Final DRG and
+                Assessment DRG, and Final DRG Code = Working DRG Code, then Working DRG is
+                Medical)</note>
+        </p>
+        <p>
+            <note>Surgical encounters are those for which Final Coded DRG is Surgical (S) ( if M/S
+                indicator is not available for Final DRG and Final DRG Code = Assessment DRG Code,
+                then Assessment DRG is Medical. ( if M/S indicator is not available for Final DRG
+                and Final DRG Code = Assessment DRG Code, then Assessment DRG is Surgical. OR if M/S
+                indicator is not available for Final DRG and Assessment DRG, and Final DRG Code =
+                Working DRG Code, then Working DRG is Surgical)</note>
+        </p>
+        <table frame="all" rowsep="1" colsep="1" id="table_xdr_hvy_44b">
+            <title>CMI Trend chart details</title>
+            <tgroup cols="5">
+                <colspec colname="c1" colnum="1" colwidth="1*"/>
+                <colspec colname="c2" colnum="2" colwidth="1.5*"/>
+                <colspec colname="newCol3" colnum="3" colwidth="1.25*"/>
+                <colspec colname="newCol4" colnum="4" colwidth="1.25*"/>
+                <colspec colname="newCol5" colnum="5" colwidth="1.25*"/>
+                <thead>
+                    <row>
+                        <entry>Column</entry>
+                        <entry>Description</entry>
+                        <entry>Formula/Calculation</entry>
+                        <entry>Exclusion Criteria (if any)</entry>
+                        <entry>Tooltip</entry>
+                    </row>
+                </thead>
+                <tbody>
+                    <row>
+                        <entry>Discharge Month</entry>
+                        <entry>Discharge month in the format MMM-YYYY (E.g. Jun 2020, Mar
+                            2020)</entry>
+                        <entry/>
+                        <entry/>
+                        <entry morerows="14"/>
+                    </row>
+                    <row>
+                        <entry>Total Reconciled</entry>
+                        <entry>
+                            <p>The count of encounters with Reconciled Impact, Reconciled No Impact,
+                                or Auto Reconcile status.</p>
+                        </entry>
+                        <entry/>
+                        <entry/>
+                    </row>
+                    <row>
+                        <entry>Overall CMI Before CDI</entry>
+                        <entry>This metric displays the 'Overall Positive CMI Before CDI' for each
+                                month.<p>The average of Reconciliation Assessment DRG WTs (or
+                                Working DRG WT when Discharge Date &lt; 11/14/19 or Reconciliation
+                                Assessment DRG is blank) of all encounters with status of Auto-
+                                Reconciled, Reconciled-Impact or Reconciled-No Impact for which
+                                Reconciliation Assessment DRG WT (or W-DRG WT) is less than or equal
+                                to Final DRG WT (Final WT- R-DRG WT >= 0)</p><p>
+                                <note>This value is represented with 4 decimals.</note>
+                            </p></entry>
+                        <entry>Overall CMI Before CDI = Sum of Reconciliation Assessment DRG WTs (or
+                            Working DRG WT when Discharge Date &lt; 11/14/19 or Reconciliation
+                            Assessment DRG is blank) of all encounters with status of Auto-
+                            Reconciled, Reconciled-Impact or Reconciled-No Impact for which
+                            Reconciliation Assessment DRG WT (or W-DRG WT) is less than or equal to
+                            Final DRG WT (Final WT- R-DRG WT >= 0). / Total count of Reconciled
+                            Encounters. (Auto- Reconciled, Reconciled-Impact or Reconciled-No
+                            Impact)</entry>
+                        <entry/>
+                    </row>
+                    <row>
+                        <entry>Overall CMI After CDI</entry>
+                        <entry>This metric displays the 'Overall Positive CMI After CDI' for each
+                                month.<p>The average of Final DRG WTs of all encounters with status
+                                of Auto- Reconciled, Reconciled-Impact or Reconciled-No Impact for
+                                which Reconciliation Assessment DRG WT (or W-DRG WT) is less than or
+                                equal to Final DRG WT (Final WT- R-DRG WT >= 0)</p><p>
+                                <note>This value is represented with 4 decimals.</note>
+                            </p></entry>
+                        <entry>Overall CMI After CDI = Sum of Final DRG WTs of all encounters with
+                            status of Auto- Reconciled, Reconciled-Impact or Reconciled-No Impact
+                            for which Reconciliation Assessment DRG WT (or W-DRG WT) is less than or
+                            equal to Final DRG WT (Final WT- R-DRG WT >= 0). / Total count of
+                            Reconciled Encounters. (Auto- Reconciled, Reconciled-Impact or
+                            Reconciled-No Impact)</entry>
+                        <entry/>
+                    </row>
+                    <row>
+                        <entry>CMI Shift %</entry>
+                        <entry>Percentage shift in weight between Final Coded DRG and Reconciliation
+                            Assessment DRG weights for Reconciled Encounters (Auto- Reconciled,
+                            Reconciled-Impact or Reconciled-No Impact for which Reconciliation
+                            Assessment DRG WT (or W-DRG WT) is less than or equal to Final DRG WT
+                            (Final WT- R-DRG WT >= 0)).<p>
+                                <note>Rounded to 2 decimal places. E.g. 2.74%.</note>
+                            </p></entry>
+                        <entry>
+                            <p>Overall CMI Shift(%) = (Overall CMI After CDI- Overall CMI Before CDI
+                                /Overall Before CDI) *100</p>
+                        </entry>
+                        <entry/>
+                    </row>
+                    <row>
+                        <entry>MED Cases</entry>
+                        <entry>
+                            <p>Count of medical cases for each month.</p>
+                        </entry>
+                        <entry>MED Cases = The total number of medical encounters with status as
+                            Auto- Reconciled, Reconciled-Impact or Reconciled-No Impact.</entry>
+                        <entry/>
+                    </row>
+                    <row>
+                        <entry>% MED Cases</entry>
+                        <entry>
+                            <p>Percentage of surgical cases for each month.</p>
+                        </entry>
+                        <entry>
+                            <p>%  Medical Cases = The total number of medical encounters with status
+                                as Auto- Reconciled, Reconciled-Impact or Reconciled-No Impact /
+                                Total Reconciled Cases x 100</p>
+                        </entry>
+                        <entry/>
+                    </row>
+                    <row>
+                        <entry>MED CMI Before CDI</entry>
+                        <entry>
+                            <p>The average of Reconciliation Assessment DRG WTs (or Working DRG WT
+                                when Discharge Date &lt; 11/14/19 or Reconciliation Assessment DRG
+                                is blank) of all Medical encounters with status of Auto- Reconciled,
+                                Reconciled-Impact or Reconciled-No Impact for which Reconciliation
+                                Assessment DRG WT (or W-DRG WT) is less than or equal to Final DRG
+                                WT (Final WT- R-DRG WT >= 0).</p>
+                            <p>This value is represented with 4 decimals.</p>
+                        </entry>
+                        <entry>
+                            <p>CMI Before CDI = Sum of Reconciliation Assessment DRG WTs (or Working
+                                DRG WT when Discharge Date &lt; 11/14/19 or Reconciliation
+                                Assessment DRG is blank) of all Medical encounters with status of
+                                Auto- Reconciled, Reconciled-Impact or Reconciled-No Impact for
+                                which Reconciliation Assessment DRG WT (or W-DRG WT) is less than or
+                                equal to Final DRG WT (Final WT- R-DRG WT >= 0) / Total count of
+                                Medical Reconciled Encounters. (Auto- Reconciled, Reconciled-Impact
+                                or Reconciled-No Impact)</p>
+                        </entry>
+                        <entry/>
+                    </row>
+                    <row>
+                        <entry>MED CMI After CDI</entry>
+                        <entry>
+                            <p>The average of Final DRG WTs of all medical encounters with status of
+                                Auto- Reconciled, Reconciled-Impact or Reconciled-No Impact.</p>
+                            <p>This value is represented with 4 decimals.</p>
+                        </entry>
+                        <entry>
+                            <p>Med CMI After CDI = Sum of Final DRG WTs of all medical encounters
+                                with status of Auto- Reconciled, Reconciled-Impact or Reconciled-No
+                                Impact. / Total count of medical Reconciled Encounters. (Auto-
+                                Reconciled, Reconciled-Impact or Reconciled-No Impact) for which
+                                Reconciliation Assessment DRG WT (or W-DRG WT) is less than or equal
+                                to Final DRG WT (Final WT- R-DRG WT >= 0)</p>
+                        </entry>
+                        <entry/>
+                    </row>
+                    <row>
+                        <entry>MED CMI Shift %</entry>
+                        <entry>
+                            <p>Percentage shift in weight between Final Coded DRG and Reconciliation
+                                Assessment DRG weights for medical Reconciled Encounters (Auto-
+                                Reconciled, Reconciled-Impact or Reconciled-No Impact) for which
+                                Reconciliation Assessment DRG WT (or W-DRG WT) is less than or equal
+                                to Final DRG WT (Final WT- R-DRG WT >= 0).</p>
+                            <p>
+                                <note>Rounded to 2 decimal places. E.g. 2.74%.</note>
+                            </p>
+                            <p>This value is represented with 0 decimals.</p>
+                        </entry>
+                        <entry>
+                            <p>Med CMI Shift(%) = (Medical CMI After CDI- Medical CMI Before CDI
+                                /Medical Before CDI) *100</p>
+                        </entry>
+                        <entry/>
+                    </row>
+                    <row>
+                        <entry>SURG Cases</entry>
+                        <entry>
+                            <p>Count of surgical cases for each month.</p>
+                        </entry>
+                        <entry>SURG Cases = The total number of surgical encounters with status as
+                            Auto- Reconciled, Reconciled-Impact or Reconciled-No Impact.</entry>
+                        <entry/>
+                    </row>
+                    <row>
+                        <entry>% SURG Cases</entry>
+                        <entry>
+                            <p>Percentage of surgical cases for each month.</p>
+                        </entry>
+                        <entry>
+                            <p>% SURG Cases = The total number of surgical encounters with status as
+                                Auto- Reconciled, Reconciled-Impact or Reconciled-No Impact / Total
+                                Reconciled Cases x 100</p>
+                        </entry>
+                        <entry/>
+                    </row>
+                    <row>
+                        <entry>SURG CMI Before CDI</entry>
+                        <entry>
+                            <p>The average of Reconciliation Assessment DRG WTs (or Working DRG WT
+                                when Discharge Date &lt; 11/14/19 or Reconciliation Assessment DRG
+                                is blank) of all Surgical encounters with status of Auto-
+                                Reconciled, Reconciled-Impact or Reconciled-No Impact for which
+                                Reconciliation Assessment DRG WT (or W-DRG WT) is less than or equal
+                                to Final DRG WT (Final WT- R-DRG WT >= 0). </p>
+                            <p>This value is represented with 4 decimals.</p>
+                        </entry>
+                        <entry>
+                            <p>Surgical CMI Before CDI = Sum of Reconciliation Assessment DRG WTs
+                                (or Working DRG WT when Discharge Date &lt; 11/14/19 or
+                                Reconciliation Assessment DRG is blank) of all Surgical encounters
+                                with status of Auto- Reconciled, Reconciled-Impact or Reconciled-No
+                                Impact for which Reconciliation Assessment DRG WT (or W-DRG WT) is
+                                less than or equal to Final DRG WT (Final WT- R-DRG WT >= 0) / Total
+                                count of Surgical Reconciled Encounters. (Auto- Reconciled,
+                                Reconciled-Impact or Reconciled-No Impact)</p>
+                        </entry>
+                        <entry/>
+                    </row>
+                    <row>
+                        <entry>SURG CMI After CDI</entry>
+                        <entry>
+                            <p>The average of Final DRG WTs of all medical encounters with status of
+                                Auto- Reconciled, Reconciled-Impact or Reconciled-No Impact for
+                                which Reconciliation Assessment DRG WT (or W-DRG WT) is less than or
+                                equal to Final DRG WT (Final WT- R-DRG WT >= 0).</p>
+                            <p>This value is represented with 4 decimals.</p>
+                        </entry>
+                        <entry>
+                            <p>SURG CMI After CDI = Sum of Final DRG WTs of all surgical encounters
+                                with status of Auto- Reconciled, Reconciled-Impact or Reconciled-No
+                                Impact for which Reconciliation Assessment DRG WT (or W-DRG WT) is
+                                less than or equal to Final DRG WT (Final WT- R-DRG WT >= 0). /
+                                Total count of surgical Reconciled Encounters. (Auto- Reconciled,
+                                Reconciled-Impact or Reconciled-No Impact)</p>
+                        </entry>
+                        <entry/>
+                    </row>
+                    <row>
+                        <entry>SURG CMI Shift %</entry>
+                        <entry>
+                            <p>Percentage shift in weight between Final Coded DRG and Reconciliation
+                                Assessment DRG weights for surgical Reconciled Encounters (Auto-
+                                Reconciled, Reconciled-Impact or Reconciled-No Impact) for which
+                                Reconciliation Assessment DRG WT (or W-DRG WT) is less than or equal
+                                to Final DRG WT (Final WT- R-DRG WT >= 0).</p>
+                            <p>
+                                <note>Rounded to 2 decimal places. E.g. 2.74%.</note>
+                            </p>
+                            <p>This value is represented with 0 decimals.</p>
+                        </entry>
+                        <entry>
+                            <p>Surgical CMI Shift(%) = (Surgical CMI After CDI- Surgical CMI Before
+                                CDI /Surgical Before CDI) *100</p>
+                        </entry>
+                        <entry/>
+                    </row>
+                </tbody>
+            </tgroup>
+        </table>
+        <p>
+            <table frame="all" rowsep="1" colsep="1" id="table_qnn_w2n_g4b">
+                <title>Report Slicers </title>
+                <tgroup cols="2">
+                    <colspec colname="c1" colnum="1" colwidth="1*"/>
+                    <colspec colname="c2" colnum="2" colwidth="1*"/>
+                    <thead>
+                        <row>
+                            <entry>Slicer</entry>
+                            <entry>Description</entry>
+                        </row>
+                    </thead>
+                    <tbody>
+                        <row>
+                            <entry>Discharge Date</entry>
+                            <entry>
+                                <ul id="ul_uzh_y2n_g4b">
+                                    <li>Displays the discharge date range. </li>
+                                    <li>You can select date from the lookup provided.</li>
+                                    <li>
+                                        <b>Example</b>: 7/1/2020 - 7/31/2020</li>
+                                    <li><b>Default</b>: Last 3 calendar months date range selected
+                                        by default.</li>
+                                </ul>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>Reset </entry>
+                            <entry>
+                                <ul id="ul_jw1_22z_m4b">
+                                    <li>With the Reset button, you can reset the admit date
+                                        range.</li>
+                                    <li><b>Tooltip</b>: Use "Ctrl + Click" to reset the Admit
+                                        Date.</li>
+                                </ul>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>Facility</entry>
+                            <entry>
+                                <ul id="ul_vzp_z2n_g4b">
+                                    <li>Displays both active and inactive facilities in alphabetical
+                                        order that you have access to.</li>
+                                    <li>You can select multiple facilities.</li>
+                                    <li>You can search the facility by Facility ID or
+                                        Description.</li>
+                                    <li><b>Format</b>: Facility Description (Facility ID)</li>
+                                    <li><b>Default</b>: ALL</li>
+                                </ul>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>Payer</entry>
+                            <entry>
+                                <ul id="ul_ntb_cfn_g4b">
+                                    <li>Displays both active and inactive payers in alphabetical
+                                        order associated with the facilities you have access
+                                        to.</li>
+                                    <li>You can select multiple payers.</li>
+                                    <li>"Unassigned Payer" displays data for the encounters that do
+                                        not have a payer assigned.</li>
+                                    <li>You can search the Payer by Payer ID or Description.</li>
+                                    <li><b>Format</b>: Payer Description (Payer ID)</li>
+                                    <li><b>Default</b>: ALL</li>
+                                </ul>
+                            </entry>
+                        </row>
+                    </tbody>
+                </tgroup>
+            </table>
+        </p>
+        <p>
+            <table frame="all" rowsep="1" colsep="1" id="table_dq1_ffn_g4b">
+                <title>Filters on all Pages</title>
+                <tgroup cols="2">
+                    <colspec colname="c1" colnum="1" colwidth="1*"/>
+                    <colspec colname="c2" colnum="2" colwidth="1*"/>
+                    <thead>
+                        <row>
+                            <entry>Filter</entry>
+                            <entry>Description</entry>
+                        </row>
+                    </thead>
+                    <tbody>
+                        <row>
+                            <entry>Patient Type</entry>
+                            <entry>
+                                <ul id="ul_ns1_3fn_g4b">
+                                    <li>Displays the available patient types. <b>Example</b>:
+                                        Inpatient, Outpatient.</li>
+                                    <li><b>Default</b>: Inpatient</li>
+                                </ul>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>Unit</entry>
+                            <entry>
+                                <ul id="ul_kdd_jfn_g4b">
+                                    <li>Displays the list of available units.</li>
+                                    <li>You can select multiple Units.</li>
+                                    <li>You can search the Unit.</li>
+                                    <li><b>Default</b>: ALL</li>
+                                </ul>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>Admit Service</entry>
+                            <entry>
+                                <ul id="ul_x2g_kfn_g4b">
+                                    <li>Displays the list of available admit service.</li>
+                                    <li>You can select multiple Units.</li>
+                                    <li>You can search the Admit Service.</li>
+                                    <li><b>Default</b>: ALL</li>
+                                </ul>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>Visit Type</entry>
+                            <entry>
+                                <ul id="ul_obm_lgm_r4b">
+                                    <li>Displays the available patient types.<b>Example</b>: ED, IP,
+                                        etc.</li>
+                                    <li>You can select multiple Visit Type.</li>
+                                    <li>You can search the Visit Type.</li>
+                                    <li><b>Default</b>: ALL</li>
+                                </ul>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>DRG Specialty</entry>
+                            <entry>
+                                <p>
+                                    <ul id="ul_thz_gml_kqb">
+                                        <li>
+                                            <p>Displays the available DRG Specialties.
+                                                  <b>Example</b>: Transplant, Surgery,
+                                                Neurosurgery.</p>
+                                        </li>
+                                        <li>You can select multiple specialties.</li>
+                                        <li>You can search the DRG Specialty.</li>
+                                        <li><b>Default</b>: ALL</li>
+                                    </ul>
+                                </p>
+                            </entry>
+                        </row>
+                    </tbody>
+                </tgroup>
+            </table>
+        </p>
+        <p>
+            <table frame="all" rowsep="1" colsep="1" id="table_vqg_bnl_p4b">
+                <title><b>Footnotes</b></title>
+                <tgroup cols="2">
+                    <colspec colname="c1" colnum="1" colwidth="1*"/>
+                    <colspec colname="c2" colnum="2" colwidth="1*"/>
+                    <thead>
+                        <row>
+                            <entry>Formula</entry>
+                            <entry>Text on hover</entry>
+                        </row>
+                    </thead>
+                    <tbody>
+                        <row>
+                            <entry>Overall CMI Before</entry>
+                            <entry>
+                                <p>The avg. of R-DRG WTs (or W-DRG WT if R-DRG is blank) of all
+                                    Reconciled-Impact (Impact Type: Both, Financial Impact)
+                                    encounters and F-DRG WTs of all Reconciled-No Impact,
+                                    Reconciled-Impact (Impact Type: SOI/ROM Impact) and Auto
+                                    Reconciled encounters.</p>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>Overall CMI After</entry>
+                            <entry>The avg. of Final DRG WTs of all reconciled (Reconciled-Impact,
+                                Reconciled-No Impact, Auto Reconciled) encounters.</entry>
+                        </row>
+                        <row>
+                            <entry>Overall CMI Shift</entry>
+                            <entry>
+                                <p>CMI Shift = (CMI After - CMI Before);</p>
+                                <p>CMI Shift(%)= (CMI After - CMI Before)/CMI Before X 100. E.g.
+                                    3.14%</p>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>Medical Cases</entry>
+                            <entry>
+                                <p>Medical Cases: Encounters with Final Coded DRG as Medical.</p>
+                                <p>% Medical Cases = (The total number of medical encounters with
+                                    status as Auto- Reconciled, Reconciled-Impact or Reconciled-No
+                                    Impact / Total Reconciled Cases) x 100. E.g. 41%</p>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>Medical CMI Before </entry>
+                            <entry>
+                                <p>The avg. of R-DRG WTs (or W-DRG WT if R-DRG is blank) of all
+                                    Reconciled-Impact (Both, Financial) medical encounters and F-DRG
+                                    WTs of all Reconciled-No Impact, Reconciled-Impact (SOI/ROM) and
+                                    Auto Reconciled medical encounters.</p>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>Medical CMI After</entry>
+                            <entry>The avg. of Final DRG WTs of all reconciled (Reconciled-Impact,
+                                Reconciled-No Impact, Auto Reconciled) medical encounters</entry>
+                        </row>
+                        <row>
+                            <entry>Medical CMI Shift</entry>
+                            <entry>
+                                <p>Medical CMI Shift = (Medical CMI After - Medical CMI Before).
+                                    E.g. 1.3056</p>
+                                <p>Medical CMI Shift(%)= ((Medical CMI After - Medical CMI
+                                    Before)/Medical CMI Before) X 100. E.g. 3.14%</p>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>Surgical Cases</entry>
+                            <entry>
+                                <p>Surgical Cases: Encounters with Final Coded DRG as Surgical.</p>
+                                <p>% Surgical Cases = The total number of surgical encounters with
+                                    status as Auto- Reconciled, Reconciled-Impact or Reconciled-No
+                                    Impact / Total Reconciled Cases x 100. E.g. 65%</p>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>Surgical CMI Before</entry>
+                            <entry>
+                                <p>The avg. of R-DRG WTs (or W-DRG WT if R-DRG is blank) of all
+                                    Reconciled-Impact (Both, Financial) surgical encounters and
+                                    F-DRG WTs of all Reconciled-No Impact, Reconciled-Impact
+                                    (SOI/ROM) and Auto Reconciled surgical encounters.</p>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>Surgical CMI After</entry>
+                            <entry>The avg. of Final DRG WTs of all reconciled (Reconciled-Impact,
+                                Reconciled-No Impact, Auto Reconciled) surgical encounters.</entry>
+                        </row>
+                        <row>
+                            <entry>Surgical CMI Shift</entry>
+                            <entry>
+                                <p>Surgical CMI Shift = (Surgical CMI After - Surgical CMI Before).
+                                    E.g. 1.3056</p>
+                                <p>Surgical CMI Shift(%)= ((Surgical CMI After - Surgical CMI
+                                    Before)/Surgical CMI Before X 100. E.g. 3.14%</p>
+                            </entry>
+                        </row>
+                    </tbody>
+                </tgroup>
+            </table>
+        </p>
+    </conbody>
+</concept>

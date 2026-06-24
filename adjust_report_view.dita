@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="adjust_report_view">
+    <title>Adjust Report View</title>
+    <shortdesc></shortdesc>
+    <conbody>
+        <p>The following options are available on the report screen to adjust report view under
+                <uicontrol>View</uicontrol> drop-down:</p>
+        <p>
+            <ul id="ul_okn_rfy_rgb">
+                <li><uicontrol>Fit to Page </uicontrol>(default): Contents are scaled to best fit
+                    the page.</li>
+                <li><uicontrol>Fit to Width</uicontrol>: Contents are scaled to fit within the width
+                    of the page.</li>
+                <li><uicontrol>Actual Size</uicontrol>: Contents are displayed at full size.</li>
+                <li><uicontrol>Show grid lines</uicontrol>: Turn on grid lines to help you position
+                    objects on the report canvas.</li>
+                <li><uicontrol>Snap to grid</uicontrol>: Use with Show grid lines to precisely
+                    position and align objects on the report canvas.</li>
+                <li>
+                    <p><uicontrol>Lock objects</uicontrol>: Lock all objects on the canvas so that
+                        they cannot be moved or resized.</p>
+                </li>
+                <li>
+                    <p><uicontrol>Selection pane</uicontrol>: Lists all objects on the canvas and
+                        you can decide which to show and which to hide.<fig id="fig_i43_dhm_sgb">
+                            <title>Report View Drop-down</title>
+                            <image href="Images/Report%20View%20Drop-down.gif"
+                                id="image_wwp_xdz_t4b" width="300"/>
+                        </fig></p>
+                </li>
+            </ul>
+        </p>
+        <note>The <uicontrol>View</uicontrol> drop-down is not available when you login as a CDS
+            Manager.</note>
+    </conbody>
+</concept>

@@ -1,0 +1,594 @@
+
+<!DOCTYPE html
+  PUBLIC "" "about:legacy-compat">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:whc="http://www.oxygenxml.com/webhelp/components" xml:lang="en" lang="en">
+    <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta charset="UTF-8" /><meta name="copyright" content="(C) Copyright 2021" /><meta name="DC.rights.owner" content="(C) Copyright 2021" /><meta name="DC.Type" content="concept" /><meta name="description" content="Overview : Clarification Type Trend dashboard enables CDI Managers to analyze the distribution of the clarification types, response and agreement rates to the clarifications over a period of time. The ..." /><meta name="DC.Format" content="XHTML" /><meta name="DC.Identifier" content="clarification_type_trend" />        
+      <title>Clarification Type Trend</title><!--  Generated with Oxygen version 20.1-SNAPSHOT, build number 2019011903.  --><meta name="wh-path2root" content="" /><meta name="wh-toc-id" content="clarification_type_trend-d66e526" /><link rel="stylesheet" type="text/css" href="./oxygen-webhelp/lib/bootstrap/css/bootstrap.min.css" /><link rel="stylesheet" href="./oxygen-webhelp/lib/bootstrap/css/bootstrap-theme.min.css" /><link rel="stylesheet" href="./oxygen-webhelp/lib/jquery-ui/jquery-ui.min.css" /><link rel="stylesheet" type="text/css" href="./oxygen-webhelp/app/topic-page.css?buildId=2019011903" /><script type="text/javascript" src="./oxygen-webhelp/lib/jquery/jquery-3.1.1.min.js"><!----></script><script data-main="./oxygen-webhelp/app/topic-page.js" src="./oxygen-webhelp/lib/requirejs/require.js"></script><link rel="stylesheet" type="text/css" href="oxygen-webhelp/template/oxygen.css?buildId=2019011903" /><link rel="stylesheet" type="text/css" href="Custom.css" /></head>
+
+    <body id="clarification_type_trend" class="wh_topic_page frmBody">
+        <a href="#wh_topic_body" class="sr-only sr-only-focusable">Jump to main content</a>
+        <!-- EXM-36950 - Expand the args.hdr parameter here -->
+        
+        
+        
+        <header class="navbar navbar-default wh_header">
+    <div class="container-fluid">
+        <div class="wh_header_flex_container">
+            <div class="wh_logo_and_publication_title_container">
+                <div class="wh_logo_and_publication_title">
+                    
+                    <!--
+                            This component will be generated when the next parameters are specified in the transformation scenario:
+                            'webhelp.logo.image' and 'webhelp.logo.image.target.url'.
+                            See: http://oxygenxml.com/doc/versions/17.1/ug-editor/#topics/dita_webhelp_output.html.
+                    -->
+                    <a href="index.html" class=" wh_logo hidden-xs "><img src="CDE_logo_Help.png" alt="Nuance CDE Help" /></a>
+                    <div class=" wh_publication_title "><a href="index.html"><span class="booktitle">  <span class="ph mainbooktitle">CDE Analytics New Guide</span>  </span></a></div>
+                    
+                </div>
+                
+                <!-- The menu button for mobile devices is copied in the output only when the 'webhelp.show.top.menu' parameter is set to 'yes' -->
+                <button type="button" data-target="#wh_top_menu_and_indexterms_link" id="wh_menu_mobile_button" data-toggle="collapse" class="navbar-toggle collapsed wh_toggle_button" aria-expanded="false" aria-label="Toggle menu">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+
+            <div class="wh_top_menu_and_indexterms_link collapse navbar-collapse" id="wh_top_menu_and_indexterms_link">
+                
+                <nav class=" wh_top_menu "><ul>
+   <li><span data-tocid="what_s_new-d66e19" data-state="leaf" class=" topicref " data-id="what_s_new"><span class="title"><a href="Reference/what_s_new.html">What's New</a></span></span></li>
+   <li><span data-tocid="online_analytics_training-d66e27" data-state="leaf" class=" topicref " data-id="online_analytics_training"><span class="title"><a href="online_analytics_training.html">Online Analytics Training</a></span></span></li>
+   <li class="has-children"><span data-tocid="tocId-d66e39" data-state="not-ready" class=" topicref "><span class="title"><a href="Getting%20Started/Concept/overview_getting_started.html">Getting Started</a></span></span></li>
+   <li class="has-children"><span data-tocid="tocId-d66e233" data-state="not-ready" class=" topicref "><span class="title"><a href="about_nuance_cde_analytics.html">Working With Reports</a></span></span></li>
+   <li class="has-children"><span data-tocid="tocId-d66e329" data-state="not-ready" class=" topicref "><span class="title"><a href="encounter_monitoring.html">CDE One - CDI Operations</a></span></span></li>
+   <li class="has-children"><span data-tocid="tocId-d66e413" data-state="not-ready" class=" topicref "><span class="title"><a href="team_performance.html">CDE One - Staff Management</a></span></span></li>
+   <li class="has-children"><span data-tocid="tocId-d66e465" data-state="not-ready" class=" topicref "><span class="title"><a href="executive_overview.html">CDE One - Executive Summary</a></span></span></li>
+   <li class="has-children"><span data-tocid="tocId-d66e537" data-state="not-ready" class=" topicref "><span class="title"><a href="CDE%20Triage%20Dashboard%20Overview.html">CDE Triage - CDE Triage Dashboard</a></span></span></li>
+   <li class="has-children"><span data-tocid="tocId-d66e609" data-state="not-ready" class=" topicref "><span class="title"><a href="post_discharge_reviews_overview.html">CDE Triage - Post Discharge Reviews</a></span></span></li>
+   <li class="has-children"><span data-tocid="tocId-d66e631" data-state="not-ready" class=" topicref "><span class="title"><a href="cds_productivity_summary.html">CDS General - CDS Productivity</a></span></span></li>
+   <li class="has-children"><span data-tocid="tocId-d66e663" data-state="not-ready" class=" topicref "><span class="title"><a href="visualization_types.html">Analytics Concepts</a></span></span></li>
+   <li class="has-children"><span data-tocid="tocId-d66e676" data-state="not-ready" class=" topicref "><span class="title"><a href="related_documents.html">Related Documents</a></span></span></li>
+   <li class="has-children"><span data-tocid="tocId-d66e688" data-state="not-ready" class=" topicref "><span class="title"><a href="glossary.html">Glossary</a></span></span></li>
+</ul></nav>
+                
+                
+            </div>
+        </div>
+    </div>
+</header>
+        
+        <div class=" wh_search_input "><form id="searchForm" method="get" role="search" action="search.html"><div><input type="search" placeholder="Search " class="wh_search_textfield" id="textToSearch" name="searchQuery" aria-label="Search query" /><button type="submit" class="wh_search_button" aria-label="Search"><span>Search</span></button></div><script><!--
+                                    $(document).ready(function () {
+                                        $('#searchForm').submit(function (e) {
+                                            if ($('.wh_search_textfield').val().length < 1) {
+                                                e.preventDefault();
+                                            }
+                                        });
+                                    });
+                                --></script></form></div>
+        
+        <div class="container-fluid">
+            <div class="row">
+
+                <nav class="wh_tools hidden-print">
+                    <div data-tooltip-position="bottom" class=" wh_breadcrumb "><ol xmlns:html="http://www.w3.org/1999/xhtml" class="hidden-print"><li><span class="home"><a href="index.html"><span>Home</span></a></span></li>
+   <li><span class="topicref"><span class="title"><a href="executive_overview.html">CDE One - Executive Summary</a></span></span></li>
+   <li class="active"><span class="topicref" data-id="clarification_type_trend"><span class="title"><a href="clarification_type_trend.html">Clarification Type Trend</a><span class="wh-tooltip">
+               
+               <p xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc"></p>
+               </span></span></span></li>
+</ol></div>
+
+                    <div class="wh_right_tools hidden-sm hidden-xs">
+                        <div class=" wh_navigation_links "><span id="topic_navigation_links" class="navheader"></span></div>
+                        <button class="wh_hide_highlight" aria-label="Toggle search highlights" title="Toggle search highlights"></button>
+                        <button class="webhelp_expand_collapse_sections" data-next-state="collapsed" aria-label="Collapse sections" title="Collapse sections"></button>
+                        <div class=" wh_print_link print "><button onClick="window.print()" title="Print this page" aria-label="Print this page"></button></div>
+                    </div>
+                </nav>
+            </div>
+
+            <div class="wh_content_area">
+                <div class="row">
+                    
+                        <nav role="navigation" id="wh_publication_toc" class="col-lg-3 col-md-3 col-sm-3 hidden-xs navbar hidden-print">
+                            <div class=" wh_publication_toc " data-tooltip-position="right"><ul role="tree" aria-label="Table of Contents"><span class="expand-button-action-labels"><span id="button-expand-action" aria-label="Expand"></span><span id="button-collapse-action" aria-label="Collapse"></span><span id="button-pending-action" aria-label="Pending"></span></span><li role="treeitem" aria-expanded="true"><span data-tocid="tocId-d66e465" class="topicref" data-state="expanded"><span role="button" tabindex="0" aria-labelledby="button-collapse-action tocId-d66e465-link" class="wh-expand-btn"></span><span class="title"><a href="executive_overview.html" id="tocId-d66e465-link">CDE One - Executive Summary</a></span></span><ul role="group" class="nav nav-list"><span class="expand-button-action-labels"><span id="button-expand-action" aria-label="Expand"></span><span id="button-collapse-action" aria-label="Collapse"></span><span id="button-pending-action" aria-label="Pending"></span></span><li role="treeitem"><span data-tocid="executive_overview-d66e466" class="topicref" data-id="executive_overview" data-state="leaf"><span role="button" class="wh-expand-btn"></span><span class="title"><a href="executive_overview.html" id="executive_overview-d66e466-link">Executive Overview </a><span class="wh-tooltip">
+                     
+                     <p xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc"></p>
+                     </span></span></span></li>
+         <li role="treeitem"><span data-tocid="cdi_dashboard-d66e476" class="topicref" data-id="cdi_dashboard" data-state="leaf"><span role="button" class="wh-expand-btn"></span><span class="title"><a href="cdi_dashboard.html" id="cdi_dashboard-d66e476-link">CDI Dashboard</a><span class="wh-tooltip">
+                     
+                     <p xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc"></p>
+                     </span></span></span></li>
+         <li role="treeitem"><span data-tocid="cmi_breakdown-d66e486" class="topicref" data-id="cmi_breakdown" data-state="leaf"><span role="button" class="wh-expand-btn"></span><span class="title"><a href="cmi_breakdown.html" id="cmi_breakdown-d66e486-link">CMI Breakdown</a><span class="wh-tooltip">
+                     
+                     <p xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc"></p>
+                     </span></span></span></li>
+         <li role="treeitem"><span data-tocid="soi_rom_impact-d66e496" class="topicref" data-id="soi_rom_impact" data-state="leaf"><span role="button" class="wh-expand-btn"></span><span class="title"><a href="soi_rom_impact.html" id="soi_rom_impact-d66e496-link">SOI/ROM Impact</a><span class="wh-tooltip">
+                     
+                     <p xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc"></p>
+                     </span></span></span></li>
+         <li role="treeitem"><span data-tocid="drg_breakdown-d66e506" class="topicref" data-id="drg_breakdown" data-state="leaf"><span role="button" class="wh-expand-btn"></span><span class="title"><a href="drg_breakdown.html" id="drg_breakdown-d66e506-link">DRG Breakdown</a><span class="wh-tooltip">
+                     
+                     <p xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc"></p>
+                     </span></span></span></li>
+         <li role="treeitem"><span data-tocid="reconciliation_details-d66e516" class="topicref" data-id="reconciliation_details" data-state="leaf"><span role="button" class="wh-expand-btn"></span><span class="title"><a href="reconciliation_details.html" id="reconciliation_details-d66e516-link">Reconciliation Details</a><span class="wh-tooltip">
+                     
+                     <p xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc"></p>
+                     </span></span></span></li>
+         <li role="treeitem" class="active"><span data-tocid="clarification_type_trend-d66e526" class="topicref" data-id="clarification_type_trend" data-state="leaf"><span role="button" class="wh-expand-btn"></span><span class="title"><a href="clarification_type_trend.html" id="clarification_type_trend-d66e526-link">Clarification Type Trend</a><span class="wh-tooltip">
+                     
+                     <p xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc"></p>
+                     </span></span></span></li>
+      </ul>
+   </li>
+</ul></div>
+                        </nav>
+                    
+                    
+                    <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12" id="wh_topic_body">
+                        <div class=" wh_topic_content body "><main role="main"><article role="article" aria-labelledby="ariaid-title1">
+    <h1 class="title topictitle1" id="ariaid-title1">Clarification Type Trend</h1>
+    
+    <div class="body conbody"><p class="shortdesc"></p>
+        <p class="p"><strong class="ph b">Overview</strong>: Clarification Type Trend dashboard enables CDI Managers to analyze the
+            distribution of the clarification types, response and agreement rates to the
+            clarifications over a period of time.</p>
+        <div class="p">The report provides answers to the following questions.<ul class="ul" id="clarification_type_trend__ul_av3_5zg_p4b">
+                <li class="li">How many clarifications of each type were raised by the CDS every month?</li>
+                <li class="li">How many MCC clarifications were responded by the Physician every month?</li>
+                <li class="li">How many CC clarifications were agreed to by the Physician every month?</li>
+                <li class="li">What percentage of each type of clarifications were raised by the CDS every
+                    month?</li>
+                <li class="li">What percentage of each type of clarifications were responded by the Physician
+                    every month?</li>
+                <li class="li">What percentage of each type of clarifications were agreed to by the Physician
+                    every month?</li>
+            </ul></div>
+        <p class="p"><strong class="ph b">Navigation</strong>: On the Analytics home page left side panel, navigate to <span class="ph menucascade"><span class="ph uicontrol">CDE One</span><abbr title="and then"> &gt; </abbr><span class="ph uicontrol">Executive Summary</span><abbr title="and then"> &gt; </abbr><span class="ph uicontrol">Clarification Type Trend</span></span>. </p>
+        <div class="p">Clarification Type Trend displays monthly trend of: <ul class="ul" id="clarification_type_trend__ul_zgb_bpy_44b">
+                <li class="li">Clarification Volume by Type Tabular Chart</li>
+                <li class="li">Clarification Response by Type Tabular Chart</li>
+                <li class="li">Clarification Agreement by Type Tabular Chart </li>
+            </ul></div>
+        <p class="p">On the top panel, you can select desired values for the slicers (refer <a class="xref" href="#clarification_type_trend__table_qnn_w2n_g4b">Report Slicers </a>) and the
+            corresponding data gets filtered in the charts.</p>
+        <p class="p">For filters on all pages, refer <a class="xref" href="#clarification_type_trend__table_dq1_ffn_g4b">Filters on all Pages</a>.</p>
+        <p class="p">For Footnotes, refer <a class="xref" href="#clarification_type_trend__table_mjr_xry_44b">Footnotes</a>.</p>
+        <div class="p"><strong class="ph b">Default Display</strong>: <ul class="ul" id="clarification_type_trend__ul_ckw_m1l_p4b">
+                <li class="li">Report displays the data for 9 calendar months based on the Discharge Date.
+                        (<strong class="ph b">Format</strong>: Between Date range.) </li>
+                <li class="li">When you reset the discharge date, the encounters that do not have a discharge
+                    date assigned are not displayed in the reports. The column with the blank
+                    discharge month are not available in the reports.</li>
+            </ul></div>
+        <p class="p"><strong class="ph b">Clarification Type Trend</strong></p>
+        <figure class="fig fignone" id="clarification_type_trend__fig_o5h_4zk_p4b"><figcaption class="figcap"><span class="figtitleprefix">Figure: </span>Sample Report</figcaption>
+            
+            <img class="image" id="clarification_type_trend__image_etb_qzk_p4b" src="Images/Clarification%20Type%20Trend.png" width="800" />
+        </figure>
+        <p class="p"><strong class="ph b">Clarification Type Trend - Clarification Volume by Type Tabular Chart</strong></p>
+        <figure class="fig fignone" id="clarification_type_trend__fig_nkb_tzk_p4b"><figcaption class="figcap"><span class="figtitleprefix">Figure: </span>Clarification Volume by Type Tabular Chart </figcaption>
+            
+            <img class="image" id="clarification_type_trend__image_fhr_tzk_p4b" src="Images/Clarification%20Volume%20by%20Type.png" width="600" />
+        </figure>
+        <p class="p">This chart allows the user to analyze the individual count of each Clarification type
+            raised by the CDS every month and % calculation of each type with respect to the total
+            clarifications raised.</p>
+        <ul class="ul" id="clarification_type_trend__ul_lyy_gpy_44b">
+            <li class="li">Volume and % of Total columns are displayed for each month separately. </li>
+            <li class="li">Month represents the Discharge Month. </li>
+            <li class="li"><strong class="ph b">Info Icon</strong>(text on hover): Encounter Status: Includes all encounter statuses
+                except 'Review Not Needed'. Clarification Status: Includes all clarification
+                statuses except 'Deleted' or 'Retracted'.</li>
+        </ul>
+        <table class="table frame-all" id="clarification_type_trend__table_dq1_3py_44b"><caption><span class="table--title-label">Table 1. </span><span class="title">Clarification Volume by Type Details</span></caption><colgroup><col style="width:20%" /><col style="width:20%" /><col style="width:20%" /><col style="width:20%" /><col style="width:20%" /></colgroup><thead class="thead">
+                    <tr>
+                        <th class="entry colsep-1 rowsep-1" id="clarification_type_trend__table_dq1_3py_44b__entry__1">Columns</th>
+                        <th class="entry colsep-1 rowsep-1" id="clarification_type_trend__table_dq1_3py_44b__entry__2">Description</th>
+                        <th class="entry colsep-1 rowsep-1" id="clarification_type_trend__table_dq1_3py_44b__entry__3">Formula/Calculation</th>
+                        <th class="entry colsep-1 rowsep-1" id="clarification_type_trend__table_dq1_3py_44b__entry__4">Exclusion criteria (if any)</th>
+                        <th class="entry colsep-1 rowsep-1" id="clarification_type_trend__table_dq1_3py_44b__entry__5">Tooltip</th>
+                    </tr>
+                </thead><tbody class="tbody">
+                    <tr>
+                        <td class="entry colsep-1 rowsep-1" headers="clarification_type_trend__table_dq1_3py_44b__entry__1 "><strong class="ph b">Clarification Type</strong></td>
+                        <td class="entry colsep-1 rowsep-1" headers="clarification_type_trend__table_dq1_3py_44b__entry__2 ">
+                            <ul class="ul" id="clarification_type_trend__ul_xht_jpy_44b">
+                                <li class="li">The available 'Type at Reconciliation'. <p class="p"><strong class="ph b">Example</strong>: CC,
+                                        Clin Val, MCC, PDX etc.</p></li>
+                                <li class="li">Both Standard and Custom Clarification Types are displayed.</li>
+                                <li class="li"><strong class="ph b">Sort Order</strong>: Alpha</li>
+                            </ul>
+                        </td>
+                        <td class="entry colsep-1 rowsep-1" headers="clarification_type_trend__table_dq1_3py_44b__entry__3 "></td>
+                        <td class="entry colsep-1 rowsep-1" headers="clarification_type_trend__table_dq1_3py_44b__entry__4 "></td>
+                        <td class="entry colsep-1 rowsep-1" headers="clarification_type_trend__table_dq1_3py_44b__entry__5 "></td>
+                    </tr>
+                    <tr>
+                        <td class="entry colsep-1 rowsep-1" headers="clarification_type_trend__table_dq1_3py_44b__entry__1 "><strong class="ph b">Volume</strong></td>
+                        <td class="entry colsep-1 rowsep-1" headers="clarification_type_trend__table_dq1_3py_44b__entry__2 ">
+                            <ul class="ul" id="clarification_type_trend__ul_e3w_kpy_44b">
+                                <li class="li">For each Type at Reconciliation, this column displays the
+                                    individual count of the clarifications raised by the CDS.</li>
+                            </ul>
+                        </td>
+                        <td class="entry colsep-1 rowsep-1" headers="clarification_type_trend__table_dq1_3py_44b__entry__3 "></td>
+                        <td class="entry colsep-1 rowsep-1" headers="clarification_type_trend__table_dq1_3py_44b__entry__4 ">Clarifications for "Review Not Needed" encounter status are not be
+                            considered for this metric calculation.</td>
+                        <td class="entry colsep-1 rowsep-1" headers="clarification_type_trend__table_dq1_3py_44b__entry__5 "></td>
+                    </tr>
+                    <tr>
+                        <td class="entry colsep-1 rowsep-1" headers="clarification_type_trend__table_dq1_3py_44b__entry__1 "><strong class="ph b">% of Total</strong></td>
+                        <td class="entry colsep-1 rowsep-1" headers="clarification_type_trend__table_dq1_3py_44b__entry__2 ">
+                            <ul class="ul" id="clarification_type_trend__ul_ybh_mpy_44b">
+                                <li class="li">For each Type at Reconciliation, this column displays the % of
+                                    individual clarification type raised by the CDS w.r.t the Total
+                                    Clarifications raised for each month.</li>
+                                <li class="li">% value is rounded off to 0 decimal place.</li>
+                            </ul>
+                        </td>
+                        <td class="entry colsep-1 rowsep-1" headers="clarification_type_trend__table_dq1_3py_44b__entry__3 ">Calculation = (Count of individual Clarification Type raised by CDS
+                            for one month / Total Count of Clarifications raised by the CDS for that
+                            month ) *100</td>
+                        <td class="entry colsep-1 rowsep-1" headers="clarification_type_trend__table_dq1_3py_44b__entry__4 "></td>
+                        <td class="entry colsep-1 rowsep-1" headers="clarification_type_trend__table_dq1_3py_44b__entry__5 "></td>
+                    </tr>
+                    <tr>
+                        <td class="entry colsep-1 rowsep-1" headers="clarification_type_trend__table_dq1_3py_44b__entry__1 "><strong class="ph b">Totals</strong></td>
+                        <td class="entry colsep-1 rowsep-1" headers="clarification_type_trend__table_dq1_3py_44b__entry__2 ">The total count of clarifications sent by the CDS for that month and
+                            overall % of Total (100% always).</td>
+                        <td class="entry colsep-1 rowsep-1" headers="clarification_type_trend__table_dq1_3py_44b__entry__3 "></td>
+                        <td class="entry colsep-1 rowsep-1" headers="clarification_type_trend__table_dq1_3py_44b__entry__4 "></td>
+                        <td class="entry colsep-1 rowsep-1" headers="clarification_type_trend__table_dq1_3py_44b__entry__5 "></td>
+                    </tr>
+                </tbody></table>
+        <p class="p"><strong class="ph b">Clarification Type Trend - Clarification Response by Type Tabular Chart</strong></p>
+        <figure class="fig fignone" id="clarification_type_trend__fig_mgs_wzk_p4b"><figcaption class="figcap"><span class="figtitleprefix">Figure: </span>Clarification Response by Type Tabular Chart</figcaption>
+            
+            <img class="image" id="clarification_type_trend__image_sx3_xzk_p4b" src="Images/Clarification%20Response%20by%20Type.png" width="600" />
+        </figure>
+        <p class="p">This chart allows the user to analyze the count and percentage of clarifications
+            responded by the Physician for each clarification type. </p>
+        <ul class="ul" id="clarification_type_trend__ul_l1b_spy_44b">
+            <li class="li">Response (Count) and Response (%) columns are displayed for each month separately. </li>
+            <li class="li">Month represents the Discharge Month.</li>
+            <li class="li"><strong class="ph b">Info Icon</strong>(text on hover): Encounter Status: Includes all encounter statuses
+                except 'Review Not Needed'. Clarification Status: Includes all clarification
+                statuses except 'Deleted' or 'Retracted'.</li>
+        </ul>
+        <table class="table frame-all" id="clarification_type_trend__table_jdb_tpy_44b"><caption><span class="table--title-label">Table 2. </span><span class="title">Clarification Response by Type details</span></caption><colgroup><col style="width:20%" /><col style="width:20%" /><col style="width:20%" /><col style="width:20%" /><col style="width:20%" /></colgroup><thead class="thead">
+                    <tr>
+                        <th class="entry colsep-1 rowsep-1" id="clarification_type_trend__table_jdb_tpy_44b__entry__1">Column name</th>
+                        <th class="entry colsep-1 rowsep-1" id="clarification_type_trend__table_jdb_tpy_44b__entry__2">Description</th>
+                        <th class="entry colsep-1 rowsep-1" id="clarification_type_trend__table_jdb_tpy_44b__entry__3">Formula/Calculation</th>
+                        <th class="entry colsep-1 rowsep-1" id="clarification_type_trend__table_jdb_tpy_44b__entry__4">Exclusion Criteria (if any)</th>
+                        <th class="entry colsep-1 rowsep-1" id="clarification_type_trend__table_jdb_tpy_44b__entry__5">Tooltip</th>
+                    </tr>
+                </thead><tbody class="tbody">
+                    <tr>
+                        <td class="entry colsep-1 rowsep-1" headers="clarification_type_trend__table_jdb_tpy_44b__entry__1 "><strong class="ph b">Clarification Type</strong></td>
+                        <td class="entry colsep-1 rowsep-1" headers="clarification_type_trend__table_jdb_tpy_44b__entry__2 ">
+                            <ul class="ul" id="clarification_type_trend__ul_dkd_vpy_44b">
+                                <li class="li">All the available 'Type at Reconciliation'. (Ex: CC, Clin Val,
+                                    MCC, PDX etc.)</li>
+                                <li class="li">Both Standard and Custom Clarification Types are displayed.</li>
+                                <li class="li"><strong class="ph b">Sort Order</strong>: Alpha</li>
+                            </ul>
+                        </td>
+                        <td class="entry colsep-1 rowsep-1" headers="clarification_type_trend__table_jdb_tpy_44b__entry__3 "></td>
+                        <td class="entry colsep-1 rowsep-1" headers="clarification_type_trend__table_jdb_tpy_44b__entry__4 "></td>
+                        <td class="entry colsep-1 rowsep-1" headers="clarification_type_trend__table_jdb_tpy_44b__entry__5 "></td>
+                    </tr>
+                    <tr>
+                        <td class="entry colsep-1 rowsep-1" headers="clarification_type_trend__table_jdb_tpy_44b__entry__1 "><strong class="ph b">Response(Count)</strong></td>
+                        <td class="entry colsep-1 rowsep-1" headers="clarification_type_trend__table_jdb_tpy_44b__entry__2 "><em class="ph i">For each Type at Reconciliation</em>, this column displays the
+                            count of sent clarifications with Final response other than Pending,
+                            Retracted, or No Response. </td>
+                        <td class="entry colsep-1 rowsep-1" headers="clarification_type_trend__table_jdb_tpy_44b__entry__3 ">
+                            <p class="p">Response (count) = Count of clarifications with a Final response as
+                                Agreed, Not Agreed, Other Explanation, Alternative Specificity
+                                Diagnosis, Discuss, Sent to another Provider or Unable to
+                                Determine.</p>
+                        </td>
+                        <td class="entry colsep-1 rowsep-1" headers="clarification_type_trend__table_jdb_tpy_44b__entry__4 ">
+                            <ul class="ul" id="clarification_type_trend__ul_dzd_xpy_44b">
+                                <li class="li">
+                                    <p class="p">Clarifications for "Review Not Needed" encounter status are
+                                        not considered for this metric calculation.</p>
+                                    <p class="p">"Deleted" and "Retracted" Clarifications are not considered
+                                        for this metric calculation.</p>
+                                    <p class="p">Clarifications that do not have a FINAL response are not
+                                        considered in this calculation</p>
+                                </li>
+                            </ul>
+                        </td>
+                        <td class="entry colsep-1 rowsep-1" headers="clarification_type_trend__table_jdb_tpy_44b__entry__5 "></td>
+                    </tr>
+                    <tr>
+                        <td class="entry colsep-1 rowsep-1" headers="clarification_type_trend__table_jdb_tpy_44b__entry__1 "><strong class="ph b">Response (%)</strong></td>
+                        <td class="entry colsep-1 rowsep-1" headers="clarification_type_trend__table_jdb_tpy_44b__entry__2 ">Percentage of sent clarifications responded by the providers for each
+                            'Type at Reconciliation</td>
+                        <td class="entry colsep-1 rowsep-1" headers="clarification_type_trend__table_jdb_tpy_44b__entry__3 ">
+                            <p class="p">Response (%) =(Count of clarifications with a Final response as
+                                Agreed, Not Agreed, Other Explanation, Alternative Specificity
+                                Diagnosis, Discuss, Sent to another Provider or Unable to
+                                Determine/Count of Clarifications Sent) x100. <strong class="ph b">Example</strong>:
+                                90%</p>
+                        </td>
+                        <td class="entry colsep-1 rowsep-1" headers="clarification_type_trend__table_jdb_tpy_44b__entry__4 ">Clarifications for "Review Not Needed" encounter status should not be
+                            considered for this metric calculation.<p class="p"> "Deleted" and "Retracted"
+                                Clarifications are not considered for this metric
+                            calculation.</p></td>
+                        <td class="entry colsep-1 rowsep-1" headers="clarification_type_trend__table_jdb_tpy_44b__entry__5 "></td>
+                    </tr>
+                    <tr>
+                        <td class="entry colsep-1 rowsep-1" headers="clarification_type_trend__table_jdb_tpy_44b__entry__1 "><strong class="ph b">Totals</strong></td>
+                        <td class="entry colsep-1 rowsep-1" headers="clarification_type_trend__table_jdb_tpy_44b__entry__2 ">The total responses and overall Response (%) for each month.</td>
+                        <td class="entry colsep-1 rowsep-1" headers="clarification_type_trend__table_jdb_tpy_44b__entry__3 "></td>
+                        <td class="entry colsep-1 rowsep-1" headers="clarification_type_trend__table_jdb_tpy_44b__entry__4 "></td>
+                        <td class="entry colsep-1 rowsep-1" headers="clarification_type_trend__table_jdb_tpy_44b__entry__5 "></td>
+                    </tr>
+                </tbody></table>
+        <p class="p"><strong class="ph b">Clarification Type Trend - Clarification Agreement by Type Tabular Chart</strong></p>
+        <figure class="fig fignone" id="clarification_type_trend__fig_bnx_yzk_p4b"><figcaption class="figcap"><span class="figtitleprefix">Figure: </span>Clarification Agreement by Type Tabular Chart</figcaption>
+            
+            <img class="image" id="clarification_type_trend__image_glm_zzk_p4b" src="Images/Clarification%20Agreement%20by%20Type.png" width="600" />
+        </figure>
+        <p class="p">This tabular allows the user to analyze the count and percentage of clarifications agreed
+            by the Physician for each clarification type. </p>
+        <ul class="ul" id="clarification_type_trend__ul_zfx_cqy_44b">
+            <li class="li">Agreed (Count) and Agreed (%) columns are displayed for each month separately. </li>
+            <li class="li">Month represents the Discharge Month</li>
+            <li class="li"><strong class="ph b">Info Icon</strong>(text on hover):  Encounter Status: Includes all encounter statuses
+                except 'Review Not Needed'. Clarification Status: Includes all clarification
+                statuses except 'Deleted' or 'Retracted'.</li>
+        </ul>
+        <table class="table frame-all" id="clarification_type_trend__table_h53_2qy_44b"><caption><span class="table--title-label">Table 3. </span><span class="title">Clarification Agreement by Type details</span></caption><colgroup><col style="width:20%" /><col style="width:20%" /><col style="width:20%" /><col style="width:20%" /><col style="width:20%" /></colgroup><thead class="thead">
+                    <tr>
+                        <th class="entry colsep-1 rowsep-1" id="clarification_type_trend__table_h53_2qy_44b__entry__1">Column Name</th>
+                        <th class="entry colsep-1 rowsep-1" id="clarification_type_trend__table_h53_2qy_44b__entry__2">Description</th>
+                        <th class="entry colsep-1 rowsep-1" id="clarification_type_trend__table_h53_2qy_44b__entry__3">Formula/ Calculation</th>
+                        <th class="entry colsep-1 rowsep-1" id="clarification_type_trend__table_h53_2qy_44b__entry__4">Exclusion Criteria (if any)</th>
+                        <th class="entry colsep-1 rowsep-1" id="clarification_type_trend__table_h53_2qy_44b__entry__5">Tooltip</th>
+                    </tr>
+                </thead><tbody class="tbody">
+                    <tr>
+                        <td class="entry colsep-1 rowsep-1" headers="clarification_type_trend__table_h53_2qy_44b__entry__1 "><strong class="ph b">Clarification Type</strong></td>
+                        <td class="entry colsep-1 rowsep-1" headers="clarification_type_trend__table_h53_2qy_44b__entry__2 ">
+                            <ul class="ul" id="clarification_type_trend__ul_shb_gqy_44b">
+                                <li class="li">All the available 'Type at Reconciliation'.<p class="p"><strong class="ph b">Example</strong>:
+                                        CC, Clin Val, MCC, PDX etc.</p>
+                                </li>
+                                <li class="li">Both Standard and Custom Clarification Types are displayed.</li>
+                                <li class="li"><strong class="ph b">Sort Order</strong>: Alpha</li>
+                            </ul>
+                        </td>
+                        <td class="entry colsep-1 rowsep-1" headers="clarification_type_trend__table_h53_2qy_44b__entry__3 "></td>
+                        <td class="entry colsep-1 rowsep-1" headers="clarification_type_trend__table_h53_2qy_44b__entry__4 "></td>
+                        <td class="entry colsep-1 rowsep-1" headers="clarification_type_trend__table_h53_2qy_44b__entry__5 "></td>
+                    </tr>
+                    <tr>
+                        <td class="entry colsep-1 rowsep-1" headers="clarification_type_trend__table_h53_2qy_44b__entry__1 "><strong class="ph b">Agreed(Count)</strong></td>
+                        <td class="entry colsep-1 rowsep-1" headers="clarification_type_trend__table_h53_2qy_44b__entry__2 ">
+                            <p class="p">The count of clarifications with a Final response as Agreed.</p>
+                        </td>
+                        <td class="entry colsep-1 rowsep-1" headers="clarification_type_trend__table_h53_2qy_44b__entry__3 ">Agreed (count) = Count of clarifications with a Final response as
+                            Agreed</td>
+                        <td class="entry colsep-1 rowsep-1" headers="clarification_type_trend__table_h53_2qy_44b__entry__4 ">
+                            <p class="p">Clarifications for "Review Not Needed" encounter status should not be
+                                considered for this metric calculation.</p>
+                            <p class="p">"Deleted" and "Retracted" Clarifications are not considered for this
+                                metric calculation.</p>
+                        </td>
+                        <td class="entry colsep-1 rowsep-1" headers="clarification_type_trend__table_h53_2qy_44b__entry__5 "></td>
+                    </tr>
+                    <tr>
+                        <td class="entry colsep-1 rowsep-1" headers="clarification_type_trend__table_h53_2qy_44b__entry__1 "><strong class="ph b">Agreed (%)</strong></td>
+                        <td class="entry colsep-1 rowsep-1" headers="clarification_type_trend__table_h53_2qy_44b__entry__2 ">Percentage of responded clarifications agreed by the provider for
+                            each 'Type at Reconciliation</td>
+                        <td class="entry colsep-1 rowsep-1" headers="clarification_type_trend__table_h53_2qy_44b__entry__3 ">
+                            <p class="p">Agreed%=(Count of clarifications with a Final response as
+                                Agreed/Count of Clarifications Responded) x100. E.g. 90%</p>
+                        </td>
+                        <td class="entry colsep-1 rowsep-1" headers="clarification_type_trend__table_h53_2qy_44b__entry__4 ">
+                            <p class="p">Clarifications for "Review Not Needed" encounter status should not be
+                                considered for this metric calculation.</p>
+                            <p class="p">"Deleted" and "Retracted" Clarifications are not considered for this
+                                metric calculation.</p>
+                        </td>
+                        <td class="entry colsep-1 rowsep-1" headers="clarification_type_trend__table_h53_2qy_44b__entry__5 "></td>
+                    </tr>
+                    <tr>
+                        <td class="entry colsep-1 rowsep-1" headers="clarification_type_trend__table_h53_2qy_44b__entry__1 "><strong class="ph b">Totals</strong></td>
+                        <td class="entry colsep-1 rowsep-1" headers="clarification_type_trend__table_h53_2qy_44b__entry__2 ">The total agreed clarifications and overall Agreed (%) for each
+                            month.</td>
+                        <td class="entry colsep-1 rowsep-1" headers="clarification_type_trend__table_h53_2qy_44b__entry__3 "></td>
+                        <td class="entry colsep-1 rowsep-1" headers="clarification_type_trend__table_h53_2qy_44b__entry__4 "></td>
+                        <td class="entry colsep-1 rowsep-1" headers="clarification_type_trend__table_h53_2qy_44b__entry__5 "></td>
+                    </tr>
+                </tbody></table>
+        <div class="p">
+            <table class="table frame-all" id="clarification_type_trend__table_qnn_w2n_g4b"><caption><span class="table--title-label">Table 4. </span><span class="title">Report Slicers </span></caption><colgroup><col style="width:50%" /><col style="width:50%" /></colgroup><thead class="thead">
+                        <tr>
+                            <th class="entry colsep-1 rowsep-1" id="clarification_type_trend__table_qnn_w2n_g4b__entry__1">Slicer</th>
+                            <th class="entry colsep-1 rowsep-1" id="clarification_type_trend__table_qnn_w2n_g4b__entry__2">Description</th>
+                        </tr>
+                    </thead><tbody class="tbody">
+                        <tr>
+                            <td class="entry colsep-1 rowsep-1" headers="clarification_type_trend__table_qnn_w2n_g4b__entry__1 ">Discharge Date</td>
+                            <td class="entry colsep-1 rowsep-1" headers="clarification_type_trend__table_qnn_w2n_g4b__entry__2 ">
+                                <ul class="ul" id="clarification_type_trend__ul_uzh_y2n_g4b">
+                                    <li class="li">Displays the discharge date range. </li>
+                                    <li class="li">You can select date from the lookup provided.</li>
+                                    <li class="li">
+                                        <strong class="ph b">Example</strong>: 7/1/2020 - 7/31/2020</li>
+                                    <li class="li"><strong class="ph b">Default</strong>: Last 6 calendar months date range selected
+                                        by default.</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="entry colsep-1 rowsep-1" headers="clarification_type_trend__table_qnn_w2n_g4b__entry__1 ">Reset Button</td>
+                            <td class="entry colsep-1 rowsep-1" headers="clarification_type_trend__table_qnn_w2n_g4b__entry__2 ">
+                                <ul class="ul" id="clarification_type_trend__ul_jw1_22z_m4b">
+                                    <li class="li">With the Reset button, you can reset the discharge date
+                                        range.</li>
+                                    <li class="li"><strong class="ph b">Tooltip</strong>: Use "Ctrl + Click" to reset the Discharge
+                                        Date.</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="entry colsep-1 rowsep-1" headers="clarification_type_trend__table_qnn_w2n_g4b__entry__1 ">Facility</td>
+                            <td class="entry colsep-1 rowsep-1" headers="clarification_type_trend__table_qnn_w2n_g4b__entry__2 ">
+                                <ul class="ul" id="clarification_type_trend__ul_vzp_z2n_g4b">
+                                    <li class="li">Displays both active and inactive facilities in alphabetical
+                                        order that you have access to.</li>
+                                    <li class="li">You can select multiple facilities.</li>
+                                    <li class="li">You can search the facility by Facility ID or
+                                        Description.</li>
+                                    <li class="li"><strong class="ph b">Format</strong>: Facility Description (Facility ID)</li>
+                                    <li class="li"><strong class="ph b">Default</strong>: ALL</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="entry colsep-1 rowsep-1" headers="clarification_type_trend__table_qnn_w2n_g4b__entry__1 ">Payer</td>
+                            <td class="entry colsep-1 rowsep-1" headers="clarification_type_trend__table_qnn_w2n_g4b__entry__2 ">
+                                <ul class="ul" id="clarification_type_trend__ul_ntb_cfn_g4b">
+                                    <li class="li">Displays both active and inactive payers in alphabetical
+                                        order associated with the facilities you have access
+                                        to.</li>
+                                    <li class="li">You can select multiple payers.</li>
+                                    <li class="li">"Unassigned Payer" displays data for the encounters that do
+                                        not have a payer assigned.</li>
+                                    <li class="li">You can search the Payer by Payer ID or Description.</li>
+                                    <li class="li"><strong class="ph b">Format</strong>: Payer Description (Payer ID)</li>
+                                    <li class="li"><strong class="ph b">Default</strong>: ALL</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="entry colsep-1 rowsep-1" headers="clarification_type_trend__table_qnn_w2n_g4b__entry__1 ">Clarification Type</td>
+                            <td class="entry colsep-1 rowsep-1" headers="clarification_type_trend__table_qnn_w2n_g4b__entry__2 ">
+                                <ul class="ul" id="clarification_type_trend__ul_zls_4lb_s4b">
+                                    <li class="li">Displays both active and inactive type of Clarification in
+                                        alphabetical order associated with the facilities you have
+                                        access to.</li>
+                                    <li class="li">You can select multiple clarification types.</li>
+                                    <li class="li">You can search the Clarification Type </li>
+                                    <li class="li"><strong class="ph b">Format</strong>: CLIN VAL, CC, MCC, HIV</li>
+                                    <li class="li"><strong class="ph b">Default</strong>: ALL</li>
+                                </ul>
+                            </td>
+                        </tr>
+                    </tbody></table>
+        </div>
+        <div class="p">
+            <table class="table frame-all" id="clarification_type_trend__table_dq1_ffn_g4b"><caption><span class="table--title-label">Table 5. </span><span class="title">Filters on all Pages</span></caption><colgroup><col style="width:50%" /><col style="width:50%" /></colgroup><thead class="thead">
+                        <tr>
+                            <th class="entry colsep-1 rowsep-1" id="clarification_type_trend__table_dq1_ffn_g4b__entry__1">Filter</th>
+                            <th class="entry colsep-1 rowsep-1" id="clarification_type_trend__table_dq1_ffn_g4b__entry__2">Description</th>
+                        </tr>
+                    </thead><tbody class="tbody">
+                        <tr>
+                            <td class="entry colsep-1 rowsep-1" headers="clarification_type_trend__table_dq1_ffn_g4b__entry__1 ">Patient Type</td>
+                            <td class="entry colsep-1 rowsep-1" headers="clarification_type_trend__table_dq1_ffn_g4b__entry__2 ">
+                                <ul class="ul" id="clarification_type_trend__ul_ns1_3fn_g4b">
+                                    <li class="li">Displays the available patient types. <strong class="ph b">Example</strong>:
+                                        Inpatient, Outpatient.</li>
+                                    <li class="li"><strong class="ph b">Default</strong>: Inpatient</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="entry colsep-1 rowsep-1" headers="clarification_type_trend__table_dq1_ffn_g4b__entry__1 ">Unit</td>
+                            <td class="entry colsep-1 rowsep-1" headers="clarification_type_trend__table_dq1_ffn_g4b__entry__2 ">
+                                <ul class="ul" id="clarification_type_trend__ul_kdd_jfn_g4b">
+                                    <li class="li">Displays the list of available units.</li>
+                                    <li class="li">You can select multiple Units.</li>
+                                    <li class="li">You can search the Unit.</li>
+                                    <li class="li"><strong class="ph b">Default</strong>: ALL</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="entry colsep-1 rowsep-1" headers="clarification_type_trend__table_dq1_ffn_g4b__entry__1 ">Admit Service</td>
+                            <td class="entry colsep-1 rowsep-1" headers="clarification_type_trend__table_dq1_ffn_g4b__entry__2 ">
+                                <ul class="ul" id="clarification_type_trend__ul_x2g_kfn_g4b">
+                                    <li class="li">Displays the list of available admit service.</li>
+                                    <li class="li">You can select multiple Units.</li>
+                                    <li class="li">You can search the Admit Service.</li>
+                                    <li class="li"><strong class="ph b">Default</strong>: ALL</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="entry colsep-1 rowsep-1" headers="clarification_type_trend__table_dq1_ffn_g4b__entry__1 ">Visit Type</td>
+                            <td class="entry colsep-1 rowsep-1" headers="clarification_type_trend__table_dq1_ffn_g4b__entry__2 ">
+                                <ul class="ul" id="clarification_type_trend__ul_obm_lgm_r4b">
+                                    <li class="li">Displays the available patient types.<strong class="ph b">Example</strong>: ED, IP,
+                                        etc.</li>
+                                    <li class="li">You can select multiple Visit Type.</li>
+                                    <li class="li">You can search the Visit Type.</li>
+                                    <li class="li"><strong class="ph b">Default</strong>: ALL</li>
+                                </ul>
+                            </td>
+                        </tr>
+                    </tbody></table>
+        </div>
+        <table class="table frame-all" id="clarification_type_trend__table_mjr_xry_44b"><caption><span class="table--title-label">Table 6. </span><span class="title">Footnotes</span></caption><colgroup><col style="width:50%" /><col style="width:50%" /></colgroup><thead class="thead">
+                    <tr>
+                        <th class="entry colsep-1 rowsep-1" id="clarification_type_trend__table_mjr_xry_44b__entry__1">Formula</th>
+                        <th class="entry colsep-1 rowsep-1" id="clarification_type_trend__table_mjr_xry_44b__entry__2">Text on hover</th>
+                    </tr>
+                </thead><tbody class="tbody">
+                    <tr>
+                        <td class="entry colsep-1 rowsep-1" headers="clarification_type_trend__table_mjr_xry_44b__entry__1 ">Response </td>
+                        <td class="entry colsep-1 rowsep-1" headers="clarification_type_trend__table_mjr_xry_44b__entry__2 ">Response% =(Count of clarifications with a Final response as Agreed,
+                            Not Agreed, Other Explanation, Alternative Specificity Diagnosis,
+                            Discuss, Sent to another Provider or Unable to Determine/Count of
+                            Clarifications Sent) x100. E.g. 90%</td>
+                    </tr>
+                    <tr>
+                        <td class="entry colsep-1 rowsep-1" headers="clarification_type_trend__table_mjr_xry_44b__entry__1 ">Agreed</td>
+                        <td class="entry colsep-1 rowsep-1" headers="clarification_type_trend__table_mjr_xry_44b__entry__2 ">Agreed%=(Count of clarifications with a Final response as
+                            Agreed/Count of Clarifications Responded) x100. E.g. 90%</td>
+                    </tr>
+                </tbody></table>
+    </div>
+</article></main></div>
+                        
+                        
+                        
+                    </div>
+                    
+                </div>
+            </div>
+        </div> 
+        <footer class="navbar navbar-default wh_footer">
+  <div class=" footer-container text-center ">
+    ©2021 Nuance Communications, Inc. All rights reserved.
+  </div>
+</footer>
+        
+        <div id="go2top">
+            <span class="glyphicon glyphicon-chevron-up"></span>
+        </div>
+        
+        <!-- The modal container for images -->
+        <div id="modal_img_large" class="modal">
+            <span class="close glyphicon glyphicon-remove"></span>
+            <!-- Modal Content (The Image) -->
+            <img class="modal-content" id="modal-img" />
+            <!-- Modal Caption (Image Text) -->
+            <div id="caption"></div>
+        </div>
+        
+        <script src="./oxygen-webhelp/lib/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+        
+    </body>
+</html>

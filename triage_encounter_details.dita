@@ -1,0 +1,1295 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="reconciliation_details">
+    <title> Encounter and Suggestion Details</title>
+    <shortdesc></shortdesc>
+    <conbody>
+        <p><b>Overview</b>: The Encounter and Suggestion Details dashboard provides encounters
+            details to the CDI Manager, displaying information on their assigned rank, AI
+            suggestions, CDS activity, and suggested DRG. This report helps to analyze the data and
+            identify opportunities for improvement.</p>
+        <p>By default, the report displays data for last 1 calendar month based on the admission
+            date.</p>
+        <p><b>Navigation</b>: On the Analytics home page left side panel, navigate to <menucascade>
+                <uicontrol>CDE One</uicontrol>
+                <uicontrol>Triage and CDS Assistant Usage</uicontrol>
+                <uicontrol>Encounter and Suggestion Details</uicontrol>
+            </menucascade>. </p>
+        <p>The Encounter and Suggestion Details report displays the following:<ul
+                id="ul_nlv_1ym_l4b">
+                <li>KPI Card: Total Suggestions, Total Encounters</li>
+                <li>Encounter Details chart</li>
+                <li>Suggestion Details chart</li>
+            </ul></p>
+        <note id="note_mzv_dxq_pyb">
+            <ul id="ul_knw_tvp_pyb">
+                <li>
+                    <p>Encounters that have been given a rank in CDE Triage are called ranked
+                        encounters. The current rank of an encounter may be blank.</p>
+                </li>
+                <li>
+                    <p>Encounters are ranked based on the rules that are defined for the
+                        prioritization within CDE Triage.</p>
+                </li>
+                <li>The following encounter types are considered:<ul id="ul_acm_dzj_qyb">
+                        <li>Both ranked (standard and custom) and unranked encounters.</li>
+                        <li>Highest rank of the encounter.</li>
+                        <li>Count of all encounters that have been assigned a rank and have an
+                            initial review date/time.</li>
+                        <li>All encounter statuses except 'Review Not Needed' are considered.</li>
+                    </ul></li>
+            </ul>
+        </note>
+        <p>On the top panel, you can select desired values for the slicers (refer <xref
+                href="#reconciliation_details/table_qnn_w2n_g4b" format="dita"/>) and the
+            corresponding data gets generated in the tabular chart.</p>
+        <p>For filters on all pages, refer <xref href="#reconciliation_details/table_dq1_ffn_g4b"
+                format="dita"/>.</p>
+        <p>For information about footnotes, refer <xref
+                href="#reconciliation_details/table_pmd_wtg_l4b" format="dita"/>.</p>
+        <p><b>Encounter Details</b><fig id="fig_atn_dvm_r4b">
+                <title>Sample Report</title>
+                <image
+                    href="Images/Triage%20and%20CDS%20Assistant%20Usage/encounter_details/encounter_details_chart.gif"
+                    width="600" id="image_vsw_2gz_zyb"/>
+            </fig></p>
+        <p><b>Encounter and Suggestion Details - KPI Cards</b></p>
+        <fig id="fig_umn_gvm_r4b">
+            <title>KPI Cards</title>
+            <image
+                href="Images/Triage%20and%20CDS%20Assistant%20Usage/encounter_details/encounter_and_suggestion_details_KPIs.gif"
+                id="image_aws_xsc_lzb"/>
+        </fig>
+        <p>
+            <table frame="all" rowsep="1" colsep="1" id="table_ggx_nlg_l4b">
+                <title>KPI Cards details</title>
+                <tgroup cols="2">
+                    <colspec colname="c1" colnum="1" colwidth="1*"/>
+                    <colspec colname="c2" colnum="2" colwidth="1.5*"/>
+                    <thead>
+                        <row>
+                            <entry>KPI Card</entry>
+                            <entry>Definition</entry>
+                        </row>
+                    </thead>
+                    <tbody>
+                        <row>
+                            <entry>Total Suggestions</entry>
+                            <entry>The total count of suggestions with all statuses including Review
+                                Not Needed for the reporting period.<p>
+                                    <note id="note_tkp_lmp_nzb">Suggestion could be Documentation
+                                        Opportunities Diagnoses, Documented Diagnoses, Documented
+                                        Procedures, Clinical Evidence.</note>
+                                </p></entry>
+                        </row>
+                        <row>
+                            <entry>Total Encounters</entry>
+                            <entry>
+                                <p>The total count of encounters with all statuses including Review
+                                    Not Needed for the reporting period.<note id="note_gbr_1hz_zyb"
+                                        >When the Admit Date is applied, then this card displays the
+                                        count of admitted encounters with all statuses including
+                                        Review Not Needed. When the Discharge Date is applied, then
+                                        this card displays the count of discharged encounters with
+                                        all statuses including Review Not Needed.</note></p>
+                            </entry>
+                        </row>
+                    </tbody>
+                </tgroup>
+            </table>
+        </p>
+        <p><b>Encounters Details</b></p>
+        <fig id="fig_x3n_kvm_r4b">
+            <title>Encounter Details Chart</title>
+            <image
+                href="Images/Triage%20and%20CDS%20Assistant%20Usage/encounter_details/encounter_details_tabular_chart.gif"
+                width="700" id="image_qgp_ytc_lzb"/>
+        </fig>
+        <p>This chart displays the encounter level details for each encounter.</p>
+        <p><b>Info Icon</b>(Text on hover): Encounter Status: Includes all encounter statuses except
+            'Review Not Needed.' For data on those encounters, use the 'Encounter Status' filter
+            from the Filters pane. The visual shows the data for all ranked (standard/custom) and
+            unranked encounters by default. For data on encounters with specific ranks, use the
+            'Highest Rank' or 'Current Rank' slicer.</p>
+        <p>
+            <table frame="all" rowsep="1" colsep="1" id="table_sfd_ylg_l4b">
+                <title><b>Encounter Details Metrics</b></title>
+                <tgroup cols="2">
+                    <colspec colname="c1" colnum="1" colwidth="1.15*"/>
+                    <colspec colname="c2" colnum="2" colwidth="1.81*"/>
+                    <thead>
+                        <row>
+                            <entry>Column</entry>
+                            <entry>Description</entry>
+                        </row>
+                    </thead>
+                    <tbody>
+                        <row>
+                            <entry>Facility</entry>
+                            <entry>Displays the facility assigned to the encounter in the format
+                                Facility Description (Facility ID).<p><b>Example</b>: Good Health
+                                    Hospital (GHH).</p></entry>
+                        </row>
+                        <row>
+                            <entry>Account No.</entry>
+                            <entry>Displays the Account Number assigned to the
+                                        encounter.<p><b>Example</b>: ACC2021001.</p></entry>
+                        </row>
+                        <row>
+                            <entry>MRN</entry>
+                            <entry>Displays the MRN assigned to the encounter.<p><b>Example</b>:
+                                    MRN2021001.</p></entry>
+                        </row>
+                        <row>
+                            <entry>Patient Name</entry>
+                            <entry>Displays the name of the patient associated with the encounter.
+                                        <p><b>Example</b>: Last Name, First Name.</p></entry>
+                        </row>
+                        <row>
+                            <entry>Admit Date</entry>
+                            <entry>
+                                <p>Displays the Admission Date and Time assigned to the encounter in
+                                    the facility's timezone.</p>
+                                <p><b>Example</b>: 08/08/2019 12:00:00 AM MST.</p>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>Discharge Date</entry>
+                            <entry>
+                                <p>Displays the discharge date and time assigned to the encounter in
+                                    the facility's timezone.</p>
+                                <p>This column is blank for the encounters that do not have a
+                                    discharge date assigned.</p>
+                                <p><b>Example</b>: 08/08/2019 12:00:00 AM MST.</p>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>Assigned CDS</entry>
+                            <entry>
+                                <p> Displays the CDS assigned to the encounter in the format Last
+                                    Name, First Name MI (CDS ID).</p>
+                                <p><b>Example</b>: Ryan, Melissa (rmelissa).</p>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>Initial Review Date</entry>
+                            <entry>
+                                <p>Displays the date and time when the initial review was performed
+                                    on the encounter. The date is displayed in the Facility's
+                                    time-zone. <b>Example</b>: 05/24/2020 10:10:00 AM ET.</p>
+                                <p>
+                                    <note id="note_yyf_whz_zyb">If the Initial Review Date/time is
+                                        after the Discharge Date/Time, Initial Review Date/Time is
+                                        displayed in the red font.</note>
+                                </p>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>Initial Review CDS</entry>
+                            <entry>
+                                <p> Displays the name of the CDS who performed the initial
+                                    review.</p>
+                                <p><b>Example</b>: Ryan, Melissa (rmelissa).</p>
+                                <p>This column is blank for the encounters that do not have a
+                                    ‘Initial Review Date/Time'.</p>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>LOS</entry>
+                            <entry>Displays the length of stay in days for each encounter. <note>
+                                    <ul id="ul_um1_g3z_zyb">
+                                        <li>LOS value is displayed in blue font, when LOS is greater
+                                            than GMLOS for the encounter.</li>
+                                        <li>W-GMLOS value is considered, if F-GMLOS value is
+                                            blank.</li>
+                                    </ul>
+                                </note></entry>
+                        </row>
+                        <row>
+                            <entry>Rank at Initial Review</entry>
+                            <entry>
+                                <p>Displays  the standard or custom rank assigned to the encounter
+                                    prior to the Initial Review. E.g. 1, 2, etc.</p>
+                                <p>This column is blank for the encounters that do not have a ‘Rank
+                                    at Initial Review' assigned.</p>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>Highest Rank</entry>
+                            <entry>
+                                <p>Displays the highest rank (standard or custom) assigned to the
+                                    encounter (1 being the highest, and 11 being the lowest).</p>
+                                <p>This column is blank for the unranked encounters, i.e. encounters
+                                    that never had a rank assigned in CDE Triage.</p>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>Current Rank</entry>
+                            <entry>Displays the current standard or custom rank assigned to the
+                                encounter. E.g. 1, 2, etc.<p>This column is blank for the unranked
+                                    encounters, i.e. encounters that never had a rank assigned in
+                                    CDE Triage.</p></entry>
+                        </row>
+                        <row>
+                            <entry>Tracking Codes</entry>
+                            <entry>
+                                <p>Displays the tracking codes assigned to the encounter in comma
+                                    separated format.</p>
+                                <p><b>Example</b>: Quality Review, Prov Education.</p>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>Suggested DRG </entry>
+                            <entry>
+                                <p>Displays the Suggested DRG Code and its description.</p>
+                                <p>Example: 872 - SEPTICEMIA OR SEVERE SEPSIS WITHOUT MV >96 HOURS
+                                    WITHOUT MAJOR COMPLICATION OR COMORBIDITY (MCC).</p>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>W-DRG</entry>
+                            <entry>
+                                <p>Displays the 'primary' Working DRG along with the description
+                                    displayed on the Review page.</p>
+                                <p><b>Example</b>: 872 - SEPTICEMIA OR SEVERE SEPSIS WITHOUT MV >96
+                                    HOURS WITHOUT MAJOR COMPLICATION OR COMORBIDITY (MCC).</p>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>W-DRG WT</entry>
+                            <entry>
+                                <p>Displays the WT associated with the 'primary' Working DRG
+                                    displayed on the Review page.</p>
+                                <p><b>Example</b>: 1.0393.</p>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>W-SOI</entry>
+                            <entry>
+                                <p>Displays the 'SOI' from the working review. </p>
+                                <p><b>Example</b>: 2.</p>
+                                <p>
+                                    <note>If the SOI associated with the primary working DRG is not
+                                        available, then the SOI associated with the advanced working
+                                        DRG is displayed.</note>
+                                </p>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>W-ROM</entry>
+                            <entry>
+                                <p>Displays the 'ROM' from the working review. </p>
+                                <p><b>Example</b>: 3.</p>
+                                <p>
+                                    <note>If the ROM associated with the primary working DRG is not
+                                        available, then the ROM associated with the advanced working
+                                        DRG is displayed.</note>
+                                </p>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>W-AMLOS</entry>
+                            <entry>
+                                <p>Displays the 'AMLOS' from the working review. </p>
+                                <p><b>Example</b>: 3.1.</p>
+                                <p>
+                                    <note>If the AMLOS associated with the primary working DRG is
+                                        not available, then the AMLOS associated with the advanced
+                                        working DRG is displayed.</note>
+                                </p>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>W-GMLOS</entry>
+                            <entry>
+                                <p>Displays the 'GMLOS ' from the working review.</p>
+                                <p><b>Example</b>: 3.2.</p>
+                                <p>
+                                    <note>If the GMLOS associated with the primary working DRG is
+                                        not available, then the GMLOS associated with the advanced
+                                        working DRG is displayed.</note>
+                                </p>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>P-DRG</entry>
+                            <entry>
+                                <p>Displays the 'primary' Possible DRG along with the description
+                                    displayed on the Review page.</p>
+                                <p><b>Example</b>: 872 - SEPTICEMIA OR SEVERE SEPSIS WITHOUT MV >96
+                                    HOURS WITHOUT MAJOR COMPLICATION OR COMORBIDITY (MCC).</p>
+                                <p>
+                                    <note>Displays the ‘Working DRG’ value in the orange font for
+                                        the encounters that have a ‘Working DRG’ assigned if the
+                                        ‘Possible DRG’ is blank or null.</note>
+                                </p>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>P-DRG WT</entry>
+                            <entry>
+                                <p>Displays the WT associated with the 'primary' Possible DRG
+                                    displayed on the Review page.</p>
+                                <p><b>Example</b>: 1.0393.</p>
+                                <p>
+                                    <note>Displays the ‘Working DRG WT’ value in the orange font for
+                                        the encounters that have a ‘Working DRG’ assigned if the
+                                        ‘Possible DRG’ is blank or null.</note>
+                                </p>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>R-DRG</entry>
+                            <entry>
+                                <p>Displays the code and description of the Reconciliation
+                                    Assessment DRG along with the description displayed on the
+                                    Reconciliation page.</p>
+                                <p><b>Example</b>: 872 - SEPTICEMIA OR SEVERE SEPSIS WITHOUT MV >96
+                                    HOURS WITHOUT MAJOR COMPLICATION OR COMORBIDITY (MCC).</p>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>R-DRG WT</entry>
+                            <entry>
+                                <p>Displays the WT associated with the Reconciliation Assessment DRG
+                                    displayed on the Reconciliation page.</p>
+                                <p><b>Example</b>: 1.0393.</p>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>R-SOI</entry>
+                            <entry>
+                                <p>Displays the 'SOI' from the Reconciliation Assessment.</p>
+                                <p><b>Example</b>: 1</p>
+                                <p>
+                                    <note>If the SOI associated with the primary Reconciliation
+                                        Assessment DRG is not available, then the SOI associated
+                                        with the advanced Reconciliation Assessment DRG is
+                                        displayed.</note>
+                                </p>
+                                <p>This column is blank for the encounters that do not have a
+                                    ‘Initial Review Date/Time'.</p>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>R-ROM</entry>
+                            <entry>
+                                <p>Displays the 'ROM' from the Reconciliation Assessment.</p>
+                                <p><b>Example</b>: 1</p>
+                                <p>
+                                    <note>If the ROM associated with the primary Reconciliation
+                                        Assessment DRG is not available, then the ROM associated
+                                        with the advanced Reconciliation Assessment DRG is
+                                        displayed.</note>
+                                </p>
+                                <p>This column is blank for the encounters that do not have a
+                                    ‘Initial Review Date/Time'</p>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>R-AMLOS</entry>
+                            <entry>
+                                <p>Displays the 'AMLOS' from the Reconciliation Assessment.</p>
+                                <p><b>Example</b>: 3.1</p>
+                                <p>
+                                    <note>If the AMLOS associated with the primary Reconciliation
+                                        Assessment DRG is not available, then the AMLOS associated
+                                        with the advanced Reconciliation Assessment DRG is
+                                        displayed.</note>
+                                </p>
+                                <p>This column is blank for the encounters that do not have a
+                                    ‘Initial Review Date/Time'.</p>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>R-GMLOS</entry>
+                            <entry>
+                                <p>Displays the 'GMLOS' from the Reconciliation Assessment.</p>
+                                <p><b>Example</b>: 2.4</p>
+                                <p>
+                                    <note>If the GMLOS associated with the primary Reconciliation
+                                        Assessment DRG is not available, then the GMLOS associated
+                                        with the advanced Reconciliation Assessment DRG is
+                                        displayed.</note>
+                                </p>
+                                <p>This column is blank for the encounters that do not have a
+                                    ‘Initial Review Date/Time'</p>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>F-DRG</entry>
+                            <entry>
+                                <p>Displays the code and description of the Final Coded DRG along
+                                    with the description displayed on the Reconciliation page.</p>
+                                <p><b>Example</b>: 872 - SEPTICEMIA OR SEVERE SEPSIS WITHOUT MV >96
+                                    HOURS WITHOUT MAJOR COMPLICATION OR COMORBIDITY (MCC).</p>
+                                <note id="note_gx2_tpz_zyb">This column is blank for the encounters
+                                    that do not have a ‘Initial Review Date/Time'.</note>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>F-DRG WT</entry>
+                            <entry>
+                                <p>Displays the WT associated with the Final Coded DRG displayed on
+                                    the Reconciliation page.</p>
+                                <p><b>Example</b>: 1.0393.</p>
+                                <p>
+                                    <note>This column is blank for the encounters that do not have a
+                                        ‘Initial Review Date/Time</note>
+                                </p>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>F-SOI</entry>
+                            <entry>
+                                <p>Displays the Final Coded 'SOI'.</p>
+                                <p><b>Example</b>: 2</p>
+                                <p>This column is blank for the encounters that do not have a
+                                    ‘Initial Review Date/Time'</p>
+                                <p>Advanced SOI values are used if Primary SOI values are blank.</p>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>F-ROM</entry>
+                            <entry>
+                                <p>Displays the Final Coded 'ROM'.</p>
+                                <p><b>Example</b>: 3.</p>
+                                <p>This column is blank for the encounters that do not have a
+                                    ‘Initial Review Date/Time'</p>
+                                <p>Advanced ROM values are used if Primary ROM values are blank.</p>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>F-AMLOS</entry>
+                            <entry>
+                                <p>Displays the Final Coded 'AMLOS'.</p>
+                                <p><b>Example</b>: 3.1.</p>
+                                <p>This column is blank for the encounters that do not have a
+                                    ‘Initial Review Date/Time'</p>
+                                <p>Advanced AMLOS values are used if Primary AMLOS values are
+                                    blank.</p>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>F-GMLOS</entry>
+                            <entry>
+                                <p>Displays the Final Coded 'GMLOS'.</p>
+                                <p><b>Example</b>: 3.2</p>
+                                <p>This column is blank for the encounters that do not have a
+                                    ‘Initial Review Date/Time'</p>
+                                <p>Advanced GMLOS values are used if Primary GMLOS values are
+                                    blank</p>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>Variance</entry>
+                            <entry>
+                                <p>Displays the shift in the WT at the encounter level.</p>
+                                <p><b>Example</b>: 1.0178.</p>
+                                <p>Encounter Variance = Final Coded DRG WT - Reconciliation
+                                    Assessment DRG WT (or Variance = Final Coded DRG WT - Working
+                                    DRG WT when Discharge Date &lt; 11/14/19 or Reconciliation
+                                    Assessment DRG is blank). For encounters with blank Final DRG
+                                    WT, Encounter Variance = Possible DRG WT - Working DRG WT ( If
+                                    Possible DRG/WT is blank, Working DRG WT is considered. In this
+                                    case Encounter Variance will always be zero).</p>
+                                <note id="note_wwm_qqz_zyb">
+                                    <ul id="ul_oft_qqz_zyb">
+                                        <li>Encounter Variance can be negative, positive, or
+                                            zero.</li>
+                                        <li>Negative ‘Variance’ is displayed in the red font, E.g.
+                                            1.0178.</li>
+                                        <li>Encounter Variance is not calculated for the encounters
+                                            that do not have an initial review date. </li>
+                                        <li>This value is rounded to 4 decimal places.</li>
+                                    </ul>
+                                </note>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>Blended Rate</entry>
+                            <entry>
+                                <p>Displays the Blended Rate associated with the payer/Grouper
+                                    assigned to the encounter.</p>
+                                <p><b>Example</b>: $7512.</p>
+                                <p>When the Blended Rate is not available, the Operating Federal
+                                    rate is displayed.</p>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>Reimbursement Impact</entry>
+                            <entry>
+                                <p>Displays the ‘Reimbursement Impact’ value for the encounter. </p>
+                                <p><b>Example</b>: $ 5,234.</p>
+                                <p>Reimbursement Impact: Encounter Reimbursement Impact = Encounter
+                                    Variance x Blended Rate.</p>
+                                <note id="note_nf5_fwc_lzb">
+                                    <ul id="ul_bvl_mqg_l4b">
+                                        <li>This value is rounded to 0 decimal places.</li>
+                                        <li>Negative ‘Reimbursement Impact ($)’ is displayed in the
+                                            red font.</li>
+                                    </ul>
+                                </note>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>Impact Type</entry>
+                            <entry>
+                                <p>Displays the Impact Type assigned to the encounter:</p>
+                                <ul id="ul_ygm_qqg_l4b">
+                                    <li>Financial Impact</li>
+                                    <li>SOI/ROM Impact</li>
+                                    <li>No Impact</li>
+                                    <li>Both Impact</li>
+                                    <li>Unassigned Impact</li>
+                                </ul>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>Encounter Status</entry>
+                            <entry><p>Displays the encounter status assigned to the
+                                        encounter.</p><p><b>Example</b>: Reconciled Impact,
+                                    Auto-Reconciled.</p>.</entry>
+                        </row>
+                        <row>
+                            <entry>Payer</entry>
+                            <entry>Displays the payer assigned to the encounter.<p><b>Example</b>:
+                                    Medicare (MEDC).</p></entry>
+                        </row>
+                        <row>
+                            <entry>Grouper</entry>
+                            <entry>Displays the Grouper version associated with the payer assigned
+                                to the encounter.<p><b>Example</b>: CMS 38.0.</p></entry>
+                        </row>
+                        <row>
+                            <entry>Unit</entry>
+                            <entry>Displays the Unit assigned to the encounter.<p><b>Example</b>:
+                                    ICU.</p></entry>
+                        </row>
+                        <row>
+                            <entry>Patient Type</entry>
+                            <entry>Displays the Patient Type assigned to the
+                                        encounter.<p><b>Example</b>: Inpatient </p></entry>
+                        </row>
+                        <row>
+                            <entry>Visit Type</entry>
+                            <entry>
+                                <p>Displays the Visit Type assigned to the encounter.</p>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>Discharge Status</entry>
+                            <entry>Displays the Discharge Status assigned to the
+                                        encounter.<p><b>Format</b>: <i>Discharge Status ID-
+                                        Description Status Description</i>.</p><p><b>Example</b>: 01
+                                    - 01 Self Care.</p></entry>
+                        </row>
+                    </tbody>
+                </tgroup>
+            </table>
+        </p>
+        <p><b>Suggestion Details</b></p>
+        <fig id="fig_zvb_3xc_lzb">
+            <title>Suggestion Details Chart</title>
+            <image
+                href="Images/Triage%20and%20CDS%20Assistant%20Usage/encounter_details/suggestion_detais.gif"
+                width="800" id="image_gxw_fyc_lzb"/>
+        </fig>
+        <p>This chart displays the suggestion level details for each encounter.</p>
+        <p><b>Info Icon</b>(Text on hover): Encounter Status: Includes data for all encounter
+            statuses except ‘Review Not Needed.' For data on those encounters, use the 'Encounter
+            Status' filter from the Filters pane. The visual shows suggestions for all ranked
+            (standard/custom) and unranked encounters by default. For suggestion data on encounters
+            with specific ranks, use the 'Highest Rank' or 'Current Rank' slicer and then select the
+            encounter from the above 'Encounter Details’ chart.</p>
+        <p>
+            <table frame="all" rowsep="1" colsep="1" id="table_bwb_3xc_lzb">
+                <title><b>Suggestion Details Metrics</b></title>
+                <tgroup cols="2">
+                    <colspec colname="c1" colnum="1" colwidth="1.15*"/>
+                    <colspec colname="c2" colnum="2" colwidth="1.81*"/>
+                    <thead>
+                        <row>
+                            <entry>Column</entry>
+                            <entry>Description</entry>
+                        </row>
+                    </thead>
+                    <tbody>
+                        <row>
+                            <entry>Facility</entry>
+                            <entry>Displays the facility assigned to the encounter in the format
+                                Facility Description (Facility ID).<p><b>Example</b>: Good Health
+                                    Hospital (GHH).</p></entry>
+                        </row>
+                        <row>
+                            <entry>Account No.</entry>
+                            <entry>Displays The Account Number assigned to the
+                                        encounter.<p><b>Example</b>: ACC2021001.</p></entry>
+                        </row>
+                        <row>
+                            <entry>Admit Date</entry>
+                            <entry>
+                                <p>Displays the Admission Date and Time assigned to the encounter in
+                                    the facility's timezone.</p>
+                                <p><b>Example</b>: 08/08/2019 12:00:00 AM MST.</p>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>Discharge Date</entry>
+                            <entry>
+                                <p>Displays the discharge date and time assigned to the encounter in
+                                    the facility's timezone.</p>
+                                <p>This column is blank for the encounters that do not have a
+                                    discharge date assigned.</p>
+                                <p><b>Example</b>: 08/08/2019 12:00:00 AM MST.</p>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>Assistant Category</entry>
+                            <entry>
+                                <p>Displays displays one of the below values:</p>
+                                <ul id="ul_fwb_3xc_lzb">
+                                    <li>
+                                        <p>Documented Diagnoses</p>
+                                    </li>
+                                    <li>
+                                        <p>Documented Procedures</p>
+                                    </li>
+                                    <li>
+                                        <p>DO: Diagnoses</p>
+                                    </li>
+                                    <li>
+                                        <p>DO: Clinical Evidence</p>
+                                    </li>
+                                </ul>
+                                <p>This column is blank for an encounter for which no AI suggestions
+                                    were presented in CDS Assistant.</p>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>Suggestion Type</entry>
+                            <entry>
+                                <p>Displays one of the below values:</p>
+                                <ul id="ul_gwb_3xc_lzb">
+                                    <li>
+                                        <p>Suggested</p>
+                                    </li>
+                                    <li>
+                                        <p>Quality</p>
+                                    </li>
+                                    <li>
+                                        <p>Other</p>
+                                    </li>
+                                </ul>
+                                <p>The column is blank for an encounter for which no AI suggestions
+                                    were presented in CDS Assistant.</p>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>Suggestion</entry>
+                            <entry><p>Displays the AI suggestion that was presented in CDS
+                                    Assistant.</p><p>When Assistant Category is Documented
+                                    Diagnoses, this column displays the diagnosis in the format ICD
+                                    10 Code: Diagnoses Description (E.g. L97.909: Non pressure
+                                    chronic ulcer of unspecified part of unspecified leg with
+                                    unspecified severity). </p><p>When Assistant Category is
+                                    Documented Procedures, this column displays the procedures in
+                                    the format ICD10 PCS code: Procedure Description or SNOMED
+                                    Procedure Description (E.g. 0RG2: Fusion cervical vertebral
+                                    joints, Debridement of wound of skin).</p><p>When Assistant
+                                    Category is Documentation Opportunities Diagnoses, this column
+                                    displays the diagnosis in the format ICD 10 Code: Diagnoses
+                                    Description (E.g., N17.9: Acute kidney failure,
+                                    unspecified).</p><p>When Assistant Category is Documentation
+                                    Opportunities Clinical Evidences, this column displays the
+                                    evidence in the format Clinical Evidence Description (E.g.,
+                                    Gram-Negative Blood Culture).</p>The column is blank for an
+                                encounter for which no AI suggestions were presented in CDS
+                                Assistant. </entry>
+                        </row>
+                        <row>
+                            <entry>Code Flag</entry>
+                            <entry>
+                                <p>Displays the flag assigned to the AI suggestion. (E.g. PSI, CC,
+                                    MCC, ELX, HAC, HCC, OR, NOR, etc.)</p>
+                                <p>Flags are displayed for Documented Diagnoses, Documented
+                                    Procedures, and Documentation Opportunities Diagnoses.</p>
+                                <p>
+                                    <note id="note_rdk_v5p_nzb">This column will be blank for
+                                        Documentation Opportunities : Clinical Evidences.</note>
+                                </p>
+                                <p>An AI suggestion may have more than one flag assigned. For
+                                    example, Documented Diagnoses N93.0: Urinary tract infection,
+                                    site not specified, may have two flags - CC and HAC assigned as
+                                    applicable to the encounter. In case of multiple flags, the
+                                    values are displayed in comma separated format.</p>
+                                <p>The column will be blank for an encounter for which no AI
+                                    suggestions were presented in CDS Assistant.</p>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>CDS Activity</entry>
+                            <entry>
+                                <p>Displays one of the below values:</p>
+                                <ul id="ul_iwb_3xc_lzb">
+                                    <li>
+                                        <p>Accepted</p>
+                                    </li>
+                                    <li>
+                                        <p>Removed</p>
+                                    </li>
+                                    <li>
+                                        <p>Unaddressed</p>
+                                    </li>
+                                    <li>
+                                        <p>CDS Attributed</p>
+                                    </li>
+                                    <li>
+                                        <p>System Attributed</p>
+                                    </li>
+                                </ul>
+                                <p>The column is blank for an encounter for which no AI suggestions
+                                    were presented in CDS Assistant. </p>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>Encounter Status</entry>
+                            <entry><p>Displays the encounter status assigned to the
+                                        encounter.</p><p><b>Example</b>: Reconciled Impact,
+                                    Auto-Reconciled.</p>.</entry>
+                        </row>
+                        <row>
+                            <entry>Payer</entry>
+                            <entry>Displays The Payer assigned to the encounter in the format Payer
+                                Description (Payer ID).<p><b>Example</b>: Medicare
+                                (MEDC).</p></entry>
+                        </row>
+                        <row>
+                            <entry>Unit</entry>
+                            <entry>Displays the Unit assigned to the encounter.<p><b>Example</b>:
+                                    ICU.</p></entry>
+                        </row>
+                        <row>
+                            <entry>Patient Type</entry>
+                            <entry>Displays the Patient Type assigned to the
+                                        encounter.<p><b>Example</b>: Inpatient </p></entry>
+                        </row>
+                        <row>
+                            <entry>Visit Type</entry>
+                            <entry>
+                                <p>Displays the Visit Type assigned to the encounter.</p>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>Discharge Status</entry>
+                            <entry>Displays the Discharge Status assigned to the
+                                        encounter.<p><b>Format</b>: <i>Discharge Status ID-
+                                        Description Status Description</i>.</p><p><b>Example</b>: 01
+                                    - 01 Self Care.</p></entry>
+                        </row>
+                    </tbody>
+                </tgroup>
+            </table>
+        </p>
+        <p>
+            <table frame="all" rowsep="1" colsep="1" id="table_qnn_w2n_g4b">
+                <title>Report Slicers </title>
+                <tgroup cols="2">
+                    <colspec colname="c1" colnum="1" colwidth="1*"/>
+                    <colspec colname="c2" colnum="2" colwidth="1*"/>
+                    <thead>
+                        <row>
+                            <entry>Slicer</entry>
+                            <entry>Description</entry>
+                        </row>
+                    </thead>
+                    <tbody>
+                        <row>
+                            <entry>Admit Date</entry>
+                            <entry>
+                                <ul id="ul_nbn_sj2_1zb">
+                                    <li>
+                                        <p>Allows the user to select the admit date range. </p>
+                                    </li>
+                                    <li>
+                                        <p>Format: <b>Between Date range</b>, Example: 4/1/2023 -
+                                            5/30/2023.</p>
+                                    </li>
+                                    <li>
+                                        <p><b>Default</b>: Last 1 calendar month date range is
+                                            selected by default.</p>
+                                    </li>
+                                </ul>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>Discharge Date</entry>
+                            <entry>
+                                <ul id="ul_uzh_y2n_g4b">
+                                    <li>Display the discharge date range. </li>
+                                    <li>
+                                        <p><b>Format</b>: Between date range, example: 4/1/2023 -
+                                            6/30/2023.</p>
+                                    </li>
+                                </ul>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>Reset</entry>
+                            <entry>
+                                <ul id="ul_g5p_ctl_kqb">
+                                    <li>With the Reset button, you can reset both the admit and
+                                        discharge date range.</li>
+                                    <li><b>Tooltip</b>: Ctrl + Click to reset both Admit Date and
+                                        Discharge Date.</li>
+                                </ul>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>Facility</entry>
+                            <entry>
+                                <ul id="ul_vzp_z2n_g4b">
+                                    <li>Displays both active and inactive facilities in alphabetical
+                                        order that you have access to.</li>
+                                    <li>You can select multiple facilities.</li>
+                                    <li>You can search the facility by Facility ID or
+                                        Description.</li>
+                                    <li><b>Format</b>: Facility Description (Facility ID).</li>
+                                    <li><b>Default</b>: ALL.</li>
+                                </ul>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>Payer</entry>
+                            <entry>
+                                <ul id="ul_ntb_cfn_g4b">
+                                    <li>Displays both active and inactive payers in alphabetical
+                                        order associated with the facilities you have access
+                                        to.</li>
+                                    <li>You can select multiple payers.</li>
+                                    <li>"Unassigned Payer" displays data for the encounters that do
+                                        not have a payer assigned.</li>
+                                    <li>You can search the Payer by Payer ID or Description.</li>
+                                    <li><b>Format</b>: Payer Description (Payer ID).</li>
+                                    <li><b>Default</b>: ALL.</li>
+                                </ul>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>CDS</entry>
+                            <entry>
+                                <ul id="ul_w24_ydc_3yb">
+                                    <li>
+                                        <p>Displays both active and inactive CDSs in alphabetical
+                                            order associated with the facilities user has access
+                                            to.</p>
+                                    </li>
+                                    <li>
+                                        <p>User can select multiple CDSs</p>
+                                    </li>
+                                    <li>
+                                        <p>"Unassigned CDS" displays data for the encounters that do
+                                            not have a CDS assigned.</p>
+                                    </li>
+                                    <li>
+                                        <p>Users can search the CDS by CDS ID or Name.</p>
+                                    </li>
+                                    <li>
+                                        <p><b>Format</b>: CDS Name (CDS ID).</p>
+                                    </li>
+                                    <li>
+                                        <p><b>Default</b>: ALL.</p>
+                                    </li>
+                                </ul>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>Unit</entry>
+                            <entry>
+                                <ul id="ul_ak2_2jv_prb">
+                                    <li>This filter displays the list of available units.</li>
+                                    <li>You can select multiple Units.</li>
+                                    <li>You can search the Unit.</li>
+                                    <li><b>Default</b>: ALL.</li>
+                                </ul>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>Assistant Category</entry>
+                            <entry>Displays the below options:<ul id="ul_m3d_1l2_1zb">
+                                    <li>
+                                        <ul id="ul_n3d_1l2_1zb">
+                                            <li>
+                                                <p>Documented Diagnoses</p>
+                                            </li>
+                                            <li>
+                                                <p>Documented Procedures</p>
+                                            </li>
+                                            <li>
+                                                <p>DO: Diagnoses</p>
+                                            </li>
+                                            <li>
+                                                <p>DO: Clinical Evidence</p>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <p>User can select multiple Assistant categories.</p>
+                                    </li>
+                                    <li>
+                                        <p><b>Default</b>: Documented Diagnoses and DO:
+                                            Diagnoses.</p>
+                                    </li>
+                                </ul></entry>
+                        </row>
+                        <row>
+                            <entry>CDS Activity</entry>
+                            <entry>Displays the below options:<ul id="ul_awz_2l2_1zb">
+                                    <li>
+                                        <ul id="ul_bwz_2l2_1zb">
+                                            <li>
+                                                <p>Accepted</p>
+                                            </li>
+                                            <li>
+                                                <p>Removed</p>
+                                            </li>
+                                            <li>
+                                                <p>Unaddressed</p>
+                                            </li>
+                                            <li>
+                                                <p>CDS Attributed</p>
+                                            </li>
+                                            <li>
+                                                <p>System Attributed</p>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <p>User can select multiple activities.</p>
+                                    </li>
+                                    <li>
+                                        <p><b>Default</b>: ALL.</p>
+                                    </li>
+                                </ul></entry>
+                        </row>
+                        <row>
+                            <entry>Suggestion Type</entry>
+                            <entry>Displays the below options:<ul id="ul_ggn_3l2_1zb">
+                                    <li>
+                                        <ul id="ul_hgn_3l2_1zb">
+                                            <li>
+                                                <p>Suggested</p>
+                                            </li>
+                                            <li>
+                                                <p>Quality</p>
+                                            </li>
+                                            <li>
+                                                <p>Other</p>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <p>User can select multiple suggestion types.</p>
+                                    </li>
+                                    <li>
+                                        <p><b>Default</b>: Suggested.</p>
+                                    </li>
+                                </ul></entry>
+                        </row>
+                        <row>
+                            <entry>Suggestions</entry>
+                            <entry>
+                                <ul id="ul_rft_brd_lzb">
+                                    <li>
+                                        <p>Displays the list of Documented Diagnoses, Documented
+                                            Procedures, Documentation Opportunities Diagnoses,
+                                            Documentation Opportunities Clinical Evidences.</p>
+                                    </li>
+                                    <li>
+                                        <p>User can select multiple diagnoses, procedures or
+                                            evidences.</p>
+                                    </li>
+                                    <li>
+                                        <p>Users can search a diagnosis/procedure/evidence by ICD 10
+                                            Code or Diagnoses/Procedure/Evidences Description.</p>
+                                    </li>
+                                    <li>
+                                        <p><b>Format</b>: ICD 10 Code: Diagnoses Description (E.g.
+                                            L97.909: Non pressure chronic ulcer of unspecified part
+                                            of unspecified leg with unspecified severity), Procedure
+                                            Description (E.g., Debridement of wound of skin),
+                                            Clinical Evidence Description (E.g., Gram-Negative Blood
+                                            Culture). Only display the first 20-25 characters,
+                                            including the ICD-10 Code and show the rest of the
+                                            description in a tooltip upon hover.</p>
+                                    </li>
+                                    <li>
+                                        <p><b>Default</b>: ALL.</p>
+                                    </li>
+                                </ul>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>Highest Rank</entry>
+                            <entry>
+                                <ul id="ul_zds_r52_1zb">
+                                    <li>
+                                        <p>Displays all standard and custom ranks that can be
+                                            assigned to the encounters. This slicer filters the data
+                                            as per the highest standard/custom rank that has ever
+                                            been assigned to an encounter (1 being the highest
+                                            standard rank and 11 being the lowest standard
+                                            rank).</p>
+                                    </li>
+                                    <li>
+                                        <p>User can select multiple Ranks.</p>
+                                    </li>
+                                    <li>
+                                        <p>Users can search the Rank number.</p>
+                                    </li>
+                                    <li>
+                                        <p>“Unranked” displays data for all encounters that are not
+                                            ranked.</p>
+                                    </li>
+                                    <li>
+                                        <p><b>Format</b>: Rank # (Rank 1, Rank 2 etc).</p>
+                                    </li>
+                                    <li>
+                                        <p><b>Default</b>: ALL.</p>
+                                    </li>
+                                </ul>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>Current Rank</entry>
+                            <entry>
+                                <ul id="ul_vb4_552_1zb">
+                                    <li>
+                                        <p>Displays all standard and custom ranks that can be
+                                            assigned to the encounters. This slicer filters the data
+                                            as per the current standard or custom rank assigned to
+                                            an encounter.</p>
+                                    </li>
+                                    <li>
+                                        <p>User can select multiple Ranks.</p>
+                                    </li>
+                                    <li>
+                                        <p>Users can search the Rank number.</p>
+                                    </li>
+                                    <li>
+                                        <p>“Unranked” displays data for all encounters that are not
+                                            ranked.</p>
+                                    </li>
+                                    <li>
+                                        <p><b>Format</b>: Rank # (Rank 1, Rank 2 etc).</p>
+                                    </li>
+                                    <li>
+                                        <p><b>Default</b>: ALL.</p>
+                                    </li>
+                                </ul>
+                            </entry>
+                        </row>
+                    </tbody>
+                </tgroup>
+            </table>
+        </p>
+        <p>
+            <table frame="all" rowsep="1" colsep="1" id="table_dq1_ffn_g4b">
+                <title>Filters on all Pages</title>
+                <tgroup cols="2">
+                    <colspec colname="c1" colnum="1" colwidth="1*"/>
+                    <colspec colname="c2" colnum="2" colwidth="1*"/>
+                    <thead>
+                        <row>
+                            <entry>Filter</entry>
+                            <entry>Description</entry>
+                        </row>
+                    </thead>
+                    <tbody>
+                        <row>
+                            <entry>Patient Type</entry>
+                            <entry>
+                                <ul id="ul_ns1_3fn_g4b">
+                                    <li>Displays the available patient types. <b>Example</b>:
+                                        Inpatient, Outpatient.</li>
+                                    <li><b>Default</b>: Inpatient.</li>
+                                </ul>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>Admit Service</entry>
+                            <entry>
+                                <ul id="ul_x2g_kfn_g4b">
+                                    <li>Displays the list of available admit service.</li>
+                                    <li>You can select multiple Units.</li>
+                                    <li>You can search the Admit Service.</li>
+                                    <li><b>Default</b>: ALL</li>
+                                </ul>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>Visit Type</entry>
+                            <entry>
+                                <ul id="ul_obm_lgm_r4b">
+                                    <li>Displays the available patient types.<b>Example</b>: ED, IP,
+                                        etc.</li>
+                                    <li>You can select multiple Visit Type.</li>
+                                    <li>You can search the Visit Type.</li>
+                                    <li><b>Default</b>: ALL.</li>
+                                </ul>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>Weekend Only Stay</entry>
+                            <entry>
+                                <ul id="ul_mcz_r32_1zb">
+                                    <li>
+                                        <p>Displays the available options for Weekend Only Stay- Y
+                                            and N.</p>
+                                    </li>
+                                    <li>
+                                        <p>Weekend Only Stay = Y (Unassigned encounters admitted
+                                            after Friday, 6PM and discharged before Sunday, 11.59
+                                            PM).</p>
+                                    </li>
+                                    <li><p><b>Default</b>: ALL.</p>.</li>
+                                </ul>
+                            </entry>
+                        </row>
+                    </tbody>
+                </tgroup>
+            </table>
+        </p>
+        <p>
+            <table frame="all" rowsep="1" colsep="1" id="table_jqz_yzc_lzb">
+                <title>Filters on this Page</title>
+                <tgroup cols="2">
+                    <colspec colname="c1" colnum="1" colwidth="1*"/>
+                    <colspec colname="c2" colnum="2" colwidth="1*"/>
+                    <thead>
+                        <row>
+                            <entry>Filter</entry>
+                            <entry>Description</entry>
+                        </row>
+                    </thead>
+                    <tbody>
+                        <row>
+                            <entry>Encounter Status</entry>
+                            <entry>
+                                <ul id="ul_oqz_yzc_lzb">
+                                    <li>
+                                        <p>Displays the list of available encounter statuses.</p>
+                                    </li>
+                                    <li>
+                                        <p>User can select multiple statuses.</p>
+                                    </li>
+                                    <li>
+                                        <p>Users can search the Encounter Status.</p>
+                                    </li>
+                                    <li>
+                                        <p><b>Default</b>: 'Review Not Needed' unchecked by
+                                            default.</p>
+                                    </li>
+                                </ul>
+                            </entry>
+                        </row>
+                    </tbody>
+                </tgroup>
+            </table>
+        </p>
+        <p>
+            <table frame="all" rowsep="1" colsep="1" id="table_pmd_wtg_l4b">
+                <title><b>Footnotes</b></title>
+                <tgroup cols="2">
+                    <colspec colname="c1" colnum="1" colwidth="1*"/>
+                    <colspec colname="c2" colnum="2" colwidth="1*"/>
+                    <thead>
+                        <row>
+                            <entry>Formulas</entry>
+                            <entry>Text on hover</entry>
+                        </row>
+                    </thead>
+                    <tbody>
+                        <row>
+                            <entry>Documented Diagnoses</entry>
+                            <entry>Displays all the AI suggested primary and secondary, manually
+                                added, and ‘Removed' diagnosis codes presented in the 'Documented:
+                                Diagnoses’ section within CDS Assistant.</entry>
+                        </row>
+                        <row>
+                            <entry>Documented Procedures</entry>
+                            <entry>Displays all the AI suggested, manually added, and 'Removed'
+                                procedure codes (ICD 10 PCS and SNOMED) presented in the
+                                'Documented: Procedures’ section within CDS Assistant.</entry>
+                        </row>
+                        <row>
+                            <entry>DO: Diagnoses</entry>
+                            <entry>Displays all the AI suggested diagnoses presented in the
+                                Documentation Opportunities: Diagnoses section within CDS
+                                Assistant.</entry>
+                        </row>
+                        <row>
+                            <entry>DO: Clinical Evidences</entry>
+                            <entry>Displays all the signs, symptoms, medications, lab results or
+                                procedures found within a provider document. Clinical Evidences are
+                                presented in the 'Documentation Opportunities: Clinical Evidences’
+                                section within CDS Assistant.</entry>
+                        </row>
+                        <row>
+                            <entry>Initial Review Date/Time</entry>
+                            <entry>Displays Initial Review Date/time in red font when the Initial
+                                Review Date/Time > Discharge Date/Time.</entry>
+                        </row>
+                        <row>
+                            <entry>LOS</entry>
+                            <entry>Displays Length of Stay in blue font if LOS value greater than
+                                F-GMLOS; W-GMLOS value is considered in case of blank
+                                F-GMLOS.</entry>
+                        </row>
+                        <row>
+                            <entry>P-DRG</entry>
+                            <entry>
+                                <p>P-DRG: Displays the ‘Working DRG’ value in orange font for the
+                                    reconciled encounters with blank ‘Possible DRG’.</p>
+                                <p>P-DRG WT: Displays the ‘Working DRG WT’ value in orange font for
+                                    the reconciled encounters with blank ‘Possible DRG’.</p>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>Variance</entry>
+                            <entry>Variance = Final Coded DRG WT - Reconciliation Assessment DRG WT
+                                (Working DRG WT when Discharge Date &lt; 11/14/19 or Reconciliation
+                                Assessment DRG is blank); Displays negative variance value in red
+                                font.</entry>
+                        </row>
+                        <row>
+                            <entry>Blended Rate</entry>
+                            <entry>Configured at payer level; When Blended Rate is not available,
+                                Operating Federal rate is displayed.</entry>
+                        </row>
+                        <row>
+                            <entry>Reimbursement Impact </entry>
+                            <entry>
+                                <p>Reimbursement Impact = (Final Coded DRG WT - Reconciliation
+                                    Assessment DRG WT (Working DRG WT when Discharge Date &lt;
+                                    11/14/19 or Reconciliation Assessment DRG is blank)) x Blended
+                                    Rate. E.g. $5321</p>
+                                <p>Displays negative Reimbursement Impact in red font.</p>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>SOI/ROM</entry>
+                            <entry>Advanced DRG SOI/ROM value is displayed when Primary DRG SOI/ROM
+                                is blank.</entry>
+                        </row>
+                        <row>
+                            <entry>AMLOS/GMLOS</entry>
+                            <entry>Advanced DRG AMLOS/GMLOS value is displayed when Primary DRG
+                                AMLOS/GMLOS is blank.</entry>
+                        </row>
+                    </tbody>
+                </tgroup>
+            </table>
+        </p>
+    </conbody>
+</concept>

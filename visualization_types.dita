@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="visualization_types">
+    <title>Visualization Types</title>
+    <shortdesc></shortdesc>
+    <conbody>
+        <p>Visualizations (aka visuals) display insights that have been discovered in the data.
+            Visualizations make it easier to interpret the insight. The following visuals can be
+            used to modify a report:</p>
+        <section id="section_jmm_xph_cgb">
+            <title>Area charts: Basic (Layered) and Stacked</title>
+            <p>The basic area chart (aka layered area chart.) is based on the line chart. The area
+                between axis and line is filled with colors to indicate volume. Area charts
+                emphasize the magnitude of change over time, and can be used to draw attention to
+                the total value across a trend. <image href="Images/Basic%20Area%20Chart.gif"
+                    id="image_htk_f2z_t4b" width="400"/></p>
+        </section>
+        <section id="section_r2q_5qh_cgb">
+            <title><b>Bar and Column charts</b></title>
+            <p>Bar charts are the standard for looking at a specific value across different
+                    categories.<fig id="fig_p4l_lvh_cgb">
+                    <title>Bar Chart</title>
+                    <image href="Images/Bar%20Chart.gif" id="image_qyw_32z_t4b" width="400"/>
+                </fig><fig id="fig_d1f_mvh_cgb">
+                    <title>Column Chart</title>
+                    <image href="Images/Column%20Chart.gif" id="image_dcm_42z_t4b" width="400"/>
+                </fig></p>
+        </section>
+        <section id="section_vrf_y5h_cgb">
+            <title>Card</title>
+            <p>Sometimes a single number is the most important thing you want to track in your
+                dashboard or report. This type of visualization is called a Card.<fig
+                    id="fig_rq3_tvh_cgb">
+                    <title>Card</title>
+                    <image href="Images/Card.gif" id="image_hzw_r2z_t4b"/>
+                </fig><fig id="fig_b5g_3xh_cgb">
+                    <title>Multi-row Card</title>
+                    <image href="Images/Multi-row%20Card.gif" id="image_ply_52z_t4b" width="400"/>
+                </fig></p>
+        </section>
+        <section id="section_os1_jxh_cgb">
+            <title>Combo charts</title>
+            <p>A combo chart is a single visualization that combines a line chart and a column
+                chart. There are two type of combo charts available in the application, one is
+                    <i>Line and stacked column chart</i> and another one is <i>Line and clustered
+                    column chart</i>. </p>
+            <p>A combo charts can be used for the following scenarios:<ul id="ul_bcw_vxh_cgb">
+                    <li>when you have a line chart and a column chart with the same X axis.</li>
+                    <li>to compare multiple measures with different value ranges.</li>
+                    <li>to illustrate the correlation between two measures in one
+                        visualization.</li>
+                </ul><fig id="fig_rxm_dzh_cgb">
+                    <title>Line and Stacked Column Chart</title>
+                    <image href="Images/Line%20and%20Stacked%20Column%20Chart.gif"
+                        id="image_gkz_y2z_t4b" width="400"/>
+                </fig><fig id="fig_v2d_3zh_cgb">
+                    <title>Line and Clustered Column Chart</title>
+                    <image href="Images/Line%20and%20Clustered%20Column%20Chart.gif"
+                        id="image_xfc_cfz_t4b" width="400"/>
+                </fig></p>
+        </section>
+        <section id="section_fx5_nzh_cgb">
+            <title><b>Doughnut charts</b></title>
+            <p>A doughnut chart is similar to a pie chart in that it shows the relationship of parts
+                to a whole. The only difference is that the center is blank and allows space for a
+                label or icon. Doughnut charts are best used to compare a particular section to the
+                whole, rather than comparing individual sections with each other.<fig
+                    id="fig_npz_xzh_cgb">
+                    <title>Doughnut Chart</title>
+                    <image href="Images/Donut%20Chart.gif" id="image_vk3_2fz_t4b" width="400"/>
+                </fig></p>
+        </section>
+        <section id="section_epb_g13_cgb">
+            <title><b>Funnel charts</b></title>
+            <p>A funnel chart helps you visualize a linear process that has sequential connected
+                stages. Each funnel stage represents a percentage of the total. So, in most cases, a
+                funnel chart is shaped like a funnel with the first stage being the largest, and
+                each subsequent stage smaller than its predecessor.  Typically, the first stage, the
+                "intake" stage, is the largest.</p>
+            <p>A funnel chart can be used for the following scenarios:<ul id="ul_g1b_513_cgb">
+                    <li>when the data is sequential and moves through at least 4 stages.</li>
+                    <li>when the number of "items" in the first stage is expected to be greater than
+                        the number in the final stage.</li>
+                    <li>to reveal bottlenecks in a linear process.</li>
+                </ul><fig id="fig_odh_yb3_cgb">
+                    <title>Funnel Chart</title>
+                    <image href="Images/Funnel%20Chart.gif" id="image_cmy_gfz_t4b" width="400"/>
+                </fig></p>
+        </section>
+        <section id="section_kyl_2c3_cgb">
+            <title>Gauge Chart</title>
+            <p>A radial gauge chart has a circular arc and displays a single value that measures
+                progress toward a goal/KPI. The goal, or target value, is represented by the line
+                (needle). Progress toward that goal is represented by the shading. And the value
+                that represents that progress is shown in bold inside the arc. All possible values
+                are spread evenly along the arc, from the minimum (left-most value) to the maximum
+                (right-most value). A gauge chart displays information that can be quickly scanned
+                and understood.</p>
+            <p>A gauge chart can be used for the followings scenarios:<ul id="ul_g44_3c3_cgb">
+                    <li>to show progress toward a goal.</li>
+                    <li>to represent a percentile measure, like a KPI.</li>
+                </ul><fig id="fig_b54_sc3_cgb">
+                    <title>Gauge Chart</title>
+                    <image href="Images/Gauge%20Chart.gif" id="image_i1q_jfz_t4b" width="400"/>
+                </fig></p>
+        </section>
+        <section id="section_e42_vc3_cgb">
+            <title>KPI</title>
+            <p>A Key Performance Indicator (KPI) is a visual cue that communicates the amount of
+                progress made toward a measurable goal. KPI is based on a specific measure and is
+                designed to help you evaluate the current value and status of a metric against a
+                defined target.</p>
+            <p>A KPI can be used for the followings scenarios:<ul id="ul_pkv_1d3_cgb">
+                    <li>to measure progress</li>
+                    <li>to measure distance to a goal</li>
+                </ul></p>
+            <fig id="fig_qhb_b23_cgb">
+                <title>KPI</title>
+                <image href="Images/KPI.gif" id="image_yyn_mfz_t4b" width="200"/>
+            </fig>
+        </section>
+        <section id="section_vw3_b23_cgb">
+            <title>Line charts</title>
+            <p>A line chart displays the overall shape of an entire series of values, usually over
+                    time.<fig id="fig_rk3_n23_cgb">
+                    <title>Line Chart</title>
+                    <image href="Images/Line%20Chart.gif" id="image_bkw_4fz_t4b" width="300"/>
+                </fig></p>
+        </section>
+        <section id="section_nsf_1f3_cgb">
+            <title>Matrix</title>
+            <p>With the help of matrix you can create a table and cross-highlight elements within
+                the table with other visuals. In addition, you can select rows, columns, and even
+                individual cells and cross-highlight.<fig id="fig_pzv_xf3_cgb">
+                    <title>Matrix</title>
+                    <image href="Images/Matrix.gif" id="image_ss5_rfz_t4b" width="300"/>
+                </fig></p>
+        </section>
+        <section id="section_zyz_fg3_cgb">
+            <title>Pie chart</title>
+            <p>A pie chart displays data, information, and statistics in an easy-to-read 'pie-slice'
+                format with varying slice sizes telling you how much of one data element exists. The
+                bigger the slice, the more of that particular data was gathered. The main use of a
+                pie chart is to show comparison.<fig id="fig_yk5_kg3_cgb">
+                    <title>Pie Chart</title>
+                    <image href="Images/Pie%20Chart.gif" id="image_q5y_tfz_t4b" width="400"/>
+                </fig></p>
+        </section>
+        <section id="section_osk_s3j_cgb">
+            <title>Scatter chart</title>
+            <p>A scatter chart always has two value axes to show one set of numerical data along a
+                horizontal axis and another set of numerical values along a vertical axis. The chart
+                displays points at the intersection of an x and y numerical value, combining these
+                values into single data points. These data points may be distributed evenly or
+                unevenly across the horizontal axis, depending on the data.</p>
+            <p>A bubble chart replaces data points with bubbles, with the bubble <i>size</i>
+                representing an additional dimension of the data.</p>
+            <fig id="fig_bzx_fjj_cgb">
+                <title>Scatter Chart</title>
+                <image href="Images/Scatter%20Chart.gif" id="image_ksx_wfz_t4b" width="400"/>
+            </fig>
+            <p>A scatter chart can be used for the following scenarios:<ul id="ul_onl_qjj_cgb">
+                    <li>to show relationships between 2 (scatter) or 3 (bubble) numerical
+                        values.</li>
+                    <li>to plot two groups of numbers as one series of XY coordinates.</li>
+                    <li>to turn the horizontal axis into a logarithmic scale.</li>
+                    <li>to display worksheet data that includes pairs or grouped sets of
+                        values.</li>
+                    <li>to show patterns in large sets of data, for example by showing linear or
+                        non-linear trends, clusters, and outliers.</li>
+                    <li>to compare large numbers of data points without regards to time. The more
+                        data that you include in a scatter chart, the better the comparisons that
+                        you can make.</li>
+                </ul></p>
+            <p>A bubble chart can be used for the following scenarios:<ul id="ul_mcd_fkj_cgb">
+                    <li>if your data has 3 data series and each contain a set of values.</li>
+                    <li>to present financial data.</li>
+                    <li>to use with quadrants.</li>
+                </ul></p>
+        </section>
+        <section id="section_yfr_mkj_cgb">
+            <title>Dot chart</title>
+            <p>A dot plot chart is similar to a bubble chart and scatter chart except that you can
+                plot numerical or categorical data along the X axis. You can set the number of data
+                points, up to a maximum of 10,000.<fig id="fig_pmx_5kj_cgb">
+                    <title>Dot Chart</title>
+                    <image href="Images/Dot%20Chart.gif" id="image_fgt_zfz_t4b" width="300"/>
+                </fig></p>
+        </section>
+        <section id="section_gxn_2lj_cgb">
+            <title>Slicer</title>
+            <p>A slicer is an alternate way of filtering that narrows the portion of the dataset
+                shown in the other visualizations in a report.<fig id="fig_np1_xlj_cgb">
+                    <title>Slicer</title>
+                    <image href="Images/Slicer.gif" id="image_rv1_cgz_t4b" width="300"/>
+                </fig></p>
+            <p>A slicer can be used for the following scenarios:<ul id="ul_elj_3lj_cgb">
+                    <li>Display commonly-used or important filters on the report canvas for easier
+                        access.</li>
+                    <li>Create more focused reports by putting slicers next to important
+                        visuals.</li>
+                </ul></p>
+            <p>Slicers have the following limitations:<ul id="ul_lcy_nlj_cgb">
+                    <li>Slicers do not support input fields.</li>
+                    <li>Slicers cannot be pinned to a dashboard.</li>
+                    <li>Drill-down is not supported for slicers.</li>
+                    <li>Slicers do not support visual level filters.</li>
+                </ul></p>
+        </section>
+        <section id="section_xlw_fmj_cgb">
+            <title>Treemap</title>
+            <p>Treemap displays hierarchical data as a set of nested rectangles. Each level of the
+                hierarchy is represented by a colored rectangle. The space inside each rectangle is
+                allocated based on the value being measured. And the rectangles are arranged in size
+                from top left (largest) to bottom right (smallest).</p>
+            <p>A treemap can be used for the following scenarios:<ul id="ul_d2s_rmj_cgb">
+                    <li>to display large amounts of hierarchical data.</li>
+                    <li>when a bar chart can't effectively handle the large number of values.</li>
+                    <li>to show the proportions between each part and the whole.</li>
+                    <li>to show the pattern of the distribution of the measure across each level of
+                        categories in the hierarchy.</li>
+                    <li>to show attributes using size and color coding.</li>
+                    <li>to spot patterns, outliers, most-important contributors, and
+                        exceptions.</li>
+                </ul><fig id="fig_u5p_cnj_cgb">
+                    <title>Treemap</title>
+                    <image href="Images/Treemap.gif" id="image_avl_ggz_t4b" width="500"/>
+                </fig></p>
+        </section>
+        <section id="section_t2d_nnj_cgb">
+            <title>Waterfall Chart</title>
+            <p>A waterfall chart displays a running total as values are added or subtracted. It
+                helps to understand how an initial value is affected by a series of positive and
+                negative changes.</p>
+            <p>The columns are color coded so you can quickly tell increases and decreases. The
+                initial and the final value columns often start on the horizontal axis, while the
+                intermediate values are floating columns. The waterfall charts are also called
+                bridge charts.</p>
+            <p>A waterfall chart can be used for the following scenarios:<ul id="ul_r3k_znj_cgb">
+                    <li>When you have to measure the changes across time series or different
+                        categories</li>
+                    <li>To audit the major changes contributing to the total value.</li>
+                </ul></p>
+            <fig id="fig_ald_g4j_cgb">
+                <title>Waterfall Chart</title>
+                <image href="Images/Waterfall%20Chart.gif" id="image_qvb_jgz_t4b" width="400"/>
+            </fig>
+        </section>
+    </conbody>
+</concept>

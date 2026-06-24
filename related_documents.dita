@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="related_documents">
+    <title>Related Documents</title>
+    <shortdesc></shortdesc>
+    <conbody>
+        <p>Click on the following link to open the document in PDF format:<ul id="ul_uxk_j35_g2b">
+                <li><xref href="helpdoc/Nuance_CDE_Analytics_Guide.pdf" format="pdf">Nuance CDE
+                        Analytics Guide</xref></li>
+            </ul></p>
+    </conbody>
+</concept>

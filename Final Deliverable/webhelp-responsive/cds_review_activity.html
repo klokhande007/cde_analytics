@@ -1,0 +1,1443 @@
+
+<!DOCTYPE html
+  PUBLIC "" "about:legacy-compat">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:whc="http://www.oxygenxml.com/webhelp/components" xml:lang="en" lang="en">
+    <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta charset="UTF-8" /><meta name="copyright" content="(C) Copyright 2021" /><meta name="DC.rights.owner" content="(C) Copyright 2021" /><meta name="DC.Type" content="concept" /><meta name="description" content="Overview : As a CDI Manager, I need a CDS Review Activity dashboard so that I can view the review activities performed by the CDS and analyze their productivity. Navigation : On the Analytics home ..." /><meta name="DC.Format" content="XHTML" /><meta name="DC.Identifier" content="cds_review_activity" />        
+      <title>CDS Review Activity</title><!--  Generated with Oxygen version 20.1-SNAPSHOT, build number 2019011903.  --><meta name="wh-path2root" content="" /><meta name="wh-toc-id" content="cds_review_activity-d66e444" /><link rel="stylesheet" type="text/css" href="./oxygen-webhelp/lib/bootstrap/css/bootstrap.min.css" /><link rel="stylesheet" href="./oxygen-webhelp/lib/bootstrap/css/bootstrap-theme.min.css" /><link rel="stylesheet" href="./oxygen-webhelp/lib/jquery-ui/jquery-ui.min.css" /><link rel="stylesheet" type="text/css" href="./oxygen-webhelp/app/topic-page.css?buildId=2019011903" /><script type="text/javascript" src="./oxygen-webhelp/lib/jquery/jquery-3.1.1.min.js"><!----></script><script data-main="./oxygen-webhelp/app/topic-page.js" src="./oxygen-webhelp/lib/requirejs/require.js"></script><link rel="stylesheet" type="text/css" href="oxygen-webhelp/template/oxygen.css?buildId=2019011903" /><link rel="stylesheet" type="text/css" href="Custom.css" /></head>
+
+    <body id="cds_review_activity" class="wh_topic_page frmBody">
+        <a href="#wh_topic_body" class="sr-only sr-only-focusable">Jump to main content</a>
+        <!-- EXM-36950 - Expand the args.hdr parameter here -->
+        
+        
+        
+        <header class="navbar navbar-default wh_header">
+    <div class="container-fluid">
+        <div class="wh_header_flex_container">
+            <div class="wh_logo_and_publication_title_container">
+                <div class="wh_logo_and_publication_title">
+                    
+                    <!--
+                            This component will be generated when the next parameters are specified in the transformation scenario:
+                            'webhelp.logo.image' and 'webhelp.logo.image.target.url'.
+                            See: http://oxygenxml.com/doc/versions/17.1/ug-editor/#topics/dita_webhelp_output.html.
+                    -->
+                    <a href="index.html" class=" wh_logo hidden-xs "><img src="CDE_logo_Help.png" alt="Nuance CDE Help" /></a>
+                    <div class=" wh_publication_title "><a href="index.html"><span class="booktitle">  <span class="ph mainbooktitle">CDE Analytics New Guide</span>  </span></a></div>
+                    
+                </div>
+                
+                <!-- The menu button for mobile devices is copied in the output only when the 'webhelp.show.top.menu' parameter is set to 'yes' -->
+                <button type="button" data-target="#wh_top_menu_and_indexterms_link" id="wh_menu_mobile_button" data-toggle="collapse" class="navbar-toggle collapsed wh_toggle_button" aria-expanded="false" aria-label="Toggle menu">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+
+            <div class="wh_top_menu_and_indexterms_link collapse navbar-collapse" id="wh_top_menu_and_indexterms_link">
+                
+                <nav class=" wh_top_menu "><ul>
+   <li><span data-tocid="what_s_new-d66e19" data-state="leaf" class=" topicref " data-id="what_s_new"><span class="title"><a href="Reference/what_s_new.html">What's New</a></span></span></li>
+   <li><span data-tocid="online_analytics_training-d66e27" data-state="leaf" class=" topicref " data-id="online_analytics_training"><span class="title"><a href="online_analytics_training.html">Online Analytics Training</a></span></span></li>
+   <li class="has-children"><span data-tocid="tocId-d66e39" data-state="not-ready" class=" topicref "><span class="title"><a href="Getting%20Started/Concept/overview_getting_started.html">Getting Started</a></span></span></li>
+   <li class="has-children"><span data-tocid="tocId-d66e233" data-state="not-ready" class=" topicref "><span class="title"><a href="about_nuance_cde_analytics.html">Working With Reports</a></span></span></li>
+   <li class="has-children"><span data-tocid="tocId-d66e329" data-state="not-ready" class=" topicref "><span class="title"><a href="encounter_monitoring.html">CDE One - CDI Operations</a></span></span></li>
+   <li class="has-children"><span data-tocid="tocId-d66e413" data-state="not-ready" class=" topicref "><span class="title"><a href="team_performance.html">CDE One - Staff Management</a></span></span></li>
+   <li class="has-children"><span data-tocid="tocId-d66e465" data-state="not-ready" class=" topicref "><span class="title"><a href="executive_overview.html">CDE One - Executive Summary</a></span></span></li>
+   <li class="has-children"><span data-tocid="tocId-d66e537" data-state="not-ready" class=" topicref "><span class="title"><a href="CDE%20Triage%20Dashboard%20Overview.html">CDE Triage - CDE Triage Dashboard</a></span></span></li>
+   <li class="has-children"><span data-tocid="tocId-d66e609" data-state="not-ready" class=" topicref "><span class="title"><a href="post_discharge_reviews_overview.html">CDE Triage - Post Discharge Reviews</a></span></span></li>
+   <li class="has-children"><span data-tocid="tocId-d66e631" data-state="not-ready" class=" topicref "><span class="title"><a href="cds_productivity_summary.html">CDS General - CDS Productivity</a></span></span></li>
+   <li class="has-children"><span data-tocid="tocId-d66e663" data-state="not-ready" class=" topicref "><span class="title"><a href="visualization_types.html">Analytics Concepts</a></span></span></li>
+   <li class="has-children"><span data-tocid="tocId-d66e676" data-state="not-ready" class=" topicref "><span class="title"><a href="related_documents.html">Related Documents</a></span></span></li>
+   <li class="has-children"><span data-tocid="tocId-d66e688" data-state="not-ready" class=" topicref "><span class="title"><a href="glossary.html">Glossary</a></span></span></li>
+</ul></nav>
+                
+                
+            </div>
+        </div>
+    </div>
+</header>
+        
+        <div class=" wh_search_input "><form id="searchForm" method="get" role="search" action="search.html"><div><input type="search" placeholder="Search " class="wh_search_textfield" id="textToSearch" name="searchQuery" aria-label="Search query" /><button type="submit" class="wh_search_button" aria-label="Search"><span>Search</span></button></div><script><!--
+                                    $(document).ready(function () {
+                                        $('#searchForm').submit(function (e) {
+                                            if ($('.wh_search_textfield').val().length < 1) {
+                                                e.preventDefault();
+                                            }
+                                        });
+                                    });
+                                --></script></form></div>
+        
+        <div class="container-fluid">
+            <div class="row">
+
+                <nav class="wh_tools hidden-print">
+                    <div data-tooltip-position="bottom" class=" wh_breadcrumb "><ol xmlns:html="http://www.w3.org/1999/xhtml" class="hidden-print"><li><span class="home"><a href="index.html"><span>Home</span></a></span></li>
+   <li><span class="topicref"><span class="title"><a href="team_performance.html">CDE One - Staff Management</a></span></span></li>
+   <li class="active"><span class="topicref" data-id="cds_review_activity"><span class="title"><a href="cds_review_activity.html">CDS Review Activity</a><span class="wh-tooltip">
+               
+               <p xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc"></p>
+               </span></span></span></li>
+</ol></div>
+
+                    <div class="wh_right_tools hidden-sm hidden-xs">
+                        <div class=" wh_navigation_links "><span id="topic_navigation_links" class="navheader"></span></div>
+                        <button class="wh_hide_highlight" aria-label="Toggle search highlights" title="Toggle search highlights"></button>
+                        <button class="webhelp_expand_collapse_sections" data-next-state="collapsed" aria-label="Collapse sections" title="Collapse sections"></button>
+                        <div class=" wh_print_link print "><button onClick="window.print()" title="Print this page" aria-label="Print this page"></button></div>
+                    </div>
+                </nav>
+            </div>
+
+            <div class="wh_content_area">
+                <div class="row">
+                    
+                        <nav role="navigation" id="wh_publication_toc" class="col-lg-3 col-md-3 col-sm-3 hidden-xs navbar hidden-print">
+                            <div class=" wh_publication_toc " data-tooltip-position="right"><ul role="tree" aria-label="Table of Contents"><span class="expand-button-action-labels"><span id="button-expand-action" aria-label="Expand"></span><span id="button-collapse-action" aria-label="Collapse"></span><span id="button-pending-action" aria-label="Pending"></span></span><li role="treeitem" aria-expanded="true"><span data-tocid="tocId-d66e413" class="topicref" data-state="expanded"><span role="button" tabindex="0" aria-labelledby="button-collapse-action tocId-d66e413-link" class="wh-expand-btn"></span><span class="title"><a href="team_performance.html" id="tocId-d66e413-link">CDE One - Staff Management</a></span></span><ul role="group" class="nav nav-list"><span class="expand-button-action-labels"><span id="button-expand-action" aria-label="Expand"></span><span id="button-collapse-action" aria-label="Collapse"></span><span id="button-pending-action" aria-label="Pending"></span></span><li role="treeitem"><span data-tocid="team_performance-d66e414" class="topicref" data-id="team_performance" data-state="leaf"><span role="button" class="wh-expand-btn"></span><span class="title"><a href="team_performance.html" id="team_performance-d66e414-link">Team Performance</a><span class="wh-tooltip">
+                     
+                     <p xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc"></p>
+                     </span></span></span></li>
+         <li role="treeitem"><span data-tocid="cds_monthly_productivity-d66e424" class="topicref" data-id="cds_monthly_productivity" data-state="leaf"><span role="button" class="wh-expand-btn"></span><span class="title"><a href="cds_monthly_productivity.html" id="cds_monthly_productivity-d66e424-link">CDS Monthly Productivity</a><span class="wh-tooltip">
+                     
+                     <p xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc"></p>
+                     </span></span></span></li>
+         <li role="treeitem"><span data-tocid="cds_impact-d66e434" class="topicref" data-id="cds_impact" data-state="leaf"><span role="button" class="wh-expand-btn"></span><span class="title"><a href="cds_impact.html" id="cds_impact-d66e434-link">CDS Impact</a><span class="wh-tooltip">
+                     
+                     <p xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc"></p>
+                     </span></span></span></li>
+         <li role="treeitem" class="active"><span data-tocid="cds_review_activity-d66e444" class="topicref" data-id="cds_review_activity" data-state="leaf"><span role="button" class="wh-expand-btn"></span><span class="title"><a href="cds_review_activity.html" id="cds_review_activity-d66e444-link">CDS Review Activity</a><span class="wh-tooltip">
+                     
+                     <p xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc"></p>
+                     </span></span></span></li>
+         <li role="treeitem"><span data-tocid="cds_coder_match-d66e454" class="topicref" data-id="cds_coder_match" data-state="leaf"><span role="button" class="wh-expand-btn"></span><span class="title"><a href="cds_coder_match.html" id="cds_coder_match-d66e454-link">CDS/Coder Match</a><span class="wh-tooltip">
+                     
+                     <p xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc"></p>
+                     </span></span></span></li>
+      </ul>
+   </li>
+</ul></div>
+                        </nav>
+                    
+                    
+                    <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12" id="wh_topic_body">
+                        <div class=" wh_topic_content body "><main role="main"><article role="article" aria-labelledby="ariaid-title1">
+    <h1 class="title topictitle1" id="ariaid-title1">CDS Review Activity</h1>
+    
+    <div class="body conbody"><p class="shortdesc"></p>
+        <p class="p"><strong class="ph b">Overview</strong>: As a CDI Manager, I need a CDS Review Activity dashboard so that I can
+            view the review activities performed by the CDS and analyze their productivity.</p>
+        <p class="p"><strong class="ph b">Navigation</strong>: On the Analytics home page left side panel, navigate to <span class="ph menucascade"><span class="ph uicontrol">CDE One</span><abbr title="and then"> &gt; </abbr><span class="ph uicontrol">Staff Management</span><abbr title="and then"> &gt; </abbr><span class="ph uicontrol">CDS Review Activity</span></span>.</p>
+        <div class="p">CDS Review Activity  displays the following:<ul class="ul" id="cds_review_activity__ul_hgj_t32_m4b">
+                <li class="li">KPI Cards - Initial Reviews Per Day, Additional Reviews Per Day, Total Reviews
+                    Per Day</li>
+                <li class="li">CDS Review Activity chart</li>
+            </ul></div>
+        <p class="p">On the top panel, you can select desired values for the slicers (refer <a class="xref" href="#cds_review_activity__table_bgs_mw5_l4b">Report Slicers </a>) and the corresponding
+            data gets filtered in the tabular chart.</p>
+        <p class="p">For filters all pages, refer <a class="xref" href="#cds_review_activity__table_xzd_hdw_l4b">Filters on all Pages</a>.</p>
+        <p class="p">For Footnotes, refer <a class="xref" href="#cds_review_activity__table_l5h_lpd_hpb">Footnotes </a>.</p>
+        <p class="p"><strong class="ph b">Default Display</strong>: Report will display the data for last 1 calendar month based on
+            the Activity Date. By default, the dashboard displays the data for the inpatient
+            encounters for which activity has been performed in the last one calendar month. Click
+            the ‘Reset’ button to reset the activity date and select the required date. Total column
+            displays the row-level grand totals for the selected period. For the percentage metrics,
+            this column displays the overall percentage for the selected period.</p>
+        <div class="p"><strong class="ph b">CDS Review Activity</strong><figure class="fig fignone" id="cds_review_activity__fig_fg1_b54_gpb"><figcaption class="figcap"><span class="figtitleprefix">Figure: </span>Sample Report</figcaption>
+                
+                <img class="image" id="cds_review_activity__image_nsx_f54_gpb" src="Images/CDS%20Review%20Activity%20report.gif" width="800" />
+            </figure></div>
+        <div class="p"><strong class="ph b">CDS Review Activity - KPI Cards</strong><figure class="fig fignone" id="cds_review_activity__fig_pfj_g54_gpb"><figcaption class="figcap"><span class="figtitleprefix">Figure: </span>KPI Cards</figcaption>
+                
+                <img class="image" id="cds_review_activity__image_dbw_g54_gpb" src="Images/CDS%20Review%20Activity%20report%20-%20KPI%20Cards.gif" width="400" />
+            </figure><table class="table frame-all" id="cds_review_activity__table_czl_bcn_dpb"><caption><span class="table--title-label">Table 1. </span><span class="title">KPI Cards</span></caption><colgroup><col style="width:25%" /><col style="width:25%" /><col style="width:25%" /><col style="width:25%" /></colgroup><thead class="thead">
+                        <tr>
+                            <th class="entry colsep-1 rowsep-1" id="cds_review_activity__table_czl_bcn_dpb__entry__1">KPI Card</th>
+                            <th class="entry colsep-1 rowsep-1" id="cds_review_activity__table_czl_bcn_dpb__entry__2">Description</th>
+                            <th class="entry colsep-1 rowsep-1" id="cds_review_activity__table_czl_bcn_dpb__entry__3">Formula/Calculation</th>
+                            <th class="entry colsep-1 rowsep-1" id="cds_review_activity__table_czl_bcn_dpb__entry__4">Exclusion Criteria (if any)</th>
+                        </tr>
+                    </thead><tbody class="tbody">
+                        <tr>
+                            <td class="entry colsep-1 rowsep-1" headers="cds_review_activity__table_czl_bcn_dpb__entry__1 ">Initial Reviews Per Day</td>
+                            <td class="entry colsep-1 rowsep-1" headers="cds_review_activity__table_czl_bcn_dpb__entry__2 ">
+                                <p class="p">This KPI metric displays the average daily initial reviews
+                                    performed by the CDS for the selected Activity Date range.</p>
+                                <p class="p">Rounded to 0 decimal places</p>
+                                <p class="p"><strong class="ph b">Example</strong>: For last 1 week Activity date, this metric
+                                    displays the average daily initial reviews by the CDS. </p>
+                                <div class="p">
+                                    <div class="note note note_note"><span class="note__title">Note:</span> Initial Review Date/Time falls in the selected activity
+                                        date range.</div>
+                                </div>
+                            </td>
+                            <td class="entry colsep-1 rowsep-1" headers="cds_review_activity__table_czl_bcn_dpb__entry__3 ">
+                                <p class="p">Initial Reviews Per Day = (Total number of Initial Reviews with
+                                    the Initial Review Date in the selected activity date range/ No.
+                                    of days CDS worked in the selected activity date range )</p>
+                            </td>
+                            <td class="entry colsep-1 rowsep-1" headers="cds_review_activity__table_czl_bcn_dpb__entry__4 ">
+                                <p class="p">Encounters with "Review Not Needed" encounter status are excluded
+                                    from this metric calculations.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="entry colsep-1 rowsep-1" headers="cds_review_activity__table_czl_bcn_dpb__entry__1 ">Additional Reviews Per Day</td>
+                            <td class="entry colsep-1 rowsep-1" headers="cds_review_activity__table_czl_bcn_dpb__entry__2 ">
+                                <p class="p">This KPI metric displays the average daily additional reviews
+                                    performed by the CDS for the selected Activity Date range</p>
+                                <p class="p"><strong class="ph b">Example</strong>: For last 1 week Activity date, this metric
+                                    displays out of the total number of days CDS's worked, the count
+                                    of additional reviews done.</p>
+                                <p class="p">Rounded to 0 decimal places</p>
+                                <div class="p">
+                                    <div class="note note note_note"><span class="note__title">Note:</span> Additional Review Date/Time falls in the selected activity
+                                        date range.<p class="p">Activity Type 'Post-Discharge Reviews' is not
+                                            considered as an Additional Review by the
+                                        CDS.</p></div>
+                                </div>
+                            </td>
+                            <td class="entry colsep-1 rowsep-1" headers="cds_review_activity__table_czl_bcn_dpb__entry__3 ">
+                                <p class="p">Additional Reviews Per Day = (Total number of Additional Reviews
+                                    with the additional Review Date in the selected activity date
+                                    range/ No. of days CDS worked in the selected activity date
+                                    range)</p>
+                            </td>
+                            <td class="entry colsep-1 rowsep-1" headers="cds_review_activity__table_czl_bcn_dpb__entry__4 ">
+                                <p class="p">Additional Reviews for Encounters with "Review Not Needed"
+                                    encounter status are excluded from this metric calculations.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="entry colsep-1 rowsep-1" headers="cds_review_activity__table_czl_bcn_dpb__entry__1 ">Total Reviews Per Day</td>
+                            <td class="entry colsep-1 rowsep-1" headers="cds_review_activity__table_czl_bcn_dpb__entry__2 ">
+                                <p class="p">This KPI metric displays the daily total reviews performed by the
+                                    CDS for the selected Activity Date range</p>
+                                <p class="p">Rounded to 0 decimal places</p>
+                                <div class="p">
+                                    <div class="note note note_note"><span class="note__title">Note:</span> Additional Review Date/Time falls in the selected activity
+                                        date range.<p class="p">Initial Review Date/Time falls in the selected
+                                            activity date range.</p><p class="p">Activity Type 'Post-Discharge
+                                            Reviews' is not considered as an Additional Review by
+                                            the CDS.</p></div>
+                                </div>
+                            </td>
+                            <td class="entry colsep-1 rowsep-1" headers="cds_review_activity__table_czl_bcn_dpb__entry__3 ">
+                                <p class="p">Total Reviews Per Day = (Total number of Initial and Additional
+                                    Reviews with the Initial Review Date and additional Review Date
+                                    in the selected activity date range/ No. of days CDS worked in
+                                    the selected activity date range)</p>
+                            </td>
+                            <td class="entry colsep-1 rowsep-1" headers="cds_review_activity__table_czl_bcn_dpb__entry__4 ">
+                                <p class="p">Initial and Additional Reviews for Encounters with "Review Not
+                                    Needed" encounter status are excluded from this metric
+                                    calculations.</p>
+                            </td>
+                        </tr>
+                    </tbody></table></div>
+        <p class="p"><strong class="ph b">CDS Review Activity </strong></p>
+        <ul class="ul" id="cds_review_activity__ul_ix2_ghn_dpb">
+            <li class="li">By default, the chart displays the data for the activity performed by the CDS in the
+                last 1 calendar month.</li>
+            <li class="li">The chart displays review activity for every <strong class="ph b">'Initiating'</strong> CDS in the selected
+                date range. </li>
+            <li class="li">
+                <p class="p">Column headers in the chart display CDS in the format Last Name, First Name (CDS
+                    ID). </p>
+            </li>
+            <li class="li">The data in the chart is sorted based on CDS alphabetically</li>
+        </ul>
+        <table class="table frame-all" id="cds_review_activity__table_cz2_4hn_dpb"><caption><span class="table--title-label">Table 2. </span><span class="title">CDS Review Activity Metrics</span></caption><colgroup><col style="width:20%" /><col style="width:20%" /><col style="width:20%" /><col style="width:20%" /><col style="width:20%" /></colgroup><thead class="thead">
+                    <tr>
+                        <th class="entry colsep-1 rowsep-1" id="cds_review_activity__table_cz2_4hn_dpb__entry__1">Metric </th>
+                        <th class="entry colsep-1 rowsep-1" id="cds_review_activity__table_cz2_4hn_dpb__entry__2">Description</th>
+                        <th class="entry colsep-1 rowsep-1" id="cds_review_activity__table_cz2_4hn_dpb__entry__3">Formula/Calculation</th>
+                        <th class="entry colsep-1 rowsep-1" id="cds_review_activity__table_cz2_4hn_dpb__entry__4">Exclusion Criteria (if any)</th>
+                        <th class="entry colsep-1 rowsep-1" id="cds_review_activity__table_cz2_4hn_dpb__entry__5">Tooltip</th>
+                    </tr>
+                </thead><tbody class="tbody">
+                    <tr>
+                        <td class="entry colsep-1 rowsep-1" headers="cds_review_activity__table_cz2_4hn_dpb__entry__1 ">Initial Reviews</td>
+                        <td class="entry colsep-1 rowsep-1" headers="cds_review_activity__table_cz2_4hn_dpb__entry__2 ">
+                            <p class="p">This metric displays the count of encounters with an initial review
+                                date/time in the selected activity date range.</p>
+                            <div class="p">
+                                <div class="note note note_note"><span class="note__title">Note:</span> Initial Review Date/Time falls in the selected activity date
+                                    range.</div>
+                            </div>
+                        </td>
+                        <td class="entry colsep-1 rowsep-1" headers="cds_review_activity__table_cz2_4hn_dpb__entry__3 "></td>
+                        <td class="entry colsep-1 rowsep-1" headers="cds_review_activity__table_cz2_4hn_dpb__entry__4 ">Encounters with "Review Not Needed" encounter status are excluded
+                            from this metric calculations.</td>
+                        <td class="entry colsep-1 rowsep-1" headers="cds_review_activity__table_cz2_4hn_dpb__entry__5 " rowspan="36">N/A</td>
+                    </tr>
+                    <tr>
+                        <td class="entry colsep-1 rowsep-1" headers="cds_review_activity__table_cz2_4hn_dpb__entry__1 ">Additional Reviews</td>
+                        <td class="entry colsep-1 rowsep-1" headers="cds_review_activity__table_cz2_4hn_dpb__entry__2 ">
+                            <p class="p">This metric displays the count of additional reviews performed in the
+                                selected activity date range.</p>
+                            <div class="p">
+                                <div class="note note note_note"><span class="note__title">Note:</span> Additional Review Date/Time falls in the selected activity
+                                    date range. </div>
+                            </div>
+                            <p class="p">Additional Review Types:</p>
+                            <ul class="ul" id="cds_review_activity__ul_yt2_rhn_dpb">
+                                <li class="li">Clarification creation</li>
+                                <li class="li">Clarification modification</li>
+                                <li class="li">Working review modification</li>
+                                <li class="li">Worksheet creation or modification</li>
+                                <li class="li">Possible review creation</li>
+                                <li class="li">Possible review modification</li>
+                                <li class="li">Reconciliation assessment creation</li>
+                                <li class="li">Reconciliation assessment modification</li>
+                                <li class="li">Encounter Saved</li>
+                                <li class="li">Note creation or modification</li>
+                                <li class="li">Tracking Codes Addition or Modification</li>
+                                <li class="li">Encounter status modification</li>
+                                <li class="li">Encounter details modification</li>
+                                <li class="li">Encounter Creation</li>
+                            </ul>
+                        </td>
+                        <td class="entry colsep-1 rowsep-1" headers="cds_review_activity__table_cz2_4hn_dpb__entry__3 "></td>
+                        <td class="entry colsep-1 rowsep-1" headers="cds_review_activity__table_cz2_4hn_dpb__entry__4 ">
+                            <p class="p">Activity Type 'Post-Discharge Review' is not considered in the
+                                Additional Reviews calculation.</p>
+                            <p class="p">Encounters with "Review Not Needed" encounter status are excluded
+                                from this metric calculations.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="entry colsep-1 rowsep-1" headers="cds_review_activity__table_cz2_4hn_dpb__entry__1 ">Total Reviews</td>
+                        <td class="entry colsep-1 rowsep-1" headers="cds_review_activity__table_cz2_4hn_dpb__entry__2 ">This metric displays the count of total reviews performed in the
+                            selected activity date range.<div class="p">
+                                <div class="note note note_note"><span class="note__title">Note:</span> Review Date/Time (Initial Review and Additional Review dates)
+                                    falls in the selected activity date range. </div>
+                            </div></td>
+                        <td class="entry colsep-1 rowsep-1" headers="cds_review_activity__table_cz2_4hn_dpb__entry__3 ">
+                            <p class="p">Total Reviews = (Initial Reviews + Additional Reviews)</p>
+                        </td>
+                        <td class="entry colsep-1 rowsep-1" headers="cds_review_activity__table_cz2_4hn_dpb__entry__4 ">
+                            <p class="p">Encounters with "Review Not Needed" encounter status are excluded
+                                from this metric calculations.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="entry colsep-1 rowsep-1" headers="cds_review_activity__table_cz2_4hn_dpb__entry__1 ">Encounters with Clarifications</td>
+                        <td class="entry colsep-1 rowsep-1" headers="cds_review_activity__table_cz2_4hn_dpb__entry__2 ">
+                            <p class="p">This metric displays the count of encounters with at least one
+                                clarification sent in the selected activity date range.</p>
+                            <div class="p">
+                                <div class="note note note_note"><span class="note__title">Note:</span> Clarification Instance Sent Date falls in the selected
+                                    activity date range. </div>
+                            </div>
+                        </td>
+                        <td class="entry colsep-1 rowsep-1" headers="cds_review_activity__table_cz2_4hn_dpb__entry__3 "></td>
+                        <td class="entry colsep-1 rowsep-1" headers="cds_review_activity__table_cz2_4hn_dpb__entry__4 ">
+                            <p class="p">Encounters with "Review Not Needed" encounter status are excluded
+                                from this metric calculations. </p>
+                            <p class="p">Clarifications with Status 'DELETED' or 'RETRACTED' are excluded from
+                                the count.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="entry colsep-1 rowsep-1" headers="cds_review_activity__table_cz2_4hn_dpb__entry__1 ">Encounter Clarification Rate </td>
+                        <td class="entry colsep-1 rowsep-1" headers="cds_review_activity__table_cz2_4hn_dpb__entry__2 ">This metric displays the percentage of reviewed encounters with at
+                            least one clarification with the status other than DELETED or RETRACTED
+                            in the selected activity date range.<p class="p">Rounded off to 0 decimal places.
+                                    <strong class="ph b">Example</strong>: 30%</p><div class="p">
+                                <div class="note note note_note"><span class="note__title">Note:</span> Initial Review Date/Time falls in the selected activity date
+                                        range.<p class="p">Clarification Instance Sent Date falls in the
+                                        selected activity date range. </p></div>
+                            </div></td>
+                        <td class="entry colsep-1 rowsep-1" headers="cds_review_activity__table_cz2_4hn_dpb__entry__3 ">
+                            <p class="p">Encounter Clarification Rate= (The count of reviewed encounters with
+                                at least one clarification with the status other than DELETED or
+                                RETRACTED sent in the selected activity date range./ Count of
+                                Initial Reviews performed in the selected activity date range.)
+                                *100</p>
+                        </td>
+                        <td class="entry colsep-1 rowsep-1" headers="cds_review_activity__table_cz2_4hn_dpb__entry__4 ">
+                            <p class="p">Encounters with "Review Not Needed" encounter status are excluded
+                                from this metric calculations.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="entry colsep-1 rowsep-1" headers="cds_review_activity__table_cz2_4hn_dpb__entry__1 ">Clarifications Sent </td>
+                        <td class="entry colsep-1 rowsep-1" headers="cds_review_activity__table_cz2_4hn_dpb__entry__2 ">
+                            <p class="p">This metric displays the count of clarifications with at-least one
+                                instance sent in the selected activity date range.</p>
+                            <div class="p">
+                                <div class="note note note_note"><span class="note__title">Note:</span> Clarification Instance Sent Date falls in the selected
+                                    activity date range. (Start and End Date)</div>
+                            </div>
+                            <p class="p">Clarifications may or may not have a FINAL response.</p>
+                        </td>
+                        <td class="entry colsep-1 rowsep-1" headers="cds_review_activity__table_cz2_4hn_dpb__entry__3 "></td>
+                        <td class="entry colsep-1 rowsep-1" headers="cds_review_activity__table_cz2_4hn_dpb__entry__4 ">
+                            <p class="p">Clarifications for "Review Not Needed" encounter status should not be
+                                considered for this metric calculation.</p>
+                            <p class="p">Clarifications with Status 'DELETED' or 'RETRACTED' are excluded from
+                                the count.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="entry colsep-1 rowsep-1" headers="cds_review_activity__table_cz2_4hn_dpb__entry__1 ">Clarifications Responded </td>
+                        <td class="entry colsep-1 rowsep-1" headers="cds_review_activity__table_cz2_4hn_dpb__entry__2 ">
+                            <p class="p">This metric displays the count of clarifications with at least one
+                                instance responded in the selected activity date range.</p>
+                            <div class="p">
+                                <div class="note note note_note"><span class="note__title">Note:</span> Instance Response Date falls in the selected activity date
+                                    range. </div>
+                            </div>
+                            <p class="p">Clarification Instance may or may not have a FINAL response.</p>
+                            <p class="p">Clarifications with response other than Pending, Retracted, or No
+                                Response are considered.</p>
+                        </td>
+                        <td class="entry colsep-1 rowsep-1" headers="cds_review_activity__table_cz2_4hn_dpb__entry__3 "></td>
+                        <td class="entry colsep-1 rowsep-1" headers="cds_review_activity__table_cz2_4hn_dpb__entry__4 ">
+                            <p class="p">Clarifications for "Review Not Needed" encounter status should not be
+                                considered for this metric calculation.</p>
+                            <p class="p">Clarifications with Status 'DELETED' or 'RETRACTED' are excluded from
+                                the count.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="entry colsep-1 rowsep-1" headers="cds_review_activity__table_cz2_4hn_dpb__entry__1 ">Clarification Response Rate</td>
+                        <td class="entry colsep-1 rowsep-1" headers="cds_review_activity__table_cz2_4hn_dpb__entry__2 ">
+                            <p class="p">This metric displays the percentage of sent clarifications responded
+                                in the selected activity date range.</p>
+                            <p class="p">Rounded off to 0 decimal places. <strong class="ph b">Example</strong>: 80%</p>
+                            <div class="p">
+                                <div class="note note note_note"><span class="note__title">Note:</span> Clarification Instance Sent Date falls in the selected
+                                    activity date range. (Start and End Date)<p class="p">Instance Response
+                                        Date falls in the selected activity date range.</p></div>
+                            </div>
+                            <p class="p">Clarifications with response other than Pending, Retracted, or No
+                                Response are considered.</p>
+                            <p class="p">Clarification Instance may or may not have a FINAL response.</p>
+                            <p class="p">Clarifications may or may not have a FINAL response.</p>
+                        </td>
+                        <td class="entry colsep-1 rowsep-1" headers="cds_review_activity__table_cz2_4hn_dpb__entry__3 ">
+                            <p class="p">Clarification Response Rate= (The count of clarifications with at
+                                least one instance responded in the selected activity date range/
+                                The count of clarification with at-least one instance sent in the
+                                selected activity date range) x 100</p>
+                        </td>
+                        <td class="entry colsep-1 rowsep-1" headers="cds_review_activity__table_cz2_4hn_dpb__entry__4 ">
+                            <p class="p">Clarifications with Status 'DELETED' or 'RETRACTED' are excluded from
+                                the count.</p>
+                            <p class="p">Clarifications for "Review Not Needed" encounter status should not be
+                                considered for this metric calculation.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="entry colsep-1 rowsep-1" headers="cds_review_activity__table_cz2_4hn_dpb__entry__1 ">Clarifications Agreed</td>
+                        <td class="entry colsep-1 rowsep-1" headers="cds_review_activity__table_cz2_4hn_dpb__entry__2 ">
+                            <p class="p">This metric displays the count of clarifications <strong class="ph b">agreed</strong> in the
+                                selected activity date range. </p>
+                            <div class="p">
+                                <div class="note note note_note"><span class="note__title">Note:</span> Response Date/time of the <strong class="ph b">'Agreed'</strong> instance falls in
+                                    the selected activity date range.</div>
+                            </div>
+                            <p class="p">Clarification Instance may or may not have a FINAL response.</p>
+                        </td>
+                        <td class="entry colsep-1 rowsep-1" headers="cds_review_activity__table_cz2_4hn_dpb__entry__3 "></td>
+                        <td class="entry colsep-1 rowsep-1" headers="cds_review_activity__table_cz2_4hn_dpb__entry__4 ">
+                            <p class="p">Clarifications with Status 'DELETED' or 'RETRACTED' are excluded from
+                                the count.</p>
+                            <p class="p">Clarifications for "Review Not Needed" encounter status should not be
+                                considered for this metric calculation.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="entry colsep-1 rowsep-1" headers="cds_review_activity__table_cz2_4hn_dpb__entry__1 ">Clarification Agreed Rate</td>
+                        <td class="entry colsep-1 rowsep-1" headers="cds_review_activity__table_cz2_4hn_dpb__entry__2 ">
+                            <p class="p">This metric displays the percentage of responded clarifications
+                                agreed in the selected activity date range.</p>
+                            <p class="p">Rounded to 0 decimal places. <strong class="ph b">Example</strong>: 89%</p>
+                            <div class="p">
+                                <div class="note note note_note"><span class="note__title">Note:</span> Instance Response Date falls in the selected activity date
+                                        range.<p class="p">Response Date/time of the <strong class="ph b">'Agreed'</strong> instance
+                                        falls in the selected activity date range.</p></div>
+                            </div>
+                            <p class="p">Clarification Instance may or may not have a FINAL response.</p>
+                            <p class="p">Clarifications with response other than Pending, Retracted, or No
+                                Response are considered as responded.</p>
+                        </td>
+                        <td class="entry colsep-1 rowsep-1" headers="cds_review_activity__table_cz2_4hn_dpb__entry__3 ">
+                            <p class="p">Clarification Agreed Rate = (The count of Clarifications
+                                    <strong class="ph b">agreed</strong> in the selected activity date range (Response
+                                Date/time of the <strong class="ph b">'Agreed'</strong> instance falls in the selected
+                                activity date range)/ The count of clarifications with at-least one
+                                instance responded in the selected activity date range) x 100</p>
+                        </td>
+                        <td class="entry colsep-1 rowsep-1" headers="cds_review_activity__table_cz2_4hn_dpb__entry__4 ">
+                            <p class="p">Clarifications with Status 'DELETED' or 'RETRACTED' are excluded from
+                                the count.</p>
+                            <p class="p">Clarifications for "Review Not Needed" encounter status should not be
+                                considered for this metric calculation.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="entry colsep-1 rowsep-1" headers="cds_review_activity__table_cz2_4hn_dpb__entry__1 ">Encounters with Financial Impact Clarifications</td>
+                        <td class="entry colsep-1 rowsep-1" headers="cds_review_activity__table_cz2_4hn_dpb__entry__2 ">
+                            <p class="p">This metric displays the count of reviewed encounters with at least
+                                one Financial Impact clarification sent in the selected activity
+                                date range.</p>
+                            <div class="p">
+                                <div class="note note note_note"><span class="note__title">Note:</span> Clarification Instance Sent Date falls in the selected
+                                    activity date range.</div>
+                            </div>
+                            <p class="p">Clarification with a standard or custom ‘Primary Type at
+                                Reconciliation’ defined as ‘Financial or BOTH’ in the admin
+                                configuration is a Financial Impact Clarification.</p>
+                        </td>
+                        <td class="entry colsep-1 rowsep-1" headers="cds_review_activity__table_cz2_4hn_dpb__entry__3 "></td>
+                        <td class="entry colsep-1 rowsep-1" headers="cds_review_activity__table_cz2_4hn_dpb__entry__4 ">
+                            <p class="p">Clarifications with Status 'DELETED' or 'RETRACTED' are excluded from
+                                the count.</p>
+                            <p class="p">Encounters with "Review Not Needed" encounter status are excluded
+                                from this metric calculations.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="entry colsep-1 rowsep-1" headers="cds_review_activity__table_cz2_4hn_dpb__entry__1 ">Financial Impact Clarification Rate</td>
+                        <td class="entry colsep-1 rowsep-1" headers="cds_review_activity__table_cz2_4hn_dpb__entry__2 ">
+                            <p class="p">This metric displays the percentage of reviewed Encounters with at
+                                least one Financial Impact Clarifications sent in the selected
+                                activity date range.</p>
+                            <p class="p">Rounded off to 0 decimal places. <strong class="ph b">Example</strong>: 30%</p>
+                            <div class="p">
+                                <div class="note note note_note"><span class="note__title">Note:</span> Clarification Instance Sent Date falls in the selected
+                                    activity date range.</div>
+                            </div>
+                            <p class="p">Clarification with a standard or custom ‘Primary Type at
+                                Reconciliation’ defined as ‘Financial ’ in the admin configuration
+                                is a Financial Impact Clarification.</p>
+                        </td>
+                        <td class="entry colsep-1 rowsep-1" headers="cds_review_activity__table_cz2_4hn_dpb__entry__3 ">
+                            <p class="p">Financial Impact Clarification Rate = (Count of reviewed encounters
+                                with at least one Financial Impact clarification with the status
+                                other than DELETED or RETRACTED in the selected activity date range.
+                                / Count of encounters with an initial review date in the selected
+                                activity date range.) X 100</p>
+                        </td>
+                        <td class="entry colsep-1 rowsep-1" headers="cds_review_activity__table_cz2_4hn_dpb__entry__4 ">
+                            <p class="p">Clarifications for "Review Not Needed" encounter status should not be
+                                considered for this metric calculation.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="entry colsep-1 rowsep-1" headers="cds_review_activity__table_cz2_4hn_dpb__entry__1 ">Financial Impact Clarifications</td>
+                        <td class="entry colsep-1 rowsep-1" headers="cds_review_activity__table_cz2_4hn_dpb__entry__2 ">
+                            <p class="p">This metric displays the count of Financial Impact clarification with
+                                at-least one instance sent in the selected activity date range.</p>
+                            <div class="p">
+                                <div class="note note note_note"><span class="note__title">Note:</span> Clarification Instance Sent Date falls in the selected
+                                    activity date range.</div>
+                            </div>
+                            <p class="p">Clarification with a standard or custom ‘Primary Type at
+                                Reconciliation’ defined as ‘Financial’ in the admin configuration is
+                                a Financial Impact Clarification.</p>
+                        </td>
+                        <td class="entry colsep-1 rowsep-1" headers="cds_review_activity__table_cz2_4hn_dpb__entry__3 "></td>
+                        <td class="entry colsep-1 rowsep-1" headers="cds_review_activity__table_cz2_4hn_dpb__entry__4 ">
+                            <p class="p">Clarifications with Status 'DELETED' or 'RETRACTED' are excluded from
+                                the count.</p>
+                            <p class="p">Clarifications for "Review Not Needed" encounter status should not be
+                                considered for this metric calculation.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="entry colsep-1 rowsep-1" headers="cds_review_activity__table_cz2_4hn_dpb__entry__1 ">% Financial Impact Clarification</td>
+                        <td class="entry colsep-1 rowsep-1" headers="cds_review_activity__table_cz2_4hn_dpb__entry__2 ">
+                            <p class="p">This metric displays the percentage of Financial Impact
+                                Clarifications sent in the selected activity date range.</p>
+                            <p class="p">Rounded off to 0 decimal places. <strong class="ph b">Example</strong>: 30%</p>
+                            <div class="p">
+                                <div class="note note note_note"><span class="note__title">Note:</span> Clarification Instance Sent Date falls in the selected
+                                    activity date range.</div>
+                            </div>
+                            <p class="p">Clarification with a standard or custom ‘Primary Type at
+                                Reconciliation’ defined as ‘Financial ’ in the admin configuration
+                                is a Financial Impact Clarification.</p>
+                        </td>
+                        <td class="entry colsep-1 rowsep-1" headers="cds_review_activity__table_cz2_4hn_dpb__entry__3 ">
+                            <p class="p">%Financial Impact Clarification = (The count of Financial Impact
+                                clarification with at-least one instance in the selected activity
+                                date range. / The count of clarifications with at-least one instance
+                                in the selected activity date range.) X100</p>
+                        </td>
+                        <td class="entry colsep-1 rowsep-1" headers="cds_review_activity__table_cz2_4hn_dpb__entry__4 ">
+                            <p class="p">Clarifications with Status 'DELETED' or 'RETRACTED' are excluded from
+                                the count.</p>
+                            <p class="p">Clarifications for "Review Not Needed" encounter status should not be
+                                considered for this metric calculation.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="entry colsep-1 rowsep-1" headers="cds_review_activity__table_cz2_4hn_dpb__entry__1 ">Financial Impact Clarifications Responded</td>
+                        <td class="entry colsep-1 rowsep-1" headers="cds_review_activity__table_cz2_4hn_dpb__entry__2 ">
+                            <p class="p">This metric displays the count of Financial Impact clarifications
+                                with at least one instance responded in the selected activity date
+                                range.</p>
+                            <div class="p">
+                                <div class="note note note_note"><span class="note__title">Note:</span> Instance Response Date falls in the selected activity date
+                                    range.</div>
+                            </div>
+                            <p class="p">Clarification Instance may or may not have a FINAL response.</p>
+                            <p class="p">Clarifications with response other than Pending, Retracted, or No
+                                Response are considered.</p>
+                            <p class="p">Clarification with a standard or custom ‘Primary Type at
+                                Reconciliation’ defined as ‘Financial’ in the admin configuration is
+                                a Financial Impact Clarification.</p>
+                        </td>
+                        <td class="entry colsep-1 rowsep-1" headers="cds_review_activity__table_cz2_4hn_dpb__entry__3 "></td>
+                        <td class="entry colsep-1 rowsep-1" headers="cds_review_activity__table_cz2_4hn_dpb__entry__4 ">
+                            <p class="p">Clarifications with Status 'DELETED' or 'RETRACTED' are excluded from
+                                the count.</p>
+                            <p class="p">Clarifications for "Review Not Needed" encounter status should not be
+                                considered for this metric calculation.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="entry colsep-1 rowsep-1" headers="cds_review_activity__table_cz2_4hn_dpb__entry__1 ">Financial Impact Clarification Response Rate</td>
+                        <td class="entry colsep-1 rowsep-1" headers="cds_review_activity__table_cz2_4hn_dpb__entry__2 ">
+                            <p class="p">This metric displays the percentage of sent Financial Impact
+                                clarifications responded in the selected activity date range.</p>
+                            <p class="p"> Rounded to 0 decimal places. <strong class="ph b">Example</strong>: 89% </p>
+                            <div class="p">
+                                <div class="note note note_note"><span class="note__title">Note:</span> Instance Response Date falls in the selected activity date
+                                    range.</div>
+                            </div>
+                            <p class="p">Clarification Instance Sent Date falls in the selected activity date
+                                range.</p>
+                            <p class="p">Clarification Instance may or may not have a FINAL response.</p>
+                            <p class="p">Clarifications with response other than Pending, Retracted, or No
+                                Response are considered.</p>
+                            <p class="p">Clarification with a standard or custom ‘Primary Type at
+                                Reconciliation’ defined as ‘Financial’ in the admin configuration is
+                                a Financial Impact Clarification.</p>
+                        </td>
+                        <td class="entry colsep-1 rowsep-1" headers="cds_review_activity__table_cz2_4hn_dpb__entry__3 ">
+                            <p class="p">Financial Impact Clarification Response Rate= (The count of Financial
+                                Impact clarifications with at least one instance responded in the
+                                selected activity date range/ The count of Financial Impact
+                                clarifications with at-least one instance sent in the selected
+                                activity date range) x 100</p>
+                        </td>
+                        <td class="entry colsep-1 rowsep-1" headers="cds_review_activity__table_cz2_4hn_dpb__entry__4 ">
+                            <p class="p">Clarifications with Status 'DELETED' or 'RETRACTED' are excluded from
+                                the count.</p>
+                            <p class="p">Clarifications for "Review Not Needed" encounter status should not be
+                                considered for this metric calculation.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="entry colsep-1 rowsep-1" headers="cds_review_activity__table_cz2_4hn_dpb__entry__1 ">Financial Impact Clarifications Agreed</td>
+                        <td class="entry colsep-1 rowsep-1" headers="cds_review_activity__table_cz2_4hn_dpb__entry__2 ">
+                            <p class="p">This metric displays the count of Financial Impact
+                                    Clarifications<strong class="ph b">agreed</strong> in the selected activity date range. </p>
+                            <div class="p">
+                                <div class="note note note_note"><span class="note__title">Note:</span> Response Date/time of the <strong class="ph b">'Agreed'</strong> instance falls in
+                                    the selected activity date range.</div>
+                            </div>
+                            <p class="p">Clarification Instance may or may not have a FINAL response.</p>
+                            <p class="p">Clarification with a standard or custom ‘Primary Type at
+                                Reconciliation’ defined as ‘Financial’ in the admin configuration is
+                                a Financial Impact Clarification.</p>
+                        </td>
+                        <td class="entry colsep-1 rowsep-1" headers="cds_review_activity__table_cz2_4hn_dpb__entry__3 "></td>
+                        <td class="entry colsep-1 rowsep-1" headers="cds_review_activity__table_cz2_4hn_dpb__entry__4 ">
+                            <p class="p">Clarifications with Status 'DELETED' or 'RETRACTED' are excluded from
+                                the count.</p>
+                            <p class="p">Clarifications for "Review Not Needed" encounter status should not be
+                                considered for this metric calculation.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="entry colsep-1 rowsep-1" headers="cds_review_activity__table_cz2_4hn_dpb__entry__1 ">
+                            <p class="p">Financial Impact Clarification Agreed Rate</p>
+                        </td>
+                        <td class="entry colsep-1 rowsep-1" headers="cds_review_activity__table_cz2_4hn_dpb__entry__2 ">
+                            <p class="p">This metric displays the percentage of responded Financial Impact
+                                clarifications agreed in the selected activity date range.</p>
+                            <p class="p">Rounded to 0 decimal places. <strong class="ph b">Example</strong>: 89%</p>
+                            <div class="p">
+                                <div class="note note note_note"><span class="note__title">Note:</span> Instance Response Date falls in the selected activity date
+                                    range.</div>
+                            </div>
+                            <p class="p">Response Date/time of the <strong class="ph b">'Agreed'</strong> instance falls in the
+                                selected activity date range.</p>
+                            <p class="p">Clarification Instance may or may not have a FINAL response.</p>
+                            <p class="p">Clarifications with response other than Pending, Retracted, or No
+                                Response are considered as responded.</p>
+                            <p class="p">Clarification with a standard or custom ‘Primary Type at
+                                Reconciliation’ defined as ‘Financial’ in the admin configuration is
+                                a Financial Impact Clarification.</p>
+                        </td>
+                        <td class="entry colsep-1 rowsep-1" headers="cds_review_activity__table_cz2_4hn_dpb__entry__3 ">
+                            <p class="p">Financial Impact Clarification Agreed Rate = (The count of Financial
+                                Impact Clarifications <strong class="ph b">agreed</strong> in the selected activity date
+                                range (Response Date/time of the <strong class="ph b">'Agreed'</strong> instance falls in
+                                the selected activity date range)/ the count of Financial Impact
+                                clarifications with at least one instance responded in the selected
+                                activity date range) x 100</p>
+                        </td>
+                        <td class="entry colsep-1 rowsep-1" headers="cds_review_activity__table_cz2_4hn_dpb__entry__4 ">
+                            <p class="p">Clarifications with Status 'DELETED' or 'RETRACTED' are excluded from
+                                the count.</p>
+                            <p class="p">Clarifications for "Review Not Needed" encounter status should not be
+                                considered for this metric calculation.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="entry colsep-1 rowsep-1" headers="cds_review_activity__table_cz2_4hn_dpb__entry__1 ">Encounters with Quality Clarifications</td>
+                        <td class="entry colsep-1 rowsep-1" headers="cds_review_activity__table_cz2_4hn_dpb__entry__2 ">
+                            <p class="p">This metric displays the count of reviewed encounters with at least
+                                one quality Impact clarification sent in the selected activity date
+                                range.</p>
+                            <div class="p">
+                                <div class="note note note_note"><span class="note__title">Note:</span> Clarification Instance Sent Date falls in the selected
+                                    activity date range.</div>
+                            </div>
+                            <p class="p">Clarification with a standard or custom ‘Primary Type at
+                                Reconciliation’ defined as ‘Quality or BOTH’ in the admin
+                                configuration are considered.</p>
+                        </td>
+                        <td class="entry colsep-1 rowsep-1" headers="cds_review_activity__table_cz2_4hn_dpb__entry__3 "></td>
+                        <td class="entry colsep-1 rowsep-1" headers="cds_review_activity__table_cz2_4hn_dpb__entry__4 ">
+                            <p class="p">Clarifications with Status 'DELETED' or 'RETRACTED' are excluded from
+                                the count.</p>
+                            <p class="p">Encounters with "Review Not Needed" encounter status are excluded
+                                from this metric calculations.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="entry colsep-1 rowsep-1" headers="cds_review_activity__table_cz2_4hn_dpb__entry__1 ">Quality Clarification Rate</td>
+                        <td class="entry colsep-1 rowsep-1" headers="cds_review_activity__table_cz2_4hn_dpb__entry__2 ">
+                            <p class="p">This metric displays the percentage of reviewed Encounters with
+                                Quality Impact Clarifications sent in the selected activity date
+                                range.</p>
+                            <p class="p">Rounded off to 0 decimal places. <strong class="ph b">Example</strong>: 30%</p>
+                            <div class="p">
+                                <div class="note note note_note"><span class="note__title">Note:</span> Clarification Instance Sent Date falls in the selected
+                                    activity date range.<p class="p">Initial Review Date falls in the selected
+                                        activity date range.</p></div>
+                            </div>
+                            <p class="p">Clarification with a standard or custom ‘Primary Type at
+                                Reconciliation’ defined as ‘Quality or BOTH’ in the admin
+                                configuration are considered.</p>
+                        </td>
+                        <td class="entry colsep-1 rowsep-1" headers="cds_review_activity__table_cz2_4hn_dpb__entry__3 ">
+                            <p class="p">Quality Clarification Rate = (Count of reviewed encounters with at
+                                least one Quality Impact clarification with the status other than
+                                DELETED or RETRACTED sent in the selected activity date range. /
+                                Count of encounters with an initial review date in the selected
+                                activity date range.) X 100</p>
+                        </td>
+                        <td class="entry colsep-1 rowsep-1" headers="cds_review_activity__table_cz2_4hn_dpb__entry__4 ">
+                            <p class="p">Clarifications with Status 'DELETED' or 'RETRACTED' are excluded from
+                                the count.</p>
+                            <p class="p">Encounters with "Review Not Needed" encounter status are excluded
+                                from this metric calculations.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="entry colsep-1 rowsep-1" headers="cds_review_activity__table_cz2_4hn_dpb__entry__1 ">Quality Clarifications </td>
+                        <td class="entry colsep-1 rowsep-1" headers="cds_review_activity__table_cz2_4hn_dpb__entry__2 ">
+                            <p class="p">This metric displays the count of Quality Impact clarification with
+                                at-least one instance sent in the selected activity date range.</p>
+                            <div class="p">
+                                <div class="note note note_note"><span class="note__title">Note:</span> Clarification Instance Sent Date falls in the selected
+                                    activity date range.</div>
+                            </div>
+                            <p class="p">Clarification with a standard or custom ‘Primary Type at
+                                Reconciliation’ defined as ‘Quality’ in the admin configuration is a
+                                Quality Impact Clarification.</p>
+                        </td>
+                        <td class="entry colsep-1 rowsep-1" headers="cds_review_activity__table_cz2_4hn_dpb__entry__3 "></td>
+                        <td class="entry colsep-1 rowsep-1" headers="cds_review_activity__table_cz2_4hn_dpb__entry__4 ">
+                            <p class="p">Clarifications with Status 'DELETED' or 'RETRACTED' are excluded from
+                                the count.</p>
+                            <p class="p">Clarifications for "Review Not Needed" encounter status should not be
+                                considered for this metric calculation.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="entry colsep-1 rowsep-1" headers="cds_review_activity__table_cz2_4hn_dpb__entry__1 ">% Quality Clarification</td>
+                        <td class="entry colsep-1 rowsep-1" headers="cds_review_activity__table_cz2_4hn_dpb__entry__2 ">
+                            <p class="p">This metric displays the percentage of Quality Impact Clarifications
+                                sent in the selected activity date range.</p>
+                            <p class="p">Rounded off to 0 decimal places. <strong class="ph b">Example</strong>: 30%</p>
+                            <div class="p">
+                                <div class="note note note_note"><span class="note__title">Note:</span> Clarification Instance Sent Date falls in the selected
+                                    activity date range.</div>
+                            </div>
+                            <p class="p">Clarification with a standard or custom ‘Primary Type at
+                                Reconciliation’ defined as ‘Quality’ in the admin configuration is a
+                                Quality Impact Clarification.</p>
+                        </td>
+                        <td class="entry colsep-1 rowsep-1" headers="cds_review_activity__table_cz2_4hn_dpb__entry__3 ">
+                            <p class="p">% Quality Clarification = (The count of Quality Impact clarification
+                                with at-least one instance in the selected activity date range. /
+                                The count of clarifications with at-least one instance in the
+                                selected activity date range.) X100</p>
+                        </td>
+                        <td class="entry colsep-1 rowsep-1" headers="cds_review_activity__table_cz2_4hn_dpb__entry__4 ">
+                            <p class="p">Clarifications with Status 'DELETED' or 'RETRACTED' are excluded from
+                                the count.</p>
+                            <p class="p">Clarifications for "Review Not Needed" encounter status should not be
+                                considered for this metric calculation.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="entry colsep-1 rowsep-1" headers="cds_review_activity__table_cz2_4hn_dpb__entry__1 ">Quality Clarifications Responded</td>
+                        <td class="entry colsep-1 rowsep-1" headers="cds_review_activity__table_cz2_4hn_dpb__entry__2 ">
+                            <p class="p">This metric displays the count of Quality Impact clarifications with
+                                at least one instance responded in the selected activity date
+                                range.</p>
+                            <div class="p">
+                                <div class="note note note_note"><span class="note__title">Note:</span> Instance Response Date falls in the selected activity date
+                                    range.</div>
+                            </div>
+                            <p class="p">Clarification Instance may or may not have a FINAL response.</p>
+                            <p class="p">Clarifications with response other than Pending, Retracted, or No
+                                Response are considered.</p>
+                            <p class="p">Clarification with a standard or custom ‘Primary Type at
+                                Reconciliation’ defined as ‘Quality’ in the admin configuration is a
+                                Quality Impact Clarification.</p>
+                        </td>
+                        <td class="entry colsep-1 rowsep-1" headers="cds_review_activity__table_cz2_4hn_dpb__entry__3 "></td>
+                        <td class="entry colsep-1 rowsep-1" headers="cds_review_activity__table_cz2_4hn_dpb__entry__4 ">
+                            <p class="p">Clarifications with Status 'DELETED' or 'RETRACTED' are excluded from
+                                the count.</p>
+                            <p class="p">Clarifications for "Review Not Needed" encounter status should not be
+                                considered for this metric calculation.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="entry colsep-1 rowsep-1" headers="cds_review_activity__table_cz2_4hn_dpb__entry__1 ">Quality Clarification Response Rate</td>
+                        <td class="entry colsep-1 rowsep-1" headers="cds_review_activity__table_cz2_4hn_dpb__entry__2 ">
+                            <p class="p">This metric displays the percentage of sent Quality Impact
+                                clarifications responded in the selected activity date range.</p>
+                            <p class="p"> Rounded to 0 decimal places. <strong class="ph b">Example</strong>: 89% </p>
+                            <div class="p">
+                                <div class="note note note_note"><span class="note__title">Note:</span> Instance Response Date falls in the selected activity date
+                                    range.</div>
+                            </div>
+                            <p class="p">Clarification Instance Sent Date falls in the selected activity date
+                                range.</p>
+                            <p class="p">Clarification Instance may or may not have a FINAL response.</p>
+                            <p class="p">Clarifications with response other than Pending, Retracted, or No
+                                Response are considered.</p>
+                            <p class="p">Clarification with a standard or custom ‘Primary Type at
+                                Reconciliation’ defined as ‘Quality’ in the admin configuration is a
+                                Quality Impact Clarification.</p>
+                        </td>
+                        <td class="entry colsep-1 rowsep-1" headers="cds_review_activity__table_cz2_4hn_dpb__entry__3 ">
+                            <p class="p">Quality Clarification Response Rate= (The count of Quality Impact
+                                clarifications with at least one instance responded in the selected
+                                activity date range/ The count of Quality Impact clarifications with
+                                at-least one instance sent in the selected activity date range) x
+                                100</p>
+                        </td>
+                        <td class="entry colsep-1 rowsep-1" headers="cds_review_activity__table_cz2_4hn_dpb__entry__4 ">
+                            <p class="p">Clarifications with Status 'DELETED' or 'RETRACTED' are excluded from
+                                the count.</p>
+                            <p class="p">Clarifications for "Review Not Needed" encounter status should not be
+                                considered for this metric calculation.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="entry colsep-1 rowsep-1" headers="cds_review_activity__table_cz2_4hn_dpb__entry__1 ">Quality Clarifications Agreed</td>
+                        <td class="entry colsep-1 rowsep-1" headers="cds_review_activity__table_cz2_4hn_dpb__entry__2 ">
+                            <p class="p">This metric displays the count of Quality Impact
+                                    Clarifications<strong class="ph b">agreed</strong> in the selected activity date range. </p>
+                            <div class="p">
+                                <div class="note note note_note"><span class="note__title">Note:</span> Response Date/time of the <strong class="ph b">'Agreed'</strong> instance falls in
+                                    the selected activity date range.</div>
+                            </div>
+                            <p class="p">Clarification Instance may or may not have a FINAL response.</p>
+                            <p class="p">Clarification with a standard or custom ‘Primary Type at
+                                Reconciliation’ defined as ‘Quality ’ in the admin configuration is
+                                a Quality Impact Clarification.</p>
+                        </td>
+                        <td class="entry colsep-1 rowsep-1" headers="cds_review_activity__table_cz2_4hn_dpb__entry__3 "></td>
+                        <td class="entry colsep-1 rowsep-1" headers="cds_review_activity__table_cz2_4hn_dpb__entry__4 ">
+                            <p class="p">Clarifications with Status 'DELETED' or 'RETRACTED' are excluded from
+                                the count.</p>
+                            <p class="p">Clarifications for "Review Not Needed" encounter status should not be
+                                considered for this metric calculation.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="entry colsep-1 rowsep-1" headers="cds_review_activity__table_cz2_4hn_dpb__entry__1 ">Quality Clarification Agreed Rate</td>
+                        <td class="entry colsep-1 rowsep-1" headers="cds_review_activity__table_cz2_4hn_dpb__entry__2 ">
+                            <p class="p">This metric displays the percentage of responded Quality Impact
+                                clarifications agreed in the selected activity date range.</p>
+                            <p class="p">Rounded to 0 decimal places. <strong class="ph b">Example</strong>: 89%</p>
+                            <div class="p">
+                                <div class="note note note_note"><span class="note__title">Note:</span> Instance Response Date falls in the selected activity date
+                                        range.<p class="p">Response Date/time of the <strong class="ph b">'Agreed'</strong> instance
+                                        falls in the selected activity date range.</p></div>
+                            </div>
+                            <p class="p">Clarification Instance may or may not have a FINAL response.</p>
+                            <p class="p">Clarifications with response other than Pending, Retracted, or No
+                                Response are considered as responded.</p>
+                            <p class="p">Clarification with a standard or custom ‘Primary Type at
+                                Reconciliation’ defined as ‘Quality ’ in the admin configuration is
+                                a Quality Impact Clarification.</p>
+                        </td>
+                        <td class="entry colsep-1 rowsep-1" headers="cds_review_activity__table_cz2_4hn_dpb__entry__3 ">
+                            <p class="p">Quality Clarification Agreed Rate = (The count of Quality Impact
+                                Clarifications <strong class="ph b">agreed</strong> in the selected activity date range
+                                (Response Date/time of the <strong class="ph b">'Agreed'</strong> instance falls in the
+                                selected activity date range)/ the count of Quality Impact
+                                clarifications with at least one instance responded in the selected
+                                activity date range) x 100</p>
+                        </td>
+                        <td class="entry colsep-1 rowsep-1" headers="cds_review_activity__table_cz2_4hn_dpb__entry__4 ">
+                            <p class="p">Clarifications with Status 'DELETED' or 'RETRACTED' are excluded from
+                                the count.</p>
+                            <p class="p">Clarifications for "Review Not Needed" encounter status should not be
+                                considered for this metric calculation</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="entry colsep-1 rowsep-1" headers="cds_review_activity__table_cz2_4hn_dpb__entry__1 ">Encounters with SEV Clarifications</td>
+                        <td class="entry colsep-1 rowsep-1" headers="cds_review_activity__table_cz2_4hn_dpb__entry__2 ">
+                            <p class="p">This metric displays the count of reviewed encounters with at least
+                                one SEV Impact clarification sent in the selected activity date
+                                range.</p>
+                            <div class="p">
+                                <div class="note note note_note"><span class="note__title">Note:</span> Clarification Instance Sent Date falls in the selected
+                                    activity date range. </div>
+                            </div>
+                            <p class="p">Clarification with a standard or custom ‘Primary Type at
+                                Reconciliation’ as SEV are considered.</p>
+                        </td>
+                        <td class="entry colsep-1 rowsep-1" headers="cds_review_activity__table_cz2_4hn_dpb__entry__3 "></td>
+                        <td class="entry colsep-1 rowsep-1" headers="cds_review_activity__table_cz2_4hn_dpb__entry__4 ">
+                            <p class="p">Clarifications with Status 'DELETED' or 'RETRACTED' are excluded from
+                                the count.</p>
+                            <p class="p">Encounters with "Review Not Needed" encounter status are excluded
+                                from this metric calculations.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="entry colsep-1 rowsep-1" headers="cds_review_activity__table_cz2_4hn_dpb__entry__1 ">SEV Clarification Rate</td>
+                        <td class="entry colsep-1 rowsep-1" headers="cds_review_activity__table_cz2_4hn_dpb__entry__2 ">
+                            <p class="p">This metric displays the percentage of reviewed Encounters with SEV
+                                Impact Clarifications sent in the selected activity date range.</p>
+                            <p class="p">Rounded off to 0 decimal places. <strong class="ph b">Example</strong>: 30%</p>
+                            <div class="p">
+                                <div class="note note note_note"><span class="note__title">Note:</span> Clarification Instance Sent Date falls in the selected
+                                    activity date range.<p class="p">Initial Review Date falls in the selected
+                                        activity date range.</p></div>
+                            </div>
+                            <p class="p">Clarification with a standard or custom ‘Primary Type at
+                                Reconciliation’ as SEV are considered.</p>
+                        </td>
+                        <td class="entry colsep-1 rowsep-1" headers="cds_review_activity__table_cz2_4hn_dpb__entry__3 ">
+                            <p class="p">SEV Clarification Rate = (Count of reviewed encounters with at least
+                                one SEV Impact clarification with the status other than DELETED or
+                                RETRACTED sent in the selected activity date range. / Count of
+                                encounters with an initial review date in the selected activity date
+                                range.) X 100</p>
+                        </td>
+                        <td class="entry colsep-1 rowsep-1" headers="cds_review_activity__table_cz2_4hn_dpb__entry__4 ">
+                            <p class="p">Clarifications with Status 'DELETED' or 'RETRACTED' are excluded from
+                                the count.</p>
+                            <p class="p">Encounters with "Review Not Needed" encounter status are excluded
+                                from this metric calculations.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="entry colsep-1 rowsep-1" headers="cds_review_activity__table_cz2_4hn_dpb__entry__1 ">SEV Clarifications</td>
+                        <td class="entry colsep-1 rowsep-1" headers="cds_review_activity__table_cz2_4hn_dpb__entry__2 ">
+                            <p class="p">This metric displays the count of SEV Impact clarification with
+                                at-least one instance sent in the selected activity date range.</p>
+                            <div class="p">
+                                <div class="note note note_note"><span class="note__title">Note:</span> Clarification Instance Sent Date falls in the selected
+                                    activity date range.</div>
+                            </div>
+                            <p class="p">Clarification with a standard or custom ‘Primary Type at
+                                Reconciliation’ as SEV are considered.</p>
+                        </td>
+                        <td class="entry colsep-1 rowsep-1" headers="cds_review_activity__table_cz2_4hn_dpb__entry__3 "></td>
+                        <td class="entry colsep-1 rowsep-1" headers="cds_review_activity__table_cz2_4hn_dpb__entry__4 ">
+                            <p class="p">Clarifications with Status 'DELETED' or 'RETRACTED' are excluded from
+                                the count.</p>
+                            <p class="p">Clarifications for "Review Not Needed" encounter status should not be
+                                considered for this metric calculation.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="entry colsep-1 rowsep-1" headers="cds_review_activity__table_cz2_4hn_dpb__entry__1 ">% SEV Clarification</td>
+                        <td class="entry colsep-1 rowsep-1" headers="cds_review_activity__table_cz2_4hn_dpb__entry__2 ">
+                            <p class="p">This metric displays the percentage of SEV Impact Clarifications sent
+                                in the selected activity date range.</p>
+                            <p class="p">Rounded off to 0 decimal places. <strong class="ph b">Example</strong>: 30%</p>
+                            <div class="p">
+                                <div class="note note note_note"><span class="note__title">Note:</span> Clarification Instance Sent Date falls in the selected
+                                    activity date range.</div>
+                            </div>
+                            <p class="p">Clarification with a standard or custom ‘Primary Type at
+                                Reconciliation’ as SEV are considered.</p>
+                        </td>
+                        <td class="entry colsep-1 rowsep-1" headers="cds_review_activity__table_cz2_4hn_dpb__entry__3 ">
+                            <p class="p">% SEV Clarification = (The count of SEV Impact clarification with
+                                at-least one instance in the selected activity date range. / The
+                                count of clarifications with at-least one instance in the selected
+                                activity date range.) X100</p>
+                        </td>
+                        <td class="entry colsep-1 rowsep-1" headers="cds_review_activity__table_cz2_4hn_dpb__entry__4 ">
+                            <p class="p">Clarifications with Status 'DELETED' or 'RETRACTED' are excluded from
+                                the count.</p>
+                            <p class="p">Clarifications for "Review Not Needed" encounter status should not be
+                                considered for this metric calculation.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="entry colsep-1 rowsep-1" headers="cds_review_activity__table_cz2_4hn_dpb__entry__1 ">SEV Clarifications Responded</td>
+                        <td class="entry colsep-1 rowsep-1" headers="cds_review_activity__table_cz2_4hn_dpb__entry__2 ">
+                            <p class="p">This metric displays the count of SEV Impact clarifications with at
+                                least one instance responded in the selected activity date
+                                range.</p>
+                            <div class="p">
+                                <div class="note note note_note"><span class="note__title">Note:</span> Instance Response Date falls in the selected activity date
+                                    range.</div>
+                            </div>
+                            <p class="p">Clarification Instance may or may not have a FINAL response.</p>
+                            <p class="p">Clarifications with response other than Pending, Retracted, or No
+                                Response are considered.</p>
+                            <p class="p">Clarification with a standard or custom ‘Primary Type at
+                                Reconciliation’ as SEV are considered.</p>
+                        </td>
+                        <td class="entry colsep-1 rowsep-1" headers="cds_review_activity__table_cz2_4hn_dpb__entry__3 "></td>
+                        <td class="entry colsep-1 rowsep-1" headers="cds_review_activity__table_cz2_4hn_dpb__entry__4 ">
+                            <p class="p">Clarifications with Status 'DELETED' or 'RETRACTED' are excluded from
+                                the count.</p>
+                            <p class="p">Clarifications for "Review Not Needed" encounter status should not be
+                                considered for this metric calculation.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="entry colsep-1 rowsep-1" headers="cds_review_activity__table_cz2_4hn_dpb__entry__1 ">SEV Clarification Response Rate</td>
+                        <td class="entry colsep-1 rowsep-1" headers="cds_review_activity__table_cz2_4hn_dpb__entry__2 ">
+                            <p class="p">This metric displays the percentage of sent SEV Impact clarifications
+                                responded in the selected activity date range.</p>
+                            <p class="p"> Rounded to 0 decimal places. <strong class="ph b">Example</strong>: 89% </p>
+                            <div class="p">
+                                <div class="note note note_note"><span class="note__title">Note:</span> Instance Response Date falls in the selected activity date
+                                        range.<p class="p">Clarification Instance Sent Date falls in the
+                                        selected activity date range.</p></div>
+                            </div>
+                            <p class="p">Clarification Instance may or may not have a FINAL response.</p>
+                            <p class="p">Clarifications with response other than Pending, Retracted, or No
+                                Response are considered.</p>
+                            <p class="p">Clarification with a standard or custom ‘Primary Type at
+                                Reconciliation’ as SEV are considered.</p>
+                        </td>
+                        <td class="entry colsep-1 rowsep-1" headers="cds_review_activity__table_cz2_4hn_dpb__entry__3 ">
+                            <p class="p">SEV Clarification Response Rate= (The count of SEV Impact
+                                clarifications with at least one instance responded in the selected
+                                activity date range/ The count of SEV Impact clarifications with
+                                at-least one instance sent in the selected activity date range) x
+                                100</p>
+                        </td>
+                        <td class="entry colsep-1 rowsep-1" headers="cds_review_activity__table_cz2_4hn_dpb__entry__4 ">
+                            <p class="p">Clarifications with Status 'DELETED' or 'RETRACTED' are excluded from
+                                the count.</p>
+                            <p class="p">Clarifications for "Review Not Needed" encounter status should not be
+                                considered for this metric calculation.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="entry colsep-1 rowsep-1" headers="cds_review_activity__table_cz2_4hn_dpb__entry__1 ">SEV Clarifications Agreed</td>
+                        <td class="entry colsep-1 rowsep-1" headers="cds_review_activity__table_cz2_4hn_dpb__entry__2 ">
+                            <p class="p">This metric displays the count of SEV Impact
+                                    Clarifications<strong class="ph b">agreed</strong> in the selected activity date range. </p>
+                            <div class="p">
+                                <div class="note note note_note"><span class="note__title">Note:</span> Response Date/time of the <strong class="ph b">'Agreed'</strong> instance falls in
+                                    the selected activity date range.</div>
+                            </div>
+                            <p class="p">Clarification Instance may or may not have a FINAL response.</p>
+                            <p class="p">Clarification with a standard or custom ‘Primary Type at
+                                Reconciliation’ as SEV are considered.</p>
+                        </td>
+                        <td class="entry colsep-1 rowsep-1" headers="cds_review_activity__table_cz2_4hn_dpb__entry__3 "></td>
+                        <td class="entry colsep-1 rowsep-1" headers="cds_review_activity__table_cz2_4hn_dpb__entry__4 ">
+                            <p class="p">Clarifications with Status 'DELETED' or 'RETRACTED' are excluded from
+                                the count.</p>
+                            <p class="p">Clarifications for "Review Not Needed" encounter status should not be
+                                considered for this metric calculation.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="entry colsep-1 rowsep-1" headers="cds_review_activity__table_cz2_4hn_dpb__entry__1 ">SEV Clarification Agreed Rate</td>
+                        <td class="entry colsep-1 rowsep-1" headers="cds_review_activity__table_cz2_4hn_dpb__entry__2 ">
+                            <p class="p">This metric displays the percentage of responded SEV Impact
+                                clarifications agreed in the selected activity date range.</p>
+                            <p class="p">Rounded to 0 decimal places. <strong class="ph b">Example</strong>: 89%</p>
+                            <div class="p">
+                                <div class="note note note_note"><span class="note__title">Note:</span> Instance Response Date falls in the selected activity date
+                                        range.<p class="p">Response Date/time of the <strong class="ph b">'Agreed'</strong> instance
+                                        falls in the selected activity date range.</p></div>
+                            </div>
+                            <p class="p">Clarification Instance may or may not have a FINAL response.</p>
+                            <p class="p">Clarifications with response other than Pending, Retracted, or No
+                                Response are considered as responded.</p>
+                            <p class="p">Clarification with a standard or custom ‘Primary Type at
+                                Reconciliation’ as SEV are considered.</p>
+                        </td>
+                        <td class="entry colsep-1 rowsep-1" headers="cds_review_activity__table_cz2_4hn_dpb__entry__3 ">
+                            <p class="p">SEV Clarification Agreed Rate = (The count of SEV Impact
+                                Clarifications <strong class="ph b">agreed</strong> in the selected activity date range
+                                (Response Date/time of the <strong class="ph b">'Agreed'</strong> instance falls in the
+                                selected activity date range)/ the count of SEV Impact
+                                clarifications with at least one instance responded in the selected
+                                activity date range) x 100</p>
+                        </td>
+                        <td class="entry colsep-1 rowsep-1" headers="cds_review_activity__table_cz2_4hn_dpb__entry__4 ">
+                            <p class="p">Clarifications with Status 'DELETED' or 'RETRACTED' are excluded from
+                                the count.</p>
+                            <p class="p">Clarifications for "Review Not Needed" encounter status should not be
+                                considered for this metric calculation.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="entry colsep-1 rowsep-1" headers="cds_review_activity__table_cz2_4hn_dpb__entry__1 ">CDS/Coder Match</td>
+                        <td class="entry colsep-1 rowsep-1" headers="cds_review_activity__table_cz2_4hn_dpb__entry__2 ">
+                            <p class="p">This metric displays the count of Matched Encounters in the selected
+                                activity date range. </p>
+                            <p class="p">The total count of encounters with Match Value = Y</p>
+                            <div class="p">
+                                <div class="note note note_note"><span class="note__title">Note:</span> We can determine if there is a encounter for which an activity
+                                    was performed in the selected activity date range, Same for rate
+                                    as well.</div>
+                            </div>
+                            <p class="p">CDS/Coder Match Logic: </p>
+                            <ul class="ul" id="cds_review_activity__ul_agm_c34_2pb">
+                                <li class="li">This logic applies to all the reconciled cases.
+                                    (Reconciled-Impact, Reconciled No Impact, Auto-Reconciled)</li>
+                                <li class="li">This logic applies to all grouper types (including MS-DRG and
+                                    APR Groupers).</li>
+                                <li class="li">Reconciliation Assessment DRG is not used to calculate the
+                                    CDS/Coder Match.</li>
+                                <li class="li">CDS/Coder Match logic compares Final Coded DRG to the Possible
+                                    DRG (Or Working DRG when the Possible DRG is blank). </li>
+                                <li class="li">For the reconciled encounters with Possible DRG, CDS/Coder match
+                                    is <strong class="ph b">Y</strong> when the Final Coded DRG matches Possible DRG.</li>
+                                <li class="li">For the reconciled encounters without Possible DRG (Possible DRG
+                                    is blank), CDS/Coder match is <strong class="ph b">Y</strong> when the Final Coded DRG
+                                    matches working DRG.</li>
+                            </ul>
+                        </td>
+                        <td class="entry colsep-1 rowsep-1" headers="cds_review_activity__table_cz2_4hn_dpb__entry__3 ">
+                            <p class="p">Matched Encounters = Count of Reconciled Encounters where Final DRG
+                                matches Possible DRG (Working DRG if Possible DRG is Blank)</p>
+                        </td>
+                        <td class="entry colsep-1 rowsep-1" headers="cds_review_activity__table_cz2_4hn_dpb__entry__4 "></td>
+                    </tr>
+                    <tr>
+                        <td class="entry colsep-1 rowsep-1" headers="cds_review_activity__table_cz2_4hn_dpb__entry__1 ">CDS/Coder Match Rate</td>
+                        <td class="entry colsep-1 rowsep-1" headers="cds_review_activity__table_cz2_4hn_dpb__entry__2 ">
+                            <p class="p">This metric displays the CDS/Coder Match Rate for the selected
+                                activity date range.</p>
+                        </td>
+                        <td class="entry colsep-1 rowsep-1" headers="cds_review_activity__table_cz2_4hn_dpb__entry__3 ">
+                            <p class="p">CDS/Coder Match Rate = Count of Reconciled Encounters in which Final
+                                DRG matches Possible DRG (Or Working DRG if Possible DRG is Blank) /
+                                Count of Reconciled Encounters in the selected date range) *100</p>
+                        </td>
+                        <td class="entry colsep-1 rowsep-1" headers="cds_review_activity__table_cz2_4hn_dpb__entry__4 "></td>
+                    </tr>
+                </tbody></table>
+        <table class="table frame-all" id="cds_review_activity__table_bgs_mw5_l4b"><caption><span class="table--title-label">Table 3. </span><span class="title">Report Slicers </span></caption><colgroup><col style="width:50%" /><col style="width:50%" /></colgroup><thead class="thead">
+                    <tr>
+                        <th class="entry colsep-1 rowsep-1" id="cds_review_activity__table_bgs_mw5_l4b__entry__1">Slicer</th>
+                        <th class="entry colsep-1 rowsep-1" id="cds_review_activity__table_bgs_mw5_l4b__entry__2">Description</th>
+                    </tr>
+                </thead><tbody class="tbody">
+                    <tr>
+                        <td class="entry colsep-1 rowsep-1" headers="cds_review_activity__table_bgs_mw5_l4b__entry__1 ">Activity Date</td>
+                        <td class="entry colsep-1 rowsep-1" headers="cds_review_activity__table_bgs_mw5_l4b__entry__2 ">
+                            <ul class="ul" id="cds_review_activity__ul_xkg_vkz_m4b">
+                                <li class="li">Displays the activity  date range here. You can select required
+                                    dates from the date lookup.</li>
+                                <li class="li">
+                                    <p class="p"><strong class="ph b">Example</strong>: 7/1/2020 - 7/31/2020</p>
+                                </li>
+                                <li class="li">
+                                    <p class="p"><strong class="ph b">Default</strong>: Last 1 calendar months date range</p>
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="entry colsep-1 rowsep-1" headers="cds_review_activity__table_bgs_mw5_l4b__entry__1 ">Reset</td>
+                        <td class="entry colsep-1 rowsep-1" headers="cds_review_activity__table_bgs_mw5_l4b__entry__2 ">
+                            <ul class="ul" id="cds_review_activity__ul_jw1_22z_m4b">
+                                <li class="li">With the Reset button, you can reset the Activity date
+                                    range.</li>
+                                <li class="li"><strong class="ph b">Tooltip</strong>: Use "Ctrl + Click" to reset the Activity
+                                    Date.</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="entry colsep-1 rowsep-1" headers="cds_review_activity__table_bgs_mw5_l4b__entry__1 ">Facility</td>
+                        <td class="entry colsep-1 rowsep-1" headers="cds_review_activity__table_bgs_mw5_l4b__entry__2 ">
+                            <ul class="ul" id="cds_review_activity__ul_qg1_scw_l4b">
+                                <li class="li">Displays a list of active and inactive facilities that you have
+                                    access to. The list is sorted alphabetically. </li>
+                                <li class="li">You can select multiple facilities</li>
+                                <li class="li">You can search the facility by Facility ID or Description.</li>
+                                <li class="li"><strong class="ph b">Format</strong>: Facility Description (Facility ID)</li>
+                                <li class="li"><strong class="ph b">Default</strong>: ALL</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="entry colsep-1 rowsep-1" headers="cds_review_activity__table_bgs_mw5_l4b__entry__1 ">Payer</td>
+                        <td class="entry colsep-1 rowsep-1" headers="cds_review_activity__table_bgs_mw5_l4b__entry__2 ">
+                            <ul class="ul" id="cds_review_activity__ul_nsx_spw_s4b">
+                                <li class="li">Displays a list of active and inactive payers associated with
+                                    the facilities that you have access to. The list is sorted
+                                    alphabetically. </li>
+                                <li class="li">You can select multiple payers</li>
+                                <li class="li">"Unassigned Payer" displays data for the encounters that do not
+                                    have a payer assigned.</li>
+                                <li class="li">You can search the Payer by Payer ID or Description.</li>
+                                <li class="li"><strong class="ph b">Format</strong>: Payer Description (Payer ID)</li>
+                                <li class="li"><strong class="ph b">Default</strong>: ALL</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="entry colsep-1 rowsep-1" headers="cds_review_activity__table_bgs_mw5_l4b__entry__1 ">CDS</td>
+                        <td class="entry colsep-1 rowsep-1" headers="cds_review_activity__table_bgs_mw5_l4b__entry__2 ">
+                            <ul class="ul" id="cds_review_activity__ul_gqf_j5f_p4b">
+                                <li class="li">Displays a list of active and inactive CDSs associated with the
+                                    facilities you have access to.</li>
+                                <li class="li">The CDS Filter in all the reports displays the users with
+                                    at-least CDS or CDS Manager role assigned.</li>
+                                <li class="li">"Unassigned CDS" displays data for the encounters that do not
+                                    have a CDS assigned.</li>
+                                <li class="li"><strong class="ph b">Format</strong>: Last Name, First Name MI (CDS ID)</li>
+                                <li class="li"><strong class="ph b">Default</strong>: ALL</li>
+                            </ul>
+                        </td>
+                    </tr>
+                </tbody></table>
+        <div class="p">
+            <table class="table frame-all" id="cds_review_activity__table_xzd_hdw_l4b"><caption><span class="table--title-label">Table 4. </span><span class="title">Filters on all Pages</span></caption><colgroup><col style="width:50%" /><col style="width:50%" /></colgroup><thead class="thead">
+                        <tr>
+                            <th class="entry colsep-1 rowsep-1" id="cds_review_activity__table_xzd_hdw_l4b__entry__1">Filter</th>
+                            <th class="entry colsep-1 rowsep-1" id="cds_review_activity__table_xzd_hdw_l4b__entry__2">Description</th>
+                        </tr>
+                    </thead><tbody class="tbody">
+                        <tr>
+                            <td class="entry colsep-1 rowsep-1" headers="cds_review_activity__table_xzd_hdw_l4b__entry__1 ">Patient Type</td>
+                            <td class="entry colsep-1 rowsep-1" headers="cds_review_activity__table_xzd_hdw_l4b__entry__2 ">
+                                <ul class="ul" id="cds_review_activity__ul_f4n_gny_m4b">
+                                    <li class="li">Displays the available patient types. <p class="p"><strong class="ph b">Example</strong>:
+                                            Inpatient, Outpatient.</p></li>
+                                    <li class="li"><strong class="ph b">Default</strong>: Inpatient</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="entry colsep-1 rowsep-1" headers="cds_review_activity__table_xzd_hdw_l4b__entry__1 ">Unit</td>
+                            <td class="entry colsep-1 rowsep-1" headers="cds_review_activity__table_xzd_hdw_l4b__entry__2 ">
+                                <ul class="ul" id="cds_review_activity__ul_n4k_jny_m4b">
+                                    <li class="li">Displays the list of available units.</li>
+                                    <li class="li">You can select multiple Units.</li>
+                                    <li class="li">You can search the Unit.</li>
+                                    <li class="li"><strong class="ph b">Default</strong>: ALL</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="entry colsep-1 rowsep-1" headers="cds_review_activity__table_xzd_hdw_l4b__entry__1 ">Admit Service</td>
+                            <td class="entry colsep-1 rowsep-1" headers="cds_review_activity__table_xzd_hdw_l4b__entry__2 ">
+                                <ul class="ul" id="cds_review_activity__ul_zm1_lny_m4b">
+                                    <li class="li">Displays the list of available Admit Services.</li>
+                                    <li class="li">You can select multiple Admit Services.</li>
+                                    <li class="li">You can search the Admit Service.</li>
+                                    <li class="li"><strong class="ph b">Default</strong>: ALL</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="entry colsep-1 rowsep-1" headers="cds_review_activity__table_xzd_hdw_l4b__entry__1 ">Visit Type</td>
+                            <td class="entry colsep-1 rowsep-1" headers="cds_review_activity__table_xzd_hdw_l4b__entry__2 ">
+                                <ul class="ul" id="cds_review_activity__ul_h3h_zq5_54b">
+                                    <li class="li">Displays the list of available Visit Types.</li>
+                                    <li class="li">You can select multiple visit types.</li>
+                                    <li class="li">You can search the Visit Type.</li>
+                                    <li class="li"><strong class="ph b">Default</strong>: ALL</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="entry colsep-1 rowsep-1" headers="cds_review_activity__table_xzd_hdw_l4b__entry__1 ">Weekend Only Stay</td>
+                            <td class="entry colsep-1 rowsep-1" headers="cds_review_activity__table_xzd_hdw_l4b__entry__2 ">
+                                <ul class="ul" id="cds_review_activity__ul_htj_xfq_2pb">
+                                    <li class="li">Displays the available options for Weekend Only Stay- Y and
+                                        N</li>
+                                    <li class="li">You can select more than one option. </li>
+                                    <li class="li">Weekend Only Stay = Y ( Unassigned encounters admitted after
+                                        Friday, 6PM and Discharged before Sunday, 11.59 PM)</li>
+                                    <li class="li"><strong class="ph b">Default: ALL</strong></li>
+                                </ul>
+                            </td>
+                        </tr>
+                    </tbody></table>
+        </div>
+        <div class="p">
+            <table class="table frame-all" id="cds_review_activity__table_l5h_lpd_hpb"><caption><span class="table--title-label">Table 5. </span><span class="title"><strong class="ph b">Footnotes </strong></span></caption><colgroup><col style="width:50%" /><col style="width:50%" /></colgroup><thead class="thead">
+                        <tr>
+                            <th class="entry colsep-1 rowsep-1" id="cds_review_activity__table_l5h_lpd_hpb__entry__1">Formula</th>
+                            <th class="entry colsep-1 rowsep-1" id="cds_review_activity__table_l5h_lpd_hpb__entry__2">Text on Hover</th>
+                        </tr>
+                    </thead><tbody class="tbody">
+                        <tr>
+                            <td class="entry colsep-1 rowsep-1" headers="cds_review_activity__table_l5h_lpd_hpb__entry__1 ">Encounter Clarification Rate</td>
+                            <td class="entry colsep-1 rowsep-1" headers="cds_review_activity__table_l5h_lpd_hpb__entry__2 ">(Count of reviewed encounters with at least one clarification
+                                with the status other than DELETED or RETRACTED sent in the selected
+                                activity date range/ Count of Initial Reviews performed in the
+                                selected activity date range) X 100 ; E.g. 33%</td>
+                        </tr>
+                        <tr>
+                            <td class="entry colsep-1 rowsep-1" headers="cds_review_activity__table_l5h_lpd_hpb__entry__1 ">Clarification Response Rate</td>
+                            <td class="entry colsep-1 rowsep-1" headers="cds_review_activity__table_l5h_lpd_hpb__entry__2 ">(Count of clarifications with at least one instance responded in
+                                the selected activity date range/ The count of clarification with
+                                at-least one instance sent in the selected activity date range) X
+                                100 ; E.g. 80%</td>
+                        </tr>
+                        <tr>
+                            <td class="entry colsep-1 rowsep-1" headers="cds_review_activity__table_l5h_lpd_hpb__entry__1 ">Clarification Agreed Rate</td>
+                            <td class="entry colsep-1 rowsep-1" headers="cds_review_activity__table_l5h_lpd_hpb__entry__2 ">(Count of Clarifications <strong class="ph b">agreed</strong> in the selected activity
+                                date range (Response Date/time of the <strong class="ph b">'Agreed'</strong> instance falls
+                                in the selected activity date range)/ The count of clarifications
+                                with at-least one instance responded in the selected activity date
+                                range) X 100 ; E.g. 90%</td>
+                        </tr>
+                        <tr>
+                            <td class="entry colsep-1 rowsep-1" headers="cds_review_activity__table_l5h_lpd_hpb__entry__1 ">Financial Impact Clarifications</td>
+                            <td class="entry colsep-1 rowsep-1" headers="cds_review_activity__table_l5h_lpd_hpb__entry__2 ">Financial Impact Clarifications: Clarifications with standard or
+                                custom ‘Primary Type at Reconciliation’ defined as ‘Financial’ in
+                                the admin configuration.</td>
+                        </tr>
+                        <tr>
+                            <td class="entry colsep-1 rowsep-1" headers="cds_review_activity__table_l5h_lpd_hpb__entry__1 ">% Financial Impact Clarification</td>
+                            <td class="entry colsep-1 rowsep-1" headers="cds_review_activity__table_l5h_lpd_hpb__entry__2 ">(Count of Financial Impact clarification with at-least one
+                                instance in the selected activity date range/ The count of
+                                clarifications with at-least one instance in the selected activity
+                                date range.) X100 ; E.g. 75%</td>
+                        </tr>
+                        <tr>
+                            <td class="entry colsep-1 rowsep-1" headers="cds_review_activity__table_l5h_lpd_hpb__entry__1 ">Financial Impact Clarification Response Rate</td>
+                            <td class="entry colsep-1 rowsep-1" headers="cds_review_activity__table_l5h_lpd_hpb__entry__2 ">Count of Financial Impact clarifications with at least one
+                                instance responded in the selected activity date range/ The count of
+                                Financial Impact clarifications with at-least one instance sent in
+                                the selected activity date range) x 100 ; E.g. 75%</td>
+                        </tr>
+                        <tr>
+                            <td class="entry colsep-1 rowsep-1" headers="cds_review_activity__table_l5h_lpd_hpb__entry__1 ">Financial Impact Clarification Agreed Rate</td>
+                            <td class="entry colsep-1 rowsep-1" headers="cds_review_activity__table_l5h_lpd_hpb__entry__2 ">(Count of Financial Impact Clarifications <strong class="ph b">agreed</strong> in the
+                                selected activity date range/ Count of Financial Impact
+                                clarifications with at least one instance responded in the selected
+                                activity date range) x 100. E.g. 90%</td>
+                        </tr>
+                        <tr>
+                            <td class="entry colsep-1 rowsep-1" headers="cds_review_activity__table_l5h_lpd_hpb__entry__1 ">Quality Clarifications</td>
+                            <td class="entry colsep-1 rowsep-1" headers="cds_review_activity__table_l5h_lpd_hpb__entry__2 ">Quality Clarifications: Clarifications with standard or custom
+                                ‘Primary Type at Reconciliation’ defined as ‘Quality’ in the admin
+                                configuration.</td>
+                        </tr>
+                        <tr>
+                            <td class="entry colsep-1 rowsep-1" headers="cds_review_activity__table_l5h_lpd_hpb__entry__1 ">% Quality Clarification</td>
+                            <td class="entry colsep-1 rowsep-1" headers="cds_review_activity__table_l5h_lpd_hpb__entry__2 ">(Count of Quality Impact clarification with at-least one instance
+                                in the selected activity date range. / Count of clarifications with
+                                at-least one instance in the selected activity date range.) X100 ;
+                                E.g. 44%</td>
+                        </tr>
+                        <tr>
+                            <td class="entry colsep-1 rowsep-1" headers="cds_review_activity__table_l5h_lpd_hpb__entry__1 ">Quality Clarification Response Rate</td>
+                            <td class="entry colsep-1 rowsep-1" headers="cds_review_activity__table_l5h_lpd_hpb__entry__2 ">(Count of Quality Impact clarifications with at least one
+                                instance responded in the selected activity date range/ Count of
+                                Quality Impact clarifications with at-least one instance sent in the
+                                selected activity date range) x 100 ; E.g. 88%</td>
+                        </tr>
+                        <tr>
+                            <td class="entry colsep-1 rowsep-1" headers="cds_review_activity__table_l5h_lpd_hpb__entry__1 ">Quality Clarification Agreed Rate</td>
+                            <td class="entry colsep-1 rowsep-1" headers="cds_review_activity__table_l5h_lpd_hpb__entry__2 ">(Count of Quality Impact Clarifications <strong class="ph b">agreed</strong> in the
+                                selected activity date range / Count of Quality Impact
+                                clarifications with at least one instance responded in the selected
+                                activity date range) x 100 ; E.g. 100%</td>
+                        </tr>
+                        <tr>
+                            <td class="entry colsep-1 rowsep-1" headers="cds_review_activity__table_l5h_lpd_hpb__entry__1 ">SEV Clarifications</td>
+                            <td class="entry colsep-1 rowsep-1" headers="cds_review_activity__table_l5h_lpd_hpb__entry__2 ">SEV Clarifications: Clarifications with ‘Primary Type at
+                                Reconciliation’ as SEV.</td>
+                        </tr>
+                        <tr>
+                            <td class="entry colsep-1 rowsep-1" headers="cds_review_activity__table_l5h_lpd_hpb__entry__1 ">SEV Clarification Response Rate</td>
+                            <td class="entry colsep-1 rowsep-1" headers="cds_review_activity__table_l5h_lpd_hpb__entry__2 ">(Count of SEV Impact clarifications with at least one instance
+                                responded in the selected activity date range/ Count of SEV Impact
+                                clarifications with at-least one instance sent in the selected
+                                activity date range) x 100 ; E.g. 70%</td>
+                        </tr>
+                        <tr>
+                            <td class="entry colsep-1 rowsep-1" headers="cds_review_activity__table_l5h_lpd_hpb__entry__1 ">SEV Clarification Agreed Rate</td>
+                            <td class="entry colsep-1 rowsep-1" headers="cds_review_activity__table_l5h_lpd_hpb__entry__2 ">(Count of SEV Impact Clarifications <strong class="ph b">agreed</strong> in the selected
+                                activity date range / Count of SEV Impact clarifications with at
+                                least one instance responded in the selected activity date range) x
+                                100 ; E.g. 98%</td>
+                        </tr>
+                        <tr>
+                            <td class="entry colsep-1 rowsep-1" headers="cds_review_activity__table_l5h_lpd_hpb__entry__1 ">CDS/Coder Match Rate</td>
+                            <td class="entry colsep-1 rowsep-1" headers="cds_review_activity__table_l5h_lpd_hpb__entry__2 ">CDS/Coder Match Rate = (Count of Reconciled Encounters in which
+                                Final DRG matches Possible DRG (Or Working DRG if Possible DRG is
+                                Blank) / Count of Reconciled Encounters in the selected activity
+                                date range) X100. E.g. 90%</td>
+                        </tr>
+                    </tbody></table>
+        </div>
+    </div>
+</article></main></div>
+                        
+                        
+                        
+                    </div>
+                    
+                </div>
+            </div>
+        </div> 
+        <footer class="navbar navbar-default wh_footer">
+  <div class=" footer-container text-center ">
+    ©2021 Nuance Communications, Inc. All rights reserved.
+  </div>
+</footer>
+        
+        <div id="go2top">
+            <span class="glyphicon glyphicon-chevron-up"></span>
+        </div>
+        
+        <!-- The modal container for images -->
+        <div id="modal_img_large" class="modal">
+            <span class="close glyphicon glyphicon-remove"></span>
+            <!-- Modal Content (The Image) -->
+            <img class="modal-content" id="modal-img" />
+            <!-- Modal Caption (Image Text) -->
+            <div id="caption"></div>
+        </div>
+        
+        <script src="./oxygen-webhelp/lib/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+        
+    </body>
+</html>

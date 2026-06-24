@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="Discharges_By_Rank_at_Discharge">
+    <title>Discharges By Rank at Discharge</title>
+    <shortdesc></shortdesc>
+    <conbody>
+        <p><b>Overview</b>: The <i>Discharges By Rank At Discharge</i> report helps to identify the
+            count of discharged encounters for each Rank at Discharge.</p>
+        <p><b>Navigation</b>: On the Analytics home page left side panel, navigate to <menucascade>
+                <uicontrol>CDE Triage</uicontrol>
+                <uicontrol>CDE Triage Dashboard</uicontrol>
+                <uicontrol>Discharges By Rank at Discharge</uicontrol>
+            </menucascade>.</p>
+        <p>Discharges By Rank At Discharge displays the following:<ul id="ul_ssj_vls_t4b">
+                <li>Summary Card</li>
+                <li>Discharges By Rank at Discharge Chart</li>
+            </ul></p>
+        <p>For filters on all pages, refer <xref
+                href="CDE%20Triage%20Dashboard%20Overview.dita#CDE_Triage_Dashboard_Overview/table_r3d_xsz_t4b"
+            />.</p>
+        <p><b>Default Display</b>: </p>
+        <p><b>Discharges By Rank at Discharge</b></p>
+        <fig id="fig_bwk_pns_t4b">
+            <title>Sample Report</title>
+            <image href="Images/Discharges%20By%20Rank%20at%20Discharge.gif" id="image_t2b_qns_t4b"
+                width="800"/>
+        </fig>
+        <p>
+            <ul id="ul_wyk_cxs_t4b">
+                <li>X-axis indicates the Rank at Discharge, and Y-axis indicates the count of
+                    encounter in each financial class.</li>
+                <li>Encounters that do not have any Rank at Discharge assigned are displayed under
+                        <uicontrol>No Rank</uicontrol> category on the X-axis.</li>
+            </ul>
+        </p>
+        <p><b>Discharges By Rank at Discharge - Summary Card</b></p>
+        <fig id="fig_usr_wns_t4b">
+            <title>Summary Card</title>
+            <image href="Images/Discharges%20By%20Rank%20at%20Discharge%20Summary%20Card.gif"
+                id="image_i4h_xns_t4b" width="200"/>
+        </fig>
+        <p>
+            <ul id="ul_gq3_3zs_t4b">
+                <li>The <i>Summary Card</i> at the right side of the <i>Discharges By Rank At
+                        Discharge</i> report displays the total number of discharged encounters,
+                    total reviews, and the review rate between the selected date range.</li>
+                <li><b>Formula</b>: Review rate = (Total Reviews/ Total Discharges) × 100.</li>
+            </ul>
+        </p>
+    </conbody>
+</concept>

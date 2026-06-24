@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="creating_custom_reports">
+    <title>Creating Custom Reports</title>
+    <shortdesc></shortdesc>
+    <taskbody>
+        <context>
+            <p>To create a custom report, follow the below steps:</p>
+        </context>
+        <steps>
+            <step>
+                <cmd>From the <i>Predefined</i> section, open a report that you would like to
+                    customize.</cmd>
+            </step>
+            <step>
+                <cmd>Make the necessary changes in the report.</cmd>
+                <info>
+                    <note>
+                        <ul id="ul_o1j_ljd_5gb">
+                            <li>Your account must have editing privileges in order to create/edit
+                                custom reports.</li>
+                            <li>If modifying a specific visual, you must click somewhere in the
+                                visual to select it. Then navigate to the panes to make
+                                selections.</li>
+                            <li>If you’re not in a specific box or visual on the page, and you just
+                                start adding fields from the <uicontrol>Fields</uicontrol> pane, a
+                                new visual is created instead of modifying the existing visual.
+                            </li>
+                        </ul>
+                    </note>
+                </info>
+            </step>
+            <step>
+                <cmd>Click <uicontrol>File</uicontrol> and select <uicontrol>Save as</uicontrol>.
+                    This option is not available if you login as a CDS Manager.</cmd>
+                <info>
+                    <fig id="fig_mrb_42y_rgb">
+                        <title>Save a Copy of Report</title>
+                        <image href="../Images/Save_As.gif" id="image_kvy_1dz_t4b" width="500"/>
+                    </fig>
+                </info>
+                <info>The Report will be saved in the <uicontrol>User Defined </uicontrol>section on
+                    the main page.<fig id="fig_wv3_52y_rgb">
+                        <title>User Defined Screen</title>
+                        <image href="../Images/User%20Defined%20Screen.gif" id="image_ssq_2dz_t4b"
+                            width="500"/>
+                    </fig></info>
+                <info>
+                    <note>
+                        <ul id="ul_pjf_1fy_rgb">
+                            <li>You can also search the report using the search box.</li>
+                            <li>By default, the reports are sorted in ascending order (alphabetical
+                                order). Click on the reports header to sort the report in descending
+                                order.</li>
+                            <li>You can modify the custom created report and save it as a new report
+                                or overwrite on the same report.</li>
+                            <li>You can select the filters/criteria on a report and save it as a
+                                custom report to avoid selecting the filters/criteria again.</li>
+                        </ul>
+                    </note>
+                </info>
+            </step>
+        </steps>
+    </taskbody>
+</task>

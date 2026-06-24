@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="about_review_activity_detail">
+    <title>About CDS Activity Details</title>
+    <shortdesc/>
+    <conbody>
+        <p><i>CDS Activity Details Report</i> displays the CDS review activity details, how often a
+            CDS reviewed the encounter and TAT.</p>
+        <p>This reports answers the following business questions:</p>
+        <ol id="ol_dvb_nrx_ykb">
+            <li>How soon after admission the initial review was performed?</li>
+            <li>What is the average TAT of initial reviews?</li>
+            <li> Are there cases that are never getting reviewed? (untouched)</li>
+            <li>What is the detail around the reviews?</li>
+            <li>How many total reviews were performed?</li>
+            <li>Were the reviews were concurrent or retrospective?</li>
+        </ol>
+        <fig id="fig_ysy_j3c_xgb">
+            <title>CDS Activity Details</title>
+            <image href="../Image/CDS%20Productivity/about_cds_detail_activity.gif"
+                id="image_im5_zrx_ykb" align="center" placement="break" width="600"/>
+        </fig>
+        <p><uicontrol>Activity Date</uicontrol> and <uicontrol>Admit Date</uicontrol> can be used to
+            filter the data. Default value for <uicontrol>Activity Date</uicontrol> filter is set to
+            last one week from the current date.</p>
+        <p>The <i>CDS Activity Details Report</i> displays the following KPI cards:<ul
+                id="ul_vnq_z3c_mgb">
+                <li>Initial Reviews</li>
+                <li>Additional Reviews</li>
+                <li>Total Reviews</li>
+                <li>Avg. Initial Review TAT (Hours)</li>
+            </ul></p>
+    </conbody>
+</concept>

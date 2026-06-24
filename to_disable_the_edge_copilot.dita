@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="task_jv3_w3p_3bc">
+    <title>How to Disable Edge Copilot</title>
+    <shortdesc>You can disable Edge Copilot, which is enabled by default. Follow these
+        steps:</shortdesc>
+    <taskbody>
+        <steps>
+            <step>
+                <cmd>On the Edge browser, in the upper-right corner, click <b>Settings and more</b>
+                    <image href="Images/edge_ellipse.gif" id="image_ef3_hws_jbc"/>.</cmd>
+            </step>
+            <step>
+                <cmd>Click <b>Settings</b>.</cmd>
+            </step>
+            <step>
+                <cmd>On the left, under <b>Settings</b>, click <b>Languages</b>.</cmd>
+            </step>
+            <step>
+                <cmd>Under <b>Writing Assistance</b>, disable the <b>Use Compose (AI-writing) on the
+                        web</b> feature.</cmd>
+            </step>
+        </steps>
+        <result id="result_u2p_dcx_3bc">This will disable Copilot's AI-writing assistance on web
+            pages, helping to keep your sensitive information secure.</result>
+    </taskbody>
+</task>

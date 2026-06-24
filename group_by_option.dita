@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="topic_tgh_y3v_41c">
+    <title>Grouping Data for Week, Month, Quarter, Year</title>
+    <body>
+        <p>For a few results, you can group data by week, month, quarter, or a year. Data can be
+            grouped only when you select the "View By" option as <b>Admit Date</b> or <b>Discharge
+                Date</b>. When you select the "View By" option as <b>Admit Date</b> or <b>Discharge
+                Date</b>, the following filters automatically become available for selection:</p>
+        <p>
+            <ul id="ul_nyb_kvn_41c">
+                <li><b>Group By</b>: You can either select Week, Month, Quarter, or Year.</li>
+                <li><b>Week Start Day</b>: You can select a week start day. You can select week
+                    start day only for <b>Week</b>. For options other than <b>Week</b>, you must
+                    manually select <b>Not Applicable</b>. When you select <b>Week</b>, reports are
+                    displayed starting from the selected start day, or the start day is considered
+                    part of the first week.<note id="note_ljh_nmv_41c">These filters are not
+                        applicable when you switch to other 'View By' options, such as
+                            <b>Facility</b></note></li>
+            </ul>
+        </p>
+        <p>The below format is displayed for week, month, quarter, or year:</p>
+        <ul id="ul_d5j_gp3_p1c">
+            <li>Week: Week start day - Week end day (Example: 7/2/2023-7/8/2023)</li>
+            <li>Month: Month YYYY ( Example: Jan 2024, Feb 2024)</li>
+            <li>Quarter: Jan-Mar 2023, Apr-Jun 2023</li>
+            <li>Year: YYYY (Example: 2022, 2023)</li>
+        </ul>
+        <p>The following are a few effective ways to use the filters for best results:<ul
+                id="ul_xks_fwn_41c">
+                <li>When selecting a week, it is essential to choose a week start day. For instance,
+                    if you choose Monday, the reports display data from Monday to the following
+                    Sunday. Selecting a start day is mandatory; without it, data will not be
+                    displayed.</li>
+                <li>When opting for weekly progress within a month, the data will be displayed
+                    weekly starting from the selected day for the entire month.</li>
+            </ul></p>
+        <p>
+            <fig id="fig_jws_swq_j4b">
+                <title>Sample Report</title>
+                <image href="Images/group_by_data.gif" width="700" id="image_xjd_bnv_41c"/>
+            </fig>
+        </p>
+        <p>These filters apply to the following dashboards for the respective categories:</p>
+        <p><b>Executive Summary</b> category:<ul id="ul_gks_yf5_41c">
+                <li><xref href="executive_overview.dita"/></li>
+                <li><xref href="cdi_dashboard.dita"/></li>
+                <li><xref href="no_response_impact.dita"/></li>
+            </ul></p>
+        <p><b>Quality Impact</b> category:<ul id="ul_hks_yf5_41c">
+                <li><xref href="quality_impact_overview.dita"/></li>
+                <li><xref href="quality_impact_summary.dita"/></li>
+            </ul></p>
+        <p><b>Triage and CDS Assistant Usage</b> category:<ul id="ul_jks_yf5_41c">
+                <li><xref href="triage_overview.dita"/></li>
+                <li><xref href="triage_summary.dita"/></li>
+                <li><xref href="assistant_usage_overview.dita"/></li>
+                <li><xref href="ranked_encounters.dita"/></li>
+            </ul></p>
+    </body>
+</topic>

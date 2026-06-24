@@ -1,0 +1,1076 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="cds_monthly_productivity">
+    <title>CDS Monthly Productivity</title>
+    <shortdesc></shortdesc>
+    <conbody>
+        <p><b>Overview</b>: CDS Monthly Productivity dashboard enables the CDS Managers to view the
+            trend of various review and clarification metrics over time and analyze the performance
+            of the individual CDSs and the overall performance of the CDS Team. </p>
+        <p>You can view the individual and detailed performance of the CDSs to analyze their
+            activity. Under the <b>CDS</b> column, select a CDS, right-click, and select <menucascade>
+                <uicontrol>Drill through</uicontrol>
+                <uicontrol>CDS Performance</uicontrol>
+            </menucascade>, the system navigates to the <uicontrol>CDS Performance</uicontrol> tab.
+            This tab displays all the data for the selected CDS.<note>When the <uicontrol>CDS
+                    Performance</uicontrol> tab appears, from the title of the tab, click
+                    <b>CTRL</b> + <image href="Images/cds_performance_arrow.png"
+                    id="image_xps_knz_frb"/> to go back to the previous tab (from the tab you have
+                used the <uicontrol>Drill through</uicontrol>) command. In this case, it is <b>CDS
+                    Monthly Productivity</b>.</note></p>
+        <p><b>Navigation</b>: On the Analytics home page left side panel, navigate to <menucascade>
+                <uicontrol>CDE One</uicontrol>
+                <uicontrol>Staff Management</uicontrol>
+                <uicontrol>CDS Monthly Productivity</uicontrol>
+            </menucascade>. </p>
+        <p>CDS Monthly Productivity displays the following:<ul id="ul_lvj_kkb_l4b">
+                <li>CDS Monthly Productivity chart</li>
+            </ul></p>
+        <p>On the top panel, you can select desired values for the slicers (refer <xref
+                href="#cds_monthly_productivity/table_bgs_mw5_l4b" format="dita"/>) and the
+            corresponding data gets generated in the tabular chart.</p>
+        <p>For filters all pages, refer <xref href="#cds_monthly_productivity/table_xzd_hdw_l4b"
+                format="dita"/>.</p>
+        <p>For Footnotes, refer <xref href="#cds_monthly_productivity/table_jmr_n2d_t4b"
+                format="dita"/>.</p>
+        <p><b>Default Display</b>: By default, the dashboard displays the data for the inpatient
+            encounters discharged in the last nine calendar months. Click the ‘Reset’ button to
+            reset the discharge date and select the required date. Total column displays the
+            row-level grand totals for the selected period. For the percentage metrics, this column
+            displays the overall percentage for the selected period.</p>
+        <p><b>CDS Monthly Productivity</b></p>
+        <fig id="fig_iqr_2hb_l4b">
+            <title>Sample Report</title>
+            <image href="Images/CDS%20Monthly%20Productivity.gif" id="image_sht_fhb_l4b" width="800"
+            />
+        </fig>
+        <p>
+            <table frame="all" rowsep="1" colsep="1" id="table_bmh_2by_j4b">
+                <title>CDS Monthly Productivity Metrics</title>
+                <tgroup cols="5">
+                    <colspec colname="c1" colnum="1" colwidth="1*"/>
+                    <colspec colname="c2" colnum="2" colwidth="1.53*"/>
+                    <colspec colname="newCol4" colnum="3" colwidth="1.07*"/>
+                    <colspec colname="newCol3" colnum="4" colwidth="1.17*"/>
+                    <colspec colname="newCol5" colnum="5" colwidth="1.14*"/>
+                    <thead>
+                        <row>
+                            <entry>Metric</entry>
+                            <entry>Description</entry>
+                            <entry>Formula/Calculation</entry>
+                            <entry>Exclusion Criteria (if any)</entry>
+                            <entry>Tooltip</entry>
+                        </row>
+                    </thead>
+                    <tbody>
+                        <row>
+                            <entry>Initial Reviews</entry>
+                            <entry>This metric displays the count of encounters reviewed.</entry>
+                            <entry>Initial Reviews = The count of encounters with an initial review
+                                date/time.</entry>
+                            <entry>Encounters with "Review Not Needed" encounter status are excluded
+                                from this metric calculations.</entry>
+                            <entry morerows="38"/>
+                        </row>
+                        <row>
+                            <entry>Additional Reviews</entry>
+                            <entry>This metric displays the count of additional reviews performed
+                                for the reviewed encounters.</entry>
+                            <entry/>
+                            <entry>Encounters with "Review Not Needed" encounter status are excluded
+                                from this metric calculations.</entry>
+                        </row>
+                        <row>
+                            <entry>Encounters with Clarification</entry>
+                            <entry>This metric displays the count of reviewed encounters with at
+                                least one clarification with the status other than DELETED or
+                                RETRACTED.</entry>
+                            <entry>Encounters with Clarification = Count of reviewed encounters with
+                                at least one clarification with the status other than DELETED or
+                                RETRACTED.</entry>
+                            <entry>Encounters with "Review Not Needed" encounter status are excluded
+                                from this metric calculations.</entry>
+                        </row>
+                        <row>
+                            <entry>Encounter Clarification Rate</entry>
+                            <entry>This metric displays the percentage of reviewed encounters with
+                                at least one clarification with the status other than DELETED or
+                                RETRACTED for each CDS.</entry>
+                            <entry>
+                                <p>Encounter Clarification Rate= (The count of reviewed encounters
+                                    with at least one clarification with the status other than
+                                    DELETED or RETRACTED./ Count of Initial Reviews performed)
+                                    *100</p>
+                            </entry>
+                            <entry>Encounters with "Review Not Needed" encounter status are excluded
+                                from this metric calculations.</entry>
+                        </row>
+                        <row>
+                            <entry>Encounters with Financial Impact Clarifications</entry>
+                            <entry>
+                                <p>This metric displays the count of reviewed encounters with at
+                                    least one Financial Impact clarification with the status other
+                                    than DELETED or RETRACTED.</p>
+                                <p>Note: Clarification with a standard or custom ‘Primary Type at
+                                    Reconciliation’ defined as ‘Financial or BOTH’ in the admin
+                                    configuration is a Financial Impact Clarification.</p>
+                            </entry>
+                            <entry>Encounters with Financial Impact Clarifications = The count of
+                                reviewed encounters with at least one Financial Impact clarification
+                                with the status other than DELETED or RETRACTED.</entry>
+                            <entry>
+                                <p>Encounters with "Review Not Needed" encounter status are excluded
+                                    from this metric calculations.</p>
+                                <p>Clarifications with Status 'DELETED' or 'RETRACTED' are excluded
+                                    from the count.</p>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>Financial Impact Clarification Rate</entry>
+                            <entry>
+                                <p>This metric displays the percentage of reviewed encounters at
+                                    least one financial impact clarification with the status other
+                                    than DELETED or RETRACTED for each CDS.</p>
+                                <p>Note: Clarification with a standard or custom ‘Primary Type at
+                                    Reconciliation’ defined as ‘Financial or BOTH’ in the admin
+                                    configuration is a Financial Impact Clarification.</p>
+                            </entry>
+                            <entry>
+                                <p>Financial Impact Clarification Rate = (Count of reviewed
+                                    encounters with at least one Financial Impact clarification with
+                                    the status other than DELETED or RETRACTED / Count of encounters
+                                    with an initial review date) X 100</p>
+                            </entry>
+                            <entry>
+                                <p>Encounters with "Review Not Needed" encounter status are excluded
+                                    from this metric calculations.</p>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>Avg. Initial Review TAT (Hours)</entry>
+                            <entry>This metric displays the average number of hours between
+                                encounter Admit Date/time and the date/time the Working Review was
+                                first created.</entry>
+                            <entry>
+                                <p>(Initial Review TAT (hours) for an encounter = Initial Review
+                                    Date/Time- Admit Date/Time) hours</p>
+                                <p>Avg. Initial Review TAT(Hours) = Sum of Initial Review TAT(Hours)
+                                    of all the reviewed encounters / Encounters Reviewed (Initial
+                                    Reviews)</p>
+                            </entry>
+                            <entry>
+                                <p>Encounters with "Review Not Needed" encounter status are excluded
+                                    from this metric calculations.</p>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>CDS/Coder Match Rate</entry>
+                            <entry>
+                                <p>This metric displays the 'CDS/Coder Match Rate' for every
+                                    month.</p>
+                            </entry>
+                            <entry>
+                                <p>CDS/Coder Match Rate = (Count of Reconciled Encounters with Match
+                                    =Y / Count of Reconciled Encounters in the selected date range)
+                                    *100</p>
+                            </entry>
+                            <entry/>
+                        </row>
+                        <row>
+                            <entry>Clarifications Sent</entry>
+                            <entry>This metric displays the count of sent clarifications with the
+                                status other than DELETED or RETRACTED for the reviewed encounters.<p>
+                                    <note>Clarifications may or may not have a FINAL
+                                        response.</note>
+                                </p></entry>
+                            <entry>Clarifications Sent= Count of sent clarifications with the status
+                                other than DELETED or RETRACTED for the reviewed encounters.</entry>
+                            <entry>Clarifications for "Review Not Needed" encounter status are not
+                                considered for this metric calculation.</entry>
+                        </row>
+                        <row>
+                            <entry>Clarifications Responded</entry>
+                            <entry>
+                                <p>This metric displays the count of sent clarifications with Final
+                                    response other than Pending, Retracted, or No Response.</p>
+                            </entry>
+                            <entry/>
+                            <entry>Clarifications for "Review Not Needed" encounter status are not
+                                considered for this metric calculation.<p>"Deleted" and "Retracted"
+                                    Clarifications are not considered for this metric
+                                    calculation.</p><p>Clarifications that do not have a FINAL
+                                    response are not considered in this calculation.</p></entry>
+                        </row>
+                        <row>
+                            <entry>Provider Response Rate</entry>
+                            <entry>This metric displays the percentage of sent clarifications
+                                responded by the providers for each CDS.</entry>
+                            <entry>
+                                <p>Provider Response Rate= (The count of overall clarifications
+                                    responded by the Provider with Final Response other than
+                                    Pending,Retracted or No Response/ The count of overall
+                                    clarifications sent with status other than DELETED or RETRACTED
+                                    for the reviewed encounters) *100</p>
+                            </entry>
+                            <entry>Clarifications for "Review Not Needed" encounter status should
+                                not be considered for this metric calculation.<p>"Deleted" and
+                                    "Retracted" Clarifications are not considered for this metric
+                                    calculation.</p><p>Only Clarifications with FINAL response are
+                                    considered.</p></entry>
+                        </row>
+                        <row>
+                            <entry>Clarifications Agreed</entry>
+                            <entry>This metric displays the count of sent clarifications with Final
+                                response as Agreed. </entry>
+                            <entry/>
+                            <entry>
+                                <p> Clarifications for "Review Not Needed" encounter status should
+                                    not be considered for this metric calculation.</p>
+                                <p>"Deleted" and "Retracted" Clarifications are not considered for
+                                    this metric calculation.</p>
+                                <p>Clarifications that do not have a FINAL response are not
+                                    considered in this calculation.</p>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>Provider Agreed Rate</entry>
+                            <entry>This metric displays the percentage of responded clarifications
+                                agreed by the providers for each CDS.</entry>
+                            <entry>
+                                <p>Provider Agreed Rate= (The count of overall clarifications agreed
+                                    by the Provider with Final Response as Agreed/ The count of
+                                    overall clarifications responded by the Provider with Final
+                                    Response other than Pending, Retracted or No Response) *100</p>
+                            </entry>
+                            <entry>
+                                <p> Clarifications for "Review Not Needed" encounter status should
+                                    not be considered for this metric calculation.</p>
+                                <p>"Deleted" and "Retracted" Clarifications are not considered for
+                                    this metric calculation.</p>
+                                <p>Only Clarifications with FINAL response are considered</p>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>Provider Alternative Specificity Diagnosis Rate</entry>
+                            <entry>
+                                <p>This metric displays 'Overall Clarification Alternative Diagnosis
+                                    Rate' for each month.</p>
+                                <p>Out of total responded clarifications, the percentage of
+                                    clarification with Final response as "Alternative
+                                    Diagnosis".</p>
+                            </entry>
+                            <entry>
+                                <p>Overall Clarifications Alternative Diagnosis Rate = ((Overall
+                                    Clarifications Alternative Diagnosis/ Overall Clarifications
+                                    Responded) x 100).</p>
+                            </entry>
+                            <entry>Clarifications for "Review Not Needed" encounter status should
+                                not be considered for this metric calculation. Clarifications with
+                                Status 'DELETED' or 'RETRACTED' are excluded from the count.</entry>
+                        </row>
+                        <row>
+                            <entry>Provider Other Explanation Rate</entry>
+                            <entry>This metric displays 'Overall Clarification Other Explanation
+                                Rate' for each month.<p>Out of total responded clarifications, the
+                                    percentage of clarification with Final response as "Other
+                                    Explanation".</p></entry>
+                            <entry>Overall Clarifications Other Explanation Rate = ((Overall
+                                Clarifications Other Explanation/ Overall Clarifications Responded)
+                                x 100).</entry>
+                            <entry>Clarifications for "Review Not Needed" encounter status should
+                                not be considered for this metric calculation. Clarifications with
+                                Status 'DELETED' or 'RETRACTED' are excluded from the count.</entry>
+                        </row>
+                        <row>
+                            <entry>Provider Agreed Rate (Agreed &amp; Alt DX)</entry>
+                            <entry>This metric displays 'Overall Agreed Rate (Agreed , Alternative
+                                Specificity Diagnosis) for each month. Out of total responded
+                                clarifications, the percentage of clarifications agreed with Final
+                                response as Agreed, Alternative Diagnoses.</entry>
+                            <entry>Overall Agreed Rate = ((Overall Clarifications Agreed with Final
+                                response as Agreed, Alternative Diagnoses/ Overall Clarifications
+                                Responded) x 100).</entry>
+                            <entry>Clarifications for "Review Not Needed" encounter status should
+                                not be considered for this metric calculation. "Deleted" and
+                                "Retracted" Clarifications are not considered for this metric
+                                calculation.</entry>
+                        </row>
+                        <row>
+                            <entry>Provider Agreed Rate (Agreed &amp; Alt DX)</entry>
+                            <entry>This metric displays 'Overall Agreed Rate (Agreed , Alternative
+                                Specificity Diagnosis, Other Explanation)' for each month. Out of
+                                total responded clarifications, the percentage of clarifications
+                                agreed with Final response as Agreed, Other Explanation, Alternative
+                                Diagnoses.</entry>
+                            <entry>Overall Agreed Rate = ((Overall Clarifications Agreed with Final
+                                response as Agreed, Other Explanation, Alternative Diagnoses/
+                                Overall Clarifications Responded) x 100).</entry>
+                            <entry>Clarifications for "Review Not Needed" encounter status should
+                                not be considered for this metric calculation."Deleted" and
+                                "Retracted" Clarifications are not considered for this metric
+                                calculation.</entry>
+                        </row>
+                        <row>
+                            <entry>Avg. Response TAT (Hours)</entry>
+                            <entry>
+                                <p>This metric displays the Avg. Response TAT (Hours) for each
+                                    month.</p>
+                            </entry>
+                            <entry>
+                                <p>Avg. Response TAT (Hours) = Sum of Response TAT (Hours) of all
+                                    the instances with Response other than Pending, Retracted or No
+                                    Response/ Total count of instances Responded (with Response
+                                    other than Pending, Retracted or No Response) in hours.</p>
+                            </entry>
+                            <entry>
+                                <p> Clarification Instances for "Review Not Needed" encounter status
+                                    are not considered for this metric calculation. </p>
+                                <p>Instances for Clarifications with Deleted and Retracted status
+                                    are not considered for this metric calculation. </p>
+                                <p>Instance with Response as Pending, Retracted or No response are
+                                    not considered in this metric calculation.</p>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>Financial Impact Clarifications Sent</entry>
+                            <entry>
+                                <p>This metric displays the count of Financial Impact clarifications
+                                    with the status other than DELETED or RETRACTED sent for the
+                                    reviewed encounters.</p>
+                                <p>Note: Clarification with a standard or custom ‘Primary Type at
+                                    Reconciliation’ defined as ‘Financial’ in the admin
+                                    configuration is a Financial Impact Clarification.</p>
+                            </entry>
+                            <entry/>
+                            <entry>
+                                <p>Clarifications with Status 'DELETED' or 'RETRACTED' are excluded
+                                    from the count.</p>
+                                <p>Clarifications for "Review Not Needed" encounter status should
+                                    not be considered for this metric calculation.</p>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>Financial Impact Clarifications Responded</entry>
+                            <entry>
+                                <p>This metric displays the count of sent Financial Impact
+                                    clarifications with Final response other than Pending,
+                                    Retracted, or No Response.</p>
+                                <p>Note: Clarification with a standard or custom ‘Primary Type at
+                                    Reconciliation’ defined as ‘Financial’ in the admin
+                                    configuration is a Financial Impact Clarification.</p>
+                            </entry>
+                            <entry/>
+                            <entry>
+                                <p>Clarifications with Status 'DELETED' or 'RETRACTED' are excluded
+                                    from the count.</p>
+                                <p>Clarifications for "Review Not Needed" encounter status should
+                                    not be considered for this metric calculation.</p>
+                                <p>Clarifications that do not have a FINAL response are not
+                                    considered in this calculation.</p>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>Financial Impact Clarification Response Rate</entry>
+                            <entry>
+                                <p>This metric displays out of total Financial Impact Clarifications
+                                    Sent, the percentage of Financial Impact Clarifications
+                                    Responded.</p>
+                                <p>Note: Clarification with a standard or custom ‘Primary Type at
+                                    Reconciliation’ defined as ‘Financial’ in the admin
+                                    configuration is a Financial Impact Clarification.</p>
+                            </entry>
+                            <entry>
+                                <p>Financial Impact Clarification Response Rate = ((Financial Impact
+                                    Clarification Responded/ Financial Impact Clarifications Sent) x
+                                    100)</p>
+                            </entry>
+                            <entry>
+                                <p>Clarifications with Status 'DELETED' or 'RETRACTED' are excluded
+                                    from the count.</p>
+                                <p>Clarifications for "Review Not Needed" encounter status should
+                                    not be considered for this metric calculation</p>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>Financial Impact Clarifications Agreed</entry>
+                            <entry>
+                                <p>This metric displays the count of sent Financial Impact
+                                    clarifications with Final response as Agreed.</p>
+                                <p>Note: Clarification with a standard or custom ‘Primary Type at
+                                    Reconciliation’ defined as ‘Financial’ in the admin
+                                    configuration is a Financial Impact Clarification.</p>
+                            </entry>
+                            <entry>Financial Impact Clarifications Agreed = Count of sent Financial
+                                Impact clarifications with Final response as Agreed</entry>
+                            <entry>
+                                <p>Clarifications with Status 'DELETED' or 'RETRACTED' are excluded
+                                    from the count.</p>
+                                <p>Clarifications for "Review Not Needed" encounter status should
+                                    not be considered for this metric calculation.</p>
+                                <p>Clarifications that do not have a FINAL response are not
+                                    considered in this calculation.</p>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>Financial Impact Clarifications Agreed Rate</entry>
+                            <entry>
+                                <p>This metric displays out of total Financial Impact Clarifications
+                                    Responded, the percentage of Financial Impact Clarifications
+                                    Agreed.</p>
+                                <p>Note: Clarification with a standard or custom ‘Primary Type at
+                                    Reconciliation’ defined as ‘Financial’ in the admin
+                                    configuration is a Financial Impact Clarification.</p>
+                            </entry>
+                            <entry>
+                                <p>Financial Impact Clarification Agreed Rate = ((Financial Impact
+                                    Clarification Agreed/ Financial Impact Clarification Responded)
+                                    x 100)</p>
+                            </entry>
+                            <entry>
+                                <p>Clarifications with Status 'DELETED' or 'RETRACTED' are excluded
+                                    from the count.</p>
+                                <p>Clarifications for "Review Not Needed" encounter status should
+                                    not be considered for this metric calculation.</p>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>Quality Clarifications Sent</entry>
+                            <entry>
+                                <p>This metric displays the count of Quality Impact clarifications
+                                    with the status other than DELETED or RETRACTED sent for the
+                                    reviewed encounters.</p>
+                                <p>Note: Clarification with a standard or custom ‘Primary Type at
+                                    Reconciliation’ defined as ‘Quality’ in the admin configuration
+                                    is a Quality Impact Clarification.</p>
+                            </entry>
+                            <entry/>
+                            <entry>
+                                <p>Clarifications with Status 'DELETED' or 'RETRACTED' are excluded
+                                    from the count.</p>
+                                <p>Clarifications for "Review Not Needed" encounter status should
+                                    not be considered for this metric calculation.</p>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>Quality Clarifications Responded</entry>
+                            <entry>
+                                <p>This metric displays the count of sent Quality Impact
+                                    clarifications with FINAL response other than Pending,
+                                    Retracted, or No Response.</p>
+                                <p>Note: Clarification with a standard or custom ‘Primary Type at
+                                    Reconciliation’ defined as ‘Quality’ in the admin configuration
+                                    is a Quality Impact Clarification.</p>
+                            </entry>
+                            <entry/>
+                            <entry>
+                                <p>Clarifications with Status 'DELETED' or 'RETRACTED' are excluded
+                                    from the count.</p>
+                                <p>Clarifications for "Review Not Needed" encounter status should
+                                    not be considered for this metric calculation.</p>
+                                <p>Clarifications that do not have a FINAL response are not
+                                    considered in this calculation.</p>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>Quality Clarifications Response Rate</entry>
+                            <entry>
+                                <p>This metric displays out of total Quality Impact Clarifications
+                                    Sent, the % of Quality Impact Clarifications Responded.</p>
+                                <p>Note: Clarification with a standard or custom ‘Primary Type at
+                                    Reconciliation’ defined as ‘Quality in the admin configuration
+                                    is a Quality Impact Clarification.</p>
+                            </entry>
+                            <entry>
+                                <p>Quality Impact Clarification Response Rate = ((Quality Impact
+                                    Clarification Responded/ Quality Impact Clarification Sent) x
+                                    100)</p>
+                            </entry>
+                            <entry>
+                                <p>Clarifications with Status 'DELETED' or 'RETRACTED' are excluded
+                                    from the count.</p>
+                                <p>Clarifications for "Review Not Needed" encounter status should
+                                    not be considered for this metric calculation.</p>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>Quality Clarifications Agreed</entry>
+                            <entry>
+                                <p>This metric displays the count of sent Quality Impact
+                                    clarifications with FINAL response as Agreed. </p>
+                                <p>Note: Clarification with a standard or custom ‘Primary Type at
+                                    Reconciliation’ defined as ‘Quality’ in the admin configuration
+                                    is a Quality Impact Clarification.</p>
+                            </entry>
+                            <entry>Quality Impact Clarifications Agreed = Count of sent Quality
+                                Impact clarifications with Final response as Agreed</entry>
+                            <entry>
+                                <p>Clarifications with Status 'DELETED' or 'RETRACTED' are excluded
+                                    from the count.</p>
+                                <p>Clarifications for "Review Not Needed" encounter status should
+                                    not be considered for this metric calculation.</p>
+                                <p>Clarifications that do not have a FINAL response are not
+                                    considered in this calculation.</p>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>% Both Impact Clarification</entry>
+                            <entry>This metric displays '% Both Impact Clarification for each month.
+                                Out of total clarifications sent, the percentage of clarifications
+                                with Primary Type at Reconciliation configured as BOTH (financial
+                                and quality) in the Admin configuration.<note>Clarification with a
+                                    standard or custom ‘Primary Type at Reconciliation’ defined as
+                                    ‘Financial and Quality’ in the admin configuration is considered
+                                    as BOTH.</note></entry>
+                            <entry>% Both Impact Clarification = (Count of clarifications with
+                                Primary Type at Reconciliation configured as BOTH (financial and
+                                quality) in the Admin configuration./ Total Clarifications Sent) x
+                                100</entry>
+                            <entry>Clarifications with Status 'DELETED' or 'RETRACTED' are excluded
+                                from the count.Clarifications for "Review Not Needed" encounter
+                                status should not be considered for this metric calculation.</entry>
+                        </row>
+                        <row>
+                            <entry>Both Impact Clarifications Sent</entry>
+                            <entry>
+                                <p>This metric displays 'Both Impact Clarifications Sent' for each
+                                    month.</p>
+                                <p>The count of clarifications with Primary Type at Reconciliation
+                                    configured as BOTH (financial and quality) in the Admin
+                                    configuration.</p>
+                                <note>Clarification with a standard or custom ‘Primary Type at
+                                    Reconciliation’ defined as ‘Financial and Quality’ in the admin
+                                    configuration is considered as BOTH.</note>
+                            </entry>
+                            <entry/>
+                            <entry>Clarifications with Status 'DELETED' or 'RETRACTED' are excluded
+                                from the count.Clarifications for "Review Not Needed" encounter
+                                status should not be considered for this metric calculation.</entry>
+                        </row>
+                        <row>
+                            <entry>Both Impact Clarifications Responded</entry>
+                            <entry>
+                                <p>This metric displays 'Both Impact Clarifications Responded' for
+                                    each month.</p>
+                                <p>The count of sent clarifications with Primary Type at
+                                    Reconciliation configured as BOTH (financial and quality) in the
+                                    Admin configuration, for which has FINAL response other than
+                                    Pending, Retracted, or No Response.</p>
+                                <note>Clarification with a standard or custom ‘Primary Type at
+                                    Reconciliation’ defined as ‘Financial and Quality’ in the admin
+                                    configuration is considered as BOTH.</note>
+                            </entry>
+                            <entry/>
+                            <entry>Clarifications with Status 'DELETED' or 'RETRACTED' are excluded
+                                from the count.Clarifications for "Review Not Needed" encounter
+                                status should not be considered for this metric
+                                calculation.Clarifications that do not have a FINAL response are not
+                                considered in this calculation.</entry>
+                        </row>
+                        <row>
+                            <entry>Both Impact Clarification Response Rate</entry>
+                            <entry>
+                                <p>This metric displays 'Both Impact Clarification Response Rate'
+                                    for each month.</p>
+                                <p>Out of total Clarifications Sent, the percentage of
+                                    clarifications with Primary Type at Reconciliation configured as
+                                    BOTH (financial and quality) in the Admin configuration
+                                        responded.<note>Clarification with a standard or custom
+                                        ‘Primary Type at Reconciliation’ defined as ‘Financial and
+                                        Quality’ in the admin configuration is considered as
+                                        BOTH.</note></p>
+                            </entry>
+                            <entry>Both Impact Clarification Response Rate = ((clarifications with
+                                Primary Type at Reconciliation configured as BOTH (financial and
+                                quality) in the Admin configuration responded./ Both Impact
+                                Clarifications Sent) x 100)Rounded to 0 decimal places. E.g. 89% or
+                                100%</entry>
+                            <entry>Clarifications with Status 'DELETED' or 'RETRACTED' are excluded
+                                from the count.Clarifications for "Review Not Needed" encounter
+                                status should not be considered for this metric calculation.</entry>
+                        </row>
+                        <row>
+                            <entry>Both Impact Clarifications Agreed</entry>
+                            <entry>
+                                <p>This metric displays 'Both Impact Clarifications Agreed' for each
+                                    month.</p>
+                                <p>The count of clarifications with Primary Type at Reconciliation
+                                    configured as BOTH (financial and quality) in the Admin
+                                    configuration agreed.</p>
+                                <p>This field displays the count of sent BOTH Impact clarifications
+                                    with Final response as Agreed.<note>Clarification with a
+                                        standard or custom ‘Primary Type at Reconciliation’ defined
+                                        as ‘Financial and Quality’ in the admin configuration is
+                                        considered as BOTH.</note></p>
+                            </entry>
+                            <entry/>
+                            <entry>Clarifications with Status 'DELETED' or 'RETRACTED' are excluded
+                                from the count.Clarifications for "Review Not Needed" encounter
+                                status should not be considered for this metric
+                                calculation.Clarifications that do not have a FINAL response are not
+                                considered in this calculation.</entry>
+                        </row>
+                        <row>
+                            <entry>Both Impact Clarification Agreed Rate</entry>
+                            <entry>
+                                <p>This metric displays 'Both Impact Clarification Agreed Rate' for
+                                    each month.</p>
+                                <p>Out of total clarifications with BOTH (financial and quality)
+                                    Impact Agreed, the percentage of clarifications with BOTH
+                                    (financial and quality) Impact Responded.<note>Clarification
+                                        with a standard or custom ‘Primary Type at Reconciliation’
+                                        defined as ‘Financial and Quality’ in the admin
+                                        configuration is considered as BOTH.</note></p>
+                            </entry>
+                            <entry>
+                                <p>BOTH Impact Clarification Agreed Rate = ((BOTH Impact
+                                    Clarification Agreed/BOTH Impact Clarification Responded) x
+                                    100)</p>
+                                <p>Rounded to 0 decimal places. E.g. 89% or 100%</p>
+                            </entry>
+                            <entry>Clarifications with Status 'DELETED' or 'RETRACTED' are excluded
+                                from the count.Clarifications for "Review Not Needed" encounter
+                                status should not be considered for this metric calculation.</entry>
+                        </row>
+                        <row>
+                            <entry>Quality Clarifications Agreed Rate</entry>
+                            <entry>
+                                <p>This metric displays out of total Quality Impact Clarifications
+                                    Responded, the % of Quality Impact Clarifications Agreed.</p>
+                                <p>Note: Clarification with a standard or custom ‘Primary Type at
+                                    Reconciliation’ defined as ‘Quality’ in the admin configuration
+                                    is a Quality Impact Clarification.</p>
+                            </entry>
+                            <entry>
+                                <p>Quality Impact Clarification Agreed Rate = ((Quality Impact
+                                    Clarification Agreed/ Quality Impact Clarification Responded) x
+                                    100)</p>
+                            </entry>
+                            <entry>
+                                <p>Clarifications for "Review Not Needed" encounter status should
+                                    not be considered for this metric calculation.</p>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>SEV Clarifications Sent</entry>
+                            <entry>
+                                <p>This metric displays the count of SEV Impact clarifications with
+                                    the status other than DELETED or RETRACTED sent for the reviewed
+                                    encounters.</p>
+                                <p>Note: Clarification with a standard or custom ‘Primary Type at
+                                    Reconciliation’ defined as ‘SEV’ is a SEV Impact
+                                    Clarification.</p>
+                            </entry>
+                            <entry/>
+                            <entry>
+                                <p>Clarifications with Status 'DELETED' or 'RETRACTED' are excluded
+                                    from the count.</p>
+                                <p>Clarifications for "Review Not Needed" encounter status should
+                                    not be considered for this metric calculation.</p>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>SEV Clarifications Responded</entry>
+                            <entry>
+                                <p>This metric displays the count of sent SEV Impact clarifications
+                                    with FINAL response other than Pending, Retracted, or No
+                                    Response.</p>
+                                <p>Note: Clarification with a standard or custom ‘Primary Type at
+                                    Reconciliation’ defined as ‘SEV’ is a SEV Impact
+                                    Clarification</p>
+                            </entry>
+                            <entry/>
+                            <entry>
+                                <p>Clarifications with Status 'DELETED' or 'RETRACTED' are excluded
+                                    from the count.</p>
+                                <p>Clarifications for "Review Not Needed" encounter status should
+                                    not be considered for this metric calculation.</p>
+                                <p>Clarifications that do not have a FINAL response are not
+                                    considered in this calculation.</p>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>SEV Clarifications Response Rate</entry>
+                            <entry>
+                                <p>This metric displays out of total total SEV Impact Clarifications
+                                    Sent, the percentage of SEV Impact Clarifications Responded</p>
+                                <p>Note: Clarification with a standard or custom ‘Primary Type at
+                                    Reconciliation’ defined as ‘SEV’ is a SEV Impact
+                                    Clarification.</p>
+                            </entry>
+                            <entry>
+                                <p>SEV Impact Clarification Response Rate = ((SEV Impact
+                                    Clarification Responded/ SEV Impact Clarification Sent) x
+                                    100)</p>
+                            </entry>
+                            <entry>
+                                <p>Clarifications with Status 'DELETED' or 'RETRACTED' are excluded
+                                    from the count.</p>
+                                <p>Clarifications for "Review Not Needed" encounter status should
+                                    not be considered for this metric calculation.</p>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>SEV Clarifications Agreed</entry>
+                            <entry>
+                                <p>This metric displays the count of sent SEV Impact clarifications
+                                    with FINAL response as Agreed.</p>
+                                <p>Note: Clarification with a standard or custom ‘Primary Type at
+                                    Reconciliation’ defined as ‘SEV’ is a SEV Impact
+                                    Clarification.</p>
+                            </entry>
+                            <entry>
+                                <p>SEV Impact Clarifications Agreed = Count of sent Quality Impact
+                                    clarifications with Final response as Agreed.</p>
+                            </entry>
+                            <entry>
+                                <p>Clarifications with Status 'DELETED' or 'RETRACTED' are excluded
+                                    from the count.</p>
+                                <p>Clarifications for "Review Not Needed" encounter status should
+                                    not be considered for this metric calculation.</p>
+                                <p>Clarifications that do not have a FINAL response are not
+                                    considered in this calculation.</p>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>SEV Clarifications Agreed Rate</entry>
+                            <entry>
+                                <p>This metric displays out of total SEV Impact Clarifications
+                                    Responded, the percentage of SEV Impact Clarifications
+                                    Agreed.</p>
+                                <p>Note: Clarification with a standard or custom ‘Primary Type at
+                                    Reconciliation’ defined as ‘SEV’ is a SEV Impact
+                                    Clarification.</p>
+                            </entry>
+                            <entry>
+                                <p>SEV Impact Clarification Agreed Rate = ((SEV Impact Clarification
+                                    Agreed/ SEV Impact Clarification Responded) x 100)</p>
+                            </entry>
+                            <entry>
+                                <p>Clarifications with Status 'DELETED' or 'RETRACTED' are excluded
+                                    from the count.</p>
+                                <p>Clarifications for "Review Not Needed" encounter status should
+                                    not be considered for this metric calculation.</p>
+                            </entry>
+                        </row>
+                    </tbody>
+                </tgroup>
+            </table>
+        </p>
+        <table frame="all" rowsep="1" colsep="1" id="table_bgs_mw5_l4b">
+            <title>Report Slicers </title>
+            <tgroup cols="2">
+                <colspec colname="c1" colnum="1" colwidth="1*"/>
+                <colspec colname="c2" colnum="2" colwidth="1*"/>
+                <thead>
+                    <row>
+                        <entry>Slicer</entry>
+                        <entry>Description</entry>
+                    </row>
+                </thead>
+                <tbody>
+                    <row>
+                        <entry>Discharge Date</entry>
+                        <entry>
+                            <ul id="ul_xkg_vkz_m4b">
+                                <li>Displays the discharge date range here. You can select required
+                                    dates from the date lookup.</li>
+                                <li>
+                                    <p><b>Example</b>: 7/1/2020 - 7/31/2020</p>
+                                </li>
+                            </ul>
+                        </entry>
+                    </row>
+                    <row>
+                        <entry>Reset</entry>
+                        <entry>
+                            <ul id="ul_jw1_22z_m4b">
+                                <li>With the Reset button, you can reset the admit date range.</li>
+                                <li><b>Tooltip</b>: Use "Ctrl + Click" to reset the Discharge
+                                    Date.</li>
+                            </ul>
+                        </entry>
+                    </row>
+                    <row>
+                        <entry>Facility</entry>
+                        <entry>
+                            <ul id="ul_qg1_scw_l4b">
+                                <li>Displays a list of active and inactive facilities that you have
+                                    access to. The list is sorted alphabetically. </li>
+                                <li>You can select multiple facilities</li>
+                                <li>You can search the facility by Facility ID or Description.</li>
+                                <li><b>Format</b>: Facility Description (Facility ID)</li>
+                                <li><b>Default</b>: ALL</li>
+                            </ul>
+                        </entry>
+                    </row>
+                    <row>
+                        <entry>Payer</entry>
+                        <entry>
+                            <ul id="ul_nsx_spw_s4b">
+                                <li>Displays a list of active and inactive payers associated with
+                                    the facilities that you have access to. The list is sorted
+                                    alphabetically. </li>
+                                <li>You can select multiple payers</li>
+                                <li>"Unassigned Payer" displays data for the encounters that do not
+                                    have a payer assigned.</li>
+                                <li>You can search the Payer by Payer ID or Description.</li>
+                                <li><b>Format</b>: Payer Description (Payer ID)</li>
+                                <li><b>Default</b>: ALL</li>
+                            </ul>
+                        </entry>
+                    </row>
+                    <row>
+                        <entry>CDS</entry>
+                        <entry>
+                            <ul id="ul_gqf_j5f_p4b">
+                                <li>Displays a list of active and inactive CDSs associated with the
+                                    facilities you have access to.</li>
+                                <li>The CDS Filter in all the reports displays the users with
+                                    at-least CDS or CDS Manager role assigned.</li>
+                                <li>"Unassigned CDS" displays data for the encounters that do not
+                                    have a CDS assigned.</li>
+                                <li><b>Format</b>: Last Name, First Name MI (CDS ID)</li>
+                                <li><b>Default</b>: ALL</li>
+                            </ul>
+                        </entry>
+                    </row>
+                </tbody>
+            </tgroup>
+        </table>
+        <p>
+            <table frame="all" rowsep="1" colsep="1" id="table_xzd_hdw_l4b">
+                <title>Filters on all Pages</title>
+                <tgroup cols="2">
+                    <colspec colname="c1" colnum="1" colwidth="1*"/>
+                    <colspec colname="c2" colnum="2" colwidth="1*"/>
+                    <thead>
+                        <row>
+                            <entry>Filter</entry>
+                            <entry>Description</entry>
+                        </row>
+                    </thead>
+                    <tbody>
+                        <row>
+                            <entry>Patient Type</entry>
+                            <entry>
+                                <ul id="ul_f4n_gny_m4b">
+                                    <li>Displays the available patient types. <p><b>Example</b>:
+                                            Inpatient, Outpatient.</p></li>
+                                    <li><b>Default</b>: Inpatient</li>
+                                </ul>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>Unit</entry>
+                            <entry>
+                                <ul id="ul_n4k_jny_m4b">
+                                    <li>Displays the list of available units.</li>
+                                    <li>You can select multiple Units.</li>
+                                    <li>You can search the Unit.</li>
+                                    <li><b>Default</b>: ALL</li>
+                                </ul>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>Weekend Only Stay</entry>
+                            <entry>
+                                <ul id="ul_cfs_yhl_hpb">
+                                    <li>Displays Weekend Only Stay values (Y/N).</li>
+                                    <li>You can search the Weekend Only Stay.</li>
+                                    <li>Default: ALL</li>
+                                </ul>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>Admit Service</entry>
+                            <entry>
+                                <ul id="ul_zm1_lny_m4b">
+                                    <li>Displays the list of available Admit Services.</li>
+                                    <li>You can select multiple Admit Services.</li>
+                                    <li>You can search the Admit Service.</li>
+                                    <li><b>Default</b>: ALL</li>
+                                </ul>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>Visit Type</entry>
+                            <entry>
+                                <ul id="ul_h3h_zq5_54b">
+                                    <li>Displays the list of available Visit Types.</li>
+                                    <li>You can select multiple visit types.</li>
+                                    <li>You can search the Visit Type.</li>
+                                    <li>Default: ALL</li>
+                                </ul>
+                            </entry>
+                        </row>
+                    </tbody>
+                </tgroup>
+            </table>
+        </p>
+        <p>
+            <table frame="all" rowsep="1" colsep="1" id="table_jmr_n2d_t4b">
+                <title>Footnotes</title>
+                <tgroup cols="2">
+                    <colspec colname="c1" colnum="1" colwidth="1*"/>
+                    <colspec colname="c2" colnum="2" colwidth="1*"/>
+                    <thead>
+                        <row>
+                            <entry>Formulas</entry>
+                            <entry>Text on hover</entry>
+                        </row>
+                    </thead>
+                    <tbody>
+                        <row>
+                            <entry>Encounter Clarification Rate</entry>
+                            <entry>Encounter Clarification Rate= (The count of reviewed encounters
+                                with at least one clarification with the status other than REMOVED
+                                or RETRACTED/ Encounters Reviewed (Initial Reviews)) x100. E.g.
+                                33%</entry>
+                        </row>
+                        <row>
+                            <entry>Provider Response Rate</entry>
+                            <entry>Provider Response Rate =(Count of clarifications with a Final
+                                response as Agreed, Not Agreed, Other Explanation, Alternative
+                                Specificity Diagnosis, Discuss, Sent to another Provider or Unable
+                                to Determine/Count of Clarifications Sent) x100. E.g. 90%</entry>
+                        </row>
+                        <row>
+                            <entry>Provider Agreed Rate</entry>
+                            <entry>Provider Agreed Rate =(Count of clarifications with a Final
+                                response as Agreed/Count of Clarifications Responded) x100. E.g.
+                                90%</entry>
+                        </row>
+                        <row>
+                            <entry>Provider Alternative Specificity Diagnosis Rate</entry>
+                            <entry>Provider Alternative Specificity Diagnosis Rate =(Count of
+                                clarifications with a Final response as Alternative Specificity
+                                Diagnosis/Count of Clarifications Responded) x100. E.g. 76%.</entry>
+                        </row>
+                        <row>
+                            <entry>Provider Other Explanation Rate</entry>
+                            <entry>Provider Other Explanation Rate = (Count of clarifications with a
+                                Final response as Other Explanation/Count of Clarifications
+                                Responded) x100. E.g. 42%.</entry>
+                        </row>
+                        <row>
+                            <entry>Provider Agreed Rate (Agreed &amp; Alt DX)</entry>
+                            <entry>Provider Agreed Rate (Agreed &amp; Alt DX) = (Count of
+                                Clarifications Agreed with Final response as Agreed, Alternative
+                                Diagnoses/ Overall Clarifications Responded) x 100). E.g.
+                                65%.</entry>
+                        </row>
+                        <row>
+                            <entry>Provider Agreed Rate (Agreed, Alt DX, Other Exp)</entry>
+                            <entry>Provider Agreed Rate (Agreed, Alt DX, Other Exp) = (Count of
+                                Clarifications Agreed with Final response as Agreed, Other
+                                Explanation, Alternative Diagnoses/ Overall Clarifications
+                                Responded) x 100). E.g. 96%.</entry>
+                        </row>
+                        <row>
+                            <entry>Financial Impact Clarifications</entry>
+                            <entry>Financial Impact Clarifications: Clarifications with standard or
+                                custom ‘Primary Type at Reconciliation’ defined as ‘Financial’ in
+                                the admin configuration.</entry>
+                        </row>
+                        <row>
+                            <entry>Financial Impact Clarification Rate</entry>
+                            <entry>Financial Impact Clarification Rate = (The count of reviewed
+                                encounters with at least one Financial Impact Clarification with the
+                                status other than REMOVED or RETRACTED/Encounters Reviewed (Initial
+                                Reviews) ) x 100). E.g. 30%</entry>
+                        </row>
+                        <row>
+                            <entry>Financial Impact Clarification Response Rate</entry>
+                            <entry>Financial Impact Clarification Response Rate = (Count of
+                                Financial Impact clarifications with Final response other than
+                                Pending, Retracted, or No Response./ Count of Financial Impact
+                                Clarifications Sent) X100. E.g. 75%</entry>
+                        </row>
+                        <row>
+                            <entry>Financial Impact Clarification Agreed Rate</entry>
+                            <entry>Financial Impact Clarification Agreed Rate = (Count of Financial
+                                Impact Clarifications with Final Response as Agreed/ Count of
+                                Financial Impact Clarification Responded x 100). E.g. 90%</entry>
+                        </row>
+                        <row>
+                            <entry>Quality Clarifications</entry>
+                            <entry>Quality Clarifications: Clarifications with standard or custom
+                                ‘Primary Type at Reconciliation’ defined as ‘Quality’ in the admin
+                                configuration</entry>
+                        </row>
+                        <row>
+                            <entry>Quality Clarification Response Rate</entry>
+                            <entry>Quality Impact Clarification Response Rate = (Count of Quality
+                                Impact Clarifications with Final response other than Pending,
+                                Retracted, or No Response / Count of Quality Impact Clarifications
+                                Sent x 100). E.g. 88%</entry>
+                        </row>
+                        <row>
+                            <entry>Quality Clarification Agreed Rate</entry>
+                            <entry>Quality Impact Clarification Agreed Rate = (Count of Quality
+                                Impact Clarifications with Final Response as Agreed/ Count of
+                                Quality Impact Clarification Responded x 100). E.g. 100%</entry>
+                        </row>
+                        <row>
+                            <entry>Both Impact Clarifications</entry>
+                            <entry>Both Impact Clarifications: Clarifications with standard or
+                                custom ‘Primary Type at Reconciliation’ defined as 'Financial' and
+                                ‘Quality’ in the administrator configuration.</entry>
+                        </row>
+                        <row>
+                            <entry>Both Impact Clarification Response Rate</entry>
+                            <entry>Both Impact Clarification Response Rate = (Count of Both Impact
+                                Clarifications with Final response other than Pending, Retracted, or
+                                No Response / Count of Both Impact Clarifications Sent x 100). E.g.
+                                88%.</entry>
+                        </row>
+                        <row>
+                            <entry>Both Impact Clarification Agreed Rate</entry>
+                            <entry>Both Impact Clarification Agreed Rate = (Count of Both Impact
+                                Clarifications with Final Response as Agreed/ Count of Both Impact
+                                Clarification Responded x 100). E.g. 100%.</entry>
+                        </row>
+                        <row>
+                            <entry>SEV Clarifications</entry>
+                            <entry>SEV Clarifications: Clarifications with ‘Primary Type at
+                                Reconciliation’ as SEV.</entry>
+                        </row>
+                        <row>
+                            <entry>SEV Clarification Response Rate</entry>
+                            <entry>SEV Impact Clarification Response Rate = (Count of SEV Impact
+                                Clarifications with Final response other than Pending, Retracted, or
+                                No Response / Count of SEV Impact Clarifications Sent x 100). E.g.
+                                70%</entry>
+                        </row>
+                        <row>
+                            <entry>SEV Clarification Agreed Rate</entry>
+                            <entry>SEV Impact Clarification Agreed Rate = (Count of SEV Impact
+                                Clarifications with Final Response as Agreed/ Count of SEV Impact
+                                Clarification Responded x 100). E.g. 98%</entry>
+                        </row>
+                        <row>
+                            <entry>Avg. Initial Review TAT (Hours)</entry>
+                            <entry>Avg. Initial Review TAT(Hours) = Sum of Initial Review TAT(Hours)
+                                of all the reviewed encounters / Encounters Reviewed (Initial
+                                Reviews) ; Initial Review TAT (hours) for an encounter = Initial
+                                Review Date/Time- Admit Date/Time) hours. E.g. 28</entry>
+                        </row>
+                        <row>
+                            <entry>Avg. Response TAT (Hours)</entry>
+                            <entry>Avg. Response TAT (Hours) = Sum of Response TAT (Hours) of all
+                                the instances with Response other than Pending, Retracted or No
+                                Response/ Total count of instances Responded in hours. E.g.
+                                18</entry>
+                        </row>
+                        <row>
+                            <entry>CDS/Coder Match Rate</entry>
+                            <entry>CDS/Coder Match Rate = (Count of Reconciled Encounters in which
+                                Final DRG matches Possible DRG (Or Working DRG if Possible DRG is
+                                Blank) / Count of Reconciled Encounters) X100. E.g. 90%</entry>
+                        </row>
+                    </tbody>
+                </tgroup>
+            </table>
+        </p>
+    </conbody>
+</concept>

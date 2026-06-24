@@ -1,0 +1,951 @@
+<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" data-whc_version="28.0">
+    <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><meta name="DC.rights.owner" content="(C) Copyright 2026"/><meta name="copyright" content="(C) Copyright 2026"/><meta name="generator" content="DITA-OT"/><meta name="DC.type" content="concept"/><meta name="description" content="Overview : CMI Breakdown dashboard allows CDI Directors and Managers to analyze the trend of Medical CMI and Surgical CMI over time. The report provides answers to the following questions. What is the ..."/><meta name="DC.format" content="HTML5"/><meta name="DC.identifier" content="cmi_breakdown"/>        
+      <title>CMI Breakdown</title><!--  Generated with Oxygen version 28.0, build number 2025121612.  --><meta name="wh-path2root" content=""/><meta name="wh-toc-id" content="cmi_breakdown-d1086e550"/><meta name="wh-source-relpath" content="cmi_breakdown.dita"/><meta name="wh-out-relpath" content="cmi_breakdown.html"/>
+    <link rel="stylesheet" type="text/css" href="./oxygen-webhelp/app/bootstrap.css?buildId=2025121612"/>
+    <link rel="stylesheet" type="text/css" href="./oxygen-webhelp/app/jquery-ui.css?buildId=2025121612"/>
+        
+    <link rel="stylesheet" type="text/css" href="./oxygen-webhelp/app/topic.css?buildId=2025121612"/>
+<link rel="stylesheet" type="text/css" href="oxygen-webhelp/template/oxygen-theme.css?buildId=20260617213443"/><link rel="stylesheet" type="text/css" href="oxygen-webhelp/template/oxygen.css?buildId=20260617213443"/><link rel="stylesheet" type="text/css" href="oxygen-webhelp/template/notes.css?buildId=20260617213443"/>
+    <script src="./oxygen-webhelp/app/options/properties.js?buildId=20260617213443"></script>
+    <script src="./oxygen-webhelp/app/themes.js?buildId=20260617213443"></script>
+    <script src="./oxygen-webhelp/app/localization/strings.js?buildId=2025121612"></script>
+    <script src="./oxygen-webhelp/app/search/index/keywords.js?buildId=20260617213443"></script>
+    
+    <script defer="defer" src="./oxygen-webhelp/app/jquery.js?buildId=2025121612"></script>
+    <script defer="defer" src="./oxygen-webhelp/app/jquery-ui.js?buildId=2025121612"></script>
+    <script defer="defer" src="./oxygen-webhelp/app/jquery-bootpag.js?buildId=2025121612"></script>
+    <script defer="defer" src="./oxygen-webhelp/app/jquery-highlight.js?buildId=2025121612"></script>
+    <script defer="defer" src="./oxygen-webhelp/app/popperjs-core.js?buildId=2025121612"></script>
+    <script defer="defer" src="./oxygen-webhelp/app/bootstrap.js?buildId=2025121612"></script>
+    <script defer="defer" src="./oxygen-webhelp/app/dompurify.js?buildId=2025121612"></script>
+    <script defer="defer" src="./oxygen-webhelp/app/image-map.js?buildId=2025121612"></script>
+    <script defer="defer" src="./oxygen-webhelp/app/maphilight.js?buildId=2025121612"></script>
+
+    <script defer="defer" src="./oxygen-webhelp/app/topic.js?buildId=2025121612"></script>
+<link rel="stylesheet" type="text/css" href="Custom.css"/></head>
+
+    <body id="cmi_breakdown" class="wh_topic_page frmBody">
+        <a class="visually-hidden-focusable" id="wh_jump_to_content" href="#wh_topic_body">
+            Jump to main content
+        </a>
+        
+        
+        
+        
+        <header class="navbar navbar-default wh_header">
+    <div class="container-fluid navbar-expand-md">
+        <div class="wh_header_flex_container navbar-nav navbar-dark">
+            <div class="wh_logo_and_publication_title_container">
+                <div class="wh_logo_and_publication_title">
+                    
+                    <a href="index.html" class=" wh_logo d-none d-sm-block "><img src="CDE_logo_Help.png?buildId=20260617213443" alt="  CDE Analytics New Guide  "/></a>
+                    <div class=" wh_publication_title "><a href="index.html"><span class="booktitle">  <span class="ph mainbooktitle">CDE Analytics New Guide</span>  </span></a></div>
+                    
+                </div>
+                
+                <button type="button" data-bs-target="#wh_top_menu_and_indexterms_link" id="wh_menu_mobile_button" data-bs-toggle="collapse" class="navbar-toggler collapsed wh_toggle_button" aria-expanded="false" aria-label="Toggle menu" aria-controls="wh_top_menu_and_indexterms_link">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+
+            <div class="wh_top_menu_and_indexterms_link collapse navbar-collapse" id="wh_top_menu_and_indexterms_link">
+                
+                <nav class=" wh_top_menu " aria-label="Menu Container"><ul role="menubar" aria-label="Menu"><li role="menuitem"><span id="what_s_new-d1086e19-mi" data-tocid="what_s_new-d1086e19" data-state="leaf" class=" topicref " data-id="what_s_new"><span class="title"><a href="Reference/what_s_new.html">What's New (2.24.0 Release)</a></span></span></li><li role="menuitem"><span id="online_analytics_training-d1086e27-mi" data-tocid="online_analytics_training-d1086e27" data-state="leaf" class=" topicref " data-id="online_analytics_training"><span class="title"><a href="online_analytics_training.html">Online Analytics Training</a></span></span></li><li role="menuitem"><span id="live_chat-d1086e35-mi" data-tocid="live_chat-d1086e35" data-state="leaf" class=" topicref " data-id="live_chat"><span class="title"><a href="Reference/live_chat.html">Live Chat</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="tocId-d1086e46-mi" data-tocid="tocId-d1086e46" data-state="not-ready" class=" topicref "><span class="title"><a href="Getting%20Started/Concept/overview_getting_started.html">Getting Started</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="tocId-d1086e229-mi" data-tocid="tocId-d1086e229" data-state="not-ready" class=" topicref "><span class="title"><a href="about_nuance_cde_analytics.html">Working With Reports</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="tocId-d1086e383-mi" data-tocid="tocId-d1086e383" data-state="not-ready" class=" topicref "><span class="title"><a href="encounter_monitoring.html">CDE One - CDI Operations</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="tocId-d1086e467-mi" data-tocid="tocId-d1086e467" data-state="not-ready" class=" topicref "><span class="title"><a href="team_performance.html">CDE One - Staff Management</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="tocId-d1086e529-mi" data-tocid="tocId-d1086e529" data-state="not-ready" class=" topicref "><span class="title"><a href="executive_overview.html">CDE One - Executive Summary</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="tocId-d1086e621-mi" data-tocid="tocId-d1086e621" data-state="not-ready" class=" topicref "><span class="title"><a href="peer_group_comparision/ms_drg_specialty_summary.html">CDE One - Peer Group Comparison</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="tocId-d1086e673-mi" data-tocid="tocId-d1086e673" data-state="not-ready" class=" topicref "><span class="title"><a href="quality_impact_overview.html">CDE One - Quality Impact</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="tocId-d1086e705-mi" data-tocid="tocId-d1086e705" data-state="not-ready" class=" topicref "><span class="title"><a href="triage_overview.html">Triage and CDS Assistant Usage</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="tocId-d1086e767-mi" data-tocid="tocId-d1086e767" data-state="not-ready" class=" topicref "><span class="title"><a href="post_discharge_reviews_overview.html">CDE Triage - Post Discharge Reviews</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="tocId-d1086e790-mi" data-tocid="tocId-d1086e790" data-state="not-ready" class=" topicref "><span class="title"><a href="cds_activity_details_48_hours.html">CDS General - CDS Productivity</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="tocId-d1086e832-mi" data-tocid="tocId-d1086e832" data-state="not-ready" class=" topicref "><span class="title"><a href="cds_activity_report.html">CDS Monthly Productivity</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="tocId-d1086e854-mi" data-tocid="tocId-d1086e854" data-state="not-ready" class=" topicref "><span class="title"><a href="visualization_types.html">Analytics Concepts</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="tocId-d1086e866-mi" data-tocid="tocId-d1086e866" data-state="not-ready" class=" topicref "><span class="title"><a href="related_documents.html">Related Documents</a></span></span></li><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="tocId-d1086e878-mi" data-tocid="tocId-d1086e878" data-state="not-ready" class=" topicref "><span class="title"><a href="glossary.html">Glossary</a></span></span></li></ul></nav>
+                
+                
+                
+            </div>
+        </div>
+    </div>
+</header>
+        
+        
+         
+        
+        <div class=" wh_search_input navbar-form wh_topic_page_search search " role="form">
+            
+            
+            
+            <form id="searchForm" method="get" role="search" action="search.html"><div><input type="search" placeholder="Search " class="wh_search_textfield" id="textToSearch" name="searchQuery" aria-label="Search query" required="required"/><button type="submit" class="wh_search_button" aria-label="Search"><span class="search_input_text">Search</span></button></div></form>
+            
+            
+            
+        </div>
+        
+        <div class="container-fluid navbar-expand-md" id="wh_topic_container">
+            <div class="row">
+
+                <nav class="wh_tools d-print-none" aria-label="Tools">
+                    
+                    <div data-tooltip-position="bottom" class=" wh_breadcrumb "><ol class="d-print-none"><li><span class="home"><a href="index.html"><span>Home</span></a></span></li><li><div class="topicref"><div class="title"><a href="executive_overview.html">CDE One - Executive Summary</a></div></div></li><li class="active"><div class="topicref" data-id="cmi_breakdown"><div class="title"><a href="cmi_breakdown.html">CMI Breakdown</a><div class="wh-tooltip"><p class="shortdesc"></p></div></div></div></li></ol></div>
+                    
+                    
+                    
+                    <div class="wh_right_tools">
+                        <button class="wh_hide_highlight" aria-label="Toggle search highlights" title="Toggle search highlights"></button>
+                        <button class="webhelp_full_width_link" data-next-state="expanded" aria-label="Maximize to full width" title="Maximize to full width"></button>
+                        <button class="webhelp_expand_collapse_sections" data-next-state="collapsed" aria-label="Collapse sections" title="Collapse sections"></button>
+                        
+                        
+                        
+                        
+                        <div class=" wh_print_link print d-none d-md-inline-block "><button onClick="window.print()" title="Print this page" aria-label="Print this page"></button></div>
+                        
+                        
+                        <button type="button" id="wh_toc_button" class="custom-toggler navbar-toggler collapsed wh_toggle_button navbar-light" aria-expanded="false" aria-label="Toggle publishing table of content" aria-controls="wh_publication_toc">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                    </div>
+                    
+                </nav>
+            </div>
+            
+            
+            
+            
+            <div class="wh_content_area">
+                <div class="row">
+                    
+                        <nav class="col-xxl-3 col-lg-3 col-md-3 col-sm-12 d-md-block d-none d-print-none" id="wh_publication_toc" aria-label="Table of Contents Container">
+                            <div id="wh_publication_toc_content">
+	                            <button id="wh_close_publication_toc_button" class="close-toc-button d-none" aria-label="Toggle publishing table of content" aria-controls="wh_publication_toc" aria-expanded="true">
+		                            <span class="close-toc-icon-container">
+		                                <span class="close-toc-icon"></span>     
+		                            </span>
+		                        </button>
+		                        
+                            	<div class=" wh_publication_toc " data-tooltip-position="hidden"><span class="expand-button-action-labels"><span id="button-expand-action" role="button" aria-label="Expand"></span><span id="button-collapse-action" role="button" aria-label="Collapse"></span><span id="button-pending-action" role="button" aria-label="Pending"></span></span><ul role="tree" aria-label="Table of Contents"><li role="treeitem"><div data-tocid="what_s_new-d1086e19" class="topicref" data-id="what_s_new" data-state="leaf"><span class="wh-expand-btn"></span><div class="title"><a href="Reference/what_s_new.html" id="what_s_new-d1086e19-link">What's New (2.24.0 Release)</a></div></div></li><li role="treeitem"><div data-tocid="online_analytics_training-d1086e27" class="topicref" data-id="online_analytics_training" data-state="leaf"><span class="wh-expand-btn"></span><div class="title"><a href="online_analytics_training.html" id="online_analytics_training-d1086e27-link">Online Analytics Training</a></div></div></li><li role="treeitem"><div data-tocid="live_chat-d1086e35" class="topicref" data-id="live_chat" data-state="leaf"><span class="wh-expand-btn"></span><div class="title"><a href="Reference/live_chat.html" id="live_chat-d1086e35-link">Live Chat</a><div class="wh-tooltip"><p class="shortdesc"></p></div></div></div></li><li role="treeitem" aria-expanded="false"><div data-tocid="tocId-d1086e46" class="topicref" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action tocId-d1086e46-link" class="wh-expand-btn"></span><div class="title"><a href="Getting%20Started/Concept/overview_getting_started.html" id="tocId-d1086e46-link">Getting Started</a></div></div></li><li role="treeitem" aria-expanded="false"><div data-tocid="tocId-d1086e229" class="topicref" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action tocId-d1086e229-link" class="wh-expand-btn"></span><div class="title"><a href="about_nuance_cde_analytics.html" id="tocId-d1086e229-link">Working With Reports</a></div></div></li><li role="treeitem" aria-expanded="false"><div data-tocid="tocId-d1086e383" class="topicref" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action tocId-d1086e383-link" class="wh-expand-btn"></span><div class="title"><a href="encounter_monitoring.html" id="tocId-d1086e383-link">CDE One - CDI Operations</a></div></div></li><li role="treeitem" aria-expanded="false"><div data-tocid="tocId-d1086e467" class="topicref" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action tocId-d1086e467-link" class="wh-expand-btn"></span><div class="title"><a href="team_performance.html" id="tocId-d1086e467-link">CDE One - Staff Management</a></div></div></li><li role="treeitem" aria-expanded="true"><div data-tocid="tocId-d1086e529" class="topicref" data-state="expanded"><span role="button" tabindex="0" aria-labelledby="button-collapse-action tocId-d1086e529-link" class="wh-expand-btn"></span><div class="title"><a href="executive_overview.html" id="tocId-d1086e529-link">CDE One - Executive Summary</a></div></div><ul role="group" class="navbar-nav nav-list"><li role="treeitem"><div data-tocid="executive_overview-d1086e530" class="topicref" data-id="executive_overview" data-state="leaf"><span class="wh-expand-btn"></span><div class="title"><a href="executive_overview.html" id="executive_overview-d1086e530-link">Executive Overview </a><div class="wh-tooltip"><p class="shortdesc"></p></div></div></div></li><li role="treeitem"><div data-tocid="cdi_dashboard-d1086e540" class="topicref" data-id="cdi_dashboard" data-state="leaf"><span class="wh-expand-btn"></span><div class="title"><a href="cdi_dashboard.html" id="cdi_dashboard-d1086e540-link">CDI Dashboard</a><div class="wh-tooltip"><p class="shortdesc"></p></div></div></div></li><li role="treeitem" class="active"><div data-tocid="cmi_breakdown-d1086e550" class="topicref" data-id="cmi_breakdown" data-state="leaf"><span class="wh-expand-btn"></span><div class="title"><a href="cmi_breakdown.html" id="cmi_breakdown-d1086e550-link">CMI Breakdown</a><div class="wh-tooltip"><p class="shortdesc"></p></div></div></div></li><li role="treeitem"><div data-tocid="soi_rom_impact-d1086e560" class="topicref" data-id="soi_rom_impact" data-state="leaf"><span class="wh-expand-btn"></span><div class="title"><a href="soi_rom_impact.html" id="soi_rom_impact-d1086e560-link">SOI/ROM Impact</a><div class="wh-tooltip"><p class="shortdesc"></p></div></div></div></li><li role="treeitem"><div data-tocid="drg_breakdown-d1086e570" class="topicref" data-id="drg_breakdown" data-state="leaf"><span class="wh-expand-btn"></span><div class="title"><a href="drg_breakdown.html" id="drg_breakdown-d1086e570-link">DRG Breakdown</a><div class="wh-tooltip"><p class="shortdesc"></p></div></div></div></li><li role="treeitem"><div data-tocid="reconciliation_details-d1086e580" class="topicref" data-id="reconciliation_details" data-state="leaf"><span class="wh-expand-btn"></span><div class="title"><a href="reconciliation_details.html" id="reconciliation_details-d1086e580-link">Reconciliation Details</a><div class="wh-tooltip"><p class="shortdesc"></p></div></div></div></li><li role="treeitem"><div data-tocid="clarification_type_trend-d1086e590" class="topicref" data-id="clarification_type_trend" data-state="leaf"><span class="wh-expand-btn"></span><div class="title"><a href="no_response_impact.html" id="clarification_type_trend-d1086e590-link">No Response Impact</a><div class="wh-tooltip"><p class="shortdesc"></p></div></div></div></li><li role="treeitem"><div data-tocid="reconciliation_details-d1086e600" class="topicref" data-id="reconciliation_details" data-state="leaf"><span class="wh-expand-btn"></span><div class="title"><a href="no_response_clarification_details.html" id="reconciliation_details-d1086e600-link">No Response Encounter Details</a><div class="wh-tooltip"><p class="shortdesc"></p></div></div></div></li><li role="treeitem"><div data-tocid="clarification_type_trend-d1086e610" class="topicref" data-id="clarification_type_trend" data-state="leaf"><span class="wh-expand-btn"></span><div class="title"><a href="clarification_type_trend.html" id="clarification_type_trend-d1086e610-link">Clarification Type Trend</a><div class="wh-tooltip"><p class="shortdesc"></p></div></div></div></li></ul></li><li role="treeitem" aria-expanded="false"><div data-tocid="tocId-d1086e621" class="topicref" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action tocId-d1086e621-link" class="wh-expand-btn"></span><div class="title"><a href="peer_group_comparision/ms_drg_specialty_summary.html" id="tocId-d1086e621-link">CDE One - Peer Group Comparison</a></div></div></li><li role="treeitem" aria-expanded="false"><div data-tocid="tocId-d1086e673" class="topicref" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action tocId-d1086e673-link" class="wh-expand-btn"></span><div class="title"><a href="quality_impact_overview.html" id="tocId-d1086e673-link">CDE One - Quality Impact</a></div></div></li><li role="treeitem" aria-expanded="false"><div data-tocid="tocId-d1086e705" class="topicref" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action tocId-d1086e705-link" class="wh-expand-btn"></span><div class="title"><a href="triage_overview.html" id="tocId-d1086e705-link">Triage and CDS Assistant Usage</a></div></div></li><li role="treeitem" aria-expanded="false"><div data-tocid="tocId-d1086e767" class="topicref" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action tocId-d1086e767-link" class="wh-expand-btn"></span><div class="title"><a href="post_discharge_reviews_overview.html" id="tocId-d1086e767-link">CDE Triage - Post Discharge Reviews</a></div></div></li><li role="treeitem" aria-expanded="false"><div data-tocid="tocId-d1086e790" class="topicref" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action tocId-d1086e790-link" class="wh-expand-btn"></span><div class="title"><a href="cds_activity_details_48_hours.html" id="tocId-d1086e790-link">CDS General - CDS Productivity</a></div></div></li><li role="treeitem" aria-expanded="false"><div data-tocid="tocId-d1086e832" class="topicref" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action tocId-d1086e832-link" class="wh-expand-btn"></span><div class="title"><a href="cds_activity_report.html" id="tocId-d1086e832-link">CDS Monthly Productivity</a></div></div></li><li role="treeitem" aria-expanded="false"><div data-tocid="tocId-d1086e854" class="topicref" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action tocId-d1086e854-link" class="wh-expand-btn"></span><div class="title"><a href="visualization_types.html" id="tocId-d1086e854-link">Analytics Concepts</a></div></div></li><li role="treeitem" aria-expanded="false"><div data-tocid="tocId-d1086e866" class="topicref" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action tocId-d1086e866-link" class="wh-expand-btn"></span><div class="title"><a href="related_documents.html" id="tocId-d1086e866-link">Related Documents</a></div></div></li><li role="treeitem" aria-expanded="false"><div data-tocid="tocId-d1086e878" class="topicref" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action tocId-d1086e878-link" class="wh-expand-btn"></span><div class="title"><a href="glossary.html" id="tocId-d1086e878-link">Glossary</a></div></div></li></ul></div>
+		                        
+                            </div>
+                        </nav>
+                    
+                    
+                    <div class="col-xxl-9 col-lg-9 col-md-9 col-sm-12" id="wh_topic_body">
+                        
+                        <div class=" wh_topic_content body "><main role="main"><article class="- topic/topic concept/concept topic concept" role="article" aria-labelledby="ariaid-title1">
+    <h1 class="- topic/title title topictitle1" id="ariaid-title1">CMI Breakdown</h1>
+    
+    <div class="- topic/body concept/conbody body conbody"><p class="- topic/shortdesc shortdesc"></p>
+        <p class="- topic/p p"><strong class="+ topic/ph hi-d/b ph b">Overview</strong>: CMI Breakdown dashboard allows CDI Directors and Managers to analyze the
+            trend of Medical CMI and Surgical CMI over time.</p>
+        <div class="- topic/p p">The report provides answers to the following questions.<ul class="- topic/ul ul" id="cmi_breakdown__ul_sjk_t5k_p4b" data-ofbid="cmi_breakdown__ul_sjk_t5k_p4b">
+                <li class="- topic/li li">What is the breakdown of medical vs. surgical cases?</li>
+                <li class="- topic/li li">What % of reconciled cases were medical?</li>
+                <li class="- topic/li li">What is the breakdown of medical vs. surgical CMI?</li>
+                <li class="- topic/li li">How is my Medical CMI trending month-to-month?</li>
+                <li class="- topic/li li">How is my Surgical CMI trending month-to-month?</li>
+            </ul></div>
+        <p class="- topic/p p"><strong class="+ topic/ph hi-d/b ph b">Navigation</strong>: On the Analytics home page left side panel, navigate to <span class="+ topic/ph ui-d/menucascade ph menucascade"><span class="+ topic/ph ui-d/uicontrol ph uicontrol">CDE One</span><abbr title="and then"> &gt; </abbr><span class="+ topic/ph ui-d/uicontrol ph uicontrol">Executive Summary</span><abbr title="and then"> &gt; </abbr><span class="+ topic/ph ui-d/uicontrol ph uicontrol">CMI Breakdown</span></span>. </p>
+        <p class="- topic/p p">CMI Breakdown dashboard displays the following:</p>
+        <ul class="- topic/ul ul" id="cmi_breakdown__ul_an2_bty_44b" data-ofbid="cmi_breakdown__ul_an2_bty_44b">
+            <li class="- topic/li li">KPI Cards: Overall CMI Before CDI, Overall CMI After CDI, CMI Shift, CMI Shift
+                (%)</li>
+            <li class="- topic/li li">Medical and Surgical Cases Chart</li>
+            <li class="- topic/li li">CMI Shift Chart</li>
+            <li class="- topic/li li">CMI Trend Tabular Chart</li>
+        </ul>
+        <p class="- topic/p p">On the top panel, you can select desired values for the slicers (refer <a class="- topic/xref xref" href="#cmi_breakdown__table_qnn_w2n_g4b">Report Slicers </a>) and the corresponding data
+            gets filtered in the charts and table.</p>
+        <p class="- topic/p p">For filters on all pages, refer <a class="- topic/xref xref" href="#cmi_breakdown__table_dq1_ffn_g4b">Filters on all Pages</a>.</p>
+        <p class="- topic/p p">For Footnotes, refer <a class="- topic/xref xref" href="#cmi_breakdown__table_vqg_bnl_p4b">Footnotes</a>.</p>
+        <p class="- topic/p p"><strong class="+ topic/ph hi-d/b ph b">CMI Breakdown</strong></p>
+        <figure class="- topic/fig fig fignone" id="cmi_breakdown__fig_b5r_nkl_p4b" data-ofbid="cmi_breakdown__fig_b5r_nkl_p4b"><figcaption data-caption-side="top" class="- topic/title title figcap"><span class="figtitleprefix fig--title-label">Figure<span class="fig--title-label-number"> 1</span><span class="fig--title-label-punctuation">. </span></span><span class="fig--title">CMI Breakdown</span></figcaption>
+            
+            <img class="- topic/image image" id="cmi_breakdown__image_ync_tkl_p4b" src="Images/CMI%20Breakdown.gif" width="800"/>
+        </figure>
+        <p class="- topic/p p"><strong class="+ topic/ph hi-d/b ph b">CMI Breakdown - KPI Cards</strong></p>
+        <figure class="- topic/fig fig fignone" id="cmi_breakdown__fig_ilw_tkl_p4b" data-ofbid="cmi_breakdown__fig_ilw_tkl_p4b"><figcaption data-caption-side="top" class="- topic/title title figcap"><span class="figtitleprefix fig--title-label">Figure<span class="fig--title-label-number"> 2</span><span class="fig--title-label-punctuation">. </span></span><span class="fig--title">KPI Cards</span></figcaption>
+            
+            <img class="- topic/image image" id="cmi_breakdown__image_s4j_5kl_p4b" src="Images/CMI%20Breakdown%20KPI%20Cards.gif" width="400"/>
+        </figure>
+        <div class="table-container"><table class="- topic/table table frame-all" id="cmi_breakdown__table_rtb_mty_44b" data-ofbid="cmi_breakdown__table_rtb_mty_44b" data-cols="3"><caption class="- topic/title title tablecap" data-caption-side="top" data-is-repeated="true"><span class="table--title-label">Table<span class="table--title-label-number"> 1</span><span class="table--title-label-punctuation">. </span></span><span class="table--title">KPI Cards</span></caption><colgroup><col style="width:33.33333333333333%"/><col style="width:33.33333333333333%"/><col style="width:33.33333333333333%"/></colgroup><thead class="- topic/thead thead">
+                    <tr class="- topic/row">
+                        <th class="- topic/entry entry colsep-1 rowsep-1" id="cmi_breakdown__table_rtb_mty_44b__entry__1">KPI card</th>
+                        <th class="- topic/entry entry colsep-1 rowsep-1" id="cmi_breakdown__table_rtb_mty_44b__entry__2">Description</th>
+                        <th class="- topic/entry entry colsep-0 rowsep-1" id="cmi_breakdown__table_rtb_mty_44b__entry__3">Formula/Calculation</th>
+                    </tr>
+                </thead><tbody class="- topic/tbody tbody">
+                    <tr class="- topic/row">
+                        <td class="- topic/entry entry colsep-1 rowsep-1">Overall CMI Before CDI</td>
+                        <td class="- topic/entry entry colsep-1 rowsep-1">
+                            <p class="- topic/p p">This metric displays Overall CMI Before CDI report for a period of 3
+                                months by default.</p>
+                        </td>
+                        <td class="- topic/entry entry colsep-0 rowsep-1">
+                            <p class="- topic/p p">CMI Before CDI = The sum of Final Coded DRG WTs of all
+                                Auto-Reconciled, Reconciled- No Impact, and Reconciled Impact
+                                (Impact Type: SOI/ROM Impact) encounters and Reconciliation
+                                assessment DRG WT (or Working DRG WT when Reconciliation Assessment
+                                Info is not available) of all Reconciled Impact (Impact Type: Both,
+                                Financial, (Unassigned (DD&lt; 11/14/2019)) encounters that meet the
+                                report criteria / Total count of reconciled cases (Auto-Reconciled,
+                                Reconciled-Impact, Reconciled-No Impact) for the selected report
+                                criteria.</p>
+                        </td>
+                    </tr>
+                    <tr class="- topic/row">
+                        <td class="- topic/entry entry colsep-1 rowsep-1">Overall CMI After CDI</td>
+                        <td class="- topic/entry entry colsep-1 rowsep-1">
+                            <p class="- topic/p p">This metric displays Overall CMI After CDI report for a period of 3
+                                months by default.</p>
+                        </td>
+                        <td class="- topic/entry entry colsep-0 rowsep-1">
+                            <p class="- topic/p p">CMI After CDI= The sum of Final Coded DRG WTs of all Auto-Reconciled,
+                                Reconciled- No Impact, and Reconciled Impact (Impact Type: SOI/ROM
+                                Impact, Both, Financial, (Unassigned (DD&lt; 11/14/2019)) encounters
+                                that meet the report criteria / Total count of reconciled cases
+                                (Auto-Reconciled, Reconciled-Impact, Reconciled-No Impact) for the
+                                selected report criteria.</p>
+                        </td>
+                    </tr>
+                    <tr class="- topic/row">
+                        <td class="- topic/entry entry colsep-1 rowsep-1">CMI Shift</td>
+                        <td class="- topic/entry entry colsep-1 rowsep-1">
+                            <p class="- topic/p p">This metric displays the CMI Shift report for a period of 3 months by
+                                default.</p>
+                        </td>
+                        <td class="- topic/entry entry colsep-0 rowsep-1">
+                            <p class="- topic/p p">CMI Shift = The sum of CMI Shift (CMI After CDI - CMI Before CDI) for
+                                the Reconciled-Impact (Impact Type: Financial, Both, Unassigned
+                                Impact for Discharge Date &lt; 11/14/2019) encounters that meet the
+                                report criteria. (Rounded 4 decimal places E.g., 2.1868)/ Total
+                                count of reconciled cases (Auto-Reconciled, Reconciled-Impact,
+                                Reconciled-No Impact) for the selected report criteria.</p>
+                        </td>
+                    </tr>
+                    <tr class="- topic/row">
+                        <td class="- topic/entry entry colsep-1 rowsep-0">CMI Shift (%)</td>
+                        <td class="- topic/entry entry colsep-1 rowsep-0">
+                            <p class="- topic/p p">This metric displays CMI Shift (%) for a period of 3 months by
+                                default. Rounded to 2 decimal places. E.g. 2.74%.</p>
+                        </td>
+                        <td class="- topic/entry entry colsep-0 rowsep-0">
+                            <p class="- topic/p p">CMI Shift % = (The sum of CMI Shift (CMI After CDI - CMI Before CDI)
+                                for the Reconciled-Impact (Impact Type: Financial, Both, Unassigned
+                                Impact for Discharge Date &lt; 11/14/2019) encounters that meet the
+                                report criteria) / (CMI Before CDI for Auto Reconciled,
+                                Reconciled-No Impact, , Reconciled-Impact (SOI/ROM Impact)
+                                Reconciled-Impact (Impact Type: Financial, Both, Unassigned Impact
+                                for Discharge Date &lt; 11/14/2019) encounters that meet the report
+                                criteria). X 100.</p>
+                        </td>
+                    </tr>
+                </tbody></table></div>
+        <p class="- topic/p p"><strong class="+ topic/ph hi-d/b ph b">CMI Breakdown - Medical and Surgical Cases Chart</strong></p>
+        <figure class="- topic/fig fig fignone" id="cmi_breakdown__fig_ott_vkl_p4b" data-ofbid="cmi_breakdown__fig_ott_vkl_p4b"><figcaption data-caption-side="top" class="- topic/title title figcap"><span class="figtitleprefix fig--title-label">Figure<span class="fig--title-label-number"> 3</span><span class="fig--title-label-punctuation">. </span></span><span class="fig--title">Medical and Surgical Cases Chart</span></figcaption>
+            
+            <img class="- topic/image image" id="cmi_breakdown__image_htt_wkl_p4b" src="Images/CMI%20Breakdown%20Medical%20and%20Surgical%20Cases.png" width="600"/>
+        </figure>
+        <p class="- topic/p p">The ‘Medical and Surgical Cases’ chart displays the volume and percentage of Medical and
+            Surgical cases for each month.</p>
+        <ul class="- topic/ul ul" id="cmi_breakdown__ul_wj3_zty_44b" data-ofbid="cmi_breakdown__ul_wj3_zty_44b">
+            <li class="- topic/li li"><strong class="+ topic/ph hi-d/b ph b">X-axis</strong>: Displays the discharge month in ascending order. (<strong class="+ topic/ph hi-d/b ph b">Format</strong>: Jun
+                2020, Jul 2020, etc.)</li>
+            <li class="- topic/li li"><strong class="+ topic/ph hi-d/b ph b">Y-axis</strong>: Displays the percentage of encounters.</li>
+            <li class="- topic/li li">
+                <p class="- topic/p p">By default, the chart displays the data for 3 calendar months.</p>
+            </li>
+            <li class="- topic/li li"><strong class="+ topic/ph hi-d/b ph b">Info Icon</strong>(text on hover): Medical Cases: Encounters with Final Coded DRG as
+                Medical. Surgical Cases: Encounters with Final Coded DRG as Surgical. Encounter
+                Status: Reconciled-Impact, Reconciled-No Impact, Auto-Reconciled.</li>
+        </ul>
+        <div class="- topic/p p">
+            <div class="- topic/note note note note_note"><span class="note__title">Note:</span> <div class="note__body">Medical encounters are those for which Final Coded DRG is Medical (M) ( if M/S
+                indicator is not available for Final DRG and Final DRG Code = Assessment DRG Code,
+                then Assessment DRG is Medical. if M/S indicator is not available for Final DRG and
+                Assessment DRG, and Final DRG Code = Working DRG Code, then Working DRG is
+                Medical)</div></div>
+        </div>
+        <div class="- topic/p p">
+            <div class="- topic/note note note note_note"><span class="note__title">Note:</span> <div class="note__body">Surgical encounters are those for which Final Coded DRG is Surgical (S) ( if M/S
+                indicator is not available for Final DRG and Final DRG Code = Assessment DRG Code,
+                then Assessment DRG is Medical. ( if M/S indicator is not available for Final DRG
+                and Final DRG Code = Assessment DRG Code, then Assessment DRG is Surgical. OR if M/S
+                indicator is not available for Final DRG and Assessment DRG, and Final DRG Code =
+                Working DRG Code, then Working DRG is Surgical)</div></div>
+        </div>
+        <div class="table-container"><table class="- topic/table table frame-all" id="cmi_breakdown__table_bp5_b5y_44b" data-ofbid="cmi_breakdown__table_bp5_b5y_44b" data-cols="5"><caption class="- topic/title title tablecap" data-caption-side="top" data-is-repeated="true"><span class="table--title-label">Table<span class="table--title-label-number"> 2</span><span class="table--title-label-punctuation">. </span></span><span class="table--title">Medical and Surgical Cases Chart details</span></caption><colgroup><col style="width:20%"/><col style="width:20%"/><col style="width:20%"/><col style="width:20%"/><col style="width:20%"/></colgroup><thead class="- topic/thead thead">
+                    <tr class="- topic/row">
+                        <th class="- topic/entry entry colsep-1 rowsep-1" id="cmi_breakdown__table_bp5_b5y_44b__entry__1">Metric</th>
+                        <th class="- topic/entry entry colsep-1 rowsep-1" id="cmi_breakdown__table_bp5_b5y_44b__entry__2">Description</th>
+                        <th class="- topic/entry entry colsep-1 rowsep-1" id="cmi_breakdown__table_bp5_b5y_44b__entry__3">Formula/Calculation</th>
+                        <th class="- topic/entry entry colsep-1 rowsep-1" id="cmi_breakdown__table_bp5_b5y_44b__entry__4">Exclusion Criteria (if any)</th>
+                        <th class="- topic/entry entry colsep-0 rowsep-1" id="cmi_breakdown__table_bp5_b5y_44b__entry__5">Tooltip</th>
+                    </tr>
+                </thead><tbody class="- topic/tbody tbody">
+                    <tr class="- topic/row">
+                        <td class="- topic/entry entry colsep-1 rowsep-1">% Medical Cases</td>
+                        <td class="- topic/entry entry colsep-1 rowsep-1">
+                            <p class="- topic/p p">Percentage of medical cases for each month.</p>
+                        </td>
+                        <td class="- topic/entry entry colsep-1 rowsep-1">
+                            <p class="- topic/p p">%  Medical Cases = The total number of medical encounters with status
+                                as Auto- Reconciled, Reconciled-Impact or Reconciled-No Impact /
+                                Total Reconciled Cases x 100</p>
+                        </td>
+                        <td class="- topic/entry entry colsep-1 rowsep-1"></td>
+                        <td class="- topic/entry entry colsep-0 rowsep-1">
+                            <p class="- topic/p p">Tooltip displays 'Reconciled Medical Cases' for each month. </p>
+                            <p class="- topic/p p">The total number of medical encounters with status as Auto-
+                                Reconciled, Reconciled-Impact or Reconciled-No Impact.</p>
+                        </td>
+                    </tr>
+                    <tr class="- topic/row">
+                        <td class="- topic/entry entry colsep-1 rowsep-0">% Surgical Cases</td>
+                        <td class="- topic/entry entry colsep-1 rowsep-0">
+                            <p class="- topic/p p">Percentage of surgical cases for each month.</p>
+                        </td>
+                        <td class="- topic/entry entry colsep-1 rowsep-0">
+                            <p class="- topic/p p">% Surgical Cases = The total number of surgical encounters with
+                                status as Auto- Reconciled, Reconciled-Impact or Reconciled-No
+                                Impact / Total Reconciled Cases x 100</p>
+                        </td>
+                        <td class="- topic/entry entry colsep-1 rowsep-0"></td>
+                        <td class="- topic/entry entry colsep-0 rowsep-0">
+                            <p class="- topic/p p">Tooltip displays 'Reconciled Surgical Cases' for each month. </p>
+                            <p class="- topic/p p">The total number of surgical encounters with status as Auto-
+                                Reconciled, Reconciled-Impact or Reconciled-No Impact.</p>
+                        </td>
+                    </tr>
+                </tbody></table></div>
+        <p class="- topic/p p"><strong class="+ topic/ph hi-d/b ph b">CMI Breakdown - CMI Shift Chart</strong></p>
+        <figure class="- topic/fig fig fignone" id="cmi_breakdown__fig_wqk_xkl_p4b" data-ofbid="cmi_breakdown__fig_wqk_xkl_p4b"><figcaption data-caption-side="top" class="- topic/title title figcap"><span class="figtitleprefix fig--title-label">Figure<span class="fig--title-label-number"> 4</span><span class="fig--title-label-punctuation">. </span></span><span class="fig--title">CMI Shift Chart</span></figcaption>
+            
+            <img class="- topic/image image" id="cmi_breakdown__image_x4y_xkl_p4b" src="Images/CMI%20Breakdown%20CMI%20Shift.png" width="600"/>
+        </figure>
+        <p class="- topic/p p">The CMI Shift chart displays the Overall CMI Shift, Medical CMI Shift, and Surgical CMI
+            Shift percentages for each month.</p>
+        <ul class="- topic/ul ul" id="cmi_breakdown__ul_q4q_n5y_44b" data-ofbid="cmi_breakdown__ul_q4q_n5y_44b">
+            <li class="- topic/li li"><strong class="+ topic/ph hi-d/b ph b">X-axis</strong>: Displays the discharge month in ascending order. (Format: Jun 2020,
+                Jul 2020, etc.)</li>
+            <li class="- topic/li li"><strong class="+ topic/ph hi-d/b ph b">Y-axis</strong>: Displays the shift percentage.</li>
+            <li class="- topic/li li">
+                <p class="- topic/p p">By default, the chart displays the data for 3 calendar months.</p>
+            </li>
+            <li class="- topic/li li"><strong class="+ topic/ph hi-d/b ph b">Tool-tip</strong>: Displays Overall CMI Before, Overall CMI After, Medical CMI Before,
+                Medical CMI After, Surgical CMI Before, and Surgical CMI After for each month.</li>
+            <li class="- topic/li li"><strong class="+ topic/ph hi-d/b ph b">Info Icon</strong>(text on hover): CMI metrics are for all the reconciled cases.
+                Encounter Status: Reconciled-Impact, Reconciled-No Impact, Auto-Reconciled.</li>
+        </ul>
+        <div class="- topic/p p">
+            <div class="- topic/note note note note_note"><span class="note__title">Note:</span> <div class="note__body">Medical encounters are those for which Final Coded DRG is Medical (M) if M/S
+                indicator is not available for Final DRG and Final DRG Code = Assessment DRG Code,
+                then Assessment DRG is Medical. if M/S indicator is not available for Final DRG and
+                Assessment DRG, and Final DRG Code = Working DRG Code, then Working DRG is
+                Medical)</div></div>
+        </div>
+        <div class="- topic/p p">
+            <div class="- topic/note note note note_note"><span class="note__title">Note:</span> <div class="note__body">Surgical encounters are those for which Final Coded DRG is Surgical (S) ( if M/S
+                indicator is not available for Final DRG and Final DRG Code = Assessment DRG Code,
+                then Assessment DRG is Surgical. OR if M/S indicator is not available for Final DRG
+                and Assessment DRG, and Final DRG Code = Working DRG Code, then Working DRG is
+                Surgical)</div></div>
+        </div>
+        <div class="table-container"><table class="- topic/table table frame-all" id="cmi_breakdown__table_o2t_45y_44b" data-ofbid="cmi_breakdown__table_o2t_45y_44b" data-cols="5"><caption class="- topic/title title tablecap" data-caption-side="top" data-is-repeated="true"><span class="table--title-label">Table<span class="table--title-label-number"> 3</span><span class="table--title-label-punctuation">. </span></span><span class="table--title">CMI Shift chart details</span></caption><colgroup><col style="width:20%"/><col style="width:20%"/><col style="width:20%"/><col style="width:20%"/><col style="width:20%"/></colgroup><thead class="- topic/thead thead">
+                    <tr class="- topic/row">
+                        <th class="- topic/entry entry colsep-1 rowsep-1" id="cmi_breakdown__table_o2t_45y_44b__entry__1">Metric</th>
+                        <th class="- topic/entry entry colsep-1 rowsep-1" id="cmi_breakdown__table_o2t_45y_44b__entry__2">Description</th>
+                        <th class="- topic/entry entry colsep-1 rowsep-1" id="cmi_breakdown__table_o2t_45y_44b__entry__3">Formula/Calculation</th>
+                        <th class="- topic/entry entry colsep-1 rowsep-1" id="cmi_breakdown__table_o2t_45y_44b__entry__4">Exclusion Criteria (if any)</th>
+                        <th class="- topic/entry entry colsep-0 rowsep-1" id="cmi_breakdown__table_o2t_45y_44b__entry__5">Tooltip</th>
+                    </tr>
+                </thead><tbody class="- topic/tbody tbody">
+                    <tr class="- topic/row">
+                        <td class="- topic/entry entry colsep-1 rowsep-1">Overall CMI Shift</td>
+                        <td class="- topic/entry entry colsep-1 rowsep-1">
+                            <p class="- topic/p p">Percentage shift in weight between Final Coded DRG and Reconciliation
+                                Assessment DRG weights for Reconciled Encounters (Auto- Reconciled,
+                                Reconciled-Impact or Reconciled-No Impact for which Reconciliation
+                                Assessment DRG WT (or W-DRG WT) is less than or equal to Final DRG
+                                WT (Final WT- R-DRG WT &gt;= 0)).</p>
+                            <div class="- topic/p p">
+                                <div class="- topic/note note note note_note"><span class="note__title">Note:</span> <div class="note__body">Rounded to 2 decimal places.</div></div>
+                            </div>
+                        </td>
+                        <td class="- topic/entry entry colsep-1 rowsep-1">
+                            <p class="- topic/p p">Overall CMI Shift(%) = (Overall CMI After CDI- Overall CMI Before CDI
+                                /Overall Before CDI) *100</p>
+                        </td>
+                        <td class="- topic/entry entry colsep-1 rowsep-1"></td>
+                        <td class="- topic/entry entry colsep-0 rowsep-0" rowspan="3">
+                            <p class="- topic/p p">Overall CMI Before</p>
+                            <p class="- topic/p p">Overall CMI After</p>
+                            <p class="- topic/p p">Medical CMI Before</p>
+                            <p class="- topic/p p">Medical CMI After</p>
+                            <p class="- topic/p p">Surgical CMI Before</p>
+                            <p class="- topic/p p">Surgical CMI After </p>
+                        </td>
+                    </tr>
+                    <tr class="- topic/row">
+                        <td class="- topic/entry entry colsep-1 rowsep-1">Medical CMI Shift</td>
+                        <td class="- topic/entry entry colsep-1 rowsep-1">
+                            <p class="- topic/p p">Percentage shift in weight between Final Coded DRG and Reconciliation
+                                Assessment DRG weights for medical Reconciled Encounters (Auto-
+                                Reconciled, Reconciled-Impact or Reconciled-No Impact) for which
+                                Reconciliation Assessment DRG WT (or W-DRG WT) is less than or equal
+                                to Final DRG WT (Final WT- R-DRG WT &gt;= 0).</p>
+                            <div class="- topic/p p">
+                                <div class="- topic/note note note note_note"><span class="note__title">Note:</span> <div class="note__body"> Rounded to 2 decimal places.</div></div>
+                            </div>
+                            <p class="- topic/p p">This value is represented with 0 decimals.</p>
+                        </td>
+                        <td class="- topic/entry entry colsep-1 rowsep-1">
+                            <p class="- topic/p p">Medical CMI Shift(%) = (Medical CMI After CDI- Medical CMI Before CDI
+                                /Medical Before CDI) *100</p>
+                        </td>
+                        <td class="- topic/entry entry colsep-1 rowsep-1"></td>
+                    </tr>
+                    <tr class="- topic/row">
+                        <td class="- topic/entry entry colsep-1 rowsep-0">Surgical CMI Shift</td>
+                        <td class="- topic/entry entry colsep-1 rowsep-0">
+                            <p class="- topic/p p">Percentage shift in weight between Final Coded DRG and Reconciliation
+                                Assessment DRG weights for surgical Reconciled Encounters (Auto-
+                                Reconciled, Reconciled-Impact or Reconciled-No Impact) for which
+                                Reconciliation Assessment DRG WT (or W-DRG WT) is less than or equal
+                                to Final DRG WT (Final WT- R-DRG WT &gt;= 0).</p>
+                            <div class="- topic/p p">
+                                <div class="- topic/note note note note_note"><span class="note__title">Note:</span> <div class="note__body">Rounded to 2 decimal places.</div></div>
+                            </div>
+                        </td>
+                        <td class="- topic/entry entry colsep-1 rowsep-0">
+                            <p class="- topic/p p">Surgical CMI Shift(%) = (Surgical CMI After CDI- Surgical CMI Before
+                                CDI /Surgical Before CDI) *100</p>
+                        </td>
+                        <td class="- topic/entry entry colsep-1 rowsep-0"></td>
+                    </tr>
+                </tbody></table></div>
+        <p class="- topic/p p"><strong class="+ topic/ph hi-d/b ph b">CMI Breakdown - CMI Trend Chart</strong></p>
+        <figure class="- topic/fig fig fignone" id="cmi_breakdown__fig_ywd_2ll_p4b" data-ofbid="cmi_breakdown__fig_ywd_2ll_p4b"><figcaption data-caption-side="top" class="- topic/title title figcap"><span class="figtitleprefix fig--title-label">Figure<span class="fig--title-label-number"> 5</span><span class="fig--title-label-punctuation">. </span></span><span class="fig--title">CMI Trend Chart</span></figcaption>
+            
+            <img class="- topic/image image" id="cmi_breakdown__image_lxs_2ll_p4b" src="Images/CMI%20Breakdown%20CMI%20Trend.png" width="800"/>
+        </figure>
+        <p class="- topic/p p">The CMI Trend chart displays the monthly trend of various CMI metrics.</p>
+        <ul class="- topic/ul ul" id="cmi_breakdown__ul_g3b_gvy_44b" data-ofbid="cmi_breakdown__ul_g3b_gvy_44b">
+            <li class="- topic/li li">
+                <p class="- topic/p p">By default, the chart displays the data for 3 calendar months.</p>
+            </li>
+            <li class="- topic/li li"><strong class="+ topic/ph hi-d/b ph b">Info icon</strong>(text on hover): Data in this chart is for all the reconciled cases.
+                Encounter Status: Reconciled-Impact, Reconciled-No Impact, Auto-Reconciled.</li>
+        </ul>
+        <div class="- topic/p p">
+            <div class="- topic/note note note note_note"><span class="note__title">Note:</span> <div class="note__body">Medical encounters are those for which Final Coded DRG is Medical (M) ( if M/S
+                indicator is not available for Final DRG and Final DRG Code = Assessment DRG Code,
+                then Assessment DRG is Medical. if M/S indicator is not available for Final DRG and
+                Assessment DRG, and Final DRG Code = Working DRG Code, then Working DRG is
+                Medical)</div></div>
+        </div>
+        <div class="- topic/p p">
+            <div class="- topic/note note note note_note"><span class="note__title">Note:</span> <div class="note__body">Surgical encounters are those for which Final Coded DRG is Surgical (S) ( if M/S
+                indicator is not available for Final DRG and Final DRG Code = Assessment DRG Code,
+                then Assessment DRG is Medical. ( if M/S indicator is not available for Final DRG
+                and Final DRG Code = Assessment DRG Code, then Assessment DRG is Surgical. OR if M/S
+                indicator is not available for Final DRG and Assessment DRG, and Final DRG Code =
+                Working DRG Code, then Working DRG is Surgical)</div></div>
+        </div>
+        <div class="table-container"><table class="- topic/table table frame-all" id="cmi_breakdown__table_xdr_hvy_44b" data-ofbid="cmi_breakdown__table_xdr_hvy_44b" data-cols="5"><caption class="- topic/title title tablecap" data-caption-side="top" data-is-repeated="true"><span class="table--title-label">Table<span class="table--title-label-number"> 4</span><span class="table--title-label-punctuation">. </span></span><span class="table--title">CMI Trend chart details</span></caption><colgroup><col style="width:16%"/><col style="width:24%"/><col style="width:20%"/><col style="width:20%"/><col style="width:20%"/></colgroup><thead class="- topic/thead thead">
+                    <tr class="- topic/row">
+                        <th class="- topic/entry entry colsep-1 rowsep-1" id="cmi_breakdown__table_xdr_hvy_44b__entry__1">Column</th>
+                        <th class="- topic/entry entry colsep-1 rowsep-1" id="cmi_breakdown__table_xdr_hvy_44b__entry__2">Description</th>
+                        <th class="- topic/entry entry colsep-1 rowsep-1" id="cmi_breakdown__table_xdr_hvy_44b__entry__3">Formula/Calculation</th>
+                        <th class="- topic/entry entry colsep-1 rowsep-1" id="cmi_breakdown__table_xdr_hvy_44b__entry__4">Exclusion Criteria (if any)</th>
+                        <th class="- topic/entry entry colsep-0 rowsep-1" id="cmi_breakdown__table_xdr_hvy_44b__entry__5">Tooltip</th>
+                    </tr>
+                </thead><tbody class="- topic/tbody tbody">
+                    <tr class="- topic/row">
+                        <td class="- topic/entry entry colsep-1 rowsep-1">Discharge Month</td>
+                        <td class="- topic/entry entry colsep-1 rowsep-1">Discharge month in the format MMM-YYYY (E.g. Jun 2020, Mar
+                            2020)</td>
+                        <td class="- topic/entry entry colsep-1 rowsep-1"></td>
+                        <td class="- topic/entry entry colsep-1 rowsep-1"></td>
+                        <td class="- topic/entry entry colsep-0 rowsep-0" rowspan="15"></td>
+                    </tr>
+                    <tr class="- topic/row">
+                        <td class="- topic/entry entry colsep-1 rowsep-1">Total Reconciled</td>
+                        <td class="- topic/entry entry colsep-1 rowsep-1">
+                            <p class="- topic/p p">The count of encounters with Reconciled Impact, Reconciled No Impact,
+                                or Auto Reconcile status.</p>
+                        </td>
+                        <td class="- topic/entry entry colsep-1 rowsep-1"></td>
+                        <td class="- topic/entry entry colsep-1 rowsep-1"></td>
+                    </tr>
+                    <tr class="- topic/row">
+                        <td class="- topic/entry entry colsep-1 rowsep-1">Overall CMI Before CDI</td>
+                        <td class="- topic/entry entry colsep-1 rowsep-1">This metric displays the 'Overall Positive CMI Before CDI' for each
+                                month.<p class="- topic/p p">The average of Reconciliation Assessment DRG WTs (or
+                                Working DRG WT when Discharge Date &lt; 11/14/19 or Reconciliation
+                                Assessment DRG is blank) of all encounters with status of Auto-
+                                Reconciled, Reconciled-Impact or Reconciled-No Impact for which
+                                Reconciliation Assessment DRG WT (or W-DRG WT) is less than or equal
+                                to Final DRG WT (Final WT- R-DRG WT &gt;= 0)</p><div class="- topic/p p">
+                                <div class="- topic/note note note note_note"><span class="note__title">Note:</span> <div class="note__body">This value is represented with 4 decimals.</div></div>
+                            </div></td>
+                        <td class="- topic/entry entry colsep-1 rowsep-1">Overall CMI Before CDI = Sum of Reconciliation Assessment DRG WTs (or
+                            Working DRG WT when Discharge Date &lt; 11/14/19 or Reconciliation
+                            Assessment DRG is blank) of all encounters with status of Auto-
+                            Reconciled, Reconciled-Impact or Reconciled-No Impact for which
+                            Reconciliation Assessment DRG WT (or W-DRG WT) is less than or equal to
+                            Final DRG WT (Final WT- R-DRG WT &gt;= 0). / Total count of Reconciled
+                            Encounters. (Auto- Reconciled, Reconciled-Impact or Reconciled-No
+                            Impact)</td>
+                        <td class="- topic/entry entry colsep-1 rowsep-1"></td>
+                    </tr>
+                    <tr class="- topic/row">
+                        <td class="- topic/entry entry colsep-1 rowsep-1">Overall CMI After CDI</td>
+                        <td class="- topic/entry entry colsep-1 rowsep-1">This metric displays the 'Overall Positive CMI After CDI' for each
+                                month.<p class="- topic/p p">The average of Final DRG WTs of all encounters with status
+                                of Auto- Reconciled, Reconciled-Impact or Reconciled-No Impact for
+                                which Reconciliation Assessment DRG WT (or W-DRG WT) is less than or
+                                equal to Final DRG WT (Final WT- R-DRG WT &gt;= 0)</p><div class="- topic/p p">
+                                <div class="- topic/note note note note_note"><span class="note__title">Note:</span> <div class="note__body">This value is represented with 4 decimals.</div></div>
+                            </div></td>
+                        <td class="- topic/entry entry colsep-1 rowsep-1">Overall CMI After CDI = Sum of Final DRG WTs of all encounters with
+                            status of Auto- Reconciled, Reconciled-Impact or Reconciled-No Impact
+                            for which Reconciliation Assessment DRG WT (or W-DRG WT) is less than or
+                            equal to Final DRG WT (Final WT- R-DRG WT &gt;= 0). / Total count of
+                            Reconciled Encounters. (Auto- Reconciled, Reconciled-Impact or
+                            Reconciled-No Impact)</td>
+                        <td class="- topic/entry entry colsep-1 rowsep-1"></td>
+                    </tr>
+                    <tr class="- topic/row">
+                        <td class="- topic/entry entry colsep-1 rowsep-1">CMI Shift %</td>
+                        <td class="- topic/entry entry colsep-1 rowsep-1">Percentage shift in weight between Final Coded DRG and Reconciliation
+                            Assessment DRG weights for Reconciled Encounters (Auto- Reconciled,
+                            Reconciled-Impact or Reconciled-No Impact for which Reconciliation
+                            Assessment DRG WT (or W-DRG WT) is less than or equal to Final DRG WT
+                            (Final WT- R-DRG WT &gt;= 0)).<div class="- topic/p p">
+                                <div class="- topic/note note note note_note"><span class="note__title">Note:</span> <div class="note__body">Rounded to 2 decimal places. E.g. 2.74%.</div></div>
+                            </div></td>
+                        <td class="- topic/entry entry colsep-1 rowsep-1">
+                            <p class="- topic/p p">Overall CMI Shift(%) = (Overall CMI After CDI- Overall CMI Before CDI
+                                /Overall Before CDI) *100</p>
+                        </td>
+                        <td class="- topic/entry entry colsep-1 rowsep-1"></td>
+                    </tr>
+                    <tr class="- topic/row">
+                        <td class="- topic/entry entry colsep-1 rowsep-1">MED Cases</td>
+                        <td class="- topic/entry entry colsep-1 rowsep-1">
+                            <p class="- topic/p p">Count of medical cases for each month.</p>
+                        </td>
+                        <td class="- topic/entry entry colsep-1 rowsep-1">MED Cases = The total number of medical encounters with status as
+                            Auto- Reconciled, Reconciled-Impact or Reconciled-No Impact.</td>
+                        <td class="- topic/entry entry colsep-1 rowsep-1"></td>
+                    </tr>
+                    <tr class="- topic/row">
+                        <td class="- topic/entry entry colsep-1 rowsep-1">% MED Cases</td>
+                        <td class="- topic/entry entry colsep-1 rowsep-1">
+                            <p class="- topic/p p">Percentage of surgical cases for each month.</p>
+                        </td>
+                        <td class="- topic/entry entry colsep-1 rowsep-1">
+                            <p class="- topic/p p">%  Medical Cases = The total number of medical encounters with status
+                                as Auto- Reconciled, Reconciled-Impact or Reconciled-No Impact /
+                                Total Reconciled Cases x 100</p>
+                        </td>
+                        <td class="- topic/entry entry colsep-1 rowsep-1"></td>
+                    </tr>
+                    <tr class="- topic/row">
+                        <td class="- topic/entry entry colsep-1 rowsep-1">MED CMI Before CDI</td>
+                        <td class="- topic/entry entry colsep-1 rowsep-1">
+                            <p class="- topic/p p">The average of Reconciliation Assessment DRG WTs (or Working DRG WT
+                                when Discharge Date &lt; 11/14/19 or Reconciliation Assessment DRG
+                                is blank) of all Medical encounters with status of Auto- Reconciled,
+                                Reconciled-Impact or Reconciled-No Impact for which Reconciliation
+                                Assessment DRG WT (or W-DRG WT) is less than or equal to Final DRG
+                                WT (Final WT- R-DRG WT &gt;= 0).</p>
+                            <p class="- topic/p p">This value is represented with 4 decimals.</p>
+                        </td>
+                        <td class="- topic/entry entry colsep-1 rowsep-1">
+                            <p class="- topic/p p">CMI Before CDI = Sum of Reconciliation Assessment DRG WTs (or Working
+                                DRG WT when Discharge Date &lt; 11/14/19 or Reconciliation
+                                Assessment DRG is blank) of all Medical encounters with status of
+                                Auto- Reconciled, Reconciled-Impact or Reconciled-No Impact for
+                                which Reconciliation Assessment DRG WT (or W-DRG WT) is less than or
+                                equal to Final DRG WT (Final WT- R-DRG WT &gt;= 0) / Total count of
+                                Medical Reconciled Encounters. (Auto- Reconciled, Reconciled-Impact
+                                or Reconciled-No Impact)</p>
+                        </td>
+                        <td class="- topic/entry entry colsep-1 rowsep-1"></td>
+                    </tr>
+                    <tr class="- topic/row">
+                        <td class="- topic/entry entry colsep-1 rowsep-1">MED CMI After CDI</td>
+                        <td class="- topic/entry entry colsep-1 rowsep-1">
+                            <p class="- topic/p p">The average of Final DRG WTs of all medical encounters with status of
+                                Auto- Reconciled, Reconciled-Impact or Reconciled-No Impact.</p>
+                            <p class="- topic/p p">This value is represented with 4 decimals.</p>
+                        </td>
+                        <td class="- topic/entry entry colsep-1 rowsep-1">
+                            <p class="- topic/p p">Med CMI After CDI = Sum of Final DRG WTs of all medical encounters
+                                with status of Auto- Reconciled, Reconciled-Impact or Reconciled-No
+                                Impact. / Total count of medical Reconciled Encounters. (Auto-
+                                Reconciled, Reconciled-Impact or Reconciled-No Impact) for which
+                                Reconciliation Assessment DRG WT (or W-DRG WT) is less than or equal
+                                to Final DRG WT (Final WT- R-DRG WT &gt;= 0)</p>
+                        </td>
+                        <td class="- topic/entry entry colsep-1 rowsep-1"></td>
+                    </tr>
+                    <tr class="- topic/row">
+                        <td class="- topic/entry entry colsep-1 rowsep-1">MED CMI Shift %</td>
+                        <td class="- topic/entry entry colsep-1 rowsep-1">
+                            <p class="- topic/p p">Percentage shift in weight between Final Coded DRG and Reconciliation
+                                Assessment DRG weights for medical Reconciled Encounters (Auto-
+                                Reconciled, Reconciled-Impact or Reconciled-No Impact) for which
+                                Reconciliation Assessment DRG WT (or W-DRG WT) is less than or equal
+                                to Final DRG WT (Final WT- R-DRG WT &gt;= 0).</p>
+                            <div class="- topic/p p">
+                                <div class="- topic/note note note note_note"><span class="note__title">Note:</span> <div class="note__body">Rounded to 2 decimal places. E.g. 2.74%.</div></div>
+                            </div>
+                            <p class="- topic/p p">This value is represented with 0 decimals.</p>
+                        </td>
+                        <td class="- topic/entry entry colsep-1 rowsep-1">
+                            <p class="- topic/p p">Med CMI Shift(%) = (Medical CMI After CDI- Medical CMI Before CDI
+                                /Medical Before CDI) *100</p>
+                        </td>
+                        <td class="- topic/entry entry colsep-1 rowsep-1"></td>
+                    </tr>
+                    <tr class="- topic/row">
+                        <td class="- topic/entry entry colsep-1 rowsep-1">SURG Cases</td>
+                        <td class="- topic/entry entry colsep-1 rowsep-1">
+                            <p class="- topic/p p">Count of surgical cases for each month.</p>
+                        </td>
+                        <td class="- topic/entry entry colsep-1 rowsep-1">SURG Cases = The total number of surgical encounters with status as
+                            Auto- Reconciled, Reconciled-Impact or Reconciled-No Impact.</td>
+                        <td class="- topic/entry entry colsep-1 rowsep-1"></td>
+                    </tr>
+                    <tr class="- topic/row">
+                        <td class="- topic/entry entry colsep-1 rowsep-1">% SURG Cases</td>
+                        <td class="- topic/entry entry colsep-1 rowsep-1">
+                            <p class="- topic/p p">Percentage of surgical cases for each month.</p>
+                        </td>
+                        <td class="- topic/entry entry colsep-1 rowsep-1">
+                            <p class="- topic/p p">% SURG Cases = The total number of surgical encounters with status as
+                                Auto- Reconciled, Reconciled-Impact or Reconciled-No Impact / Total
+                                Reconciled Cases x 100</p>
+                        </td>
+                        <td class="- topic/entry entry colsep-1 rowsep-1"></td>
+                    </tr>
+                    <tr class="- topic/row">
+                        <td class="- topic/entry entry colsep-1 rowsep-1">SURG CMI Before CDI</td>
+                        <td class="- topic/entry entry colsep-1 rowsep-1">
+                            <p class="- topic/p p">The average of Reconciliation Assessment DRG WTs (or Working DRG WT
+                                when Discharge Date &lt; 11/14/19 or Reconciliation Assessment DRG
+                                is blank) of all Surgical encounters with status of Auto-
+                                Reconciled, Reconciled-Impact or Reconciled-No Impact for which
+                                Reconciliation Assessment DRG WT (or W-DRG WT) is less than or equal
+                                to Final DRG WT (Final WT- R-DRG WT &gt;= 0). </p>
+                            <p class="- topic/p p">This value is represented with 4 decimals.</p>
+                        </td>
+                        <td class="- topic/entry entry colsep-1 rowsep-1">
+                            <p class="- topic/p p">Surgical CMI Before CDI = Sum of Reconciliation Assessment DRG WTs
+                                (or Working DRG WT when Discharge Date &lt; 11/14/19 or
+                                Reconciliation Assessment DRG is blank) of all Surgical encounters
+                                with status of Auto- Reconciled, Reconciled-Impact or Reconciled-No
+                                Impact for which Reconciliation Assessment DRG WT (or W-DRG WT) is
+                                less than or equal to Final DRG WT (Final WT- R-DRG WT &gt;= 0) / Total
+                                count of Surgical Reconciled Encounters. (Auto- Reconciled,
+                                Reconciled-Impact or Reconciled-No Impact)</p>
+                        </td>
+                        <td class="- topic/entry entry colsep-1 rowsep-1"></td>
+                    </tr>
+                    <tr class="- topic/row">
+                        <td class="- topic/entry entry colsep-1 rowsep-1">SURG CMI After CDI</td>
+                        <td class="- topic/entry entry colsep-1 rowsep-1">
+                            <p class="- topic/p p">The average of Final DRG WTs of all medical encounters with status of
+                                Auto- Reconciled, Reconciled-Impact or Reconciled-No Impact for
+                                which Reconciliation Assessment DRG WT (or W-DRG WT) is less than or
+                                equal to Final DRG WT (Final WT- R-DRG WT &gt;= 0).</p>
+                            <p class="- topic/p p">This value is represented with 4 decimals.</p>
+                        </td>
+                        <td class="- topic/entry entry colsep-1 rowsep-1">
+                            <p class="- topic/p p">SURG CMI After CDI = Sum of Final DRG WTs of all surgical encounters
+                                with status of Auto- Reconciled, Reconciled-Impact or Reconciled-No
+                                Impact for which Reconciliation Assessment DRG WT (or W-DRG WT) is
+                                less than or equal to Final DRG WT (Final WT- R-DRG WT &gt;= 0). /
+                                Total count of surgical Reconciled Encounters. (Auto- Reconciled,
+                                Reconciled-Impact or Reconciled-No Impact)</p>
+                        </td>
+                        <td class="- topic/entry entry colsep-1 rowsep-1"></td>
+                    </tr>
+                    <tr class="- topic/row">
+                        <td class="- topic/entry entry colsep-1 rowsep-0">SURG CMI Shift %</td>
+                        <td class="- topic/entry entry colsep-1 rowsep-0">
+                            <p class="- topic/p p">Percentage shift in weight between Final Coded DRG and Reconciliation
+                                Assessment DRG weights for surgical Reconciled Encounters (Auto-
+                                Reconciled, Reconciled-Impact or Reconciled-No Impact) for which
+                                Reconciliation Assessment DRG WT (or W-DRG WT) is less than or equal
+                                to Final DRG WT (Final WT- R-DRG WT &gt;= 0).</p>
+                            <div class="- topic/p p">
+                                <div class="- topic/note note note note_note"><span class="note__title">Note:</span> <div class="note__body">Rounded to 2 decimal places. E.g. 2.74%.</div></div>
+                            </div>
+                            <p class="- topic/p p">This value is represented with 0 decimals.</p>
+                        </td>
+                        <td class="- topic/entry entry colsep-1 rowsep-0">
+                            <p class="- topic/p p">Surgical CMI Shift(%) = (Surgical CMI After CDI- Surgical CMI Before
+                                CDI /Surgical Before CDI) *100</p>
+                        </td>
+                        <td class="- topic/entry entry colsep-1 rowsep-0"></td>
+                    </tr>
+                </tbody></table></div>
+        <div class="- topic/p p">
+            <div class="table-container"><table class="- topic/table table frame-all" id="cmi_breakdown__table_qnn_w2n_g4b" data-ofbid="cmi_breakdown__table_qnn_w2n_g4b" data-cols="2"><caption class="- topic/title title tablecap" data-caption-side="top" data-is-repeated="true"><span class="table--title-label">Table<span class="table--title-label-number"> 5</span><span class="table--title-label-punctuation">. </span></span><span class="table--title">Report Slicers </span></caption><colgroup><col style="width:50%"/><col style="width:50%"/></colgroup><thead class="- topic/thead thead">
+                        <tr class="- topic/row">
+                            <th class="- topic/entry entry colsep-1 rowsep-1" id="cmi_breakdown__table_qnn_w2n_g4b__entry__1">Slicer</th>
+                            <th class="- topic/entry entry colsep-0 rowsep-1" id="cmi_breakdown__table_qnn_w2n_g4b__entry__2">Description</th>
+                        </tr>
+                    </thead><tbody class="- topic/tbody tbody">
+                        <tr class="- topic/row">
+                            <td class="- topic/entry entry colsep-1 rowsep-1">Discharge Date</td>
+                            <td class="- topic/entry entry colsep-0 rowsep-1">
+                                <ul class="- topic/ul ul" id="cmi_breakdown__ul_uzh_y2n_g4b" data-ofbid="cmi_breakdown__ul_uzh_y2n_g4b">
+                                    <li class="- topic/li li">Displays the discharge date range. </li>
+                                    <li class="- topic/li li">You can select date from the lookup provided.</li>
+                                    <li class="- topic/li li">
+                                        <strong class="+ topic/ph hi-d/b ph b">Example</strong>: 7/1/2020 - 7/31/2020</li>
+                                    <li class="- topic/li li"><strong class="+ topic/ph hi-d/b ph b">Default</strong>: Last 3 calendar months date range selected
+                                        by default.</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr class="- topic/row">
+                            <td class="- topic/entry entry colsep-1 rowsep-1">Reset </td>
+                            <td class="- topic/entry entry colsep-0 rowsep-1">
+                                <ul class="- topic/ul ul" id="cmi_breakdown__ul_jw1_22z_m4b" data-ofbid="cmi_breakdown__ul_jw1_22z_m4b">
+                                    <li class="- topic/li li">With the Reset button, you can reset the admit date
+                                        range.</li>
+                                    <li class="- topic/li li"><strong class="+ topic/ph hi-d/b ph b">Tooltip</strong>: Use "Ctrl + Click" to reset the Admit
+                                        Date.</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr class="- topic/row">
+                            <td class="- topic/entry entry colsep-1 rowsep-1">Facility</td>
+                            <td class="- topic/entry entry colsep-0 rowsep-1">
+                                <ul class="- topic/ul ul" id="cmi_breakdown__ul_vzp_z2n_g4b" data-ofbid="cmi_breakdown__ul_vzp_z2n_g4b">
+                                    <li class="- topic/li li">Displays both active and inactive facilities in alphabetical
+                                        order that you have access to.</li>
+                                    <li class="- topic/li li">You can select multiple facilities.</li>
+                                    <li class="- topic/li li">You can search the facility by Facility ID or
+                                        Description.</li>
+                                    <li class="- topic/li li"><strong class="+ topic/ph hi-d/b ph b">Format</strong>: Facility Description (Facility ID)</li>
+                                    <li class="- topic/li li"><strong class="+ topic/ph hi-d/b ph b">Default</strong>: ALL</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr class="- topic/row">
+                            <td class="- topic/entry entry colsep-1 rowsep-0">Payer</td>
+                            <td class="- topic/entry entry colsep-0 rowsep-0">
+                                <ul class="- topic/ul ul" id="cmi_breakdown__ul_ntb_cfn_g4b" data-ofbid="cmi_breakdown__ul_ntb_cfn_g4b">
+                                    <li class="- topic/li li">Displays both active and inactive payers in alphabetical
+                                        order associated with the facilities you have access
+                                        to.</li>
+                                    <li class="- topic/li li">You can select multiple payers.</li>
+                                    <li class="- topic/li li">"Unassigned Payer" displays data for the encounters that do
+                                        not have a payer assigned.</li>
+                                    <li class="- topic/li li">You can search the Payer by Payer ID or Description.</li>
+                                    <li class="- topic/li li"><strong class="+ topic/ph hi-d/b ph b">Format</strong>: Payer Description (Payer ID)</li>
+                                    <li class="- topic/li li"><strong class="+ topic/ph hi-d/b ph b">Default</strong>: ALL</li>
+                                </ul>
+                            </td>
+                        </tr>
+                    </tbody></table></div>
+        </div>
+        <div class="- topic/p p">
+            <div class="table-container"><table class="- topic/table table frame-all" id="cmi_breakdown__table_dq1_ffn_g4b" data-ofbid="cmi_breakdown__table_dq1_ffn_g4b" data-cols="2"><caption class="- topic/title title tablecap" data-caption-side="top" data-is-repeated="true"><span class="table--title-label">Table<span class="table--title-label-number"> 6</span><span class="table--title-label-punctuation">. </span></span><span class="table--title">Filters on all Pages</span></caption><colgroup><col style="width:50%"/><col style="width:50%"/></colgroup><thead class="- topic/thead thead">
+                        <tr class="- topic/row">
+                            <th class="- topic/entry entry colsep-1 rowsep-1" id="cmi_breakdown__table_dq1_ffn_g4b__entry__1">Filter</th>
+                            <th class="- topic/entry entry colsep-0 rowsep-1" id="cmi_breakdown__table_dq1_ffn_g4b__entry__2">Description</th>
+                        </tr>
+                    </thead><tbody class="- topic/tbody tbody">
+                        <tr class="- topic/row">
+                            <td class="- topic/entry entry colsep-1 rowsep-1">Patient Type</td>
+                            <td class="- topic/entry entry colsep-0 rowsep-1">
+                                <ul class="- topic/ul ul" id="cmi_breakdown__ul_ns1_3fn_g4b" data-ofbid="cmi_breakdown__ul_ns1_3fn_g4b">
+                                    <li class="- topic/li li">Displays the available patient types. <strong class="+ topic/ph hi-d/b ph b">Example</strong>:
+                                        Inpatient, Outpatient.</li>
+                                    <li class="- topic/li li"><strong class="+ topic/ph hi-d/b ph b">Default</strong>: Inpatient</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr class="- topic/row">
+                            <td class="- topic/entry entry colsep-1 rowsep-1">Unit</td>
+                            <td class="- topic/entry entry colsep-0 rowsep-1">
+                                <ul class="- topic/ul ul" id="cmi_breakdown__ul_kdd_jfn_g4b" data-ofbid="cmi_breakdown__ul_kdd_jfn_g4b">
+                                    <li class="- topic/li li">Displays the list of available units.</li>
+                                    <li class="- topic/li li">You can select multiple Units.</li>
+                                    <li class="- topic/li li">You can search the Unit.</li>
+                                    <li class="- topic/li li"><strong class="+ topic/ph hi-d/b ph b">Default</strong>: ALL</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr class="- topic/row">
+                            <td class="- topic/entry entry colsep-1 rowsep-1">Admit Service</td>
+                            <td class="- topic/entry entry colsep-0 rowsep-1">
+                                <ul class="- topic/ul ul" id="cmi_breakdown__ul_x2g_kfn_g4b" data-ofbid="cmi_breakdown__ul_x2g_kfn_g4b">
+                                    <li class="- topic/li li">Displays the list of available admit service.</li>
+                                    <li class="- topic/li li">You can select multiple Units.</li>
+                                    <li class="- topic/li li">You can search the Admit Service.</li>
+                                    <li class="- topic/li li"><strong class="+ topic/ph hi-d/b ph b">Default</strong>: ALL</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr class="- topic/row">
+                            <td class="- topic/entry entry colsep-1 rowsep-1">Visit Type</td>
+                            <td class="- topic/entry entry colsep-0 rowsep-1">
+                                <ul class="- topic/ul ul" id="cmi_breakdown__ul_obm_lgm_r4b" data-ofbid="cmi_breakdown__ul_obm_lgm_r4b">
+                                    <li class="- topic/li li">Displays the available patient types.<strong class="+ topic/ph hi-d/b ph b">Example</strong>: ED, IP,
+                                        etc.</li>
+                                    <li class="- topic/li li">You can select multiple Visit Type.</li>
+                                    <li class="- topic/li li">You can search the Visit Type.</li>
+                                    <li class="- topic/li li"><strong class="+ topic/ph hi-d/b ph b">Default</strong>: ALL</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr class="- topic/row">
+                            <td class="- topic/entry entry colsep-1 rowsep-0">DRG Specialty</td>
+                            <td class="- topic/entry entry colsep-0 rowsep-0">
+                                <div class="- topic/p p">
+                                    <ul class="- topic/ul ul" id="cmi_breakdown__ul_thz_gml_kqb" data-ofbid="cmi_breakdown__ul_thz_gml_kqb">
+                                        <li class="- topic/li li">
+                                            <p class="- topic/p p">Displays the available DRG Specialties.
+                                                  <strong class="+ topic/ph hi-d/b ph b">Example</strong>: Transplant, Surgery,
+                                                Neurosurgery.</p>
+                                        </li>
+                                        <li class="- topic/li li">You can select multiple specialties.</li>
+                                        <li class="- topic/li li">You can search the DRG Specialty.</li>
+                                        <li class="- topic/li li"><strong class="+ topic/ph hi-d/b ph b">Default</strong>: ALL</li>
+                                    </ul>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody></table></div>
+        </div>
+        <div class="- topic/p p">
+            <div class="table-container"><table class="- topic/table table frame-all" id="cmi_breakdown__table_vqg_bnl_p4b" data-ofbid="cmi_breakdown__table_vqg_bnl_p4b" data-cols="2"><caption class="- topic/title title tablecap" data-caption-side="top" data-is-repeated="true"><span class="table--title-label">Table<span class="table--title-label-number"> 7</span><span class="table--title-label-punctuation">. </span></span><span class="table--title"><strong class="+ topic/ph hi-d/b ph b">Footnotes</strong></span></caption><colgroup><col style="width:50%"/><col style="width:50%"/></colgroup><thead class="- topic/thead thead">
+                        <tr class="- topic/row">
+                            <th class="- topic/entry entry colsep-1 rowsep-1" id="cmi_breakdown__table_vqg_bnl_p4b__entry__1">Formula</th>
+                            <th class="- topic/entry entry colsep-0 rowsep-1" id="cmi_breakdown__table_vqg_bnl_p4b__entry__2">Text on hover</th>
+                        </tr>
+                    </thead><tbody class="- topic/tbody tbody">
+                        <tr class="- topic/row">
+                            <td class="- topic/entry entry colsep-1 rowsep-1">Overall CMI Before</td>
+                            <td class="- topic/entry entry colsep-0 rowsep-1">
+                                <p class="- topic/p p">The avg. of R-DRG WTs (or W-DRG WT if R-DRG is blank) of all
+                                    Reconciled-Impact (Impact Type: Both, Financial Impact)
+                                    encounters and F-DRG WTs of all Reconciled-No Impact,
+                                    Reconciled-Impact (Impact Type: SOI/ROM Impact) and Auto
+                                    Reconciled encounters.</p>
+                            </td>
+                        </tr>
+                        <tr class="- topic/row">
+                            <td class="- topic/entry entry colsep-1 rowsep-1">Overall CMI After</td>
+                            <td class="- topic/entry entry colsep-0 rowsep-1">The avg. of Final DRG WTs of all reconciled (Reconciled-Impact,
+                                Reconciled-No Impact, Auto Reconciled) encounters.</td>
+                        </tr>
+                        <tr class="- topic/row">
+                            <td class="- topic/entry entry colsep-1 rowsep-1">Overall CMI Shift</td>
+                            <td class="- topic/entry entry colsep-0 rowsep-1">
+                                <p class="- topic/p p">CMI Shift = (CMI After - CMI Before);</p>
+                                <p class="- topic/p p">CMI Shift(%)= (CMI After - CMI Before)/CMI Before X 100. E.g.
+                                    3.14%</p>
+                            </td>
+                        </tr>
+                        <tr class="- topic/row">
+                            <td class="- topic/entry entry colsep-1 rowsep-1">Medical Cases</td>
+                            <td class="- topic/entry entry colsep-0 rowsep-1">
+                                <p class="- topic/p p">Medical Cases: Encounters with Final Coded DRG as Medical.</p>
+                                <p class="- topic/p p">% Medical Cases = (The total number of medical encounters with
+                                    status as Auto- Reconciled, Reconciled-Impact or Reconciled-No
+                                    Impact / Total Reconciled Cases) x 100. E.g. 41%</p>
+                            </td>
+                        </tr>
+                        <tr class="- topic/row">
+                            <td class="- topic/entry entry colsep-1 rowsep-1">Medical CMI Before </td>
+                            <td class="- topic/entry entry colsep-0 rowsep-1">
+                                <p class="- topic/p p">The avg. of R-DRG WTs (or W-DRG WT if R-DRG is blank) of all
+                                    Reconciled-Impact (Both, Financial) medical encounters and F-DRG
+                                    WTs of all Reconciled-No Impact, Reconciled-Impact (SOI/ROM) and
+                                    Auto Reconciled medical encounters.</p>
+                            </td>
+                        </tr>
+                        <tr class="- topic/row">
+                            <td class="- topic/entry entry colsep-1 rowsep-1">Medical CMI After</td>
+                            <td class="- topic/entry entry colsep-0 rowsep-1">The avg. of Final DRG WTs of all reconciled (Reconciled-Impact,
+                                Reconciled-No Impact, Auto Reconciled) medical encounters</td>
+                        </tr>
+                        <tr class="- topic/row">
+                            <td class="- topic/entry entry colsep-1 rowsep-1">Medical CMI Shift</td>
+                            <td class="- topic/entry entry colsep-0 rowsep-1">
+                                <p class="- topic/p p">Medical CMI Shift = (Medical CMI After - Medical CMI Before).
+                                    E.g. 1.3056</p>
+                                <p class="- topic/p p">Medical CMI Shift(%)= ((Medical CMI After - Medical CMI
+                                    Before)/Medical CMI Before) X 100. E.g. 3.14%</p>
+                            </td>
+                        </tr>
+                        <tr class="- topic/row">
+                            <td class="- topic/entry entry colsep-1 rowsep-1">Surgical Cases</td>
+                            <td class="- topic/entry entry colsep-0 rowsep-1">
+                                <p class="- topic/p p">Surgical Cases: Encounters with Final Coded DRG as Surgical.</p>
+                                <p class="- topic/p p">% Surgical Cases = The total number of surgical encounters with
+                                    status as Auto- Reconciled, Reconciled-Impact or Reconciled-No
+                                    Impact / Total Reconciled Cases x 100. E.g. 65%</p>
+                            </td>
+                        </tr>
+                        <tr class="- topic/row">
+                            <td class="- topic/entry entry colsep-1 rowsep-1">Surgical CMI Before</td>
+                            <td class="- topic/entry entry colsep-0 rowsep-1">
+                                <p class="- topic/p p">The avg. of R-DRG WTs (or W-DRG WT if R-DRG is blank) of all
+                                    Reconciled-Impact (Both, Financial) surgical encounters and
+                                    F-DRG WTs of all Reconciled-No Impact, Reconciled-Impact
+                                    (SOI/ROM) and Auto Reconciled surgical encounters.</p>
+                            </td>
+                        </tr>
+                        <tr class="- topic/row">
+                            <td class="- topic/entry entry colsep-1 rowsep-1">Surgical CMI After</td>
+                            <td class="- topic/entry entry colsep-0 rowsep-1">The avg. of Final DRG WTs of all reconciled (Reconciled-Impact,
+                                Reconciled-No Impact, Auto Reconciled) surgical encounters.</td>
+                        </tr>
+                        <tr class="- topic/row">
+                            <td class="- topic/entry entry colsep-1 rowsep-0">Surgical CMI Shift</td>
+                            <td class="- topic/entry entry colsep-0 rowsep-0">
+                                <p class="- topic/p p">Surgical CMI Shift = (Surgical CMI After - Surgical CMI Before).
+                                    E.g. 1.3056</p>
+                                <p class="- topic/p p">Surgical CMI Shift(%)= ((Surgical CMI After - Surgical CMI
+                                    Before)/Surgical CMI Before X 100. E.g. 3.14%</p>
+                            </td>
+                        </tr>
+                    </tbody></table></div>
+        </div>
+    </div>
+</article></main></div>
+                        
+                        
+                        
+                        
+                        
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            
+            
+            
+        </div> 
+        <footer class="navbar navbar-default wh_footer">
+  <div class=" footer-container mx-auto ">
+    © 2026 Nuance Communications, Inc. All rights reserved.
+  </div>
+</footer>
+        
+        <button id="go2top" class="d-print-none" title="Go to top">
+            <span class="oxy-icon oxy-icon-up"></span>
+        </button>
+        
+        <div id="modal_img_large" class="modal">
+            <span class="close oxy-icon oxy-icon-remove"></span>
+            <div id="modal_img_container"></div>
+            <div id="caption"></div>
+        </div>
+        
+        
+        
+    </body>
+</html>

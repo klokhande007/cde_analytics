@@ -1,0 +1,692 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="cds_review_activity">
+    <title>CDS Performance</title>
+    <shortdesc></shortdesc>
+    <conbody>
+        <p><b>Overview</b>: As a CDI Manager, I need a CDS Performance dashboard so that I can
+            analyze the individual and detailed performance of the CDSs and analyze their
+            activity.</p>
+        <p><b>Navigation</b>: On the Analytics home page left side panel, navigate to <menucascade>
+                <uicontrol>CDE One</uicontrol>
+                <uicontrol>Staff Management</uicontrol>
+                <uicontrol>CDS Performance</uicontrol>
+            </menucascade>.</p>
+        <p>CDS Performance displays the following KPI Cards: Clarification Rate, Financial
+            Clarification Rate, Avg Initial Review TAT (Hrs)</p>
+        <p>CDS Performance dashboard displays the following charts:<ul id="ul_o2x_dch_jqb">
+                <li>
+                    <p>Reviews</p>
+                </li>
+                <li>
+                    <p>Reviews by Payer</p>
+                </li>
+                <li>
+                    <p>Clarifications by Impact </p>
+                </li>
+                <li>
+                    <p>Clarifications by Type</p>
+                </li>
+                <li>
+                    <p>Clarifications by Subject</p>
+                </li>
+                <li>
+                    <p>Clarifications by Response</p>
+                </li>
+            </ul></p>
+        <p>On the top panel, you can select desired values for the slicers (refer <xref
+                href="#cds_review_activity/table_bgs_mw5_l4b" format="dita"/>) and the corresponding
+            data gets filtered in the tabular chart.</p>
+        <p>For filters all pages, refer <xref href="#cds_review_activity/table_xzd_hdw_l4b"
+                format="dita"/>.</p>
+        <p>For Footnotes, refer <xref href="#cds_review_activity/table_l5h_lpd_hpb" format="dita"
+            />.</p>
+        <p><b>Default Display</b>: By default, the dashboard displays the data for the inpatient
+            encounters for which activity has been performed in the last one calendar month. Click
+            the ‘Reset’ button to reset both activity date and discharge date and select the
+            required date. </p>
+        <p/>
+        <p><b>CDS Performance</b><fig id="fig_fg1_b54_gpb">
+                <title>Sample Report</title>
+            <image href="Images/cds_performance_report.gif" id="image_y5m_wgw_3qb" width="600"/>
+            </fig></p>
+        <p><b>CDS Performance - KPI Cards</b><fig id="fig_pfj_g54_gpb">
+                <title>KPI Cards</title>
+                <image href="Images/cds_performance_kpi.gif" id="image_rk3_phw_3qb"/>
+            </fig><table frame="all" rowsep="1" colsep="1" id="table_czl_bcn_dpb">
+                <title>KPI Cards</title>
+                <tgroup cols="4">
+                    <colspec colname="c1" colnum="1" colwidth="1*"/>
+                    <colspec colname="c2" colnum="2" colwidth="1*"/>
+                    <colspec colname="newCol4" colnum="3" colwidth="1*"/>
+                    <colspec colname="newCol3" colnum="4" colwidth="1*"/>
+                    <thead>
+                        <row>
+                            <entry>KPI Card</entry>
+                            <entry>Description</entry>
+                            <entry>Formula/Calculation</entry>
+                            <entry>Exclusion Criteria (if any)</entry>
+                        </row>
+                    </thead>
+                    <tbody>
+                        <row>
+                            <entry>Clarification Rate</entry>
+                            <entry>
+                                <p>This KPI metric displays the 'Clarification Rate' for the
+                                    selected time period. Out of total encounters reviewed, the
+                                    percentage of sent clarifications with the status other than
+                                    DELETED or RETRACTED. </p>
+                                <p/>
+                            </entry>
+                            <entry>
+                                <p>Clarification Rate = (Count of clarifications with the status
+                                    other than DELETED or RETRACTED sent for the reviewed
+                                    encounters/Count of Initial Reviews performed)*100 Rounded to 0
+                                    decimal places.</p>
+                            </entry>
+                            <entry>
+                                <p> Encounters with "Review Not Needed" encounter status are
+                                    excluded from this metric calculations. <b>Format</b>: 25%</p>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>Financial Impact Clarification Rate</entry>
+                            <entry>
+                                <p>This KPI metric displays 'Financial Impact Clarification Rate'
+                                    for the selected time period. Out of total encounters reviewed,
+                                    the percentage of Encounters with Financial Impact.</p>
+                            </entry>
+                            <entry>
+                                <p>Financial Impact Clarification Rate = (Encounters with Financial
+                                    Impact Clarifications /Encounters Reviewed (Initial Reviews) )*
+                                    100). Rounded to 0 decimal places.</p>
+                                <p>Financial Impact Clarification Rate = (Count of reviewed
+                                    encounters with at least one Financial Impact clarification with
+                                    the status other than DELETED or RETRACTED / Count of encounters
+                                    with an initial review date) X 100.</p>
+                                <p>Clarification with a standard or custom ‘Primary Type at
+                                    Reconciliation’ defined as ‘Financial or BOTH’ in the
+                                    administrator configuration is a Financial Impact
+                                    Clarification.</p>
+                            </entry>
+                            <entry>
+                                <p>Encounters with "Review Not Needed" encounter status are excluded
+                                    from this metric calculations.<b>Format</b>: 37%</p>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>Avg. Initial Review TAT (Hrs)</entry>
+                            <entry>This KPI metric displays 'Avg. Initial Review TAT (Hours)' for
+                                the selected time period. The number of hours between encounter
+                                Admit Date/time and the date/time, the Working Review was first
+                                created.</entry>
+                            <entry>
+                                <p>(Initial Review TAT (hours) for an encounter = Initial Review
+                                    Date/Time- Admit Date/Time) hours. </p>
+                                <p>Avg. Initial Review TAT(Hours) = Sum of Initial Review TAT(Hours)
+                                    of all the reviewed encounters / Encounters Reviewed (Initial
+                                    Reviews).</p>
+                            </entry>
+                            <entry>
+                                <p>Encounters with "Review Not Needed" encounter status are excluded
+                                    from this metric calculations. <b>Format</b>: 150</p>
+                            </entry>
+                        </row>
+                    </tbody>
+                </tgroup>
+            </table></p>
+        <p><uicontrol>Reviews</uicontrol></p>
+        <p>The <uicontrol>Reviews</uicontrol> chart displays the data for Initial Reviews and
+            Additional Reviews for each CDS in the selected activity date range.</p>
+        <table frame="all" rowsep="1" colsep="1" id="table_cz2_4hn_dpb">
+            <title>Reviews Chart</title>
+            <tgroup cols="3">
+                <colspec colname="c1" colnum="1" colwidth="1*"/>
+                <colspec colname="c2" colnum="2" colwidth="1*"/>
+                <colspec colname="newCol3" colnum="3" colwidth="1*"/>
+                <thead>
+                    <row>
+                        <entry>Metric </entry>
+                        <entry>Description</entry>
+                        <entry>Tooltip</entry>
+                    </row>
+                </thead>
+                <tbody>
+                    <row>
+                        <entry>Initial Reviews</entry>
+                        <entry>
+                            <p>This metric displays the count of encounters with an initial review
+                                date/time in the selected activity date range.</p>
+                            <p>
+                                <note>Initial Review Date/Time falls in the selected activity date
+                                    range. Encounters with "Review Not Needed" encounter status are
+                                    excluded from this metric calculations.</note>
+                            </p>
+                        </entry>
+                        <entry morerows="1">
+                            <ul id="ul_smr_ryz_kqb">
+                                <li>
+                                    <p>Total Reviews</p>
+                                </li>
+                                <li>
+                                    <p>Retrospective Initial Reviews</p>
+                                </li>
+                                <li>
+                                    <p>Retrospective Additional Reviews</p>
+                                </li>
+                            </ul>
+                        </entry>
+                    </row>
+                    <row>
+                        <entry>Additional Reviews</entry>
+                        <entry>
+                            <p>This metric displays the count of additional reviews performed by the
+                                CDS in the selected activity date range.<note>Additional Review
+                                    Date/Time falls in the selected activity date range.  Encounters
+                                    with "Review Not Needed" encounter status are excluded from this
+                                    metric calculations.</note></p>
+                            <p>Additional Review Types:</p>
+                            <ul id="ul_yt2_rhn_dpb">
+                                <li>Clarification creation</li>
+                                <li>Clarification modification</li>
+                                <li>Working review modification</li>
+                                <li>Worksheet creation or modification</li>
+                                <li>Possible review creation</li>
+                                <li>Possible review modification</li>
+                                <li>Reconciliation assessment creation</li>
+                                <li>Reconciliation assessment modification</li>
+                                <li>Encounter Saved</li>
+                                <li>Note creation or modification</li>
+                                <li>Tracking Codes Addition or Modification</li>
+                                <li>Encounter status modification</li>
+                            </ul>
+                            <p>Activity Type 'Post-Discharge Review' is not considered in the
+                                Additional Reviews calculation.</p>
+                        </entry>
+                    </row>
+                </tbody>
+            </tgroup>
+        </table>
+        <p><uicontrol>Reviews by Payer</uicontrol></p>
+        <p>The <uicontrol>Reviews by Payer</uicontrol> chart displays the count of Initial Reviews
+            and Additional Reviews performed against each Payer for each CDS in the selected
+            activity date range.</p>
+        <p>
+            <ul id="ul_hvb_5hh_jqb">
+                <li>X axis displays the Payer names (<b>Format</b> : <i>Payer Description (Payer
+                        ID)</i></li>
+                <li>This chart displays count of Initial Reviews and Additional Reviews against each
+                    Payer.</li>
+            </ul>
+        </p>
+        <table frame="all" rowsep="1" colsep="1" id="table_a2r_jgh_jqb">
+            <title>Reviews by Payer Chart</title>
+            <tgroup cols="3">
+                <colspec colname="c1" colnum="1" colwidth="1*"/>
+                <colspec colname="c2" colnum="2" colwidth="1*"/>
+                <colspec colname="newCol3" colnum="3" colwidth="1*"/>
+                <thead>
+                    <row>
+                        <entry>Metric </entry>
+                        <entry>Description</entry>
+                        <entry>Tooltip</entry>
+                    </row>
+                </thead>
+                <tbody>
+                    <row>
+                        <entry>Initial Reviews</entry>
+                        <entry>
+                            <p>This metric displays the count of encounters with an initial review
+                                date/time in the selected activity date range.</p>
+                            <p>
+                                <note>Initial Review Date/Time falls in the selected activity date
+                                    range. Encounters with "Review Not Needed" encounter status are
+                                    excluded from this metric calculations.</note>
+                            </p>
+                        </entry>
+                        <entry morerows="1">
+                            <p>Displays the Total Reviews. Total Reviews = (Initial Reviews +
+                                Additional Reviews).<note>Review Date/Time (Initial Review and
+                                    Additional Review dates) falls in the selected activity date
+                                    range. Encounters with "Review Not Needed" encounter status are
+                                    excluded from this metric calculations.</note></p>
+                        </entry>
+                    </row>
+                    <row>
+                        <entry>Additional Reviews</entry>
+                        <entry>
+                            <p>This metric displays the count of additional reviews performed by the
+                                CDS in the selected activity date range.<note>.<ul
+                                        id="ul_qtt_3kh_jqb">
+                                        <li>Additional Review Date/Time falls in the selected
+                                            activity date range.</li>
+                                        <li> Activity Type 'Post-Discharge Reviews' is not
+                                            considered as an Additional Review by the CDS. </li>
+                                        <li>Encounters with "Review Not Needed" encounter status are
+                                            excluded from this metric calculations</li>
+                                    </ul></note></p>
+                        </entry>
+                    </row>
+                </tbody>
+            </tgroup>
+        </table>
+        <p><uicontrol>Clarifications by Impact</uicontrol></p>
+        <p>The <uicontrol>Clarifications by Impact</uicontrol> chart displays the count of sent
+            clarifications with Financial Impact,  KPI of Quality Impact for each CDS in the
+            selected activity date range.</p>
+        <p>
+            <ul id="ul_xqj_14h_jqb">
+                <li>This chart displays the count and percentage of Financial Impact Clarifications,
+                    Quality Impact Clarifications and Both Impact Clarifications.</li>
+            </ul>
+        </p>
+        <p><b>Info icon</b>(text on hover): Encounter Status: Includes all encounter statuses except
+            'Review Not Needed'. ; Clarification Status: Includes all clarification statuses except
+            'Removed' or 'Retracted'.</p>
+        <ul>
+            <li/>
+        </ul>
+        <table frame="all" rowsep="1" colsep="1" id="table_yqj_14h_jqb">
+            <title>Clarifications by Impact Chart</title>
+            <tgroup cols="3">
+                <colspec colname="c1" colnum="1" colwidth="1*"/>
+                <colspec colname="c2" colnum="2" colwidth="1*"/>
+                <colspec colname="newCol3" colnum="3" colwidth="1*"/>
+                <thead>
+                    <row>
+                        <entry>Metric </entry>
+                        <entry>Description</entry>
+                        <entry>Tooltip</entry>
+                    </row>
+                </thead>
+                <tbody>
+                    <row>
+                        <entry>Financial Impact </entry>
+                        <entry>
+                            <p>This metric displays the count of Financial Impact clarification with
+                                at least one instance sent in the selected activity date range.</p>
+                            <p>
+                                <note>
+                                    <ul id="ul_stl_q4h_jqb">
+                                        <li>Clarification Instance Sent Date falls in the selected
+                                            activity date range.</li>
+                                        <li>Clarification with a standard or custom ‘Primary Type at
+                                            Reconciliation’ defined as ‘Financial’ in the admin
+                                            configuration is a Financial Impact Clarification.</li>
+                                        <li>Clarifications with Status 'DELETED' or 'RETRACTED' are
+                                            excluded from the count.</li>
+                                        <li>Clarifications for "Review Not Needed" encounter status
+                                            ia not considered for this metric calculation.</li>
+                                    </ul>
+                                </note>
+                            </p>
+                        </entry>
+                        <entry>
+                            <p>Displays the the below details:<ul id="ul_ord_z4h_jqb">
+                                    <li>Clarifications Sent : 25.</li>
+                                    <li>Financial Impact Clarifications: 15 (60%).</li>
+                                </ul></p>
+                        </entry>
+                    </row>
+                    <row>
+                        <entry>Quality Impact</entry>
+                        <entry>
+                            <p>This metric displays the count of Quality Impact clarification with
+                                at least one instance sent in the selected activity date
+                                        range.<note>.<ul id="ul_arj_14h_jqb">
+                                        <li>Clarification Instance Sent Date falls in the selected
+                                            activity date range.</li>
+                                        <li> Clarification with a standard or custom ‘Primary Type
+                                            at Reconciliation’ defined as 'Financial' and ‘Quality’
+                                            in the administrator configuration is a Quality Impact
+                                            Clarification.</li>
+                                        <li>Clarifications with Status 'DELETED' or 'RETRACTED' are
+                                            excluded from the count. </li>
+                                        <li>Clarifications for "Review Not Needed" encounter status
+                                            is not considered for this metric calculation.</li>
+                                    </ul></note></p>
+                        </entry>
+                        <entry>
+                            <p>Displays the the below details:<ul id="ul_y1f_yph_jqb">
+                                    <li>Clarifications Sent : 25.</li>
+                                    <li>Impact Clarifications: 5 (20%).</li>
+                                </ul></p>
+                        </entry>
+                    </row>
+                    <row>
+                        <entry>Both Impact</entry>
+                        <entry>This metric displays the count of Both Impact clarification with
+                            at-least one instance sent in the selected activity date
+                                    range.<note>.<ul id="ul_axg_hqh_jqb">
+                                    <li>Clarification Instance Sent Date falls in the selected
+                                        activity date range.</li>
+                                    <li> Clarification with a standard or custom ‘Primary Type at
+                                        Reconciliation’ defined as 'Financial' and ‘Quality’ in the
+                                        admin configuration is a Both  Impact Clarification.</li>
+                                    <li>Clarifications with Status 'DELETED' or 'RETRACTED' are
+                                        excluded from the count. </li>
+                                    <li>Clarifications for "Review Not Needed" encounter status is
+                                        not considered for this metric calculation.</li>
+                                </ul></note></entry>
+                        <entry>
+                            <p>Displays the the below details:<ul id="ul_fgx_klg_lqb">
+                                    <li>Clarifications Sent : 25.</li>
+                                    <li>Both Impact Clarifications: 5 (20%).</li>
+                                </ul></p>
+                        </entry>
+                    </row>
+                </tbody>
+            </tgroup>
+        </table>
+        <p><uicontrol>Clarifications by Type</uicontrol></p>
+        <p>The <uicontrol>Clarifications by Type</uicontrol> chart displays the count of sent
+            clarifications against each 'Type at Reconciliation' for each CDS in the selected
+            activity date range.</p>
+        <p>
+            <ul id="ul_lgc_cqh_jqb">
+                <li>This chart displays the count of sent clarifications with 'Type at
+                    Reconciliation'. Example: The count of sent clarifications raised by the CDS
+                    with 'Type at Reconciliation' as PDX, MCC, etc.</li>
+                <li>Both standard and custom 'Type at Reconciliation' values are considered. X axis
+                    displays the available 'Type at Reconciliation' (Both standard and custom).</li>
+                <li>Y axis displays the count of sent clarifications against that 'Type at
+                    Reconciliation' value</li>
+                <li>Tooltip: Displays Type at Reconciliation,Clarifications Sent</li>
+            </ul>
+        </p>
+        <p><b>Info icon</b>(text on hover): Encounter Status: Includes all encounter statuses except
+            'Review Not Needed'. Clarification Status: Includes all clarification statuses except
+            'Removed' or 'Retracted'. Standard and custom ‘Primary Type at Reconciliation’ are
+            considered.</p>
+        <p><uicontrol>Clarifications by Subject</uicontrol></p>
+        <p>The <uicontrol>Clarifications by Subject</uicontrol> chart displays the count of sent
+            clarifications against each Clarification Subject for each CDS in the selected activity
+            date range.</p>
+        <p>
+            <ul id="ul_mbk_xk3_jqb">
+                <li>X axis displays the Clarification Subject </li>
+                <li>This chart displays count of clarifications sent for each Clarification
+                    Subject</li>
+                <li>Tooltip: Displays Subject, Clarifications Sent</li>
+            </ul>
+        </p>
+        <p><b>Info icon</b>(text on hover): Encounter Status: Includes all encounter statuses except
+            'Review Not Needed'. ; Clarification Status: Includes all clarification statuses except
+            'Removed' or 'Retracted'.</p>
+        <p><uicontrol>Clarifications by Response</uicontrol></p>
+        <p>The <uicontrol>Clarifications by Response</uicontrol> chart displays the count of sent
+            clarifications responded against each Response Type for each CDS in the selected
+            activity date range..</p>
+        <p>
+            <ul id="ul_xpm_ml3_jqb">
+                <li>X axis displays the available Response Types.</li>
+                <li>Y axis displays the count of sent clarifications responded. </li>
+                <li>This chart displays count of clarifications for each Response Type.</li>
+                <li>Tooltip: Displays Clarifications Sent, Clarifications Responded. </li>
+            </ul>
+        </p>
+        <p><b>Info icon</b>(text on hover): Encounter Status: Includes all encounter statuses except
+            'Review Not Needed'. ; Clarification Status: Includes all clarification statuses except
+            'Removed' or 'Retracted'.</p>
+        <note>
+            <ul id="ul_asl_2m3_jqb">
+                <li>Response is treated as an attribute to the clarification sent.</li>
+                <li>Clarification Instance Sent Date falls in the selected activity date range.
+                    (Start and End Date).</li>
+                <li>Instance Response Date may not fall in the selected activity date range.</li>
+                <li>Clarification Response:<ul id="ul_e42_qzz_kqb">
+                        <li>For Activity Date - Displays Clarifications with Final/Not Final
+                            Response</li>
+                        <li>For Discharge Date- Displays Clarifications with Final Response </li>
+                    </ul></li>
+                <li>Clarifications with response other than Pending, Retracted, or No Response are
+                    considered.</li>
+                <li>Clarifications for "Review Not Needed" encounter status is not considered for
+                    this metric calculation.</li>
+                <li>Clarifications with Status 'DELETED' or 'RETRACTED' are excluded from the
+                    count.</li>
+            </ul>
+        </note>
+        <table frame="all" rowsep="1" colsep="1" id="table_bgs_mw5_l4b">
+            <title>Report Slicers </title>
+            <tgroup cols="2">
+                <colspec colname="c1" colnum="1" colwidth="1*"/>
+                <colspec colname="c2" colnum="2" colwidth="1*"/>
+                <thead>
+                    <row>
+                        <entry>Slicer</entry>
+                        <entry>Description</entry>
+                    </row>
+                </thead>
+                <tbody>
+                    <row>
+                        <entry>Activity Date</entry>
+                        <entry>
+                            <ul id="ul_uxj_zbw_3qb">
+                                <li>Allows you to select the activity date range. </li>
+                                <li><b>Format</b>: Between Date range, Example: 7/1/2020 -
+                                    7/31/2020.</li>
+                                <li><b>Default</b>: Last 1 calendar months date range selected by
+                                    default.</li>
+                            </ul>
+                        </entry>
+                    </row>
+                    <row>
+                        <entry>Discharge Date</entry>
+                        <entry>
+                            <ul id="ul_jw1_22z_m4b">
+                                <li>Allows you to select the discharge date range.</li>
+                                <li><b>Format</b>: Between Date range, Example: 7/1/2020 -
+                                    7/31/2020.</li>
+                            </ul>
+                        </entry>
+                    </row>
+                    <row>
+                        <entry>Reset </entry>
+                        <entry>
+                            <p>Allows you to reset the Activity Date range. </p>
+                            <p>Tooltip: Use "Ctrl + Click" to reset both Activity Date and Discharge
+                                Date.</p>
+                        </entry>
+                    </row>
+                    <row>
+                        <entry>Facility</entry>
+                        <entry>
+                            <ul id="ul_nsx_spw_s4b">
+                                <li>Displays both active and inactive facilities in alphabetical
+                                    order for the report which you have access.</li>
+                                <li>You can select multiple facilities.</li>
+                                <li>You can search the facility by Facility ID or Description.</li>
+                                <li>You can search the Payer by Payer ID or Description.</li>
+                                <li><b>Format</b>: Facility Description (Facility ID).</li>
+                                <li><b>Default</b>: ALL.</li>
+                            </ul>
+                        </entry>
+                    </row>
+                    <row>
+                        <entry>Payer</entry>
+                        <entry>
+                            <ul id="ul_gqf_j5f_p4b">
+                                <li>Displays both active and inactive payers in alphabetical order
+                                    associated with the facilities you can access.</li>
+                                <li>You can select multiple payers.</li>
+                                <li>"Unassigned Payer" displays data for the encounters that do not
+                                    have a payer assigned.</li>
+                                <li>You can search the Payer by Payer ID or Description.</li>
+                                <li><b>Format</b>: Payer Description (Payer ID).</li>
+                                <li><b>Default</b>: ALL.</li>
+                            </ul>
+                        </entry>
+                    </row>
+                    <row>
+                        <entry>CDS</entry>
+                        <entry>
+                            <ul id="ul_fnk_ydw_3qb">
+                                <li>Displays both active and inactive CDSs in alphabetical order
+                                    associated with the facilities you can access.</li>
+                                <li>The CDS Filter in all the reports displays the users with the
+                                    CDS or CDS Manager role assigned.</li>
+                                <li>An inactive CDS appears in the CDS filter if a review is
+                                    available in the selected Discharge date range.</li>
+                                <li>"Unassigned CDS" displays data for the encounters that do not
+                                    have a CDS assigned.</li>
+                                <li><b>Format</b>: Last Name, First Name MI (CDS ID).</li>
+                                <li><b>Default</b>: ALL.</li>
+                            </ul>
+                        </entry>
+                    </row>
+                </tbody>
+            </tgroup>
+        </table>
+        <p>
+            <table frame="all" rowsep="1" colsep="1" id="table_xzd_hdw_l4b">
+                <title>Filters on all Pages</title>
+                <tgroup cols="2">
+                    <colspec colname="c1" colnum="1" colwidth="1*"/>
+                    <colspec colname="c2" colnum="2" colwidth="1*"/>
+                    <thead>
+                        <row>
+                            <entry>Filter</entry>
+                            <entry>Description</entry>
+                        </row>
+                    </thead>
+                    <tbody>
+                        <row>
+                            <entry>Patient Type</entry>
+                            <entry>
+                                <ul id="ul_f4n_gny_m4b">
+                                    <li>Displays the available patient types. <p><b>Example</b>:
+                                            Inpatient, Outpatient.</p></li>
+                                    <li><b>Default</b>: Inpatient</li>
+                                </ul>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>Unit</entry>
+                            <entry>
+                                <ul id="ul_n4k_jny_m4b">
+                                    <li>Displays the list of available units.</li>
+                                    <li>You can select multiple Units.</li>
+                                    <li>You can search the Unit.</li>
+                                    <li><b>Default</b>: ALL</li>
+                                </ul>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>Admit Service</entry>
+                            <entry>
+                                <ul id="ul_zm1_lny_m4b">
+                                    <li>Displays the list of available Admit Services.</li>
+                                    <li>You can select multiple Admit Services.</li>
+                                    <li>You can search the Admit Service.</li>
+                                    <li><b>Default</b>: ALL</li>
+                                </ul>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>Visit Type</entry>
+                            <entry>
+                                <ul id="ul_h3h_zq5_54b">
+                                    <li>Displays the list of available Visit Types.</li>
+                                    <li>You can select multiple visit types.</li>
+                                    <li>You can search the Visit Type.</li>
+                                    <li><b>Default</b>: ALL</li>
+                                </ul>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>Weekend Only Stay</entry>
+                            <entry>
+                                <ul id="ul_htj_xfq_2pb">
+                                    <li>Displays the available options for Weekend Only Stay- Y and
+                                        N</li>
+                                    <li>You can select more than one option. </li>
+                                    <li>Weekend Only Stay = Y ( Unassigned encounters admitted after
+                                        Friday, 6PM and Discharged before Sunday, 11.59 PM)</li>
+                                    <li><b>Default: ALL</b></li>
+                                </ul>
+                            </entry>
+                        </row>
+                    </tbody>
+                </tgroup>
+            </table>
+        </p>
+        <p>
+            <table frame="all" rowsep="1" colsep="1" id="table_l5h_lpd_hpb">
+                <title><b>Footnotes </b></title>
+                <tgroup cols="2">
+                    <colspec colname="c1" colnum="1" colwidth="1*"/>
+                    <colspec colname="c2" colnum="2" colwidth="1*"/>
+                    <thead>
+                        <row>
+                            <entry>Formula</entry>
+                            <entry>Text on Hover</entry>
+                        </row>
+                    </thead>
+                    <tbody>
+                        <row>
+                            <entry>Initial Reviews</entry>
+                            <entry>
+                                <p>The count of encounters with an initial review
+                                        date/time.<note>When Activity Date is selected , Initial
+                                        Review Date/Time falls in the selected activity date
+                                        range.</note></p>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>Additional Reviews</entry>
+                            <entry>
+                                <p>The count of additional reviews performed for the reviewed
+                                        encounter.<note>When Activity Date is selected, Additional
+                                        Review Date/Time falls in the selected activity date
+                                        range.</note></p>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>Financial Impact Clarifications </entry>
+                            <entry>
+                                <p>Financial Impact Clarifications: Clarifications with standard or
+                                    custom ‘Primary Type at Reconciliation’ defined as ‘Financial’
+                                    in the administrator configuration.</p>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>Quality Impact Clarifications</entry>
+                            <entry>
+                                <p>Quality Impact Clarifications: Clarifications with standard or
+                                    custom ‘Primary Type at Reconciliation’ defined as ‘Quality’ in
+                                    the administrator configuration.</p>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>Both Impact Clarifications</entry>
+                            <entry>
+                                <p>Both Impact Clarifications: Clarifications with standard or
+                                    custom ‘Primary Type at Reconciliation’ defined as ‘Financial’
+                                    and 'Quality' in the administrator configuration.</p>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>Type at Reconciliation</entry>
+                            <entry>
+                                <p>Primary Rec Type = The Primary Rec Type (standard or custom)
+                                    associated with the clarification. ;Other Rec Type= The Other
+                                    Rec Types (standard or custom) associated with the
+                                    clarification.</p>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>Clarification Response</entry>
+                            <entry>
+                                <p>Clarifications with response other than Pending, Retracted, or No
+                                    Response are considered. Clarifications may or may not have a
+                                    FINAL response.</p>
+                            </entry>
+                        </row>
+                    </tbody>
+                </tgroup>
+            </table>
+        </p>
+    </conbody>
+</concept>
+<?oxy_options track_changes="on"?>

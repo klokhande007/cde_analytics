@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_xlw_wm3_3bb">
+    <title><b>Requisites for Configuring Security Settings</b></title>
+    <shortdesc></shortdesc>
+    <conbody>
+        <p>Prior to running the application or integration, the following Internet Explorer settings
+            must be set. These settings apply to any workstation that uses the application or
+            integration. The Nuance CDE server is added as a trusted site, so that these settings
+            apply only to the Nuance CDE application, but do not affect other Internet or Intranet
+            applications.</p>
+        <p>You can use the Internet Explorer Administration Kit (IEAK) provided by Microsoft to
+            create and manage custom browser software packages with the application settings. When
+            these packages are installed on clients’ desktops, they receive customized versions of
+            Internet Explorer with the settings and options selected. After you deploy Internet
+            Explorer, you can use the IEAK Profile Manager to change browser settings and
+            restrictions automatically.</p>
+    </conbody>
+</concept>

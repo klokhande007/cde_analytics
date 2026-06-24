@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map>
+   <appContext helpID="what_s_new" path="Reference/what_s_new.html"/>
+   <appContext helpID="online_analytics_training"
+               path="online_analytics_training.html"/>
+   <appContext helpID="live_chat" path="Reference/live_chat.html"/>
+   <appContext helpID="overview_getting_started"
+               path="Getting%20Started/Concept/overview_getting_started.html"/>
+   <appContext helpID="concept_nv4_2nk_gbb"
+               path="Getting%20Started/Concept/browser_configuration.html"/>
+   <appContext helpID="chrome_browser_compatibility"
+               path="oxy_ex-1/Nuance%20CDI%20-%20CDS%20Triage%20User%20Guide/Concept/edge_browser_settings.html"/>
+   <appContext helpID="dmo_chrome_plugin_settings"
+               path="oxy_ex-1/Nuance%20CDI%20-%20CDS%20Triage%20User%20Guide/Concept/dmo_edge_plugin_settings.html"/>
+   <appContext helpID="task_jv3_w3p_3bc" path="to_disable_the_edge_copilot.html"/>
+   <appContext helpID="installing_google_chrom"
+               path="oxy_ex-1/Nuance%20CDI%20-%20CDS%20Triage%20User%20Guide/Concept/installing_google_chrom.html"/>
+   <appContext helpID="chrome_browser_compatibility"
+               path="oxy_ex-1/Nuance%20CDI%20-%20CDS%20Triage%20User%20Guide/Concept/chrome_browser_compatibility.html"/>
+   <appContext helpID="dmo_chrome_plugin_settings"
+               path="oxy_ex-1/Nuance%20CDI%20-%20CDS%20Triage%20User%20Guide/Concept/dmo_chrome_plugin_settings.html"/>
+   <appContext helpID="live_chat_settings_for_chrome_browser"
+               path="oxy_ex-1/Nuance%20CDI%20-%20CDS%20Triage%20User%20Guide/Concept/live_chat_settings_for_chrome_browser.html"/>
+   <appContext helpID="live_chat_settings"
+               path="oxy_ex-1/Nuance%20CDI%20-%20CDS%20Triage%20User%20Guide/Concept/live_chat_settings.html"/>
+   <appContext helpID="first_time_sign_in"
+               path="Getting%20Started/Task/first_time_sign_in.html"/>
+   <appContext helpID="logging_in" path="Getting%20Started/Task/logging_in.html"/>
+   <appContext helpID="updating_password"
+               path="Getting%20Started/Task/updating_password.html"/>
+   <appContext helpID="password_settings"
+               path="Getting%20Started/Concept/password_settings.html"/>
+   <appContext helpID="rules_for_creating_passwords"
+               path="Getting%20Started/Concept/rules_for_creating_passwords.html"/>
+   <appContext helpID="about_single_sign_on"
+               path="Getting%20Started/Concept/about_single_sign_on.html"/>
+   <appContext helpID="untitled12" path="Getting%20Started/Task/logging_out.html"/>
+   <appContext helpID="about_nuance_cde_analytics"
+               path="about_nuance_cde_analytics.html"/>
+   <appContext helpID="about_nuance_cde_analytics"
+               path="about_cde_analytics_report.html"/>
+   <appContext helpID="topic_tgh_y3v_41c" path="group_by_option.html"/>
+   <appContext helpID="creating_custom_reports"
+               path="Task/creating_custom_reports.html"/>
+   <appContext helpID="creating_custom_reports"
+               path="Task/deleting_custom_reports.html"/>
+   <appContext helpID="adding_fields_on_custom_report"
+               path="Task/adding_fields_on_custom_report.html"/>
+   <appContext helpID="creating_custom_reports" path="Task/suggested_drg_fields.html"/>
+   <appContext helpID="create_custom_reports_on_notes_created_for_the_encounters"
+               path="Reference/create_custom_reports_on_notes_created_for_the_encounters.html"/>
+   <appContext helpID="deleting_fields_from_the_custom_report"
+               path="Task/deleting_fields_from_the_custom_report.html"/>
+   <appContext helpID="printing_a_report" path="Task/printing_a_report.html"/>
+   <appContext helpID="search_criteria_for_custom_reports"
+               path="search_criteria_for_custom_reports.html"/>
+   <appContext helpID="adjust_report_view" path="adjust_report_view.html"/>
+   <appContext helpID="power_bi_controls" path="non_cds_users.html"/>
+   <appContext helpID="power_bi_controls" path="power_bi_controls.html"/>
+   <appContext helpID="concept_i4z_gyh_5wb"
+               path="Reference/failed_clariifcations.html"/>
+   <appContext helpID="encounter_monitoring" path="encounter_monitoring.html"/>
+   <appContext helpID="overdue_clarifications" path="overdue_clarifications.html"/>
+   <appContext helpID="provider_response_activity"
+               path="provider_response_activity.html"/>
+   <appContext helpID="clarification_details" path="clarification_details.html"/>
+   <appContext helpID="encounter_details" path="encounter_details.html"/>
+   <appContext helpID="tracking_codes" path="tracking_codes.html"/>
+   <appContext helpID="quality_alerts" path="quality_alerts.html"/>
+   <appContext helpID="concurrent_impact_summary"
+               path="concurrent_impact_summary.html"/>
+   <appContext helpID="team_performance" path="team_performance.html"/>
+   <appContext helpID="cds_monthly_productivity" path="cds_monthly_productivity.html"/>
+   <appContext helpID="cds_impact" path="cds_impact.html"/>
+   <appContext helpID="cds_review_activity" path="cds_review_activity.html"/>
+   <appContext helpID="cds_review_activity" path="cds_performance_dashboard.html"/>
+   <appContext helpID="cds_coder_match" path="cds_coder_match.html"/>
+   <appContext helpID="executive_overview" path="executive_overview.html"/>
+   <appContext helpID="cdi_dashboard" path="cdi_dashboard.html"/>
+   <appContext helpID="cmi_breakdown" path="cmi_breakdown.html"/>
+   <appContext helpID="soi_rom_impact" path="soi_rom_impact.html"/>
+   <appContext helpID="drg_breakdown" path="drg_breakdown.html"/>
+   <appContext helpID="reconciliation_details" path="reconciliation_details.html"/>
+   <appContext helpID="clarification_type_trend" path="no_response_impact.html"/>
+   <appContext helpID="reconciliation_details"
+               path="no_response_clarification_details.html"/>
+   <appContext helpID="clarification_type_trend" path="clarification_type_trend.html"/>
+   <appContext helpID="clarification_type_trend"
+               path="peer_group_comparision/ms_drg_specialty_summary.html"/>
+   <appContext helpID="clarification_type_trend"
+               path="peer_group_comparision/diagnosis_scorecard.html"/>
+   <appContext helpID="clarification_type_trend"
+               path="peer_group_comparision/ms_drg_group_summary.html"/>
+   <appContext helpID="clarification_type_trend"
+               path="peer_group_comparision/ms_drg_scorecard.html"/>
+   <appContext helpID="clarification_type_trend"
+               path="peer_group_comparision/cmi_and_capture_rate_summary.html"/>
+   <appContext helpID="clarification_type_trend" path="quality_impact_overview.html"/>
+   <appContext helpID="clarification_type_trend" path="quality_impact_summary.html"/>
+   <appContext helpID="clarification_type_trend"
+               path="quality_impact_encounter_details.html"/>
+   <appContext helpID="post_discharge_reviews_overview" path="triage_overview.html"/>
+   <appContext helpID="post_discharge_reviews_overview" path="triage_summary.html"/>
+   <appContext helpID="post_discharge_reviews_overview"
+               path="assistant_usage_overview.html"/>
+   <appContext helpID="post_discharge_reviews_overview"
+               path="assistant_usage_summary.html"/>
+   <appContext helpID="post_discharge_reviews_overview" path="ranked_encounters.html"/>
+   <appContext helpID="reconciliation_details" path="triage_encounter_details.html"/>
+   <appContext helpID="post_discharge_reviews_overview"
+               path="post_discharge_reviews_overview.html"/>
+   <appContext helpID="post_discharge_reviews_trend"
+               path="post_discharge_reviews_trend.html"/>
+   <appContext helpID="cds_activity_details" path="cds_activity_details_48_hours.html"/>
+   <appContext helpID="cds_productivity_summary"
+               path="cds_productivity_summary_by_activity_date_48_hours.html"/>
+   <appContext helpID="cds_productivity_summary"
+               path="cds_productivity_summary_by_cds_48_hours.html"/>
+   <appContext helpID="Overdue_Clarification" path="Overdue%20Clarification.html"/>
+   <appContext helpID="cds_activity_details" path="cds_activity_report.html"/>
+   <appContext helpID="cds_activity_details"
+               path="cds_general_cds_monthly_productivity.html"/>
+   <appContext helpID="visualization_types" path="visualization_types.html"/>
+   <appContext helpID="related_documents" path="related_documents.html"/>
+   <appContext helpID="glossary" path="glossary.html"/>
+</map>

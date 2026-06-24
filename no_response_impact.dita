@@ -1,0 +1,996 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="clarification_type_trend">
+    <title>No Response Impact</title>
+    <shortdesc/>
+    <conbody>
+        <p><b>Overview</b>: The No Response Impact dashboard enables CDI Managers/Directors to
+            analyze the encounters with financial impact clarifications that were not responded and
+            view the missed dollar amount associated with it and work with providers to improve the
+            communication with CDSs and overall CDI program adoption. The dashboard also helps you
+            group data by week, month, quarter, and year and analyze trends over different time
+            periods and analyze them more easily.</p>
+        <p>The report provides answers to the following questions.<ul id="ul_av3_5zg_p4b">
+                <li>What is the overall potential missed reimbursement?</li>
+                <li>How many encounters had at least one no response impact clarification?</li>
+                <li>What is the potential missed reimbursement for a specific provider?</li>
+                <li>What is the potential missed reimbursement for Medicare cases?</li>
+                <li>What are the clarification details of the impact clarifications that were not
+                    responded?</li>
+                <li>Which providers are not responding to the clarifications sent by the CDS
+                    team?</li>
+                <li>Which diagnosis codes are most frequently resulting in 'No Response' impact
+                    clarifications?</li>
+                <li>Which providers should I target to help improve the CDS and Provider
+                    communication process and CDI program adoption?</li>
+            </ul></p>
+        <p><b>Navigation</b>: On the Analytics home page left side panel, navigate to <menucascade>
+                <uicontrol>CDE One</uicontrol>
+                <uicontrol>Executive Summary</uicontrol>
+                <uicontrol>No Response Impact</uicontrol>
+            </menucascade>. </p>
+        <p>No Response Impact displays monthly trend of: <ul id="ul_zgb_bpy_44b">
+                <li>Encounters with No Response Impact Clarifications</li>
+                <li>No Response Impact Clarifications</li>
+                <li>No Response Potential CMI Shift</li>
+                <li>Potential Reimbursement Impact</li>
+                <li>No Response Impact Summary</li>
+            </ul></p>
+        <p>For View By option, refer, <xref href="#clarification_type_trend/table_nbz_gkz_jvb"
+                format="dita"/></p>
+        <p>On the top panel, you can select desired values for the slicers, refer <xref
+                href="#clarification_type_trend/table_qnn_w2n_g4b" format="dita"/> and the
+            corresponding data gets filtered in the charts.</p>
+        <p>For filters on all pages, refer <xref href="#clarification_type_trend/table_dq1_ffn_g4b"
+                format="dita"/>.</p>
+        <p>For Footnotes, refer <xref href="#clarification_type_trend/table_mjr_xry_44b"
+                format="dita"/>.</p>
+        <p><b>Default Display</b>: Report displays the data for 3 calendar months based on the
+            Discharge Date. (<b>Format</b>: Between Date range.)</p>
+        <p><b>No Response Impact</b></p>
+        <fig id="fig_o5h_4zk_p4b">
+            <title>Sample Report</title>
+        </fig>
+        <p><image href="Images/no_reponse_impact_dashboard.png" width="650" id="image_nkd_1zx_jvb"/></p>
+        <p><b>No Response Impact - KPI Cards</b></p>
+        <fig id="fig_umn_gvm_r4b">
+            <title>KPI Cards</title>
+            <image href="Images/no_response_tracking_codes_kpi.png" id="image_fsd_hvm_r4b"
+                width="400"/>
+        </fig>
+        <p>
+            <table frame="all" rowsep="1" colsep="1" id="table_ggx_nlg_l4b">
+                <title>KPI Cards details</title>
+                <tgroup cols="2">
+                    <colspec colname="c1" colnum="1" colwidth="1*"/>
+                    <colspec colname="c2" colnum="2" colwidth="1*"/>
+                    <thead>
+                        <row>
+                            <entry>KPI Card</entry>
+                            <entry>Definition</entry>
+                        </row>
+                    </thead>
+                    <tbody>
+                        <row>
+                            <entry>Enc with No Response Impact Clarifications</entry>
+                            <entry>
+                                <p>Displays the count of encounters with at least one Financial
+                                    Impact clarification with Final Response as No Response for the
+                                    selected time period.</p>
+                                <p>
+                                    <note id="note_kby_n31_kvb"/>
+                                </p>
+                                <p>Clarification with a standard or custom ‘Primary Type at
+                                    Reconciliation’ defined as ‘Financial’ in the admin
+                                    configuration is a Financial Impact Clarification. </p>
+                                <p> Clarifications with Status 'REMOVED' or 'RETRACTED' are excluded
+                                    from the count.</p>
+                                <p>Clarifications for "Review Not Needed" encounter status should
+                                    not be considered for this metric calculation.</p>
+                                <p>Clarifications that do not have a FINAL response are not
+                                    considered in this calculation.</p>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>Not Responded Impact Clarifications</entry>
+                            <entry>
+                                <p>Displays the count and percentage of Financial Impact
+                                    Clarifications that were not responded by the providers and with
+                                    Final Response as No Response for the selected time period.</p>
+                                <p><b>Format</b>: Not Responded Impact Clarifications (No Response
+                                    Rate). E.g. 12 (56%).</p>
+                                <note id="note_en5_jgz_4vb"/>
+                                <p>Not Responded Impact Clarifications = Count of Financial Impact
+                                    Clarifications with Final Response as “No Response” for the
+                                    selected time period.</p>
+                                <p>No Response Rate = Out of total Financial Impact clarifications
+                                    sent, the percentage of Financial Impact Clarifications with
+                                    Final Response as “No Response” .</p>
+                                <p>No Response Rate = (Financial Impact Clarifications with Final
+                                    Response as No Response / Count of Financial Impact
+                                    Clarifications Sent) *100.</p>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>Non Responding Providers</entry>
+                            <entry>
+                                <p>Displays the count of  sent to providers with at least one
+                                    financial impact clarification instance responded as No
+                                    Responses, i.e. Provider Response Field = No Response.</p>
+                                <p>
+                                    <note id="note_ztp_ld1_kvb"/>
+                                </p>
+                                <p>Clarification with a standard or custom ‘Primary Type at
+                                    Reconciliation’ defined as ‘Financial’ in the admin
+                                    configuration is a Financial Impact Clarification.</p>
+                                <p>Clarifications with Status 'REMOVED' or 'RETRACTED' are excluded
+                                    from the count.</p>
+                                <p>Clarifications for "Review Not Needed" encounter status should
+                                    not be considered for this metric calculation.</p>
+                                <p>Clarifications that do not have a FINAL response are not
+                                    considered in this calculation.</p>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>No Response Potential CMI Shift </entry>
+                            <entry>
+                                <p>Displays the Potential CMI shift and percentage for the financial
+                                    impact clarifications that were not responded by the providers
+                                    for the selected time period.</p>
+                                <p><b>Format</b>: No Response Potential CMI Shift (Potential CMI
+                                    Shift % ). E.g. 1.4532 (1.67%).</p>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>Overall No Response Impact</entry>
+                            <entry>Displays the overall potential dollar amount associated with the
+                                financial impact clarifications that the providers did not respond
+                                for the selected time period. Overall No Response Impact = $(No
+                                response Potential CMI Shift * Blended Rate). <p><b>Format</b>:
+                                    $4512.</p></entry>
+                        </row>
+                    </tbody>
+                </tgroup>
+            </table>
+        </p>
+        <section id="section_ir1_td1_kvb">
+            <title>Encounters with No Response Impact Clarifications</title>
+            <fig id="fig_gdt_wd1_kvb">
+                <title>Encounters with No Response Impact Clarifications</title>
+                <image href="Images/encounters_with_no_response_impact_clarifications.png"
+                    id="image_hdt_wd1_kvb"/>
+            </fig>
+            <p>This chart displays the count of encounters with no response financial impact
+                clarifications</p>
+            <ul id="ul_idt_wd1_kvb">
+                <li>X axis displays the Discharge Month/Facility/Payer/Sent by Provider based on the
+                    View by option selected.</li>
+                <li>Y axis displays the count of encounters.</li>
+                <li>
+                    <p><b>Info Icon</b>(Text on hover): Displays encounters with Financial Impact
+                        Clarifications w Final Response = No Response. Encounter Status: Reconciled
+                        - Impact, Reconciled - No Impact; Clarification Status: Includes all
+                        clarification statuses except ‘Removed’ or 'Retracted'.</p>
+                </li>
+            </ul>
+            <table frame="all" rowsep="1" colsep="1" id="table_dq1_3py_44b">
+                <title>Encounters with No Response Impact Clarifications Details</title>
+                <tgroup cols="3">
+                    <colspec colname="c1" colnum="1" colwidth="1*"/>
+                    <colspec colname="c2" colnum="2" colwidth="1*"/>
+                    <colspec colname="newCol5" colnum="3" colwidth="1*"/>
+                    <thead>
+                        <row>
+                            <entry>Columns</entry>
+                            <entry>Description</entry>
+                            <entry>Tooltip</entry>
+                        </row>
+                    </thead>
+                    <tbody>
+                        <row>
+                            <entry><b>Enc with No Response Impact Clarifications</b></entry>
+                            <entry>Count of encounters with at least one clarification instance with
+                                Final Response as No Response for the selected time period. <note
+                                    id="note_vcz_v3y_jvb"/><p>Clarification with a standard or
+                                    custom ‘Primary Type at Reconciliation’ defined as ‘Financial’
+                                    in the admin configuration is a Financial Impact
+                                    Clarification.</p><p>Clarifications with Status 'REMOVED' or
+                                    'RETRACTED' are excluded from the count.</p><p>Clarifications
+                                    for "Review Not Needed" encounter status should not be
+                                    considered for this metric calculation.</p><p>Clarifications
+                                    that do not have a FINAL response are not considered in this
+                                    calculation.</p>
+                            </entry>
+                            <entry>Non Responding Providers: Count of sent to providers who have not
+                                responded to the Financial Impact Clarification, i.e. Count of
+                                providers with at least one Financial Impact Clarification instance
+                                with Final response as No Response. <p>
+                                    <note id="note_prr_bjy_jvb"/>
+                                </p><p>Clarification with a standard or custom ‘Primary Type at
+                                    Reconciliation’ defined as ‘Financial’ in the admin
+                                    configuration is a Financial Impact
+                                    Clarification.</p><p>Clarifications with Status 'REMOVED' or
+                                    'RETRACTED' are excluded from the count.</p><p>Clarifications
+                                    for "Review Not Needed" encounter status should not be
+                                    considered for this metric calculation.</p><p>Clarifications
+                                    that do not have a FINAL response are not considered in this
+                                    calculation.</p></entry>
+                        </row>
+                    </tbody>
+                </tgroup>
+            </table>
+        </section>
+        <section id="section_ocl_td1_kvb">
+            <title>No Response Impact Clarifications</title>
+            <fig id="fig_mgs_wzk_p4b">
+                <title>No Response Impact Clarifications</title>
+                <image href="Images/no_response_impact_clarifications.png" id="image_j2g_5jy_jvb"/>
+            </fig>
+            <p>This chart displays the count of No Response impact clarifications and the rate for
+                the same for the selected time period. </p>
+            <ul id="ul_l1b_spy_44b">
+                <li>X axis displays the Discharge Month/Facility/Payer/Sent by Provider based on the
+                    View by option selected.</li>
+                <li>Y axis displays the count of Financial Impact clarifications.</li>
+                <li>Secondary Y axis displays the No Response Rate.</li>
+                <li>Default: Chart displays the values for 3 calendar months</li>
+                <li>
+                    <p><b>Info Icon</b>(Text on hover): Displays Financial Impact Clarifications w
+                        Final Response = No Response. Encounter Status: Reconciled - Impact,
+                        Reconciled - No Impact; Clarification Status: Includes all clarification
+                        statuses except ‘Removed’ or 'Retracted'.</p>
+                </li>
+            </ul>
+            <table frame="all" rowsep="1" colsep="1" id="table_jdb_tpy_44b">
+                <title>No Response Impact Clarifications</title>
+                <tgroup cols="2">
+                    <colspec colname="c1" colnum="1" colwidth="1*"/>
+                    <colspec colname="c2" colnum="2" colwidth="1*"/>
+                    <thead>
+                        <row>
+                            <entry>KPI Card</entry>
+                            <entry>Description</entry>
+                        </row>
+                    </thead>
+                    <tbody>
+                        <row>
+                            <entry><b>No Response Impact Clarifications</b></entry>
+                            <entry>
+                                <p>Count of Financial Impact Clarifications with Final Response as
+                                    No Response.</p>
+                                <p>
+                                    <note id="note_xvl_bly_jvb"/>
+                                </p>
+                                <p>Clarification with a standard or custom ‘Primary Type at
+                                    Reconciliation’ defined as ‘Financial’ in the admin
+                                    configuration is a Financial Impact Clarification.</p>
+                                <p>Clarifications with Status 'REMOVED' or 'RETRACTED' are excluded
+                                    from the count.</p>
+                                <p>Clarifications for "Review Not Needed" encounter status should
+                                    not be considered for this metric calculation.</p>
+                                <p>Clarifications that do not have a FINAL response are not
+                                    considered in this calculation.</p>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry><b>No Response Impact Clarification Rate</b></entry>
+                            <entry>
+                                <p>Out of total financial impact clarifications sent, the percentage
+                                    of Financial Impact Clarifications with Final Response as “No
+                                    Response”.</p>
+                                <p>No Response Impact Clarification Rate = (Financial Impact
+                                    Clarifications with Final Response as No Response / Count of
+                                    Financial Impact Clarifications Sent) *100. </p>
+                                <p>Rounded  to 2 decimal places. <b>Format</b>: 3.14%.</p>
+                                <note id="note_ntq_fly_jvb">
+                                    <p> Clarifications for "Review Not Needed" encounter status are
+                                        not considered for this metric calculation.</p>
+                                    <p>Instances for Clarifications with Status 'REMOVED' or
+                                        'RETRACTED' are not considered for this metric
+                                        calculation.</p>
+                                    <p>Clarifications that do not have a FINAL response are not
+                                        considered in this calculation.</p>
+                                </note>
+                            </entry>
+                        </row>
+                    </tbody>
+                </tgroup>
+            </table>
+        </section>
+        <section id="section_b2h_321_kvb">
+            <title>No Response Potential CMI Shift</title>
+            <fig id="fig_bnx_yzk_p4b">
+                <title>No Response Potential CMI Shift</title>
+                <image href="Images/no_response_potential_cmi_shift.png" id="image_rzx_34y_jvb"/>
+            </fig>
+            <p>This chart displays the Potential CMI with and without No Response Impact
+                Clarifications and Potential CMI Shift % for the selected time period.</p>
+            <ul id="ul_zfx_cqy_44b">
+                <li>X axis displays the Discharge Month/Facility/Payer/Sent by Provider based on the
+                    View by option selected.</li>
+                <li>Y axis displays the Potential CMI values.</li>
+                <li>Secondary Y axis displays the Potential CMI Shift % as a Line Chart.</li>
+                <li>Default: Chart displays the values for 3 calendar months.</li>
+                <li>
+                    <p><b>Info Icon</b>(Text on hover): Potential CMI metrics are for all w &amp;
+                        w/o No Response financial impact clarifications; Encounter Status:
+                        Reconciled - Impact, Reconciled - No Impact.</p>
+                </li>
+            </ul>
+            <table frame="all" rowsep="1" colsep="1" id="table_h53_2qy_44b">
+                <title>No Response Potential CMI Shift</title>
+                <tgroup cols="4">
+                    <colspec colname="c1" colnum="1" colwidth="1*"/>
+                    <colspec colname="c2" colnum="2" colwidth="1.08*"/>
+                    <colspec colname="newCol3" colnum="3" colwidth="1*"/>
+                    <colspec colname="newCol5" colnum="4" colwidth="1.59*"/>
+                    <thead>
+                        <row>
+                            <entry>Column Name</entry>
+                            <entry>Description</entry>
+                            <entry>Formula/Calculation</entry>
+                            <entry>Tooltip</entry>
+                        </row>
+                    </thead>
+                    <tbody>
+                        <row>
+                            <entry>Potential CMI w/o No Response Impact Clari</entry>
+                            <entry>
+                                <p>Displays the potential CMI w/o No Response Impact Clari for the
+                                    selected View by option.</p>
+                                <p>
+                                    <note id="note_xys_v4y_jvb">This value is represented with 4
+                                        decimals. <b>Format</b><p>: 1.9985.</p></note>
+                                </p>
+                            </entry>
+                            <entry>Potential CMI w/o No Response Impact Clari = The sum of Final
+                                Coded DRG WTs of all Reconciled- No Impact (Impact Type: No Impact),
+                                and Reconciled Impact (Impact Type: SOI/ROM Impact, Financial, Both)
+                                encounters with at least one Financial Impact Clarification
+                                (Standard or custom) with Final response as No Response / Total
+                                count of Reconciled- No Impact (Impact Type: No Impact), and
+                                Reconciled Impact (Impact Type: SOI/ROM Impact, Both, Financial)
+                                encounters with at least one Financial Impact Clarification
+                                (Standard or custom) with Final response as No Response.</entry>
+                            <entry>Potential CMI Shift - This metric displays the Potential CMI
+                                Shift for the selected View by option.</entry>
+                        </row>
+                        <row>
+                            <entry>Potential CMI with No Response Impact Clari</entry>
+                            <entry>
+                                <p>Displays the potential CMI w/o No Response Impact Clari for the
+                                    selected View by option.</p>
+                                <p>
+                                    <note id="note_ish_bnl_4vb">This value is represented with 4
+                                        decimals. <b>Format</b><p>: 1.9985.</p></note>
+                                </p>
+                            </entry>
+                            <entry>Potential CMI w/o No Response Impact Clari = The sum of Final
+                                Coded DRG WTs of all Reconciled- No Impact (Impact Type: No Impact),
+                                and Reconciled Impact (Impact Type: SOI/ROM Impact, Financial, Both)
+                                encounters with at least one Financial Impact Clarification
+                                (Standard or custom) with Final response as No Response / Total
+                                count of Reconciled- No Impact (Impact Type: No Impact), and
+                                Reconciled Impact (Impact Type: SOI/ROM Impact, Both, Financial)
+                                encounters with at least one Financial Impact Clarification
+                                (Standard or custom) with Final response as No Response.</entry>
+                            <entry>Potential CMI Shift - This metric displays the Potential CMI
+                                Shift for the selected View by option .</entry>
+                        </row>
+                        <row>
+                            <entry>Potential CMI Shift </entry>
+                            <entry>Displays the Potential CMI Shift value for the selected View by
+                                option. </entry>
+                            <entry>Potential CMI Shift = Potential CMI with No Response Impact Clari
+                                - Potential CMI w/o No Response Impact Clari</entry>
+                            <entry/>
+                        </row>
+                        <row>
+                            <entry>Potential CMI Shift %</entry>
+                            <entry>
+                                <p>Displays the Potential CMI Shift % value for the selected View by
+                                    option.</p>
+                                <p>Potential CMI Shift % = [(Potential CMI with No Response Impact
+                                    Clari - Potential CMI w/o No Response Impact Clari ) /Potential
+                                    CMI w/o No Response Impact Clari] *100</p>
+                                <p>
+                                    <note id="note_olz_431_kvb"/>
+                                </p>
+                                <p>Rounded to 2 decimal places. <b>Format</b>: 3.14%.</p>
+                            </entry>
+                            <entry>Potential CMI Shift % = (Potential CMI with No Response Impact
+                                Clari - Potential CMI w/o No Response Impact Clari) / Potential CMI
+                                w/o No Response Impact Clari x 100</entry>
+                            <entry/>
+                        </row>
+                    </tbody>
+                </tgroup>
+            </table>
+        </section>
+        <section id="section_o5n_cf1_kvb">
+            <title>Potential Reimbursement Impact</title>
+            <fig id="fig_qn3_mpy_jvb">
+                <title>No Response Potential Reimbursement Impact </title>
+                <image href="Images/no_response_potential_cmi_shift.png" id="image_rn3_mpy_jvb"/>
+            </fig>
+            <p>This chart displays the potential Reimbursement Impact for each of the selected View
+                By option.</p>
+            <ul id="ul_sn3_mpy_jvb">
+                <li>X axis displays the Discharge Month//Facility/Payer/Sent by Provider based on
+                    the View by option selected.</li>
+                <li>Y axis displays the $ values.</li>
+                <li>Default: Chart displays the values for 3 calendar months.</li>
+                <li>
+                    <p><b>Info Icon</b>(Text on hover): Potential Reimbursement Impact $ resulting
+                        from the potential CMI shift for all w &amp; w/o No Response financial
+                        impact clarifications; Encounter Status: Reconciled - Impact, Reconciled -
+                        No Impact.</p>
+                </li>
+            </ul>
+            <table frame="all" rowsep="1" colsep="1" id="table_tn3_mpy_jvb">
+                <title>Potential Reimbursement Impact</title>
+                <tgroup cols="2">
+                    <colspec colname="c1" colnum="1" colwidth="1*"/>
+                    <colspec colname="c2" colnum="2" colwidth="1*"/>
+                    <thead>
+                        <row>
+                            <entry>Column Name</entry>
+                            <entry>Description</entry>
+                        </row>
+                    </thead>
+                    <tbody>
+                        <row>
+                            <entry>Potential Reimbursement Impact</entry>
+                            <entry>
+                                <p>This metric displays the potential dollar amount due to the
+                                    physicians not responding to the financial impact clarifications
+                                    for each of the selected View By option.</p>
+                                <p>Potential Reimbursement Impact = Potential CMI Shift * Blended
+                                    Rate.</p>
+                                <p>
+                                    <note id="note_bqt_y31_kvb">This value is represented with $.
+                                            <b>Format</b>: $45239.</note>
+                                </p>
+                            </entry>
+                        </row>
+                    </tbody>
+                </tgroup>
+            </table>
+        </section>
+        <section id="section_y2g_z21_kvb">
+            <title>No Response Impact Summary</title>
+            <fig id="fig_tdd_rcz_jvb">
+                <title>No Response Impact Summary</title>
+                <image href="Images/No_response_impact_summary.png" id="image_jhb_pdz_jvb"/>
+            </fig>
+            <p>This chart displays the summarized detail and monthly trend for the selected time
+                period based on the View by option selected.</p>
+            <ul id="ul_vdd_rcz_jvb">
+                <li>Column Headers: Displays the View by options selected (Discharge Month,
+                    Facility, Payer/ Sent to Provider).<note id="note_tdg_cms_lwb">When the <b>View
+                            By</b> option is selected as "Provider to Sent", the <b>No Response
+                            Impact Summary</b> chart is updated to show the provider names as rows
+                        headers instead of column headers, and metrics are displayed as columns
+                        headers.<?oxy_custom_start type="oxy_content_highlight" color="255,255,0"?></note><?oxy_custom_end?></li>
+                <li>Row Headers: Displays the metrics.</li>
+                <li>Default: Displays the values for 3 calendar months.</li>
+                <li>Totals are available at the end against each of the metric displaying the
+                    cumulative values for the selected time period/date range.</li>
+                <li>Default: Chart displays the values for 3 calendar months.</li>
+                <li>
+                    <p><b>Info Icon</b>(Text on hover): Encounter Status: Reconciled - Impact,
+                        Reconciled - No Impact; Clarification Status: Includes all clarification
+                        statuses except ‘Removed’ or 'Retracted'.</p>
+                </li>
+            </ul>
+            <table frame="all" rowsep="1" colsep="1" id="table_wdd_rcz_jvb">
+                <title>No Response Impact Summary</title>
+                <tgroup cols="3">
+                    <colspec colname="c1" colnum="1" colwidth="1*"/>
+                    <colspec colname="c2" colnum="2" colwidth="1*"/>
+                    <colspec colname="newCol3" colnum="3" colwidth="1*"/>
+                    <thead>
+                        <row>
+                            <entry>Column Name</entry>
+                            <entry>Description</entry>
+                            <entry>Formula/Calculation</entry>
+                        </row>
+                    </thead>
+                    <tbody>
+                        <row>
+                            <entry>Enc with No Response Impact Clarifications</entry>
+                            <entry>
+                                <p>Count of encounters with at least one clarification instance with
+                                    Final Response as No Response. </p>
+                                <p>
+                                    <note id="note_rdr_p31_kvb"/>
+                                </p>
+                                <p>Clarification with a standard or custom ‘Primary Type at
+                                    Reconciliation’ defined as ‘Financial’ in the admin
+                                    configuration is a Financial Impact Clarification.</p>
+                                <p>Clarifications with Status 'REMOVED' or 'RETRACTED' are excluded
+                                    from the count.</p>
+                                <p>Clarifications for "Review Not Needed" encounter status should
+                                    not be considered for this metric calculation.</p>
+                                <p>Clarifications that do not have a FINAL response are not
+                                    considered in this calculation.</p>
+                            </entry>
+                            <entry/>
+                        </row>
+                        <row>
+                            <entry>Non Responding Providers</entry>
+                            <entry>
+                                <p>Count of sent to providers who have not responded to the
+                                    Financial Impact Clarification, i.e. Count of providers with at
+                                    least one Financial Impact Clarification instance with Final
+                                    response as No Response.</p>
+                                <p>
+                                    <note id="note_pgg_q31_kvb"/>
+                                </p>
+                                <p>Clarification with a standard or custom ‘Primary Type at
+                                    Reconciliation’ defined as ‘Financial’ in the admin
+                                    configuration is a Financial Impact Clarification.</p>
+                                <p>Clarifications with Status 'REMOVED' or 'RETRACTED' are excluded
+                                    from the count.</p>
+                                <p>Clarifications for "Review Not Needed" encounter status should
+                                    not be considered for this metric calculation.</p>
+                                <p>Clarifications that do not have a FINAL response are not
+                                    considered in this calculation.</p>
+                            </entry>
+                            <entry/>
+                        </row>
+                        <row>
+                            <entry>No Response Impact Clarifications</entry>
+                            <entry>
+                                <p>Count of Financial Impact Clarifications with Final Response as
+                                    No Response.</p>
+                                <p>
+                                    <note id="note_qbf_r31_kvb"/>
+                                </p>
+                                <p>Clarification with a standard or custom ‘Primary Type at
+                                    Reconciliation’ defined as ‘Financial’ in the admin
+                                    configuration is a Financial Impact Clarification.</p>
+                                <p>Clarifications with Status 'REMOVED' or 'RETRACTED' are excluded
+                                    from the count.</p>
+                                <p>Clarifications for "Review Not Needed" encounter status should
+                                    not be considered for this metric calculation.</p>
+                                <p>Clarifications that do not have a FINAL response are not
+                                    considered in this calculation.</p>
+                            </entry>
+                            <entry/>
+                        </row>
+                        <row>
+                            <entry>No Response Impact Clarification Rate </entry>
+                            <entry>
+                                <p>Out of total financial impact clarifications sent, the percentage
+                                    of Financial Impact Clarifications with Final Response as “No
+                                    Response” .</p>
+                                <p>No Response Impact Clarification Rate = (Financial Impact
+                                    Clarifications with Final Response as No Response / Count of
+                                    Financial Impact Clarifications Sent) *100. <b>Format</b>:
+                                    1.67%.</p>
+                                <p>
+                                    <note id="note_i4v_r31_kvb"/>
+                                </p>
+                                <p>Clarifications for "Review Not Needed" encounter status are not
+                                    considered for this metric calculation.</p>
+                                <p>Instances for Clarifications with Status 'REMOVED' or 'RETRACTED'
+                                    are not considered for this metric calculation.</p>
+                                <p>Clarifications that do not have a FINAL response are not
+                                    considered in this calculation.</p>
+                            </entry>
+                            <entry/>
+                        </row>
+                        <row>
+                            <entry>Potential CMI w/o No Response Impact Clari</entry>
+                            <entry>
+                                <p>Displays the potential CMI w/o No Response Impact Clari for the
+                                    selected View by option.</p>
+                                <p>
+                                    <note id="note_oqm_s31_kvb">This value is represented with 4
+                                        decimals. <b>Format</b>: 1.9985.</note>
+                                </p>
+                            </entry>
+                            <entry>Potential CMI w/o No Response Impact Clari = The sum of Final
+                                Coded DRG WTs of all Reconciled- No Impact (Impact Type: No Impact),
+                                and Reconciled Impact (Impact Type: SOI/ROM Impact, Financial, Both)
+                                encounters with at least one Financial Impact Clarification
+                                (Standard or custom) with Final response as No Response / Total
+                                count of Reconciled- No Impact (Impact Type: No Impact), and
+                                Reconciled Impact (Impact Type: SOI/ROM Impact, Both, Financial)
+                                encounters with at least one Financial Impact Clarification
+                                (Standard or custom) with Final response as No Response.</entry>
+                        </row>
+                        <row>
+                            <entry>Potential CMI with No Response Impact Clari</entry>
+                            <entry>
+                                <p>Displays the potential CMI with No Response Impact
+                                    Clarification.</p>
+                                <p>
+                                    <note id="note_mc2_531_kvb">This value is represented with 4
+                                        decimals. <b>Format</b>: 2.0156.</note>
+                                </p>
+                            </entry>
+                            <entry>Potential CMI with No Response Impact Clari = The sum of
+                                Reconciliation Assessment Coded DRG WTs of all Reconciled- No Impact
+                                (Impact Type: No Impact), and Reconciled Impact (Impact Type:
+                                SOI/ROM Impact) encounters with at least one No Response Financial
+                                Impact Clarification (Standard or custom) and no other Agreed/Alt
+                                DX/Other Explanation Financial Impact Clarification (Standard or
+                                custom) and the sum of Reconciliation Assessment DRG WTs (from
+                                backend grouping) of all the Reconciled Impact (Impact Type: Both,
+                                Financial) encounters with at least one No Response Financial Impact
+                                Clarification (Standard or custom) and with at least one Agreed/Alt
+                                DX/Other Explanation Financial Impact Clarification (Standard or
+                                custom) / Total count of Reconciled- No Impact (Impact Type: No
+                                Impact), and Reconciled Impact (Impact Type: SOI/ROM Impact, Both ,
+                                Financial) encounters with at least one Financial Impact
+                                Clarification (Standard or custom) with Final response as No
+                                Response. </entry>
+                        </row>
+                        <row>
+                            <entry>Potential CMI Shift %</entry>
+                            <entry>
+                                <p>Displays the Potential CMI Shift % value.</p>
+                                <p>Potential CMI Shift % = [(Potential CMI with No Response Impact
+                                    Clari - Potential CMI w/o No Response Impact Clari) *Blended
+                                    Rate]</p>
+                                <p>
+                                    <note id="note_kf3_v31_kvb">Rounded to 2 decimal places.
+                                            <b>Format</b>: 3.14%.</note>
+                                </p>
+                            </entry>
+                            <entry>Potential CMI Shift % = (Potential CMI with No Response Impact
+                                Clari - Potential CMI w/o No Response Impact Clari) / Potential CMI
+                                w/o No Response Impact Clari x 100.</entry>
+                        </row>
+                        <row>
+                            <entry>Potential Reimbursement Impact</entry>
+                            <entry>
+                                <p>This metric displays the potential dollar amount due to the
+                                    physicians not responding to the financial impact clarifications
+                                    for each of the selected View By option.</p>
+                                <p>Potential Reimbursement Impact = Potential CMI Shift * Blended
+                                    Rate.</p>
+                                <p>
+                                    <note id="note_msr_w31_kvb">This value is represented with $.
+                                            <b>Format</b>: $45239.</note>
+                                </p>
+                            </entry>
+                            <entry/>
+                        </row>
+                    </tbody>
+                </tgroup>
+            </table>
+            <p>
+                <table frame="all" rowsep="1" colsep="1" id="table_nbz_gkz_jvb">
+                    <title>View By</title>
+                    <tgroup cols="2">
+                        <colspec colname="c1" colnum="1" colwidth="1*"/>
+                        <colspec colname="c2" colnum="2" colwidth="1*"/>
+                        <thead>
+                            <row>
+                                <entry>View By</entry>
+                                <entry>Description</entry>
+                            </row>
+                        </thead>
+                        <tbody>
+                            <row>
+                                <entry>Discharge Date</entry>
+                                <entry>
+                                    <p>This option is selected by default. When you click this
+                                        option, <b>Group By</b> and <b>Week Start Day</b> filters
+                                        automatically become available for selection.</p>
+                                    <p>When the ‘Discharge Month’ option is selected, all the charts
+                                        in the dashboard display the data by discharge month.</p>
+                                    <p>Discharge month is displayed on the X-axis.</p>
+                                </entry>
+                            </row>
+                            <row>
+                                <entry>Facility</entry>
+                                <entry>
+                                    <p>When the ‘Facility’ option is selected, all the charts in the
+                                        dashboard display the data by Facility.</p>
+                                    <p>Facility Description is displayed on the X-axis.</p>
+                                    <p>When the ‘View By’ is Facility, the data in all the charts is
+                                        sorted by Facility name in ascending order.</p>
+                                </entry>
+                            </row>
+                            <row>
+                                <entry>Payer</entry>
+                                <entry>
+                                    <p>When the ‘Payer’ option is selected, all the charts in the
+                                        dashboard display the data by Payer.</p>
+                                    <p>Payer Description is displayed on the X-axis.</p>
+                                    <p>When the ‘View By’ is Payer, the data in all the charts is
+                                        sorted by Payer description in ascending order</p>
+                                </entry>
+                            </row>
+                            <row>
+                                <entry>Sent to Provider</entry>
+                                <entry>
+                                    <p>When the "Sent To Provider" option is selected, all the
+                                        charts in the dashboard are sorted by provider name in
+                                        ascending order. All the KPI cards totals, shows value at
+                                        encounter level for “Sent To Provider”.</p>
+                                    <note id="note_uzd_2nr_lwb">
+                                        <ul id="ul_rxl_2nr_lwb">
+                                            <li>All the charts display values at clarification level
+                                                but the KPI's and the totals display values at
+                                                encounter level.</li>
+                                            <li> When the <b>View By</b> option is selected as
+                                                  "<b>Sent to Provider</b>, the <b>No Response
+                                                  Impact Summary</b> chart is updated to show the
+                                                provider names as rows instead of columns, and
+                                                metrics are displayed as columns.</li>
+                                        </ul>
+                                    </note>
+                                </entry>
+                            </row>
+                        </tbody>
+                    </tgroup>
+                </table>
+            </p>
+            <p>
+                <table frame="all" rowsep="1" colsep="1" id="table_qnn_w2n_g4b">
+                    <title>Report Slicers </title>
+                    <tgroup cols="2">
+                        <colspec colname="c1" colnum="1" colwidth="1*"/>
+                        <colspec colname="c2" colnum="2" colwidth="1*"/>
+                        <thead>
+                            <row>
+                                <entry>Slicer</entry>
+                                <entry>Description</entry>
+                            </row>
+                        </thead>
+                        <tbody>
+                            <row>
+                                <entry>Discharge Date</entry>
+                                <entry>
+                                    <ul id="ul_iz3_1jz_jvb">
+                                        <li>
+                                            <p>This filter allows the user to select the discharge
+                                                date range. </p>
+                                        </li>
+                                        <li>
+                                            <p><b>Format</b>: <b>Between Date range</b>, Example:
+                                                7/1/2022 - 9/30/2022</p>
+                                        </li>
+                                        <li>
+                                            <p><b>Default</b>: Last 3 calendar months date range
+                                                selected by default.</p>
+                                        </li>
+                                    </ul>
+                                </entry>
+                            </row>
+                            <row>
+                                <entry>Reset Button</entry>
+                                <entry>Allows the user to reset the discharge date.</entry>
+                            </row>
+                            <row>
+                                <entry>Facility</entry>
+                                <entry>
+                                    <ul id="ul_vzp_z2n_g4b">
+                                        <li>Displays both active and inactive facilities in
+                                            alphabetical order that you have access to.</li>
+                                        <li>You can select multiple facilities.</li>
+                                        <li>You can search the facility by Facility ID or
+                                            Description.</li>
+                                        <li><b>Format</b>: Facility Description (Facility ID)</li>
+                                        <li><b>Default</b>: ALL.</li>
+                                    </ul>
+                                </entry>
+                            </row>
+                            <row>
+                                <entry>Payer</entry>
+                                <entry>
+                                    <ul id="ul_ntb_cfn_g4b">
+                                        <li>Displays both active and inactive payers in alphabetical
+                                            order associated with the facilities you have access
+                                            to.</li>
+                                        <li>You can select multiple payers.</li>
+                                        <li>"Unassigned Payer" displays data for the encounters that
+                                            do not have a payer assigned.</li>
+                                        <li>You can search the Payer by Payer ID or
+                                            Description.</li>
+                                        <li><b>Format</b>: Payer Description (Payer ID)</li>
+                                        <li><b>Default</b>: ALL</li>
+                                    </ul>
+                                </entry>
+                            </row>
+                            <row>
+                                <entry>Unit</entry>
+                                <entry>
+                                    <ul id="ul_gkr_hjz_jvb">
+                                        <li>
+                                            <p>Displays the list of available units.</p>
+                                        </li>
+                                        <li>
+                                            <p>User can select multiple Units.</p>
+                                        </li>
+                                        <li>
+                                            <p><b>Default</b>: ALL.</p>
+                                        </li>
+                                    </ul>
+                                </entry>
+                            </row>
+                            <row>
+                                <entry>Sent to Provider</entry>
+                                <entry>
+                                    <ul id="ul_vmn_pgm_twb">
+                                        <li>
+                                            <p>Displays both active and inactive providers that are
+                                                sent to provider for at least one instance.</p>
+                                        </li>
+                                        <li>
+                                            <p>Format: Prefix Lastname, Firstname Middle Initial,
+                                                Suffix, Title.</p>
+                                        </li>
+                                        <li>
+                                            <p><b>Default</b>: ALL.</p>
+                                        </li>
+                                    </ul>
+                                </entry>
+                            </row>
+                            <row>
+                                <entry>"Group By" and "Week Start Day" options</entry>
+                                <entry> These options are available only when the View By option is
+                                    selected as Admit Date/Discharge Date.<p>See <xref
+                                            href="group_by_option.dita"/>. </p></entry>
+                            </row>
+                        </tbody>
+                    </tgroup>
+                </table>
+            </p>
+            <p>
+                <table frame="all" rowsep="1" colsep="1" id="table_dq1_ffn_g4b">
+                    <title>Filters on all Pages</title>
+                    <tgroup cols="2">
+                        <colspec colname="c1" colnum="1" colwidth="1*"/>
+                        <colspec colname="c2" colnum="2" colwidth="1*"/>
+                        <thead>
+                            <row>
+                                <entry>Filter</entry>
+                                <entry>Description</entry>
+                            </row>
+                        </thead>
+                        <tbody>
+                            <row>
+                                <entry>Patient Type</entry>
+                                <entry>
+                                    <ul id="ul_nm2_s4l_4vb">
+                                        <li>
+                                            <p>This filter displays the available patient types.
+                                                E.g. Inpatient, Outpatient.</p>
+                                        </li>
+                                        <li>
+                                            <p><b>Default: Inpatient</b>.</p>
+                                        </li>
+                                    </ul>
+                                </entry>
+                            </row>
+                            <row>
+                                <entry>Admit Service</entry>
+                                <entry>
+                                    <ul id="ul_xhb_pjz_jvb">
+                                        <li>
+                                            <p>Displays the list of available Admit Service.</p>
+                                        </li>
+                                        <li>
+                                            <p>User can select multiple Admit Service.</p>
+                                        </li>
+                                        <li>
+                                            <p>Users can search the Admit Service.</p>
+                                        </li>
+                                        <li>
+                                            <p><b>Default</b>: ALL.</p>
+                                        </li>
+                                    </ul>
+                                </entry>
+                            </row>
+                            <row>
+                                <entry>Visit Type</entry>
+                                <entry>
+                                    <ul id="ul_ymz_5jz_jvb">
+                                        <li>
+                                            <p>This filter displays the list of available Visit
+                                                Types.</p>
+                                        </li>
+                                        <li>
+                                            <p>User can select multiple Visit Type.</p>
+                                        </li>
+                                        <li>
+                                            <p>Users can search the Visit Type.</p>
+                                        </li>
+                                        <li>
+                                            <p><b>Default</b>: ALL.</p>
+                                        </li>
+                                    </ul>
+                                </entry>
+                            </row>
+                            <row>
+                                <entry>DRG Specialty</entry>
+                                <entry>
+                                    <ul id="ul_icb_w4l_4vb">
+                                        <li>
+                                            <p>This filter displays the available DRG Specialty, Eg:
+                                                Cardiology, Neurology etc.</p>
+                                        </li>
+                                        <li>
+                                            <p><b>Default </b>: ALL.</p>
+                                        </li>
+                                    </ul>
+                                </entry>
+                            </row>
+                        </tbody>
+                    </tgroup>
+                </table>
+            </p>
+            <table frame="all" rowsep="1" colsep="1" id="table_mjr_xry_44b">
+                <title>Footnotes</title>
+                <tgroup cols="2">
+                    <colspec colname="c1" colnum="1" colwidth="1*"/>
+                    <colspec colname="c2" colnum="2" colwidth="1*"/>
+                    <thead>
+                        <row>
+                            <entry>Formula</entry>
+                            <entry>Text on hover</entry>
+                        </row>
+                    </thead>
+                    <tbody>
+                        <row>
+                            <entry>Non Responding Providers</entry>
+                            <entry>Count of sent to providers who have not responded to the
+                                Financial Impact Clarification, i.e. count of providers with at
+                                least one Financial Impact Clarification instance with Final
+                                response as No Response.</entry>
+                        </row>
+                        <row>
+                            <entry>No Response Rate</entry>
+                            <entry>Out of total Financial Impact clarifications sent, the percentage
+                                of Financial Impact Clarifications with Final Response as “No
+                                Response”. No Response Rate = (Financial Impact Clarifications with
+                                Final Response as No Response / Count of Financial Impact
+                                Clarifications Sent) *100.</entry>
+                        </row>
+                        <row>
+                            <entry>Potential CMI w/o No Response Impact Clari</entry>
+                            <entry>The avg. of F-DRG WTs of all Reconciled - No Impact (Impact Type:
+                                No Impact) and Reconciled Impact (Impact Type: SOI/ROM, Financial,
+                                Both) encounters with at least one Financial Impact Clarification
+                                (standard or custom) with Final response=No Response.</entry>
+                        </row>
+                        <row>
+                            <entry>Potential CMI with No Response Impact Clari</entry>
+                            <entry>The avg. of R-DRG WTs of all Reconciled - No Impact and
+                                Reconciled Impact (SOI/ROM) Encounters with only one Financial
+                                Impact Clarification as No Response and R-DRG WTs (backend grouping)
+                                of all the Reconciled Impact (Both, Financial) Encounters with more
+                                than one Financial Impact Clarifications with Final Response as
+                                Agreed/Alt Dx/Other Explanation and at-least one No Response
+                                Clarification.</entry>
+                        </row>
+                        <row>
+                            <entry>Potential CMI Shift</entry>
+                            <entry>Potential CMI Shift = (Potential CMI with No Response Impact
+                                Clari - Potential CMI w/o No Response Impact Clari).</entry>
+                        </row>
+                        <row>
+                            <entry>Potential CMI Shift % </entry>
+                            <entry>Potential CMI Shift % = (Potential CMI with No Response Impact
+                                Clari - Potential CMI w/o No Response Impact Clari) / Potential CMI
+                                w/o No Response Impact Clari x 100.</entry>
+                        </row>
+                        <row>
+                            <entry>No Response Impact </entry>
+                            <entry>The sum of No Response Impact ((Potential CMI with No Response
+                                Impact Clari-Potential CMI w/o No Response Impact Clari) * Blended
+                                Rate) for all Reconciled-No Impact(Impact Type: No Impact) &amp;
+                                Reconciled Impact (Impact Type: SOI/ROM, Financial, Both).</entry>
+                        </row>
+                    </tbody>
+                </tgroup>
+            </table>
+        </section>
+    </conbody>
+</concept>

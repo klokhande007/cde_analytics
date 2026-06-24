@@ -1,0 +1,658 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="post_discharge_reviews_overview">
+    <title>Assistant Usage Summary</title>
+    <shortdesc></shortdesc>
+    <conbody>
+        <p><b>Overview</b>: The Assistant Usage Summary helps the CDI Managers get details about the
+            AI suggestions in CDS Assistant and their acceptance and rejections rates. This helps to
+            analyze the usage of CDS Assistant and CDS engagement with this tool.</p>
+        <p>By default, the report displays data for last 3 calendar months based on the admission
+            date.</p>
+        <p><b>Navigation</b>: On the Analytics home page left side panel, navigate to <menucascade>
+                <uicontrol>CDE Triage</uicontrol>
+                <uicontrol>Triage and CDS Assistant Usage</uicontrol>
+                <uicontrol>Assistant Usage Summary</uicontrol>
+            </menucascade>.</p>
+        <p>The Assistant Usage Summary dashboard displays the following charts:<ul
+                id="ul_uyj_sh5_s4b">
+                <li>
+                    <p>Documented Diagnoses</p>
+                </li>
+                <li>
+                    <p>Documented Procedures</p>
+                </li>
+                <li>
+                    <p>Documentation Opportunities: Diagnoses</p>
+                </li>
+                <li>
+                    <p>Documentation Opportunities: Clinical Evidences</p>
+                </li>
+            </ul></p>
+        <p>On the top panel, you can select desired values for the slicers (refer <xref
+                href="#post_discharge_reviews_overview/table_qnn_w2n_g4b" format="dita"/>) and the
+            corresponding data gets filtered in the charts.</p>
+        <p>For filters on all pages, refer <xref
+                href="#post_discharge_reviews_overview/table_dq1_ffn_g4b" format="dita"/>.</p>
+        <p><b>Assistant Usage Summary</b></p>
+        <fig id="fig_sbk_ts5_s4b">
+            <title>Sample Report</title>
+            <image
+                href="Images/Triage%20and%20CDS%20Assistant%20Usage/assistant_usage_summary/assistant_usage_summary.png"
+                width="600" id="image_tyr_1vy_zyb"/>
+        </fig>
+        <p><b>Documented Diagnoses</b></p>
+        <fig id="fig_lzh_ft5_s4b">
+            <title>Documented Diagnoses Chart</title>
+            <image
+                href="Images/Triage%20and%20CDS%20Assistant%20Usage/assistant_usage_summary/documented_diagnoses.gif" width="450"
+                id="image_wdp_jvy_zyb"/>
+        </fig>
+        <p>This chart allows report users to gain insights into Documented Diagnoses and CDS
+            activity by displaying the count of diagnoses, whether the CDS removed, accepted, or
+            left the suggestions unaddressed.</p>
+        <p><b>Info Icon</b>(Text on hover): Includes all encounter statuses except ‘Review Not
+            Needed; The visual shows the data for ‘Suggested’ Documented Diagnoses by default. For
+            data on Quality and Other types of Documented Diagnoses, use the 'Suggestion Type’
+            slicer.</p>
+        <note id="note_xrh_mdb_dzb">Each bar for Documented Diagnoses represents the total number of
+            those diagnoses presented in CDS Assistant (100%), and each segment within the bar
+            represents the percentage of diagnoses with a specific CDS action. If a bar has segments
+            for Accepted (60%), Removed (30%), and Unaddressed (10%), it means that out of all the
+            diagnoses presented, 60% are accepted, 30% are removed, and 10% are Unaddressed.
+            (Accepted + Removed + Unaddressed = Total Documented Diagnoses presented in CDS
+            Assistant).</note>
+        <table frame="all" rowsep="1" colsep="1" id="table_x2t_lct_hyb">
+            <title>Documented Diagnoses Metrics</title>
+            <tgroup cols="4">
+                <colspec colname="c1" colnum="1" colwidth="1*"/>
+                <colspec colname="c2" colnum="2" colwidth="1.67*"/>
+                <colspec colname="newCol4" colnum="3" colwidth="1.67*"/>
+                <colspec colname="newCol3" colnum="4" colwidth="1.67*"/>
+                <thead>
+                    <row>
+                        <entry>Metric</entry>
+                        <entry>Description</entry>
+                        <entry>Format</entry>
+                        <entry>Toopltip</entry>
+                    </row>
+                </thead>
+                <tbody>
+                    <row>
+                        <entry>Accepted</entry>
+                        <entry>The count and percentage of Documented Diagnoses that were accepted
+                            by the CDS in CDS Assistant.</entry>
+                        <entry morerows="2">
+                            <ul id="ul_lbj_zcb_dzb">
+                                <li>Y-axis displays the Documented Diagnoses in the format: ICD 10
+                                    Code: Documented Diagnoses Description. (E.g. L97.909: Non
+                                    pressure chronic ulcer of unspecified part of unspecified leg
+                                    with unspecified severity). Only display the first 15-20
+                                    characters, including the ICD 10 code, and show the rest of the
+                                    description in a tooltip upon hover.</li>
+                                <li>X-axis displays Accepted, Removed, and Unaddressed metrics.</li>
+                            </ul>
+                        </entry>
+                        <entry morerows="2">#Accepted, #Removed, #Unaddressed.</entry>
+                    </row>
+                    <row>
+                        <entry>Removed</entry>
+                        <entry>The count and percentage of Documented Diagnoses that were removed by
+                            the CDS in CDS Assistant.</entry>
+                    </row>
+                    <row>
+                        <entry>Unaddressed</entry>
+                        <entry>The count and percentage of Documented Diagnoses that were
+                            unaddressed by the CDS</entry>
+                    </row>
+                </tbody>
+            </tgroup>
+        </table>
+        <p><b>Documented Procedures</b></p>
+        <fig id="fig_jtf_nt5_s4b">
+            <title>Documented Procedures Chart</title>
+            <image
+                href="Images/Triage%20and%20CDS%20Assistant%20Usage/assistant_usage_summary/documented_procedures.gif" width="450"
+                id="image_cnw_cp1_bzb"/>
+        </fig>
+        <p>This chart allows report users to gain insights into documented procedures and CDS
+            activity by displaying the count of procedures, whether the CDS removed, accepted, or
+            left the suggestions unaddressed.</p>
+        <p><b>Info Icon</b>(Text on hover): Encounter Status: Includes all encounter statuses except
+            ‘Review Not Needed; The visual shows the data for ‘Suggested’ Documented Procedures.</p>
+        <note id="note_vjg_h2b_dzb">Each bar for Documented Procedures represents the total number
+            of those procedures presented in CDS Assistant (100%), and each segment within the bar
+            represents the percentage of procedures with a specific CDS action. If a bar has
+            segments for Accepted (60%), Removed (30%), and Unaddressed (10%), it means that out of
+            all the procedures presented, 60% are accepted, 30% are removed, and 10% are
+            Unaddressed. (Accepted + Removed + Unaddressed = Total Documented Procedures presented
+            in CDS Assistant).</note>
+        <table frame="all" rowsep="1" colsep="1" id="table_xbq_cb5_hyb">
+            <title>Documented Procedures Metrics</title>
+            <tgroup cols="4">
+                <colspec colname="c1" colnum="1" colwidth="1*"/>
+                <colspec colname="c2" colnum="2" colwidth="1.67*"/>
+                <colspec colname="newCol3" colnum="3" colwidth="1.67*"/>
+                <colspec colname="newCol4" colnum="4" colwidth="1.67*"/>
+                <thead>
+                    <row>
+                        <entry>Metric</entry>
+                        <entry>Description</entry>
+                        <entry>Format</entry>
+                        <entry>Tooltip</entry>
+                    </row>
+                </thead>
+                <tbody>
+                    <row>
+                        <entry>Accepted</entry>
+                        <entry>The count and percentage of Documented Procedures that were accepted
+                            by the CDS in CDS Assistant.</entry>
+                        <entry morerows="2">
+                            <ul id="ul_j3x_c2b_dzb">
+                                <li>
+                                    <p>Y-axis displays the Documented Procedures in the format:
+                                        ICD10 PCS Code: Documented Procedures Description or
+                                        Procedure Description (for SNOMED Procedures)  (E.g. 0RG2:
+                                        Fusion cervical vertebral joints, Debridement of wound of
+                                        skin). Only display the first 15-20 characters and show the
+                                        rest of the description in a tooltip upon hover.</p>
+                                </li>
+                                <li>
+                                    <p>X-axis displays Accepted, Removed, and Unaddressed
+                                        metrics.</p>
+                                </li>
+                            </ul>
+                        </entry>
+                        <entry morerows="2">#Accepted, #Removed, #Unaddressed.</entry>
+                    </row>
+                    <row>
+                        <entry>Removed</entry>
+                        <entry>The count and percentage of Documented Procedures that were removed
+                            by the CDS in CDS Assistant.</entry>
+                    </row>
+                    <row>
+                        <entry>Unaddressed</entry>
+                        <entry>The count and percentage of Documented Procedures that were
+                            unaddressed by the CDS.</entry>
+                    </row>
+                </tbody>
+            </tgroup>
+        </table>
+        <p><b>Documentation Opportunities: Diagnoses</b></p>
+        <fig id="fig_n4m_z35_hyb">
+            <title>Documentation Opportunities: Diagnoses Chart</title>
+            <image
+                href="Images/Triage%20and%20CDS%20Assistant%20Usage/assistant_usage_summary/do_diagnosis.gif" width="450"
+                id="image_qsl_tng_tyb"/>
+        </fig>
+        <p>This chart allows report users to get insights into Documentation Opportunities Diagnoses
+            and CDS activity by displaying the count of diagnoses, whether the CDS removed,
+            accepted, or left the suggestions unaddressed.</p>
+        <p><b>Info Icon</b>(Text on hover): Encounter Status: Includes all encounter statuses except
+            ‘Review Not Needed; The visual shows the data for ‘Suggested’ Documentation
+            Opportunities: Diagnoses.</p>
+        <note id="note_db5_v2b_dzb">Each bar for Documentation Opportunities: Diagnoses represents
+            the total number of those diagnoses presented in CDS Assistant (100%), and each segment
+            within the bar represents the percentage of diagnoses with a specific CDS action. If a
+            bar has segments for Accepted (60%), Removed (30%), and Unaddressed (10%), it means that
+            out of all the Documentation Opportunities: Diagnoses presented, 60% are accepted, 30%
+            are removed, and 10% are Unaddressed. (Accepted + Removed + Unaddressed = Total
+            Documentation Opportunities: Diagnoses presented in CDS Assistant).</note>
+        <table frame="all" rowsep="1" colsep="1" id="table_qpy_2w1_bzb">
+            <title>Documentation Opportunities: Diagnoses Metrics</title>
+            <tgroup cols="4">
+                <colspec colname="c1" colnum="1" colwidth="1*"/>
+                <colspec colname="c2" colnum="2" colwidth="1.67*"/>
+                <colspec colname="newCol3" colnum="3" colwidth="1.67*"/>
+                <colspec colname="newCol4" colnum="4" colwidth="1.67*"/>
+                <thead>
+                    <row>
+                        <entry>Metric</entry>
+                        <entry>Description</entry>
+                        <entry>Format</entry>
+                        <entry>Tooltip</entry>
+                    </row>
+                </thead>
+                <tbody>
+                    <row>
+                        <entry>Accepted</entry>
+                        <entry>The count and percentage of Documented Opportunities Diagnoses that
+                            were accepted by the CDS in CDS Assistant.</entry>
+                        <entry morerows="2">
+                            <ul id="ul_sbs_r2b_dzb">
+                                <li>
+                                    <p>Y-axis displays the Documentation Opportunities: Diagnoses in
+                                        the format: ICD 10 Code: Documentation Opportunities:
+                                        Diagnoses Description (E.g., N17.9: Acute kidney failure,
+                                        unspecified). Only display the first 15-20 characters,
+                                        including the ICD 10 code, and show the rest of the
+                                        description in a tooltip upon hover. </p>
+                                </li>
+                                <li>
+                                    <p>X-axis displays Accepted, Removed, and Unaddressed
+                                        metrics.</p>
+                                </li>
+                            </ul>
+                        </entry>
+                        <entry morerows="2">#Accepted, #Removed, #Unaddressed.</entry>
+                    </row>
+                    <row>
+                        <entry>Removed</entry>
+                        <entry>The count and percentage of Documented Opportunities Diagnoses that
+                            were removed by the CDS in CDS Assistant.</entry>
+                    </row>
+                    <row>
+                        <entry>Unaddressed</entry>
+                        <entry>The count and percentage of Documented Opportunities Diagnoses that
+                            were unaddressed by the CDS.</entry>
+                    </row>
+                </tbody>
+            </tgroup>
+        </table>
+        <p><b>Documentation Opportunities: Clinical Evidences</b></p>
+        <p>This chart provides report users with insights into Documentation Opportunities Clinical
+            Evidences, displaying their counts and indicating whether they were attributed by the
+            CDS, attributed by the system, removed, or left unaddressed.</p>
+        <p><b>Info Icon</b>(Text on hover): Encounter Status: Includes all encounter statuses except
+            ‘Review Not Needed; The visual shows the data for ‘Suggested’ Documentation
+            Opportunities: Clinical Evidences.</p>
+        <note id="note_wfv_cfb_dzb">Each bar for Documentation Opportunities: Clinical Evidences
+            represents the total number of those evidences presented in CDS Assistant (100%), and
+            each segment within the bar represents the percentage of evidences with a specific
+            action. If a bar has segments for CDS Attributed (30%), System Attributed (30%), Removed
+            (30%), and Unaddressed (10%), it means that out of all the Documentation Opportunities:
+            Clinical Evidences presented, 30% are CDS attributed, 30% are system attributed, 30% are
+            removed, and 10% are Unaddressed. (CDS Attributed+ System Attributed + Removed +
+            Unaddressed = Total Documentation Opportunities: Clinical Evidences presented in CDS
+            Assistant).</note>
+        <fig id="fig_oyx_jr5_hyb">
+            <title>Documentation Opportunities: Clinical Evidences Chart</title>
+            <image
+                href="Images/Triage%20and%20CDS%20Assistant%20Usage/assistant_usage_summary/do_clinical_evidence.gif" width="450"
+                id="image_lk1_ks1_bzb"/>
+        </fig>
+        <table frame="all" rowsep="1" colsep="1" id="table_rb4_vv1_bzb">
+            <title>Documentation Opportunities: Clinical Evidences Metrics</title>
+            <tgroup cols="4">
+                <colspec colname="c1" colnum="1" colwidth="1*"/>
+                <colspec colname="c2" colnum="2" colwidth="1.67*"/>
+                <colspec colname="newCol3" colnum="3" colwidth="1.67*"/>
+                <colspec colname="newCol4" colnum="4" colwidth="1.67*"/>
+                <thead>
+                    <row>
+                        <entry>Metric</entry>
+                        <entry>Description</entry>
+                        <entry>Format</entry>
+                        <entry>Tooltip</entry>
+                    </row>
+                </thead>
+                <tbody>
+                    <row>
+                        <entry>CDS Attributed</entry>
+                        <entry>The count and percentage of Documentation Opportunities Clinical
+                            Evidences that were attributed by the CDS.</entry>
+                        <entry morerows="3">
+                            <ul id="ul_pvm_bfb_dzb">
+                                <li>
+                                    <p>Y-axis displays the Documentation Opportunities: Clinical
+                                        Evidences in the format: Documentation Opportunities:
+                                        Clinical Evidences Description (E.g., Gram-Negative Blood
+                                        Culture). Only display the first 15-20 characters, including
+                                        the ICD 10 code, and show the rest of the description in a
+                                        tooltip upon hover. </p>
+                                </li>
+                                <li>
+                                    <p>X-axis displays CDS Attributed, System Attributed, Removed,
+                                        and Unaddressed metrics.</p>
+                                </li>
+                            </ul>
+                        </entry>
+                        <entry morerows="3">#CDS Attributed, #System Attributed, #Removed,
+                            #Unaddressed.</entry>
+                    </row>
+                    <row>
+                        <entry>System Attributed</entry>
+                        <entry>The count and percentage of Documentation Opportunities Clinical
+                            Evidences that were attributed by the system.</entry>
+                    </row>
+                    <row>
+                        <entry>Removed</entry>
+                        <entry>The count and percentage of Documentation Opportunities Clinical
+                            Evidences that were removed by the CDS in CDS Assistant.</entry>
+                    </row>
+                    <row>
+                        <entry>Unaddressed</entry>
+                        <entry>The count and percentage of Documentation Opportunities Clinical
+                            Evidences that were unaddressed by the CDS.</entry>
+                    </row>
+                </tbody>
+            </tgroup>
+        </table>
+        <p>
+            <table frame="all" rowsep="1" colsep="1" id="table_qnn_w2n_g4b">
+                <title>Report Slicers </title>
+                <tgroup cols="2">
+                    <colspec colname="c1" colnum="1" colwidth="1*"/>
+                    <colspec colname="c2" colnum="2" colwidth="1*"/>
+                    <thead>
+                        <row>
+                            <entry>Slicer</entry>
+                            <entry>Description</entry>
+                        </row>
+                    </thead>
+                    <tbody>
+                        <?oxy_custom_start type="oxy_content_highlight" color="255,64,0"?>
+                        <row><?oxy_custom_end?>
+                            <entry>Admit Date</entry>
+                            <entry>
+                                <ul id="ul_ylq_pdc_3yb">
+                                    <li>
+                                        <p>Allows user to select the admit date range.</p>
+                                    </li>
+                                    <li>
+                                        <p><b>Format</b>: Between date range, example: 3/1/2023 -
+                                            6/30/2023.</p>
+                                    </li>
+                                    <li><b>Default</b>: Last 3 calendar months date range is
+                                        selected by default.</li>
+                                </ul>
+                            </entry>
+                            <?oxy_custom_start type="oxy_content_highlight" color="255,64,0"?>
+                        </row><?oxy_custom_end?>
+                        <row>
+                            <entry>Discharge Date</entry>
+                            <entry>
+                                <ul id="ul_uzh_y2n_g4b">
+                                    <li>Displays the discharge date range. </li>
+                                    <li>
+                                        <p><b>Format</b>: Between date range, example: 4/1/2023 -
+                                            6/30/2023.</p>
+                                    </li>
+                                </ul>
+                            </entry>
+                        </row>
+                        <?oxy_custom_start type="oxy_content_highlight" color="255,64,0"?>
+                        <row><?oxy_custom_end?>
+                            <entry>Reset</entry>
+                            <entry>
+                                <ul id="ul_jw1_22z_m4b">
+                                    <li>With the Reset button, you can reset both the admit and
+                                        discharge date range.</li>
+                                    <li><b>Tooltip</b>: Ctrl + Click to reset both Admit Date and
+                                        Discharge Date.</li>
+                                </ul>
+                            </entry>
+                            <?oxy_custom_start type="oxy_content_highlight" color="255,64,0"?>
+                        </row><?oxy_custom_end?>
+                        <row>
+                            <entry>Facility</entry>
+                            <entry>
+                                <ul id="ul_vzp_z2n_g4b">
+                                    <li>Displays both active and inactive facilities in alphabetical
+                                        order that you have access to.</li>
+                                    <li>You can select multiple facilities.</li>
+                                    <li>You can search the facility by Facility ID or
+                                        Description.</li>
+                                    <li><b>Format</b>: Facility Description (Facility ID).</li>
+                                    <li><b>Default</b>: ALL.</li>
+                                </ul>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>Payer</entry>
+                            <entry>
+                                <ul id="ul_ntb_cfn_g4b">
+                                    <li>Displays both active and inactive payers in alphabetical
+                                        order associated with the facilities you have access
+                                        to.</li>
+                                    <li>You can select multiple payers.</li>
+                                    <li>"Unassigned Payer" displays data for the encounters that do
+                                        not have a payer assigned.</li>
+                                    <li>You can search the Payer by Payer ID or Description.</li>
+                                    <li><b>Format</b>: Payer Description (Payer ID).</li>
+                                    <li><b>Default</b>: ALL.</li>
+                                </ul>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>CDS</entry>
+                            <entry>
+                                <ul id="ul_w24_ydc_3yb">
+                                    <li>
+                                        <p>Displays both active and inactive CDSs in alphabetical
+                                            order associated with the facilities user has access
+                                            to.</p>
+                                    </li>
+                                    <li>
+                                        <p>User can select multiple CDSs</p>
+                                    </li>
+                                    <li>
+                                        <p>"Unassigned CDS" displays data for the encounters that do
+                                            not have a CDS assigned.</p>
+                                    </li>
+                                    <li>
+                                        <p>Users can search the CDS by CDS ID or Name.</p>
+                                    </li>
+                                    <li>
+                                        <p><b>Format</b>: CDS Name (CDS ID).</p>
+                                    </li>
+                                    <li>
+                                        <p><b>Default</b>: ALL.</p>
+                                    </li>
+                                </ul>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>Unit</entry>
+                            <entry>
+                                <ul id="ul_ak2_2jv_prb">
+                                    <li>This filter displays the list of available units.</li>
+                                    <li>You can select multiple Units.</li>
+                                    <li>You can search the Unit.</li>
+                                    <li><b>Default</b>: ALL.</li>
+                                </ul>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>Assistant Category</entry>
+                            <entry>Displays the below options:<ul id="ul_n3d_1l2_1zb">
+                                    <li>
+                                        <p>Documented Diagnoses</p>
+                                    </li>
+                                    <li>
+                                        <p>Documented Procedures</p>
+                                    </li>
+                                    <li>
+                                        <p>DO: Diagnoses</p>
+                                    </li>
+                                    <li>
+                                        <p>DO: Clinical Evidence</p>
+                                    </li>
+                                </ul><ul id="ul_m3d_1l2_1zb">
+                                    <li>
+                                        <p>User can select multiple Assistant categories.</p>
+                                    </li>
+                                    <li>
+                                        <p><b>Default</b>: ALL.</p>
+                                    </li>
+                                </ul></entry>
+                        </row>
+                        <row>
+                            <entry>CDS Activity</entry>
+                            <entry>Displays the below options:<ul id="ul_bwz_2l2_1zb">
+                                    <li>
+                                        <p>Accepted</p>
+                                    </li>
+                                    <li>
+                                        <p>Removed</p>
+                                    </li>
+                                    <li>
+                                        <p>Unaddressed</p>
+                                    </li>
+                                    <li>
+                                        <p>CDS Attributed</p>
+                                    </li>
+                                    <li>
+                                        <p>System Attributed</p>
+                                    </li>
+                                </ul><ul id="ul_awz_2l2_1zb">
+                                    <li>
+                                        <p>User can select multiple activities.</p>
+                                    </li>
+                                    <li>
+                                        <p><b>Default</b>: ALL.</p>
+                                    </li>
+                                </ul></entry>
+                        </row>
+                        <row>
+                            <entry>Suggestion Type</entry>
+                            <entry>Displays the below options:<ul id="ul_hgn_3l2_1zb">
+                                    <li>
+                                        <p>Suggested</p>
+                                    </li>
+                                    <li>
+                                        <p>Quality</p>
+                                    </li>
+                                    <li>
+                                        <p>Other</p>
+                                    </li>
+                                </ul><ul id="ul_ggn_3l2_1zb">
+                                    <li>
+                                        <p>User can select multiple suggestion types.</p>
+                                    </li>
+                                    <li>
+                                        <p><b>Default</b>: Suggested.</p>
+                                    </li>
+                                </ul></entry>
+                        </row>
+                        <row>
+                            <entry>Highest Rank</entry>
+                            <entry>
+                                <ul id="ul_k5l_c2c_3yb">
+                                    <li>
+                                        <p>Displays all standard and custom ranks that can be
+                                            assigned to the encounters. This slicer filters the data
+                                            based on the highest standard/custom rank assigned to an
+                                            encounter (where 1 is the highest standard rank and 11
+                                            is the lowest standard rank).</p>
+                                    </li>
+                                    <li>
+                                        <p>User can select multiple ranks.</p>
+                                    </li>
+                                    <li>
+                                        <p>Users can search the rank number.</p>
+                                    </li>
+                                    <li>
+                                        <p>“Unranked” displays data for all encounters that are not
+                                            ranked.</p>
+                                    </li>
+                                    <li>
+                                        <p><b>Format</b>: Rank # ( such as Rank 1, Rank 2).</p>
+                                    </li>
+                                    <li>
+                                        <p><b>Default</b>: ALL.</p>
+                                    </li>
+                                </ul>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>Suggestions</entry>
+                            <entry>
+                                <p>Displays the list of diagnoses and procedures along with the
+                                    code. </p>
+                                <p>Diagnoses Code format: ICD 10 Code: Diagnoses description.</p>
+                                <p>Procedure Code format: ICD 10 PCS Code: Documented Procedures
+                                    description.</p>
+                                <p>The slicer gets updated dynamically based on the Assistant
+                                    Category selected.</p>
+                            </entry>
+                        </row>
+                    </tbody>
+                </tgroup>
+            </table>
+        </p>
+        <p>
+            <table frame="all" rowsep="1" colsep="1" id="table_dq1_ffn_g4b">
+                <title>Filters on all Pages</title>
+                <tgroup cols="2">
+                    <colspec colname="c1" colnum="1" colwidth="1*"/>
+                    <colspec colname="c2" colnum="2" colwidth="1*"/>
+                    <thead>
+                        <row>
+                            <entry>Filter</entry>
+                            <entry>Description</entry>
+                        </row>
+                    </thead>
+                    <tbody>
+                        <row>
+                            <entry>Patient Type</entry>
+                            <entry>
+                                <ul id="ul_ns1_3fn_g4b">
+                                    <li>Displays the available patient types. <b>Example</b>:
+                                        Inpatient, Outpatient.</li>
+                                    <li><b>Default</b>: Inpatient.</li>
+                                </ul>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>Admit Service</entry>
+                            <entry>
+                                <ul id="ul_ivk_ydb_bzb">
+                                    <li>
+                                        <p>Displays the list of available admit service. Admit
+                                            Service is the provider group/service area where the
+                                            patient was admitted to, such as Cardiology or
+                                            Orthopedics.</p>
+                                    </li>
+                                    <li>
+                                        <p>User can select multiple Admit Services.</p>
+                                    </li>
+                                    <li>
+                                        <p>Users can search the Admit Service.</p>
+                                    </li>
+                                    <li>
+                                        <p><b>Default</b>: ALL.</p>
+                                    </li>
+                                </ul>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>Visit Type</entry>
+                            <entry>
+                                <ul id="ul_obm_lgm_r4b">
+                                    <li>Displays the available patient types.<b>Example</b>: ED, IP,
+                                        etc.</li>
+                                    <li>You can select multiple Visit Type.</li>
+                                    <li>You can search the Visit Type.</li>
+                                    <li><b>Default</b>: ALL.</li>
+                                </ul>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>Weekend Only Stay</entry>
+                            <entry>
+                                <ul id="ul_e2b_n2c_3yb">
+                                    <li>
+                                        <p>Displays the available options for Weekend Only Stay: Y
+                                            and N.</p>
+                                    </li>
+                                    <li>
+                                        <p>User can select more than one option. </p>
+                                    </li>
+                                    <li>
+                                        <p>Weekend Only Stay = Y (Unassigned encounters admitted
+                                            after Friday, 6PM and Discharged before Sunday, 11.59
+                                            PM).</p>
+                                    </li>
+                                    <li>
+                                        <p><b>Default: </b>ALL.</p>
+                                    </li>
+                                </ul>
+                            </entry>
+                        </row>
+                    </tbody>
+                </tgroup>
+            </table>
+        </p>
+    </conbody>
+</concept>

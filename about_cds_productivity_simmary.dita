@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="about_cds_productivity_simmary">
+    <title>About CDS Productivity Summary</title>
+    <shortdesc/>
+    <conbody>
+        <p>The <i>CDS Productivity Summary Report</i> displays the daily productivity KPIs in real
+            time at facility level. Data in the tabular report is sorted by the CDS with the highest
+            number of the Initial Reviews.</p>
+        <p><uicontrol>Activity Date</uicontrol> and <uicontrol>Admit Date</uicontrol> can be used to
+            filter the data. Default value for <uicontrol>Activity Date</uicontrol> filter is set to
+            last one week from the current date.</p>
+        <p><uicontrol>Table Info</uicontrol> icon is present at Footnotes. Tool tip shows that this
+            report considers the standard and custom Clarification types with Financial and Both
+            Impact.</p>
+        <fig id="fig_ysy_j3c_xgb">
+            <title>CDS Productivity Summary</title>
+            <image href="../Image/CDS%20Productivity/about_cds_productivity_simmary.gif"
+                id="image_gbl_xby_ykb" align="center" placement="break" width="600"/>
+        </fig>
+    </conbody>
+</concept>

@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="how_to_use_daily_monitoring_report">
+    <title><?oxy_custom_start type="oxy_content_highlight" color="255,64,0"?>How to use the Daily
+        Monitoring Report to find specific information? &lt;Will be
+        updated><?oxy_custom_end?></title>
+    <shortdesc></shortdesc>
+    <task id="task_ac4_xyg_vgb">
+        <title>How many encounters are unassigned? If yes, do any of my CDSs have capacity to pick
+            these cases up?</title>
+        <taskbody>
+            <steps>
+                <step>
+                    <cmd>Select <uicontrol>Daily Monitoring</uicontrol> from the <i>Analytics</i>
+                        screen.</cmd>
+                    <stepresult>The report displays data as on today’s date. The
+                            <uicontrol>Unassigned</uicontrol> KPI card displays the total count of
+                        unassigned encounters as on today.</stepresult>
+                </step>
+                <step>
+                    <cmd>To analyze the current workload of the CDSs in your team, review the
+                            <uicontrol>Concurrent Encounters by CDS</uicontrol> chart.</cmd>
+                    <info>
+                        <p>This chart displays count of <i>Untouched</i>, <i>Discharged</i>, <i>In
+                                Progress</i>, <i>Review Complete</i>, and <i>Ready to Reconcile
+                            </i>encounters for each CDS.</p>
+                        <note>Data in this chart is sorted by CDS with highest number of concurrent
+                            encounters. You can easily Identify the CDSs that have lower number of
+                            concurrent encounters and can pick up unassigned cases.</note>
+                    </info>
+                </step>
+            </steps>
+        </taskbody>
+    </task>
+    <task id="task_jzj_t1h_vgb">
+        <title>How many medicare encounters are currently being reviewed by a CDS?</title>
+        <taskbody>
+            <steps>
+                <step>
+                    <cmd>Select <uicontrol>Daily Monitoring</uicontrol> from the <i>Analytics</i>
+                        screen.</cmd>
+                    <stepresult>The report displays data as on today’s date.</stepresult>
+                </step>
+                <step>
+                    <cmd>Select <uicontrol>Medicare</uicontrol> from the
+                            <uicontrol>Payer</uicontrol> filter.</cmd>
+                </step>
+                <step>
+                    <cmd>To analyze the current workload of a CDS in your team, review the
+                            <uicontrol>Concurrent Encounters by CDS</uicontrol> chart.</cmd>
+                    <info>
+                        <p>This chart displays count of <i>Untouched</i>, <i>Discharged</i>, <i>In
+                                Progress</i>, <i>Review Complete</i>, and <i>Ready to Reconcile
+                            </i>encounters for the selected CDS.</p>
+                        <p>Alternatively, Select the name of the CDS from the
+                                <uicontrol>CDS</uicontrol> filter. Analyze the <uicontrol>Concurrent
+                                Encounters by Payer</uicontrol> chart. This chart now shows count of
+                            Medicare encounters that Jane is currently working on</p>
+                    </info>
+                </step>
+            </steps>
+        </taskbody>
+    </task>
+    <task id="task_yhk_xlh_vgb">
+        <title>For unassigned cases, what is the payer breakdown? How many <i>Medicare</i> cases
+            left unassigned?</title>
+        <taskbody>
+            <steps id="steps_jy1_fmh_vgb">
+                <step>
+                    <cmd>Select <uicontrol>Daily Monitoring</uicontrol> from the <i>Analytics</i>
+                        screen.</cmd>
+                    <stepresult>The report displays data as on today’s date.</stepresult>
+                </step>
+                <step>
+                    <cmd>Analyze the <uicontrol>Unassigned Encounters by Payer</uicontrol>
+                        chart.</cmd>
+                    <info>
+                        <p>The chart shows count of unassigned encounters as on today, for each
+                            payer. Analyze the count of unassigned encounters for Medicare
+                            payer.</p>
+                    </info>
+                </step>
+                <step>
+                    <cmd>Analyze the <uicontrol>Concurrent Encounters by CDS</uicontrol> chart and
+                        identify the CDSs who can pick up the unassigned Medicare cases.</cmd>
+                </step>
+            </steps>
+        </taskbody>
+    </task>
+    <task id="task_dmb_bnh_vgb">
+        <title>How does the unassigned encounters distribution by <i>Unit</i> look like? </title>
+        <taskbody>
+            <steps id="steps_b1y_znh_vgb">
+                <step>
+                    <cmd>Select <uicontrol>Daily Monitoring</uicontrol> from the <i>Analytics</i>
+                        screen.</cmd>
+                    <stepresult>The report displays data as on today’s date.</stepresult>
+                </step>
+                <step>
+                    <cmd>Analyze the <uicontrol>Unassigned Encounters by Unit</uicontrol>
+                        chart.</cmd>
+                    <stepresult>The chart shows count of unassigned encounters as on today, for each
+                        Unit</stepresult>
+                </step>
+                <step>
+                    <cmd>Analyze the Concurrent Encounters by CDS chart and identify the CDSs who
+                        can pick up the unassigned cases.</cmd>
+                </step>
+                <step>
+                    <cmd>To analyze concurrent cases currently being worked on for a unit (E.g.
+                        Internal Med), select the unit from the <uicontrol>Unit</uicontrol> filter
+                        and analyze the data in the<uicontrol> Concurrent Encounters by
+                            CDS</uicontrol> chart.</cmd>
+                </step>
+            </steps>
+        </taskbody>
+    </task>
+    <task id="task_chl_t4h_vgb">
+        <title>Is my team falling behind with reconciliation? Are there lot of cases with status as
+                <i>Ready to Reconcile</i>?</title>
+        <taskbody>
+            <steps id="steps_fm3_w4h_vgb">
+                <step>
+                    <cmd>Select <uicontrol>Daily Monitoring</uicontrol> from the <i>Analytics</i>
+                        screen.</cmd>
+                    <stepresult>The report displays data as on today’s date.</stepresult>
+                </step>
+                <step>
+                    <cmd>Analyze the <uicontrol>Ready to Reconcile </uicontrol>KPI chart.</cmd>
+                    <stepresult>The chart shows count of encounters that are ready for
+                        reconciliation</stepresult>
+                </step>
+                <step>
+                    <cmd>To identify the CDSs falling behind with reconciliation or the CDS that has
+                        the greatest number of ready to reconcile cases, analyze the
+                            <uicontrol>Concurrent Encounters by CDS</uicontrol> chart.</cmd>
+                </step>
+                <step>
+                    <cmd>Select the <uicontrol>Ready to Reconcile</uicontrol> option from
+                            the<uicontrol> Encounter Status</uicontrol> filter.</cmd>
+                    <stepresult>Analyze and compare the count of ready to reconcile encounters for
+                        each CDS.</stepresult>
+                </step>
+            </steps>
+        </taskbody>
+    </task>
+    <task id="task_ihk_dqh_vgb">
+        <title>How many cases were assigned and never reviewed? Which CDS has the greatest number of
+            such cases? Are majority of these <i>Medicare</i> cases?</title>
+        <taskbody>
+            <steps id="steps_fqv_hqh_vgb">
+                <step>
+                    <cmd>Select <uicontrol>Daily Monitoring</uicontrol> from the <i>Analytics</i>
+                        screen.</cmd>
+                    <stepresult>The report displays data as on today’s date.</stepresult>
+                </step>
+                <step>
+                    <cmd>Analyze the <uicontrol>Assigned and Never Reviewed</uicontrol> KPI
+                        card.</cmd>
+                    <stepresult>The KPI card displays the total count of cases assigned to the CDS
+                        but were never reviewed. </stepresult>
+                </step>
+                <step>
+                    <cmd>Analyze data in the <uicontrol>Concurrent Encounters by CDS</uicontrol>
+                        chart. This chart now displays data for cases that were assigned to CDS but
+                        never reviewed.</cmd>
+                </step>
+                <step>
+                    <cmd>Analyze data in the <uicontrol>Concurrent Encounters by Payer</uicontrol>
+                        chart. This chart now displays data for cases that have payer assigned but
+                        never reviewed by CDS for each payer. Analyze the count of Medicare cases
+                        that were assigned and never reviewed.</cmd>
+                </step>
+            </steps>
+        </taskbody>
+    </task>
+    <task id="task_h25_jrh_vgb">
+        <title>How many clarifications are overdue and require follow-up? Do I need to reach out to
+            my physician liaison for assistance?</title>
+        <taskbody>
+            <steps id="steps_pxk_nrh_vgb">
+                <step>
+                    <cmd>Select <uicontrol>Daily Monitoring</uicontrol> from the <i>Analytics</i>
+                        screen.</cmd>
+                    <stepresult>The report displays data as on today’s date.</stepresult>
+                </step>
+                <step>
+                    <cmd>Analyze the <uicontrol>Overdue Clarifications</uicontrol> tabular
+                        report.</cmd>
+                    <stepresult>This tabular report displays details of  overdue clarification for
+                        each CDS. Also you can analyze the details such as Clarification Subject,
+                        Clarification Type, Assigned Provider. The <uicontrol>Overdue
+                            Clarifications</uicontrol> report helps you to identify the CDS or
+                        provider that has most numbers of overdue clarifications. </stepresult>
+                </step>
+            </steps>
+        </taskbody>
+    </task>
+    <task id="task_ss1_lsh_vgb">
+        <title>How to add <i>Unit</i> filter in the Daily Monitoring Report?</title>
+        <taskbody>
+            <steps id="steps_asr_vsh_vgb">
+                <step>
+                    <cmd>Select <uicontrol>Daily Monitoring</uicontrol> from the <i>Analytics</i>
+                        screen.</cmd>
+                    <stepresult>The report displays data as on today’s date.</stepresult>
+                </step>
+                <step>
+                    <cmd>Select the <uicontrol>Slicer</uicontrol> icon from the <i>Visualization</i>
+                        section.</cmd>
+                </step>
+                <step>
+                    <cmd>To select unit, go to <menucascade>
+                            <uicontrol>Field section</uicontrol>
+                            <uicontrol>Encounter Details</uicontrol>
+                            <uicontrol>Unit</uicontrol>
+                        </menucascade>.</cmd>
+                    <stepresult>The unit values are displayed in the slicer.</stepresult>
+                </step>
+                <step>
+                    <cmd>Click on the Down-arrow in the slicer to change the
+                            <uicontrol>List</uicontrol> view to the <uicontrol>Drop-down
+                        </uicontrol>view.</cmd>
+                </step>
+                <step>
+                    <cmd>Drag the drop-down to the location where you would like to keep this
+                        filter.</cmd>
+                </step>
+                <step>
+                    <cmd>Click on the <uicontrol>Save As</uicontrol> from the
+                            <uicontrol>File</uicontrol> menu.</cmd>
+                </step>
+                <step>
+                    <cmd>Enter the name of the custom report and click
+                        <uicontrol>OK</uicontrol>.</cmd>
+                </step>
+                <step>
+                    <cmd>Navigates back to <uicontrol>Analytics</uicontrol> home screen.</cmd>
+                    <stepresult>The report is available under the <uicontrol>User
+                            Defined</uicontrol> reports section.</stepresult>
+                </step>
+            </steps>
+        </taskbody>
+    </task>
+</task>

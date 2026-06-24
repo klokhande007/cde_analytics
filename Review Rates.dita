@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="Review_Rates">
+    <title>Review Rates</title>
+    <shortdesc></shortdesc>
+    <conbody>
+        <p><b>Overview</b>: The Review Rates report helps to compare review rates for each CDS. This
+            report displays count of discharged encounters and count of encounters reviewed for each
+            CDS between the selected date range.</p>
+        <p><b>Navigation</b>: On the Analytics home page left side panel, navigate to <menucascade>
+                <uicontrol>CDE Triage</uicontrol>
+                <uicontrol>CDE Triage Dashboard</uicontrol>
+                <uicontrol>Review Rates</uicontrol>
+            </menucascade>.</p>
+        <p>The Review Rates displays the following:<ul id="ul_fbk_f25_j2b">
+                <li>Summary Card</li>
+                <li>Review Rates by CDS Chart</li>
+                <li>Review Rates by Highest Rank Chart</li>
+                <li>Encounter details Tabular Chart </li>
+            </ul></p>
+        <p>For filters on all pages, refer <xref
+                href="CDE%20Triage%20Dashboard%20Overview.dita#CDE_Triage_Dashboard_Overview/table_r3d_xsz_t4b"
+            />.</p>
+        <p><b>Default Display</b>: </p>
+        <p><b>Review Rates</b></p>
+        <fig id="fig_b2f_fqs_t4b">
+            <title>Sample Report</title>
+            <image href="Images/Review%20Rates.gif" id="image_owk_gqs_t4b" width="800"/>
+        </fig>
+        <p><b>Review Rates - Summary Card</b></p>
+        <fig id="fig_zdd_rqs_t4b">
+            <title>Summary Card</title>
+            <image href="Images/Summary%20Card%20for%20Review%20Rates.gif" id="image_t1h_sqs_t4b"
+                width="200"/>
+        </fig>
+        <p>
+            <ul id="ul_eyl_h1t_t4b">
+                <li>The <i>Summary Card</i> at the right side of the <i>Review Rates</i> report
+                    displays the total number of discharged encounters, total reviews, and the
+                    review rate between the selected date range.</li>
+                <li><b>Formula</b>: Review rate = (Total Reviews/ Total Discharges) × 100.</li>
+            </ul>
+        </p>
+        <p><b>Review Rates - Review Rates by CDS</b></p>
+        <fig id="fig_zwv_hqs_t4b">
+            <title>Review Rates by CDS</title>
+            <image href="Images/Review%20Rates%20by%20CDS.gif" id="image_upc_jqs_t4b" width="500"/>
+        </fig>
+        <p>
+            <ul id="ul_jlj_d1t_t4b">
+                <li>In the Review Rates by CDS chart, X-axis indicates the name of the CDS assigned
+                    to the encounter in CDS Triage, and Y-axis indicates the review rate. Tooltip
+                    displays count of reviews and discharges for each CDS.</li>
+                <li>Encounters that do not have any CDS assigned are displayed under the
+                        <uicontrol>Unassigned CDS</uicontrol> category on the Y-axis.</li>
+            </ul>
+        </p>
+        <p><b>Review Rates - Review Rate by Highest Rank Chart</b></p>
+        <fig id="fig_rkv_mqs_t4b">
+            <title>Review Rate by Highest Rank Chart</title>
+            <image href="Images/Review%20Rate%20by%20Highest%20Rank.gif" id="image_yv2_4qs_t4b"
+                width="400"/>
+        </fig>
+        <p>
+            <ul id="ul_zqb_g1t_t4b">
+                <li>In the Review Rate by Highest Rank chart, the donut chart displays review rate
+                    for each Highest Rank. Tooltip displays the count of discharges and reviews for
+                    each Highest Rank.</li>
+            </ul>
+        </p>
+    </conbody>
+</concept>

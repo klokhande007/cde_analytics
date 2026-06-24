@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="how_to_use_the_review_activity_details_report">
+    <title>How to use the Review Activity Details Report to find specific information? </title>
+    <shortdesc></shortdesc>
+    <task id="task_mgd_nln_vgb">
+        <title>For which payer the highest number of reviews were done? What percentage of the
+            reviews were for <i>Medicaid</i> cases?</title>
+        <taskbody>
+            <steps id="steps_a1m_2mn_vgb">
+                <step>
+                    <cmd>Select <uicontrol>Program Management</uicontrol> from the <i>Analytics</i>
+                        screen.</cmd>
+                </step>
+                <step>
+                    <cmd>Select the <uicontrol>Review Activity Details</uicontrol> tab.</cmd>
+                    <stepresult>The report displays data for last one calendar month based on the
+                        activity date.</stepresult>
+                </step>
+                <step>
+                    <cmd>Select the time range from the <uicontrol>Activity Date</uicontrol> range
+                        filter.</cmd>
+                </step>
+                <step>
+                    <cmd>Analyze the <uicontrol>Reviews by Payer or Financial Class</uicontrol>
+                        chart.</cmd>
+                    <info>
+                        <p>The chart displays total review counts and percentage of total reviews
+                            for each payer. It also helps you to identify the payer that has done
+                            the highest number of total reviews in the selected date range. Use this
+                            chart to analyze the following:<ul id="ul_tkc_l4n_vgb">
+                                <li>What percentage of total reviews were for the <i>Medicaid</i>
+                                    cases?</li>
+                                <li>What percentage of total initial reviews were for the
+                                        <i>Medicare</i> cases? To analyze the total initial review
+                                    percentage, select <uicontrol>Initial Review</uicontrol> from
+                                        the<uicontrol> Review Type</uicontrol> filter.</li>
+                                <li>Out of total reviews performed by a CDS, and what percentage of
+                                    reviews were for the <i>Managed Medicare</i> cases. Select the
+                                    CDS name from the <uicontrol>CDS</uicontrol> filter.</li>
+                            </ul></p>
+                    </info>
+                </step>
+            </steps>
+        </taskbody>
+    </task>
+    <task id="task_f3k_dqn_vgb">
+        <title>For which unit the highest number of reviews were done? </title>
+        <taskbody>
+            <steps id="steps_bl2_gqn_vgb">
+                <step>
+                    <cmd>Select <uicontrol>Program Management</uicontrol> from the <i>Analytics</i>
+                        screen.</cmd>
+                </step>
+                <step>
+                    <cmd>Select the <uicontrol>Review Activity Details</uicontrol> tab.</cmd>
+                    <stepresult>The report displays data for last one calendar month based on the
+                        activity date.</stepresult>
+                </step>
+                <step>
+                    <cmd>Select the time range from the <uicontrol>Activity Date</uicontrol> range
+                        filter.</cmd>
+                </step>
+                <step>
+                    <cmd>Analyze the<uicontrol> Reviews by Unit </uicontrol>chart.</cmd>
+                    <stepresult>This chart displays count and percentage of total reviews for each
+                        unit.  It also helps you to identify the unit that has done the highest
+                        number of total reviews in the selected date range. Use this chart to
+                        analyze the following:<ul id="ul_tpq_1rn_vgb">
+                            <li>What percentage of total reviews were done for the <i>Internal
+                                    Med</i> unit? Select <uicontrol>Initial Review</uicontrol> from
+                                the <uicontrol>Review Type</uicontrol> filter to analyze initial
+                                reviews for <i>Internal Med</i> unit.</li>
+                            <li>Out of total reviews performed by a CDS, and what percentage of
+                                reviews were for the <i>Internal Med</i> unit. Select the CDS name
+                                from the <uicontrol>CDS</uicontrol> filter.</li>
+                        </ul></stepresult>
+                </step>
+            </steps>
+        </taskbody>
+    </task>
+    <task id="task_og2_vrn_vgb">
+        <title>How many initial and additional reviews were done by each CDS? Who are my best CDS
+            performers?</title>
+        <taskbody>
+            <steps id="steps_x4x_tsn_vgb">
+                <step>
+                    <cmd>Select <uicontrol>Program Management</uicontrol> from the <i>Analytics</i>
+                        screen.</cmd>
+                </step>
+                <step>
+                    <cmd>Select the <uicontrol>Review Activity Details</uicontrol> tab.</cmd>
+                    <stepresult>The report displays data for last one calendar month based on the
+                        activity date.</stepresult>
+                </step>
+                <step>
+                    <cmd>Select the time range from the <uicontrol>Activity Date</uicontrol> range
+                        filter.</cmd>
+                </step>
+                <step>
+                    <cmd>Analyze the<uicontrol> Reviews by CDS </uicontrol>chart.</cmd>
+                    <stepresult>This chart displays initial and additional reviews by each CDS. Use
+                        this chart to analyze the following:<ul id="ul_zrk_vsn_vgb">
+                            <li>Count of initial and additional reviews performed for the
+                                    <i>Medicare</i> cases by each CDS. To view the count of
+                                    <i>Medicare</i> cases, select <uicontrol>Medicare</uicontrol>
+                                from the <uicontrol>Payer</uicontrol> filter.</li>
+                            <li>Which CDS has the highest count of initial reviews.</li>
+                            <li>Which CDS had reviewed the highest number of cases for <i>Internal
+                                    Med</i> unit.</li>
+                        </ul></stepresult>
+                </step>
+            </steps>
+        </taskbody>
+    </task>
+    <task id="task_vt5_h5n_vgb">
+        <title>Were the reviews concurrent or retrospective? What percentage of total reviews were
+            retrospective reviews? </title>
+        <taskbody>
+            <steps id="steps_xsc_j5n_vgb">
+                <step>
+                    <cmd>Select <uicontrol>Program Management</uicontrol> from the <i>Analytics</i>
+                        screen.</cmd>
+                </step>
+                <step>
+                    <cmd>Select the <uicontrol>Review Activity Details</uicontrol> tab.</cmd>
+                    <stepresult>The report displays data for last one calendar month based on the
+                        activity date.</stepresult>
+                </step>
+                <step>
+                    <cmd>Select the time range from the <uicontrol>Activity Date</uicontrol> range
+                        filter.</cmd>
+                </step>
+                <step>
+                    <cmd>Analyze the <uicontrol>Reviews by Review Timing</uicontrol> chart.</cmd>
+                    <stepresult>This chart displays count and percentage of concurrent reviews and
+                        retrospective reviews. Use this chart to analyze the following:<ul
+                            id="ul_zzb_gvn_vgb">
+                            <li>Percentage of retrospective reviews out of total reviews</li>
+                            <li>Which CDSs has performed the retrospective reviews? To view the list
+                                click on the <uicontrol>Retrospective</uicontrol> section in the
+                                chart and the chart displays the review counts for the CDSs who
+                                performed retrospective reviews in the selected date range.</li>
+                            <li>List of encounters for which retrospective reviews are performed. To
+                                view the list click on the <uicontrol>Retrospective</uicontrol>
+                                section in the chart. The <uicontrol>Encounter Details</uicontrol>
+                                tabular report now displays the details of the encounters for which
+                                the retrospective reviews are performed.</li>
+                            <li>Number of additional reviews done retrospectively. To view the
+                                additional review count, select <uicontrol>Additional
+                                    Reviews</uicontrol> from the <uicontrol>Review Type</uicontrol>
+                                filter.</li>
+                        </ul></stepresult>
+                </step>
+            </steps>
+        </taskbody>
+    </task>
+    <task id="task_ipx_x24_vgb">
+        <title>Which CDS should I target to improve Avg. Initial Review TAT (Hrs.)?</title>
+        <taskbody>
+            <steps id="steps_kpc_cf4_vgb">
+                <step>
+                    <cmd>Select <uicontrol>Program Management</uicontrol> from the <i>Analytics</i>
+                        screen.</cmd>
+                </step>
+                <step>
+                    <cmd>Select the <uicontrol>Review Activity Details</uicontrol> tab.</cmd>
+                    <stepresult>The report displays data for last one calendar month based on the
+                        activity date.</stepresult>
+                </step>
+                <step>
+                    <cmd>Select the time range from the <uicontrol>Activity Date</uicontrol> range
+                        filter.</cmd>
+                </step>
+                <step>
+                    <cmd>Analyze the <uicontrol>Avg. Initial Review TAT (Hrs) by CDS</uicontrol>
+                        chart.</cmd>
+                    <stepresult>This chart displays average initial review turnaround time for each
+                        CDS and helps you to identify the CDSs with lowest average turnaround time.
+                        Also use this chart to analyze the Average TAT (Hrs) for Medicare cases for
+                        each CDS.</stepresult>
+                </step>
+            </steps>
+        </taskbody>
+    </task>
+    <task id="task_ms4_fg4_vgb">
+        <title>Are there any inpatient cases that are reviewed and later converted to outpatient?
+            What is the count of such cases?</title>
+        <taskbody>
+            <steps id="steps_krd_ng4_vgb">
+                <step>
+                    <cmd>Select <uicontrol>Program Management</uicontrol> from the <i>Analytics</i>
+                        screen.</cmd>
+                </step>
+                <step>
+                    <cmd>Select the <uicontrol>Review Activity Details</uicontrol> tab.</cmd>
+                    <stepresult>The report displays data for last one calendar month based on the
+                        activity date.</stepresult>
+                </step>
+                <step>
+                    <cmd>Select the time range from the <uicontrol>Activity Date</uicontrol> range
+                        filter.</cmd>
+                </step>
+                <step>
+                    <cmd>Select <uicontrol>Outpatient</uicontrol> from the <uicontrol>Visit
+                            Type</uicontrol> filter.</cmd>
+                </step>
+                <step>
+                    <cmd>Analyze the <uicontrol>Review Activity Details</uicontrol> report.</cmd>
+                    <stepresult>The report now displays data only for the outpatient encounters.
+                        Analyze various charts on this report to identify the number of reviews
+                        done, which CDSs had worked on those cases, payer associated with those
+                        cases, etc.</stepresult>
+                </step>
+            </steps>
+        </taskbody>
+    </task>
+</task>

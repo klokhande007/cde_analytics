@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="how_to_use_the_review_activity_trend_report">
+    <title>How to use the Review Activity Trend Report to find specific information?</title>
+    <shortdesc></shortdesc>
+    <task id="task_mh4_jnj_vgb">
+        <title>How does the trend of various clarification metrics such as <i>Total Clarifications
+                Sent</i>, <i>Clarification Sent</i>, <i>Clarification Rate</i>, <i>Encounter
+                Clarification Rate</i>, <i>Financial Impact Clarification</i>, <i>Other Impact
+                Clarification</i> look like at an organization level and at a specific facility
+            level?</title>
+        <taskbody>
+            <steps id="steps_zpf_54j_vgb">
+                <step>
+                    <cmd>Select <uicontrol>Program Management</uicontrol> from the <i>Analytics</i>
+                        screen.</cmd>
+                </step>
+                <step>
+                    <cmd>Select the <uicontrol>Review Activity Trend</uicontrol> tab.</cmd>
+                    <stepresult>The report displays data for last three calendar month based on the
+                        activity date.</stepresult>
+                </step>
+                <step>
+                    <cmd>Select the time range from the <uicontrol>Activity Date</uicontrol> range
+                        filter.</cmd>
+                </step>
+                <step>
+                    <cmd>Analyze the <uicontrol>KPI Summary</uicontrol> tabular report.</cmd>
+                    <stepresult>This report displays the trend of various clarification metrics such
+                        as <i>Total Clarifications Sent</i>, <i>Clarification Sent</i>,
+                            <i>Clarification Rate</i>, <i>Encounter Clarification Rate</i>,
+                            <i>Financial Impact Clarification</i>, and <uicontrol>Other Impact
+                            Clarification</uicontrol> for the selected time period at an
+                        organization level.</stepresult>
+                </step>
+                <step>
+                    <cmd>To analyze the data for a specific facility, select the facility from the
+                            <uicontrol>Facility</uicontrol> filter.</cmd>
+                    <stepresult>The <uicontrol>KPI Summary </uicontrol>tabular report now displays
+                        data for the selected facility.</stepresult>
+                </step>
+            </steps>
+        </taskbody>
+    </task>
+    <task id="task_opb_mqj_vgb">
+        <title>How does the trend of total reviews for <i>Medicare</i> cases look like at an
+            organization level and at a specific facility?</title>
+        <taskbody>
+            <steps id="steps_vrv_pqj_vgb">
+                <step>
+                    <cmd>Select <uicontrol>Program Management</uicontrol> from the <i>Analytics</i>
+                        screen.</cmd>
+                </step>
+                <step>
+                    <cmd>Select the <uicontrol>Review Activity Trend</uicontrol> tab.</cmd>
+                    <stepresult>The report displays data for last three calendar month based on the
+                        activity date.</stepresult>
+                </step>
+                <step>
+                    <cmd>Select the time range from the <uicontrol>Activity Date</uicontrol> range
+                        filter.</cmd>
+                </step>
+                <step>
+                    <cmd>Analyze the <uicontrol>KPI Summary</uicontrol> tabular report.</cmd>
+                    <stepresult>The tabular report displays the trend of various review metrics such
+                        as <i>Initial Reviews</i>, <i>Additional Reviews</i>, <i>Total Reviews</i>,
+                            <i>Total Review Objective</i>, and <i>Avg. Initial Review TAT (Hrs.)</i>
+                        for the selected time period. </stepresult>
+                </step>
+                <step>
+                    <cmd>Select the <uicontrol>Medicare</uicontrol> from the
+                            <uicontrol>Payer</uicontrol> filter to analyze the trend of reviews for
+                        the Medicare cases at the organization level.</cmd>
+                </step>
+                <step>
+                    <cmd>To analyze the data for a specific facility, select the facility from the
+                            <uicontrol>Facility</uicontrol> filter.</cmd>
+                </step>
+                <step>
+                    <cmd>Alternatively, go to <uicontrol>Reviews by Month and Payer</uicontrol>
+                        graph and click on the <uicontrol>Medicare</uicontrol> legend or line.</cmd>
+                    <stepresult>The <uicontrol>Reviews by Month and Payer</uicontrol> chart displays
+                        the trend of Medicare cases for the selected facility and time
+                        period.</stepresult>
+                </step>
+            </steps>
+        </taskbody>
+    </task>
+    <task id="task_nml_3sj_vgb">
+        <title>How does the trend of total reviews look like for a specific CDS?</title>
+        <taskbody>
+            <steps id="steps_qx3_lsj_vgb">
+                <step>
+                    <cmd>Select <uicontrol>Program Management</uicontrol> from the <i>Analytics</i>
+                        screen.</cmd>
+                </step>
+                <step>
+                    <cmd>Select the <uicontrol>Review Activity Trend</uicontrol> tab.</cmd>
+                    <stepresult>The report displays data for last three calendar month based on the
+                        activity date.</stepresult>
+                </step>
+                <step>
+                    <cmd>Select the time range from the <uicontrol>Activity Date</uicontrol> range
+                        filter.</cmd>
+                </step>
+                <step>
+                    <cmd>Analyze the <uicontrol>Reviews by Month and CDS</uicontrol> chart.</cmd>
+                    <stepresult>The chart displays the count of total reviews for each
+                        CDS.</stepresult>
+                </step>
+                <step>
+                    <cmd>To analyze the trend of initial or additional review, select either the
+                            <uicontrol>Initial Review</uicontrol> or <uicontrol>Additional
+                            Review</uicontrol> from the <uicontrol>Review Type</uicontrol>
+                        filter.</cmd>
+                    <info>The <uicontrol>Reviews by Month and CDS</uicontrol> chart helps you to
+                        analyze the following:<ul id="ul_ah4_ntj_vgb">
+                            <li>Best CDS performer in terms of total reviews, initial reviews,
+                                additional reviews.</li>
+                            <li>Trend of reviews for Medicare cases (or Managed Medicare, Medicaid,
+                                any other payer) for each CDS. To analyze this, select ‘Medicare’
+                                from the payer filter.</li>
+                            <li>Karen is new to the team. She joined the team six months back. Has
+                                she come up to speed with her team mates? Analyze review trend for
+                                Karen and compare with other CDSs in the team.</li>
+                        </ul></info>
+                </step>
+            </steps>
+        </taskbody>
+    </task>
+    <task id="task_mrj_stj_vgb">
+        <title>How does the trend of average initial review TAT for <i>Medicare</i> cases looks like
+            for a specific CDS? </title>
+        <taskbody>
+            <steps id="steps_c1h_35j_vgb">
+                <step>
+                    <cmd>Select <uicontrol>Program Management</uicontrol> from the <i>Analytics</i>
+                        screen.</cmd>
+                </step>
+                <step>
+                    <cmd>Select the <uicontrol>Review Activity Trend</uicontrol> tab.</cmd>
+                    <stepresult>The report displays data for last three calendar month based on the
+                        activity date.</stepresult>
+                </step>
+                <step>
+                    <cmd>Select the time range from the <uicontrol>Activity Date</uicontrol> range
+                        filter.</cmd>
+                </step>
+                <step>
+                    <cmd>Select required CDS from the <uicontrol>CDS</uicontrol> filter and select
+                            <uicontrol>Medicare</uicontrol> from the <uicontrol>Payer</uicontrol>
+                        filter.</cmd>
+                </step>
+                <step>
+                    <cmd>Analyze the <uicontrol>KPI Summary</uicontrol> tabular report.</cmd>
+                    <stepresult>The report displays the trend of average initial review TAT in hours
+                        for Medicare cases reviewed by the selected CDS in the selected time
+                        period.</stepresult>
+                </step>
+            </steps>
+        </taskbody>
+    </task>
+</task>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="what_s_new">
+    <title><?oxy_custom_start type="oxy_content_highlight" color="255,255,0"?>What's
+        New<?oxy_custom_end?></title>
+    <conbody>
+        <table frame="all" rowsep="1" colsep="1" id="table_q2f_rk2_5gb">
+            <title>Analytics Enhancements</title>
+            <tgroup cols="2">
+                <colspec colname="c1" colnum="1" colwidth="2.45*"/>
+                <colspec colname="c2" colnum="2" colwidth="1*"/>
+                <thead>
+                    <row>
+                        <entry>Enhancement</entry>
+                        <entry>Reference</entry>
+                    </row>
+                </thead>
+                <tbody>
+                    <row>
+                        <entry>You can view the individual and detailed performance of CDSs to
+                            analyze their activity. When you select a CDS, right-click, select <menucascade>
+                                <uicontrol>Drill through</uicontrol>
+                                <uicontrol>CDS Performance</uicontrol>
+                            </menucascade>, the system navigates to the <uicontrol>CDS
+                                Performance</uicontrol> tab. This tab displays all the data for the
+                            selected CDS. Applicable to <uicontrol>CDS Monthly
+                                Productivity</uicontrol>, <uicontrol>CDS Impact</uicontrol>, and
+                                <uicontrol>CDS Review Activity</uicontrol> tabs.</entry>
+                        <entry><xref href="../cds_monthly_productivity.dita"/>, <xref
+                                href="../cds_impact.dita"/>, <xref
+                                href="../cds_review_activity.dita"/></entry>
+                    </row>
+                    <row>
+                        <entry>
+                            <p>In <b>CDS Productivity</b>, the <b>CDS Activity Details</b> tab is
+                                renamed as <b>Activity Details</b></p>
+                            <p>In <b>Activity Details</b>, the descriptions of KPI cards are
+                                modified, footnotes are added, and info icon is included.</p>
+                        </entry>
+                        <entry/>
+                    </row>
+                    <row>
+                        <entry>
+                            <p>
+                                <b>In CDS General - CDS Productivity</b>, , a new tab
+                                    <b><?oxy_custom_start type="oxy_content_highlight" color="255,255,0"?>Activity
+                                    Details - Last 48 Hours<?oxy_custom_end?></b> is included.</p>
+                        </entry>
+                        <entry><xref href="../cds_activity_details_48_hours.dita"/></entry>
+                    </row>
+                    <row>
+                        <entry>
+                            <p><?oxy_custom_start type="oxy_content_highlight" color="255,60,255"?>In
+                                    <b>CDS Productivity Summary</b> (CDS Productivity), the
+                                descriptions of KPI cards are modified, footnotes are added, and
+                                info icon is included.<?oxy_custom_end?></p>
+                        </entry>
+                        <entry>Finalize this after the updates UI in <b>CDS Productivity Summary
+                            </b></entry>
+                    </row>
+                    <row>
+                        <entry>The following changes are made to the <b>CDS Productivity</b>
+                                reports:<ul id="ul_ikm_jdw_prb">
+                                <li>The <b>CDS Activity Details</b> tab is renamed as <b>Activity
+                                        Details - 48 Hrs</b>.</li>
+                                <li>The <b>CDS Productivity Summary</b> tab is divided into two tabs
+                                        <b>Productivity Summary by Activity Date - 48</b> Hrs and
+                                        <b>Productivity Summary by CDS - 48 Hrs</b> tabs.</li>
+                            </ul></entry>
+                        <entry/>
+                    </row>
+                </tbody>
+            </tgroup>
+        </table>
+    </conbody>
+</concept>

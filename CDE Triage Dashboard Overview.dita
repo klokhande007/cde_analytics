@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="CDE_Triage_Dashboard_Overview">
+    <title>CDE Triage Reports Overview</title>
+    <shortdesc></shortdesc>
+    <conbody>
+        <p>
+            <ul id="ul_zfz_qj2_lbb">
+                <li>CDE Triage Reports answers the following questions: <p>Triage Utilization<ul
+                            id="ul_nbd_v55_54b">
+                            <li>Are the CDSs performing timely reviews of highest priority
+                                encounters?</li>
+                            <li>For which priority Ranks most reviews were done?</li>
+                            <li>When encounters are discharged what is the most frequent rank
+                                assigned at Discharge?</li>
+                            <li>Out of total encounters reviewed for a payer, what percentage was
+                                Rank 1 and Rank 2 and so on?</li>
+                        </ul></p><p>Assistant Adoption<ul id="ul_gpj_y55_54b">
+                            <li>How well accepted CLU suggested codes are within CDS Triage?</li>
+                            <li>Who are the CDSs who are using CDS Assistant the least?</li>
+                            <li>Who are the CDSs who are using CDS Assistant the most, by accepting
+                                and/or rejecting the most CLU suggestions?</li>
+                            <li>What were the top rejected codes?</li>
+                            <li>Who are the CDSs rejecting the most rejected codes?</li>
+                            <li>Who are the non-utilizing CDSs, who haven't accepted and/or rejected
+                                and or Hidden any CLU</li>
+                        </ul></p><p>CDE Triage Reports answers the following business
+                        questions:</p><ul id="ul_ucr_xdh_4nb">
+                        <li>How well the CLU suggested codes are accepted within CDS Triage?</li>
+                        <li>The CDSs using CDS Assistant the least.</li>
+                        <li>The CDSs using CDS Assistant the most, by accepting and/or rejecting the
+                            most CLU suggestions.</li>
+                        <li>The top rejected codes.</li>
+                        <li>The CDSs rejecting the most rejected codes.</li>
+                        <li>The non-utilizing CDSs, who haven't accepted and/or rejected and/or
+                            Hidden any CLU suggestion.</li>
+                        <li>If the CDSs are performing timely reviews of highest priority
+                            encounters?</li>
+                        <li>Ranks where most reviews were done.</li>
+                        <li>The most frequent rank assigned at Discharge.</li>
+                        <li>Calculate the percentage of each rank out of total encounters reviewed
+                            for a payer.</li>
+                    </ul></li>
+            </ul>
+        </p>
+        <p>Page Level filters are used to customize the CDS Triage dashboard and reports. Filters
+            can be applied on the dashboard as well as to the individual reports.</p>
+        <note>
+            <ul id="ul_hfv_gv5_54b">
+                <li>CDE Triage reports are applicable only for inpatient encounters.</li>
+                <li>Following types of encounters are excluded from the CDE Triage reports: Review
+                    Not Needed, Unassigned (Encounter status is Untouched)</li>
+            </ul>
+        </note>
+        <p>
+            <table frame="all" rowsep="1" colsep="1" id="table_r3d_xsz_t4b">
+                <title>Page Level filters</title>
+                <tgroup cols="2">
+                    <colspec colname="c1" colnum="1" colwidth="1*"/>
+                    <colspec colname="c2" colnum="2" colwidth="1*"/>
+                    <thead>
+                        <row>
+                            <entry>Filter</entry>
+                            <entry>Description</entry>
+                        </row>
+                    </thead>
+                    <tbody>
+                        <row>
+                            <entry>Admission Date</entry>
+                            <entry>Displays admit date of the encounter.</entry>
+                        </row>
+                        <row>
+                            <entry>Attending Provider</entry>
+                            <entry>Displays providers in alphabetical order associated with the
+                                facilities which are assigned to you. <uicontrol>Unassigned
+                                    Provider</uicontrol> display encounters that do not have a
+                                Attending Provider assigned.</entry>
+                        </row>
+                        <row>
+                            <entry>CDS</entry>
+                            <entry>Displays both active and inactive CDSs in alphabetical order
+                                associated with the facilities which are assigned to you. CDS name
+                                is displayed in following format: <b>Last Name, First Name MI</b>
+                                (CDS user ID). <uicontrol>Unassigned CDS</uicontrol> display
+                                encounters that do not have a CDS assigned.</entry>
+                        </row>
+                        <row>
+                            <entry>Discharge Date</entry>
+                            <entry>Displays discharge date of the encounter.</entry>
+                        </row>
+                        <row>
+                            <entry>Encounter Status</entry>
+                            <entry>Displays the current status of the encounter. Following encounter
+                                status are displayed:<ul id="ul_dvn_gl2_lbb">
+                                    <li>Reconciled Impact</li>
+                                    <li>Reconciled No Impact</li>
+                                    <li>Auto Reconciled</li>
+                                    <li>In Progress</li>
+                                    <li>Discharged</li>
+                                    <li>Follow up</li>
+                                    <li>Provider Clarification</li>
+                                </ul></entry>
+                        </row>
+                        <row>
+                            <entry>Facility</entry>
+                            <entry>Displays facilities which are assigned to you.</entry>
+                        </row>
+                        <row>
+                            <entry>Financial Class</entry>
+                            <entry>Displays financial class associated with the encounter.
+                                    <uicontrol>Unassigned Financial Class</uicontrol> display
+                                encounters that do not have a Financial Class assigned.</entry>
+                        </row>
+                        <row>
+                            <entry>Payer</entry>
+                            <entry>Displays both active and inactive payers in alphabetical order
+                                associated with the facilities which are assigned to you.
+                                    <uicontrol>Unassigned Payer</uicontrol> display encounters that
+                                do not have a payer assigned. </entry>
+                        </row>
+                        <row>
+                            <entry>Suggestion Type</entry>
+                            <entry>Displays all the available suggestion types (CC, MCC, HAC etc).
+                                This filter is applicable only for <i>Acceptance Rate</i>
+                                report.</entry>
+                        </row>
+                        <row>
+                            <entry>Suggestion_Ind </entry>
+                            <entry>
+                                <p>Displays 1 or 0. </p>
+                                <p>1: Data for only the codes in the 'Suggested' and 'Quality'
+                                    categories is displayed. </p>
+                                <p>0: Data for all categories are displayed. (Suggested, Quality,
+                                    Other).</p>
+                                <p>Default: 1</p>
+                                <p>This filter is applicable only for Acceptance Usage report. </p>
+                            </entry>
+                        </row>
+                    </tbody>
+                </tgroup>
+            </table>
+        </p>
+    </conbody>
+</concept>

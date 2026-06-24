@@ -1,0 +1,520 @@
+
+<!DOCTYPE html
+  PUBLIC "" "about:legacy-compat">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:whc="http://www.oxygenxml.com/webhelp/components" xml:lang="en" lang="en">
+    <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta charset="UTF-8" /><meta name="copyright" content="(C) Copyright 2021" /><meta name="DC.rights.owner" content="(C) Copyright 2021" /><meta name="DC.Type" content="concept" /><meta name="description" content="Overview : A DRG Breakdown report helps a CDI Director to analyze top volume DRGs (MS-DRGs and APR DRGs) and target areas for focused attention and financial improvement. The report provides answers ..." /><meta name="DC.Format" content="XHTML" /><meta name="DC.Identifier" content="drg_breakdown" />        
+      <title>DRG Breakdown</title><!--  Generated with Oxygen version 20.1-SNAPSHOT, build number 2019011903.  --><meta name="wh-path2root" content="" /><meta name="wh-toc-id" content="drg_breakdown-d66e506" /><link rel="stylesheet" type="text/css" href="./oxygen-webhelp/lib/bootstrap/css/bootstrap.min.css" /><link rel="stylesheet" href="./oxygen-webhelp/lib/bootstrap/css/bootstrap-theme.min.css" /><link rel="stylesheet" href="./oxygen-webhelp/lib/jquery-ui/jquery-ui.min.css" /><link rel="stylesheet" type="text/css" href="./oxygen-webhelp/app/topic-page.css?buildId=2019011903" /><script type="text/javascript" src="./oxygen-webhelp/lib/jquery/jquery-3.1.1.min.js"><!----></script><script data-main="./oxygen-webhelp/app/topic-page.js" src="./oxygen-webhelp/lib/requirejs/require.js"></script><link rel="stylesheet" type="text/css" href="oxygen-webhelp/template/oxygen.css?buildId=2019011903" /><link rel="stylesheet" type="text/css" href="Custom.css" /></head>
+
+    <body id="drg_breakdown" class="wh_topic_page frmBody">
+        <a href="#wh_topic_body" class="sr-only sr-only-focusable">Jump to main content</a>
+        <!-- EXM-36950 - Expand the args.hdr parameter here -->
+        
+        
+        
+        <header class="navbar navbar-default wh_header">
+    <div class="container-fluid">
+        <div class="wh_header_flex_container">
+            <div class="wh_logo_and_publication_title_container">
+                <div class="wh_logo_and_publication_title">
+                    
+                    <!--
+                            This component will be generated when the next parameters are specified in the transformation scenario:
+                            'webhelp.logo.image' and 'webhelp.logo.image.target.url'.
+                            See: http://oxygenxml.com/doc/versions/17.1/ug-editor/#topics/dita_webhelp_output.html.
+                    -->
+                    <a href="index.html" class=" wh_logo hidden-xs "><img src="CDE_logo_Help.png" alt="Nuance CDE Help" /></a>
+                    <div class=" wh_publication_title "><a href="index.html"><span class="booktitle">  <span class="ph mainbooktitle">CDE Analytics New Guide</span>  </span></a></div>
+                    
+                </div>
+                
+                <!-- The menu button for mobile devices is copied in the output only when the 'webhelp.show.top.menu' parameter is set to 'yes' -->
+                <button type="button" data-target="#wh_top_menu_and_indexterms_link" id="wh_menu_mobile_button" data-toggle="collapse" class="navbar-toggle collapsed wh_toggle_button" aria-expanded="false" aria-label="Toggle menu">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+
+            <div class="wh_top_menu_and_indexterms_link collapse navbar-collapse" id="wh_top_menu_and_indexterms_link">
+                
+                <nav class=" wh_top_menu "><ul>
+   <li><span data-tocid="what_s_new-d66e19" data-state="leaf" class=" topicref " data-id="what_s_new"><span class="title"><a href="Reference/what_s_new.html">What's New</a></span></span></li>
+   <li><span data-tocid="online_analytics_training-d66e27" data-state="leaf" class=" topicref " data-id="online_analytics_training"><span class="title"><a href="online_analytics_training.html">Online Analytics Training</a></span></span></li>
+   <li class="has-children"><span data-tocid="tocId-d66e39" data-state="not-ready" class=" topicref "><span class="title"><a href="Getting%20Started/Concept/overview_getting_started.html">Getting Started</a></span></span></li>
+   <li class="has-children"><span data-tocid="tocId-d66e233" data-state="not-ready" class=" topicref "><span class="title"><a href="about_nuance_cde_analytics.html">Working With Reports</a></span></span></li>
+   <li class="has-children"><span data-tocid="tocId-d66e329" data-state="not-ready" class=" topicref "><span class="title"><a href="encounter_monitoring.html">CDE One - CDI Operations</a></span></span></li>
+   <li class="has-children"><span data-tocid="tocId-d66e413" data-state="not-ready" class=" topicref "><span class="title"><a href="team_performance.html">CDE One - Staff Management</a></span></span></li>
+   <li class="has-children"><span data-tocid="tocId-d66e465" data-state="not-ready" class=" topicref "><span class="title"><a href="executive_overview.html">CDE One - Executive Summary</a></span></span></li>
+   <li class="has-children"><span data-tocid="tocId-d66e537" data-state="not-ready" class=" topicref "><span class="title"><a href="CDE%20Triage%20Dashboard%20Overview.html">CDE Triage - CDE Triage Dashboard</a></span></span></li>
+   <li class="has-children"><span data-tocid="tocId-d66e609" data-state="not-ready" class=" topicref "><span class="title"><a href="post_discharge_reviews_overview.html">CDE Triage - Post Discharge Reviews</a></span></span></li>
+   <li class="has-children"><span data-tocid="tocId-d66e631" data-state="not-ready" class=" topicref "><span class="title"><a href="cds_productivity_summary.html">CDS General - CDS Productivity</a></span></span></li>
+   <li class="has-children"><span data-tocid="tocId-d66e663" data-state="not-ready" class=" topicref "><span class="title"><a href="visualization_types.html">Analytics Concepts</a></span></span></li>
+   <li class="has-children"><span data-tocid="tocId-d66e676" data-state="not-ready" class=" topicref "><span class="title"><a href="related_documents.html">Related Documents</a></span></span></li>
+   <li class="has-children"><span data-tocid="tocId-d66e688" data-state="not-ready" class=" topicref "><span class="title"><a href="glossary.html">Glossary</a></span></span></li>
+</ul></nav>
+                
+                
+            </div>
+        </div>
+    </div>
+</header>
+        
+        <div class=" wh_search_input "><form id="searchForm" method="get" role="search" action="search.html"><div><input type="search" placeholder="Search " class="wh_search_textfield" id="textToSearch" name="searchQuery" aria-label="Search query" /><button type="submit" class="wh_search_button" aria-label="Search"><span>Search</span></button></div><script><!--
+                                    $(document).ready(function () {
+                                        $('#searchForm').submit(function (e) {
+                                            if ($('.wh_search_textfield').val().length < 1) {
+                                                e.preventDefault();
+                                            }
+                                        });
+                                    });
+                                --></script></form></div>
+        
+        <div class="container-fluid">
+            <div class="row">
+
+                <nav class="wh_tools hidden-print">
+                    <div data-tooltip-position="bottom" class=" wh_breadcrumb "><ol xmlns:html="http://www.w3.org/1999/xhtml" class="hidden-print"><li><span class="home"><a href="index.html"><span>Home</span></a></span></li>
+   <li><span class="topicref"><span class="title"><a href="executive_overview.html">CDE One - Executive Summary</a></span></span></li>
+   <li class="active"><span class="topicref" data-id="drg_breakdown"><span class="title"><a href="drg_breakdown.html">DRG Breakdown</a><span class="wh-tooltip">
+               
+               <p xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc"></p>
+               </span></span></span></li>
+</ol></div>
+
+                    <div class="wh_right_tools hidden-sm hidden-xs">
+                        <div class=" wh_navigation_links "><span id="topic_navigation_links" class="navheader"></span></div>
+                        <button class="wh_hide_highlight" aria-label="Toggle search highlights" title="Toggle search highlights"></button>
+                        <button class="webhelp_expand_collapse_sections" data-next-state="collapsed" aria-label="Collapse sections" title="Collapse sections"></button>
+                        <div class=" wh_print_link print "><button onClick="window.print()" title="Print this page" aria-label="Print this page"></button></div>
+                    </div>
+                </nav>
+            </div>
+
+            <div class="wh_content_area">
+                <div class="row">
+                    
+                        <nav role="navigation" id="wh_publication_toc" class="col-lg-3 col-md-3 col-sm-3 hidden-xs navbar hidden-print">
+                            <div class=" wh_publication_toc " data-tooltip-position="right"><ul role="tree" aria-label="Table of Contents"><span class="expand-button-action-labels"><span id="button-expand-action" aria-label="Expand"></span><span id="button-collapse-action" aria-label="Collapse"></span><span id="button-pending-action" aria-label="Pending"></span></span><li role="treeitem" aria-expanded="true"><span data-tocid="tocId-d66e465" class="topicref" data-state="expanded"><span role="button" tabindex="0" aria-labelledby="button-collapse-action tocId-d66e465-link" class="wh-expand-btn"></span><span class="title"><a href="executive_overview.html" id="tocId-d66e465-link">CDE One - Executive Summary</a></span></span><ul role="group" class="nav nav-list"><span class="expand-button-action-labels"><span id="button-expand-action" aria-label="Expand"></span><span id="button-collapse-action" aria-label="Collapse"></span><span id="button-pending-action" aria-label="Pending"></span></span><li role="treeitem"><span data-tocid="executive_overview-d66e466" class="topicref" data-id="executive_overview" data-state="leaf"><span role="button" class="wh-expand-btn"></span><span class="title"><a href="executive_overview.html" id="executive_overview-d66e466-link">Executive Overview </a><span class="wh-tooltip">
+                     
+                     <p xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc"></p>
+                     </span></span></span></li>
+         <li role="treeitem"><span data-tocid="cdi_dashboard-d66e476" class="topicref" data-id="cdi_dashboard" data-state="leaf"><span role="button" class="wh-expand-btn"></span><span class="title"><a href="cdi_dashboard.html" id="cdi_dashboard-d66e476-link">CDI Dashboard</a><span class="wh-tooltip">
+                     
+                     <p xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc"></p>
+                     </span></span></span></li>
+         <li role="treeitem"><span data-tocid="cmi_breakdown-d66e486" class="topicref" data-id="cmi_breakdown" data-state="leaf"><span role="button" class="wh-expand-btn"></span><span class="title"><a href="cmi_breakdown.html" id="cmi_breakdown-d66e486-link">CMI Breakdown</a><span class="wh-tooltip">
+                     
+                     <p xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc"></p>
+                     </span></span></span></li>
+         <li role="treeitem"><span data-tocid="soi_rom_impact-d66e496" class="topicref" data-id="soi_rom_impact" data-state="leaf"><span role="button" class="wh-expand-btn"></span><span class="title"><a href="soi_rom_impact.html" id="soi_rom_impact-d66e496-link">SOI/ROM Impact</a><span class="wh-tooltip">
+                     
+                     <p xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc"></p>
+                     </span></span></span></li>
+         <li role="treeitem" class="active"><span data-tocid="drg_breakdown-d66e506" class="topicref" data-id="drg_breakdown" data-state="leaf"><span role="button" class="wh-expand-btn"></span><span class="title"><a href="drg_breakdown.html" id="drg_breakdown-d66e506-link">DRG Breakdown</a><span class="wh-tooltip">
+                     
+                     <p xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc"></p>
+                     </span></span></span></li>
+         <li role="treeitem"><span data-tocid="reconciliation_details-d66e516" class="topicref" data-id="reconciliation_details" data-state="leaf"><span role="button" class="wh-expand-btn"></span><span class="title"><a href="reconciliation_details.html" id="reconciliation_details-d66e516-link">Reconciliation Details</a><span class="wh-tooltip">
+                     
+                     <p xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc"></p>
+                     </span></span></span></li>
+         <li role="treeitem"><span data-tocid="clarification_type_trend-d66e526" class="topicref" data-id="clarification_type_trend" data-state="leaf"><span role="button" class="wh-expand-btn"></span><span class="title"><a href="clarification_type_trend.html" id="clarification_type_trend-d66e526-link">Clarification Type Trend</a><span class="wh-tooltip">
+                     
+                     <p xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" class="shortdesc"></p>
+                     </span></span></span></li>
+      </ul>
+   </li>
+</ul></div>
+                        </nav>
+                    
+                    
+                    <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12" id="wh_topic_body">
+                        <div class=" wh_topic_content body "><main role="main"><article role="article" aria-labelledby="ariaid-title1">
+    <h1 class="title topictitle1" id="ariaid-title1">DRG Breakdown</h1>
+    
+    <div class="body conbody"><p class="shortdesc"></p>
+        <p class="p"><strong class="ph b">Overview</strong>: A DRG Breakdown report helps a CDI Director to analyze top volume DRGs
+            (MS-DRGs and APR DRGs) and target areas for focused attention and financial
+            improvement.</p>
+        <div class="p">The report provides answers to the following questions:<ul class="ul" id="drg_breakdown__ul_tl2_l4l_f4b">
+                <li class="li">What are the top MS-DRGs and top APR DRGs by encounter volume for a particular
+                    month?</li>
+                <li class="li">How many top DRGs (MS-DRG /APR) are medical?</li>
+                <li class="li">How many top DRGs (MS-DRG/APR) are surgical?</li>
+                <li class="li">What is the MDC category associated with the top DRGs?</li>
+                <li class="li">Which DRG categories should be targeted to help improve the financial
+                    health?</li>
+            </ul></div>
+        <p class="p"><strong class="ph b">Navigation</strong>: On the Analytics home page left side panel, navigate to <span class="ph menucascade"><span class="ph uicontrol">CDE One</span><abbr title="and then"> &gt; </abbr><span class="ph uicontrol">Executive Summary</span><abbr title="and then"> &gt; </abbr><span class="ph uicontrol">DRG Breakdown</span></span>. </p>
+        <p class="p">DRG Breakdown displays the following:</p>
+        <div class="p">
+            <ul class="ul" id="drg_breakdown__ul_skz_lhq_f4b">
+                <li class="li">KPI Card: Total Reconciled</li>
+                <li class="li">DRGs by Volume Tabular Chart</li>
+            </ul>
+        </div>
+        <p class="p">On the top panel, you can select desired values for the slicers and the corresponding
+            data gets generated in the tabular chart.</p>
+        <p class="p"><strong class="ph b">Default Display</strong>: By default, the DRG breakdown report displays data for Reconciled
+            Inpatient encounters for the CMS (Grouper Type) for last one calendar month based on
+            Discharge Date. </p>
+        <p class="p"><strong class="ph b">DRG Breakdown</strong></p>
+        <div class="p">
+            <figure class="fig fignone" id="drg_breakdown__fig_am2_rm2_f4b"><figcaption class="figcap"><span class="figtitleprefix">Figure: </span>Sample Report</figcaption>
+                
+                <img class="image" id="drg_breakdown__image_bm2_rm2_f4b" src="Images/DRG%20Breakdown.gif" width="800" />
+            </figure>
+        </div>
+        <p class="p"><strong class="ph b">DRG Breakdown - KPI Card</strong>
+        </p>
+        <div class="p">
+            <figure class="fig fignone" id="drg_breakdown__fig_lvm_rxs_f4b"><figcaption class="figcap"><span class="figtitleprefix">Figure: </span>KPI Card</figcaption>
+                
+                <img class="image" id="drg_breakdown__image_fft_sxs_f4b" src="Images/DRG%20Breakdown%20KPI%20card.gif" />
+            </figure>
+        </div>
+        <table class="table frame-all" id="drg_breakdown__table_dm2_rm2_f4b"><caption><span class="table--title-label">Table 1. </span><span class="title">KPI Card</span></caption><colgroup><col style="width:50%" /><col style="width:50%" /></colgroup><thead class="thead">
+                    <tr>
+                        <th class="entry colsep-1 rowsep-1" id="drg_breakdown__table_dm2_rm2_f4b__entry__1"><strong class="ph b">KPI Card</strong></th>
+                        <th class="entry colsep-1 rowsep-1" id="drg_breakdown__table_dm2_rm2_f4b__entry__2">Description</th>
+                    </tr>
+                </thead><tbody class="tbody">
+                    <tr>
+                        <td class="entry colsep-1 rowsep-1" headers="drg_breakdown__table_dm2_rm2_f4b__entry__1 ">Total Reconciled</td>
+                        <td class="entry colsep-1 rowsep-1" headers="drg_breakdown__table_dm2_rm2_f4b__entry__2 ">
+                            <p class="p">The total count of reconciled encounters for the selected period.</p>
+                            <p class="p">Total Count of Reconciled Encounters: The count of encounters with
+                                Reconciled Impact, Reconciled No Impact, or Auto Reconcile
+                                status.</p>
+                        </td>
+                    </tr>
+                </tbody></table>
+        <p class="p"><strong class="ph b">DRG Breakdown - DRGs by Volume Tabular Chart</strong>
+        </p>
+        <div class="p"><figure class="fig fignone" id="drg_breakdown__fig_oy5_yxs_f4b"><figcaption class="figcap"><span class="figtitleprefix">Figure: </span>DRGs by Volume Tabular Chart</figcaption>
+                
+                <img class="image" id="drg_breakdown__image_qyg_cys_f4b" src="Images/DRGs%20by%20Volume.gif" width="800" />
+            </figure><strong class="ph b"> Info Icon</strong>(text on hover): Displays the data for Reconciled-Impact,
+            Reconciled-No Impact, and Auto-Reconciled encounters. <table class="table frame-all" id="drg_breakdown__table_cm2_rm2_f4b"><caption><span class="table--title-label">Table 2. </span><span class="title">Chart columns and description</span></caption><colgroup><col style="width:16.98956780923994%" /><col style="width:27.421758569299552%" /><col style="width:21.907600596125185%" /><col style="width:14.903129657228018%" /><col style="width:18.7779433681073%" /></colgroup><thead class="thead">
+                        <tr>
+                            <th class="entry colsep-1 rowsep-1" id="drg_breakdown__table_cm2_rm2_f4b__entry__1">Column Name</th>
+                            <th class="entry colsep-1 rowsep-1" id="drg_breakdown__table_cm2_rm2_f4b__entry__2">Description</th>
+                            <th class="entry colsep-1 rowsep-1" id="drg_breakdown__table_cm2_rm2_f4b__entry__3">Formula/Calculation</th>
+                            <th class="entry colsep-1 rowsep-1" id="drg_breakdown__table_cm2_rm2_f4b__entry__4">Exclusion Criteria (if any)</th>
+                            <th class="entry colsep-1 rowsep-1" id="drg_breakdown__table_cm2_rm2_f4b__entry__5">Tooltip</th>
+                        </tr>
+                    </thead><tbody class="tbody">
+                        <tr>
+                            <td class="entry colsep-1 rowsep-1" headers="drg_breakdown__table_cm2_rm2_f4b__entry__1 "><strong class="ph b">Grouper Type</strong></td>
+                            <td class="entry colsep-1 rowsep-1" headers="drg_breakdown__table_cm2_rm2_f4b__entry__2 ">
+                                <p class="p">The available<strong class="ph b"> Grouper Type</strong> in the format CMS, APR, IPF,
+                                    LTCH, and so on. </p>
+                                <p class="p"><strong class="ph b">CMS selected by default</strong><strong class="ph b">Example</strong>: CMS</p>
+                            </td>
+                            <td class="entry colsep-1 rowsep-1" headers="drg_breakdown__table_cm2_rm2_f4b__entry__3 "></td>
+                            <td class="entry colsep-1 rowsep-1" headers="drg_breakdown__table_cm2_rm2_f4b__entry__4 "></td>
+                            <td class="entry colsep-1 rowsep-1" headers="drg_breakdown__table_cm2_rm2_f4b__entry__5 "></td>
+                        </tr>
+                        <tr>
+                            <td class="entry colsep-1 rowsep-1" headers="drg_breakdown__table_cm2_rm2_f4b__entry__1 "><strong class="ph b">DRG</strong></td>
+                            <td class="entry colsep-1 rowsep-1" headers="drg_breakdown__table_cm2_rm2_f4b__entry__2 "><p class="p">The code and description of the Final DRG
+                                    code.</p><strong class="ph b">Example</strong>: 977 - HIV W OR W/O OTHER RELATED
+                                CONDITION</td>
+                            <td class="entry colsep-1 rowsep-1" headers="drg_breakdown__table_cm2_rm2_f4b__entry__3 "></td>
+                            <td class="entry colsep-1 rowsep-1" headers="drg_breakdown__table_cm2_rm2_f4b__entry__4 "></td>
+                            <td class="entry colsep-1 rowsep-1" headers="drg_breakdown__table_cm2_rm2_f4b__entry__5 "></td>
+                        </tr>
+                        <tr>
+                            <td class="entry colsep-1 rowsep-1" headers="drg_breakdown__table_cm2_rm2_f4b__entry__1 "><strong class="ph b">DRG Type</strong></td>
+                            <td class="entry colsep-1 rowsep-1" headers="drg_breakdown__table_cm2_rm2_f4b__entry__2 "><p class="p">The type (Medical, Surgical, Unknown) associated with the
+                                    Final DRG Code.</p><p class="p"><strong class="ph b">Values</strong>:</p><p class="p">S- Surgical</p><p class="p">M-
+                                    Medical</p><p class="p">U- Unknown</p><strong class="ph b">Example</strong>:M</td>
+                            <td class="entry colsep-1 rowsep-1" headers="drg_breakdown__table_cm2_rm2_f4b__entry__3 "></td>
+                            <td class="entry colsep-1 rowsep-1" headers="drg_breakdown__table_cm2_rm2_f4b__entry__4 "></td>
+                            <td class="entry colsep-1 rowsep-1" headers="drg_breakdown__table_cm2_rm2_f4b__entry__5 "></td>
+                        </tr>
+                        <tr>
+                            <td class="entry colsep-1 rowsep-1" headers="drg_breakdown__table_cm2_rm2_f4b__entry__1 "><strong class="ph b">MDC</strong></td>
+                            <td class="entry colsep-1 rowsep-1" headers="drg_breakdown__table_cm2_rm2_f4b__entry__2 "><p class="p">The code and description of the MDC category associated with
+                                    the Final DRG code.</p><strong class="ph b">Example</strong>: 25 - HUMAN
+                                IMMUNODEFICIENCY VIRUS INFECTIONS</td>
+                            <td class="entry colsep-1 rowsep-1" headers="drg_breakdown__table_cm2_rm2_f4b__entry__3 "></td>
+                            <td class="entry colsep-1 rowsep-1" headers="drg_breakdown__table_cm2_rm2_f4b__entry__4 "></td>
+                            <td class="entry colsep-1 rowsep-1" headers="drg_breakdown__table_cm2_rm2_f4b__entry__5 "></td>
+                        </tr>
+                        <tr>
+                            <td class="entry colsep-1 rowsep-1" headers="drg_breakdown__table_cm2_rm2_f4b__entry__1 "><strong class="ph b">#Encounters</strong></td>
+                            <td class="entry colsep-1 rowsep-1" headers="drg_breakdown__table_cm2_rm2_f4b__entry__2 ">The count of reconciled encounters with that Final DRG
+                                    code.<strong class="ph b">Example</strong>:3</td>
+                            <td class="entry colsep-1 rowsep-1" headers="drg_breakdown__table_cm2_rm2_f4b__entry__3 "></td>
+                            <td class="entry colsep-1 rowsep-1" headers="drg_breakdown__table_cm2_rm2_f4b__entry__4 "></td>
+                            <td class="entry colsep-1 rowsep-1" headers="drg_breakdown__table_cm2_rm2_f4b__entry__5 "></td>
+                        </tr>
+                        <tr>
+                            <td class="entry colsep-1 rowsep-1" headers="drg_breakdown__table_cm2_rm2_f4b__entry__1 "><strong class="ph b">% Encounters</strong></td>
+                            <td class="entry colsep-1 rowsep-1" headers="drg_breakdown__table_cm2_rm2_f4b__entry__2 ">The percentage of reconciled encounters for the specific Final
+                                DRG code.<p class="p"><strong class="ph b">Formula</strong>: % Encounters= (The count of reconciled
+                                    encounters with that Final DRG code/ The total count of
+                                    encounters with all the Final DRGs) x 100.</p><strong class="ph b">Example</strong>:
+                                33.33%</td>
+                            <td class="entry colsep-1 rowsep-1" headers="drg_breakdown__table_cm2_rm2_f4b__entry__3 "></td>
+                            <td class="entry colsep-1 rowsep-1" headers="drg_breakdown__table_cm2_rm2_f4b__entry__4 "></td>
+                            <td class="entry colsep-1 rowsep-1" headers="drg_breakdown__table_cm2_rm2_f4b__entry__5 "></td>
+                        </tr>
+                        <tr>
+                            <td class="entry colsep-1 rowsep-1" headers="drg_breakdown__table_cm2_rm2_f4b__entry__1 "><strong class="ph b">Relative WT</strong></td>
+                            <td class="entry colsep-1 rowsep-1" headers="drg_breakdown__table_cm2_rm2_f4b__entry__2 "><p class="p">The average relative weight for each final
+                                        DRG.</p><p class="p"><strong class="ph b">Formula</strong>: Relative Weight for a DRG =
+                                    Average CMI (Total Relative Weight for the DRG / Number of
+                                    Reconciled cases for that DRG)</p><strong class="ph b">Example</strong>: 0.7527</td>
+                            <td class="entry colsep-1 rowsep-1" headers="drg_breakdown__table_cm2_rm2_f4b__entry__3 ">DRG 869 has 2 different weights for time frame selected. 3
+                                encounters with wt of 0.7425 and 2 encounters with wt of 0.7679.
+                                    <p class="p">Total Relative WT is 3.7633 and Total Volume is 5.</p><p class="p">
+                                    Relative WT for DRG 869 = 3.7633 /5 = 0.7527.</p></td>
+                            <td class="entry colsep-1 rowsep-1" headers="drg_breakdown__table_cm2_rm2_f4b__entry__4 "></td>
+                            <td class="entry colsep-1 rowsep-1" headers="drg_breakdown__table_cm2_rm2_f4b__entry__5 "></td>
+                        </tr>
+                        <tr>
+                            <td class="entry colsep-1 rowsep-1" headers="drg_breakdown__table_cm2_rm2_f4b__entry__1 ">#Financial Impact Clarifications </td>
+                            <td class="entry colsep-1 rowsep-1" headers="drg_breakdown__table_cm2_rm2_f4b__entry__2 ">This column displays the count of Financial Impact Clarifications
+                                sent for the reviewed encounters.<div class="note note note_note"><span class="note__title">Note:</span> 
+                                    <ul class="ul" id="drg_breakdown__ul_qzy_yzr_kpb">
+                                        <li class="li">Clarification with a standard or custom ‘Primary Type at
+                                            Reconciliation’ defined as ‘Financial’ in the admin
+                                            configuration is a Financial Impact Clarification.</li>
+                                        <li class="li">Clarifications with Status 'DELETED' or 'RETRACTED' are
+                                            excluded from the count.</li>
+                                        <li class="li">Clarifications for "Review Not Needed" encounter status
+                                            should not be considered for this metric calculation.
+                                        </li>
+                                    </ul>
+                                </div></td>
+                            <td class="entry colsep-1 rowsep-1" headers="drg_breakdown__table_cm2_rm2_f4b__entry__3 ">Count of sent Financial Impact Clarifications. </td>
+                            <td class="entry colsep-1 rowsep-1" headers="drg_breakdown__table_cm2_rm2_f4b__entry__4 "></td>
+                            <td class="entry colsep-1 rowsep-1" headers="drg_breakdown__table_cm2_rm2_f4b__entry__5 "></td>
+                        </tr>
+                        <tr>
+                            <td class="entry colsep-1 rowsep-1" headers="drg_breakdown__table_cm2_rm2_f4b__entry__1 "><strong class="ph b">Total</strong></td>
+                            <td class="entry colsep-1 rowsep-1" headers="drg_breakdown__table_cm2_rm2_f4b__entry__2 "><strong class="ph b">Total #Encounters</strong>: Total count of reconciled encounters
+                                for the selected period. <div class="p"><strong class="ph b">Total % of Encounters</strong>: The
+                                    Overall percentage of the reconciled encounters for the selected
+                                    period. <div class="note note note_note"><span class="note__title">Note:</span> This always displays 100%.</div></div><p class="p"><strong class="ph b">Total
+                                        Relative WT</strong>: The Overall Relative WT for the selected
+                                    time period.</p><p class="p"> Overall Relative Weight = (Total Relative
+                                    Weight / Total count of Reconciled
+                                Encounters)</p><strong class="ph b">Example</strong>: <strong class="ph b">Total #Encounters</strong>=9<p class="p"><strong class="ph b">Total
+                                        % of Encounters</strong>=100.00%</p><p class="p"><strong class="ph b">Total Relative
+                                    WT</strong>=1.8935</p></td>
+                            <td class="entry colsep-1 rowsep-1" headers="drg_breakdown__table_cm2_rm2_f4b__entry__3 "></td>
+                            <td class="entry colsep-1 rowsep-1" headers="drg_breakdown__table_cm2_rm2_f4b__entry__4 "></td>
+                            <td class="entry colsep-1 rowsep-1" headers="drg_breakdown__table_cm2_rm2_f4b__entry__5 "></td>
+                        </tr>
+                    </tbody></table></div>
+        <div class="p">
+            <table class="table frame-all" id="drg_breakdown__table_qnn_w2n_g4b"><caption><span class="table--title-label">Table 3. </span><span class="title">Report Slicers </span></caption><colgroup><col style="width:50%" /><col style="width:50%" /></colgroup><thead class="thead">
+                        <tr>
+                            <th class="entry colsep-1 rowsep-1" id="drg_breakdown__table_qnn_w2n_g4b__entry__1">Slicer</th>
+                            <th class="entry colsep-1 rowsep-1" id="drg_breakdown__table_qnn_w2n_g4b__entry__2">Description</th>
+                        </tr>
+                    </thead><tbody class="tbody">
+                        <tr>
+                            <td class="entry colsep-1 rowsep-1" headers="drg_breakdown__table_qnn_w2n_g4b__entry__1 ">Discharge Date</td>
+                            <td class="entry colsep-1 rowsep-1" headers="drg_breakdown__table_qnn_w2n_g4b__entry__2 ">
+                                <ul class="ul" id="drg_breakdown__ul_uzh_y2n_g4b">
+                                    <li class="li">Display the discharge date range. </li>
+                                    <li class="li">You can select date from the lookup provided.</li>
+                                    <li class="li"> Example: 7/1/2020 - 7/31/2020</li>
+                                    <li class="li"><strong class="ph b">Default</strong>: Last 3 calendar months date range selected
+                                        by default.</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="entry colsep-1 rowsep-1" headers="drg_breakdown__table_qnn_w2n_g4b__entry__1 ">Reset</td>
+                            <td class="entry colsep-1 rowsep-1" headers="drg_breakdown__table_qnn_w2n_g4b__entry__2 ">
+                                <ul class="ul" id="drg_breakdown__ul_ugp_wf1_54b">
+                                    <li class="li">With the Reset button, you can reset the discharge date
+                                        range.</li>
+                                    <li class="li"><strong class="ph b">Tooltip</strong>: Use "Ctrl + Click" to reset the Discharge
+                                        Date.</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="entry colsep-1 rowsep-1" headers="drg_breakdown__table_qnn_w2n_g4b__entry__1 ">Facility</td>
+                            <td class="entry colsep-1 rowsep-1" headers="drg_breakdown__table_qnn_w2n_g4b__entry__2 ">
+                                <ul class="ul" id="drg_breakdown__ul_vzp_z2n_g4b">
+                                    <li class="li">Displays both active and inactive facilities in alphabetical
+                                        order that you have access to.</li>
+                                    <li class="li">You can select multiple facilities.</li>
+                                    <li class="li">You can search the facility by Facility ID or
+                                        Description.</li>
+                                    <li class="li"><strong class="ph b">Format</strong>: Facility Description (Facility ID)</li>
+                                    <li class="li"><strong class="ph b">Default</strong>: ALL</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="entry colsep-1 rowsep-1" headers="drg_breakdown__table_qnn_w2n_g4b__entry__1 ">Payer</td>
+                            <td class="entry colsep-1 rowsep-1" headers="drg_breakdown__table_qnn_w2n_g4b__entry__2 ">
+                                <ul class="ul" id="drg_breakdown__ul_ntb_cfn_g4b">
+                                    <li class="li">Displays both active and inactive payers in alphabetical
+                                        order associated with the facilities you have access
+                                        to.</li>
+                                    <li class="li">You can select multiple payers.</li>
+                                    <li class="li">"Unassigned Payer" displays data for the encounters that do
+                                        not have a payer assigned.</li>
+                                    <li class="li">You can search the Payer by Payer ID or Description.</li>
+                                    <li class="li"><strong class="ph b">Format</strong>: Payer Description (Payer ID)</li>
+                                    <li class="li"><strong class="ph b">Default</strong>: ALL</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="entry colsep-1 rowsep-1" headers="drg_breakdown__table_qnn_w2n_g4b__entry__1 ">Grouper Type</td>
+                            <td class="entry colsep-1 rowsep-1" headers="drg_breakdown__table_qnn_w2n_g4b__entry__2 "><p class="p">Displays a list of available <strong class="ph b">Grouper Type</strong> - - CMS, APR,
+                                    LTCH, IPF, TRICARE, etc.</p><p class="p"><strong class="ph b">Default</strong>: CMS is selected
+                                </p>You can select single or multiple Grouper Type.<p class="p">You can search
+                                    the required Grouper Type.</p></td>
+                        </tr>
+                        <tr>
+                            <td class="entry colsep-1 rowsep-1" headers="drg_breakdown__table_qnn_w2n_g4b__entry__1 ">DRG type</td>
+                            <td class="entry colsep-1 rowsep-1" headers="drg_breakdown__table_qnn_w2n_g4b__entry__2 "><p class="p">Displays the list of DRG type (Medical, Surgical, Unknown)
+                                    associated with the Final DRG Code.</p><p class="p">Values:</p><ul class="ul" id="drg_breakdown__ul_izk_wmz_t4b">
+                                    <li class="li">S</li>
+                                    <li class="li">M</li>
+                                    <li class="li">U</li>
+                                </ul><p class="p"><strong class="ph b">Default</strong>: ALL</p>You can select single or all DRG
+                                Type.</td>
+                        </tr>
+                    </tbody></table>
+        </div>
+        <div class="p">
+            <table class="table frame-all" id="drg_breakdown__table_dq1_ffn_g4b"><caption><span class="table--title-label">Table 4. </span><span class="title">Filters on all Pages</span></caption><colgroup><col style="width:50%" /><col style="width:50%" /></colgroup><thead class="thead">
+                        <tr>
+                            <th class="entry colsep-1 rowsep-1" id="drg_breakdown__table_dq1_ffn_g4b__entry__1">Filter</th>
+                            <th class="entry colsep-1 rowsep-1" id="drg_breakdown__table_dq1_ffn_g4b__entry__2">Description</th>
+                        </tr>
+                    </thead><tbody class="tbody">
+                        <tr>
+                            <td class="entry colsep-1 rowsep-1" headers="drg_breakdown__table_dq1_ffn_g4b__entry__1 ">Patient Type</td>
+                            <td class="entry colsep-1 rowsep-1" headers="drg_breakdown__table_dq1_ffn_g4b__entry__2 ">
+                                <ul class="ul" id="drg_breakdown__ul_ns1_3fn_g4b">
+                                    <li class="li">Displays the available patient types. <strong class="ph b">Example</strong>:
+                                        Inpatient, Outpatient.</li>
+                                    <li class="li"><strong class="ph b">Default</strong>: Inpatient</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="entry colsep-1 rowsep-1" headers="drg_breakdown__table_dq1_ffn_g4b__entry__1 ">Unit</td>
+                            <td class="entry colsep-1 rowsep-1" headers="drg_breakdown__table_dq1_ffn_g4b__entry__2 ">
+                                <ul class="ul" id="drg_breakdown__ul_kdd_jfn_g4b">
+                                    <li class="li">Displays the list of available units.</li>
+                                    <li class="li">You can select multiple Units.</li>
+                                    <li class="li">You can search the Unit.</li>
+                                    <li class="li"><strong class="ph b">Default</strong>: ALL</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="entry colsep-1 rowsep-1" headers="drg_breakdown__table_dq1_ffn_g4b__entry__1 ">Admit Service</td>
+                            <td class="entry colsep-1 rowsep-1" headers="drg_breakdown__table_dq1_ffn_g4b__entry__2 ">
+                                <ul class="ul" id="drg_breakdown__ul_x2g_kfn_g4b">
+                                    <li class="li">Displays the list of available admit service.</li>
+                                    <li class="li">You can select multiple Units.</li>
+                                    <li class="li">You can search the Admit Service.</li>
+                                    <li class="li"><strong class="ph b">Default</strong>: ALL</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="entry colsep-1 rowsep-1" headers="drg_breakdown__table_dq1_ffn_g4b__entry__1 ">Visit Type</td>
+                            <td class="entry colsep-1 rowsep-1" headers="drg_breakdown__table_dq1_ffn_g4b__entry__2 ">
+                                <ul class="ul" id="drg_breakdown__ul_obm_lgm_r4b">
+                                    <li class="li">Displays the available patient types.<strong class="ph b">Example</strong>: ED, IP,
+                                        etc.</li>
+                                    <li class="li">You can select multiple Visit Type.</li>
+                                    <li class="li">You can search the Visit Type.</li>
+                                    <li class="li"><strong class="ph b">Default</strong>: ALL</li>
+                                </ul>
+                            </td>
+                        </tr>
+                    </tbody></table>
+        </div>
+        <div class="p">
+            <table class="table frame-all" id="drg_breakdown__table_smy_2nz_t4b"><caption><span class="table--title-label">Table 5. </span><span class="title">Footnotes</span></caption><colgroup><col style="width:50%" /><col style="width:50%" /></colgroup><thead class="thead">
+                        <tr>
+                            <th class="entry colsep-1 rowsep-1" id="drg_breakdown__table_smy_2nz_t4b__entry__1">Formulas</th>
+                            <th class="entry colsep-1 rowsep-1" id="drg_breakdown__table_smy_2nz_t4b__entry__2">Text on hover</th>
+                        </tr>
+                    </thead><tbody class="tbody">
+                        <tr>
+                            <td class="entry colsep-1 rowsep-1" headers="drg_breakdown__table_smy_2nz_t4b__entry__1 ">Total Reconciled</td>
+                            <td class="entry colsep-1 rowsep-1" headers="drg_breakdown__table_smy_2nz_t4b__entry__2 ">The count of encounters with Reconciled Impact, Reconciled No
+                                Impact, or Auto Reconciled status. E.g. 1170</td>
+                        </tr>
+                        <tr>
+                            <td class="entry colsep-1 rowsep-1" headers="drg_breakdown__table_smy_2nz_t4b__entry__1 ">#Encounters</td>
+                            <td class="entry colsep-1 rowsep-1" headers="drg_breakdown__table_smy_2nz_t4b__entry__2 ">
+                                <p class="p">For each Final DRG, the count of encounters reconciled with that
+                                    DRG.</p>
+                                <p class="p">Total ‘# Encounters’ displays the count of total reconciled cases
+                                    for the reporting period. E.g. 1170</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="entry colsep-1 rowsep-1" headers="drg_breakdown__table_smy_2nz_t4b__entry__1 ">% Encounters</td>
+                            <td class="entry colsep-1 rowsep-1" headers="drg_breakdown__table_smy_2nz_t4b__entry__2 ">
+                                <p class="p">For each Final DRG, the percentage of encounters reconciled with
+                                    that DRG.</p>
+                                <p class="p">% Encounters= The count of encounters reconciled with that Final
+                                    DRG code/ The total count of reconciled encounters with all the
+                                    Final DRGs x 100.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="entry colsep-1 rowsep-1" headers="drg_breakdown__table_smy_2nz_t4b__entry__1 ">Relative WT</td>
+                            <td class="entry colsep-1 rowsep-1" headers="drg_breakdown__table_smy_2nz_t4b__entry__2 ">
+                                <p class="p">Relative WT: The average relative weight for each Final Coded
+                                    DRG. </p>
+                                <p class="p">Relative Weight for a Final Coded DRG = Average CMI (Total
+                                    Relative Weight for the DRG / The count of encounters reconciled
+                                    with that DRG) E.g. 1.3112</p>
+                            </td>
+                        </tr>
+                    </tbody></table>
+        </div>
+    </div>
+</article></main></div>
+                        
+                        
+                        
+                    </div>
+                    
+                </div>
+            </div>
+        </div> 
+        <footer class="navbar navbar-default wh_footer">
+  <div class=" footer-container text-center ">
+    ©2021 Nuance Communications, Inc. All rights reserved.
+  </div>
+</footer>
+        
+        <div id="go2top">
+            <span class="glyphicon glyphicon-chevron-up"></span>
+        </div>
+        
+        <!-- The modal container for images -->
+        <div id="modal_img_large" class="modal">
+            <span class="close glyphicon glyphicon-remove"></span>
+            <!-- Modal Content (The Image) -->
+            <img class="modal-content" id="modal-img" />
+            <!-- Modal Caption (Image Text) -->
+            <div id="caption"></div>
+        </div>
+        
+        <script src="./oxygen-webhelp/lib/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+        
+    </body>
+</html>

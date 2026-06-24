@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="power_bi_controls">
+    <title>Power BI Controls</title>
+    <shortdesc></shortdesc>
+    <conbody>
+        <p>
+            <table frame="all" id="table_mrd_lfd_5gb">
+                <title>Power BI Controls in Report</title>
+                <tgroup cols="2">
+                    <colspec colname="c1" colnum="1" colwidth="1*" colsep="1" rowsep="1"/>
+                    <colspec colname="c2" colnum="2" colwidth="1.99*" colsep="1" rowsep="1"/>
+                    <thead>
+                        <row>
+                            <entry>Option</entry>
+                            <entry>Description</entry>
+                        </row>
+                    </thead>
+                    <tbody>
+                        <row>
+                            <entry>Drill Up</entry>
+                            <entry>Displays one level up information in the hierarchy. For example,
+                                if you are in month view, you can drill up for quarter view and then
+                                year view.</entry>
+                        </row>
+                        <row>
+                            <entry>Go to Next Level in the Hierarchy</entry>
+                            <entry>Displays one level down information in the hierarchy. For
+                                example, if you are in year view, you can drill down to quarter view
+                                and then month view.</entry>
+                        </row>
+                        <row>
+                            <entry>Expand all down one level in the hierarchy</entry>
+                            <entry>
+                                <p>Expand adds an additional hierarchy level to the current view.
+                                    For example, if you are looking at the year level, you can
+                                    expand and add quarter, and month detail.</p>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>Drill Down </entry>
+                            <entry>Click on the Drill Down button and then select the graph to view
+                                the information one level down in the hierarchy. For example, if you
+                                click on year to drill down, it will show quarters in the year, then
+                                further months in the year, then finally days.</entry>
+                        </row>
+                        <row>
+                            <entry>Focus Mode </entry>
+                            <entry>Displays the table/bar graph/line graph in zoomed view.</entry>
+                        </row>
+                        <row>
+                            <entry namest="c1" nameend="c2"><b>More Options </b></entry>
+                        </row>
+                        <row>
+                            <entry>Export data</entry>
+                            <entry>Exports the table data to .xlsx or .csv format.</entry>
+                        </row>
+                        <row>
+                            <entry>Show data</entry>
+                            <entry>Displays all the data in table format.</entry>
+                        </row>
+                        <row>
+                            <entry>Spotlight</entry>
+                            <entry>Highlights the table where icon is clicked.</entry>
+                        </row>
+                        <row>
+                            <entry>Sort descending</entry>
+                            <entry>Sorts the table data in descending order.</entry>
+                        </row>
+                        <row>
+                            <entry>Sort ascending</entry>
+                            <entry>Sorts the table data in ascending order.</entry>
+                        </row>
+                        <row>
+                            <entry>Sort by</entry>
+                            <entry>Sorts the data in ascending order according to the selected
+                                option/column. <note>All the table columns are displayed under this
+                                    option.</note>
+                            </entry>
+                        </row>
+                    </tbody>
+                </tgroup>
+            </table>
+        </p>
+    </conbody>
+</concept>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="blocking_debugger">
+    <title>Recommended Options</title>
+    <shortdesc></shortdesc>
+    <task id="task_idk_ktv_tcb">
+        <title>Blocking Debugger</title>
+        <taskbody>
+            <context>
+                <p>Block debugger error messages by adjusting two settings:</p>
+            </context>
+            <steps id="steps_x1j_mtv_tcb">
+                <step>
+                    <cmd>In your browser, select <menucascade>
+                            <uicontrol>Tools</uicontrol>
+                            <uicontrol>Internet Options</uicontrol>
+                        </menucascade>.</cmd>
+                </step>
+                <step>
+                    <cmd>Click the <uicontrol>Advanced</uicontrol> tab.</cmd>
+                </step>
+                <step>
+                    <cmd>Check <uicontrol>Disable script debugging</uicontrol> for
+                            <uicontrol>Internet Explorer</uicontrol> and
+                            <uicontrol>Other</uicontrol></cmd>
+                </step>
+                <step>
+                    <cmd>Uncheck <uicontrol>Display a notification about every script
+                            error</uicontrol>.</cmd>
+                </step>
+            </steps>
+        </taskbody>
+    </task>
+    <task id="task_elz_5xy_nfb">
+        <?oxy_custom_start type="oxy_content_highlight" color="255,255,0"?>
+        <title><?oxy_custom_end?>Allowing
+            Pop-ups<?oxy_custom_start type="oxy_content_highlight" color="255,255,0"?></title><?oxy_custom_end?>
+        <taskbody>
+            <steps>
+                <step>
+                    <cmd>In your browser, select <menucascade>
+                            <uicontrol>Tools</uicontrol>
+                            <uicontrol>Internet Options</uicontrol>
+                        </menucascade>.</cmd>
+                </step>
+                <step>
+                    <cmd>Click the <uicontrol>Privacy</uicontrol> tab.</cmd>
+                </step>
+                <step>
+                    <cmd>Click on the <b>Settings</b> button to view and modify the behavior of the
+                        pop-up blocker.</cmd>
+                    <stepresult>The <uicontrol>Pop-up Blocker Settings</uicontrol> window is
+                        displayed.</stepresult>
+                </step>
+                <step>
+                    <cmd>Add the address of the website from which you wish to allow pop-up
+                        windows.</cmd>
+                    <info>
+                        <note>Type the address as follows, <userinput>https://&lt;application
+                                URL></userinput>
+                        </note>
+                    </info>
+                </step>
+                <step>
+                    <cmd>Click the <uicontrol>Add</uicontrol> button.</cmd>
+                    <stepresult>The address gets displayed in the <uicontrol>Allowed
+                            Sites:</uicontrol> list. </stepresult>
+                </step>
+                <step>
+                    <cmd>Select <uicontrol>Medium</uicontrol> from the <uicontrol>Blocking Level
+                        </uicontrol>drop-down list to block all pop-up windows except those located
+                        in your Local Intranet or Trusted Sites content zones.</cmd>
+                </step>
+                <step>
+                    <cmd>Click <uicontrol>Close</uicontrol>.</cmd>
+                </step>
+            </steps>
+        </taskbody>
+    </task>
+    <task id="task_njv_4sv_tcb">
+        <title>Setting Multiple Windows Option</title>
+        <taskbody>
+            <steps id="steps_fmr_rsv_tcb">
+                <step>
+                    <cmd>If you want to open a new web site in a separate window while keeping the
+                        application open in its own window, uncheck <uicontrol>Reuse windows for
+                            launching shortcuts</uicontrol></cmd>
+                </step>
+                <step>
+                    <cmd>Click <uicontrol>OK </uicontrol>to save the settings and close the Internet
+                        Options window.</cmd>
+                </step>
+            </steps>
+        </taskbody>
+    </task>
+    <task id="task_wqk_tsv_tcb">
+        <title>Using Disable Toolbars Option</title>
+        <taskbody>
+            <steps id="steps_g1m_wsv_tcb">
+                <step>
+                    <cmd>Select <uicontrol>View</uicontrol>\<uicontrol>Toolbars</uicontrol>.</cmd>
+                </step>
+                <step>
+                    <cmd>On the list of toolbars, uncheck the relevant toolbar.</cmd>
+                </step>
+            </steps>
+        </taskbody>
+    </task>
+</task>

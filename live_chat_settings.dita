@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="live_chat_settings">
+    <title>Live Chat Settings</title>
+    <shortdesc></shortdesc>
+    <conbody>
+        <p>Salesforce supports browsers listed below for Live Agent.</p>
+        <p>
+            <table frame="all" rowsep="1" colsep="1" id="table_kfk_ncy_cnb">
+                <tgroup cols="2">
+                    <colspec colname="c1" colnum="1" colwidth="1*"/>
+                    <colspec colname="c2" colnum="2" colwidth="1*"/>
+                    <thead>
+                        <row>
+                            <entry>Browser</entry>
+                            <entry>Version</entry>
+                        </row>
+                    </thead>
+                    <tbody>
+                        <row>
+                            <entry>Google Chrome™</entry>
+                            <entry>Most Recent Stable version</entry>
+                        </row>
+                        <row>
+                            <entry>Mozilla® Firefox®</entry>
+                            <entry>Most Recent Stable version</entry>
+                        </row>
+                        <row>
+                            <entry>Apple® Safari®</entry>
+                            <entry>6.x on Mac OS X</entry>
+                        </row>
+                        <row>
+                            <entry>Windows® Internet Explorer®</entry>
+                            <entry>11</entry>
+                        </row>
+                    </tbody>
+                </tgroup>
+            </table>
+        </p>
+        <p>Salesforce supports IE-11 browser, but it needs some additional settings which are
+            mentioned below. </p>
+        <section id="section_zkl_tdy_cnb">
+            <title>How to enable chat window pop up </title>
+            <p>While using Live Agent in Internet Explorer or Google Chrome, you might notice that
+                the chat window does not pop up as a separate window. Rather, it replaces the
+                current window with a chat window. Additionally, a blank small window pops up. </p>
+            <p>This issue occurs when the domain that you are launching the chat button from and the
+                Live Agent domain, are in different security zones.</p>
+            <p>For Example:</p>
+            <p>Domain where chat button is hosted: nuancecdi.com </p>
+            <p>Live Agent domain: salesforceliveagent.com </p>
+            <p><b>In order to fix this, follow these steps for Internet Explorer:</b></p>
+            <p>
+                <ol id="ol_xlh_lfy_cnb">
+                    <li>Click the Tools icon (Alt+X) on the top right corner of your browser.</li>
+                    <li>Go to <menucascade>
+                            <uicontrol>Internet Options</uicontrol>
+                            <uicontrol>Security</uicontrol>
+                            <uicontrol>Local Intranet</uicontrol>
+                            <uicontrol>Sites</uicontrol>
+                            <uicontrol>Advanced</uicontrol>
+                            <uicontrol>Add</uicontrol>
+                        </menucascade><note>The <uicontrol>Add</uicontrol> button is disabled if the
+                            option is controlled by the internal IT team.</note>
+                    </li>
+                    <li>Add the Live Agent domains as below:<ul id="ul_amp_4fy_cnb">
+                            <li><xref href="*.force.com" format="html" scope="external"/>
+                            </li>
+                            <li>
+                                <xref href="*.salesforceliveagent.com" format="html"
+                                    scope="external"/></li>
+                            <li><xref href="nuance.salesforceliveagent.com" format="html"
+                                    scope="external"/></li>
+                        </ul></li>
+                    <li>Click <uicontrol>Close</uicontrol>. Click <uicontrol>OK</uicontrol> in other
+                        pop windows.</li>
+                    <li>Restart IE.</li>
+                </ol>
+            </p>
+        </section>
+    </conbody>
+</concept>

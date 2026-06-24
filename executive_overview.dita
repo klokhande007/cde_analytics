@@ -1,0 +1,942 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="executive_overview">
+    <title>Executive Overview </title>
+    <shortdesc></shortdesc>
+    <conbody>
+        <p><b>Overview</b>: An Executive Overview dashboard assists a CDI Director in analyzing the
+            overall performance of the CDI program. The dashboard also helps you group data by week,
+            month, quarter, and year and analyze trends over different time periods and analyze them
+            more easily.</p>
+        <p>The report provides answers to the following questions.<ul id="ul_ng1_yfn_g4b">
+                <li>Has the overall review rate improved over time?</li>
+                <li>Has the impact clarification rate improved over time? </li>
+                <li>How is my CMI trending month to month?</li>
+                <li>How do I pinpoint the root cause of a downward shift in CMI?</li>
+                <li>Is the CDI program resulting in SOI/ROM category shift?</li>
+                <li>What is the trend around Reimbursement Impact of the CDI program? </li>
+                <li>Am I performing above or below my goals?</li>
+                <li>How do we show the financial impact of the cases post reconciliation?</li>
+            </ul></p>
+        <p><b>Navigation</b>: On the Analytics home page left side panel, navigate to <menucascade>
+                <uicontrol>CDE One</uicontrol>
+                <uicontrol>Executive Summary</uicontrol>
+                <uicontrol>Executive Overview</uicontrol>
+            </menucascade>
+        </p>
+        <p>Executive Overview displays the following:.<ul id="ul_fvj_qzm_g4b">
+                <li>KPI Cards: Overall CMI Shift, Overall Reimb Impact, Overall Review Rate, Overall
+                    -Clarification Rate </li>
+                <li>Review Rate Chart</li>
+                <li>Clarification Rate Chart</li>
+                <li>Provider Response and Agreed Rate Chart</li>
+                <li>CMI Shift Chart</li>
+                <li>Reimbursement Impact ($) Chart</li>
+                <li>SOI/ROM Impact Chart</li>
+            </ul></p>
+        <p>On the top panel, you can select desired values for the slicers (refer <xref
+                href="#executive_overview/table_qnn_w2n_g4b" format="dita"/>) and the corresponding
+            data gets generated in the tabular chart.</p>
+        <p>For View By option, refer <xref href="#executive_overview/table_o43_n2n_g4b"
+                format="dita"/>.</p>
+        <p>For filters on all pages, refer <xref href="#executive_overview/table_dq1_ffn_g4b"
+                format="dita"/>.</p>
+        <p>For Footnotes, refer <xref href="#executive_overview/table_ryw_phm_r4b" format="dita"
+            />.</p>
+        <p><b>Default Display</b>: By default, the dashboard displays the data for the inpatient
+            encounters discharged in the last three calendar months. Click the
+                <uicontrol>Reset</uicontrol> button to reset the discharge date and select the
+            required date.</p>
+        <p><b>Executive Overview Dashboard</b></p>
+        <p>
+            <fig id="fig_jws_swq_j4b">
+                <title>Sample Report</title>
+                <image href="Images/Executive%20Overview.gif" id="image_sfz_twq_j4b" width="600"/>
+            </fig>
+        </p>
+        <p><b>Executive Overview - KPI Cards</b></p>
+        <p>
+            <fig id="fig_h1h_wwq_j4b">
+                <title>KPI Cards</title>
+                <image href="Images/Executive%20Overview%20KPI%20cards.gif" id="image_zhd_xwq_j4b"
+                    width="600"/>
+            </fig>
+        </p>
+        <p>
+            <table frame="all" rowsep="1" colsep="1" id="table_uhn_szm_g4b">
+                <title><b>KPI Card details</b></title>
+                <tgroup cols="4">
+                    <colspec colname="c1" colnum="1" colwidth="1*"/>
+                    <colspec colname="c2" colnum="2" colwidth="1*"/>
+                    <colspec colname="newCol3" colnum="3" colwidth="1*"/>
+                    <colspec colname="newCol4" colnum="4" colwidth="1*"/>
+                    <thead>
+                        <row>
+                            <entry>KPI Card</entry>
+                            <entry>Description</entry>
+                            <entry>Formula/Calculation</entry>
+                            <entry>Exclusion Criteria(if any)</entry>
+                        </row>
+                    </thead>
+                    <tbody>
+                        <row>
+                            <entry>Overall CMI Shift</entry>
+                            <entry>This metric, by default displays the Overall CMI Shift for
+                                inpatient encounters with discharges in the last 9 calendar
+                                months.</entry>
+                            <entry>
+                                <p><b>Formula</b>: Overall CMI Shift(%) = (Overall CMI After CDI-
+                                    Overall CMI Before CDI /Overall Before CDI) *100</p>
+                                <note>Rounded to 0 decimal places.</note>
+                                <p><b>Format:</b> 4%, 3% and so on.</p>
+                            </entry>
+                            <entry/>
+                        </row>
+                        <row>
+                            <entry>Overall Reimb Impact</entry>
+                            <entry>
+                                <p>This metric displays  Overall Reimbursement Impact ($)) ' for the
+                                    selected period.</p>
+                            </entry>
+                            <entry>
+                                <p>Reimbursement Impact for an encounter = (CMI After CDI - CMI
+                                    Before CDI) * Blended Rate.</p>
+                                <note>Total  Reimbursement Impact ($) rounded to 0 decimal
+                                    places.</note>
+                                <p><b>Format:</b> $2,905,106</p>
+                            </entry>
+                            <entry/>
+                        </row>
+                        <row>
+                            <entry>Overall Review Rate</entry>
+                            <entry>
+                                <p>Review Rate for the selected period.</p>
+                                <p>Out of total encounters, the percentage of encounters
+                                    reviewed.</p>
+                            </entry>
+                            <entry>
+                                <p><b>Formula</b>: Review Rate= Encounters Reviewed (Initial
+                                    Reviews) / Total encounters (Discharges) x 100.</p>
+                                <p>Rounded to 0 decimal places. Example: 89%</p>
+                                <p><b>Format:</b> 96%</p>
+                            </entry>
+                            <entry>Encounters with Review Not Needed encounter status are excluded
+                                from this metric calculations.</entry>
+                        </row>
+                        <row>
+                            <entry>Overall Clarification Rate</entry>
+                            <entry>
+                                <p>Encounter Clarification Rate for the selected period.</p>
+                                <p>The percentage of reviewed encounters with at least one
+                                    clarification with the status other than DELETED or
+                                    RETRACTED.</p>
+                            </entry>
+                            <entry>
+                                <p><b>Formula</b>: Encounter Clarification Rate= (The count of
+                                    reviewed encounters with at least one clarification with the
+                                    status other than DELETED or RETRACTED/ Count of Initial Reviews
+                                    performed) *100</p>
+                                <p><b>Format:</b> 33%</p>
+                            </entry>
+                            <entry>Encounters with Review Not Needed encounter status are excluded
+                                from this metric calculations.</entry>
+                        </row>
+                    </tbody>
+                </tgroup>
+            </table>
+        </p>
+        <p><b>Executive Overview - Review Activity Chart</b></p>
+        <fig id="fig_cmy_bxq_j4b">
+            <title>Review Activity Chart</title>
+            <image href="Images/Executive%20Overview%20REview%20Activity.gif" id="image_nhr_2xq_j4b"
+                width="600"/>
+        </fig>
+        <p>The Review Rate chart displays the Total Encounters, Encounters Reviewed, and Review Rate
+            metrics for each month.<ul id="ul_jpn_j1n_g4b">
+                <li><b>X-axis</b>: Displays the discharge month in ascending order. (<b>Format</b>:
+                    Jun 2020, Jul 2020)</li>
+                <li><b>Primary Y-axis</b>: Displays the count of encounters.</li>
+                <li><b>Secondary Y-axis</b>: Displays the rate.</li>
+            </ul></p>
+        <p><b>Info Icon</b></p>
+        <p><b>Text on hover</b>: Encounter Status: Includes all encounter statuses except 'Review
+            Not Needed'.<table frame="all" rowsep="1" colsep="1" id="table_rb3_k1n_g4b">
+                <title>Review Rate Chart Metrics</title>
+                <tgroup cols="5">
+                    <colspec colname="c1" colnum="1" colwidth="1*"/>
+                    <colspec colname="c2" colnum="2" colwidth="1.31*"/>
+                    <colspec colname="newCol3" colnum="3" colwidth="1.15*"/>
+                    <colspec colname="newCol4" colnum="4" colwidth="1.1*"/>
+                    <colspec colname="newCol5" colnum="5" colwidth="1.04*"/>
+                    <thead>
+                        <row>
+                            <entry>Metric</entry>
+                            <entry>Description</entry>
+                            <entry>Formula/Calculation</entry>
+                            <entry>Exclusion Criteria(if any)</entry>
+                            <entry>Tooltip</entry>
+                        </row>
+                    </thead>
+                    <tbody>
+                        <row>
+                            <entry>Total Encounters</entry>
+                            <entry>This metric displays the total discharges for the selected 'View
+                                By' option.</entry>
+                            <entry>Total Encounters = The total count of encounters that have a
+                                Discharge Date/time assigned.</entry>
+                            <entry>
+                                <p>Encounters with <b>Review Not Needed</b> encounter status are
+                                    excluded from this metric calculation.</p>
+                            </entry>
+                            <entry morerows="2"/>
+                        </row>
+                        <row>
+                            <entry>Encounters Reviewed</entry>
+                            <entry>This metric displays the total reviews for the selected View By
+                                option.</entry>
+                            <entry>Encounters Reviewed = The count of encounters with an initial
+                                review date/time.</entry>
+                            <entry>Encounters with <b>Review Not Needed</b> encounter status are
+                                excluded from this metric calculation.</entry>
+                        </row>
+                        <row>
+                            <entry>Review Rate</entry>
+                            <entry>This metric displays the percentage of total encounters reviewed
+                                for the selected View By option.</entry>
+                            <entry>
+                                <p><b>Formula</b>: Review Rate= Encounters Reviewed (Initial
+                                    Reviews) / Total encounters (Discharges) x 100.</p>
+                                <p><note>Rounded to 0 decimal places.</note>
+                                    <b>Example</b>: 89%</p>
+                            </entry>
+                            <entry>Encounters with <b>Review Not Needed</b> encounter status are
+                                excluded from this metric calculation.</entry>
+                        </row>
+                    </tbody>
+                </tgroup>
+            </table></p>
+        <p><b>Executive Overview - Clarification Rate Chart</b></p>
+        <fig id="fig_g52_jxq_j4b">
+            <title>Clarification Rate Chart</title>
+            <image href="Images/Executive%20Overview%20%20Clarification%20Rate.gif"
+                id="image_cmx_jxq_j4b" width="600"/>
+        </fig>
+        <p>The Clarification Rate chart displays the Encounter Clarification Rate and Impact
+            Clarification Rate metrics for the selected View By option. </p>
+        <ul id="ul_syx_w1n_g4b">
+            <li><b> X-axis</b>: Displays the discharge month in ascending order. (<b>Format</b>: Jun
+                2020, Jul 2020)</li>
+            <li><b>Y-axis</b>: Displays the rate.</li>
+        </ul>
+        <p><b>Info Icon</b></p>
+        <p><b>Text on hover</b>: Encounter Status: Includes all encounter statuses except 'Review
+            Not Needed'. Clarification Status: Includes all clarification statuses except 'Removed'
+            or 'Retracted'.</p>
+        <table frame="all" rowsep="1" colsep="1" id="table_qjg_z1n_g4b">
+            <title>Clarification Rate Metrics</title>
+            <tgroup cols="5">
+                <colspec colname="c1" colnum="1" colwidth="1*"/>
+                <colspec colname="c2" colnum="2" colwidth="1*"/>
+                <colspec colname="newCol3" colnum="3" colwidth="1*"/>
+                <colspec colname="newCol4" colnum="4" colwidth="1*"/>
+                <colspec colname="c3" colnum="5" colwidth="1*"/>
+                <thead>
+                    <row>
+                        <entry>Metric</entry>
+                        <entry>Description</entry>
+                        <entry>Formula/Calculation</entry>
+                        <entry>Exclusion Criteria (if any)</entry>
+                        <entry>Tooltip</entry>
+                    </row>
+                </thead>
+                <tbody>
+                    <row>
+                        <entry>Encounter Clarification Rate</entry>
+                        <entry>This metric displays the percentage of reviewed encounters with at
+                            least one clarification with the status other than DELETED or RETRACTED
+                            for the selected View By option.</entry>
+                        <entry>
+                            <p><b>Formula</b>: Encounter Clarification Rate= (The count of reviewed
+                                encounters with at least one clarification with the status other
+                                than DELETED or RETRACTED./ Count of Initial Reviews performed)
+                                *100</p>
+                        </entry>
+                        <entry> Encounters with "Review Not Needed" encounter status are excluded
+                            from this metric calculations.</entry>
+                        <entry morerows="1">
+                            <p>Encounters with Clarifications: Displays the count of reviewed
+                                encounters with at least one clarification with the status other
+                                than DELETED or RETRACTED.</p>
+                            <p>Encounters with Financial Impact Clarifications: Displays the count
+                                of reviewed encounters with at least one Financial Impact
+                                clarification with the status other than DELETED or RETRACTED.</p>
+                            <p>Encounters Reviewed: Displays the count of initial reviews.</p>
+                        </entry>
+                    </row>
+                    <row>
+                        <entry>Financial Impact Clarification Rate</entry>
+                        <entry>
+                            <p>This metric displays the percentage of reviewed encounters at least
+                                one financial impact clarification with the status other than
+                                DELETED or RETRACTED for the selected View By option.</p>
+                            <p>Note: Clarification with a standard or custom ‘Primary Type at
+                                Reconciliation’ defined as ‘Financial or BOTH’ in the admin
+                                configuration is a Financial Impact Clarification.</p>
+                        </entry>
+                        <entry>
+                            <p>Financial Impact Clarification Rate = (Count of reviewed encounters
+                                with at least one Financial Impact clarification with the status
+                                other than DELETED or RETRACTED / Count of encounters with an
+                                initial review date) X 100</p>
+                        </entry>
+                        <entry>Encounters with "Review Not Needed" encounter status are excluded
+                            from this metric calculations.</entry>
+                    </row>
+                </tbody>
+            </tgroup>
+        </table>
+        <p><b>Executive Overview - Provider Response and Agreed Rate Chart</b></p>
+        <fig id="fig_d1z_mxq_j4b">
+            <title>Provider Response and Agreed Rate Chart</title>
+            <image href="Images/Executive%20Overview%20Provider%20Response.gif"
+                id="image_e2k_nxq_j4b" width="600"/>
+        </fig>
+        <p>The Provider Response and Agreed Rate chart displays the Provider Response Rate and
+            Provider Agreed Rate metrics for the selected View By option..<ul id="ul_yzy_2cn_g4b">
+                <li><b>X-axis</b>: Displays the discharge month in ascending order. (Format: Jun
+                    2020, Jul 2020)</li>
+                <li><b>Y-axis</b>: Displays the rate.</li>
+            </ul></p>
+        <p><b>Info Icon</b></p>
+        <p><b>Text on hover</b>: Encounter Status: Includes all encounter statuses except 'Review
+            Not Needed'. Clarification Status: Includes all clarification statuses except 'Removed'
+            or 'Retracted'.</p>
+        <p>
+            <table frame="all" rowsep="1" colsep="1" id="table_mxj_gcn_g4b">
+                <title>Provider Response and Agreed Rate Metrics</title>
+                <tgroup cols="5">
+                    <colspec colname="c1" colnum="1" colwidth="1*"/>
+                    <colspec colname="c2" colnum="2" colwidth="1*"/>
+                    <colspec colname="newCol3" colnum="3" colwidth="1*"/>
+                    <colspec colname="newCol4" colnum="4" colwidth="1*"/>
+                    <colspec colname="c3" colnum="5" colwidth="1*"/>
+                    <thead>
+                        <row>
+                            <entry>Metric</entry>
+                            <entry>Description</entry>
+                            <entry>Formula/Calculation</entry>
+                            <entry>Exclusion Criteria (if any)</entry>
+                            <entry>Tooltip</entry>
+                        </row>
+                    </thead>
+                    <tbody>
+                        <row>
+                            <entry>Provider Response Rate</entry>
+                            <entry>This metric displays the percentage of sent clarifications
+                                responded by the providers for each View By option.</entry>
+                            <entry>
+                                <p> Overall Response Rate = ((Overall Clarifications Responded/
+                                    Overall Clarifications Sent) x 100)</p>
+                            </entry>
+                            <entry> Clarifications for "Review Not Needed" encounter status are not
+                                be considered for this metric calculation.<p>"Deleted" and
+                                    "Retracted" Clarifications are not considered for this metric
+                                    calculation.</p></entry>
+                            <entry morerows="1">
+                                <p>Clarifications Sent: Count of sent clarifications with the status
+                                    other than DELETED or RETRACTED.</p>
+                                <p>Clarifications Responded:Count of clarifications with a Final
+                                    response as Agreed, Not Agreed, Other Explanation, Alternative
+                                    Specificity Diagnosis, Discuss, Sent to another Provider or
+                                    Unable to Determine.</p>
+                                <p>Clarifications Agreed:</p>
+                                <p>Count of clarifications with a Final response as Agreed.</p>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>Provider Agreed Rate</entry>
+                            <entry>This metric displays the percentage of responded clarifications
+                                agreed by the providers for each View By option.</entry>
+                            <entry>
+                                <p>Overall Agreed Rate = ((Overall Clarifications Agreed/ Overall
+                                    Clarifications Responded) x 100)</p>
+                            </entry>
+                            <entry>Clarifications for "Review Not Needed" encounter status are not
+                                be considered for this metric calculation.<p>"Deleted" and
+                                    "Retracted" Clarifications are not considered for this metric
+                                    calculation.</p></entry>
+                        </row>
+                    </tbody>
+                </tgroup>
+            </table>
+        </p>
+        <p><b>Executive Overview - Case Mix Index Chart</b></p>
+        <fig id="fig_nc1_yxq_j4b">
+            <title>Case Mix Index Chart</title>
+            <image href="Images/Executive%20Overview%20Case%20mix.gif" id="image_cnl_yxq_j4b"
+                width="600"/>
+        </fig>
+        <p>The Case Mix Index chart displays the CMI Before CDI , CMI After CDI, and CMI Shift %'
+            metrics for the selected View By option.<ul id="ul_ovn_pcn_g4b">
+                <li><b>X-axis</b>: Displays the discharge month in ascending order. (<b>Format</b>:
+                    Jun 2020, Jul 2020)</li>
+                <li><b>Primary Y-axis</b>: Displays the CMI.</li>
+                <li><b>Secondary Y-axis</b>: Displays the shift percentage.</li>
+            </ul></p>
+        <p><b>Info Icon</b></p>
+        <p><b>Text on hover</b>: CMI metrics are for all the reconciled cases. Encounter Status:
+            Reconciled-Impact, Reconciled-No Impact, Auto-Reconciled.</p>
+        <p>
+            <table frame="all" rowsep="1" colsep="1" id="table_rwm_rcn_g4b">
+                <title>Case Mix Index Metrics</title>
+                <tgroup cols="5">
+                    <colspec colname="c1" colnum="1" colwidth="1*"/>
+                    <colspec colname="c2" colnum="2" colwidth="1*"/>
+                    <colspec colname="newCol3" colnum="3" colwidth="1*"/>
+                    <colspec colname="newCol4" colnum="4" colwidth="1*"/>
+                    <colspec colname="newCol5" colnum="5" colwidth="1*"/>
+                    <thead>
+                        <row>
+                            <entry>Metric</entry>
+                            <entry>Description</entry>
+                            <entry>Formula/Calculation</entry>
+                            <entry>Exclusion Criteria (if any)</entry>
+                            <entry>Tooltip</entry>
+                        </row>
+                    </thead>
+                    <tbody>
+                        <row>
+                            <entry>CMI Before CDI</entry>
+                            <entry>Displays the CMI Before CDI value for the selected View by
+                                option. . </entry>
+                            <entry>
+                                <p> CMI Before CDI = The sum of Final Coded DRG WTs of all
+                                    Auto-Reconciled, Reconciled- No Impact, and Reconciled Impact
+                                    (Impact Type: SOI/ROM Impact) encounters and Reconciliation
+                                    assessment DRG WT (or Working DRG WT when Reconciliation
+                                    Assessment Info is not available) of all Reconciled Impact
+                                    (Impact Type: Both, Financial, (Unassigned (DD&lt; 11/14/2019))
+                                    encounters that meet the report criteria / Total count of
+                                    reconciled cases (Auto-Reconciled, Reconciled-Impact,
+                                    Reconciled-No Impact) for the selected report criteria.</p>
+                                <p>
+                                    <note>This value is represented with 4 decimals.  E.g.,
+                                        2.1868</note>
+                                </p>
+                            </entry>
+                            <entry/>
+                            <entry>
+                                <p>CMI Shift: CMI Shift = Overall CMI After CDI - Overall CMI Before
+                                    CDI</p>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>CMI After CDI</entry>
+                            <entry>Displays the CMI After CDI value for the selected View by option. </entry>
+                            <entry>
+                                <p> CMI After CDI= The sum of Final Coded DRG WTs of all
+                                    Auto-Reconciled, Reconciled- No Impact, and Reconciled Impact
+                                    (Impact Type: SOI/ROM Impact, Both, Financial, (Unassigned
+                                    (DD&lt; 11/14/2019)) encounters that meet the report criteria /
+                                    Total count of reconciled cases (Auto-Reconciled,
+                                    Reconciled-Impact, Reconciled-No Impact) for the selected report
+                                    criteria. (Rounded 4 decimal places.</p>
+                                <p>
+                                    <note>This value is represented with 4 decimals. E.g.
+                                        2.1868.</note>
+                                </p>
+                            </entry>
+                            <entry/>
+                            <entry/>
+                        </row>
+                        <row>
+                            <entry>CMI Shift %</entry>
+                            <entry>Displays the CMI Shift % value for the selected View by option. </entry>
+                            <entry>
+                                <p>CMI Shift % = (The sum of CMI Shift (CMI After CDI - CMI Before
+                                    CDI) for the Reconciled-Impact (Impact Type: Financial, Both,
+                                    Unassigned Impact for Discharge Date &lt; 11/14/2019) encounters
+                                    that meet the report criteria) / (CMI Before CDI for Auto
+                                    Reconciled, Reconciled-No Impact, , Reconciled-Impact (SOI/ROM
+                                    Impact) Reconciled-Impact (Impact Type: Financial, Both,
+                                    Unassigned Impact for Discharge Date &lt; 11/14/2019) encounters
+                                    that meet the report criteria). X 100. (Rounded 2 decimal
+                                    places.</p>
+                                <p>
+                                    <note>Rounded to 2 decimal places. E.g. 2.74%.</note>
+                                </p>
+                                <p><b>Format</b>: Line</p>
+                            </entry>
+                            <entry/>
+                            <entry/>
+                        </row>
+                        <row>
+                            <entry>Pre CDE One CMI Average</entry>
+                            <entry>Displays the aggregated value if a particular payer and facility
+                                is not selected.</entry>
+                            <entry/>
+                            <entry/>
+                            <entry/>
+                        </row>
+                    </tbody>
+                </tgroup>
+            </table>
+        </p>
+        <p><b>Executive Overview - Reimbursement Impact Chart</b></p>
+        <fig id="fig_ujp_byq_j4b">
+            <title>Reimbursement Impact Chart</title>
+            <image href="Images/Executive%20Overview%20Reimbursement%20Impact.gif"
+                id="image_pxp_cyq_j4b" width="600"/>
+        </fig>
+        <p>The Reimbursement Impact chart displays the Reimbursement Impact($) for the selected View
+            By option..<ul id="ul_ldj_tdn_g4b">
+                <li><b>X-axis</b>: Displays the discharge month in ascending order. (<b>Format</b>:
+                    Jun 2020, Jul 2020)</li>
+                <li><b>Y-axis</b>: Displays the $ value.</li>
+            </ul></p>
+        <p><b>Info Icon</b></p>
+        <p><b>Text on hover</b>: Reimbursement Impact $ resulting from the CMI shift (positive or
+            negative) for the cases reconciled with impact. Encounter Status:
+            Reconciled-Impact.(Impact Type: Financial, Both Impact).</p>
+        <p>
+            <table frame="all" rowsep="1" colsep="1" id="table_qwm_5dn_g4b">
+                <title>Reimbursement Impact Metrics </title>
+                <tgroup cols="5">
+                    <colspec colname="c1" colnum="1" colwidth="1.22*"/>
+                    <colspec colname="c2" colnum="2" colwidth="1.4*"/>
+                    <colspec colname="newCol3" colnum="3" colwidth="1.46*"/>
+                    <colspec colname="newCol4" colnum="4" colwidth="1.09*"/>
+                    <colspec colname="newCol5" colnum="5" colwidth="1*"/>
+                    <thead>
+                        <row>
+                            <entry>Metric</entry>
+                            <entry>Description</entry>
+                            <entry>Formula/Calculation</entry>
+                            <entry>Exclusion Criteria (if any)</entry>
+                            <entry>Tooltip</entry>
+                        </row>
+                    </thead>
+                    <tbody>
+                        <row>
+                            <entry>Reimbursement Impact </entry>
+                            <entry>
+                                <p>This metric displays the Reimbursement Impact for all the
+                                    Reconciled-Impact (Impact Type: Financial, Both, Unassigned
+                                    Impact) encounters with F-DRG WT > R-DRG WT (Or F-DRG WT – R-DRG
+                                    WT > 0) and F-DRG WT &lt; R-DRG WT (Or F-DRG WT – R-DRG WT &lt;
+                                    0).</p>
+                            </entry>
+                            <entry>
+                                <p>Reimbursement Impact ($) = The sum of Reimbursement Impact ($)
+                                    (CMI Shift (CMI After CDI - CMI Before CDI) x Blended Rate) for
+                                    the Reconciled-Impact (Impact Type: Financial, Both, Unassigned
+                                    Impact) encounters with F-DRG WT > R-DRG WT (Or F-DRG WT – R-DRG
+                                    WT > 0) and F-DRG WT &lt; R-DRG WT (Or F-DRG WT – R-DRG WT &lt;
+                                    0)</p>
+                                <p>
+                                    <note> Reconciled-Impact (Impact Type: Financial, Both,
+                                        Unassigned Impact for Discharge Date &lt; 11/14/2019)
+                                        encounters without a shift in the WT (F-DRG WT – R-DRG WT =
+                                        0 or F-DRG = R-DRG WT) are not considered in the
+                                        numerator.</note>
+                                </p>
+                            </entry>
+                            <entry/>
+                            <entry/>
+                        </row>
+                    </tbody>
+                </tgroup>
+            </table>
+        </p>
+        <p><b>Executive Overview - SOI/ROM Impact Chart</b></p>
+        <fig id="fig_x4v_xlv_j4b">
+            <title>SOI/ROM Impact Chart</title>
+            <image href="Images/Executive%20Overview%20SOI%20ROM%20Impact.gif"
+                id="image_mkw_ylv_j4b" width="600"/>
+        </fig>
+        <p>The SOI/ROM Impact chart displays the '% Cases with SOI Impact' and '% Cases with ROM
+            Impact' for the selected View By option..<ul id="ul_rtv_b2n_g4b">
+                <li><b>X-axis</b>: Displays the discharge month in ascending order. (Format: Jun
+                    2020, Jul 2020, etc.)</li>
+                <li><b>Y-axis</b>: Displays the percentage.</li>
+            </ul></p>
+        <p><b>Info Icon</b></p>
+        <p><b>Text on hover</b>: Percentage of reconciled cases that had an upward shift in the
+            SOI/ROM (SOI/ROM After > SOI/ROM Before) due to CDS' work on the encounters. Encounter
+            Status: Reconciled-Impact, Reconciled-No Impact, Auto-Reconciled.</p>
+        <p>
+            <table frame="all" rowsep="1" colsep="1" id="table_wqk_22n_g4b">
+                <title>SOI/ROM Impact Metrics</title>
+                <tgroup cols="5">
+                    <colspec colname="c1" colnum="1" colwidth="1*"/>
+                    <colspec colname="c2" colnum="2" colwidth="1*"/>
+                    <colspec colname="newCol4" colnum="3" colwidth="1*"/>
+                    <colspec colname="newCol5" colnum="4" colwidth="1*"/>
+                    <colspec colname="c3" colnum="5" colwidth="1*"/>
+                    <thead>
+                        <row>
+                            <entry>Metric</entry>
+                            <entry>Description</entry>
+                            <entry>Formula/Calculation</entry>
+                            <entry>Exclusion Criteria(if any)</entry>
+                            <entry>Tooltip</entry>
+                        </row>
+                    </thead>
+                    <tbody>
+                        <row>
+                            <entry>% Cases with SOI Impact</entry>
+                            <entry>
+                                <p>This metric displays the percentage of reconciled cases that had
+                                    an upward shift in the SOI (SOI After > SOI Before) due to CDS'
+                                    work on the encounters.</p>
+                                <p>Note: </p>
+                                <p>Advanced SOI/ROM Values are used if Primary SOI/ROM values are
+                                    blank.</p>
+                            </entry>
+                            <entry>
+                                <p>% of Reconciled cases with SOI Impact= The total count of
+                                    Reconciled encounters(Auto Reconciled, Reconciled-Impact and
+                                    Reconciled-No Impact) for which the SOI After is greater than
+                                    SOI Before./ Total count of Reconciled encounters(Auto
+                                    Reconciled, Reconciled-Impact and Reconciled-No Impact)</p>
+                            </entry>
+                            <entry>Encounters with status Reconciled Impact, Reconciled No Impact,
+                                and Auto Reconciled are considered in this metric
+                                calculation.</entry>
+                            <entry morerows="1">
+                                <p>Cases with SOI Impact:</p>
+                                <p>The total count of Reconciled encounters(Auto Reconciled,
+                                    Reconciled-Impact and Reconciled-No Impact) for which the SOI
+                                    After is greater than SOI Before.</p>
+                                <p>Cases with ROM Impact.</p>
+                                <p>The total count of Reconciled encounters(Auto Reconciled,
+                                    Reconciled-Impact and Reconciled-No Impact) for which the ROM
+                                    After is greater than ROM Before</p>
+                                <p>#Reconciled</p>
+                                <p>Total count of Reconciled encounters(Auto Reconciled,
+                                    Reconciled-Impact and Reconciled-No Impact)</p>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>% Cases with ROM Impact</entry>
+                            <entry>This metric displays the percentage of reconciled cases that had
+                                an upward shift in the ROM(ROM After > ROM Before) due to CDS' work
+                                on the encounters <p>
+                                    <note>Advanced SOI/ROM Values are used if Primary SOI/ROM values
+                                        are blank.</note>
+                                </p></entry>
+                            <entry>%  cases with ROM Impact= The total count of Reconciled
+                                encounters(Auto Reconciled, Reconciled-Impact and Reconciled-No
+                                Impact)  for which the ROM After is greater than ROM Before./ Total
+                                count of Reconciled encounters(Auto Reconciled, Reconciled-Impact
+                                and Reconciled-No Impact)</entry>
+                            <entry>Encounters with status Reconciled Impact, Reconciled No Impact,
+                                and Auto Reconciled are considered in this metric
+                                calculation.</entry>
+                        </row>
+                    </tbody>
+                </tgroup>
+            </table>
+        </p>
+        <p>
+            <table frame="all" rowsep="1" colsep="1" id="table_o43_n2n_g4b">
+                <title>View By</title>
+                <tgroup cols="2">
+                    <colspec colname="c1" colnum="1" colwidth="1*"/>
+                    <colspec colname="c2" colnum="2" colwidth="1.56*"/>
+                    <thead>
+                        <row>
+                            <entry>View By</entry>
+                            <entry>Description</entry>
+                        </row>
+                    </thead>
+                    <tbody>
+                        <row>
+                            <entry>Discharge Date</entry>
+                            <entry><p>This option is selected by default. When you click this
+                                    option, <b>Group By</b> and <b>Week Start Day</b> filters
+                                    automatically become available for selection.</p><p>When the
+                                    Discharge Month option is selected, all the charts in the
+                                    dashboard display the data by Discharge
+                                        Month.</p><p><b>Displayed on</b>: X-axis.</p>When the ‘View
+                                By’ is Discharge Month, the data in all the charts is sorted by
+                                Discharge Month in ascending order.</entry>
+                        </row>
+                        <row>
+                            <entry>Facility</entry>
+                            <entry>
+                                <p>When the Facility option is selected, all the charts in the
+                                    dashboard display the data by Facility.</p>
+                                <p>When the ‘View By’ is Facility, the data in all the charts is
+                                    sorted by Facility name in ascending order.</p>
+                                <p><b>Displayed on</b>: X-axis.</p>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>Payer</entry>
+                            <entry>
+                                <p>When the Payer option is selected, all the charts in the
+                                    dashboard display the data by Payer</p>
+                                <p>When the ‘View By’ is Payer, the data in all the charts is sorted
+                                    by Payer desc in ascending order.</p>
+                                <p><b>Displayed on</b>: X-axis.</p>
+                            </entry>
+                        </row>
+                    </tbody>
+                </tgroup>
+            </table>
+        </p>
+        <p>
+            <table frame="all" rowsep="1" colsep="1" id="table_qnn_w2n_g4b">
+                <title>Slicers on the Report</title>
+                <tgroup cols="2">
+                    <colspec colname="c1" colnum="1" colwidth="1*"/>
+                    <colspec colname="c2" colnum="2" colwidth="1*"/>
+                    <thead>
+                        <row>
+                            <entry>Slicer</entry>
+                            <entry>Description</entry>
+                        </row>
+                    </thead>
+                    <tbody>
+                        <row>
+                            <entry>Discharge Date</entry>
+                            <entry>
+                                <ul id="ul_uzh_y2n_g4b">
+                                    <li>Display the discharge date range. </li>
+                                    <li>You can select date from the lookup provided.</li>
+                                    <li> Example: 7/1/2020 - 7/31/2020</li>
+                                    <li><b>Default</b>: Last 3 calendar months date range selected
+                                        by default.</li>
+                                </ul>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>Reset</entry>
+                            <entry>
+                                <ul id="ul_jw1_22z_m4b">
+                                    <li>With the Reset button, you can reset the discharge date
+                                        range.</li>
+                                    <li><b>Tooltip</b>: Use "Ctrl + Click" to reset the Discharge
+                                        Date.</li>
+                                </ul>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>Facility</entry>
+                            <entry>
+                                <ul id="ul_vzp_z2n_g4b">
+                                    <li>Displays both active and inactive facilities in alphabetical
+                                        order that you have access to.</li>
+                                    <li>You can select multiple facilities.</li>
+                                    <li>You can search the facility by Facility ID or
+                                        Description.</li>
+                                    <li><b>Format</b>: Facility Description (Facility ID)</li>
+                                    <li><b>Default</b>: ALL</li>
+                                </ul>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>Payer</entry>
+                            <entry>
+                                <ul id="ul_ntb_cfn_g4b">
+                                    <li>Displays both active and inactive payers in alphabetical
+                                        order associated with the facilities you have access
+                                        to.</li>
+                                    <li>You can select multiple payers.</li>
+                                    <li>"Unassigned Payer" displays data for the encounters that do
+                                        not have a payer assigned.</li>
+                                    <li>You can search the Payer by Payer ID or Description.</li>
+                                    <li><b>Format</b>: Payer Description (Payer ID)</li>
+                                    <li><b>Default</b>: ALL</li>
+                                </ul>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>Unit</entry>
+                            <entry>
+                                <ul id="ul_ezh_f5j_51c">
+                                    <li>This filter displays the list of available units.</li>
+                                    <li>You can select multiple Units.</li>
+                                    <li>You can search the Unit.</li>
+                                    <li><b>Default</b>: ALL</li>
+                                </ul>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>"Group By" and "Week Start Day" options</entry>
+                            <entry> These options are available only when the View By option is
+                                selected as Admit Date/Discharge Date.<p>See <xref
+                                        href="group_by_option.dita"/>.</p></entry>
+                        </row>
+                    </tbody>
+                </tgroup>
+            </table>
+        </p>
+        <p>
+            <table frame="all" rowsep="1" colsep="1" id="table_dq1_ffn_g4b">
+                <title>Filters on all Pages</title>
+                <tgroup cols="2">
+                    <colspec colname="c1" colnum="1" colwidth="1*"/>
+                    <colspec colname="c2" colnum="2" colwidth="1*"/>
+                    <thead>
+                        <row>
+                            <entry>Filter</entry>
+                            <entry>Description</entry>
+                        </row>
+                    </thead>
+                    <tbody>
+                        <row>
+                            <entry>Patient Type</entry>
+                            <entry>
+                                <ul id="ul_ns1_3fn_g4b">
+                                    <li>Displays the available patient types. <b>Example</b>:
+                                        Inpatient, Outpatient.</li>
+                                    <li><b>Default</b>: Inpatient</li>
+                                </ul>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>Unit</entry>
+                            <entry>
+                                <ul id="ul_kdd_jfn_g4b">
+                                    <li>Displays the list of available units.</li>
+                                    <li>You can select multiple Units.</li>
+                                    <li>You can search the Unit.</li>
+                                    <li><b>Default</b>: ALL</li>
+                                </ul>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>Admit Service</entry>
+                            <entry>
+                                <ul id="ul_x2g_kfn_g4b">
+                                    <li>Displays the list of available admit service.</li>
+                                    <li>You can select multiple Units.</li>
+                                    <li>You can search the Admit Service.</li>
+                                    <li><b>Default</b>: ALL</li>
+                                </ul>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>Visit Type</entry>
+                            <entry>
+                                <ul id="ul_obm_lgm_r4b">
+                                    <li>Displays the available patient types.<b>Example</b>: ED, IP,
+                                        etc.</li>
+                                    <li>You can select multiple Visit Type.</li>
+                                    <li>You can search the Visit Type.</li>
+                                    <li><b>Default</b>: ALL</li>
+                                </ul>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>DRG Specialty</entry>
+                            <entry>
+                                <p>Displays the available DRG Specialties. <b>Example</b><ul
+                                        id="ul_h5s_gc1_lqb">
+                                        <li>You can select multiple specialties</li>
+                                        <li>You can search the DRG Specialty.</li>
+                                        <li><b>Default</b>: ALL</li>
+                                        <li><b>Example</b>: Cardiology, Neurology etc.</li>
+                                    </ul></p>
+                            </entry>
+                        </row>
+                    </tbody>
+                </tgroup>
+            </table>
+        </p>
+        <p>
+            <table frame="all" rowsep="1" colsep="1" id="table_ryw_phm_r4b">
+                <title><b>Footnotes</b></title>
+                <tgroup cols="2">
+                    <colspec colname="c1" colnum="1" colwidth="1*"/>
+                    <colspec colname="c2" colnum="2" colwidth="1*"/>
+                    <thead>
+                        <row>
+                            <entry>Formulas</entry>
+                            <entry>Text on hover</entry>
+                        </row>
+                    </thead>
+                    <tbody>
+                        <row>
+                            <entry>Review Rate</entry>
+                            <entry>
+                                <p>Total Encounters= Count of inpatient discharges with status other
+                                    than 'Review Not Needed'.</p>
+                                <p>Encounters Reviewed= Count of encounters reviewed with or without
+                                    clarifications.</p>
+                                <p>Review Rate= (Encounters Reviewed/ Total Encounters) x 100. E.g.
+                                    89%</p>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>Encounter Clarification Rate</entry>
+                            <entry>Encounter Clarification Rate= (The count of reviewed encounters
+                                with at least one clarification with the status other than REMOVED
+                                or RETRACTED/ Encounters Reviewed (Initial Reviews)) x100. E.g.
+                                33%</entry>
+                        </row>
+                        <row>
+                            <entry>Financial Impact Clarification Rate</entry>
+                            <entry>Financial Impact Clarification Rate = (The count of reviewed
+                                encounters with at least one Financial Impact Clarification with the
+                                status other than REMOVED or RETRACTED/Encounters Reviewed (Initial
+                                Reviews) ) x 100). E.g. 30%</entry>
+                        </row>
+                        <row>
+                            <entry>Provider Response Rate</entry>
+                            <entry>Provider Response Rate =(Count of clarifications with a Final
+                                response as Agreed, Not Agreed, Other Explanation, Alternative
+                                Specificity Diagnosis, Discuss, Sent to another Provider or Unable
+                                to Determine/Count of Clarifications Sent) x100. E.g. 90%</entry>
+                        </row>
+                        <row>
+                            <entry>Provider Agreed Rate</entry>
+                            <entry>Provider Agreed Rate =(Count of clarifications with a Final
+                                response as Agreed/Count of Clarifications Responded) x100. E.g.
+                                90%</entry>
+                        </row>
+                        <row>
+                            <entry>CMI Before CDI</entry>
+                            <entry>The avg. of R-DRG WTs (or W-DRG WT if R-DRG is blank) of all
+                                Reconciled-Impact (Impact Type: Both, Financial Impact) encounters
+                                and F-DRG WTs of all Reconciled-No Impact, Reconciled-Impact (Impact
+                                Type: SOI/ROM Impact) and Auto Reconciled encounters.</entry>
+                        </row>
+                        <row>
+                            <entry>CMI After CDI</entry>
+                            <entry>The avg. of Final DRG WTs of all reconciled (Reconciled-Impact,
+                                Reconciled-No Impact, Auto Reconciled) encounters.</entry>
+                        </row>
+                        <row>
+                            <entry>CMI Shift</entry>
+                            <entry>
+                                <p>CMI Shift = (CMI After - CMI Before);</p>
+                                <p>CMI Shift(%)= (CMI After - CMI Before)/CMI Before X 100. E.g.
+                                    3.14%</p>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>Reimbursement Impact</entry>
+                            <entry>Reimbursement Impact ($) = The sum of Reimbursement Impact ($)
+                                (CMI Shift (CMI After CDI - CMI Before CDI) x Blended Rate) for the
+                                Reconciled-Impact (Impact Type: Financial, Both, Unassigned Impact)
+                                encounters with F-DRG WT > R-DRG WT (Or F-DRG WT – R-DRG WT > 0) and
+                                F-DRG WT &lt; R-DRG WT (Or F-DRG WT – R-DRG WT &lt; 0).</entry>
+                        </row>
+                        <row>
+                            <entry>SOI/ROM Impact</entry>
+                            <entry>
+                                <p>% cases with SOI Impact= (Count of Reconciled encounters with SOI
+                                    After > SOI Before/Count of Reconciled encounters.) X100</p>
+                                <p>% cases with ROM Impact= (Count of Reconciled encounters with ROM
+                                    After >ROM Before/Count of Reconciled encounters.) X100</p>
+                            </entry>
+                        </row>
+                    </tbody>
+                </tgroup>
+            </table>
+        </p>
+    </conbody>
+</concept>

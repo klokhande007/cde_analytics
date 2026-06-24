@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="how_to_use_the_review_activity_overview_report">
+    <title><b>How to use the Review Activity Overview Report to find specific
+        information?</b></title>
+    <shortdesc></shortdesc>
+    <task id="task_tcs_z5h_vgb">
+        <title>How many Initial reviews were performed? </title>
+        <taskbody>
+            <steps id="steps_j4p_jl3_vgb">
+                <step>
+                    <cmd>Select <uicontrol>Program Management</uicontrol> from the <i>Analytics</i>
+                        screen.</cmd>
+                </step>
+                <step>
+                    <cmd>Select the <uicontrol>Review Activity Overview</uicontrol> tab.</cmd>
+                    <stepresult>The report displays data for last one calendar month based on the
+                        activity date.</stepresult>
+                </step>
+                <step>
+                    <cmd>Select the time range from the <uicontrol>Activity Date</uicontrol> range
+                        filter.</cmd>
+                </step>
+                <step>
+                    <cmd>Analyze the <uicontrol>Initial Reviews</uicontrol> KPI card.</cmd>
+                    <stepresult>This KPI card displays the aggregated count of initial reviews for
+                        all the facilities you have access to.<note>To analyze the data for a
+                            specific payer or CDS, select the name from the filter
+                                <uicontrol>Payer</uicontrol> or
+                        <uicontrol>CDS</uicontrol>.</note></stepresult>
+                </step>
+            </steps>
+        </taskbody>
+    </task>
+    <task id="task_ag1_3m3_vgb">
+        <title>How many additional reviews were performed? </title>
+        <taskbody>
+            <steps id="steps_bg1_3m3_vgb">
+                <step>
+                    <cmd>Select <uicontrol>Program Management</uicontrol> from the <i>Analytics</i>
+                        screen.</cmd>
+                </step>
+                <step>
+                    <cmd>Select the <uicontrol>Review Activity Overview</uicontrol> tab.</cmd>
+                    <stepresult>The report displays data for last one calendar month based on the
+                        activity date.</stepresult>
+                </step>
+                <step>
+                    <cmd>Select the time range from the <uicontrol>Activity Date</uicontrol> range
+                        filter.</cmd>
+                </step>
+                <step>
+                    <cmd>Analyze the <uicontrol>Additional Reviews</uicontrol> KPI card.</cmd>
+                    <stepresult>This KPI card displays the aggregated count of additional reviews
+                        for all the facilities you have access to.<note>To analyze the data for a
+                            specific payer or CDS, select the name from the filter
+                                <uicontrol>Payer</uicontrol> or
+                        <uicontrol>CDS</uicontrol>.</note></stepresult>
+                </step>
+            </steps>
+        </taskbody>
+    </task>
+    <task id="task_vzf_kn3_vgb">
+        <title>How many total reviews were actually done vs how many should have been done for a
+            specific facility?</title>
+        <taskbody>
+            <steps>
+                <step>
+                    <cmd>Select <uicontrol>Program Management</uicontrol> from the <i>Analytics</i>
+                        screen.</cmd>
+                </step>
+                <step>
+                    <cmd>Select the <uicontrol>Review Activity Overview</uicontrol> tab.</cmd>
+                    <stepresult>The report displays data for last one calendar month based on the
+                        activity date.</stepresult>
+                </step>
+                <step>
+                    <cmd>Select the time range from the <uicontrol>Activity Date</uicontrol> range
+                        filter.</cmd>
+                </step>
+                <step>
+                    <cmd>Analyze the <uicontrol>Reviews by Facility</uicontrol> chart.</cmd>
+                    <stepresult>This chart displays total reviews performed at each facility against
+                        the set objective for that facility. Analyze how many total reviews (initial
+                        and additional) were done vs how many should have been done for each
+                        facility. Use this chart to analyze if the facility is able to meet the
+                        review objective for that facility or not.</stepresult>
+                </step>
+            </steps>
+        </taskbody>
+    </task>
+    <task id="task_t1c_x43_vgb">
+        <title>How many initial and additional reviews were actually done by facility?</title>
+        <taskbody>
+            <steps id="steps_yzd_1p3_vgb">
+                <step>
+                    <cmd>Select <uicontrol>Program Management</uicontrol> from the <i>Analytics</i>
+                        screen.</cmd>
+                </step>
+                <step>
+                    <cmd>Select the <uicontrol>Review Activity Overview</uicontrol> tab.</cmd>
+                    <stepresult>The report displays data for last one calendar month based on the
+                        activity date.</stepresult>
+                </step>
+                <step>
+                    <cmd>Select the time range from the <uicontrol>Activity Date</uicontrol> range
+                        filter.</cmd>
+                </step>
+                <step>
+                    <cmd>Analyze the <uicontrol>Initial and Additional Reviews by
+                            Facility</uicontrol> chart.</cmd>
+                    <stepresult>This chart displays count of initial and additional reviews done for
+                        each facility in the selected date range.</stepresult>
+                </step>
+            </steps>
+        </taskbody>
+    </task>
+    <task id="task_i2n_yq3_vgb">
+        <title>How many sent clarifications had financial impact?</title>
+        <taskbody>
+            <steps id="steps_rmy_dr3_vgb">
+                <step>
+                    <cmd>Select <uicontrol>Program Management</uicontrol> from the <i>Analytics</i>
+                        screen.</cmd>
+                </step>
+                <step>
+                    <cmd>Select the time range from the <uicontrol>Activity Date</uicontrol> range
+                        filter.</cmd>
+                </step>
+                <step>
+                    <cmd>Select the <uicontrol>Review Activity Overview</uicontrol> tab.</cmd>
+                    <stepresult>The report displays data for last one calendar month based on the
+                        activity date.</stepresult>
+                </step>
+                <step>
+                    <cmd>Select <uicontrol>Daily Monitoring</uicontrol> from the <i>Analytics</i>
+                        screen.</cmd>
+                    <stepresult>The report displays data as on today’s date.</stepresult>
+                </step>
+                <step>
+                    <cmd>Analyze the <uicontrol>Financial Impact and Other Impact
+                            Clarifications</uicontrol> chart.</cmd>
+                    <stepresult>The chart displays the count of financially impacted clarifications.
+                        Also displays out of total sent clarifications, what percentage were the
+                        financially impacted clarifications.<note>To analyze the data for a specific
+                            payer or CDS, select the name from the filter
+                                <uicontrol>Payer</uicontrol> or
+                        <uicontrol>CDS</uicontrol>.</note></stepresult>
+                </step>
+            </steps>
+        </taskbody>
+    </task>
+    <task id="task_pkr_xs3_vgb">
+        <title>How many total reviews were done for each payer for a specific facility?</title>
+        <taskbody>
+            <steps id="steps_hxs_zs3_vgb">
+                <step>
+                    <cmd>Select <uicontrol>Program Management</uicontrol> from the <i>Analytics</i>
+                        screen.</cmd>
+                </step>
+                <step>
+                    <cmd>Select the <uicontrol>Review Activity Overview</uicontrol> tab.</cmd>
+                    <stepresult>The report displays data for last one calendar month based on the
+                        activity date.</stepresult>
+                </step>
+                <step>
+                    <cmd>Select the time range from the <uicontrol>Activity Date</uicontrol> range
+                        filter.</cmd>
+                </step>
+                <step>
+                    <cmd>Analyze the <uicontrol>Reviews by Facility and Payer</uicontrol>
+                        chart.</cmd>
+                    <stepresult>The chart displays count and percentage of total reviews for each
+                        payer. Additionally you can compare the percentage of total reviews done for
+                        Medicare cases in between two facilities. Also displays out of total reviews
+                        done by a facility, what percentage of total reviews were done for Managed
+                        Medicare, Medicare, Medicaid, and other Govt payer.</stepresult>
+                </step>
+            </steps>
+        </taskbody>
+    </task>
+    <task id="task_mcw_xcj_vgb">
+        <title>How does the review count distribution by CDS looks? Were the CDSs able to meet the
+            review objective assigned to them?</title>
+        <taskbody>
+            <steps id="steps_rr5_1dj_vgb">
+                <step>
+                    <cmd>Select <uicontrol>Program Management</uicontrol> from the <i>Analytics</i>
+                        screen.</cmd>
+                </step>
+                <step>
+                    <cmd>Select the <uicontrol>Review Activity Overview</uicontrol> tab.</cmd>
+                    <stepresult>The report displays data for last one calendar month based on the
+                        activity date.</stepresult>
+                </step>
+                <step>
+                    <cmd>Select the time range from the <uicontrol>Activity Date</uicontrol> range
+                        filter.</cmd>
+                </step>
+                <step>
+                    <cmd>Analyze the <b>Reviews by CDS</b> chart.</cmd>
+                    <stepresult>This chart displays count of total reviews performed by each CDS.
+                        This chart also displays the review objective for each CDS. Use this chart
+                        to analyze if the CDS is able to meet the review objective or not.<note>To
+                            analyze the data for a specific payer or CDS, select the name from the
+                            filter <uicontrol>Payer</uicontrol> or
+                            <uicontrol>CDS</uicontrol>.</note></stepresult>
+                </step>
+            </steps>
+        </taskbody>
+    </task>
+    <task id="task_oy5_ndj_vgb">
+        <title>What is the average turnaround time for the initial reviews at facility
+            level?</title>
+        <taskbody>
+            <steps id="steps_tqw_n2j_vgb">
+                <step>
+                    <cmd>Select <uicontrol>Program Management</uicontrol> from the <i>Analytics</i>
+                        screen.</cmd>
+                </step>
+                <step>
+                    <cmd>Select the <uicontrol>Review Activity Overview</uicontrol> tab.</cmd>
+                    <stepresult>The report displays data for last one calendar month based on the
+                        activity date.</stepresult>
+                </step>
+                <step>
+                    <cmd>Select the time range from the <uicontrol>Activity Date</uicontrol> range
+                        filter.</cmd>
+                </step>
+                <step>
+                    <cmd>Analyze the <uicontrol>Avg. Initial Review TAT(Hours)</uicontrol> KPI
+                        card.</cmd>
+                    <stepresult>The KPI card displays overall turnaround time at organization
+                            level.<note>If you don't have access to all the facilities within the
+                            organization, this KPI card displays the aggregated value for only the
+                            facilities that you have access to.</note></stepresult>
+                </step>
+                <step>
+                    <cmd>Analyze the <uicontrol>Avg. Initial Review TAT (Hours) by
+                            Facility</uicontrol> chart. </cmd>
+                    <stepresult>This chart displays average turnaround time for initial reviews for
+                        each facility. This chart helps you to identify the facility that has
+                        highest average initial review turnaround time.</stepresult>
+                </step>
+            </steps>
+        </taskbody>
+    </task>
+</task>

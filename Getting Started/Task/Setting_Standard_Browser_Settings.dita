@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="task_hfr_jnk_gbb">
+    <title>Configuring Standard Browser Settings</title>
+    <shortdesc></shortdesc>
+    <taskbody>
+        <context>
+            <note>Please make sure that you are not signed in to Nuance CDE application when
+                configuring the browser.</note>
+            <ol id="ol_dcs_fr2_xbb">
+                <li>Start the Internet Explorer.</li>
+                <li>Configure the Internet options as follows:<ol id="ol_stp_3r2_xbb">
+                        <li>Select <menucascade>
+                                <uicontrol>Tools</uicontrol>
+                                <uicontrol>Internet Options</uicontrol>
+                            </menucascade>.</li>
+                        <li>On the <uicontrol>General</uicontrol> tab, in the <uicontrol>Temporary
+                                Internet Files</uicontrol> or<uicontrol> Browsing
+                                History</uicontrol> section, click
+                                <uicontrol>Settings</uicontrol>.<fig id="fig_unm_nr2_xbb">
+                                <title>General Tab</title>
+                                <image href="../Image/General%20tab.jpg" align="center"
+                                    placement="break" id="image_vnm_nr2_xbb" height="400"/>
+                            </fig></li>
+                        <li>On the <uicontrol>Temporary Internet Files</uicontrol> tab, from
+                                the<uicontrol> Check for newer versions of stored pages</uicontrol>
+                            section, select one of the following radio buttons as necessary:<ul
+                                id="ul_nvh_pr2_xbb">
+                                <li><uicontrol>Every time I visit the page </uicontrol></li>
+                                <li><uicontrol>Every time I start Internet Explorer</uicontrol></li>
+                                <li><uicontrol>Automatically</uicontrol></li>
+                            </ul><note>Do not select the <uicontrol>Never</uicontrol> radio
+                                button.</note><fig id="fig_by2_zr2_xbb">
+                                <title>Temporary Internet Files Tab</title>
+                                <image href="../Image/Temporary%20internet%20files.jpg"
+                                    align="center" placement="break" id="image_cy2_zr2_xbb"/>
+                            </fig></li>
+                        <li>Click <uicontrol>OK </uicontrol>to close the
+                                <uicontrol>Settings</uicontrol> window and apply the change.</li>
+                        <li>Click <uicontrol>OK</uicontrol> to close the Internet Options
+                            window.</li>
+                    </ol></li>
+                <li>Configure the text size by selecting <menucascade>
+                        <uicontrol>View</uicontrol>
+                        <uicontrol> </uicontrol>
+                        <uicontrol>Text Size</uicontrol>
+                        <uicontrol>Medium</uicontrol>
+                    </menucascade>.</li>
+                <li>Configure the encoding by selecting <menucascade>
+                        <uicontrol>View</uicontrol>
+                        <uicontrol>Encoding</uicontrol>
+                        <uicontrol>Auto-Select</uicontrol>
+                    </menucascade>.</li>
+                <li>Restart your browser to apply all settings.<note>The use of supplemental browser
+                        toolbars such as Yahoo! Companion or Google is not recommended with Nuance
+                        CDE. You should remove or disable these toolbars when using Nuance
+                        CDE.</note></li>
+            </ol>
+        </context>
+    </taskbody>
+</task>

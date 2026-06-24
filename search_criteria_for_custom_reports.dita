@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="search_criteria_for_custom_reports">
+    <title>Search Criteria for Custom Reports</title>
+    <shortdesc></shortdesc>
+    <conbody>
+        <p>You can search the reports in the <i>User Defined</i> section using the following
+                criteria:<ul id="ul_gb3_c32_sgb">
+                <li>You can enter minimum three characters in the search box. If you enter less than
+                    three characters, the following error message is displayed: <uicontrol>Please
+                        enter at-least three characters to search</uicontrol>.</li>
+                <li>You can enter a word or three or more characters to search in the search box. In
+                    this case, the system performs a search and lists all the custom reports having
+                    the searched value. For example, clinical. </li>
+                <li>You can enter a phrase to search in the search box. In this case, the system
+                    performs a search for the exact match of the phrase. For example, clinical
+                    measures.</li>
+            </ul></p>
+        <note>If you perform a search and no matching results are found, the following message is
+            displayed: <uicontrol>No records found</uicontrol>.</note>
+    </conbody>
+</concept>

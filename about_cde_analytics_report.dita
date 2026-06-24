@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="about_nuance_cde_analytics">
+    <title>About CDE Analytics Reports</title>
+    <conbody>
+        <p>The following are few important points about reports:<ul id="ul_awb_3pv_zqb">
+                <li>Analytics reports are updated to display the Grouper, WT values, Reimbursement
+                    calculations as per the latest CMS  41.0 updates.</li>
+                <li>Data related to any cancelled admission is not displayed in reports after ADF
+                    refresh.</li>
+                <li>When you click "Reset" on the reports, they display data from the past three
+                    years. Older data is replaced by more recent data over time. By default, only
+                    the most recent data is shown.</li>
+            </ul>
+        </p>
+    </conbody>
+</concept>

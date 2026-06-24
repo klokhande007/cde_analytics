@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map>
+    <title>CDI Operations</title>
+    <topicref href="encounter_monitoring.dita"/>
+    <topicref href="overdue_clarifications.dita"/>
+    <topicref href="provider_response_activity.dita"/>
+    <topicref href="clarification_details.dita"/>
+    <topicref href="encounter_details.dita"/>
+    <topicref href="tracking_codes.dita"/>
+    <topicref href="quality_alerts.dita"/>
+    <topicref href="concurrent_impact_summary.dita"/>
+</map>

@@ -1,0 +1,672 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="cds_productivity_summary">
+    <title>CDS Productivity Summary</title>
+    <shortdesc></shortdesc>
+    <conbody>
+        <p><b>Overview</b>: The CDS Productivity Summary Report displays the daily productivity KPIs
+            in real time at facility level. Data in the tabular report is sorted by the CDS with the
+            highest number of the Initial Reviews.</p>
+        <p>The report provides answers to the following business questions:<ul id="ul_jh5_2rr_t4b">
+                <li>How is the overall performance of the CDS team in terms of review activity?</li>
+                <li>How is the performance of a specific CDS in terms of review activity?</li>
+                <li> How is the overall performance of the CDS team in terms of clarification
+                    activity?</li>
+                <li>How is the performance of a specific CDS in terms of clarification
+                    activity?</li>
+                <li>Who are my top three CDS performers in terms of the review rate</li>
+            </ul></p>
+        <p><b>Navigation</b>: On the Analytics home page left side panel, navigate to <menucascade>
+                <uicontrol>CDS General</uicontrol>
+                <uicontrol>CDS Productivity</uicontrol>
+                <uicontrol>CDS Productivity Summary</uicontrol>
+            </menucascade>.</p>
+        <p>The CDS Productivity Summary Report displays the following:<ul id="ul_tww_zxp_t4b">
+                <li>KPI Cards: Initial Reviews, Additional Reviews, Total Reviews, Avg Initial
+                    Review TAT (Hours)</li>
+                <li>Review Summary tabular chart</li>
+                <li>Clarification Summary tabular chart</li>
+            </ul></p>
+        <p>On the top panel, you can select desired values for the slicers (refer <xref
+                href="#cds_productivity_summary/table_iwp_2qf_sgb" format="dita"/> ) and the
+            corresponding data gets filtered in charts.</p>
+        <p>For Global filters, refer <xref href="#cds_productivity_summary/table_cfp_ghn_lgb"
+                format="dita"/>.</p>
+        <p>For Footnotes, refer <xref href="#cds_productivity_summary/table_mwj_vrq_t4b"
+                format="dita"/>.</p>
+        <p><b>Default Display</b>: By default, this dashboard displays data for inpatient encounters
+            for which activity was performed by the CDS in the last 1 week.</p>
+        <p><b>CDS Productivity Summary</b><fig id="fig_m3c_vhq_t4b">
+                <title>Sample Report</title>
+                <image href="Images/CDS%20Productivity%20Summary%20Report.gif"
+                    id="image_ikh_2qq_t4b" width="600"/>
+            </fig></p>
+        <p><b>CDS Productivity Summary - KPI Cards</b></p>
+        <fig id="fig_s1n_k4q_t4b">
+            <title>KPI Cards</title>
+            <image href="Images/CDS%20Productivity%20Summary%20Report%20KPI%20cards.gif"
+                id="image_lvv_fqq_t4b" width="500"/>
+        </fig>
+        <p>
+            <table frame="all" rowsep="1" colsep="1" id="table_zgt_1kq_t4b">
+                <title>KPI Cards</title>
+                <tgroup cols="2">
+                    <colspec colname="c1" colnum="1" colwidth="1*"/>
+                    <colspec colname="c2" colnum="2" colwidth="1*"/>
+                    <thead>
+                        <row>
+                            <entry>KPI Card</entry>
+                            <entry>Description</entry>
+                        </row>
+                    </thead>
+                    <tbody>
+                        <row>
+                            <entry>Initial Reviews</entry>
+                            <entry>
+                                <p>The Initial Review KPI card displays count of initial reviews
+                                    performed in the selected activity date range.</p>
+                                <p>Initial review date/time falls within the selected activity date
+                                    range.</p>
+                                <p>The initial review is created when you add the working DRG
+                                    (Working DRG is populated the first time) and saves the
+                                    encounter in CDE application.</p>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>Additional Reviews</entry>
+                            <entry>
+                                <p>The Additional Reviews KPI card displays count of additional
+                                    reviews performed in the selected activity date range.
+                                    Additional review date/time falls within the selected activity
+                                    date range.</p>
+                                <p>The additional review is created when you modify the encounter by
+                                    doing the following and saves it:<ul id="ul_xw3_rkq_t4b">
+                                        <li>Modifying the working review</li>
+                                        <li>Creating the possible Review</li>
+                                        <li>Modifying the possible Review</li>
+                                        <li>Creating the worksheet</li>
+                                        <li>Modifying the worksheet</li>
+                                        <li>Creating a note</li>
+                                        <li>Modifying a note</li>
+                                        <li>Changing the encounter Status</li>
+                                        <li>Creating a clarification</li>
+                                        <li>Modifying a clarification</li>
+                                        <li>Creating or modifying an encounter</li>
+                                    </ul></p>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>Total Reviews</entry>
+                            <entry> The Total Reviews KPI card displays the total reviews performed,
+                                i.e. sum of initial and additional reviews. </entry>
+                        </row>
+                        <row>
+                            <entry>Average Initial Review TAT (Hours)</entry>
+                            <entry>
+                                <p>The Average Initial Review TAT (Hours) KPI card displays average
+                                    initial review turnaround time in hours.</p>
+                                <p>Initial review TAT (Hours) for an encounter = Initial review
+                                    date/time of the encounter – Admit date/time of the encounter in
+                                    hours.</p>
+                                <p>Total initial review TAT (Hours) for all the encounters = Total
+                                    initial review TAT (Hours) for all the encounters reviewed
+                                    within the selected activity date range.</p>
+                                <p>Average initial review TAT (Hours) for all the encounters = Total
+                                    initial review TAT (Hours) for all the encounters / Total number
+                                    of initial reviews performed within the selected activity date
+                                    range.</p>
+                            </entry>
+                        </row>
+                    </tbody>
+                </tgroup>
+            </table>
+        </p>
+        <p><b>CDS Productivity Summary - Review Summary tabular chart</b>
+            <fig id="fig_k3g_4mq_t4b">
+                <title>Review Summary tabular chart</title>
+                <image href="Images/CDS%20Productivity%20Summary%20-%20Review%20Summary.gif"
+                    id="image_mvx_gqq_t4b" width="600"/>
+            </fig><table id="table_a5w_zby_ykb" colsep="1" rowsep="1" frame="all">
+                <title>Review Summary Table Column and Description</title>
+                <tgroup cols="5">
+                    <colspec colnum="1" colname="col1" colwidth="1*" colsep="1" rowsep="1"/>
+                    <colspec colnum="2" colname="col2" colwidth="1.78*" colsep="1" rowsep="1"/>
+                    <colspec colname="newCol3" colnum="3" colwidth="1*"/>
+                    <colspec colname="newCol4" colnum="4" colwidth="1*"/>
+                    <colspec colname="newCol5" colnum="5" colwidth="1*"/>
+                    <thead>
+                        <row>
+                            <entry>Column</entry>
+                            <entry>Description</entry>
+                            <entry>Formula/Calculation</entry>
+                            <entry>Exclusion Criteria (if any)</entry>
+                            <entry>Tooltip</entry>
+                        </row>
+                    </thead>
+                    <tbody>
+                        <row>
+                            <entry>CDS</entry>
+                            <entry>Displays the name of the activity CDS who performed at least one
+                                review (initial or additional) in the activity date range. </entry>
+                            <entry/>
+                            <entry/>
+                            <entry morerows="7">N/A</entry>
+                        </row>
+                        <row>
+                            <entry>Encounters  </entry>
+                            <entry>Displays the count of encounters reviewed by the CDS in the
+                                activity date range. In other words, count of encounters for which
+                                the CDS did any activity (initial review or additional review) in
+                                the activity date range.</entry>
+                            <entry/>
+                            <entry/>
+                        </row>
+                        <row>
+                            <entry>Initial Reviews </entry>
+                            <entry>
+                                <p>Displays the count of Initial Reviews performed by the CDS in the
+                                    activity date range.</p>
+                                <p>
+                                    <note>Count of Initial Reviews performed in the activity date
+                                        range cannot be more than the count of Encounters Reviewed
+                                        in that date range.</note>
+                                </p>
+                            </entry>
+                            <entry/>
+                            <entry/>
+                        </row>
+                        <row>
+                            <entry>Additional Reviews</entry>
+                            <entry>Displays the count of additional Reviews performed by the CDS in
+                                the activity date range.</entry>
+                            <entry/>
+                            <entry/>
+                        </row>
+                        <row>
+                            <entry>Total Reviews</entry>
+                            <entry>Displays the sum of initial and additional reviews performed by
+                                the CDS in the activity date range.</entry>
+                            <entry/>
+                            <entry/>
+                        </row>
+                        <row>
+                            <entry>Encounter Clarification Rate</entry>
+                            <entry>
+                                <p>Displays the percentage of reviewed encounters with at least one
+                                    clarification with the status other than DELETED or RETRACTED in
+                                    the selected activity date range.</p>
+                                <p>This value is represented with 0 decimals. E.g. 30%.</p>
+                                <note>
+                                    <ul id="ul_n4j_qky_2qb">
+                                        <li>Initial Review Date/Time falls in the selected activity
+                                            date range.</li>
+                                        <li>Clarification Instance Sent Date falls in the selected
+                                            activity date range.</li>
+                                        <li>Encounters with "Review Not Needed" encounter status are
+                                            excluded from this metric calculations.</li>
+                                    </ul>
+                                </note>
+                            </entry>
+                            <entry>
+                                <p>Encounter Clarification Rate= (The count of reviewed encounters
+                                    with at least one clarification with the status other than
+                                    DELETED or RETRACTED sent in the selected activity date range /
+                                    Count of Initial Reviews performed in the selected activity date
+                                    range) *100.</p>
+                            </entry>
+                            <entry/>
+                        </row>
+                        <row>
+                            <entry>Financial Impact Clarification Rate</entry>
+                            <entry>
+                                <p>Displays the percentage of reviewed encounters with at least one
+                                    Financial Impact Clarifications sent in the selected activity
+                                    date range.</p>
+                                <p>This value is represented with 0 decimals. E.g. 30%.</p>
+                                <note>
+                                    <ul id="ul_nw2_bly_2qb">
+                                        <li>Clarification Instance Sent Date falls in the selected
+                                            activity date range.</li>
+                                        <li>Clarification with a standard or custom ‘Primary Type at
+                                            Reconciliation’ defined as ‘Financial ’ in the admin
+                                            configuration is a Financial Impact Clarification.</li>
+                                        <li>Clarifications for "Review Not Needed" encounter status
+                                            are excluded for this metric calculation.</li>
+                                    </ul>
+                                </note>
+                            </entry>
+                            <entry>
+                                <p>Financial Impact Clarification Rate = (Count of reviewed
+                                    encounters with at least one Financial Impact clarification with
+                                    the status other than DELETED or RETRACTED in the selected
+                                    activity date range / Count of encounters with an initial review
+                                    date in the selected activity date range) X 100.</p>
+                            </entry>
+                            <entry/>
+                        </row>
+                        <row>
+                            <entry>Avg. Initial Review TAT (Hours)</entry>
+                            <entry>
+                                <p>Displays the average Initial Review TAT (Hours) for the CDS.</p>
+                            </entry>
+                            <entry>
+                                <p>Initial Review TAT (Hours) for the encounter = (Admit Date/Time –
+                                    Initial Review Date/Time) in hours</p>
+                                <p>Avg. Initial Review TAT (Hours) for the CDS = Sum of ‘Initial
+                                    Review TAT (Hours)’ of all the initial reviews performed by the
+                                    CDS in the activity date range / Total Initial reviews performed
+                                    by the CDS in the activity date range.</p>
+                            </entry>
+                            <entry/>
+                        </row>
+                    </tbody>
+                </tgroup>
+            </table></p>
+        <p><b>CDS Productivity Summary - Clarification Summary tabular chart</b><fig
+                id="fig_sqz_zmq_t4b">
+                <title>Clarification Summary tabular chart</title>
+                <image href="Images/CDS%20Productivity%20Summary%20-%20Clarification%20Summary.gif"
+                    id="image_jwj_f5r_t4b" width="800"/>
+            </fig><table id="table_otc_lxp_t4b" frame="all" colsep="1" rowsep="1">
+                <title>Clarification Summary Table Column and Description</title>
+                <tgroup cols="5">
+                    <colspec colnum="1" colname="col1" colwidth="1*" colsep="1" rowsep="1"/>
+                    <colspec colnum="2" colname="col2" colwidth="1.78*" colsep="1" rowsep="1"/>
+                    <colspec colname="newCol3" colnum="3" colwidth="1*"/>
+                    <colspec colname="newCol4" colnum="4" colwidth="1*"/>
+                    <colspec colname="newCol5" colnum="5" colwidth="1*"/>
+                    <thead>
+                        <row>
+                            <entry>Column</entry>
+                            <entry>Description</entry>
+                            <entry>Formula/Calculation</entry>
+                            <entry>Exclusion Criteria (if any)</entry>
+                            <entry>Tooltip</entry>
+                        </row>
+                    </thead>
+                    <tbody>
+                        <row>
+                            <entry>CDS</entry>
+                            <entry>This column displays the name of the initiating CDS who sent at
+                                least one clarification in the activity date range.</entry>
+                            <entry/>
+                            <entry/>
+                            <entry morerows="7">N/A</entry>
+                        </row>
+                        <row>
+                            <entry>Clarification Sent</entry>
+                            <entry>
+                                <p>For each CDS, this column displays the count of clarifications
+                                    with at least one instance sent in the activity date range. </p>
+                                <p><b>Note:</b> Instance Sent date falls in the activity date
+                                    range.</p>
+                            </entry>
+                            <entry/>
+                            <entry/>
+                        </row>
+                        <row>
+                            <entry>Encounters with Clarification</entry>
+                            <entry>
+                                <p>This column displays the count of reviewed encounters for which
+                                    the CDS sent at least one clarification with the status other
+                                    than DELETED or RETRACTED in the activity date range.</p>
+                            </entry>
+                            <entry>The count of reviewed encounters with at least one clarification
+                                with the status other than DELETED or RETRACTED.</entry>
+                            <entry/>
+                        </row>
+                        <row>
+                            <entry>Impact Clarifications Sent</entry>
+                            <entry>For each CDS, this column displays the count of Financial Impact
+                                clarifications with at least one instance sent in the activity date
+                                range. <note>Instance Sent date falls in the activity date range.
+                                    Financial Impact Clarifications are the clarifications with a
+                                    standard or custom type (Primary Type at Reconciliation) set-up
+                                    as 'Financial' in the admin configuration.</note></entry>
+                            <entry/>
+                            <entry/>
+                        </row>
+                        <row>
+                            <entry>% Financial Impact Clarification Rate</entry>
+                            <entry>
+                                <p>Out of total clarifications sent, the % count of Financial Impact
+                                    Clarifications sent.<note>
+                                        <ul id="ul_t2y_3p1_lqb">
+                                            <li>Clarification with a standard or custom ‘Primary
+                                                Type at Reconciliation’ defined as ‘Financial ’ in
+                                                the admin configuration is a Financial Impact
+                                                Clarification.</li>
+                                            <li>
+                                                <p>Clarifications with Status 'DELETED' or
+                                                  'RETRACTED' are excluded from the count.</p>
+                                            </li>
+                                            <li>Clarifications for "Review Not Needed" encounter
+                                                status should not be considered for this metric
+                                                calculation. </li>
+                                        </ul>
+                                    </note></p>
+                            </entry>
+                            <entry>%Financial Impact Clarification = (Count of clarifications with
+                                Financial Impact Clarification Type / Total Clarifications Sent) x
+                                100</entry>
+                            <entry/>
+                        </row>
+                        <row>
+                            <entry>Encounters with Impact Clarifications</entry>
+                            <entry>This column displays the count of encounters for which the CDS
+                                sent at least one instance for the Financial Impact Clarification in
+                                the activity date range.<note>Clarification with a standard or
+                                    custom ‘Primary Type at Reconciliation’ defined as ‘Financial or
+                                    BOTH’ in the admin configuration is an Impact
+                                    Clarification.</note></entry>
+                            <entry>Encounters with Impact Clarification = Count of reviewed
+                                encounters with at least one financial impact clarification with the
+                                status other than DELETED or RETRACTED. </entry>
+                            <entry/>
+                        </row>
+                        <row>
+                            <entry>Impact Clarification Agreed Rate</entry>
+                            <entry>
+                                <p>Out of total Impact Clarifications Responded by the CDS in the
+                                    selected activity date range, the percentage of Impact
+                                    Clarifications Agreed.</p>
+                                <p>Note: Clarification with a standard or custom ‘Primary Type at
+                                    Reconciliation’ defined as ‘Financial’ in the admin
+                                    configuration is an Impact Clarification.</p>
+                            </entry>
+                            <entry>Impact Clarification Agreed Rate = (Out of  Impact Clarifications
+                                Responded in the activity date range, count of  impact
+                                clarifications with at least one <b>agreed</b> instance / Out of the
+                                Financial Impact Clarifications Sent by the CDS in the activity date
+                                range, count of  impact clarifications with at least one responded
+                                instance (response other than Pending, Retracted, and No Response)
+                                in the activity date range) x 100</entry>
+                            <entry/>
+                        </row>
+                        <row>
+                            <entry>SEV Clarification Rate</entry>
+                            <entry>Out of total encounters reviewed by the CDS in the selected
+                                activity date range, the percentage of Encounters with SEV
+                                Clarifications. <note>SEV Clarifications are the clarifications that
+                                    have Primary Type at Reconciliation as SEV.</note></entry>
+                            <entry>SEV Clarification Rate = (Count of encounters for which the CDS
+                                sent at least one instance for the SEV Clarification in the activity
+                                date range/ The count of Initial Reviews performed by the CDS in the
+                                activity date range) X 100</entry>
+                            <entry/>
+                        </row>
+                    </tbody>
+                </tgroup>
+            </table></p>
+        <table id="table_iwp_2qf_sgb" frame="all">
+            <title>Report slicers</title>
+            <tgroup cols="2">
+                <colspec colname="c1" colnum="1" colwidth="1*" rowsep="1" colsep="1"/>
+                <colspec colname="c2" colnum="2" colwidth="3.6*" colsep="1" rowsep="1"/>
+                <thead>
+                    <row>
+                        <entry>Filter</entry>
+                        <entry>Description</entry>
+                    </row>
+                </thead>
+                <tbody>
+                    <row>
+                        <entry>Activity Date</entry>
+                        <entry>Displays the activity date range here. You can select required dates
+                            from the date lookup.</entry>
+                    </row>
+                    <row>
+                        <entry>Admit Date</entry>
+                        <entry>
+                            <p>Displays the admit date range here. You can select required dates
+                                from the date lookup.</p>
+                            <p><b>Example</b> - <i>12/1/2018 - 12/20/2018</i></p>
+                        </entry>
+                    </row>
+                </tbody>
+            </tgroup>
+        </table>
+        <table frame="all" rowsep="1" colsep="1" id="table_cfp_ghn_lgb">
+            <title>Global Filters</title>
+            <tgroup cols="2">
+                <colspec colname="c1" colnum="1" colwidth="1*"/>
+                <colspec colname="c2" colnum="2" colwidth="3.65*"/>
+                <thead>
+                    <row>
+                        <entry>Filter</entry>
+                        <entry>Description</entry>
+                    </row>
+                </thead>
+                <tbody>
+                    <row>
+                        <entry>Facility</entry>
+                        <entry>
+                            <p>Displays a list of active and inactive facilities that you have
+                                access to. The list is sorted alphabetically.</p>
+                            <p><b>Format: </b>Facility Description (Facility ID)</p>
+                        </entry>
+                    </row>
+                    <row>
+                        <entry>Payer</entry>
+                        <entry>
+                            <p>Displays a list of active and inactive payers associated with the
+                                facilities that you have access to. The list is sorted
+                                alphabetically.</p>
+                            <p><b>Format</b>: <i>Payer Description (Payer
+                                        ID)</i><note><uicontrol>Unassigned Payer</uicontrol> display
+                                    encounters that do not have a payer assigned.</note></p>
+                        </entry>
+                    </row>
+                    <row>
+                        <entry>Encounter Status</entry>
+                        <entry>Displays following encounter status in alphabetical order:<ul
+                                id="ul_flv_bjn_lgb">
+                                <li><uicontrol>Auto Reconciled</uicontrol></li>
+                                <li><uicontrol>Discharged</uicontrol></li>
+                                <li><uicontrol>In Progress </uicontrol></li>
+                                <li><b>Ready to Reconcile</b></li>
+                                <li><uicontrol>Reconciled Impact</uicontrol></li>
+                                <li><uicontrol>Reconciled No Impact</uicontrol></li>
+                                <li><b>Reconciliation Hold</b></li>
+                                <li><uicontrol>Review Complete</uicontrol></li>
+                                <li><uicontrol>Review Not Needed</uicontrol></li>
+                                <li><uicontrol>Untouched</uicontrol></li>
+                            </ul></entry>
+                    </row>
+                    <row>
+                        <entry>Unit</entry>
+                        <entry>Displays unit in alphabetical order associated with the facilities
+                            that you have access. <p><b>Format</b>: <i>Unit Description (Unit
+                                    ID)</i><note><uicontrol>Unassigned Unit</uicontrol> display
+                                    encounters that do not have a unit assigned.</note></p></entry>
+                    </row>
+                    <row>
+                        <entry>CDS</entry>
+                        <entry>Displays both active and inactive CDSs in alphabetical order
+                            associated with the facilities that you have access.<p><b>Format</b>:
+                                    <i>Last Name, First Name MI (CDS
+                                        ID)</i><note><uicontrol>Unassigned CDS</uicontrol> display
+                                    encounters that do not have a CDS assigned.</note></p><p>The
+                                filter displays the users with the CDS role assigned. </p></entry>
+                    </row>
+                    <row>
+                        <entry>Patient Type</entry>
+                        <entry>Displays the patient type, Inpatient or Outpatient.<p>By default,
+                                Inpatient is selected.</p></entry>
+                    </row>
+                </tbody>
+            </tgroup>
+        </table>
+        <table frame="all" rowsep="1" colsep="1" id="table_mwj_vrq_t4b">
+            <title><?oxy_custom_start type="oxy_content_highlight" color="255,255,0"?>Footnotes<?oxy_custom_end?></title>
+            <tgroup cols="2">
+                <colspec colname="c1" colnum="1" colwidth="1*"/>
+                <colspec colname="c2" colnum="2" colwidth="1*"/>
+                <thead>
+                    <row>
+                        <entry>Label</entry>
+                        <entry>Text on hover</entry>
+                    </row>
+                </thead>
+                <tbody>
+                    <row>
+                        <entry>Encounter Clarification Rate </entry>
+                        <entry>
+                            <p>(Count of reviewed encounters with at least one clarification with
+                                the status other than DELETED or RETRACTED sent in the selected
+                                activity date range/ Count of Initial Reviews performed in the
+                                selected activity date range) X 100. E.g. 33%.</p>
+                        </entry>
+                    </row>
+                    <?oxy_custom_start type="oxy_content_highlight" color="255,255,0"?>
+                    <row>
+                        <entry>Clarification Response Rate</entry>
+                        <entry>(Count of clarifications with at least one instance responded in the
+                            selected activity date range/Count of clarification with at least one
+                            instance sent in the selected activity date range) x 100. E.g.
+                            80%</entry>
+                    </row><?oxy_custom_end?>
+                    <row>
+                        <entry><?oxy_custom_start type="oxy_content_highlight" color="255,255,0"?>Clarification
+                            Agreed Rate<?oxy_custom_end?></entry>
+                        <entry><?oxy_custom_start type="oxy_content_highlight" color="255,255,0"?>(Count
+                            of Clarifications with at least one agreed response in the selected
+                            activity date range /Count of clarifications with at least one instance
+                            responded in the selected activity date range) x 100. E.g.
+                            90%<?oxy_custom_end?></entry>
+                    </row>
+                    <row>
+                        <entry><?oxy_custom_start type="oxy_content_highlight" color="255,255,0"?>Financial
+                            Impact Clarifications<?oxy_custom_end?></entry>
+                        <entry><?oxy_custom_start type="oxy_content_highlight" color="255,255,0"?>Financial
+                            Impact Clarifications: Clarifications with standard or custom ‘Primary
+                            Type at Reconciliation’ defined as ‘Financial’ in the admin
+                            configuration.<?oxy_custom_end?></entry>
+                    </row>
+                    <row>
+                        <entry>Financial Impact Clarification Rate</entry>
+                        <entry>
+                            <p>(Count of reviewed encounters with at least one Financial Impact
+                                clarification (excludes DELETED or RETRACTED) sent in the selected
+                                activity date range/Count of encounters with an initial review date
+                                in the selected activity date range) x 100. E.g. 56%.</p>
+                        </entry>
+                    </row>
+                    <row>
+                        <entry>% Financial Impact Clarification</entry>
+                        <entry>(Count of Financial Impact clarification with at least one instance
+                            in the selected activity date range/Count of clarifications with at
+                            least one instance in the selected activity date range) x 100. E.g.
+                            75%.</entry>
+                    </row>
+                    <row>
+                        <entry>Financial Impact Clarification Response Rate</entry>
+                        <entry>Count of Financial Impact clarifications with at least one instance
+                            responded in the selected activity date range/Count of Financial Impact
+                            clarifications with at least one instance sent in the selected activity
+                            date range) x 100. E.g. 75%.</entry>
+                    </row>
+                    <row>
+                        <entry>Financial Impact Clarification Agreed Rate</entry>
+                        <entry>(Count of Financial Impact Clarifications agreed in the selected
+                            activity date range/ Count of Financial Impact clarifications with at
+                            least one instance responded in the selected activity date range) x 100.
+                            E.g. 90%.</entry>
+                    </row>
+                    <row>
+                        <entry>Quality Clarifications</entry>
+                        <entry>Quality Clarifications: Clarifications with standard or custom
+                            ‘Primary Type at Reconciliation’ defined as ‘Quality’ in the admin
+                            configuration.</entry>
+                    </row>
+                    <row>
+                        <entry>Quality Clarification Rate</entry>
+                        <entry>(Count of reviewed encounters with at least one Quality Impact
+                            clarification (excludes DELETED or RETRACTED) sent in the selected
+                            activity date range/Count of encounters with an initial review date in
+                            the selected activity date range) x 100. E.g. 56%.</entry>
+                    </row>
+                    <row>
+                        <entry>% Quality Clarification</entry>
+                        <entry>(Count of Quality Impact clarification with at least one instance in
+                            the selected activity date range/Count of clarifications with at least
+                            one instance in the selected activity date range) x 100. E.g.
+                            44%.</entry>
+                    </row>
+                    <row>
+                        <entry>Quality Clarification Response Rate</entry>
+                        <entry>(Count of Quality Impact clarifications with at least one instance
+                            responded in the selected activity date range/Count of Quality Impact
+                            clarifications with at least one instance sent in the selected activity
+                            date range) x 100. E.g. 88%.</entry>
+                    </row>
+                    <row>
+                        <entry>Quality Clarification Agreed Rate</entry>
+                        <entry>(Count of Quality Impact Clarifications agreed in the selected
+                            activity date range/Count of Quality Impact clarifications with at least
+                            one instance responded in the selected activity date range) x 100. E.g.
+                            100%.</entry>
+                    </row>
+                    <row>
+                        <entry>Both Impact Clarifications</entry>
+                        <entry>Both Impact Clarifications: Clarifications with standard or custom
+                            ‘Primary Type at Reconciliation’ defined as 'Financial' and ‘Quality’ in
+                            the admin configuration.</entry>
+                    </row>
+                    <row>
+                        <entry>% Both Impact Clarification</entry>
+                        <entry>(Count of Both Impact clarification with at least one instance in the
+                            selected activity date range/Count of clarifications with at least one
+                            instance in the selected activity date range) x 100. E.g. 31%.</entry>
+                    </row>
+                    <row>
+                        <entry>Both Impact Clarification Response Rate</entry>
+                        <entry>(Count of Both Impact clarifications with at least one instance
+                            responded in the selected activity date range/Count of Both Impact
+                            clarifications with at least one instance sent in the selected activity
+                            date range) x 100. E.g. 91%.</entry>
+                    </row>
+                    <row>
+                        <entry>Both Impact Clarification Agreed Rate</entry>
+                        <entry>(Count of Both Impact Clarifications agreed in the selected activity
+                            date range/Count of Both Impact clarifications with at least one
+                            instance responded in the selected activity date range) x 100. E.g.
+                            95%.</entry>
+                    </row>
+                    <row>
+                        <entry>SEV Clarifications</entry>
+                        <entry>SEV Clarifications: Clarifications with ‘Primary Type at
+                            Reconciliation’ as SEV.</entry>
+                    </row>
+                    <row>
+                        <entry>SEV Clarification Rate</entry>
+                        <entry>(Count of reviewed encounters with at least one SEV Impact
+                            clarification (excludes DELETED or RETRACTED) sent in the selected
+                            activity date range/Count of encounters with an initial review date in
+                            the selected activity date range) x 100. E.g. 31%.</entry>
+                    </row>
+                    <row>
+                        <entry>% SEV Clarification</entry>
+                        <entry>(Count of SEV Impact clarification with at least one instance in the
+                            selected activity date range/Count of clarifications with at least one
+                            instance in the selected activity date range) x 100. E.g. 21%.</entry>
+                    </row>
+                    <row>
+                        <entry>SEV Clarification Response Rate</entry>
+                        <entry>(Count of SEV Impact clarifications with at least one instance
+                            responded in the selected activity date range/Count of SEV Impact
+                            clarifications with at least one instance sent in the selected activity
+                            date range) x 100. E.g. 70%.</entry>
+                    </row>
+                    <row>
+                        <entry>SEV Clarification Agreed Rate</entry>
+                        <entry>(Count of SEV Impact Clarifications agreed in the selected activity
+                            date range /Count of SEV Impact clarifications with at least one
+                            instance responded in the selected activity date range) x 100. E.g.
+                            98%.</entry>
+                    </row>
+                </tbody>
+            </tgroup>
+        </table>
+    </conbody>
+</concept>

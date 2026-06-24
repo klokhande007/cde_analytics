@@ -1,0 +1,815 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="clarification_details">
+    <title>Clarification Details</title>
+    <shortdesc> </shortdesc>
+    <conbody>
+        <p><b>Overview</b>: Clarification Details report enables CDI Manager to analyze the details
+            around the clarifications, identify gaps in the clarification process, and identify
+            educational opportunities for the CDSs.</p>
+        <p>The report provides answers to the following questions.<ul id="ul_gr4_smg_p4b">
+                <li>What are the details around the clarifications created by the CDSs?</li>
+                <li>How do I get a list of clarifications that do not have a final response?</li>
+                <li>How do I get a list of clarifications that were responded post-discharge?</li>
+                <li>How do I get a list of all the impact clarifications sent by the CDSs?</li>
+                <li>How do I get a list of all the clarifications that were not responded to by the
+                    providers?</li>
+                <li>How do we find the gaps in the clarification process?</li>
+                <li>Which CDSs are not following the clarification best practices?</li>
+                <li>Which CDS could benefit from additional education on the clarification
+                    process?</li>
+            </ul></p>
+        <note>ELX Clarification Types are now displayed in the standard Clarifications
+            dashboard.</note>
+        <p><b>Navigation</b>: On the Analytics home page left side panel, navigate to <menucascade>
+                <uicontrol>CDE One</uicontrol>
+                <uicontrol>CDI Operations</uicontrol>
+                <uicontrol>Clarification Details</uicontrol>
+            </menucascade>. </p>
+        <p>Clarification Details displays the following:<ul id="ul_z2c_f4g_p4b">
+                <li>KPI Cards: Clarifications Sent, Not Final, Escalated Clarifications</li>
+                <li>Encounter and Clarification Instance Details chart</li>
+            </ul></p>
+        <p>On the top panel, you can select desired values for the slicers (refer <xref
+                href="#clarification_details/table_bgs_mw5_l4b" format="dita"/>) and the
+            corresponding data gets filtered in the table.</p>
+        <p>For filters all pages, refer <xref href="#clarification_details/table_xzd_hdw_l4b"
+                format="dita"/>.</p>
+        <p>For Footnotes details, refer <xref href="#clarification_details/table_k4n_xrf_p4b"
+                format="dita"/>.</p>
+        <p><b>Default Display</b>: By default, the dashboard displays the data for the inpatient
+            encounters admitted in the last one calendar month. Click the ‘Reset’ button to reset
+            both admit date and discharge date and select the required date. Select slicers on the
+            top to further analyze the data.</p>
+        <p><b>Clarification Details</b></p>
+        <fig id="fig_ug4_2kz_r4b">
+            <title>Sample Report</title>
+            <image href="Images/Clarification%20Details.gif" id="image_c52_gkz_r4b" width="800"/>
+        </fig>
+        <p><b>Clarification Details - KPI Cards</b></p>
+        <fig id="fig_zmf_kkz_r4b">
+            <title>KPI cards</title>
+            <image href="Images/Clarification%20Details%20-%20KPI%20Cards.gif"
+                id="image_oks_kkz_r4b" width="300"/>
+        </fig>
+        <table frame="all" rowsep="1" colsep="1" id="table_w4g_vhf_p4b">
+            <title><b>KPI Cards</b></title>
+            <tgroup cols="2">
+                <colspec colname="c1" colnum="1" colwidth="1*"/>
+                <colspec colname="c2" colnum="2" colwidth="1*"/>
+                <thead>
+                    <row>
+                        <entry>KPI Card</entry>
+                        <entry>Description</entry>
+                    </row>
+                </thead>
+                <tbody>
+                    <row>
+                        <entry><b>Clarifications Sent </b></entry>
+                        <entry>
+                            <p>The count of sent clarifications with the status other than DELETED
+                                or RETRACTED for the reviewed encounters.</p>
+                            <p>
+                                <note>Clarifications for "Review Not Needed" encounter status are
+                                    not be considered for this metric calculation.</note>
+                            </p>
+                            <p>Clarifications may or may not have a FINAL response.</p>
+                            <p><b>Example</b>: 20</p>
+                        </entry>
+                    </row>
+                    <row>
+                        <entry><b>Not Final</b></entry>
+                        <entry>
+                            <p>The count of sent clarifications that do not have a "Final"
+                                Response.</p>
+                            <p>
+                                <note>Clarifications for "Review Not Needed" encounter status are
+                                    not be considered for this metric calculation.</note>
+                            </p>
+                            <p><b>Example</b>: 5</p>
+                        </entry>
+                    </row>
+                    <row>
+                        <entry><b>Escalated Clarifications</b></entry>
+                        <entry>Escalation TypeThe count of overdue clarifications with at least one
+                            clarification escalation checkbox selected.</entry>
+                    </row>
+                </tbody>
+            </tgroup>
+        </table>
+        <p><b>Clarification Details - Encounter and Clarification Instance Details </b></p>
+        <fig id="fig_hks_1lz_r4b">
+            <title>Encounter and Clarification Instance Details</title>
+            <image href="Images/Encounter%20and%20Clarification%20Instance%20Details.gif"
+                id="image_tml_dlz_r4b" width="800"/>
+        </fig>
+        <p><b>Info Icon</b>(text on hover): Data in this chart is for all clarification instances
+            except ‘Retracted’. Clarification Status: : Includes all clarification status excluding
+            ‘Removed’ and ‘Retracted’. Encounter Status: Includes all encounter status except Review
+            Not Needed. </p>
+        <table frame="all" rowsep="1" colsep="1" id="table_hfd_33f_p4b">
+            <title>Encounter and Clarification Instance Details</title>
+            <tgroup cols="5">
+                <colspec colname="c1" colnum="1" colwidth="1*"/>
+                <colspec colname="c2" colnum="2" colwidth="1.7*"/>
+                <colspec colname="newCol5" colnum="3" colwidth="1.19*"/>
+                <colspec colname="newCol3" colnum="4" colwidth="1.12*"/>
+                <colspec colname="newCol4" colnum="5" colwidth="1.12*"/>
+                <thead>
+                    <row>
+                        <entry>Column</entry>
+                        <entry>Description</entry>
+                        <entry>Formula/Calculation</entry>
+                        <entry>Exclusion Criteria (if any)</entry>
+                        <entry>Tooltip</entry>
+                    </row>
+                </thead>
+                <tbody>
+                    <row>
+                        <entry>Facility</entry>
+                        <entry>
+                            <ul id="ul_i1j_l3f_p4b">
+                                <li>The Facility Description along with the Facility ID assigned to
+                                    the encounter.</li>
+                                <li>If Facility Description is not available, then only Facility ID
+                                    gets be displayed.</li>
+                            </ul>
+                        </entry>
+                        <entry/>
+                        <entry morerows="30">Instances with the response 'RETRACTED' are not
+                            displayed by default. You can select 'Retracted' option from the
+                            'Response' slicer to analyze the retracted clarification
+                                instances.<p>Clarifications with the Status 'DELETED' and
+                                'RETRACTED' are not displayed by default. You can select 'Deleted'
+                                or 'Retracted' options from the Clarification Status slicer to
+                                analyze the clarifications.</p></entry>
+                        <entry morerows="30"/>
+                    </row>
+                    <row>
+                        <entry>Account No.</entry>
+                        <entry>The Account Number assigned to the encounter.</entry>
+                        <entry/>
+                    </row>
+                    <row>
+                        <entry>Admit Date </entry>
+                        <entry>
+                            <ul id="ul_idn_n3f_p4b">
+                                <li>The Admit Date and time of the encounter in the facility’s
+                                    timezone.</li>
+                                <li><b>Example</b>: 07/01/2020 03:58:53 PM ET</li>
+                            </ul>
+                        </entry>
+                        <entry/>
+                    </row>
+                    <row>
+                        <entry>Discharge Date</entry>
+                        <entry>
+                            <ul id="ul_kfc_p3f_p4b">
+                                <li>The Discharge Date and time of the encounter in the facility’s
+                                    timezone.</li>
+                                <li><b>Example</b>: 07/01/2020 03:58:53 PM ET</li>
+                            </ul>
+                        </entry>
+                        <entry/>
+                    </row>
+                    <row>
+                        <entry>Initiating CDS</entry>
+                        <entry>
+                            <ul id="ul_qgb_r3f_p4b">
+                                <li>The name of the CDS that initiated/created the clarification. </li>
+                                <li><b>Format</b> : Last Name, First Name (CDS ID)</li>
+                            </ul>
+                        </entry>
+                        <entry/>
+                    </row>
+                    <row>
+                        <entry>Follow-up CDS</entry>
+                        <entry>
+                            <ul id="ul_udz_r3f_p4b">
+                                <li>The name of the follow-up CDS assigned to the
+                                    clarification.</li>
+                                <li><b>Format</b>: Last Name, First Name (CDS ID)</li>
+                            </ul>
+                        </entry>
+                        <entry/>
+                    </row>
+                    <row>
+                        <entry>Clarification Subject</entry>
+                        <entry>
+                            <ul id="ul_anl_y3f_p4b">
+                                <li>The subject of the clarification. <p><b>Format</b>:
+                                        Clarification Code Description</p></li>
+                                <li><b>Example</b>: E871 Hypo-osmolality and hyponatremia </li>
+                                <li>Generic Clarifications that do not have code are also
+                                    displayed.</li>
+                            </ul>
+                        </entry>
+                        <entry/>
+                    </row>
+                    <row>
+                        <entry>Instance Sent Date</entry>
+                        <entry>
+                            <ul id="ul_lr5_z3f_p4b">
+                                <li>The sent date and time of the clarification instance.</li>
+                                <li><b>Example</b>: 07/01/2020 03:58:53 PM ET</li>
+                                <li>The date/time is in the Facility's time-zone. </li>
+                                <li><b>Default:</b> Data in this report gets sorted by Instance Sent
+                                    Date in descending order, most recent on top.</li>
+                            </ul>
+                        </entry>
+                        <entry/>
+                    </row>
+                    <row>
+                        <entry>Instance Sent To</entry>
+                        <entry>
+                            <ul id="ul_emb_bjf_p4b">
+                                <li>The ‘Sent To’ provider associated with the clarification
+                                    instance.</li>
+                                <li>The provider in this case is the one who was sent the
+                                    clarification instance. </li>
+                                <li><b>Example</b>: Dr. Smith, Dennis B, Jr., MD</li>
+                            </ul>
+                        </entry>
+                        <entry/>
+                    </row>
+                    <row>
+                        <entry>Instance Response Date</entry>
+                        <entry>
+                            <ul id="ul_xlr_cjf_p4b">
+                                <li>The response date and time of the clarification instance.</li>
+                                <li><b>Format</b>: 07/01/2020 03:58:53 PM ET</li>
+                                <li>The date/time is in the Facility's time-zone. </li>
+                                <li>
+                                    <note>Response Date is displayed in Red Font when the response
+                                        date/time is after discharge date/time. (Response Date/Time
+                                        > Discharge Date/Time)</note>
+                                </li>
+                            </ul>
+                        </entry>
+                        <entry/>
+                    </row>
+                    <row>
+                        <entry>Instance Responded By</entry>
+                        <entry>
+                            <ul id="ul_pzw_2jf_p4b">
+                                <li>The ‘Responded By’ provider associated with the clarification
+                                    instance.</li>
+                                <li>The provider in this case is the one who was sent the
+                                    clarification instance. </li>
+                                <li><b>Example</b>: Dr. Smith, Dennis B, Jr., MD</li>
+                            </ul>
+                        </entry>
+                        <entry/>
+                    </row>
+                    <row>
+                        <entry>Instance Response</entry>
+                        <entry>
+                            <ul id="ul_bk4_gjf_p4b">
+                                <li>The response associated with the instance.<p><b>Example</b>:
+                                        Agreed, Pending, Other Explanation etc.</p>
+                                </li>
+                                <li>NOTE: Instances with the response 'RETRACTED' are not displayed
+                                    by default. The users can select 'Retracted' option from the
+                                    'Response' slicer to analyze the retracted clarification
+                                    instances. </li>
+                            </ul>
+                        </entry>
+                        <entry/>
+                    </row>
+                    <row>
+                        <entry>Alternate Response</entry>
+                        <entry>
+                            <p>The Code and Description of the Alternate Response associated with
+                                the clarification.</p>
+                            <ul id="ul_odk_njf_p4b">
+                                <li><b>Example</b>: E871 Hypo-osmolality and hyponatremia </li>
+                                <li>
+                                    <note>This is the "Response Code" captured on the Clarification
+                                        tab when you select Response as "Alternative Specificity
+                                        Diagnosis".</note>
+                                </li>
+                            </ul>
+                        </entry>
+                        <entry/>
+                    </row>
+                    <row>
+                        <entry>Escalated?</entry>
+                        <entry>Indicates whether the overdue clarification instance has been
+                            escalated. <b>Example</b>: Y/N. <note id="note_qnd_1nc_mjc">When a
+                                clarification is escalated (Y), the entire row is highlighted in red
+                                font.</note></entry>
+                        <entry/>
+                    </row>
+                    <row>
+                        <entry>Escalation Type</entry>
+                        <entry>Displays the escalation level selected for the overdue clarification
+                            instance. If multiple escalation levels are selected, the values are
+                            displayed as a comma-separated list. <b>Example</b>: 1st Escalation, 2nd
+                            Escalation, Liaison Escalation, CDI Manager Escalation. </entry>
+                        <entry/>
+                    </row>
+                    <row>
+                        <entry>Instance Response TAT(Hours)</entry>
+                        <entry>
+                            <p>The Turn Around Time (TAT) for a responded instance.</p>
+                            <p>
+                                <note>
+                                    <ul id="ul_ypz_q2y_xqb">
+                                        <li>Response TAT calculation is not displayed for the
+                                            instances with 'Pending', 'Retracted', or 'No Response'
+                                            response.</li>
+                                        <li> If clarification response is pending, this column does
+                                            not show any value ( appears as blank).</li>
+                                    </ul>
+                                </note>
+                            </p>
+                        </entry>
+                        <entry>Response TAT (Hours) for a responded instance = (Instance Response
+                            Date/Time - Instance Sent Date/Time)hours</entry>
+                    </row>
+                    <row>
+                        <entry>Primary Type</entry>
+                        <entry>
+                            <ul id="ul_gnq_qjf_p4b">
+                                <li>The 'Primary Type' assigned to the clarification.</li>
+                                <li>There can only be one primary type assigned to the
+                                            clarification.<p><b>Example</b>: PDX, CC, etc.</p></li>
+                                <li>A clarification can have a standard or custom type
+                                    assigned.</li>
+                            </ul>
+                        </entry>
+                        <entry/>
+                    </row>
+                    <row>
+                        <entry>Other Type</entry>
+                        <entry>
+                            <ul id="ul_gl5_rjf_p4b">
+                                <li>The 'Other types' assigned to the clarification. Comma-separated
+                                    values are displayed.</li>
+                                <li>There can be more than one other type selected for the
+                                    clarification.</li>
+                                <li>A clarification can have standard or custom other types
+                                    assigned.</li>
+                            </ul>
+                        </entry>
+                        <entry/>
+                    </row>
+                    <row>
+                        <entry>Primary Rec. Type</entry>
+                        <entry>The Primary Reconciliation Type associated with the clarification.
+                                <note>Both Standard and Custom Clarification Types are
+                                considered.</note>
+                        </entry>
+                        <entry/>
+                    </row>
+                    <row>
+                        <entry>Other Rec. Type</entry>
+                        <entry>
+                            <ul id="ul_ybx_1mf_p4b">
+                                <li>The Other Reconciliation types assigned to the clarification.
+                                    Comma-separated values are displayed.</li>
+                                <li>There can be more than one other recon. type selected for the
+                                    clarification.</li>
+                                <li>A clarification can have standard or custom other types
+                                    assigned.</li>
+                            </ul>
+                        </entry>
+                        <entry/>
+                    </row>
+                    <row>
+                        <entry>Final Ind.</entry>
+                        <entry>
+                            <p>The indicator to depict if the instance is marked Final by the CDS.
+                                Displays Y for final instances. </p>
+                            <p>NOTE: Column is blank for instances that are not final.</p>
+                        </entry>
+                        <entry/>
+                    </row>
+                    <row>
+                        <entry>Clarification Status</entry>
+                        <entry>
+                            <ul id="ul_phk_jrf_p4b">
+                                <li>The status associated with the clarification. <p><b>Example</b>:
+                                        Sent, Closed, etc.</p></li>
+                                <li>You can select 'Deleted' or 'Retracted' options from the
+                                    Clarification Status slicer to analyze the clarifications.</li>
+                                <li>
+                                    <note>Clarifications with the Status 'DELETED' and 'RETRACTED'
+                                        are not displayed by default. The users can select 'Deleted'
+                                        or 'Retracted' options from the Clarification Status slicer
+                                        to analyze the clarifications.</note>
+                                </li>
+                            </ul>
+                        </entry>
+                        <entry/>
+                    </row>
+                    <row>
+                        <entry>Clarification Closed Date</entry>
+                        <entry>
+                            <ul id="ul_z1r_krf_p4b">
+                                <li>The date and time when the clarification was closed. </li>
+                                <li><b>Example</b>: 06/16/2020 10:10:00 AM ET</li>
+                                <li>The date/time is in the Facility's time-zone. </li>
+                            </ul>
+                        </entry>
+                        <entry/>
+                    </row>
+                    <row>
+                        <entry>Electronic</entry>
+                        <entry>
+                            <ul id="ul_rx5_lrf_p4b">
+                                <li>
+                                    <p>Mode of clarification sent Displays Y for electronic
+                                        clarifications.</p>
+                                    <p>
+                                        <note>Column is blank for manual clarifications.</note>
+                                    </p>
+                                </li>
+                            </ul>
+                        </entry>
+                        <entry/>
+                    </row>
+                    <row>
+                        <entry>Encounter CDS</entry>
+                        <entry>
+                            <ul id="ul_qnj_nrf_p4b">
+                                <li>The CDS assigned to the encounter.</li>
+                                <li><b>Format</b>: Last Name, First Name (CDS ID)</li>
+                            </ul>
+                        </entry>
+                        <entry/>
+                    </row>
+                    <row>
+                        <entry>Encounter Status</entry>
+                        <entry>The status of the encounter.<p><b>Example</b>: In Progress,
+                                Reconciled Impact, etc.</p>
+                        </entry>
+                        <entry/>
+                    </row>
+                    <row>
+                        <entry>Patient Type</entry>
+                        <entry>The Patient Type of the encounter. <p><b>Example</b>: IP</p></entry>
+                        <entry/>
+                    </row>
+                    <row>
+                        <entry>Visit Type</entry>
+                        <entry>The Visit Type ID of the encounter. <p><b>Example</b>:
+                            OBS</p></entry>
+                        <entry/>
+                    </row>
+                    <row>
+                        <entry>Payer</entry>
+                        <entry>The name of the Payer assigned to the encounter. Payer name (Payer
+                            ID)</entry>
+                        <entry/>
+                    </row>
+                    <row>
+                        <entry>Unit</entry>
+                        <entry>The Unit associated with the encounter.</entry>
+                        <entry/>
+                    </row>
+                    <row>
+                        <entry>Weekend Only Stay</entry>
+                        <entry>
+                            <ul id="ul_afm_vrf_p4b">
+                                <li>Y or N shown as per criteria. </li>
+                                <li>Weekend Only Stay = Y ( Unassigned encounters admitted after
+                                    Friday, 6PM and Discharged before Sunday, 11.59 PM)</li>
+                            </ul>
+                        </entry>
+                        <entry/>
+                    </row>
+                </tbody>
+            </tgroup>
+        </table>
+        <table frame="all" rowsep="1" colsep="1" id="table_bgs_mw5_l4b">
+            <title>Report Slicers </title>
+            <tgroup cols="2">
+                <colspec colname="c1" colnum="1" colwidth="1*"/>
+                <colspec colname="c2" colnum="2" colwidth="1*"/>
+                <thead>
+                    <row>
+                        <entry>Slicer</entry>
+                        <entry>Description</entry>
+                    </row>
+                </thead>
+                <tbody>
+                    <row>
+                        <entry>Admit Date</entry>
+                        <entry>
+                            <ul id="ul_hmn_qcw_l4b">
+                                <li>Displays the admit date range here. You can select required
+                                    dates from the date lookup.</li>
+                                <li><b>Example</b>: 7/1/2020 - 7/31/2020</li>
+                                <li><b>Default</b>: Last 1 calendar months date range selected by
+                                    default.</li>
+                            </ul>
+                        </entry>
+                    </row>
+                    <row>
+                        <entry>Discharge Date</entry>
+                        <entry>
+                            <ul id="ul_xkg_vkz_m4b">
+                                <li>Displays the discharge date range here. You can select required
+                                    dates from the date lookup.</li>
+                                <li>
+                                    <p><b>Example</b>: 7/1/2020 - 7/31/2020</p>
+                                </li>
+                            </ul>
+                        </entry>
+                    </row>
+                    <row>
+                        <entry>Reset</entry>
+                        <entry>
+                            <ul id="ul_jw1_22z_m4b">
+                                <li>With the Reset button, you can reset the admit date range.</li>
+                                <li><b>Tooltip</b>: Use "Ctrl + Click" to reset both the Admit Date
+                                    and Discharge Date.</li>
+                            </ul>
+                        </entry>
+                    </row>
+                    <row>
+                        <entry>Facility</entry>
+                        <entry>
+                            <ul id="ul_qg1_scw_l4b">
+                                <li>Displays a list of active and inactive facilities that you have
+                                    access to. The list is sorted alphabetically. </li>
+                                <li>You can select multiple facilities</li>
+                                <li>You can search the facility by Facility ID or Description.</li>
+                                <li><b>Format</b>: Facility Description (Facility ID)</li>
+                                <li><b>Default</b>: ALL</li>
+                            </ul>
+                        </entry>
+                    </row>
+                    <row>
+                        <entry>CDS</entry>
+                        <entry>
+                            <ul id="ul_gqf_j5f_p4b">
+                                <li>Displays a list of active and inactive CDSs associated with the
+                                    facilities you have access to.</li>
+                                <li>The CDS Filter in all the reports displays the users with
+                                    at-least CDS or CDS Manager role assigned.</li>
+                                <li>"Unassigned CDS" displays data for the encounters that do not
+                                    have a CDS assigned.</li>
+                                <li>You can search the CDS by CDS ID or Name. </li>
+                                <li><b>Format</b>: Last Name, First Name MI (CDS ID)</li>
+                                <li><b>Default</b>: ALL</li>
+                            </ul>
+                        </entry>
+                    </row>
+                    <row>
+                        <entry>Provider</entry>
+                        <entry>
+                            <ul id="ul_ufy_l5f_p4b">
+                                <li>Displays both active and inactive Providers that are Sent To
+                                    provider or Responded By provider for at least one
+                                    instance.</li>
+                                <li> "Unassigned Provider" displays data for the encounters that do
+                                    not have a provider assigned. </li>
+                                <li>You can search the Provider by name, suffix, title. </li>
+                                <li><b>Format</b>: Prefix Lastname, Firstname Middle Initial,
+                                    Suffix, Title </li>
+                                <li><b>Default</b>: ALL</li>
+                            </ul>
+                        </entry>
+                    </row>
+                    <row>
+                        <entry>Response</entry>
+                        <entry>
+                            <ul id="ul_ak4_n5f_p4b">
+                                <li>Displays a list of all the available Instance responses.
+                                            <p><b>Example</b>: Pending, Retracted, No Response,
+                                        Agreed, etc</p></li>
+                                <li><b>Default:</b> 'Retracted' not selected by default.</li>
+                                <li>You can select multiple responses</li>
+                                <li>You can search for a response</li>
+                            </ul>
+                        </entry>
+                    </row>
+                    <row>
+                        <entry>Final Response</entry>
+                        <entry>
+                            <ul id="ul_o1h_p5f_p4b">
+                                <li>Displays 'Y' and 'N' options. </li>
+                                <li>Y: When you select Y, the system displays final instances
+                                    associated with the clarifications. (Only the instances that
+                                    have the final response are displayed)</li>
+                                <li>N: When you select N, the system displays all instances of the
+                                        <b>clarifications that do not have a final response</b>.
+                                </li>
+                            </ul>
+                        </entry>
+                    </row>
+                    <row>
+                        <entry>Primary Rec. Type</entry>
+                        <entry>
+                            <ul id="ul_b3h_s5f_p4b">
+                                <li>Displays all the available standard and custom Primary Rec.
+                                            Types<p><b>Example</b>: PDX, CC, MCC, etc.</p>
+                                </li>
+                                <li><b>Default</b>: ALL</li>
+                                <li>You can select multiple types</li>
+                                <li>You can search for a type</li>
+                            </ul>
+                        </entry>
+                    </row>
+                    <row>
+                        <entry>Subject</entry>
+                        <entry>
+                            <ul id="ul_cf4_w5f_p4b">
+                                <li>Displays the subject of the clarification in the format
+                                    :Clarification Code Description.</li>
+                                <li><b>Example</b>: E871 Hypo-osmolality and hyponatremia </li>
+                                <li>Generic Clarifications that do not have code are also
+                                    displayed.</li>
+                            </ul>
+                        </entry>
+                    </row>
+                    <row>
+                        <entry>Status</entry>
+                        <entry>
+                            <ul id="ul_tjq_x5f_p4b">
+                                <li>Displays all the available clarification statuses.
+                                        <b>Example</b>: New, Closed, Deleted, Reopened etc.</li>
+                                <li><b>Default</b>: 'Deleted' and 'Retracted' not selected by
+                                    default.</li>
+                                <li>You can select multiple status.</li>
+                                <li>You can search for a status.</li>
+                            </ul>
+                        </entry>
+                    </row>
+                </tbody>
+            </tgroup>
+        </table>
+        <p>
+            <table frame="all" rowsep="1" colsep="1" id="table_xzd_hdw_l4b">
+                <title>Filters on all Pages</title>
+                <tgroup cols="2">
+                    <colspec colname="c1" colnum="1" colwidth="1*"/>
+                    <colspec colname="c2" colnum="2" colwidth="1*"/>
+                    <thead>
+                        <row>
+                            <entry>Filter</entry>
+                            <entry>Description</entry>
+                        </row>
+                    </thead>
+                    <tbody>
+                        <row>
+                            <entry>Patient Type</entry>
+                            <entry>
+                                <ul id="ul_f4n_gny_m4b">
+                                    <li>Displays the available patient types. <p><b>Example</b>:
+                                            Inpatient, Outpatient.</p></li>
+                                    <li><b>Default</b>: Inpatient</li>
+                                </ul>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>Visit Type</entry>
+                            <entry>
+                                <ul id="ul_vk3_3ny_m4b">
+                                    <li>Displays the list of available Visit Types.</li>
+                                    <li>You can select multiple Visit Types.</li>
+                                    <li>You can search the Visit Type.</li>
+                                    <li><b>Default</b>: ALL</li>
+                                </ul>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>Unit</entry>
+                            <entry>
+                                <ul id="ul_n4k_jny_m4b">
+                                    <li>Displays the list of available units.</li>
+                                    <li>You can select multiple Units.</li>
+                                    <li>You can search the Unit.</li>
+                                    <li><b>Default</b>: ALL</li>
+                                </ul>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>Weekend Only Stay</entry>
+                            <entry>
+                                <ul id="ul_cyy_pdw_l4b">
+                                    <li>Displays Weekend Only Stay values (Y/N).</li>
+                                    <li>You can search the Weekend Only Stay.</li>
+                                    <li><b>Default</b>: ALL</li>
+                                </ul>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>Encounter Status</entry>
+                            <entry>
+                                <ul id="ul_fc2_5dw_l4b">
+                                    <li>Displays the list of available Encounter Statuses.</li>
+                                    <li>You can select multiple Encounter Statuses.</li>
+                                    <li>You can search the Encounter Status.</li>
+                                    <li><b>Default</b>: Review Not Needed unchecked by default.  </li>
+                                </ul>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>Admit Service</entry>
+                            <entry>
+                                <ul id="ul_zm1_lny_m4b">
+                                    <li>Displays the list of available Admit Services.</li>
+                                    <li>You can select multiple Admit Services.</li>
+                                    <li>You can search the Admit Service.</li>
+                                    <li><b>Default</b>: ALL</li>
+                                </ul>
+                            </entry>
+                        </row>
+                    </tbody>
+                </tgroup>
+            </table>
+        </p>
+        <table frame="all" rowsep="1" colsep="1" id="table_k4n_xrf_p4b">
+            <title>Footnotes</title>
+            <tgroup cols="2">
+                <colspec colname="c1" colnum="1" colwidth="1*"/>
+                <colspec colname="c2" colnum="2" colwidth="1*"/>
+                <thead>
+                    <row>
+                        <entry>Formulas</entry>
+                        <entry>Text on Hover</entry>
+                    </row>
+                </thead>
+                <tbody>
+                    <row>
+                        <entry>Clarifications Sent</entry>
+                        <entry>Count of sent clarifications (with/without Final Response) with
+                            status other than REMOVED or RETRACTED.<p>Encounter Status: Includes
+                                clarifications for all encounters status except Review Not
+                                Needed.</p>
+                            <b>Example</b>: 40</entry>
+                    </row>
+                    <row>
+                        <entry>Not Final</entry>
+                        <entry>Count of sent clarifications that do not have a FINAL
+                                response.<p>Encounter Status: Includes clarifications for all
+                                encounter status except Review Not Needed.</p><b>Example</b>:
+                            5</entry>
+                    </row>
+                    <row>
+                        <entry>Clarification Subject</entry>
+                        <entry>Subject of the clarification. <note>Generic clarifications without
+                                the code are also displayed</note>
+                            <b>Example</b>: E871 Hypo-osmolality and hyponatremia</entry>
+                    </row>
+                    <row>
+                        <entry>Clarification Status</entry>
+                        <entry>Status of the clarification associated with the
+                                encounter.<p>Clarification Status: Includes all clarification status
+                                excluding ‘Removed’ and ‘Retracted’</p><b>Example</b>:
+                            Agreed</entry>
+                    </row>
+                    <row>
+                        <entry>Final</entry>
+                        <entry>Final Indicator for instances marked Final.NOTE: Displays blank for
+                            not final instances. <p><b>Example</b>: Y</p></entry>
+                    </row>
+                    <row>
+                        <entry>Type</entry>
+                        <entry>Primary Type = The Primary Type (standard or custom) associated with
+                            the clarification. Other Type= The Other Types (standard or custom)
+                            associated with the clarification.</entry>
+                    </row>
+                    <row>
+                        <entry>Rec Type</entry>
+                        <entry>Primary Rec Type = The Primary Rec Type (standard or custom)
+                            associated with the clarification.Other Rec Type= The Other Rec Types
+                            (standard or custom) associated with the clarification.</entry>
+                    </row>
+                    <row>
+                        <entry>Instance Response</entry>
+                        <entry>Response associated with the instance except ‘Retracted’.<note>Click
+                                on Retracted' option from the 'Response' slicer to analyze the
+                                retracted clarification instances. </note>
+                            <b>Example</b>: Pending, Other Explanation.</entry>
+                    </row>
+                    <row>
+                        <entry>Escalated Clarifications</entry>
+                        <entry>Count of clarifications with status as Overdue and at least one
+                            clarification escalation checkbox selected.</entry>
+                    </row>
+                    <row>
+                        <entry>Instance Response TAT(Hours)</entry>
+                        <entry>Response TAT (Hours) = (Instance Response Date/Time - Instance Sent
+                            Date/Time)hours <note>Instances with response 'Pending', 'Retracted', or
+                                'No Response' excluded from the calculation.</note>
+                        </entry>
+                    </row>
+                    <row>
+                        <entry>Electronic</entry>
+                        <entry>Mode of clarification sent. Displays Y if sent electronically. ;
+                            Displays blank if sent manually.<p><b>Example</b>: Y</p></entry>
+                    </row>
+                    <row>
+                        <entry>Weekend Only Stay</entry>
+                        <entry>Weekend Only Stay = Y ( Unassigned encounters admitted after Friday,
+                            6PM and Discharged before Sunday, 11.59 PM)</entry>
+                    </row>
+                </tbody>
+            </tgroup>
+        </table>
+    </conbody>
+</concept>

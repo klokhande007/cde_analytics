@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="printing_a_report">
+    <title>Printing a Report</title>
+    <shortdesc></shortdesc>
+    <taskbody>
+        <context>
+            <p></p>
+        </context>
+        <steps>
+            <step>
+                <cmd>From the <i>Predefined</i> or the <i>User define</i> section, open a report
+                    that you would like to print.</cmd>
+            </step>
+            <step>
+                <cmd>Click the <uicontrol>Print Report</uicontrol> icon from the top-right corner of
+                    the screen.</cmd>
+                <stepresult>The <uicontrol>Print</uicontrol> dialog-box is displayed.<fig
+                        id="fig_h5b_14j_w2b">
+                        <title>Print Dialog-box</title>
+                        <image href="../Images/Print%20Dialog-box.gif" id="image_xcd_sdz_t4b"
+                            width="400"/>
+                    </fig></stepresult>
+            </step>
+            <step>
+                <cmd>Set the print settings for your desired print options.</cmd>
+                <info>You can select the quantity of copies desired, page selection locations, page
+                    orientation (portrait to landscape and vice versa), and printer.</info>
+            </step>
+            <step>
+                <cmd>Click <uicontrol>Apply</uicontrol>, if you've made changes in the print
+                    setting.</cmd>
+            </step>
+            <step>
+                <cmd>Click <uicontrol>Print</uicontrol>.</cmd>
+            </step>
+        </steps>
+    </taskbody>
+</task>

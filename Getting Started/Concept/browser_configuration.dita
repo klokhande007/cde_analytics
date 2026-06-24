@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_nv4_2nk_gbb">
+    <title>Internet Explorer Support</title>
+    <shortdesc></shortdesc>
+    <conbody>
+        <p>Microsoft Internet Explorer 11 browser is no longer supported by Microsoft as of June 15,
+            2022. Nuance strongly recommends all clients install and begin using either Edge or
+            Chrome for use with CDE One.</p>
+    </conbody>
+</concept>
